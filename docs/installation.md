@@ -28,7 +28,7 @@ mv tenderly /usr/local/bin
 ## Installing on Windows
 
 ```
-curl https://storage.googleapis.com/tenderly-cli/tenderly-windows-amd64 -o tenderly
+curl https://storage.googleapis.com/tenderly-cli/tenderly-windows-amd64.exe -o tenderly
 
 # Add binary to PATH and make sure it is executable
 ```
