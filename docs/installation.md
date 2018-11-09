@@ -1,6 +1,6 @@
 # Installation
 
-## Installing on OSX
+## Installing on macOS
 
 Via [Homebrew](https://brew.sh/):
 
@@ -12,23 +12,15 @@ brew install tenderly
 or via cURL:
 
 ```
-curl https://storage.googleapis.com/tenderly-cli/tenderly-darwin-amd64 -o tenderly
-chmod +x tenderly
-mv tenderly /usr/local/bin
+curl https://raw.githubusercontent.com/Tenderly/tenderly-cli/master/scripts/install-macos.sh | sh
 ```
 
 ## Installing on Linux
 
 ```
-curl https://storage.googleapis.com/tenderly-cli/tenderly-linux-amd64 -o tenderly
-chmod +x tenderly
-mv tenderly /usr/local/bin
+curl https://raw.githubusercontent.com/Tenderly/tenderly-cli/master/scripts/install-linux.sh | sh
 ```
 
 ## Installing on Windows
 
-```
-curl https://storage.googleapis.com/tenderly-cli/tenderly-windows-amd64.exe -o tenderly
-
-# Add binary to PATH and make sure it is executable
-```
+Windows support coming soon!
