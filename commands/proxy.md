@@ -1,4 +1,4 @@
-# Tenderly Proxy
+# proxy
 
 Proxy command create a proxy server that forwards all of your request to ethereum rpc node. 
 
