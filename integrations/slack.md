@@ -1,4 +1,4 @@
-# Slack App
+# Slack
 
 You can connect Tenderly with your Slack workspace and get real-time notifications when an alert rule matches a transaction. Connecting multiple channels is also supported so you can route certain rules to specific channels.
 

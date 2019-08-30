@@ -6,7 +6,7 @@
   * [Importing a Public Contract](project-setup/import-public-contracts.md)
   * [Monitoring your Smart Contracts](project-setup/monitoring-contracts.md)
 * [Integrations](integrations/README.md)
-  * [Slack App](integrations/slack-app.md)
+  * [Slack](integrations/slack.md)
 * [FAQ](faq.md)
 * [Changelog](changelog.md)
 

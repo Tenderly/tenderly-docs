@@ -12,7 +12,7 @@ asd
 
 ### Can I receive alerts on Slack or Telegram?
 
-Yes you can receive alert notifications on Slack or via e-mail. If you wish to integrate with Slack go to [t](integrations/slack-app.md)he [Slack App](integrations/slack-app.md) documentation page for more details. As for Telegram it is currently in our product backlog and will be rolled out soon.
+Yes you can receive alert notifications on Slack or via e-mail. If you wish to integrate with Slack go to [t](integrations/slack.md)he [Slack App](integrations/slack.md) documentation page for more details. As for Telegram it is currently in our product backlog and will be rolled out soon.
 
-{% page-ref page="integrations/slack-app.md" %}
+{% page-ref page="integrations/slack.md" %}
 
