@@ -1,4 +1,4 @@
-# Monitoring Contracts
+# Monitoring your Smart Contracts
 
 {% hint style="info" %}
 ## qwe

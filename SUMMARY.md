@@ -3,12 +3,19 @@
 * [General](README.md)
 * [Project Setup](project-setup/README.md)
   * [Creating a Project](project-setup/creating-project.md)
-  * [Monitoring Contracts](project-setup/monitoring-contracts/README.md)
-    * [Importing Public Contracts](project-setup/monitoring-contracts/import-public-contracts.md)
+  * [Importing a Public Contract](project-setup/import-public-contracts.md)
+  * [Monitoring your Smart Contracts](project-setup/monitoring-contracts.md)
+* [Integrations](integrations/README.md)
+  * [Slack App](integrations/slack-app.md)
 * [FAQ](faq.md)
+* [Changelog](changelog.md)
 
 ## CLI
 
+* [Getting Started](cli/getting-started/README.md)
+  * [Installing the Tenderly CLI](cli/getting-started/installing-the-tenderly-cli.md)
+  * [Configure your Project](cli/getting-started/configure-your-project.md)
+  * [Setup the Proxy listener](cli/getting-started/setup-the-proxy-listener.md)
 * [Commands](cli/commands/README.md)
   * [init](cli/commands/init.md)
   * [proxy](cli/commands/proxy.md)

@@ -1,6 +1,6 @@
 # proxy
 
-Proxy command create a proxy server that forwards all of your request to ethereum rpc node.
+The tenderly proxy command creates a proxy server that listens and forwards all of your request to an Ethereum RPC node.
 
 Eth\_getTransactionReceipt request will check if transaction failed and print stacktrace in status field
 
