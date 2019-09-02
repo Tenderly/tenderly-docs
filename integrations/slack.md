@@ -18,7 +18,7 @@ Finally click on **Slack** and then **Connect Slack**.
 
 You will be greeted with the Slack permissions screen where you will pick to which channel you want your notification to get delivered.
 
-![](../.gitbook/assets/screen-shot-2019-08-30-at-11.55.28.png)
+![](../.gitbook/assets/screen-shot-2019-09-02-at-11.42.40.png)
 
 And that's it! Now when a transaction matches an configured alert rule you will get a notification instantly delivered to your Slack channel.
 
