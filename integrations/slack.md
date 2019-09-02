@@ -10,11 +10,11 @@ Navigate to a project and go to the **Alerts** tab.
 
 Click on **Destinations**.
 
-![](../.gitbook/assets/preview.tenderly.dev_project_uber-cool-project_alerts_destinations.png)
+![](../.gitbook/assets/preview.tenderly.dev_project_uber-cool-project_alerts_destinations%20%281%29.png)
 
 Finally click on **Slack** and then **Connect Slack**.
 
-![](../.gitbook/assets/preview.tenderly.dev_project_uber-cool-project_alerts_destinations-1.png)
+![](../.gitbook/assets/preview.tenderly.dev_project_uber-cool-project_alerts_destinations-1%20%281%29.png)
 
 You will be greeted with the Slack permissions screen where you will pick to which channel you want your notification to get delivered.
 
