@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.3.3 - 2019-09-12
+
+### Added
+
+* You can now view **local variables** and **state variables** in the transaction debugger
+* You can view event/log topics in the raw data section in a transaction
+
+### Changed
+
+* Events that were unable to be parsed no longer show raw data by default in the transaction events/logs tab
+
 ## 0.3.2 - 2019-09-12
 
 ### Added
