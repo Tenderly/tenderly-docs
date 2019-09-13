@@ -19,7 +19,7 @@
 
 ### Fixed
 
-* Added empty state when there are now events/logs in a transaction
+* Added empty state when there are no events/logs in a transaction
 * Fixed issue where loading two public contracts that have the same address on different networks would display only the first contract that was loaded
 * Loader would spin indefinitely for alert history for the demo project
 
