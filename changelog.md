@@ -1,6 +1,12 @@
 # Changelog
 
-## 0.3.3 - 2019-09-12
+## 1.3.4 - 2019-09-17
+
+### Added
+
+* You can now view **state changes** in the execution tab in every transaction that had state changes.
+
+## 1.3.3 - 2019-09-12
 
 ### Added
 
@@ -11,7 +17,7 @@
 
 * Events that were unable to be parsed no longer show raw data by default in the transaction events/logs tab
 
-## 0.3.2 - 2019-09-12
+## 1.3.2 - 2019-09-12
 
 ### Added
 
@@ -23,13 +29,13 @@
 * Fixed issue where loading two public contracts that have the same address on different networks would display only the first contract that was loaded
 * Loader would spin indefinitely for alert history for the demo project
 
-## 0.3.1 - 2019-09-11
+## 1.3.1 - 2019-09-11
 
 ### Added
 
 * You can now view events/logs that were emitted inside a transaction. Navigate to the "Events / Logs" tab inside the transaction page.
 
-## 0.3.0 - 2019-09-10
+## 1.3.0 - 2019-09-10
 
 ### Added
 
