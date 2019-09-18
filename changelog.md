@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.3.5 - 2019-09-18
+
+### Added
+
+* We now support multiple revisions of a contract that was added to the dashboard via the [`tenderly push`](cli/commands/push.md) command
+
+### Changed
+
+* Contracts are now sorted by network in the project contracts page
+
+### Fixed
+
+* Error is now displayed when logging in via Google fails
+* Loader for single alert page will not longer spin indefinitely if the alert does not exist
+
 ## 1.3.4 - 2019-09-17
 
 ### Added
