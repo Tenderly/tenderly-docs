@@ -7,6 +7,7 @@
   * [Monitoring your Smart Contracts](project-setup/monitoring-contracts.md)
 * [Integrations](integrations/README.md)
   * [Slack](integrations/slack.md)
+  * [PagerDuty](integrations/pagerduty.md)
 * [FAQ](faq.md)
 * [Changelog](changelog.md)
 
