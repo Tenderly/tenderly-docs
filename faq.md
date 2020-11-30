@@ -1,4 +1,4 @@
-# FAQ
+# 🤔 FAQ
 
 ### Can I monitor any Smart Contract?
 

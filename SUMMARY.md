@@ -1,30 +1,46 @@
 # Table of contents
 
-* [General](README.md)
-* [Project Setup](project-setup/README.md)
-  * [Creating a Project](project-setup/creating-project.md)
-  * [Importing a Public Contract](project-setup/import-public-contracts.md)
-  * [Monitoring your Smart Contracts](project-setup/monitoring-contracts.md)
-* [Integrations](integrations/README.md)
+* [🏠 General](README.md)
+* [🏁 Getting Started](getting-started/README.md)
+  * [Creating an account](getting-started/creating-an-account.md)
+  * [Creating an organization](getting-started/creating-an-organization.md)
+  * [Support networks](getting-started/support-networks.md)
+* [📒 Project](project/README.md)
+  * [Adding collaborators](project/adding-collaborators.md)
+  * [Transferring a project](project/transferring-a-project.md)
+
+## Features
+
+* [🔎 Transaction Debugger](features/transaction-debugger/README.md)
+  * [Execution Overview](features/transaction-debugger/execution-overview.md)
+  * [Emitted Events](features/transaction-debugger/emitted-events.md)
+  * [State Changes](features/transaction-debugger/state-changes.md)
+  * [Debugger](features/transaction-debugger/debugger.md)
+  * [Gas Profiler](features/transaction-debugger/gas-profiler.md)
+* [🖥️ Monitoring](features/monitoring/README.md)
+  * [Contracts](features/monitoring/contracts.md)
+  * [Wallets](features/monitoring/wallets.md)
+  * [Transaction Filtering](features/monitoring/transaction-filtering.md)
+* [📟 Alerting](features/alerting.md)
+* [📊 Analytics](features/analytics.md)
+* [🎰 Simulator](features/simulator.md)
+* [🍴 Forks](features/forks.md)
+
+---
+
+* [📦 Modules](modules.md)
+* [⚙️ Integrations](integrations/README.md)
   * [Slack](integrations/slack.md)
+  * [Discord](integrations/discord.md)
+  * [Telegram](integrations/telegram.md)
+  * [Sentry](integrations/sentry.md)
   * [PagerDuty](integrations/pagerduty.md)
-* [FAQ](faq.md)
-* [Changelog](changelog.md)
+* [🤔 FAQ](faq.md)
 
-## CLI
+## Other
 
-* [Getting Started](cli/getting-started/README.md)
-  * [Installing the Tenderly CLI](cli/getting-started/installing-the-tenderly-cli.md)
-  * [Configure your Project](cli/getting-started/configure-your-project.md)
-  * [Setup the Proxy listener](cli/getting-started/setup-the-proxy-listener.md)
-* [Commands](cli/commands/README.md)
-  * [init](cli/commands/init.md)
-  * [proxy](cli/commands/proxy.md)
-  * [logout](cli/commands/logout.md)
-  * [push](cli/commands/push.md)
-  * [update-check](cli/commands/update-check.md)
-  * [login](cli/commands/login.md)
-  * [help](cli/commands/help.md)
-  * [whoami](cli/commands/whoami.md)
-  * [version](cli/commands/version.md)
+* [💻 CLI Documentation](https://docs.tenderly.co/cli)
+* [👷 Hardhat Plugin](https://github.com/Tenderly/hardhat-tenderly)
+* [🚀 API Documetnation](https://docs.tenderly.co/api)
+* [🤓 Privacy Policy](https://tenderly.co/privacy-policy)
 

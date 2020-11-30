@@ -1,3 +1,7 @@
+---
+description: Receive alerts in real-time and act upon them.
+---
+
 # PagerDuty
 
 You can connect Tenderly with your PagerDuty workspace and get real-time notifications when an alert rule matches a transaction. Connecting multiple services is also supported so you can route certain rules to specific services.
