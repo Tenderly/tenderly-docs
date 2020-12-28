@@ -35,6 +35,7 @@
   * [Telegram](integrations/telegram.md)
   * [Sentry](integrations/sentry.md)
   * [PagerDuty](integrations/pagerduty.md)
+* [🔌 Remix Plugin](remix-plugin.md)
 * [🤔 FAQ](faq.md)
 
 ## Other
