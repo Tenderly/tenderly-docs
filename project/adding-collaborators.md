@@ -1,2 +1,2 @@
-# Adding collaborators
+# Solidity
 

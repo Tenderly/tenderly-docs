@@ -1,2 +1,2 @@
-# 📒 Project
+# Supported Languages
 

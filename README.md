@@ -1,2 +1,2 @@
-# 🏠 General
+# General Info
 
