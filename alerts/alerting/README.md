@@ -18,24 +18,9 @@ We run our own full nodes meaning that we process the blockchain in real-time. S
 
 Tenderly integrates with your favourite apps and services. Each integration offers features that help track your Alerts.
 
-![](../../.gitbook/assets/image%20%2812%29.png)
+![](../../.gitbook/assets/image%20%2824%29.png)
 
 {% hint style="warning" %}
 #### All destinations are shared account-wide on all projects. If you edit or delete a destination it will be applied to all projects and active rules. Check out how to [configure Alert destinations here.](alert-targets/configuring-alert-destinations/)
 {% endhint %}
-
-This is the list of alert types Tenderly provides:
-
-![](../../.gitbook/assets/image%20%2813%29.png)
-
-
-
-* **Successful Transaction** - Get notified if a transaction has succeeded
-* **Failed Transaction** - Get notified if a transaction has failed
-* **Whitelisted Callers** - Get notified if an unknown address calls your Smart Contract
-* **Blacklisted Callers** - Get notified if a specific address from the blacklist calls your Smart Contract
-* **Function Call** - Get notified if a specific function gets called in a transaction
-* **SC Caller** - Get alerted if another Smart Contract calls your Smart Contract
-* **Specific** - Get alerted when a function is called with a specific argument
-* **Compare** - Use operators like greater than, equal, etc. to compare function arguments
 

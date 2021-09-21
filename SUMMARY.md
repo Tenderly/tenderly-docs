@@ -54,7 +54,7 @@
     * [Contracts](monitoring/contracts/execution-overview/contracts.md)
     * [Events](monitoring/contracts/execution-overview/events.md)
     * [State Changes](monitoring/contracts/execution-overview/state-changes.md)
-    * [Debugger](monitoring/contracts/execution-overview/debugger.md)
+    * [Stack Traces \(Debugger\)](monitoring/contracts/execution-overview/debugger.md)
     * [Gas Profiler](monitoring/contracts/execution-overview/gas-profiler.md)
     * [Access List](monitoring/contracts/execution-overview/access-list.md)
   * [Transaction Filtering](monitoring/contracts/transaction-filtering/README.md)
@@ -65,6 +65,7 @@
   * [Private/Local Contracts](monitoring/smart-contracts/private-local-contracts/README.md)
     * [Verifying Private Contracts](monitoring/smart-contracts/private-local-contracts/verifying-private-contracts.md)
   * [Tags](monitoring/smart-contracts/tags.md)
+  * [Using CLI to create a Project and push your Smart Contracts to Tenderly](monitoring/smart-contracts/using-cli-to-create-a-project-and-push-your-smart-contracts-to-tenderly.md)
 
 ## Simulations & Forks
 
@@ -80,7 +81,13 @@
 * [Edit Contract Source](simulations-and-forks/edit-contract-source.md)
 * [Custom Contracts \(Import ABI\)](simulations-and-forks/custom-contracts-import-abi.md)
 * [Integrations](simulations-and-forks/integrations/README.md)
-  * [HardHat](simulations-and-forks/integrations/hardhat.md)
+  * [HardHat](simulations-and-forks/integrations/hardhat/README.md)
+    * [How to set up Hardhat](simulations-and-forks/integrations/hardhat/how-to-set-up-hardhat.md)
+    * [How to install Tenderly and integrate it with Hardhat](simulations-and-forks/integrations/hardhat/how-to-install-tenderly-and-integrate-it-with-hardhat.md)
+    * [How to deploy your contracts via ethers.js](simulations-and-forks/integrations/hardhat/how-to-deploy-your-contracts-via-ethers.js.md)
+    * [How to use the \`tenderly export\` command to debug and profile local transactions](simulations-and-forks/integrations/hardhat/how-to-use-the-tenderly-export-command-to-debug-and-profile-local-transactions.md)
+    * [How to push and verify Smart Contracts with the hardhat-tenderly tasks](simulations-and-forks/integrations/hardhat/how-to-push-and-verify-smart-contracts-with-the-hardhat-tenderly-tasks.md)
+    * [How to push and verify Smart Contracts directly through code](simulations-and-forks/integrations/hardhat/how-to-push-and-verify-smart-contracts-directly-through-code.md)
   * [Truffle](simulations-and-forks/integrations/truffle.md)
   * [Brownie](simulations-and-forks/integrations/brownie.md)
 

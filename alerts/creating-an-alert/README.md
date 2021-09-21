@@ -12,7 +12,7 @@ Let’s say I want to get alerted whenever any of my Smart Contracts fail. What 
 
 Now if a transaction ever fails, I get notified instantly. This means that I can act immediately instead of waiting for my Dapp users to contact me that something isn’t working, like in the following Alert example:
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/image%20%2817%29.png)
 
 You can read more broadly about this on [https://blog.tenderly.co/how-to-set-up-real-time-alerting-for-smart-contracts-with-tenderly/](https://blog.tenderly.co/how-to-set-up-real-time-alerting-for-smart-contracts-with-tenderly/).
 
