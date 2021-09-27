@@ -2,7 +2,7 @@
 
 To invite someone to your project, go to the **Collaborators** tab and click **Add Collaborator**.
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../.gitbook/assets/image%20%2842%29.png)
 
 There you'll be able to pick the permissions the newly added Collaborator has for this project.
 

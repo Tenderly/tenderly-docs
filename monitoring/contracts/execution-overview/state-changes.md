@@ -2,7 +2,7 @@
 
 As Smart Contracts are getting more and more complex, the states of those smart contracts are getting more complex as well.
 
-![](../../../.gitbook/assets/image%20%2825%29.png)
+![](../../../.gitbook/assets/image%20%2827%29.png)
 
 Here we see that not only does Tenderly show the state variables that were changed, but also **all of them are decoded for your convenience**. **And yes, structures are decoded correctly as well**.
 

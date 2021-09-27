@@ -2,7 +2,7 @@
 
 This is the list of alert types Tenderly provides:
 
-![](../../.gitbook/assets/image%20%2842%29.png)
+![](../../.gitbook/assets/image%20%2845%29.png)
 
 * **Successful Transaction** - Get notified if a transaction has succeeded
 * **Failed Transaction** - Get notified if a transaction has failed
