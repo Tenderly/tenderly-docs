@@ -2,7 +2,7 @@
 
 With Tenderly transaction debugging, monitoring, and alerting features, you can know exactly what happened, the instant it happens. With the Analytics, you can get useful insights across all transactions in your project:
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2829%29.png)
 
 
 

@@ -2,7 +2,7 @@
 
 What's better than having all transactions in one place? Filtering through them at the speed of light! Ok, maybe not the speed of light, but faster than anything else for sure:
 
-![](../../../.gitbook/assets/image%20%2843%29.png)
+![](../../../.gitbook/assets/image%20%2851%29.png)
 
 As you can see, you can filter by multiple properties:
 
