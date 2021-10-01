@@ -26,7 +26,7 @@ Let’s get notified every time a new CryptoKitty is born:
 * Pick the **KittyCore** Smart Contract as the Alert target
 * Select the **giveBirth** function
 
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 
 That’s it! You’ll get an e-mail whenever a cute little CryptoKitty comes into this world. Or not this world, but to the Ethereum blockchain at least.
 

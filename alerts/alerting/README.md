@@ -18,7 +18,7 @@ We run our own full nodes meaning that we process the blockchain in real-time. S
 
 Tenderly integrates with your favourite apps and services. Each integration offers features that help track your Alerts.
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2837%29.png)
 
 {% hint style="warning" %}
 #### All destinations are shared account-wide on all projects. If you edit or delete a destination it will be applied to all projects and active rules. Check out how to [configure Alert destinations here.](alert-targets/configuring-alert-destinations/)

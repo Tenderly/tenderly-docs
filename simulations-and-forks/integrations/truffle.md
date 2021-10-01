@@ -253,9 +253,9 @@ Error: 0x0 Error: INVALID OPCODE, execution stopped
 ...
 ```
 
-![This the the error we get when we don&#x2019;t proxy our requests through the Tenderly CLI](../../.gitbook/assets/image%20%2841%29.png)
+![This the the error we get when we don&#x2019;t proxy our requests through the Tenderly CLI](../../.gitbook/assets/image%20%2845%29.png)
 
-![And this is the human readable stack trace we get when we do proxy our requests thru the Tenderly CLI](../../.gitbook/assets/image%20%2821%29.png)
+![And this is the human readable stack trace we get when we do proxy our requests thru the Tenderly CLI](../../.gitbook/assets/image%20%2823%29.png)
 
 ### Writing the tests and fixing the contract <a id="writing-the-tests-and-fixing-the-contract"></a>
 
@@ -274,7 +274,7 @@ contract('Calculator', function (accounts) {
 
 We can run the truffle test --network tenderly command to see if we’ve set up everything properly:
 
-![](../../.gitbook/assets/image%20%2828%29.png)
+![](../../.gitbook/assets/image%20%2831%29.png)
 
 You can see that we get a stack trace that gives us enough information to fix the issue.
 

@@ -21,6 +21,20 @@
 * [Explorer](explorer.md)
 * [Case Studies](case-studies.md)
 
+## Tenderly API
+
+* [Authenticating with the Tenderly API](tenderly-api/authenticating-with-the-tenderly-api.md)
+* [Transaction Search API](tenderly-api/transaction-search-api.md)
+* [Analytics API](tenderly-api/analytics-api.md)
+* [Trace API](tenderly-api/trace-api.md)
+* [Alerting API](tenderly-api/alerting-api.md)
+* [Simulation\(s\) API](tenderly-api/simulation-s-api.md)
+* [Smart Contract Management API](tenderly-api/smart-contract-management-api.md)
+* [Transaction Information API](tenderly-api/transaction-information-api.md)
+* [Synthetix API](tenderly-api/synthetix-api.md)
+* [Account Tokens API](tenderly-api/account-tokens-api.md)
+* [InstaDapp Simulate API](tenderly-api/instadapp-simulate-api.md)
+
 ## Alerts
 
 * [Webhook Notifications](alerts/alerting/README.md)
@@ -47,6 +61,7 @@
   * [State Change](alerts/creating-an-alert/state-change.md)
   * [View Function](alerts/creating-an-alert/view-function.md)
   * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
+  * [Evaluate Expression](alerts/creating-an-alert/evaluate-expression.md)
 
 ## Monitoring
 
@@ -76,7 +91,13 @@
     * [Simulating a Transaction without submitting it on-chain](simulations-and-forks/how-to-simulate-a-transaction/what-can-simulations-be-used-for/simulating-a-transaction-without-submitting-it-on-chain.md)
     * [Simulate vs Resimulate \(Historical vs Pending\)](simulations-and-forks/how-to-simulate-a-transaction/what-can-simulations-be-used-for/simulate-vs-resimulate-historical-vs-pending.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
+  * [How to set up Metamask with Tenderly](simulations-and-forks/how-to-create-a-fork/how-to-set-up-metamask-with-tenderly.md)
+  * [Tenderly Fork API](simulations-and-forks/how-to-create-a-fork/tenderly-fork-api.md)
+  * [Chain Simulations](simulations-and-forks/how-to-create-a-fork/chain-simulations.md)
+  * [Custom RPC API](simulations-and-forks/how-to-create-a-fork/custom-rpc-api.md)
+  * [Tenderly RPC \(with HardHat\)](simulations-and-forks/how-to-create-a-fork/tenderly-rpc-with-hardhat.md)
   * [Simulation & Transaction Parameters](simulations-and-forks/how-to-create-a-fork/simulation-and-transaction-parameters.md)
+  * [Optimizations](simulations-and-forks/how-to-create-a-fork/optimizations.md)
 * [What can Forks be used for](simulations-and-forks/what-can-forks-be-used-for.md)
 * [Verifying a Smart Contract](simulations-and-forks/verifying-a-smart-contract.md)
 * [Edit Contract Source](simulations-and-forks/edit-contract-source.md)
@@ -89,8 +110,10 @@
     * [How to use the \`tenderly export\` command to debug and profile local transactions](simulations-and-forks/integrations/hardhat/how-to-use-the-tenderly-export-command-to-debug-and-profile-local-transactions.md)
     * [How to push and verify Smart Contracts with the hardhat-tenderly tasks](simulations-and-forks/integrations/hardhat/how-to-push-and-verify-smart-contracts-with-the-hardhat-tenderly-tasks.md)
     * [How to push and verify Smart Contracts directly through code](simulations-and-forks/integrations/hardhat/how-to-push-and-verify-smart-contracts-directly-through-code.md)
+    * [How to use Hardhat and Tenderly to monitor and debug your BSC Smart Contracts](simulations-and-forks/integrations/hardhat/how-to-use-hardhat-and-tenderly-to-monitor-and-debug-your-bsc-smart-contracts.md)
   * [Truffle](simulations-and-forks/integrations/truffle.md)
   * [Brownie](simulations-and-forks/integrations/brownie.md)
+  * [Docker](simulations-and-forks/integrations/docker.md)
 
 ## Debugger
 
