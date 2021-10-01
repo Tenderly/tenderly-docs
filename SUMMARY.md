@@ -46,6 +46,7 @@
   * [Transaction Value](alerts/creating-an-alert/transaction-value.md)
   * [State Change](alerts/creating-an-alert/state-change.md)
   * [View Function](alerts/creating-an-alert/view-function.md)
+  * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
 
 ## Monitoring
 

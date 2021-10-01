@@ -1,5 +1,13 @@
 # Blacklisted Callers
 
+{% embed url="https://www.loom.com/share/25d3651b44f24b05b65b68009d5b52da" %}
+
+#### Introduction
+
+Triggers whenever an address from this list calls one of your contracts.
+
+#### Example 1
+
 This one is one of the favourite security-oriented alerts: **we can get a notification whenever someone who isn’t whitelisted calls our contract**.
 
 For this example, I’ve set up a simple Gnosis Multisig Wallet which you can [find here](https://dashboard.tenderly.co/contract/kovan/0xbcf55f198e2a5ff4c632610183b1a5290c193e4a?utm_source=medium&utm_campaign=alerting_release&utm_medium=post&utm_content=public_contract_listing).
@@ -11,4 +19,14 @@ Now, whenever someone other then the owners of the Multisig Wallet calls this Sm
 * I’ve added the following addresses to the whitelist \(the owners of the Multisig wallet\): **0xc9E094Deb826b00D10af0aB3D2A62d712e89F67A** and **0xC4dFd227848Fbe6640ab14c9C339845BEd350665.**
 
 Tenderly has a smart delivery algorithm for the e-mails we send your way. You will get notified instantly when something happens, and afterward, you will receive aggregated notifications when it makes more sense, so the spam will be on a bare minimum if any. So you’ll have both the latest alerts from Tenderly and the latest and greats from Netflix at the top of your inbox!
+
+#### Example 2
+
+Let’s get notified every time when blacklisted address calls contracts from our Project.
+
+* First of all, we need to add Smart Contract to Project. You can see here how to **\[Add new contract\]** into Project.
+
+* Click on **Alerting** in the navigation **—&gt;** **New Alert** **—&gt;** **Blacklisted Callers —&gt; Project —&gt;** Paste the address you want to blacklist and click the **Add** button **—&gt; Next —&gt;** Choose Alert Destination **—&gt; Save.** 
+* That’s it! You'll receive a notification whenever blacklisted addresses call for contracts from our project. 
+* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
 

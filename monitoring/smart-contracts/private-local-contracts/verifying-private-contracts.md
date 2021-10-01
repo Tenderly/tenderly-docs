@@ -8,7 +8,7 @@ You can verify your Smart Contracts by using our CLI. If you don’t have our CL
 tenderly verify
 ```
 
-![](../../../.gitbook/assets/image%20%2839%29.png)
+![](../../../.gitbook/assets/image%20%2840%29.png)
 
 That’s it! Your Smart Contracts are now verified with Tenderly and publicly monitored!
 

@@ -30,13 +30,13 @@ The first part involves Dy/Dx protocol that can be used as a flash loan platform
 
 If you overlay a function you’ll have the option to move to the debugger view of the selected state, we have this for the swap function:
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
 
 You can see that once the transaction did the flash loan it first tried to swap the tokens using 1inch. The from token is USDT, the toToken is wrapped Ether: WETH. The smart contract asks to swap 4234.575953 USDT to at least 19 Ether. As you can see Tenderly enable us to decode every parameter of internal calls even if the transaction failed. If you’re interacting with known contract the tool will directly decode the parameters for you otherwise you can upload your own smart contracts to the platform. 
 
 If we scroll down enough until the place where the transaction was reverted at the end of the swap call:
 
-![](../../.gitbook/assets/image%20%2842%29.png)
+![](../../.gitbook/assets/image%20%2843%29.png)
 
 If we go in the debugger view of this call we’ll be able to get details:
 

@@ -1,2 +1,17 @@
 # Event Emit
 
+{% embed url="https://www.loom.com/share/c6e6b33d5bcd4cfd852c0cd6e26f5f4d" %}
+
+#### Introduction
+
+Triggers whenever a specific event is emitted in one of your contracts.
+
+#### Example
+
+Let’s get notified every time when a spender is granted rights to withdraw tokens from an owner.
+
+* First of all, we need to add some ERC20 Smart Contract to Project. You can see here how to **\[Add new contract\]** into Project. 
+* Click on **Alerting** in the navigation **—&gt;** **New Alert** **—&gt;** **Event Emit —&gt; Contract —&gt; Select Contract —&gt;** Find ERC20 Smart Contract and Choose it **—&gt;** Choose **Approval** event **—&gt; Next —&gt;** Choose Alert Destination **—&gt; Save.** 
+* That’s it! You’ll get a notification whenever the allowance of a spender for an owner is set by a call to [approve](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-). 
+* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+

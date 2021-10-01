@@ -8,7 +8,7 @@ Alert destinations need to be set up only once per organization, then it is avai
 
 Open Destinations tab:
 
-![](../../../../.gitbook/assets/image%20%2847%29.png)
+![](../../../../.gitbook/assets/image%20%2849%29.png)
 
 ### Tenderly &lt;&gt; Slack
 
@@ -18,7 +18,7 @@ Add the Tenderly Slack App to your workspace and authorize a specific channel wh
 
 Popup will show then if you click on connect Slack button you will be redirected to slack authorization screen where you can choose the channel where should Tenderly post and it's it.
 
-![](../../../../.gitbook/assets/image%20%2830%29.png)
+![](../../../../.gitbook/assets/image%20%2831%29.png)
 
 
 
