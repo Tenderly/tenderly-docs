@@ -3,8 +3,6 @@
 * [General Info](README.md)
 * [Supported Networks](getting-started/README.md)
   * [Local Network Support](getting-started/creating-an-account.md)
-  * [Creating an organization](getting-started/creating-an-organization.md)
-  * [Support networks](getting-started/support-networks.md)
 * [Supported Languages](project/README.md)
   * [Solidity](project/adding-collaborators.md)
   * [Vyper](project/transferring-a-project.md)
