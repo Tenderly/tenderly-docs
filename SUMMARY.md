@@ -145,5 +145,5 @@
 
 ---
 
-* [リックロール](https://youtu.be/mW61VTLhNjQ?t=48)
+* [リックロール](https://youtu.be/mW61VTLhNjQ?t=47)
 
