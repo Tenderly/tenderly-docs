@@ -69,13 +69,15 @@
     * [Access List](monitoring/contracts/execution-overview/access-list.md)
   * [Transaction Filtering](monitoring/contracts/transaction-filtering/README.md)
     * [Parameters](monitoring/contracts/transaction-filtering/parameters.md)
-    * [Tags](monitoring/contracts/transaction-filtering/tags.md)
 * [Smart Contracts](monitoring/smart-contracts/README.md)
   * [Public Contracts](monitoring/smart-contracts/public-contracts.md)
   * [Private/Local Contracts](monitoring/smart-contracts/private-local-contracts/README.md)
     * [Verifying Private Contracts](monitoring/smart-contracts/private-local-contracts/verifying-private-contracts.md)
   * [Tags](monitoring/smart-contracts/tags.md)
   * [Using CLI to create a Project and push your Smart Contracts to Tenderly](monitoring/smart-contracts/using-cli-to-create-a-project-and-push-your-smart-contracts-to-tenderly.md)
+* [Wallets](monitoring/wallets/README.md)
+  * [Converting Contracts into Wallets](monitoring/wallets/converting-contracts-into-wallets.md)
+  * [Wallet Public Page](monitoring/wallets/wallet-public-page.md)
 
 ## Simulations & Forks
 
@@ -108,12 +110,9 @@
 
 * [How to use Tenderly Debugger](debugger/how-to-use-tenderly-debugger/README.md)
   * [Transaction Overview](debugger/how-to-use-tenderly-debugger/transaction-overview.md)
-  * [Stack Traces](debugger/how-to-use-tenderly-debugger/stack-traces/README.md)
-    * [Legend](debugger/how-to-use-tenderly-debugger/stack-traces/legend.md)
+  * [Stack Traces](debugger/how-to-use-tenderly-debugger/stack-traces.md)
   * [Decoded Events/Logs](debugger/how-to-use-tenderly-debugger/decoded-events-logs.md)
   * [Decoded State Changes](debugger/how-to-use-tenderly-debugger/decoded-state-changes.md)
-  * [Access List](debugger/how-to-use-tenderly-debugger/access-list.md)
-  * [Contract Source](debugger/how-to-use-tenderly-debugger/contract-source.md)
 * [Gas Profiler](debugger/gas-profiler.md)
 * [Exporting a Local Transaction](debugger/exporting-a-local-transaction.md)
 
