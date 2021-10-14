@@ -2,7 +2,7 @@
 
 ## API Authentication
 
-You can read more about API authentication here: [Authenticating with the Tenderly API](../../tenderly-api/authenticating-with-the-tenderly-api.md).
+You can read more about API authentication here: [Authenticating with the Tenderly API](broken-reference).
 
 {% hint style="info" %}
 The rest of this document assumes you have authenticated with one of the two previously mentioned methods.

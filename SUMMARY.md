@@ -15,20 +15,6 @@
   * [Organizations](teams-and-collaboration/organizations.md)
 * [Explorer](explorer.md)
 
-## Tenderly API
-
-* [Authenticating with the Tenderly API](tenderly-api/authenticating-with-the-tenderly-api.md)
-* [Transaction Search API](tenderly-api/transaction-search-api.md)
-* [Analytics API](tenderly-api/analytics-api.md)
-* [Trace API](tenderly-api/trace-api.md)
-* [Alerting API](tenderly-api/alerting-api.md)
-* [Simulation(s) API](tenderly-api/simulation-s-api.md)
-* [Smart Contract Management API](tenderly-api/smart-contract-management-api.md)
-* [Transaction Information API](tenderly-api/transaction-information-api.md)
-* [Synthetix API](tenderly-api/synthetix-api.md)
-* [Account Tokens API](tenderly-api/account-tokens-api.md)
-* [InstaDapp Simulate API](tenderly-api/instadapp-simulate-api.md)
-
 ## Alerts
 
 * [Webhook Notifications](alerts/alerting/README.md)
@@ -82,6 +68,8 @@
 
 * [How to Simulate a Transaction](simulations-and-forks/how-to-simulate-a-transaction/README.md)
   * [Transaction Parameters](simulations-and-forks/how-to-simulate-a-transaction/transaction-parameters.md)
+  * [Pending vs Historical Block](simulations-and-forks/how-to-simulate-a-transaction/pending-vs-historical-block.md)
+  * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
   * [How to set up Metamask with Tenderly](simulations-and-forks/how-to-create-a-fork/how-to-set-up-metamask-with-tenderly.md)
   * [Tenderly Fork API](simulations-and-forks/how-to-create-a-fork/tenderly-fork-api.md)
