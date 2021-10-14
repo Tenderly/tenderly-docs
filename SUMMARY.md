@@ -3,10 +3,7 @@
 * [General Info](README.md)
 * [Supported Networks](getting-started/README.md)
   * [Local Network Support](getting-started/creating-an-account.md)
-* [Supported Languages](project/README.md)
-  * [Solidity](project/adding-collaborators.md)
-  * [Vyper](project/transferring-a-project.md)
-* [Dashboard Settings](dashboard-settings.md)
+* [Supported Languages](project.md)
 * [Pricing](pricing/README.md)
   * [Billing](pricing/billing.md)
 * [Projects](projects/README.md)
@@ -17,7 +14,6 @@
   * [Collaborators](teams-and-collaboration/collaborators.md)
   * [Organizations](teams-and-collaboration/organizations.md)
 * [Explorer](explorer.md)
-* [Case Studies](case-studies.md)
 
 ## Tenderly API
 
@@ -26,7 +22,7 @@
 * [Analytics API](tenderly-api/analytics-api.md)
 * [Trace API](tenderly-api/trace-api.md)
 * [Alerting API](tenderly-api/alerting-api.md)
-* [Simulation\(s\) API](tenderly-api/simulation-s-api.md)
+* [Simulation(s) API](tenderly-api/simulation-s-api.md)
 * [Smart Contract Management API](tenderly-api/smart-contract-management-api.md)
 * [Transaction Information API](tenderly-api/transaction-information-api.md)
 * [Synthetix API](tenderly-api/synthetix-api.md)
@@ -68,7 +64,7 @@
     * [Contracts](monitoring/contracts/execution-overview/contracts.md)
     * [Events](monitoring/contracts/execution-overview/events.md)
     * [State Changes](monitoring/contracts/execution-overview/state-changes.md)
-    * [Stack Traces \(Debugger\)](monitoring/contracts/execution-overview/debugger.md)
+    * [Stack Traces (Debugger)](monitoring/contracts/execution-overview/debugger.md)
     * [Gas Profiler](monitoring/contracts/execution-overview/gas-profiler.md)
     * [Access List](monitoring/contracts/execution-overview/access-list.md)
   * [Transaction Filtering](monitoring/contracts/transaction-filtering/README.md)
@@ -85,21 +81,16 @@
 
 * [How to Simulate a Transaction](simulations-and-forks/how-to-simulate-a-transaction/README.md)
   * [Transaction Parameters](simulations-and-forks/how-to-simulate-a-transaction/transaction-parameters.md)
-  * [What can Simulations be used for](simulations-and-forks/how-to-simulate-a-transaction/what-can-simulations-be-used-for/README.md)
-    * [Simulating a Transaction without submitting it on-chain](simulations-and-forks/how-to-simulate-a-transaction/what-can-simulations-be-used-for/simulating-a-transaction-without-submitting-it-on-chain.md)
-    * [Simulate vs Resimulate \(Historical vs Pending\)](simulations-and-forks/how-to-simulate-a-transaction/what-can-simulations-be-used-for/simulate-vs-resimulate-historical-vs-pending.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
   * [How to set up Metamask with Tenderly](simulations-and-forks/how-to-create-a-fork/how-to-set-up-metamask-with-tenderly.md)
   * [Tenderly Fork API](simulations-and-forks/how-to-create-a-fork/tenderly-fork-api.md)
   * [Chain Simulations](simulations-and-forks/how-to-create-a-fork/chain-simulations.md)
   * [Custom RPC API](simulations-and-forks/how-to-create-a-fork/custom-rpc-api.md)
-  * [Tenderly RPC \(with HardHat\)](simulations-and-forks/how-to-create-a-fork/tenderly-rpc-with-hardhat.md)
-  * [Simulation & Transaction Parameters](simulations-and-forks/how-to-create-a-fork/simulation-and-transaction-parameters.md)
+  * [Tenderly RPC (with HardHat)](simulations-and-forks/how-to-create-a-fork/tenderly-rpc-with-hardhat.md)
   * [Optimizations](simulations-and-forks/how-to-create-a-fork/optimizations.md)
-* [What can Forks be used for](simulations-and-forks/what-can-forks-be-used-for.md)
 * [Verifying a Smart Contract](simulations-and-forks/verifying-a-smart-contract.md)
 * [Edit Contract Source](simulations-and-forks/edit-contract-source.md)
-* [Custom Contracts \(Import ABI\)](simulations-and-forks/custom-contracts-import-abi.md)
+* [Custom Contracts (Import ABI)](simulations-and-forks/custom-contracts-import-abi.md)
 * [Integrations](simulations-and-forks/integrations/README.md)
   * [HardHat](simulations-and-forks/integrations/hardhat/README.md)
     * [How to set up Hardhat](simulations-and-forks/integrations/hardhat/how-to-set-up-hardhat.md)
@@ -132,7 +123,7 @@
 * [Custom Queries](analytics/custom-queries.md)
 * [Custom Scripts](analytics/custom-scripts.md)
 
----
+***
 
 * [🤔 FAQ](faq.md)
 
@@ -143,7 +134,6 @@
 * [🚀 API Documetnation](https://docs.tenderly.co/api)
 * [🤓 Privacy Policy](https://tenderly.co/privacy-policy)
 
----
+***
 
 * [リックロール](https://youtu.be/mW61VTLhNjQ?t=47)
-

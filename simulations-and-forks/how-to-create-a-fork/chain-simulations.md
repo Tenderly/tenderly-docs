@@ -12,7 +12,7 @@ The rest of this document assumes you have authenticated with one of the two pre
 
 To start off you'll need to get your `account_id` and `project_slug`. To do so, simply navigate to the dashboard and look at the address bar:
 
-![](../../.gitbook/assets/image%20%2853%29.png)
+![](<../../.gitbook/assets/image (53).png>)
 
 ### 1. Creating an environment
 
@@ -24,7 +24,7 @@ After you have that, you need to create an environment where the states will be 
 
 **Payload**:
 
-```text
+```
 {
     "network_id": "1",
 		"block_number": 15107216,
@@ -34,11 +34,11 @@ After you have that, you need to create an environment where the states will be 
 
 **Payload explanation**:
 
-| Name | Type | Description | Mandatory Y/N |
-| :--- | :--- | :--- | :--- |
-| network\_id | string | ID of the network that we want to fork for our environment. | Y |
-| block\_number | number | Block height - if left out the latest block will be used. | N |
-| transaction\_index | number | The index of the transaction inside the block.   Note: This parameter must be omitted or 0 when the block\_number property is left out. | N |
+| Name              | Type   | Description                                                                                                                                         | Mandatory Y/N |
+| ----------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| network_id        | string | ID of the network that we want to fork for our environment.                                                                                         | Y             |
+| block_number      | number | Block height - if left out the latest block will be used.                                                                                           | N             |
+| transaction_index | number | <p>The index of the transaction inside the block. <br><br>Note: This parameter must be omitted or 0 when the block_number property is left out.</p> | N             |
 
 **Response**:
 
@@ -59,7 +59,7 @@ Now that that's done, we can get to simulating. The forkID parameter is the one 
 
 **Payload**:
 
-```text
+```
 {
     "from": "0x1E739B75473DF4DaD24Ea68d14a78C093aFe598E",
     "to": "0x8ad82450cb3c8bac5b4357b3c2a2a249212b84cd",
@@ -74,23 +74,23 @@ Now that that's done, we can get to simulating. The forkID parameter is the one 
 
 **Payload explanation**:
 
-| Name | Type | Description | Mandatory Y/N |
-| :--- | :--- | :--- | :--- |
-| from | string | The originating address for the simulated transaction. | Y |
-| to | string | The destination address for the simulated transaction. | Y |
-| input | string | ABI encoded input for the transaction. | Y |
-| gas | number | The gas limit for the transaction. | Y |
-| gas\_price | string | The gas price for the transaction. | N |
-| value | string | The ETH value sent in the transaction. | N |
-| simulation\_type | string | Either _full_ or _quick - full_ simulations use the contracts source code to generate a full trace, while the _quick_ simulation will only use the contracts bytecode. If omitted, the default value is _full_. | N |
-| save | boolean | Whether or not to save this simulation for later inspection. | N |
-| root | string | ID of the previous transaction in the chain. If omitted, will behave like a regular simulation. | N |
+| Name            | Type    | Description                                                                                                                                                                                                     | Mandatory Y/N |
+| --------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| from            | string  | The originating address for the simulated transaction.                                                                                                                                                          | Y             |
+| to              | string  | The destination address for the simulated transaction.                                                                                                                                                          | Y             |
+| input           | string  | ABI encoded input for the transaction.                                                                                                                                                                          | Y             |
+| gas             | number  | The gas limit for the transaction.                                                                                                                                                                              | Y             |
+| gas_price       | string  | The gas price for the transaction.                                                                                                                                                                              | N             |
+| value           | string  | The ETH value sent in the transaction.                                                                                                                                                                          | N             |
+| simulation_type | string  | Either _full_ or _quick - full_ simulations use the contracts source code to generate a full trace, while the _quick_ simulation will only use the contracts bytecode. If omitted, the default value is _full_. | N             |
+| save            | boolean | Whether or not to save this simulation for later inspection.                                                                                                                                                    | N             |
+| root            | string  | ID of the previous transaction in the chain. If omitted, will behave like a regular simulation.                                                                                                                 | N             |
 
 **Response:**
 
 [simulate-fork-example.json](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/37971b98-c49c-4777-8ff2-871b502144a6/simulate-fork-example.json)
 
-In order to chain transaction simulations simply call the above endpoint and store the returned id somewhere \(`id` of the `simulation` entity in the response\)
+In order to chain transaction simulations simply call the above endpoint and store the returned id somewhere (`id` of the `simulation` entity in the response)
 
 ### Extras
 
@@ -104,7 +104,7 @@ When you deploy a contract as part of a fork, you can verify it with Tenderly, s
 
 **Payload**:
 
-```text
+```
 {
     "contracts": [
         {
@@ -149,4 +149,3 @@ When you deploy a contract as part of a fork, you can verify it with Tenderly, s
 **Request type**: `GET`
 
 **Payload**: N/A
-

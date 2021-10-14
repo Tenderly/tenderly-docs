@@ -14,9 +14,11 @@ This alert is triggered only when a transaction reduces the balance of the addre
 
 Let’s get notified when the contract balance falls below a set threshold.
 
-* First of all, we need to add Smart Contract to Project. You can see here how to **\[Add new contract\]** into Project.
+*   First of all, we need to add Smart Contract to Project. You can see here how to **\[Add new contract]** into Project.
 
-* Click on **Alerting** in the navigation **—&gt;** **New Alert** **—&gt;** **ETH Balance —&gt; Contract —&gt; Select Contract —&gt;**Find Smart Contract and Choose it **—&gt;** Enter threshold in Wei **—&gt; Next —&gt;** Choose Alert Destination **—&gt; Save.** 
-* That’s it! You’ll get a notification whenever the contract balance falls below a set threshold. 
+
+* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **ETH Balance —> Contract —> Select Contract —>**Find Smart Contract and Choose it **—>** Enter threshold in Wei **—> Next —>** Choose Alert Destination **—> Save.**\
+  ****
+* That’s it! You’ll get a notification whenever the contract balance falls below a set threshold.\
+
 * When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
-

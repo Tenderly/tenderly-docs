@@ -1,2 +1,4 @@
 # Supported Languages
 
+* Solidity
+* Vyper

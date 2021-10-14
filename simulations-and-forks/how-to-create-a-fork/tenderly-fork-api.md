@@ -2,12 +2,12 @@
 
 The fork API has 5 endpoints:
 
-**\(1\) Create Fork:** `POST /api/v1/account/{{accountID}}/project/{{projectID}}/fork`
+**(1) Create Fork:** `POST /api/v1/account/{{accountID}}/project/{{projectID}}/fork`
 
-  
+\
 Example request:
 
-```text
+```
 {
     "block_number": null,
     "network_id": "42",
@@ -30,15 +30,15 @@ Example request:
 }
 ```
 
-`block_number` , `initial_balance` \(given in ETH, defaults to 100 if no parameter is provided\) and `transaction_index` are optional parameters.  
+`block_number` , `initial_balance` (given in ETH, defaults to 100 if no parameter is provided) and `transaction_index` are optional parameters.\
 
 
-**\(2\) Get Fork:** `GET /api/v1/account/{{accountID}}/project/{{projectID}}/fork/{{forkID}}`
+**(2) Get Fork:** `GET /api/v1/account/{{accountID}}/project/{{projectID}}/fork/{{forkID}}`
 
-  
+\
 Example response:
 
-```text
+```
 "simulation_fork": {
         "id": "b7d37f45-7f12-48f9-b07d-7da2bd43e609",
         "project_id": "513070f4-8eab-4473-a22f-9c262e44c246",
@@ -79,14 +79,14 @@ Example response:
 }
 ```
 
-**\(3\) Simulate Transaction:**
+**(3) Simulate Transaction:**
 
 `POST /api/v1/account/{{accountID}}/project/{{projectID}}/fork/{{forkID}}/simulate`
 
-  
+\
 Example Request:
 
-```text
+```
 {
     "block_number": null,
     "transaction_index": null,
@@ -101,12 +101,12 @@ Example Request:
 }
 ```
 
-**\[See Simulate API docs for a more detailed documentation\]**  
-
+**\[See Simulate API docs for a more detailed documentation]**\
+****
 
 An added option is sending contract creation requests by omitting the `to` parameter. In this case you get the `input` parameter by pasting the contract creation bytecode and appending the constructor arguments at the end:
 
-```text
+```
 {
     "network_id": "42",
     "block_number": null,
@@ -120,14 +120,14 @@ An added option is sending contract creation requests by omitting the `to` param
 }
 ```
 
-**\(4\) Verify contract on fork:**
+**(4) Verify contract on fork:**
 
 `POST /api/v1/account/{{accountID}}/project/{{projectID}}/fork/{{forkID}}/verify`
 
-  
+\
 Similar to our Contract Verification endpoint:
 
-```text
+```
 {
     "contracts": [
         {
@@ -163,35 +163,35 @@ Similar to our Contract Verification endpoint:
 }
 ```
 
-The only extra parameter is `root`. This is the id of either the transaction that deployed the contract, or any subsequent transaction on the same fork. It allows us to get the bytecode from the transactions state objects.  
+The only extra parameter is `root`. This is the id of either the transaction that deployed the contract, or any subsequent transaction on the same fork. It allows us to get the bytecode from the transactions state objects.\
 
 
-**\(5\) Delete fork:**  
+**(5) Delete fork:**\
 `DELETE /api/v1/account/{{accountID}}/project/{{projectId}}/fork/{{forkID}}`
 
-Deletes the specified fork  
+Deletes the specified fork\
 
 
-**\(6\) Adding balance to accounts:**
+**(6) Adding balance to accounts:**
 
 `POST <https://api.tenderly.co/api/v1/account/{{account_id}>}/project/{{projectId}} /fork/{{forkID}}/balance`
 
 **Payload example**:
 
-```text
+```
 {
     "accounts": ["0x3Df2f692132f55b97cc9DA04A1fFFEA82F5d710b"],
 		"amount": 1000
 }
 ```
 
-**\(7\) Update Fork:**
+**(7) Update Fork:**
 
 `PUT /api/v1/account/{{accountID}}/project/{{projectID}}/fork/{{forkID}}`
 
 **Payload example**:
 
-```text
+```
 {
     "alias": "fork alias",
 		"description": "fork description",
@@ -199,9 +199,8 @@ Deletes the specified fork
 }
 ```
 
-**\(8\) Get the list of all fo the forks:**
+**(8) Get the list of all fo the forks:**
 
 `GET /api/v1/account/{{accountID}}/project/{{projectID}}/forks?page=1&perPage=20`
 
 **Payload example**: N/A
-
