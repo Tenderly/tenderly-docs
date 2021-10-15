@@ -1,16 +1,4 @@
-# Setting Up Web3 Actions
-
-{% hint style="warning" %}
-You will need the [**Tenderly CLI**](https://github.com/Tenderly/tenderly-cli) to intialize Web3 Actions.
-{% endhint %}
-
-To get started, all you have to do is run `tenderly actions init` which will lead you through setting up a project for your Web3 Actions. 
-
-By default, this will setup TypeScript project with `npm` but you can pass `--javascript` to use JavaScript instead.
-
-In this example, we're going to build a block notifier, which sends us a notification whenever 10 blocks are mined on Ethereum Mainnet.
-
-### Function
+# Functions
 
 A function must match `ActionFn`** **[type](https://github.com/Tenderly/tenderly-actions/blob/main/packages/tenderly-actions/src/actions.ts#L4):
 

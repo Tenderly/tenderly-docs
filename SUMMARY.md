@@ -12,8 +12,12 @@
 ## Web3 Actions
 
 * [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
-* [Setting Up Web3 Actions](web3-actions/setting-up-web3-actions.md)
-* [Triggers](web3-actions/triggers.md)
+* [Functions](web3-actions/functions.md)
+* [Triggers](web3-actions/triggers/README.md)
+  * [Periodic](web3-actions/triggers/periodic.md)
+  * [Webhook](web3-actions/triggers/webhook.md)
+  * [Block](web3-actions/triggers/block.md)
+  * [Transaction](web3-actions/triggers/transaction.md)
 * [Deploying your Web3 Actions](web3-actions/deploying-your-web3-actions.md)
 
 ## Alerts
