@@ -4,16 +4,17 @@
 * [Supported Networks](getting-started/README.md)
   * [Local Network Support](getting-started/creating-an-account.md)
 * [Supported Languages](project.md)
-* [Pricing](pricing/README.md)
-  * [Billing](pricing/billing.md)
 * [Projects](projects/README.md)
   * [Private Projects](projects/private-projects.md)
   * [Organization Projects](projects/organization-projects.md)
 * [Teams & Collaboration](teams-and-collaboration/README.md)
-  * [Sharing](teams-and-collaboration/sharing.md)
   * [Collaborators](teams-and-collaboration/collaborators.md)
   * [Organizations](teams-and-collaboration/organizations.md)
 * [Explorer](explorer.md)
+
+## Web3 Actions
+
+* [Page 1](web3-actions/page-1.md)
 
 ## Alerts
 
@@ -78,8 +79,6 @@
   * [Tenderly RPC (with HardHat)](simulations-and-forks/how-to-create-a-fork/tenderly-rpc-with-hardhat.md)
   * [Optimizations](simulations-and-forks/how-to-create-a-fork/optimizations.md)
 * [Verifying a Smart Contract](simulations-and-forks/verifying-a-smart-contract.md)
-* [Edit Contract Source](simulations-and-forks/edit-contract-source.md)
-* [Custom Contracts (Import ABI)](simulations-and-forks/custom-contracts-import-abi.md)
 * [Integrations](simulations-and-forks/integrations/README.md)
   * [HardHat](simulations-and-forks/integrations/hardhat/README.md)
     * [How to set up Hardhat](simulations-and-forks/integrations/hardhat/how-to-set-up-hardhat.md)
@@ -105,13 +104,7 @@
 
 ## Analytics
 
-* [General Analytics](analytics/general-analytics.md)
-* [Custom Queries](analytics/custom-queries.md)
-* [Custom Scripts](analytics/custom-scripts.md)
-
-***
-
-* [🤔 FAQ](faq.md)
+* [Analytics Overview](analytics/general-analytics.md)
 
 ## Other
 

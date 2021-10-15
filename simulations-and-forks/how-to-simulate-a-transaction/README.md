@@ -8,7 +8,7 @@ Not only that, but **you can even pick a specific block height, transaction inde
 
 {% embed url="https://vimeo.com/397986714" %}
 
-## Simulating a Transaction
+### Starting a New Simulation
 
 You can simulate any transaction on Tenderly in several ways. One of the easiest and probably most used ones would be to choose a desired on-chain transaction from the **Transactions **tab in the left navigation pane:
 
@@ -26,3 +26,34 @@ You can also start the simulation by going to the **Simulator **tab in the left 
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 17.06.07.png>)
 
+### Simulating a Transaction
+
+So let's start up a new simulation with a public contract:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.40.19.png>)
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.50.37.png>)
+
+The simulated transaction will fail due to insufficient Dai balance:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.50.56.png>)
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.51.46.png>)
+
+You can immediately jump into the debugger and get to the line of code that caused the transaction to fail:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.56.14.png>)
+
+You can also change your contract source-code by clicking on Re-Simulate and then on Edit Contract Source ([**read more about this here**](editing-contract-source.md)):
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.00.53.png>)
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.00.07.png>)
+
+The transaction failed again in a different place which was expected since we deleted a part of the code:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.01.36.png>)
+
+Clicking the back arrow or clicking on the **Simulator **tab in the left navigation pane brings you (back) to the historical list of all simulations:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.19.02.png>)

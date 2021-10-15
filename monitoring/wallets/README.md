@@ -55,5 +55,5 @@ When you click on a wallet you will be able to see key wallet info and use all o
 You can also **Rename**, **Hide **or **Remove **your wallet at any time.
 
 {% hint style="success" %}
-You can also convert your contracts into wallets via a single click -** **[**learn more here.**](converting-contracts-into-wallets.md)****
+You can also convert your contracts into wallets (and back again) via a single click -** **[**learn more here.**](converting-contracts-into-wallets.md)****
 {% endhint %}

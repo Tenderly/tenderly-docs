@@ -1,12 +1,14 @@
 # Editing Contract Source
 
-\[zoomed pick on button + open contract editor]
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.11.12.png>)
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.11.40.png>)
 
 You can edit the contract source on the fly while setting up your simulation or re-simulating, by showing the entire code and giving access to any line or parameter you would want to change.
 
-This means almost instant testing of bug fixes, changing parameters to test the outcome on-chain or doing anything you want with the contract source code (either custom or public).
+**This means almost instant testing of bug fixes, changing parameters to test the outcome on-chain or doing anything you want with the contract source code (either custom or public).**
 
-\[pic - compiler options]
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.12.24.png>)
 
 You can also change the following compiler parameters for the simulation execution:
 
@@ -15,11 +17,17 @@ You can also change the following compiler parameters for the simulation executi
 * Optimization Count
 * EVM Version
 
-One more great feature is that you can add a custom contract source to any contract you have chosen to edit by clicking on _add contract source_ and choosing any of the deployed contracts to use it's source code:
+One more great feature is that you can **add a custom contract source to any contract you have chosen to edit (or any address in fact)** by clicking on _add contract source_ and choosing any of the deployed contracts to use it's source code:
 
-\[pic - new contract with dropdown open]
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.13.05.png>)
 
-\[pic - editing source for the newly added contract]
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.14.00.png>)
+
+You can also type your smart contract source code from scratch for any address in this way:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.05.06.png>)
+
+All of this means that you can test any custom contract you want with live production data.
 
 {% hint style="info" %}
 Don't forget to click on the _apply changes _on the bottom left :)

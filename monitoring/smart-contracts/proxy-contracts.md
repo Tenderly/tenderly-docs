@@ -1,5 +1,9 @@
 # Proxy Contracts
 
+{% hint style="info" %}
+When simulating a transaction with a proxy contract, Tenderly will show all of the functions from both the proxy and the contract it delegates to for easier debugging and editing code.
+{% endhint %}
+
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.17.04.png>)
 
 Proxy contract basically has only one variable, which is the destination address for forwarding your transaction. They are basically used to make contract versioning or bug fixes easier, where if you want to change your smart contract you can do a new deployment without worrying about dependencies, and change just the delivery address in your proxy contract to the newly updated contract.

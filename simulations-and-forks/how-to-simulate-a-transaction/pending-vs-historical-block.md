@@ -1,6 +1,6 @@
 # Pending vs Historical Block
 
-\[pic - empty new transaction - historical block - zoomed]
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.15.48.png>)
 
 If you choose to **simulate on a pending block**, by submitting your simulation Tenderly will slot it into the next available block to be mined with the appropriate transaction index within the block (i.e. next one at the moment of running the simulation).
 
@@ -11,6 +11,6 @@ By choosing the historical block and slotting your transaction with a custom ind
 
 
 
-Features which would allow you to simulate the effect propagation from the historical block onwards might me coming in the future.
+Features which would allow you to simulate the effect propagation from the historical block onwards might be coming in the future.
 {% endhint %}
 
