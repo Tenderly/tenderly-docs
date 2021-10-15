@@ -8,8 +8,8 @@
 [truffle.md](truffle.md)
 {% endcontent-ref %}
 
-{% content-ref url="brownie.md" %}
-[brownie.md](brownie.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="docker.md" %}

@@ -1,12 +1,9 @@
 # Table of contents
 
 * [General Info](README.md)
-* [Supported Networks](getting-started/README.md)
-  * [Local Network Support](getting-started/creating-an-account.md)
+* [Supported Networks](getting-started.md)
 * [Supported Languages](project.md)
-* [Projects](projects/README.md)
-  * [Private Projects](projects/private-projects.md)
-  * [Organization Projects](projects/organization-projects.md)
+* [Projects](projects.md)
 * [Teams & Collaboration](teams-and-collaboration/README.md)
   * [Collaborators](teams-and-collaboration/collaborators.md)
   * [Organizations](teams-and-collaboration/organizations.md)
@@ -59,8 +56,6 @@
   * [Transaction Filtering](monitoring/contracts/transaction-filtering.md)
 * [Smart Contracts](monitoring/smart-contracts/README.md)
   * [Public Contracts](monitoring/smart-contracts/public-contracts.md)
-  * [Private/Local Contracts](monitoring/smart-contracts/private-local-contracts/README.md)
-    * [Verifying Private Contracts](monitoring/smart-contracts/private-local-contracts/verifying-private-contracts.md)
   * [Adding a Contract to your Project](monitoring/smart-contracts/adding-a-contract-to-your-project.md)
   * [Using CLI to create a Project and push your Smart Contracts to Tenderly](monitoring/smart-contracts/using-cli-to-create-a-project-and-push-your-smart-contracts-to-tenderly.md)
   * [Proxy Contracts](monitoring/smart-contracts/proxy-contracts.md)
@@ -92,7 +87,6 @@
     * [How to push and verify Smart Contracts directly through code](simulations-and-forks/integrations/hardhat/how-to-push-and-verify-smart-contracts-directly-through-code.md)
     * [How to use Hardhat and Tenderly to monitor and debug your BSC Smart Contracts](simulations-and-forks/integrations/hardhat/how-to-use-hardhat-and-tenderly-to-monitor-and-debug-your-bsc-smart-contracts.md)
   * [Truffle](simulations-and-forks/integrations/truffle.md)
-  * [Brownie](simulations-and-forks/integrations/brownie.md)
   * [Docker](simulations-and-forks/integrations/docker.md)
 
 ## Debugger
@@ -113,7 +107,6 @@
 
 * [💻 CLI Documentation](https://docs.tenderly.co/cli)
 * [👷 Hardhat Plugin](https://github.com/Tenderly/hardhat-tenderly)
-* [🚀 API Documetnation](https://docs.tenderly.co/api)
 * [🤓 Privacy Policy](https://tenderly.co/privacy-policy)
 
 ***
