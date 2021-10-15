@@ -14,7 +14,10 @@
 
 ## Web3 Actions
 
-* [Page 1](web3-actions/page-1.md)
+* [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
+* [Setting Up Web3 Actions](web3-actions/setting-up-web3-actions.md)
+* [Triggers](web3-actions/triggers.md)
+* [Deploying your Web3 Actions](web3-actions/deploying-your-web3-actions.md)
 
 ## Alerts
 
