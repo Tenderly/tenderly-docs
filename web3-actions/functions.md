@@ -6,32 +6,30 @@ A function must match `ActionFn`** **[type](https://github.com/Tenderly/tenderly
 import { ActionFn, BlockEvent, Context, Event } from 'tenderly-actions'
 
 export const blockNotifierFn: ActionFn = async (context: Context, event: Event) => {
-  // You can cast event to one of PeriodicEvent, WebhookEvent, BlockEvent
-  // or TransactionEvent, but event type must match trigger type - we'll 
-  // explain triggers in a bit
-	let blockEvent = event as BlockEvent
+  let blockEvent = event as BlockEvent
 
   // This is where your logic goes
-  
-  // You can see logs when you open an execution page in dashboard
-  console.log(blockEvent.blockHash)
 }
 ```
+
+You can cast event to one of `PeriodicEvent`, `WebhookEvent`, `BlockEvent` or `TransactionEvent`, but event type must match trigger type.
 
 You can implement your function in any file/path instead your `actions` folder, but an action must reference a function in configuration. Action configuration lives in the `tenderly.yaml` file:
 
 ```
 actions:
   your-project-name:
-    runtime: v1  # Node 14
-    sources: actions  # Folder with implementation
+    runtime: v1  # V1 is Node 14 runtime
+    sources: actions  # Path to directory where implementation
     specs:
-      action-name:  # Must be unique for project
-        description: Something something something.
+      action-name:
+        description: This function notifies me when block is mined.
         function: src/block:blockNotifierFn
 ```
 
-`src/block:block:blockNotifierFn` means function `blockNotifierFn` is implemented in file `actions/src/block.ts`.
+You can reference multiple actions in `specs`, but action name must be unique for project.
+
+Function configuration`src/block:blockNotifierFn` means function `blockNotifierFn` is implemented in file `actions/src/block.ts`.
 
 ### Secrets
 
@@ -40,7 +38,9 @@ Secrets feature lets you securely store credentials such as API tokens that your
 Each secret is a key-value pair which is stored encrypted. To create secrets, go to dashboard and navigate to **Actions **->** Secrets**. Your secrets are available in your function through context:
 
 ```
-const notificationDestinationToken = await context.secrets.get('API_TOKEN')
+export const blockNotifierFn: ActionFn = async (context: Context, event: Event) => {
+  const notificationDestinationToken = await context.secrets.get('API_TOKEN')
+}
 ```
 
 Secrets are created for each project and are available in every action in the project. [Reach out via Intercom on Tenderly Dashboard](https://dashboard.tenderly.co) if you have a need to namespace secrets and isolate between actions.
@@ -52,40 +52,52 @@ Your actions might want to persist data across runs. You can use project's stora
 Storage is a key-value store, accessible through context. You can store up to 1000 keys, with up to 1KB in key size and 10KB in value size:
 
 ```
-await context.storage.putNumber('LAST_BLOCK', blockEvent.blockNumber)
-await context.storage.putStr('LAST_BLOCK_HASH', blockEvent.blockHash)
+export const blockNotifierFn: ActionFn = async (context: Context, event: Event) => {
+    let blockEvent = event as BlockEvent
 
-let invocationCount = await context.storage.getNumber('INVOCATIONS')
-await context.storage.putNumber('INVOCATIONS', invocationCount + 1)
+    await context.storage.putNumber('LAST_BLOCK', blockEvent.blockNumber)
+    await context.storage.putStr('LAST_BLOCK_HASH', blockEvent.blockHash)
+
+    let invocationCount = await context.storage.getNumber('INVOCATIONS')
+    await context.storage.putNumber('INVOCATIONS', invocationCount + 1)
+}
 ```
 
 [Reach out via Intercom on Tenderly Dashboard](https://dashboard.tenderly.co) if you have a need to store more than this.
 
-Storage is shared for all actions in the project. It is recommended that you isolate by namespacing keys, e.g. `BLOCK_NOTIFIER/LAST_BLOCK` instead of just `LAST_BLOCK`.
+Storage is shared for all actions in the project. It is recommended that you isolate using namespaces, e.g. `BLOCK_NOTIFIER/LAST_BLOCK` instead of just `LAST_BLOCK`.
+
+### Logs
+
+You can use console logging and your logs will be available when you navigate to specific execution in dashboard.
+
+```
+export const blockNotifierFn: ActionFn = async (context: Context, event: Event) => {
+  let blockEvent = event as BlockEvent
+  console.log(blockEvent.blockHash)
+}
+```
 
 ### Local Development
 
-You don't need to deploy your actions to test them, you can just run your function locally using any testing framework you like. 
-
-To make this a bit easier, we are providing you with a [**testing library here**](https://github.com/Tenderly/tenderly-actions/tree/main/packages/tenderly-actions-test).
+You don't need to deploy your actions to test them, you can just run your function locally using any testing framework you like. To make this a bit easier, we are providing you with a [**testing library here**](https://github.com/Tenderly/tenderly-actions/tree/main/packages/tenderly-actions-test).
 
 ```
 test('block notifier', async () => {
-		// If you use TestRuntime, you can pre-populate storage and secrets and
-    // any changes to storage won't reflect in production storage
     let runtime = new TestRuntime()
 
     let event = new TestBlockEvent()
-		event.blockHash = '0x123456789'
+    event.blockHash = '0x123456789'
 
     runtime.context.secrets.put("API_TOKEN", "test-token")
 
     await runtime.execute(blockNotifierFn, event)
 		
-		let result = await runtime.context.storage.get(
-			'BLOCK_NOTIFIER/LAST_BLOCK_HASH'
-		)
+    let result = await runtime.context.storage.get(
+        'BLOCK_NOTIFIER/LAST_BLOCK_HASH'
+    )
     expect(result).toBe('0x123456789')
 });
 ```
 
+If you use `TestRuntime`, you can pre-populate storage and secrets and any changes to storage won't reflect in production storage.

@@ -7,11 +7,14 @@ Periodic trigger means your action will be invoked on a fixed schedule. Here are
 trigger:
   type: periodic
   periodic:
-	  interval: 5m # {"5m", "10m", "15m", "30m", "1h", "3h", "6h", "12h", "1d"}
+    interval: 5m
 
-# Or you can use cron
 trigger:
   type: periodic
   periodic:
-    cron: "*/5 * * * *"  # https://crontab.guru/
+    cron: "*/5 * * * *" 
 ```
+
+Supported values for interval scheduling are: `5m`, `10m`, `15m`, `30m`, `1h`, `3h`, `6h`, `12h`, `1d`.
+
+For CRON scheduling, see [https://crontab.guru/](https://crontab.guru).

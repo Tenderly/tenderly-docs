@@ -12,7 +12,8 @@ trigger:
 To trigger an action, get the UUID for your action from your dashboard, and make the following `POST` request:
 
 ```
-curl -X POST -H "x-access-key: $TENDERLY_TOKEN" -H "Content-Type: application/jason" https://api.tenderly.co/api/v1/actions/$ACTION_ID/webhook -d '{
+curl -X POST -H "x-access-key: $TENDERLY_TOKEN" -H "Content-Type: application/json"
+ https://api.tenderly.co/api/v1/actions/$ACTION_ID/webhook -d '{
    "myData": "myValue"
 }'
 ```
