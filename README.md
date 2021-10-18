@@ -34,7 +34,7 @@ Get a granular gas usage breakdown to help you optimize your Smart Contracts and
 
 Know how your transactions will behave before you execute them, estimate the gas usage and test potential bug fixes
 
-****[**Forks**](simulations-and-forks/how-to-create-a-fork/)****
+****[**Forks**](simulations-and-forks/how-to-create-a-fork.md)****
 
 Take your simulations a step further by creating a temporary fork of any supported network and execute multiple transactions in a row to test their behavior
 

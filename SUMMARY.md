@@ -73,13 +73,7 @@
   * [Transaction Parameters](simulations-and-forks/how-to-simulate-a-transaction/transaction-parameters.md)
   * [Pending vs Historical Block](simulations-and-forks/how-to-simulate-a-transaction/pending-vs-historical-block.md)
   * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
-* [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
-  * [How to set up Metamask with Tenderly](simulations-and-forks/how-to-create-a-fork/how-to-set-up-metamask-with-tenderly.md)
-  * [Tenderly Fork API](simulations-and-forks/how-to-create-a-fork/tenderly-fork-api.md)
-  * [Chain Simulations](simulations-and-forks/how-to-create-a-fork/chain-simulations.md)
-  * [Custom RPC API](simulations-and-forks/how-to-create-a-fork/custom-rpc-api.md)
-  * [Tenderly RPC (with HardHat)](simulations-and-forks/how-to-create-a-fork/tenderly-rpc-with-hardhat.md)
-  * [Optimizations](simulations-and-forks/how-to-create-a-fork/optimizations.md)
+* [How to Create a Fork](simulations-and-forks/how-to-create-a-fork.md)
 * [Verifying a Smart Contract](simulations-and-forks/verifying-a-smart-contract.md)
 * [Integrations](simulations-and-forks/integrations/README.md)
   * [HardHat](simulations-and-forks/integrations/hardhat/README.md)
@@ -91,7 +85,6 @@
     * [How to push and verify Smart Contracts directly through code](simulations-and-forks/integrations/hardhat/how-to-push-and-verify-smart-contracts-directly-through-code.md)
     * [How to use Hardhat and Tenderly to monitor and debug your BSC Smart Contracts](simulations-and-forks/integrations/hardhat/how-to-use-hardhat-and-tenderly-to-monitor-and-debug-your-bsc-smart-contracts.md)
   * [Truffle](simulations-and-forks/integrations/truffle.md)
-  * [Docker](simulations-and-forks/integrations/docker.md)
 
 ## Debugger
 

@@ -29,4 +29,4 @@ Otherwise, choose a public contract from your project (or add any public contrac
 * Optional Access List (as contract address or by importing a JSON)
   * Announce to the node which contracts you will be using in order to lower the transaction cost
   * Makes sense to be used for greater number of contracts and function calls
-  * If the list of contracts changes after the announcement this [optimization](../how-to-create-a-fork/optimizations.md) will not work
+  * If the list of contracts changes after the announcement this [optimization](broken-reference) will not work

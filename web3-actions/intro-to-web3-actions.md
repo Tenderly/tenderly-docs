@@ -2,7 +2,7 @@
 
 **Tenderly Web3 Actions** will run your code in reaction to on-chain (and some off-chain) events on your smart contracts. 
 
-You can use Web3 Actions to create custom scenarios in order to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](../alerts/creating-an-alert/) section, automating testing or live production execution in the [**Simulator**](../simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](../simulations-and-forks/how-to-create-a-fork/), or anything else that comes to (your) mind.
+You can use Web3 Actions to create custom scenarios in order to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](../alerts/creating-an-alert/) section, automating testing or live production execution in the [**Simulator**](../simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](../simulations-and-forks/how-to-create-a-fork.md), or anything else that comes to (your) mind.
 
 The code Web3 Actions run is called a _**function**_. Function must be written in TypeScript (or JavaScript) and runs in Node 14 runtime. Specification of events that should result in your action running is called a _**trigger**_. There are 4 types of triggers:
 
