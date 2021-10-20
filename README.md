@@ -6,7 +6,7 @@
 
 ### Some of the notable features Tenderly supports:
 
-****[**Transaction filtering**](monitoring/contracts/transaction-filtering.md)****
+****[**Transaction filtering**](broken-reference)****
 
 Sort and group transactions by any parameter you want and make it easier to explore and analyze robust data.
 
@@ -14,7 +14,7 @@ Sort and group transactions by any parameter you want and make it easier to expl
 
 Inspect the transaction execution with a couple of clicks and instantly find the line your transaction reverted on.
 
-****[**State Inspector**](debugger/how-to-use-tenderly-debugger/decoded-state-changes.md)****
+****[**State Inspector**](broken-reference)****
 
 See the state of your contract at any point in a transaction and explore state changes in a granular view.
 
@@ -26,7 +26,7 @@ Visualize and analyze the behavior of your Smart Contract to spot patterns and g
 
 Any time an event triggers your custom set of rules you will receive a notification on your favorite channels like Slack, Email, PagerDuty, etc
 
-****[**Gas Profiler**](monitoring/contracts/execution-overview/gas-profiler.md)****
+****[**Gas Profiler**](broken-reference)****
 
 Get a granular gas usage breakdown to help you optimize your Smart Contracts and lower the gas cost of your transactions
 
@@ -38,6 +38,6 @@ Know how your transactions will behave before you execute them, estimate the gas
 
 Take your simulations a step further by creating a temporary fork of any supported network and execute multiple transactions in a row to test their behavior
 
-****[**Integrations**](simulations-and-forks/integrations/)****
+****[**Integrations**](simulations-and-forks/integrations.md)****
 
 Use our powerful API to access real-time blockchain data necessary for your business. Integrate Tenderly with your product to deliver more value faster

@@ -20,12 +20,6 @@ By clicking on **Contracts** (or **Addresses**) on the left we can see all of th
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.17.52.png>)
 
-Deep dive into the transaction information includes:
-
-* [**Events**](decoded-events-logs.md)****
-* ****[**State Changes**](decoded-state-changes.md)****
-* ****[**Gas Profiler**](../../monitoring/contracts/execution-overview/gas-profiler.md)****
-
 When you click on the **Debugger **tab, you will see the following:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.26.51.png>)
@@ -38,7 +32,7 @@ For example the function `multicall` has a single input labeled `data` which is 
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.29.15.png>)
 
-On the left you will see a list of all the function that were called in this transaction which are further broken down in the order of execution in the [**Stack Trace**](stack-traces.md):
+On the left you will see a list of all the function that were called in this transaction which are further broken down in the order of execution in the [**Stack Trace**](broken-reference):
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.30.15.png>)
 
@@ -47,3 +41,35 @@ You can search for the exact term in the code either by double clicking a word a
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.38.01.png>)
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.38.49.png>)
+
+### Stack Traces
+
+While we debug our transaction, the **Stack Trace **will show all of the functions that are being executed in each step:
+
+![](<../../.gitbook/assets/image (69) (1).png>)
+
+![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.35.12.png>)
+
+### Decoded Events/Logs
+
+When in **Transaction **overview, **Events **tab will show you all of the events emitted in this transaction, with options to filter them out by _event name_ or _contract/address_:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.19.45.png>)
+
+![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.20.12.png>)
+
+### Decoded State Changes
+
+**State Changes **allows us to see all of the variables that were changed/updated during the course of the transaction:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.21.17.png>)
+
+![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.22.19.png>)
+
+### Gas Profiler
+
+**Gas Profiler **shows you the most detailed view of how your transaction spent gas, down to every single function call and the amount of gas spent by it:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.23.42.png>)
+
+![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.24.05.png>)
