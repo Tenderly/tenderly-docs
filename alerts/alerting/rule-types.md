@@ -2,7 +2,7 @@
 
 This is the list of alert types Tenderly provides:
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](<../../.gitbook/assets/Screenshot 2021-10-21 at 10.36.34.png>)
 
 * **Successful Transaction** - Get notified if a transaction has succeeded
 * **Failed Transaction** - Get notified if a transaction has failed
@@ -13,5 +13,26 @@ This is the list of alert types Tenderly provides:
 * **Specific** - Get alerted when a function is called with a specific argument
 * **Compare** - Use operators like greater than, equal, etc. to compare function arguments
 
+Successful Transaction -&#x20;
 
+Failed Transaction -&#x20;
 
+Function Call -&#x20;
+
+Event Emitted -&#x20;
+
+Event Parameter -&#x20;
+
+ERC20 Token Transfer -&#x20;
+
+Whitelisted Callers -&#x20;
+
+Blacklisted Callers -&#x20;
+
+ETH Balance -&#x20;
+
+Transaction Value -&#x20;
+
+State Change -&#x20;
+
+View Function -&#x20;

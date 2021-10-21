@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-2">
+            <g id="Group-6">
+                <path d="M128,0 C198.645,0 256,57.3055 256,127.8895 C256,198.4735 198.645,255.7785 128,255.7785 C57.355,255.7785 0,198.4735 0,127.8895 C0,57.3055 57.355,0 128,0 Z" id="Fill-1" fill="#5B2DA7"></path>
+                <path d="M88.4,194 L62,194 L62,114.8 L114.8,114.8 L114.8,62 L141.2,62 L141.2,114.8 L194,114.8 L194,194 L167.6,194 L167.6,141.2 L88.4,141.2 L88.4,194 Z M141.2,141.2 L141.2,167.6 L114.8,167.6 L114.8,141.2 L141.2,141.2 Z M88.4,62 L88.4,88.4 L62,88.4 L62,62 L88.4,62 Z M194,62 L194,88.4 L167.6,88.4 L167.6,62 L194,62 Z" id="Combined-Shape-Copy" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

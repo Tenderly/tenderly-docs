@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Group-6">
+                <path d="M128,0 C198.645,0 256,57.3055 256,127.8895 C256,198.4735 198.645,255.7785 128,255.7785 C57.355,255.7785 0,198.4735 0,127.8895 C0,57.3055 57.355,0 128,0 Z" id="Fill-1" fill="#48A9A6"></path>
+                <polygon id="Fill-2" fill="#FFFFFF" points="62.2655 88.5595 114.853 88.5595 114.853 62.26575 62.2655 62.26575"></polygon>
+                <polygon id="Fill-3" fill="#FFFFFF" points="141.147 88.5595 193.7345 88.5595 193.7345 62.26575 141.147 62.26575"></polygon>
+                <polygon id="Fill-4" fill="#FFFFFF" points="193.7345 141.147 167.4405 141.147 167.4405 167.4405 141.147 167.4405 141.147 193.7345 193.7345 193.7345"></polygon>
+                <polygon id="Fill-5" fill="#FFFFFF" points="114.853 193.7345 114.853 167.4405 88.5595 167.4405 88.5595 141.147 62.2655 141.147 62.2655 193.7345"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

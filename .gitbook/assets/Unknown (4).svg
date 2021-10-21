@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard Copy 5</title>
+    <g id="Artboard-Copy-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6" fill="#F3BA2F">
+            <path d="M128,0 C198.645,0 256,57.3055 256,127.8895 C256,198.4735 198.645,255.7785 128,255.7785 C57.355,255.7785 0,198.4735 0,127.8895 C0,57.3055 57.355,0 128,0 Z" id="Fill-1"></path>
+        </g>
+        <polygon id="Path" fill="#FFFFFF" points="127.000106 43 82 69.288348 98.5441578 79 127.000106 62.4232321 155.455629 79 172 69.288348"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="155.455629 93 172 102.648383 172 121.945007 143.543768 138.413782 143.543768 171.351331 127.000106 181 110.455878 171.351331 110.455878 138.413782 82 121.945007 82 102.648383 98.5441578 93 127.000106 109.468489"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="173 135 173 154.333095 156 164 156 144.66619"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="156 177.789798 184.4563 161.394781 184.4563 128.604745 201 119 201 171.000237 156 197"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="184.500354 94.9998594 168 85.4999649 184.500354 76 201 85.4999649 201 104.499824 184.500354 114"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="111 203.333572 111 184 127.500283 193.666428 144 184 144 203.333572 127.500283 213"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="99 164 82 154.333095 82 135 99 144.66619"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="127.500283 95 111 85.5000351 127.500283 76 144 85.5000351"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="87 85.4999649 70.4999689 94.9998594 70.4999689 114 54 104.499824 54 85.4999649 70.4999689 76"></polygon>
+        <polygon id="Path" fill="#FFFFFF" points="54 119 70.5441053 128.604745 70.5441053 161.394781 99 177.789798 99 197 54 171.000237"></polygon>
+    </g>
+</svg>

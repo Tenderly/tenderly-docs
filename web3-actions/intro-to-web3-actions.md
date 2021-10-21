@@ -38,7 +38,4 @@ While action must specify trigger type, it doesn't have to configure trigger. Wi
 
 
 
-Next, we are going to describe how to write function and what runtime features are available.
-
-
-
+Next, we are going to describe how to write a function and what runtime features are available.

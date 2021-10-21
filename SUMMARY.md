@@ -1,12 +1,9 @@
 # Table of contents
 
 * [General Info](README.md)
-* [Supported Networks](getting-started.md)
-* [Supported Languages](project.md)
+* [Supported Networks & Languages](getting-started.md)
 * [Projects](projects.md)
-* [Teams & Collaboration](teams-and-collaboration/README.md)
-  * [Collaborators](teams-and-collaboration/collaborators.md)
-  * [Organizations](teams-and-collaboration/organizations.md)
+* [Teams & Collaboration](teams-and-collaboration.md)
 * [Explorer](explorer.md)
 
 ## Web3 Actions
