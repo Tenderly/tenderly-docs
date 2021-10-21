@@ -1,38 +1,29 @@
 # Rule Types
 
-This is the list of alert types Tenderly provides:
+This is the list of alert types that Tenderly provides:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-21 at 10.36.34.png>)
 
-* **Successful Transaction** - Get notified if a transaction has succeeded
-* **Failed Transaction** - Get notified if a transaction has failed
-* **Whitelisted Callers** - Get notified if an unknown address calls your Smart Contract
-* **Blacklisted Callers** - Get notified if a specific address from the blacklist calls your Smart Contract
-* **Function Call** - Get notified if a specific function gets called in a transaction
-* **SC Caller** - Get alerted if another Smart Contract calls your Smart Contract
-* **Specific** - Get alerted when a function is called with a specific argument
-* **Compare** - Use operators like greater than, equal, etc. to compare function arguments
+****[**Successful Transaction**](../creating-an-alert/successful-transaction.md) - great for monitoring low-traffic addresses such as multi-sigs and to check on the heartbeat of your system.
 
-Successful Transaction -&#x20;
+****[**Failed Transaction**](../creating-an-alert/failed-transaction.md) - get notified when a transaction fails, great for discovering unknown bugs.
 
-Failed Transaction -&#x20;
+****[**Function Call**](../creating-an-alert/function-call.md) - get notified when a specific function is called, both as a part of the top level transaction or as an internal call; great when you don't have an event you can use for the alerting.
 
-Function Call -&#x20;
+****[**Event Emitted**](../creating-an-alert/event-emit.md) - get notified when a specific event is emitted.
 
-Event Emitted -&#x20;
+****[**Event Parameter**](../creating-an-alert/event-parameter.md) - get notified if an Event parameter matches a certain criteria.
 
-Event Parameter -&#x20;
+****[**ERC20 Token Transfer**](../creating-an-alert/erc20-token-transfer.md) - get notified when a certain token is sent to or from your address.
 
-ERC20 Token Transfer -&#x20;
+****[**Whitelisted Callers**](../creating-an-alert/whitelisted-callers.md) - get notified when anyone who is not on the list calls a specific contract (good for multi-sigs and DAOs).
 
-Whitelisted Callers -&#x20;
+****[**Blacklisted Callers**](../creating-an-alert/blacklisted-callers.md)** **- get notified when anyone from this list call a specific contract (good for matching knows malicious addresses).
 
-Blacklisted Callers -&#x20;
+****[**ETH Balance**](../creating-an-alert/eth-balance.md) - get notified when your ETH balance (or a native chain's currency) falls under a certain threshold (good for Bots, Keepers and Oracles).
 
-ETH Balance -&#x20;
+****[**Transaction Value**](../creating-an-alert/transaction-value.md) - get notified when a transaction value matches a certain criteria.
 
-Transaction Value -&#x20;
+****[**State Change**](../creating-an-alert/state-change.md) - get notified when a _state change_ matches a certain criteria, passes a threshold or changes by a certain percentage.
 
-State Change -&#x20;
-
-View Function -&#x20;
+****[**View Function**](../creating-an-alert/view-function.md) - get notified when a view function's _return value_ matches a certain criteria, passes a threshold or changes by a certain percentage.

@@ -3,7 +3,7 @@
 * [General Info](README.md)
 * [Supported Networks & Languages](getting-started.md)
 * [Projects](projects.md)
-* [Teams & Collaboration](teams-and-collaboration.md)
+* [Teams & Collaboration](teams-and-collaboration/README.md)
 * [Explorer](explorer.md)
 
 ## Web3 Actions

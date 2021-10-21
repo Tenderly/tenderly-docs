@@ -1,40 +1,67 @@
 # Smart Contracts
 
-### Adding a contract to your project via Tenderly Dashboard
+## Adding a contract to your project via Tenderly Dashboard
+
+After deploying a contract to a Tenderly Fork using a JSON-RPC, REST API or a Simulation you can verify your contract so Tenderly can decode everything into a human readable format.
 
 There are several ways you can add a contract to your project from the Dashboard:
 
-* Import Verified (public) contract by pasting the address:
+### Import public contract
+
+&#x20;You can import any public (verified) contract by pasting the address...
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.02.53.png>)
 
-* Browser Upload - JSON:
+... or by uploading a JSON...
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.03.54.png>)
 
-* Browser Upload - File - Pasting the contract source:
+... or by pasting the contract source from a file/uploading a source file itself:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-21 at 12.51.18.png>)
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.05.42.png>)
 
-* Browser Upload - File - Uploading the source file:
+... or by uploading the source file itself.
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.07.51.png>)
+### Uploading the source directory
 
-* Browser Upload - File - Upload the source directory:
+By using the directory** **option, you can batch upload more than one contract at a time:
+
+![](<../../.gitbook/assets/Screenshot 2021-10-21 at 12.51.18.png>)
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.08.41.png>)
 
-By using the directory, you can batch upload more than one contract at a time:
+If any of the files for verifying your contracts is missing you will be prompted to add them in the list of contract on top:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.10.00.png>)
 
+You will be prompted to choose which contract to upload if the file contains multiple contracts, as well as to define the following:
+
+* Which [network](../../getting-started.md) is the contract deployed to.
+* What is it's address
+* (Optionally) add the library name and address for specific contracts that require them.
+
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.10.19.png>)
+
+When your contract is added you can continue to add contracts from this screen via the **+ Add more** button:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.12.18.png>)
 
+The last thing to do is to fill out the compiler info with the following parameters:
+
+* Compiler Version (automatically refreshed list from Solidity GitHub).
+* Optimizations Used (true/false).
+* Optimization Count.
+* EVM Version (latest is always the default).
+
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.12.54.png>)
 
-* CLI Upload (just follow the on-screen instructions):
+{% hint style="warning" %}
+Note that choosing the correct Compiler Version for your contract is important to avoid compiler (bytecode mismatch) errors.
+{% endhint %}
+
+### CLI Upload
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.14.47.png>)
 
