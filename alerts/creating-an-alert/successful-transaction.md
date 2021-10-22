@@ -1,6 +1,6 @@
 # Successful transaction
 
-{% embed url="https://www.loom.com/share/48271e32f26e45a3bf95d006268e457a" %}
+![](../../.gitbook/assets/Successful-transaction.gif)
 
 #### Introduction
 

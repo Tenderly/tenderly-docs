@@ -1,6 +1,6 @@
 # ERC20 Token Transfer
 
-{% embed url="https://www.loom.com/share/c1c44f9826ab4d96b0ed9eb0a0e84e5d" %}
+![](../../.gitbook/assets/ERC20-Token-Transfer.gif)
 
 #### Introduction
 

@@ -1,6 +1,6 @@
 # Transaction Value
 
-{% embed url="https://www.loom.com/share/97c87fceb619474cb987367551e7d8a3" %}
+![](../../.gitbook/assets/Transaction-Value.gif)
 
 #### Introduction
 

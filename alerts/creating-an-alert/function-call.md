@@ -1,6 +1,6 @@
 # Function Call
 
-{% embed url="https://www.loom.com/share/20a4be09bdfd4843b0ef9c64fd8b67cb" %}
+![](../../.gitbook/assets/Function-call.gif)
 
 #### Introduction
 

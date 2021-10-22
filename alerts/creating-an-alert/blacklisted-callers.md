@@ -1,6 +1,6 @@
 # Blacklisted Callers
 
-{% embed url="https://www.loom.com/share/25d3651b44f24b05b65b68009d5b52da" %}
+![](<../../.gitbook/assets/Blacklisted-Callers (1).gif>)
 
 #### Introduction
 

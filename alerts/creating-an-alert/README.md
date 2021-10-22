@@ -1,6 +1,14 @@
 # Creating an Alert
 
+{% tabs %}
+{% tab title="How to Setup an Alert" %}
+{% embed url="https://vimeo.com/637795807" %}
+{% endtab %}
+
+{% tab title="Creating Alerts in under 30 seconds" %}
 {% embed url="https://www.loom.com/share/37063a9f9e8743048d409e7e92343f6f" %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 First of all, before creating an alert we need to configure Alert destination. If you haven't done that yet [check out how to configure Alert destinations.](../alerting/alert-targets/configuring-alert-destinations.md)

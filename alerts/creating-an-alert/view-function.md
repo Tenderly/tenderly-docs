@@ -1,6 +1,5 @@
 # View Function
 
-{% embed url="https://www.loom.com/share/bd703fd833cd4fd39ef499cf5c7f5b14" %}
+Get notified when a view function's _return value_ matches a certain criteria, passes a threshold or changes by a certain percentage:
 
-
-
+![](<../../.gitbook/assets/View Function.gif>)

@@ -1,8 +1,6 @@
 # Event Parameter
 
-{% embed url="https://www.loom.com/share/d7c285e7e4dd4bd98a2567bbe136d6ec" %}
-
-
+![](../../.gitbook/assets/Event-Parameter.gif)
 
 #### Introduction
 

@@ -1,6 +1,6 @@
 # Event Emit
 
-{% embed url="https://www.loom.com/share/c6e6b33d5bcd4cfd852c0cd6e26f5f4d" %}
+![](../../.gitbook/assets/Event-Emit.gif)
 
 #### Introduction
 

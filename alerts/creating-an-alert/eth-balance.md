@@ -1,6 +1,6 @@
 # ETH Balance
 
-{% embed url="https://www.loom.com/share/81a9b4a9f49d4c6a887f2d01d3b850a6" %}
+![](../../.gitbook/assets/ETH-Balance.gif)
 
 #### Introduction
 

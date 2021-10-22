@@ -1,6 +1,6 @@
 # State Change
 
-{% embed url="https://www.loom.com/share/a44855423ddb4f2c81796d0cad8ba670" %}
+![](<../../.gitbook/assets/State Change.gif>)
 
 #### Introduction
 

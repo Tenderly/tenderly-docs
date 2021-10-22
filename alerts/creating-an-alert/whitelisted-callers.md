@@ -1,6 +1,6 @@
 # Whitelisted Callers
 
-{% embed url="https://www.loom.com/share/d91bf4706166429ca5c8d2c3e3da71dd" %}
+![](../../.gitbook/assets/Whitelisted-Callers.gif)
 
 #### Introduction
 
