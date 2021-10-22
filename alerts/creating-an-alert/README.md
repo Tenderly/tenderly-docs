@@ -1,6 +1,6 @@
 # Creating an Alert
 
-
+{% embed url="https://vimeo.com/637795807" %}
 
 {% hint style="warning" %}
 First of all, before creating an alert we need to configure Alert destination. If you haven't done that yet [check out how to configure Alert destinations.](../alerting/alert-targets/configuring-alert-destinations.md)
