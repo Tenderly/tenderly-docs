@@ -22,7 +22,7 @@ In the **Transactions **tab in the left navigation we have an option to filter t
 
 * Status - All/Success/Failed
 * Type - All/Internal/Direct
-* Contracts (now **Addresses**) - select which address (for a contract or a [wallet](../wallets/)) must be present in the transaction
+* Contracts (now **Addresses**) - select which address (for a contract or a wallet) must be present in the transaction
 * Function Signature
 * Network - specify the network if you have contracts deployed to multiple networks
 * Date Range

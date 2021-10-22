@@ -8,4 +8,4 @@ If you are not logged in into Tenderly, you can still use the **Tenderly Explore
 
 ![](<.gitbook/assets/Screenshot 2021-10-15 at 12.50.57.png>)
 
-This feature is available for both contracts and [wallets in Tenderly](monitoring/wallets/wallet-public-page.md).
+This feature is available for both contracts and [wallets in Tenderly](broken-reference).

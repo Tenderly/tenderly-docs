@@ -6,17 +6,6 @@
 * [Teams & Collaboration](teams-and-collaboration/README.md)
 * [Explorer](explorer.md)
 
-## Web3 Actions
-
-* [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
-* [Functions](web3-actions/functions.md)
-* [Configuration](web3-actions/configuration.md)
-* [Triggers](web3-actions/triggers/README.md)
-  * [Periodic](web3-actions/triggers/periodic.md)
-  * [Webhook](web3-actions/triggers/webhook.md)
-  * [Block](web3-actions/triggers/block.md)
-  * [Transaction](web3-actions/triggers/transaction.md)
-
 ## Alerts
 
 * [Webhook Notifications](alerts/alerting/README.md)
@@ -46,9 +35,6 @@
 * [Smart Contracts](monitoring/smart-contracts/README.md)
   * [Public Contracts](monitoring/smart-contracts/public-contracts.md)
   * [Proxy Contracts](monitoring/smart-contracts/proxy-contracts.md)
-* [Wallets](monitoring/wallets/README.md)
-  * [Converting Contracts into Wallets](monitoring/wallets/converting-contracts-into-wallets.md)
-  * [Wallet Public Page](monitoring/wallets/wallet-public-page.md)
 
 ## Simulations & Forks
 
