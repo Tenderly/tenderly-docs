@@ -4,7 +4,7 @@
 
 
 
-### Some of the notable features Tenderly supports:
+**Some of the notable features that Tenderly supports:**
 
 ****[**Transaction filtering**](debugger/how-to-use-tenderly-debugger/transaction-overview.md)****
 
