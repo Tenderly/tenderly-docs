@@ -1,6 +1,6 @@
 # Successful transaction
 
-![](../../.gitbook/assets/Successful-transaction.gif)
+![](<../../.gitbook/assets/Successful transaction.gif>)
 
 #### Introduction
 

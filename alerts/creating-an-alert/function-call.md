@@ -1,6 +1,6 @@
 # Function Call
 
-![](../../.gitbook/assets/Function-call.gif)
+![](<../../.gitbook/assets/Function call.gif>)
 
 #### Introduction
 
