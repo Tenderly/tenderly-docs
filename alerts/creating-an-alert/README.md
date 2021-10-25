@@ -8,11 +8,11 @@ First of all, before creating an alert we need to configure Alert destination. I
 
 ### Get an alert when a transaction fails
 
-Let’s say I want to get alerted whenever any of my Smart Contracts fail. What I would do is the following:
+Let’s say I want to get alerted whenever any of your Smart Contracts fail. What you would do is the following:
 
 ![](../../.gitbook/assets/1-cgb4lf9qcz\_h-ssu2-cqha.gif)
 
-Now if a transaction ever fails, I get notified instantly. This means that I can act immediately instead of waiting for my Dapp users to contact me that something isn’t working, like in the following Alert example:
+Now if a transaction ever fails, you get notified instantly. This means that you can act immediately instead of waiting for your Dapp users to tell you that something isn’t working, like in the following Alert example:
 
 ![](<../../.gitbook/assets/image (28).png>)
 
