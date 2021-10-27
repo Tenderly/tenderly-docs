@@ -10,4 +10,8 @@ We're going to pick the **ExecuteTrade** event and the **actualSrcAmount **param
 
 ![](<../../../.gitbook/assets/image (26).png>)
 
+{% hint style="info" %}
+Note - since the addition of [**Wallet**](../../../monitoring/wallets/) support to Tenderly, we now have a new parameter when adding alert targets which are _**addresses**_ instead of previously _contracts_.
+{% endhint %}
+
 ![](<../../../.gitbook/assets/Screenshot 2021-10-14 at 14.06.16.png>)

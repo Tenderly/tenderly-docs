@@ -1,7 +1,7 @@
 # Proxy Contracts
 
 {% hint style="info" %}
-When simulating a transaction with a proxy contract, Tenderly will show all of the functions from both the proxy and the contract it delegates to for easier debugging and editing code.
+When simulating a transaction with a proxy contract, Tenderly will show all of the functions from both the proxy and the contract it delegates to for easier [debugging and editing code](../../debugger/how-to-use-tenderly-debugger/).
 {% endhint %}
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.17.04.png>)

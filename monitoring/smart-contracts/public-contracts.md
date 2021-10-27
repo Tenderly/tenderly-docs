@@ -16,7 +16,7 @@ View all of the transactions for the chosen contract (address):
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.30.54.png>)
 
-View (and copy) contract ABI:
+View (and copy) the contract ABI:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.34.02.png>)
 
@@ -24,4 +24,4 @@ Launch a simulation for the contract you're viewing in a single click:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.34.48.png>)
 
-An of course rename, hide or completely remove the contract from your project.
+And of course rename, hide or completely remove the contract from your project.

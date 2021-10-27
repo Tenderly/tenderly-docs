@@ -35,6 +35,11 @@
 * [Smart Contracts](monitoring/smart-contracts/README.md)
   * [Public Contracts](monitoring/smart-contracts/public-contracts.md)
   * [Proxy Contracts](monitoring/smart-contracts/proxy-contracts.md)
+* [Wallets](monitoring/wallets/README.md)
+  * [Converting Contracts into Wallets](monitoring/wallets/converting-contracts-into-wallets.md)
+  * [Wallet Public Page](monitoring/wallets/wallet-public-page.md)
+  * [Simulations with a Wallet](monitoring/wallets/simulations-with-a-wallet.md)
+  * [Wallet Analytics](monitoring/wallets/wallet-analytics.md)
 
 ## Simulations & Forks
 
