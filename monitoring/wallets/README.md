@@ -1,6 +1,6 @@
 # Wallets
 
-Tenderly now supports **Wallets **as well as [**Contracts**](../smart-contracts/), which means you can now use all of Tenderly platform features with any wallet address! So, let's go over all of the features
+Tenderly now supports **Wallets **as well as [**Contracts**](../smart-contracts/), which means you can use all of Tenderly platform features with any wallet address!
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 13.25.24.png>)
 
