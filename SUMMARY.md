@@ -6,6 +6,14 @@
 * [Teams & Collaboration](teams-and-collaboration/README.md)
 * [Explorer](explorer.md)
 
+## Web3 Actions
+
+* [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
+* [Functions](web3-actions/functions.md)
+* [Configuration](web3-actions/configuration.md)
+* [Triggers](web3-actions/triggers.md)
+* [Networks](web3-actions/networks.md)
+
 ## Alerts
 
 * [Webhook Notifications](alerts/alerting/README.md)
