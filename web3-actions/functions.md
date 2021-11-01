@@ -48,7 +48,7 @@ export const blockHelloWorldFn: ActionFn = async (context: Context, event: Event
 }
 ```
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 Be careful when working with secrets as logged secrets will be visible in execution logs to anyone with access to your project.
 {% endhint %}
 
@@ -62,8 +62,8 @@ Storage is a key-value store, accessible through context. You can store up to 10
 
 ```typescript
 export const blockHelloWorldFn: ActionFn = async (context: Context, event: Event) => {
-    await context.storage.putNumber('HELLO_WORLD/BLOCK_NUMBER', blockEvent.blockNumber)
-    await context.storage.putStr('HELLO_WORLD/BLOCK_HASH', blockEvent.blockHash)
+    await context.storage.putNumber('HELLO_WORLD/BLOCK_NUMBER', event.blockNumber)
+    await context.storage.putStr('HELLO_WORLD/BLOCK_HASH', event.blockHash)
 
     let invocationCount = await context.storage.getNumber('HELLO_WORLD/INVOCATIONS')
     await context.storage.putNumber('HELLO_WORLD/INVOCATIONS', invocationCount + 1)
@@ -89,7 +89,7 @@ When using a manual trigger, you must choose the storage type. You can choose be
 * if you use `WRITE` the result will be `2` and it will be visible in the project's storage
 * if you use `COPY_ON_WRITE` the result will be `2` but it won't be visible in the project's storage
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 Be careful when using `WRITE` storage type. Changes will be persisted in the project's storage and there is currently no way to roll back changes made by specific execution of an action.
 {% endhint %}
 

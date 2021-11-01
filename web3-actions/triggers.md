@@ -61,6 +61,7 @@ trigger:
   transaction:
     # This trigger will listen to both mined and confirmed10 streams of transactions.
     # If you are setting just one, you don't need a list - "status: mined".
+    status:
       - mined
       - confirmed10
     # This trigger has two filters and action will run if the transaction matches
@@ -110,6 +111,7 @@ eq: ?  # equal to
 trigger:
   type: transaction
   transaction:
+    status:
       - mined
     filters:
       - network: 1
@@ -157,6 +159,7 @@ The contract must be added to your project before it can be referenced in your t
 trigger:
   type: transaction
   transaction:
+    status:
       - mined
     filters:
       - network: 1

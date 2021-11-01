@@ -28,12 +28,24 @@ After initialization, the project contains:
 All `tenderly actions` commands must be run from a directory that contains `tenderly.yaml.`
 {% endhint %}
 
+When you initialize actions project, you must select a Tenderly project which will be used for deploying your actions. You can deploy actions from multiple locations to the same Tenderly project. You can also initialize actions multiple times in the same directory and select a different Tenderly project for each initialization.&#x20;
+
+{% hint style="info" %}
+If your actions are very different or have different dependencies, it is recommended to separate them. You can still you same Tenderly project to deploy them.
+{% endhint %}
+
 ### Deploying Actions
 
-To view your actions in the dashboard, you must deploy them first. Run `tenderly actions deploy` in an initialized project to deploy generated example and go to provided link to view the action in the dashboard. If you just want to validate configuration or build implementation without deploying it, run `tenderly actions build`.
+To view your actions in the dashboard, you must deploy them first. Run `tenderly actions deploy` in an initialized project to deploy generated example and go to provided link to view the action in the dashboard. If you initialized actions for multiple projects in the same directory, you will be asked to select a project which you want to deploy. All actions for a single project are deployed together.
 
 {% hint style="info" %}
 Deployed action can be stopped through the dashboard. Action will stay deployed, but it won't run automatically.
+{% endhint %}
+
+If you just want to validate configuration or build implementation without deploying it, run `tenderly actions build`.
+
+{% hint style="warning" %}
+If your actions have dependencies, `node_modules` directory will be packaged and deployed with your actions. Zipped dependencies must not exceed 45MB - we are working to increase this limit.
 {% endhint %}
 
 ### Manual Trigger

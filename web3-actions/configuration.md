@@ -16,6 +16,7 @@ actions:
     # tenderly.yaml file.
     sources: actions
     # Following is a list of actions for this project.
+    # "specs" is a map from action name to action configuration.
     # To add a new action, just add an entry to the specs map.
     specs:
       # This is the action name. Action name must be unique in the project.
@@ -30,8 +31,8 @@ actions:
         # to configured sources directory, in this case actions/block.{ts|js}.
         # The file location is a path, so if you have src/ directory inside actions
         # this might be src/block:blockHelloWorldFn
-        # Second part of the locator is the function name. The function must be exported from
-        # specified file.
+        # Second part of the locator is the function name.
+        # The function must be exported from specified file.
         function: block:blockHelloWorldFn
         # This is a trigger configuration. Triggers are covered in the next section.
         trigger:
@@ -40,12 +41,25 @@ actions:
           type: block
           # In this case, a trigger is not configured, just a type is selected.
           # To configure a block trigger, we must add a block section here. More
-          # about configuring triggers in the next section.
+          # about configuring triggers in the next section.  
+      # An example of second action configuration in the same project.
+      anotherBlockHelloWorld:
+        # You can reuse same function in multiple actions.
+        function: block:blockHelloWorldfn
+        trigger:
+          type: block
+          # This is block trigger configuration. See Triggers section for
+          # details on this and configuration of other trigger types.
+          block:
+            network: 1
+            blocks: 100
 
 ```
 
 {% hint style="success" %}
 You can not specify multiple triggers for action. But you can reuse the function for multiple actions! Reusing function in actions with different trigger types is discouraged.
 {% endhint %}
+
+
 
 Next, we are going to describe how to configure a trigger for your action.
