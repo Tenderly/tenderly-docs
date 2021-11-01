@@ -13,7 +13,7 @@ The code Web3 Actions run is called a _**function**_. The function must be writt
 
 ### Getting Started
 
-To get started,  run `tenderly actions init`in a directory where you want to initialize actions project, which will lead you through setting up a project for your Web3 Actions.
+To get started,  run `tenderly actions init` in a directory where you want to initialize actions project, which will lead you through setting up a project for your Web3 Actions.
 
 {% hint style="warning" %}
 You will need [**Tenderly CLI**](https://github.com/Tenderly/tenderly-cli)** **to initialize Web3 Actions. You will need [**npm**](https://www.npmjs.com) if you are using TypeScript actions or use `tenderly actions init --language javascript.`
