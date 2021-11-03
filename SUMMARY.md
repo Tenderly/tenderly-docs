@@ -1,12 +1,12 @@
 # Table of contents
 
-* [General Info](README.md)
-* [Supported Networks & Languages](getting-started.md)
-* [Projects](projects.md)
-* [Teams & Collaboration](teams-and-collaboration/README.md)
-* [Explorer](explorer.md)
+* [📣 General Info](README.md)
+* [🗺 Supported Networks & Languages](getting-started.md)
+* [⚗ Projects](projects.md)
+* [🫂 Teams & Collaboration](teams-and-collaboration/README.md)
+* [🔍 Explorer](explorer.md)
 
-## Web3 Actions
+## 🧩 Web3 Actions
 
 * [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
 * [Functions](web3-actions/functions.md)
@@ -14,7 +14,7 @@
 * [Triggers](web3-actions/triggers.md)
 * [Networks](web3-actions/networks.md)
 
-## Alerts
+## 🔔 Alerts
 
 * [Webhook Notifications](alerts/alerting/README.md)
   * [Rule Types](alerts/alerting/rule-types.md)
@@ -36,7 +36,7 @@
   * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
   * [Evaluate Expression](alerts/creating-an-alert/evaluate-expression.md)
 
-## Monitoring
+## 🦅 Monitoring
 
 * [Transaction Overview](monitoring/contracts/README.md)
   * [Execution Overview](monitoring/contracts/execution-overview.md)
@@ -49,7 +49,7 @@
   * [Simulations with a Wallet](monitoring/wallets/simulations-with-a-wallet.md)
   * [Wallet Analytics](monitoring/wallets/wallet-analytics.md)
 
-## Simulations & Forks
+## 🔮 Simulations & Forks
 
 * [How to Simulate a Transaction](simulations-and-forks/how-to-simulate-a-transaction/README.md)
   * [Transaction Parameters](simulations-and-forks/how-to-simulate-a-transaction/transaction-parameters.md)
@@ -59,13 +59,13 @@
 * [Verifying a Smart Contract](simulations-and-forks/verifying-a-smart-contract.md)
 * [Integrations](simulations-and-forks/integrations.md)
 
-## Debugger
+## 🐞 Debugger
 
 * [How to use Tenderly Debugger](debugger/how-to-use-tenderly-debugger/README.md)
   * [Transaction Overview](debugger/how-to-use-tenderly-debugger/transaction-overview.md)
 * [Exporting a Local Transaction](debugger/exporting-a-local-transaction.md)
 
-## Analytics
+## 📊 Analytics
 
 * [Analytics Overview](analytics/general-analytics.md)
 
