@@ -1,4 +1,4 @@
-# Teams & Collaboration
+# 🫂 Teams & Collaboration
 
 ## Collaborators
 

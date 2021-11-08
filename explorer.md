@@ -1,4 +1,4 @@
-# Explorer
+# 🔍 Explorer
 
 {% hint style="success" %}
 This feature is available for both [**Contracts**](monitoring/smart-contracts/) and [**Wallets**](monitoring/wallets/) in Tenderly.

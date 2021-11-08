@@ -1,4 +1,4 @@
-# General Info
+# 📣 General Info
 
 [**Tenderly**](https://tenderly.co) is a comprehensive **Ethereum Developer Platform** for real-time monitoring, alerting, debugging, and simulating Smart Contracts.
 

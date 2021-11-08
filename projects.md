@@ -1,4 +1,4 @@
-# Projects
+# ⚗ Projects
 
 Projects are useful as a way to organize your work into separate spaces, or even do versioning or forking for all your projects.
 

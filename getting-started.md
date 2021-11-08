@@ -1,4 +1,4 @@
-# Supported Networks & Languages
+# 🗺 Supported Networks & Languages
 
 {% tabs %}
 {% tab title="Networks" %}
