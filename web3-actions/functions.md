@@ -100,6 +100,8 @@ You don't need to deploy your actions to test them. You can just run your functi
 Here is an example:
 
 ```typescript
+import { TestRuntime, TestBlockEvent } from "@tenderly/actions-test";
+
 test('block hello world', async () => {
     // If you use TestRuntime, any changes to storage won't reflect
     // in production storage.
@@ -118,7 +120,7 @@ test('block hello world', async () => {
 
     // Verify storage was modified as expected.
     // This checks in-memory test storage and not a real production storage!			
-    let result = await runtime.context.storage.get(
+    let result = await runtime.context.storage.getStr(
         'BLOCK_HELLO_WORLD/LAST_BLOCK_HASH'
     )
     expect(result).toBe('0x123456789')
