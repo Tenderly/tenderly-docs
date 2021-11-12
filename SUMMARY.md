@@ -55,7 +55,8 @@
   * [Transaction Parameters](simulations-and-forks/how-to-simulate-a-transaction/transaction-parameters.md)
   * [Pending vs Historical Block](simulations-and-forks/how-to-simulate-a-transaction/pending-vs-historical-block.md)
   * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
-* [How to Create a Fork](simulations-and-forks/how-to-create-a-fork.md)
+* [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
+  * [Fork Parents](simulations-and-forks/how-to-create-a-fork/fork-parents.md)
 * [Verifying a Smart Contract](simulations-and-forks/verifying-a-smart-contract.md)
 * [Integrations](simulations-and-forks/integrations.md)
 
