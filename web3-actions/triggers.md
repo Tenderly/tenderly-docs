@@ -273,10 +273,6 @@ trigger:
 
 ## Alert
 
-{% hint style="success" %}
-**Coming very soon!**
-{% endhint %}
-
 An alert trigger means your action will be used as a [**destination for the alert**](../alerts/creating-an-alert/).
 
 ```yaml
