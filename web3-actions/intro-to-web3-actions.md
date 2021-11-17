@@ -31,13 +31,13 @@ All `tenderly actions` commands must be run from a directory that contains `tend
 When you initialize actions project, you must select a Tenderly project which will be used for deploying your actions. You can deploy actions from multiple locations to the same Tenderly project. You can also initialize actions multiple times in the same directory and select a different Tenderly project for each initialization.&#x20;
 
 {% hint style="info" %}
-If your actions are very different or have different dependencies, it is recommended to separate them. You can still you same Tenderly project to deploy them.
+If your actions are very different or have different dependencies, it is recommended to separate them. You can still use the same Tenderly project to deploy them.
 {% endhint %}
 
 If your actions have dependencies, `node_modules` directory located in the same directory with your actions source files will be packaged and deployed with your actions. `npm install` must be run from a directory where actions sources are. Note that this might be a different directory than one where you run `tenderly actions` commands.&#x20;
 
 {% hint style="warning" %}
-Zipped dependencies must not exceed 45MB. Reach o
+Zipped dependencies must not exceed 45MB. Reach out to us if your requirements exceed this limit.
 {% endhint %}
 
 ### Deploying Actions
