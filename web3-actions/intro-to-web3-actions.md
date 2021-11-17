@@ -34,6 +34,12 @@ When you initialize actions project, you must select a Tenderly project which wi
 If your actions are very different or have different dependencies, it is recommended to separate them. You can still you same Tenderly project to deploy them.
 {% endhint %}
 
+If your actions have dependencies, `node_modules` directory located in the same directory with your actions source files will be packaged and deployed with your actions. `npm install` must be run from a directory where actions sources are. Note that this might be a different directory than one where you run `tenderly actions` commands.&#x20;
+
+{% hint style="warning" %}
+Zipped dependencies must not exceed 45MB. Reach o
+{% endhint %}
+
 ### Deploying Actions
 
 To view your actions in the dashboard, you must deploy them first. Run `tenderly actions deploy` in an initialized project to deploy generated example and go to provided link to view the action in the dashboard. If you initialized actions for multiple projects in the same directory, you will be asked to select a project which you want to deploy. All actions for a single project are deployed together.
@@ -43,10 +49,6 @@ Deployed action can be stopped through the dashboard. Action will stay deployed,
 {% endhint %}
 
 If you just want to validate configuration or build implementation without deploying it, run `tenderly actions build`.
-
-{% hint style="warning" %}
-If your actions have dependencies, `node_modules` directory will be packaged and deployed with your actions. Zipped dependencies must not exceed 45MB - we are working to increase this limit.
-{% endhint %}
 
 ### Manual Trigger
 
