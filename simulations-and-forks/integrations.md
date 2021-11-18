@@ -672,3 +672,63 @@ Compiling ./contracts/Calculator.sol...
 
   1 passing (131ms)
 ```
+
+## Remix
+
+As Remix has a concept for plugins, we will go through everything that is needed to use it with Tenderly.
+
+Using the file structure plugin we navigate to the Storage.sol contract which we will be deploying.
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.29.45.png>)
+
+We will first compile the contract:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.31.05.png>)
+
+We also have the deployment plugin which we will use to deploy this contract to Kovan:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.32.32.png>)
+
+Next, we can install the Tenderly plugin found here:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.33.36.png>)
+
+In order to connect with Tenderly you will need an **access token** which you can get by going to your Tenderly dashboard and in the top right clicking on Settings, and then going to the Authorizations tab where you will generate a new access token for Remix:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.37.11.png>)
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.38.50.png>)
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.39.18.png>)
+
+Now you just need to paste the access token into Remix:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.40.39.png>)
+
+You will now be able to choose whether to add the contract to an existing project by choosing from a list or create a new one. Now, in order to verify and add the contract into your project, you will need to click on the **verify **tab in Remix, choose the network and contract, as well as copy the address of the deployed contract. In this case we will privately verify a contract on Tenderly:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.46.51.png>)
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.47.50.png>)
+
+You are also able to import contracts into Remix from your Tenderly project:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.49.41.png>)
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.50.24.png>)
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.50.58.png>)
+
+You can also add new contracts to your project and see them in Remix at any point. Let's say we want to add this Dai contract into our project in Tenderly. We will copy it's address, go back to the project we want to add it to and go through the flow:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.52.54.png>)
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.53.50.png>)
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.54.54.png>)
+
+Then if we go back in to Remix and refresh the contract list we will see the newly added contract. We can import it and now use it in Remix:
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.55.58.png>)
+
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.56.37.png>)

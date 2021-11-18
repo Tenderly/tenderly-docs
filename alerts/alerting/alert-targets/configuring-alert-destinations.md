@@ -10,7 +10,7 @@ Open Destinations tab:
 
 ![](<../../../.gitbook/assets/image (56).png>)
 
-### Email
+## Email
 
 Go to **Alerting **-> **Destinations** and click on **Email **to add a new email for alert delivery:
 
@@ -18,7 +18,7 @@ Go to **Alerting **-> **Destinations** and click on **Email **to add a new email
 
 You will get a verification request to your email, copy or click on the link to confirm verification and that's it, your alerting notification will now be delivered to this email as well.
 
-### Slack
+## Slack
 
 You can connect Tenderly with your Slack workspace and get real-time notifications when an alert rule matches a transaction. Connecting multiple channels is also supported so you can route certain rules to specific channels.
 
@@ -46,7 +46,7 @@ And that's it! Now when a transaction matches a configured alert rule you will g
 Check out how to [create an Alert here.](../../creating-an-alert/)
 {% endhint %}
 
-### Telegram
+## Telegram
 
 Go to **Alerting **-> **Destinations** and click on **Telegram **to add a new Telegram channel for alert delivery:
 
@@ -56,7 +56,7 @@ And just follow the onscreen instructions:
 
 ![](<../../../.gitbook/assets/Screenshot 2021-10-15 at 11.03.42.png>)
 
-### Discord
+Discord
 
 Go to **Alerting **-> **Destinations** and click on **Discord **to connect a Discord channel for alert delivery.&#x20;
 
@@ -66,7 +66,7 @@ Firstly you will need to open your Discord, go to **Settings **-> **Integrations
 
 ![](<../../../.gitbook/assets/Screenshot 2021-10-15 at 11.08.46.png>)
 
-### Sentry
+## Sentry
 
 It is pretty straightforward when it comes to adding a new alert destination but let's go over it. On your Tenderly Dashboard go to **Alerting,** which can be found under **Monitoring**, choose the **Destinations** tab:
 
@@ -82,7 +82,7 @@ And voilà! Your Sentry project is now connected with Tenderly:
 
 ![](<../../../.gitbook/assets/image (41).png>)
 
-### PagerDuty
+## PagerDuty
 
 All you have to do is go to the "**Destinations**" tab as you would do for Sentry, pick PagerDuty and click on "**Connect PagerDuty**":
 
@@ -93,3 +93,17 @@ You will get redirected to PagerDuty's page, where you can approve Tenderly as a
 ![](<../../../.gitbook/assets/image (36).png>)
 
 If done correctly, PagerDuty should be under your **Active Destinations.**
+
+## **Web3 Actions**
+
+An alert trigger means your action will be used as a [**destination for the alert**](../../creating-an-alert/).
+
+```yaml
+trigger:
+  type: alert
+  alert: {}
+```
+
+A single action can be used as a destination for multiple alerts.
+
+** **[You can read more about this and Web3 Actions in general here.](../../../web3-actions/triggers.md)
