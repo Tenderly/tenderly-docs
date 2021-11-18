@@ -732,3 +732,5 @@ Then if we go back in to Remix and refresh the contract list we will see the new
 ![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.55.58.png>)
 
 ![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.56.37.png>)
+
+You can also use Remix with Visual Studio by using their VSCode extension, which supports the Tenderly plugin as well. [**You can find it here**](https://marketplace.visualstudio.com/items?itemName=RemixProject.ethereum-remix).
