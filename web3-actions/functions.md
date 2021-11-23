@@ -95,9 +95,7 @@ Be careful when using `WRITE` storage type. Changes will be persisted in the pro
 
 ### Development
 
-You don't need to deploy your actions to test them. You can just run your function locally using any testing framework you like. To make this a bit easier, we are providing you with a [**testing library**](https://github.com/Tenderly/tenderly-actions/tree/main/packages/actions-test).
-
-Here is an example:
+If your action logic is more complex (and it's maybe not working as expected) you might want to use a debugger. You can avoid deploying your action to test it if you setup local development. To make this a bit easier, we are providing you with a [**testing library**](https://github.com/Tenderly/tenderly-actions/tree/main/packages/actions-test). Here is an example how to use this library to execute action in unit tests:
 
 ```typescript
 import { TestRuntime, TestBlockEvent } from "@tenderly/actions-test";
@@ -126,5 +124,7 @@ test('block hello world', async () => {
     expect(result).toBe('0x123456789')
 });
 ```
+
+
 
 Next, we are going to describe how to configure an action.
