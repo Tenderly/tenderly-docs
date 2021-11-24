@@ -6,6 +6,16 @@
 
 **Some of the notable features that Tenderly supports:**
 
+****[**Web3 Actions**](web3-actions/intro-to-web3-actions.md)&#x20;
+
+Run your code in response to on-chain (or even off-chain) events, usually on your smart contracts.&#x20;
+
+You can use Web3 Actions to create custom scenarios in order to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](alerts/creating-an-alert/) section, automating testing or live production execution in the [**Simulator**](simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](simulations-and-forks/how-to-create-a-fork/), or anything else that comes to (your) mind.
+
+****[**Wallet Monitoring**](monitoring/wallets/)
+
+Use all of Tenderly platform features with any wallet address!
+
 ****[**Transaction filtering**](debugger/how-to-use-tenderly-debugger/transaction-overview.md)****
 
 Sort and group transactions by any parameter you want and make it easier to explore and analyze robust data.
