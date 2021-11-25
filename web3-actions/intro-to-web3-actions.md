@@ -40,6 +40,30 @@ If your actions have dependencies, `node_modules` directory located in the same 
 Zipped dependencies must not exceed 45MB. Reach out to us if your requirements exceed this limit.
 {% endhint %}
 
+### Step-by-Step Guide
+
+If you want to create your first Web3 Action and go through a step-by-step guide, we prepared for you an onboarding process in the UI. When you go to Actions Page, you will see an onboarding flow that will help you to get started with Web3 Actions.
+
+**Quick Guide** provides a quick overview of the steps you need to reproduce in order to deploy your first Web3 Action.
+
+![Quick Guide](<../.gitbook/assets/Screenshot 2021-11-25 at 17.02.59.png>)
+
+**Step-by-Step Guide** provides an in-depth explanation for each step you need to reproduce in order to deploy your first Web3 Action.
+
+{% hint style="warning" %}
+You need to import an example contract to your project to create your first Web3 Action.
+{% endhint %}
+
+![Step-by-Step Guide](<../.gitbook/assets/Screenshot 2021-11-25 at 17.09.58.png>)
+
+![Create a Function Step](<../.gitbook/assets/Screenshot 2021-11-25 at 17.08.56.png>)
+
+![Use Secrets Step](<../.gitbook/assets/Screenshot 2021-11-25 at 17.11.27.png>)
+
+![Configure a Trigger Step](<../.gitbook/assets/Screenshot 2021-11-25 at 17.11.31.png>)
+
+![Deploy Action Step](<../.gitbook/assets/Screenshot 2021-11-25 at 17.11.35.png>)
+
 ### Deploying Actions
 
 To view your actions in the dashboard, you must deploy them first. Run `tenderly actions deploy` in an initialized project to deploy generated example and go to provided link to view the action in the dashboard. If you initialized actions for multiple projects in the same directory, you will be asked to select a project which you want to deploy. All actions for a single project are deployed together.
