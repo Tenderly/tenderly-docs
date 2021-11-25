@@ -43,3 +43,7 @@ This means that your Fork, when created, has all the states up to and including 
 {% hint style="info" %}
 Each **Simulation** you do on your **Fork** going forwards will be placed in a separate block, regardless of using the [**Historical** or the **Pending block**](../how-to-simulate-a-transaction/pending-vs-historical-block.md) option.
 {% endhint %}
+
+{% hint style="success" %}
+**Fork Parents** are a feature that allows for greater control over [**Simulations**](../how-to-simulate-a-transaction/) you run on your **Forks**, and much easier repeated testing of specific (historical) scenarios on your forked networks. [**Read more about Fork Parents here.**](fork-parents.md)****
+{% endhint %}
