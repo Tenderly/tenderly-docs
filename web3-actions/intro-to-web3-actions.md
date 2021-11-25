@@ -42,7 +42,7 @@ Zipped dependencies must not exceed 45MB. Reach out to us if your requirements e
 
 ### Step-by-Step Guide
 
-If you want to create your first Web3 Action and go through a step-by-step guide, we prepared for you an onboarding process in the UI. When you go to Actions Page, you will see an onboarding flow that will help you to get started with Web3 Actions.
+If you want to create your first Web3 Action and go through a step-by-step guide, we prepared for you an onboarding flow in the UI. When you go to Actions Page, you will see an onboarding flow that will help you to get started with Web3 Actions.
 
 **Quick Guide** provides a quick overview of the steps you need to reproduce in order to deploy your first Web3 Action.
 
