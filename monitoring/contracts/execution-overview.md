@@ -64,7 +64,7 @@ Debugging stack traces is an important part of any developer's workflow both loc
 
 ![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.41.38.png>)
 
-**The stack trace above shows the exact line of code where the transaction failed**. From there, you can click **Debug Error** and find the issue in no time. [Check out how to use the Tenderly debugger](../../debugger/how-to-use-tenderly-debugger/) and [**investigate failed transactions**](../../debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md)!
+**The stack trace above shows the exact line of code where the transaction failed**. From there, you can click **Debug Error** and find the issue in no time. Check out[** how to use the Tenderly debugger**](../../debugger/how-to-use-tenderly-debugger/)** **and [**investigate failed transactions**](../../debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md)!
 
 ### Gas Profiler
 
