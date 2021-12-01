@@ -1,6 +1,6 @@
 # Investigating a Hack (Cover Protocol)
 
-This example will showcase briefly how Tenderly can be used to analyse and even prevent hacks such as what happened with the Cover Protocol.
+This example will showcase briefly how Tenderly can be used to analyse and even prevent hacks such as what happened with the [Cover Protocol](https://twitter.com/CoverProtocol).
 
 The Cover Protocol got hacked because of the inability of code to update the cache in a storage. This could've potentially be prevented by using an **** [**alerting feature on important functions**](../../alerts/alerting/alert-targets/) like deposit/withdrawal and state changes to prevent an attack.&#x20;
 
