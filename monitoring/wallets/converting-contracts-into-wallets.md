@@ -6,7 +6,7 @@ We can start by adding any contract into our project:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 13.50.09.png>)
 
-By going into the **Contracts **tab on the left and clicking on the contract we added, we will get the contract overview with a new option - **Convert to Wallet**:
+By going into the **Contracts** tab on the left and clicking on the contract we added, we will get the contract overview with a new option - **Convert to Wallet**:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 13.51.26.png>)
 

@@ -18,7 +18,7 @@ This is the list of alert types that Tenderly provides:
 
 ****[**Whitelisted Callers**](../creating-an-alert/whitelisted-callers.md) - get notified when anyone who is not on the list calls a specific contract (good for multi-sigs and DAOs).
 
-****[**Blacklisted Callers**](../creating-an-alert/blacklisted-callers.md)** **- get notified when anyone from this list call a specific contract (good for matching knows malicious addresses).
+****[**Blacklisted Callers**](../creating-an-alert/blacklisted-callers.md) **** - get notified when anyone from this list call a specific contract (good for matching knows malicious addresses).
 
 ****[**ETH Balance**](../creating-an-alert/eth-balance.md) - get notified when your ETH balance (or a native chain's currency) falls under a certain threshold (good for Bots, Keepers and Oracles).
 

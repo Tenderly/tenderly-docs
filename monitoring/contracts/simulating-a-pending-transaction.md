@@ -9,5 +9,5 @@ When you search for a transaction which is not yet mined and cannot be found in 
 This means that you can **see the expected outcome of your or any other transaction** even before it is approved on the Mainnet.
 
 {% hint style="success" %}
-This feature is available to all users and works by default whenever you search for a transaction which happens to be in the pending pool. You can also check out how to use the full power of our [**Simulations**](../../simulations-and-forks/how-to-simulate-a-transaction/)** **and** **[**Forks**](../../simulations-and-forks/how-to-create-a-fork/) :rocket:
+This feature is available to all users and works by default whenever you search for a transaction which happens to be in the pending pool. You can also check out how to use the full power of our [**Simulations**](../../simulations-and-forks/how-to-simulate-a-transaction/) **** and **** [**Forks**](../../simulations-and-forks/how-to-create-a-fork/) :rocket:
 {% endhint %}

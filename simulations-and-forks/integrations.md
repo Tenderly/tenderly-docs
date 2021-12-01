@@ -83,8 +83,8 @@ The Tenderly plugin is now good to go!
 
 When you initialized your Hardhat project, there were a couple of default files generated in your project. Put your attention towards the `./contracts/Greeter.sol` and `./scripts/sample-script.js` files.
 
-* **Greeter.sol: **Contains a straightforward Smart Contract we’ll be using for this walkthrough
-* **sample-scripts.js: **Contains a [deployment script](https://hardhat.org/getting-started/#deploying-your-contracts) for the Greeter Smart Contract
+* **Greeter.sol:** Contains a straightforward Smart Contract we’ll be using for this walkthrough
+* **sample-scripts.js:** Contains a [deployment script](https://hardhat.org/getting-started/#deploying-your-contracts) for the Greeter Smart Contract
 
 To deploy the Greeter, you should use the `npx hardhat run` command, which takes the script as the argument:
 
@@ -384,7 +384,7 @@ Compile:        truffle compile
   Test contracts: truffle test
 ```
 
-### The Contract <a href="the-contract" id="the-contract"></a>
+### The Contract <a href="#the-contract" id="the-contract"></a>
 
 Our calculator supports just addition, subtraction, multiplication and division.
 
@@ -427,7 +427,7 @@ Compiling ./contracts/Migrations.sol...
 Writing artifacts to ./build/contracts
 ```
 
-### Deploying the Calculator Contract <a href="deploying-the-calculator-contract" id="deploying-the-calculator-contract"></a>
+### Deploying the Calculator Contract <a href="#deploying-the-calculator-contract" id="deploying-the-calculator-contract"></a>
 
 We have no use of our contract if it just lays there on our filesystem! Let’s deploy it to a local Ganache node and test it out! To install Ganache run the following command:
 
@@ -496,7 +496,7 @@ Running migration: 2_deploy_calculator.js
   Deploying Calculator...
 ```
 
-### Interacting with the Smart Contract <a href="interacting-with-the-smart-contract" id="interacting-with-the-smart-contract"></a>
+### Interacting with the Smart Contract <a href="#interacting-with-the-smart-contract" id="interacting-with-the-smart-contract"></a>
 
 Later on, we are going to write some tests, but for now, let’s interact with our contract directly:
 
@@ -526,13 +526,13 @@ Error: VM Exception while processing transaction: invalid opcode
 
 If you look at the error we received you will see that there isn’t much helpful information. In the next section, we will write tests for the div function and use Tenderly to see how it helps with cases like this one.
 
-### Installing Tenderly <a href="installing-tenderly" id="installing-tenderly"></a>
+### Installing Tenderly <a href="#installing-tenderly" id="installing-tenderly"></a>
 
 The Tenderly CLI is a Go program, so we compile just a single binary that you can download and use. The basic installation process would be to download [the latest binary from the releases page](https://github.com/Tenderly/tenderly-cli/releases/latest) and move it somewhere in your $PATH so you can use it globally.
 
 For everyone’s convenience, we have simplified the process explained above so you can install the Tenderly CLI just by running the following commands.
 
-#### Installing on macOS <a href="installing-on-macos" id="installing-on-macos"></a>
+#### Installing on macOS <a href="#installing-on-macos" id="installing-on-macos"></a>
 
 Via [Homebrew](https://brew.sh):
 
@@ -547,7 +547,7 @@ Alternatively, via cURL (the command downloads the latest release and moves it t
 $ curl https://raw.githubusercontent.com/Tenderly/tenderly-cli/master/scripts/install-macos.sh | sh
 ```
 
-#### Installing on Linux <a href="installing-on-linux" id="installing-on-linux"></a>
+#### Installing on Linux <a href="#installing-on-linux" id="installing-on-linux"></a>
 
 The command downloads the latest release and moves it to/usr/local/bin:
 
@@ -555,11 +555,11 @@ The command downloads the latest release and moves it to/usr/local/bin:
 $ curl https://raw.githubusercontent.com/Tenderly/tenderly-cli/master/scripts/install-linux.sh | sh
 ```
 
-#### Installing on Windows <a href="installing-on-windows" id="installing-on-windows"></a>
+#### Installing on Windows <a href="#installing-on-windows" id="installing-on-windows"></a>
 
 Go to the [tenderly-cli](https://github.com/Tenderly/tenderly-cli/releases) release page, download the latest version and put it somewhere in your $PATH.
 
-### Using Tenderly for debugging <a href="using-tenderly-for-debugging" id="using-tenderly-for-debugging"></a>
+### Using Tenderly for debugging <a href="#using-tenderly-for-debugging" id="using-tenderly-for-debugging"></a>
 
 Now that we have the CLI all set up we can easily find why the smart contract is failing. First, we start the CLI with the proxy command which proxies requests to an Ethereum node and turns unusable errors which we saw into stack traces that we can use for easier debugging.
 
@@ -609,7 +609,7 @@ Error: 0x0 Error: INVALID OPCODE, execution stopped
 
 ![And this is the human readable stack trace we get when we do proxy our requests thru the Tenderly CLI](<../.gitbook/assets/image (23).png>)
 
-### Writing the tests and fixing the contract <a href="writing-the-tests-and-fixing-the-contract" id="writing-the-tests-and-fixing-the-contract"></a>
+### Writing the tests and fixing the contract <a href="#writing-the-tests-and-fixing-the-contract" id="writing-the-tests-and-fixing-the-contract"></a>
 
 Because we now know precisely on which line the problem is, we can write a test case and then fix the issue. So let’s make the `./test/calculator.js` file and write out the test:
 
@@ -705,7 +705,7 @@ Now you just need to paste the access token into Remix:
 
 ![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.40.39.png>)
 
-You will now be able to choose whether to add the contract to an existing project by choosing from a list or create a new one. Now, in order to verify and add the contract into your project, you will need to click on the **verify **tab in Remix, choose the network and contract, as well as copy the address of the deployed contract. In this case we will privately verify a contract on Tenderly:
+You will now be able to choose whether to add the contract to an existing project by choosing from a list or create a new one. Now, in order to verify and add the contract into your project, you will need to click on the **verify** tab in Remix, choose the network and contract, as well as copy the address of the deployed contract. In this case we will privately verify a contract on Tenderly:
 
 ![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.46.51.png>)
 

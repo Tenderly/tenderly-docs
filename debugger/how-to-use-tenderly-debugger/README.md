@@ -10,7 +10,7 @@ Just like you would expect from a debugger in other modern languages, you have t
 
 ## Debugging a Transaction
 
-Go to the **Transactions **tab in the left navigation bar, and paste the transaction hash into the top **Explorer **bar:
+Go to the **Transactions** tab in the left navigation bar, and paste the transaction hash into the top **Explorer** bar:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.15.20.png>)
 
@@ -20,7 +20,7 @@ By clicking on **Contracts** (or **Addresses**) on the left we can see all of th
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.17.52.png>)
 
-When you click on the **Debugger **tab, you will see the following:
+When you click on the **Debugger** tab, you will see the following:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.26.51.png>)
 
@@ -44,7 +44,7 @@ You can search for the exact term in the code either by double clicking a word a
 
 ### Stack Traces
 
-While we debug our transaction, the **Stack Trace **will show all of the functions that are being executed in each step:
+While we debug our transaction, the **Stack Trace** will show all of the functions that are being executed in each step:
 
 ![](<../../.gitbook/assets/image (69) (1) (1).png>)
 
@@ -52,7 +52,7 @@ While we debug our transaction, the **Stack Trace **will show all of the functio
 
 ### Decoded Events/Logs
 
-When in **Transaction **overview, **Events **tab will show you all of the events emitted in this transaction, with options to filter them out by _event name_ or _contract/address_:
+When in **Transaction** overview, **Events** tab will show you all of the events emitted in this transaction, with options to filter them out by _event name_ or _contract/address_:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.19.45.png>)
 
@@ -60,7 +60,7 @@ When in **Transaction **overview, **Events **tab will show you all of the events
 
 ### Decoded State Changes
 
-**State Changes **allows us to see all of the variables that were changed/updated during the course of the transaction:
+**State Changes** allows us to see all of the variables that were changed/updated during the course of the transaction:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.21.17.png>)
 
@@ -68,7 +68,7 @@ When in **Transaction **overview, **Events **tab will show you all of the events
 
 ### Gas Profiler
 
-**Gas Profiler **shows you the most detailed view of how your transaction spent gas, down to every single function call and the amount of gas spent by it:
+**Gas Profiler** shows you the most detailed view of how your transaction spent gas, down to every single function call and the amount of gas spent by it:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.23.42.png>)
 

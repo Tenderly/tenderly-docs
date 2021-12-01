@@ -6,7 +6,7 @@ As the alert target we will be using the [KyberNetworkProxy](https://dashboard.t
 
 Note that you can also target your Smart Contracts by network or project as well. This granulation is very useful for the **Failed Transaction** alert type.
 
-We're going to pick the **ExecuteTrade** event and the **actualSrcAmount **parameter. Finally, we're going to select the **>=** (Greater than or equal) comparator and input **1000** as the comparison value:
+We're going to pick the **ExecuteTrade** event and the **actualSrcAmount** parameter. Finally, we're going to select the **>=** (Greater than or equal) comparator and input **1000** as the comparison value:
 
 ![](<../../../.gitbook/assets/image (26).png>)
 

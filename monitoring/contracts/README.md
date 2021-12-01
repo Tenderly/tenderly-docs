@@ -16,7 +16,7 @@ You can also choose which columns will be shown on the transaction overview scre
 
 What's better than having all transactions in one place? Filtering through them at the speed of light! Ok, maybe not the speed of light, but faster than anything else for sure.
 
-In the **Transactions **tab in the left navigation we have an option to filter transactions according to several parameters:
+In the **Transactions** tab in the left navigation we have an option to filter transactions according to several parameters:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.08.19.png>)
 

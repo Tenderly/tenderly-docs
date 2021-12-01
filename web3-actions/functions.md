@@ -1,8 +1,8 @@
 # Functions
 
-Functions are implemented in the `actions` directory (or whatever is configured, see** **[**configuration**](configuration.md)** **page for more details. If you initialized actions project using `tenderly actions init,` you have `example.ts `(or `.js`) file which implements a function.
+Functions are implemented in the `actions` directory (or whatever is configured, see **** [**configuration**](configuration.md) **** page for more details. If you initialized actions project using `tenderly actions init,` you have `example.ts` (or `.js`) file which implements a function.
 
-A function must match `ActionFn`** **[**type**](https://github.com/Tenderly/tenderly-actions/blob/main/packages/actions/src/actions.ts):
+A function must match `ActionFn` **** [**type**](https://github.com/Tenderly/tenderly-actions/blob/main/packages/actions/src/actions.ts):
 
 ```typescript
 import { ActionFn, BlockEvent, Context, Event } from '@tenderly/actions'
@@ -40,7 +40,7 @@ If you deploy and manually trigger this action, you will see console logs when y
 
 Secrets feature lets you securely store credentials such as API tokens that your function needs.&#x20;
 
-Each secret is a key-value pair which is stored encrypted. To create secrets, go to dashboard and navigate to **Actions **->** Secrets**. Your secrets are available in your function through context.
+Each secret is a key-value pair which is stored encrypted. To create secrets, go to dashboard and navigate to **Actions** -> **Secrets**. Your secrets are available in your function through context.
 
 ```typescript
 export const blockHelloWorldFn: ActionFn = async (context: Context, event: Event) => {

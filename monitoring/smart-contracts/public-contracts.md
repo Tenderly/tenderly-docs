@@ -1,10 +1,10 @@
 # Public Contracts
 
-If you click on the **Contracts **(or **Addresses**)** **tab in the left navigation bar, you will be able to do a deep dive into all of the information for that address:
+If you click on the **Contracts** (or **Addresses**) **** tab in the left navigation bar, you will be able to do a deep dive into all of the information for that address:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.24.49.png>)
 
-The basic info for each contract is the **Compiler Version**, **EVM Version **and **Optimizations **(if they are present or not), as well as the network the contract is on, contract address, Solidity version, if the contract is verified (uploaded source code), and tags which are custom and unlimited for later filtering.
+The basic info for each contract is the **Compiler Version**, **EVM Version** and **Optimizations** (if they are present or not), as well as the network the contract is on, contract address, Solidity version, if the contract is verified (uploaded source code), and tags which are custom and unlimited for later filtering.
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.25.07.png>)
 

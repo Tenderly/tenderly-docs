@@ -28,7 +28,7 @@ There are several ways you can add a contract to your project from the Dashboard
 
 ### Uploading the source directory
 
-By using the directory** **option, you can batch upload more than one contract at a time:
+By using the directory **** option, you can batch upload more than one contract at a time:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-21 at 12.51.18.png>)
 

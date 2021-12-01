@@ -2,7 +2,7 @@
 
 ![](<../../.gitbook/assets/image (83).png>)
 
-By pasting the (wallet) address into the **Explorer **tab at the top and clicking on the desired wallet you will be taken to it's public page:
+By pasting the (wallet) address into the **Explorer** tab at the top and clicking on the desired wallet you will be taken to it's public page:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.10.09.png>)
 

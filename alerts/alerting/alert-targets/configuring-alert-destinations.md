@@ -12,7 +12,7 @@ Open Destinations tab:
 
 ## Email
 
-Go to **Alerting **-> **Destinations** and click on **Email **to add a new email for alert delivery:
+Go to **Alerting** -> **Destinations** and click on **Email** to add a new email for alert delivery:
 
 ![](<../../../.gitbook/assets/Screenshot 2021-10-15 at 10.59.46.png>)
 
@@ -48,7 +48,7 @@ Check out how to [create an Alert here.](../../creating-an-alert/)
 
 ## Telegram
 
-Go to **Alerting **-> **Destinations** and click on **Telegram **to add a new Telegram channel for alert delivery:
+Go to **Alerting** -> **Destinations** and click on **Telegram** to add a new Telegram channel for alert delivery:
 
 ![](<../../../.gitbook/assets/Screenshot 2021-10-15 at 11.03.01.png>)
 
@@ -58,9 +58,9 @@ And just follow the onscreen instructions:
 
 Discord
 
-Go to **Alerting **-> **Destinations** and click on **Discord **to connect a Discord channel for alert delivery.&#x20;
+Go to **Alerting** -> **Destinations** and click on **Discord** to connect a Discord channel for alert delivery.&#x20;
 
-Firstly you will need to open your Discord, go to **Settings **-> **Integrations **-> **New Webhook**, name it and choose a Discord delivery channel, and copy the Webhook URL back into Tenderly:
+Firstly you will need to open your Discord, go to **Settings** -> **Integrations** -> **New Webhook**, name it and choose a Discord delivery channel, and copy the Webhook URL back into Tenderly:
 
 ![](<../../../.gitbook/assets/Screenshot 2021-10-15 at 11.07.45.png>)
 
@@ -106,4 +106,4 @@ trigger:
 
 A single action can be used as a destination for multiple alerts.
 
-** **[You can read more about this and Web3 Actions in general here.](../../../web3-actions/triggers.md)
+&#x20;**** [You can read more about this and Web3 Actions in general here.](../../../web3-actions/triggers.md)
