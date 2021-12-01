@@ -34,7 +34,6 @@
   * [State Change](alerts/creating-an-alert/state-change.md)
   * [View Function](alerts/creating-an-alert/view-function.md)
   * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
-  * [Evaluate Expression](alerts/creating-an-alert/evaluate-expression.md)
 
 ## 🦅 Monitoring
 
