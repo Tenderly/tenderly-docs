@@ -28,4 +28,4 @@ You can also convert contract into wallets straight from the add wallet flow:
 
 The same thing applies for contract wallets in the add contract flow:
 
-![](<../../.gitbook/assets/image (89).png>)
+![](<../../.gitbook/assets/image (89) (1).png>)

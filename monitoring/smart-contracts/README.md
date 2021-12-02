@@ -3,7 +3,7 @@
 ## Adding a Contract to your Project via Tenderly Dashboard
 
 {% hint style="info" %}
-After deploying a contract to a Tenderly Fork using a JSON-RPC, REST API or a Simulation you can [verify your contract](../../simulations-and-forks/verifying-a-smart-contract.md) so Tenderly can decode everything into a human readable format.
+After deploying a contract to a Tenderly Fork using a JSON-RPC, REST API or a Simulation you can **** [**verify your contract**](../../simulations-and-forks/verifying-a-smart-contract.md) **** so Tenderly can decode everything into a human readable format.
 {% endhint %}
 
 There are several ways you can add a contract to your project from the Dashboard.
@@ -41,7 +41,7 @@ If any of the files for verifying your contracts is missing you will be prompted
 You will be prompted to choose which contract to upload if the file contains multiple contracts, as well as to define the following:
 
 * Which [network](../../getting-started.md) is the contract deployed to.
-* What is it's address
+* What is the contract's address.
 * (Optionally) add the library name and address for specific contracts that require them.
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.10.19.png>)

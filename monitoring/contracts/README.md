@@ -28,7 +28,7 @@ In the **Transactions** tab in the left navigation we have an option to filter t
 * Date Range
 * Tag
 
-![](<../../.gitbook/assets/image (70) (1).png>)
+![](<../../.gitbook/assets/image (70) (1) (1).png>)
 
 There is also an option, after you select a tag to filter by, to show only transactions that happened after a certain tag was created:
 

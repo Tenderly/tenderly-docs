@@ -1,6 +1,6 @@
 # Wallet Public Page
 
-![](<../../.gitbook/assets/image (83).png>)
+![](<../../.gitbook/assets/image (83) (1).png>)
 
 By pasting the (wallet) address into the **Explorer** tab at the top and clicking on the desired wallet you will be taken to it's public page:
 
