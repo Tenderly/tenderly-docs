@@ -17,7 +17,7 @@ The code Web3 Actions run is called a _**function**_. The function must be writt
 **Timestamps** - **0:00** Intro to Web3 Actions // **1:30** How to Setup your first Action (Block) // **5:43** Periodic Action // **6:32** Webhook Action // **7:32** Alert Action // **9:10** Outro
 {% endembed %}
 
-Alternatively, you can setup and use Web3 Action via Tenderly CLI.
+Alternatively, you can setup and use Web3 Actions via Tenderly CLI.
 
 ### Getting Started (CLI)
 
