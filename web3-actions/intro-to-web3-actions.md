@@ -11,14 +11,6 @@ The code Web3 Actions run is called a _**function**_. The function must be writt
 * **Webhook** - runs your function when a request is POSTed to an endpoint.
 * **Periodic** - runs your function in periodic intervals or configured CRON.
 
-**You can start using Web3 Actions quickly and easily through your Tenderly Dashboard:**
-
-{% embed url="https://www.loom.com/share/a17f2bd5975a40619e5b1ed2c9ccf7b4" %}
-**Timestamps** - **0:00** Intro to Web3 Actions // **1:30** How to Setup your first Action (Block) // **5:43** Periodic Action // **6:32** Webhook Action // **7:32** Alert Action // **9:10** Outro
-{% endembed %}
-
-Alternatively, you can setup and use Web3 Actions via Tenderly CLI.
-
 ### Getting Started (CLI)
 
 To get started,  run `tenderly actions init` in a directory where you want to initialize actions project, which will lead you through setting up a project for your Web3 Actions.
