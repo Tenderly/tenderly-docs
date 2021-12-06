@@ -35,3 +35,11 @@ There is also an option, after you select a tag to filter by, to show only trans
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.10.19.png>)
 
 Having filtering this precise and fast is important when you need to pinpoint that specific transaction amongst thousands of them. Another example that comes to mind is finding internal transactions sent to your Smart Contracts that failed. This way, you can see if someone is trying to abuse your contract's logic or if your code is failing and someone depends on it.
+
+{% hint style="success" %}
+Tenderly now automatically simulates the (expected) outcome of pending transactions when you paste the tx hash into the search bar, both in your [**Dashboard**](https://dashboard.tenderly.co) and in our [**Public Explorer**](https://dashboard.tenderly.co/explorer).
+
+This feature is available to all users, even if they are not logged in. That means that **you can now simulate live pending transactions** in this way even [**from our Explorer page**](https://dashboard.tenderly.co/explorer) without having an account - but you really should make one (it's free) so you can use the full power of our [**Simulations**](../../simulations-and-forks/how-to-simulate-a-transaction/) **** and **** [**Forks**](../../simulations-and-forks/how-to-create-a-fork/) 🚀
+
+Read more about it [**here**](simulating-a-pending-transaction.md).
+{% endhint %}
