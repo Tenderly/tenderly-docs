@@ -11,3 +11,7 @@ If you are not logged in into Tenderly, you can still use the **Tenderly Explore
 ![](<.gitbook/assets/Screenshot 2021-10-15 at 12.50.24.png>)
 
 ![](<.gitbook/assets/Screenshot 2021-10-15 at 12.50.57.png>)
+
+{% hint style="success" %}
+You can **simulate the outcome of pending transactions** straight from the Public Explorer - [**read more about it here**](monitoring/contracts/simulating-a-pending-transaction.md).
+{% endhint %}
