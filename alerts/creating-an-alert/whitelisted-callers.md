@@ -10,7 +10,7 @@ Triggers whenever an address that is not whitelisted calls one of your contracts
 
 Let’s get notified every time when someone who isn't on the whitelist calls our smart contract.
 
-*   First of all, we need to add Smart Contract to Project. You can see here how to **\[Add new contract]** into Project.
+*   First of all, we need to add Smart Contract to Project. You can see here how to [**Add a new contract** ](../../monitoring/smart-contracts/)into your Project.
 
 
 * Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Whitelisted Callers —> Contract —> Select Contract —>** Find Smart Contract and Choose it **—>** Paste address and click on **Add** button **—> Next —>** Choose Alert Destination **—> Save.**\

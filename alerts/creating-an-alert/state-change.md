@@ -10,7 +10,7 @@ Triggers whenever a state variable in one of your contracts changes.
 
 Let’s get notified when MultiSigWallet number of required confirmations go below 5.
 
-*   First of all, we need to add a MultiSigWallet Smart Contract to Project. You can see there how to **\[Add new contract]** into Project.
+*   First of all, we need to add a MultiSigWallet Smart Contract to Project. You can see here how to [**Add a new contract** ](../../monitoring/smart-contracts/)into your Project.
 
 
 * Click on **Alerting** in the navigation **—>** **New Alert** **—>** **State Change —> Contract —> Select Contract —>**Find MultiSigWallet Smart Contract and Choose it **—>** Select variable **`required`** **—>** Click on **Criteria** **—>** Select `**<**` **—>** Enter comparison value **5 —> Next —>** Choose Alert Destination **—> Save.**\

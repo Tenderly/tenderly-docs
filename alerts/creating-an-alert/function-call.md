@@ -10,7 +10,7 @@ Triggers whenever a specific function is called in one of your contracts. Receiv
 
 Let’s get notified every time a new CryptoKitty is born.
 
-* First of all, we need to add the CryptoKitties contract to Project. _CryptoKitties Smart Contract address is 0x06012c8cf97bead5deae237070f9587f8e7a266d_. You can see here how to **\[Add new contract]** into Project.\
+* First of all, we need to add the CryptoKitties contract to Project. _CryptoKitties Smart Contract address is 0x06012c8cf97bead5deae237070f9587f8e7a266d_. You can see here how to [**Add a new contract**](../../monitoring/smart-contracts/) into your Project.\
 
 * Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Function Call —> Contract —> Select Contract —>**Find **KittyCore** Smart Contract and Choose it **—>** Choose **giveBirth** function **—> Next —>** Choose Alert Destination **—> Save.**\
   ****

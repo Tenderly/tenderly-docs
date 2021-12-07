@@ -1,6 +1,6 @@
 # Failed Transaction
 
-![](../../.gitbook/assets/1-cgb4lf9qcz_h-ssu2-cqha-22222.gif)
+![](../../.gitbook/assets/1-cgb4lf9qcz\_h-ssu2-cqha-22222.gif)
 
 
 
@@ -12,7 +12,7 @@ Trigger your alert whenever a transaction that calls my Smart Contracts failed. 
 
 Let’s say we have deployed some contracts and want to monitor every failed transaction that calls our contract.
 
-*   First of all, we need to add that contract to Project. You can see here how to **\[Add new contract]** into Project.
+*   First of all, we need to add that contract to Project. You can see here how to [**Add a new contract**](../../monitoring/smart-contracts/) into your Project.
 
 
 * Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Failed Transaction —> Contract —> Select Contract —>** Find Contract you want to monitor and Choose it **—> Next —>** Choose Alert Destination **—> Save.**\

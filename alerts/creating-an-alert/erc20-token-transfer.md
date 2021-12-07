@@ -10,7 +10,7 @@ Triggers whenever an ERC20 transfer event is emitted in one of your contracts.
 
 Let’s get notified every time someone sends us tokens.
 
-*   First of all, we need to add the ERC20 Smart Contract to Project. You can see here how to **\[Add new contract]** into Project.
+*   First of all, we need to add the ERC20 Smart Contract to Project. You can see here how to [**Add a new contract** ](../../monitoring/smart-contracts/)into your Project.
 
 
 * Click on **Alerting** in the navigation **—>** **New Alert** **—>** **ERC20 Token Transfer —> Contract —> Select Contract —>** Find Smart Contract and Choose it **—>** Select direction value to **"to" —>** Paste our address **—> Next —>** Choose Alert Destination **—> Save.**\

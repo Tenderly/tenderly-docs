@@ -10,7 +10,7 @@ Trigger your alert whenever a successful transaction is created. You can set up 
 
 Let’s say we have deployed some contracts and want to monitor every successful transaction that calls our contract.
 
-*   First of all, we need to add that contract to Project. You can see here how to **\[Add new contract]** into Project.
+*   First of all, we need to add that contract to Project. You can see here how to [**Add a new contract**](../../monitoring/smart-contracts/) into your Project.
 
 
 * Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Successful Transaction —> Contract —> Select Contract —>** Find Contract you want to monitor and Choose it **—> Next —>** Choose Alert Destination **—> Save.**\

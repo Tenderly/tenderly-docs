@@ -26,7 +26,7 @@ Tenderly has a smart delivery algorithm for the e-mails we send your way. You wi
 
 Let’s get notified every time when blacklisted address calls contracts from our Project.
 
-*   First of all, we need to add Smart Contract to Project. You can see here how to **\[Add new contract]** into Project.
+*   First of all, we need to add Smart Contract to Project. You can see here how to [**Add a new contract** ](../../monitoring/smart-contracts/)into your Project.
 
 
 * Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Blacklisted Callers —> Project —>** Paste the address you want to blacklist and click the **Add** button **—> Next —>** Choose Alert Destination **—> Save.**\
