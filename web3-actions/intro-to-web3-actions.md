@@ -11,10 +11,6 @@ The code Web3 Actions run is called a _**function**_. The function must be writt
 * **Webhook** - runs your function when a request is POSTed to an endpoint.
 * **Periodic** - runs your function in periodic intervals or configured CRON.
 
-{% embed url="https://www.loom.com/share/69549bb109e34460a96a60b78e8dc14e" %}
-**Intro to Web3 Actions**
-{% endembed %}
-
 ### Getting Started (CLI)
 
 To get started,  run `tenderly actions init` in a directory where you want to initialize actions project, which will lead you through setting up a project for your Web3 Actions.
