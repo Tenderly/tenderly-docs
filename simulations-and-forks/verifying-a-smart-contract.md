@@ -94,13 +94,13 @@ If the contract is verified publicly, it will be visible to everyone using Tende
 
 If you uploaded a JSON which contains multiple contracts, you can choose which one(s) you want to verify, and fill out the contract info by choosing its Network and pasting the contract address from where it was deployed.
 
-![](<../.gitbook/assets/image (82).png>)
+![](<../.gitbook/assets/image (82) (1).png>)
 
 After you add your contract, you can add other from your folder by clicking on the `Add more` button.
 
 Finally you need to fill-out the compiler info, which needs to match the parameters you chose when you deployed the contract:
 
-![](<../.gitbook/assets/image (93).png>)
+![](<../.gitbook/assets/image (93) (1).png>)
 
 You can now see all of the contracts that you have verified:
 

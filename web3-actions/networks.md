@@ -16,7 +16,7 @@ You can reference the supported network in your trigger configuration with the f
 
 ![](<../.gitbook/assets/image (71).png>) RSK Testnet `=> 31`
 
-![](<../.gitbook/assets/image (82) (1).png>) BSC `=> 56`
+![](<../.gitbook/assets/image (82) (1) (1).png>) BSC `=> 56`
 
 ![](<../.gitbook/assets/image (88) (1).png>) BSC Testnet `=> 97`
 

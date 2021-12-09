@@ -16,7 +16,7 @@
 
 ![](<.gitbook/assets/image (71).png>) RSK Testnet
 
-![](<.gitbook/assets/image (82) (1).png>) BSC
+![](<.gitbook/assets/image (82) (1) (1).png>) BSC
 
 ![](<.gitbook/assets/image (88) (1).png>) BSC Testnet
 
@@ -39,6 +39,8 @@
 ![](<.gitbook/assets/image (77).png>) Fantom
 
 ![](<.gitbook/assets/image (78).png>) Fantom Testnet
+
+![](<.gitbook/assets/image (82).png>) Arbitrum\*
 {% endtab %}
 
 {% tab title="Languages" %}
@@ -49,7 +51,7 @@
 {% endtabs %}
 
 {% hint style="warning" %}
-We decided to split up the **Arbitrum integration** into phases in order to give you (our users) access to Arbitrum on Tenderly as soon as possible, while we finish up the full integration and make all Tenderly features available for Arbitrum.\
+\*We decided to split up the **Arbitrum integration** into phases in order to give you (our users) access to Arbitrum on Tenderly as soon as possible, while we finish up the full integration and make all Tenderly features available for Arbitrum.\
 \
 **Phase 1**, which is now **completed and available for use**, includes the standard EVM implementation without Arbitrum precompiles and custom gas table, which enables the following (for transactions that don’t touch any of the custom precompiles):&#x20;
 
