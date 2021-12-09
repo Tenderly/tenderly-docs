@@ -1,7 +1,7 @@
 # Table of contents
 
 * [📣 General Info](README.md)
-* [🗺 Supported Networks & Languages](getting-started.md)
+* [🗺 Supported Networks & Languages](supported-networks-and-languages.md)
 * [⚗ Projects](projects.md)
 * [🫂 Teams & Collaboration](teams-and-collaboration/README.md)
 * [🔍 Explorer](explorer.md)

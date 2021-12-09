@@ -47,3 +47,25 @@
 ![](.gitbook/assets/vyper-logo-square.png) Vyper
 {% endtab %}
 {% endtabs %}
+
+{% hint style="warning" %}
+We decided to split up the **Arbitrum integration** into phases in order to give you (our users) access to Arbitrum on Tenderly as soon as possible, while we finish up the full integration and make all Tenderly features available for Arbitrum.\
+\
+**Phase 1**, which is now **completed and available for use**, includes the standard EVM implementation without Arbitrum precompiles and custom gas table, which enables the following (for transactions that don’t touch any of the custom precompiles):&#x20;
+
+* [Transaction Debugging ](debugger/how-to-use-tenderly-debugger/)
+* [Simulator ](simulations-and-forks/how-to-simulate-a-transaction/)
+* [Forks ](simulations-and-forks/how-to-create-a-fork/)
+
+
+
+In **Phase 2** we will implement the Arbitrum precompiles which will expand the available feature set:&#x20;
+
+* Transactions listing for single contracts and projects&#x20;
+* Alerting&#x20;
+* Analytics&#x20;
+
+
+
+In **Phase 3** we will mimic the Arbitrum gas usage, which is going to ensure transaction re-execution and enable the Gas Profiler.
+{% endhint %}

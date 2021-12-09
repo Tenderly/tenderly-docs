@@ -40,7 +40,7 @@ If any of the files for verifying your contracts is missing you will be prompted
 
 You will be prompted to choose which contract to upload if the file contains multiple contracts, as well as to define the following:
 
-* Which [network](../../getting-started.md) is the contract deployed to.
+* Which [network](../../supported-networks-and-languages.md) is the contract deployed to.
 * What is the contract's address.
 * (Optionally) add the library name and address for specific contracts that require them.
 
