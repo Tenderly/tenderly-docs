@@ -39,3 +39,5 @@ You can reference the supported network in your trigger configuration with the f
 ![](<../.gitbook/assets/image (77).png>) Fantom `=> 250`
 
 ![](<../.gitbook/assets/image (78).png>) Fantom Testnet `=> 4002`
+
+![](<../.gitbook/assets/image (82).png>) Arbitrum `=> 42161` (read more about currently available features for Arbitrum [**here**](../supported-networks-and-languages.md))
