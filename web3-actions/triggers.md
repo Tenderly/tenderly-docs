@@ -149,7 +149,7 @@ trigger:
           lte: 2000000
 ```
 
-More advanced transaction filters include function invocation or an event emitted on a contract \[more coming soon :tada:].
+More advanced transaction filters include function invocation or an event emitted on a contract.
 
 {% hint style="warning" %}
 The contract must be added to your project before it can be referenced in your triggers.
