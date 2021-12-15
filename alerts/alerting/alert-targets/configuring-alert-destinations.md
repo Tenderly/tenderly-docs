@@ -56,7 +56,7 @@ And just follow the onscreen instructions:
 
 ![](<../../../.gitbook/assets/Screenshot 2021-10-15 at 11.03.42.png>)
 
-Discord
+## Discord
 
 Go to **Alerting** -> **Destinations** and click on **Discord** to connect a Discord channel for alert delivery.&#x20;
 
