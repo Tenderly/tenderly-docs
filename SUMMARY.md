@@ -20,6 +20,7 @@
   * [Rule Types](alerts/alerting/rule-types.md)
   * [Alert Targets](alerts/alerting/alert-targets/README.md)
     * [Configuring Alert Destinations](alerts/alerting/alert-targets/configuring-alert-destinations.md)
+    * [Custom Webhook](alerts/alerting/alert-targets/custom-webhook.md)
 * [Creating an Alert](alerts/creating-an-alert/README.md)
   * [Successful transaction](alerts/creating-an-alert/successful-transaction.md)
   * [Failed Transaction](alerts/creating-an-alert/failed-transaction.md)
