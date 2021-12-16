@@ -51,7 +51,7 @@ If you want to create your first Web3 Action and go through a step-by-step guide
 **Step-by-Step Guide** provides an in-depth explanation for each step you need to reproduce in order to deploy your first Web3 Action.
 
 {% hint style="warning" %}
-You need to import an example contract to your project to create your first Web3 Action.
+You need to import an example contract into your project in order to start the tutorial and create your Web3 Action example.
 {% endhint %}
 
 ![Step-by-Step Guide](<../.gitbook/assets/Screenshot 2021-11-25 at 17.09.58.png>)
