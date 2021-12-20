@@ -12,7 +12,7 @@
 
 ![](<.gitbook/assets/image (74) (1) (1).png>) Gorli
 
-![](<.gitbook/assets/image (83) (1) (1).png>) RSK
+![](<.gitbook/assets/image (83) (1) (1) (1).png>) RSK
 
 ![](<.gitbook/assets/image (71).png>) RSK Testnet
 
@@ -22,7 +22,7 @@
 
 ![](<.gitbook/assets/image (86).png>) POA
 
-![](<.gitbook/assets/image (84) (1).png>) xDai
+![](<.gitbook/assets/image (84) (1) (1).png>) xDai
 
 ![](<.gitbook/assets/image (69).png>) Polygon
 
@@ -41,6 +41,8 @@
 ![](<.gitbook/assets/image (78).png>) Fantom Testnet
 
 ![](<.gitbook/assets/image (82).png>) Arbitrum\*
+
+![](<.gitbook/assets/image (83).png>) Arbitrum Testnet\*
 {% endtab %}
 
 {% tab title="Languages" %}

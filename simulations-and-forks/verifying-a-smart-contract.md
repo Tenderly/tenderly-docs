@@ -50,7 +50,7 @@ If the contract is verified privately, only you (and other people who you [share
 
 If the contract is verified publicly, it will be visible to everyone using Tenderly.
 
-![](<../.gitbook/assets/image (84).png>)
+![](<../.gitbook/assets/image (84) (1).png>)
 
 If you uploaded a folder and have multiple contracts, you can choose which one(s) you want to verify, and fill out the contract info by choosing its Network and pasting the contract address from where it was deployed.
 
@@ -90,7 +90,7 @@ If the contract is verified privately, only you (and other people who you [share
 
 If the contract is verified publicly, it will be visible to everyone using Tenderly.
 
-![](<../.gitbook/assets/image (83).png>)
+![](<../.gitbook/assets/image (83) (1).png>)
 
 If you uploaded a JSON which contains multiple contracts, you can choose which one(s) you want to verify, and fill out the contract info by choosing its Network and pasting the contract address from where it was deployed.
 

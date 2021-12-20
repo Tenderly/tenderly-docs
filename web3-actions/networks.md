@@ -12,7 +12,7 @@ You can reference the supported network in your trigger configuration with the f
 
 ![](<../.gitbook/assets/image (74) (1) (1).png>) Gorli`=> 5`
 
-![](<../.gitbook/assets/image (83) (1) (1).png>) RSK `=> 30`
+![](<../.gitbook/assets/image (83) (1) (1) (1).png>) RSK `=> 30`
 
 ![](<../.gitbook/assets/image (71).png>) RSK Testnet `=> 31`
 
@@ -22,7 +22,7 @@ You can reference the supported network in your trigger configuration with the f
 
 ![](<../.gitbook/assets/image (86).png>) POA `=> 99`
 
-![](<../.gitbook/assets/image (84) (1).png>) xDai `=> 100`
+![](<../.gitbook/assets/image (84) (1) (1).png>) xDai `=> 100`
 
 ![](<../.gitbook/assets/image (69).png>) Polygon `=> 137`
 
@@ -41,3 +41,5 @@ You can reference the supported network in your trigger configuration with the f
 ![](<../.gitbook/assets/image (78).png>) Fantom Testnet `=> 4002`
 
 ![](<../.gitbook/assets/image (82).png>) Arbitrum `=> 42161` (read more about currently available features for Arbitrum [**here**](../supported-networks-and-languages.md))
+
+![](<../.gitbook/assets/image (84).png>) Arbitrum Testnet `=> 421611` (read more about currently available features for Arbitrum [**here**](../supported-networks-and-languages.md))
