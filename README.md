@@ -48,6 +48,6 @@ Know how your transactions will behave before you execute them, estimate the gas
 
 Take your simulations a step further by creating a temporary fork of any supported network and execute multiple transactions in a row to test their behaviour.
 
-****[**Integrations**](simulations-and-forks/integrations.md)****
+****[**Integrations**](monitoring/integrations.md)****
 
 Use our powerful API to access real-time blockchain data necessary for your business. Integrate Tenderly with your product to deliver more value faster.

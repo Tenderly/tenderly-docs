@@ -3,7 +3,7 @@
 ## Adding a Contract to your Project via Tenderly Dashboard
 
 {% hint style="info" %}
-After deploying a contract to a Tenderly Fork using a JSON-RPC, REST API or a Simulation you can **** [**verify your contract**](../../simulations-and-forks/verifying-a-smart-contract.md) **** so Tenderly can decode everything into a human readable format.
+After deploying a contract to a Tenderly Fork using a JSON-RPC, REST API or a Simulation you can **** [**verify your contract**](../verifying-a-smart-contract.md) **** so Tenderly can decode everything into a human readable format.
 {% endhint %}
 
 There are several ways you can add a contract to your project from the Dashboard.

@@ -6,6 +6,22 @@
 * [🫂 Teams & Collaboration](teams-and-collaboration/README.md)
 * [🔍 Explorer](explorer.md)
 
+## 🦅 Monitoring
+
+* [Transaction Overview](monitoring/contracts/README.md)
+  * [Execution Overview](monitoring/contracts/execution-overview.md)
+  * [Simulating a Pending Transaction](monitoring/contracts/simulating-a-pending-transaction.md)
+* [Smart Contracts](monitoring/smart-contracts/README.md)
+  * [Public Contracts](monitoring/smart-contracts/public-contracts.md)
+  * [Proxy Contracts](monitoring/smart-contracts/proxy-contracts.md)
+* [Verifying a Smart Contract](monitoring/verifying-a-smart-contract.md)
+* [Wallets](monitoring/wallets/README.md)
+  * [Converting Contracts into Wallets](monitoring/wallets/converting-contracts-into-wallets.md)
+  * [Wallet Public Page](monitoring/wallets/wallet-public-page.md)
+  * [Simulations with a Wallet](monitoring/wallets/simulations-with-a-wallet.md)
+  * [Wallet Analytics](monitoring/wallets/wallet-analytics.md)
+* [Integrations](monitoring/integrations.md)
+
 ## 🧩 Web3 Actions
 
 * [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
@@ -36,20 +52,6 @@
   * [View Function](alerts/creating-an-alert/view-function.md)
   * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
 
-## 🦅 Monitoring
-
-* [Transaction Overview](monitoring/contracts/README.md)
-  * [Execution Overview](monitoring/contracts/execution-overview.md)
-  * [Simulating a Pending Transaction](monitoring/contracts/simulating-a-pending-transaction.md)
-* [Smart Contracts](monitoring/smart-contracts/README.md)
-  * [Public Contracts](monitoring/smart-contracts/public-contracts.md)
-  * [Proxy Contracts](monitoring/smart-contracts/proxy-contracts.md)
-* [Wallets](monitoring/wallets/README.md)
-  * [Converting Contracts into Wallets](monitoring/wallets/converting-contracts-into-wallets.md)
-  * [Wallet Public Page](monitoring/wallets/wallet-public-page.md)
-  * [Simulations with a Wallet](monitoring/wallets/simulations-with-a-wallet.md)
-  * [Wallet Analytics](monitoring/wallets/wallet-analytics.md)
-
 ## 🔮 Simulations & Forks
 
 * [How to Simulate a Transaction](simulations-and-forks/how-to-simulate-a-transaction/README.md)
@@ -58,8 +60,6 @@
   * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
   * [Fork Parents](simulations-and-forks/how-to-create-a-fork/fork-parents.md)
-* [Verifying a Smart Contract](simulations-and-forks/verifying-a-smart-contract.md)
-* [Integrations](simulations-and-forks/integrations.md)
 
 ## 🐞 Debugger
 
