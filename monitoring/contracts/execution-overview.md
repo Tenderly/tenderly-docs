@@ -10,7 +10,7 @@ In the first tab - **Transaction Overview** - you can see and navigate though al
 
 ![](<../../.gitbook/assets/Screenshot 2021-11-25 at 09.57.12.png>)
 
-From the Overview tab you can instantly jump into Contract Sources or the Debugger in order to see what happened:
+From the Overview Tab tab you can instantly jump into Contract Sources or the Debugger in order to see what happened:
 
 ![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.13.51 (1).png>)
 
@@ -26,7 +26,19 @@ You can also search the Execution Trace, as well as easily navigate it with your
 
 ![](<../../.gitbook/assets/ezgif.com-gif-maker (6).gif>)
 
-But let's say you want to really dig deep into your (or any other) Transaction - let's go through each of the tabs available.
+### Call and Function Trace
+
+In the Execution Trace section you will find a dropdown menu right next to the search field. By default it is set to **Function Trace**, which means it will show all external and internal calls that happened in this transaction.&#x20;
+
+![](<../../.gitbook/assets/Screenshot 2021-12-22 at 10.26.14.png>)
+
+For a better overview of key calls you can switch it to **Call Trace**, which shows only external calls that happened in the transaction.
+
+![](<../../.gitbook/assets/Screenshot 2021-12-22 at 10.35.27.png>)
+
+This feature is also available when you use the **** [**Debugger**](../../debugger/how-to-use-tenderly-debugger/).
+
+Let's say you want to really dig really deep into your (or any other) Transaction - let's go through each of the tabs available.
 
 ### Contracts
 
