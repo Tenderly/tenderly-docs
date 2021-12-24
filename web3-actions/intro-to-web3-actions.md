@@ -4,12 +4,13 @@
 
 You can use Web3 Actions to create custom scenarios in order to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](../alerts/creating-an-alert/) section, automating testing or live production execution in the [**Simulator**](../simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](../simulations-and-forks/how-to-create-a-fork/), or anything else that comes to (your) mind.
 
-The code Web3 Actions run is called a _**function**_. The function must be written in TypeScript (or JavaScript) and run in Node 14 runtime. Specification of events that your action listens to is called a _**trigger**_. There are 4 types of triggers:
+The code Web3 Actions run is called a _**function**_. The function must be written in TypeScript (or JavaScript) and run in Node 14 runtime. Specification of events that your action listens to is called a _**trigger**_. There are 5 types of triggers:
 
 * **Transaction** - runs a function in response to transactions, with statuses like _as soon as the transaction is mined_ or _after 10 blocks have passed_ and filters such as _emitted events,_ _invoked methods_, etc.
 * **Block** - runs your function when the block is mined on a chosen chain(s).
 * **Webhook** - runs your function when a request is POSTed to an endpoint.
 * **Periodic** - runs your function in periodic intervals or configured CRON.
+* **Alert** - use your action as the destination channel for an alert (trigger your action when your defined alert is triggered).
 
 ### Getting Started (CLI)
 
