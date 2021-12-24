@@ -177,6 +177,13 @@ trigger:
             address: 0xC2E52b2697AC97457C2B5FB69944B0537698415A
           # with name "Staked"
           name: Staked
+        # Or you can filter for raw logs without event decoding
+        logEmitted:
+          # transaction must product log with topics having this array as prefix,
+          # useful when you do not have a contract
+          startsWith:
+            - 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+            - 0x0000000000000000000000000000000000000000000000000000000000000000
 
       # Or written in a more compact way
 
@@ -206,6 +213,16 @@ trigger:
               address: 0xF215d4Aae591602c9abfbabD0db18DD165ad9288
             # or "StakedNew" from 0xF215d4Aae591602c9abfbabD0db18DD165ad9288
             name: StakedNew
+        # Or you can filter for raw logs without event decoding
+        logEmitted:
+          - startsWith:
+              - 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+              - 0x0000000000000000000000000000000000000000000000000000000000000000
+          - startsWith:
+              - 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+              - 0x1111111111111111111111111111111111111111111111111111111111111111
+        
+        
 ```
 
 ## Webhook
