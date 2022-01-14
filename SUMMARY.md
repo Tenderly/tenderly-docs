@@ -75,6 +75,7 @@
 
 ## Other
 
+* [⌨ Tenderly CLI](https://github.com/Tenderly/tenderly-cli)
 * [👷 Hardhat Plugin](https://github.com/Tenderly/hardhat-tenderly)
 * [🤓 Privacy Policy](https://tenderly.co/privacy-policy)
 
