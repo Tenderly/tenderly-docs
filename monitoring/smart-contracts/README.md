@@ -75,7 +75,7 @@ There are a couple of ways we can achieve this: we can use the Tenderly CLI to p
 
 If you don't have the Tenderly CLI already installed, [it's effortless to set up](https://github.com/Tenderly/tenderly-cli#installation). Once you've done that, run **tenderly login**.
 
-The next step is to go into your project directory and run **tenderly init**. As I'm using the Tennis Match example from a previous article, I'm going to pick _Create new project_ and write _Tennis Match_.
+The next step is to go into your project directory and run **tenderly init**. As we're using the Tennis Match example from a previous article, we're going to pick _Create new project_ and write _Tennis Match_.
 
 ```
 $ tenderly init
