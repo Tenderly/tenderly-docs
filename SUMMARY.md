@@ -11,6 +11,7 @@
 * [Transaction Overview](monitoring/contracts/README.md)
   * [Execution Overview](monitoring/contracts/execution-overview.md)
   * [Simulating a Pending Transaction](monitoring/contracts/simulating-a-pending-transaction.md)
+  * [Commenting & Prioritizing Traces](monitoring/contracts/commenting-and-prioritizing-traces.md)
 * [Smart Contracts](monitoring/smart-contracts/README.md)
   * [Public Contracts](monitoring/smart-contracts/public-contracts.md)
   * [Proxy Contracts](monitoring/smart-contracts/proxy-contracts.md)
