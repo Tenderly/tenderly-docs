@@ -36,9 +36,11 @@ For a better overview of key calls you can switch it to **Call Trace**, which sh
 
 ![](<../../.gitbook/assets/Screenshot 2021-12-22 at 10.35.27.png>)
 
-This feature is also available when you use the **** [**Debugger**](../../debugger/how-to-use-tenderly-debugger/).
+{% hint style="success" %}
+You can **comment and prioritize any trace you want**, either for yourself or to make collaboration in the project easier. You can [**read more about it here**](commenting-and-prioritizing-traces.md).
+{% endhint %}
 
-Let's say you want to really dig really deep into your (or any other) Transaction - let's go through each of the tabs available.
+This feature is available in the **** [**Debugger**](../../debugger/how-to-use-tenderly-debugger/) as well. Now, let's say you want to really dig really deep into your (or any other) Transaction - let's go through each of the tabs available.
 
 ### Contracts
 

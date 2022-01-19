@@ -32,7 +32,9 @@ The [transaction failed](https://dashboard.tenderly.co/tx/polygon/0xbcd377e337ce
 
 As a way to avoid these issues in the future, we could lower the amount between `swap` and `repay` steps to allow for price slippage (\~0.3%). Alternatively, by using the `previous output` feature when inputing the amount for the second cube we will ensure sending the exact and expected amount from the first cube.
 
-
+{% hint style="success" %}
+You can **comment and prioritize any trace you want**, either for yourself or to make collaboration in the project easier. You can [**read more about it here**](../../monitoring/contracts/commenting-and-prioritizing-traces.md).
+{% endhint %}
 
 ### Example 2
 
