@@ -57,5 +57,5 @@ Tenderly now automatically simulates the (expected) outcome of pending transacti
 
 This feature is available to all users, even if they are not logged in. That means that **you can now simulate live pending transactions** in this way even [**from our Explorer page**](https://dashboard.tenderly.co/explorer) without having an account - but you really should make one (it's free) so you can use the full power of our [**Simulations**](../how-to-simulate-a-transaction/) **** and **Forks** 🚀
 
-Read more about it [**here**](../../monitoring/contracts/simulating-a-pending-transaction.md).
+Read more about it [**here**](../../monitoring/contracts/mempool-and-simulating-pending-transactions.md).
 {% endhint %}

@@ -1,4 +1,18 @@
-# Simulating a Pending Transaction
+# Mempool & Simulating Pending Transactions
+
+### Exploring Mempool and Filtering Pending Transactions
+
+When exploring the transaction list in the **Transactions** tab (on the left), you can filter the default view and see **Pending Transactions** from the **mempool** as well - either by clicking the checkbox at the top or by clicking on Filter Transactions button in the top right.
+
+![](<../../.gitbook/assets/Screenshot 2022-01-25 at 12.21.02 (1).png>)
+
+![](<../../.gitbook/assets/Screenshot 2022-01-25 at 12.22.32.png>)
+
+When you click on and open a pending transaction, the expected outcome will be automatically simulated using the most recent state.
+
+![](<../../.gitbook/assets/Screenshot 2022-01-25 at 12.24.02.png>)
+
+### Simulating Pending Transactions
 
 When you search for a transaction which is not yet mined and cannot be found in the system, **Tenderly will retrieve said transaction directly from the node pending pool and Simulate it using the most recent state**.
 

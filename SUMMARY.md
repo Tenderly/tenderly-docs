@@ -10,7 +10,7 @@
 
 * [Transaction Overview](monitoring/contracts/README.md)
   * [Execution Overview](monitoring/contracts/execution-overview.md)
-  * [Simulating a Pending Transaction](monitoring/contracts/simulating-a-pending-transaction.md)
+  * [Mempool & Simulating Pending Transactions](monitoring/contracts/mempool-and-simulating-pending-transactions.md)
   * [Commenting & Prioritizing Traces](monitoring/contracts/commenting-and-prioritizing-traces.md)
 * [Smart Contracts](monitoring/smart-contracts/README.md)
   * [Public Contracts](monitoring/smart-contracts/public-contracts.md)
