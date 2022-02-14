@@ -126,7 +126,7 @@ trigger:
           gte: 200000
         # Transaction fee must be less than 1M gwei.
         fee:
-          lt: 1000000000
+          lt: 1000000
         
         # Or with more possible values.
 
@@ -145,7 +145,7 @@ trigger:
           - lte: 100000
         # Transaction fee must be between 1M and 2M, inclusive.
         fee:
-          gte: 1000000000
+          gte: 1000000
           lte: 2000000
 ```
 
