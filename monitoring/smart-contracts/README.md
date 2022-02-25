@@ -113,7 +113,7 @@ Now when you open your [Tenderly dashboard](https://dashboard.tenderly.co), you'
 [proxy-contracts.md](proxy-contracts.md)
 {% endcontent-ref %}
 
-### Building `deployments` directory and running `tenderly init`
+### Using Tenderly-Hardhat to add a contract to your project
 
 You can generate your `deployments` directory using the [hardhat-tenderly](https://github.com/Tenderly/hardhat-tenderly#readme.) plugin.
 
