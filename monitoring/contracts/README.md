@@ -12,6 +12,8 @@ You can also choose which columns will be shown on the transaction overview scre
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.16.23.png>)
 
+From this page you can do several things - explore the [**Execution Overview**](execution-overview.md) to see everything that happened in the transaction, jump into the [**Debugger**](../../debugger/how-to-use-tenderly-debugger/) for more a more in-depth look, or even start up a [**Simulation**](../../simulations-and-forks/how-to-simulate-a-transaction/) (or a [**Fork**](../../simulations-and-forks/how-to-create-a-fork/)) for you to experiment and test the outcomes of the transaction by changing any and all of its parameters.
+
 ## Transaction Filtering
 
 What's better than having all transactions in one place? Filtering through them at the speed of light! Ok, maybe not the speed of light, but faster than anything else for sure.

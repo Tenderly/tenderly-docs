@@ -56,7 +56,7 @@
 ## 🔮 Simulations & Forks
 
 * [How to Simulate a Transaction](simulations-and-forks/how-to-simulate-a-transaction/README.md)
-  * [Transaction Parameters](simulations-and-forks/how-to-simulate-a-transaction/transaction-parameters.md)
+  * [Simulation Parameters](simulations-and-forks/how-to-simulate-a-transaction/transaction-parameters.md)
   * [Pending vs Historical Block](simulations-and-forks/how-to-simulate-a-transaction/pending-vs-historical-block.md)
   * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)

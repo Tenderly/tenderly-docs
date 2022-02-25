@@ -1,8 +1,10 @@
 # Pending vs Historical Block
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.15.48.png>)
+![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.43.31.png>)
 
 If you choose to **simulate on a pending block**, by submitting your simulation Tenderly will slot it into the next available block to be mined with the appropriate transaction index within the block (i.e. next one at the moment of running the simulation).
+
+![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.42.50.png>)
 
 If you choose to **simulate on a historical block**, you can choose literally any block number - going back to the beginning of time i.e. the network you are simulating on - and any transaction index within that block to be executed by the simulation.
 

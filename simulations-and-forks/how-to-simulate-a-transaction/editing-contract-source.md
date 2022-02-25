@@ -1,10 +1,10 @@
 # Editing Contract Source
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.11.12.png>)
+You can edit the contract source on the fly while setting up your simulation or re-simulating, by showing the entire code and giving access to any line or parameter you would want to change.
+
+![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.44.44.png>)
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.11.40.png>)
-
-You can edit the contract source on the fly while setting up your simulation or re-simulating, by showing the entire code and giving access to any line or parameter you would want to change.
 
 **This means almost instant testing of bug fixes, changing parameters to test the outcome on-chain or doing anything you want with the contract source code (either custom or public).**
 

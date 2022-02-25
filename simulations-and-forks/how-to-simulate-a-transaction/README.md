@@ -26,13 +26,13 @@ You can simulate any transaction on Tenderly in several ways. One of the easiest
 
 In the top right you can see an option to **Re-Simulate** the transaction, which will launch the **Simulator** and allow you to change any and all [**transaction parameters**](transaction-parameters.md) **** before running the simulation:
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 17.01.18.png>)
+![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.50.15.png>)
 
 You can also start the simulation by going to the **Simulator** tab in the left navigation pane and clicking on **New Simulation** in the top right, making it possible to run completely custom simulations:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 17.04.05.png>)
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 17.06.07.png>)
+![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.50.40.png>)
 
 ### Simulating a Transaction
 
@@ -65,3 +65,5 @@ The transaction failed again in a different place which was expected since we de
 Clicking the back arrow or clicking on the **Simulator** tab in the left navigation pane brings you (back) to the historical list of all simulations:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.19.02.png>)
+
+You can [**modify various parameters in any Simulation**](transaction-parameters.md), such as **General Simulation Parameters**, **State Override** and **Optional Access List**.

@@ -67,7 +67,7 @@ Note that choosing the correct Compiler Version for your contract is important t
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.14.47.png>)
 
-### Adding a contract to your project via Tenderly CLI
+## Adding a contract to your project via Tenderly CLI
 
 First things first, we need to get your Smart Contracts into Tenderly to use all of the timesaving features like the Visual Debugger, Gas Profiler, Alerts, and more.
 
@@ -112,3 +112,63 @@ Now when you open your [Tenderly dashboard](https://dashboard.tenderly.co), you'
 {% content-ref url="proxy-contracts.md" %}
 [proxy-contracts.md](proxy-contracts.md)
 {% endcontent-ref %}
+
+### Building `deployments` directory and running `tenderly init`
+
+You can generate your `deployments` directory using the [hardhat-tenderly](https://github.com/Tenderly/hardhat-tenderly#readme.) plugin.
+
+To install hardhat-tenderly run:
+
+```
+    npm install --save-dev @tenderly/hardhat-tenderly
+```
+
+Add the following statement to your `hardhat.config.js`:
+
+```
+    require("@tenderly/hardhat-tenderly");
+```
+
+Or, if you are using typescript:
+
+```
+    import "@tenderly/hardhat-tenderly"
+```
+
+Then you need to call it from your scripts (using ethers to deploy a contract):
+
+```
+    const Greeter = await ethers.getContractFactory("Greeter");
+    const greeter = await Greeter.deploy("Hello, Hardhat!");
+
+    await greeter.deployed()
+
+    await hre.tenderly.persistArtifacts({
+        name: "Greeter",
+        address: greeter.address,
+    })
+```
+
+`persistArtifacts` accept variadic parameters:
+
+```
+    const contracts = [
+    {
+        name: "Greeter",
+        address: "123"
+    },
+    {
+        name: "Greeter2",
+        address: "456"
+    }]
+
+    await hre.tenderly.persistArtifacts(...contracts)
+```
+
+Run: `npx hardhat compile` to compile contracts.
+
+Run: `npx hardhat node --network hardhat` to start a local node.
+
+Run: `npx hardhat run scripts/sample-script.js --network localhost` to run a script.
+
+Now you have your `deployments` directory built, and you can run `tenderly init`.

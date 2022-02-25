@@ -2,6 +2,10 @@
 
 After deploying a contract (for example to a [Tenderly Fork](../simulations-and-forks/how-to-create-a-fork/)) you can verify your contract so Tenderly can decode everything into a human readable format. This is especially useful if you want to use the full power of our [Debugger](../debugger/how-to-use-tenderly-debugger/).
 
+{% hint style="info" %}
+If you want to **import and verify contracts** from your local environment **via CLI**, you can **follow** [**this guide**](https://docs.tenderly.co/monitoring/smart-contracts#adding-a-contract-to-your-project-via-tenderly-cli).
+{% endhint %}
+
 Click on the **Contracts** tab in the left navigation bar, and then on `Add Contract` in the top right after which you will be shown the following screen:
 
 ![](<../.gitbook/assets/image (96).png>)

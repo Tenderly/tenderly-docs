@@ -22,11 +22,11 @@ Regardless of the chosen block, we can now create a Simulation on our newly crea
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.27.32.png>)
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.35.01.png>)
+![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.46.59.png>)
 
 You can use either public or [**custom contracts**](../how-to-simulate-a-transaction/transaction-parameters.md) here as well:
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.39.25.png>)
+![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.47.27.png>)
 
 All that is left to do is fill out the fork simulation parameters, click **Simulate Transaction** and that's it - you can now run as many simulations as you want on your fork!
 
