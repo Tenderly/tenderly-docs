@@ -2,9 +2,9 @@
 
 You can reference the supported network in your trigger configuration with the following numbers:
 
-![](<../.gitbook/assets/image (80) (1).png>) Mainnet `=> 1`
+![](<../.gitbook/assets/image (80) (1) (1).png>) Mainnet `=> 1`
 
-![](<../.gitbook/assets/image (85) (1).png>) Kovan `=> 42`
+![](<../.gitbook/assets/image (85) (1) (1).png>) Kovan `=> 42`
 
 ![](<../.gitbook/assets/image (73).png>) Ropsten `=> 3`
 
@@ -36,9 +36,9 @@ You can reference the supported network in your trigger configuration with the f
 
 ![](<../.gitbook/assets/image (79).png>) Avalanche C-Chain Fuji `=> 43113`
 
-![](<../.gitbook/assets/image (77).png>) Fantom `=> 250`
+![](<../.gitbook/assets/image (77) (1).png>) Fantom `=> 250`
 
-![](<../.gitbook/assets/image (78).png>) Fantom Testnet `=> 4002`
+![](<../.gitbook/assets/image (78) (1).png>) Fantom Testnet `=> 4002`
 
 ![](<../.gitbook/assets/image (82).png>) Arbitrum `=> 42161` (read more about currently available features for Arbitrum [**here**](../supported-networks-and-languages.md))
 

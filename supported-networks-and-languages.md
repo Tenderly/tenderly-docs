@@ -2,9 +2,9 @@
 
 {% tabs %}
 {% tab title="Networks" %}
-![](<.gitbook/assets/image (80) (1).png>) Mainnet
+![](<.gitbook/assets/image (80) (1) (1).png>) Mainnet
 
-![](<.gitbook/assets/image (85) (1).png>) Kovan
+![](<.gitbook/assets/image (85) (1) (1).png>) Kovan
 
 ![](<.gitbook/assets/image (73).png>) Ropsten
 
@@ -36,9 +36,9 @@
 
 ![](<.gitbook/assets/image (79).png>) Avalanche C-Chain Fuji
 
-![](<.gitbook/assets/image (77).png>) Fantom
+![](<.gitbook/assets/image (77) (1).png>) Fantom
 
-![](<.gitbook/assets/image (78).png>) Fantom Testnet
+![](<.gitbook/assets/image (78) (1).png>) Fantom Testnet
 
 ![](<.gitbook/assets/image (82).png>) Arbitrum\*
 

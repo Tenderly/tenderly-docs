@@ -8,7 +8,7 @@ If you want to **import and verify contracts** from your local environment **via
 
 Click on the **Contracts** tab in the left navigation bar, and then on `Add Contract` in the top right after which you will be shown the following screen:
 
-![](<../.gitbook/assets/image (96).png>)
+![](<../.gitbook/assets/image (96) (1).png>)
 
 ### File(s) Upload
 
@@ -58,7 +58,7 @@ If the contract is verified publicly, it will be visible to everyone using Tende
 
 If you uploaded a folder and have multiple contracts, you can choose which one(s) you want to verify, and fill out the contract info by choosing its Network and pasting the contract address from where it was deployed.
 
-![](<../.gitbook/assets/image (95).png>)
+![](<../.gitbook/assets/image (95) (1).png>)
 
 After you add your contract, you can add other from your folder by clicking on the `Add more` button:
 
@@ -68,15 +68,15 @@ Finally you need to fill-out the compiler info, which needs to match the paramet
 
 ![](<../.gitbook/assets/image (92).png>)
 
-![](<../.gitbook/assets/image (76).png>)
+![](<../.gitbook/assets/image (76) (1).png>)
 
 You can now see all of the contracts that you have verified:
 
-![](<../.gitbook/assets/image (80).png>)
+![](<../.gitbook/assets/image (80) (1).png>)
 
 And we can now see the verified contract(s) in the project contract list:
 
-![](<../.gitbook/assets/image (91).png>)
+![](<../.gitbook/assets/image (91) (1).png>)
 
 ### JSON Upload
 
@@ -104,7 +104,7 @@ After you add your contract, you can add other from your folder by clicking on t
 
 Finally you need to fill-out the compiler info, which needs to match the parameters you chose when you deployed the contract:
 
-![](<../.gitbook/assets/image (93) (1).png>)
+![](<../.gitbook/assets/image (93) (1) (1).png>)
 
 You can now see all of the contracts that you have verified:
 

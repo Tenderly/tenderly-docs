@@ -1,6 +1,6 @@
 # Triggers
 
-A **trigger** determines on which event or by which schedule your function will be executed. Action trigger is configured in `tenderly.yaml`, if you haven't already, see the [**configuration**](configuration.md).&#x20;
+A **trigger** determines on which event or by which schedule your function will be executed. Action trigger is configured in `tenderly.yaml`, if you haven't already, see the [**configuration**](configuration.md). Also, there is an option to configure a trigger through the Dashboard UI.
 
 If the action has just trigger type, it will not run automatically, but you can still use manual triggering. Here is an example of a trigger with just a type:
 
@@ -36,6 +36,10 @@ trigger:
     - 42
     blocks: 100
 ```
+
+If you want to configure a block trigger through the UI, you can do it by going to the Edit Action -> Trigger section.
+
+![Set up a block trigger configuration through the UI](<../.gitbook/assets/image (80).png>)
 
 ## Transaction
 
@@ -225,6 +229,10 @@ trigger:
         
 ```
 
+{% hint style="info" %}
+The transaction trigger can be configured through the `tenderly.yaml` only.
+{% endhint %}
+
 ## Webhook
 
 Webhook lets you trigger an action with a `POST` request.
@@ -256,11 +264,15 @@ You can get this curl generated for your action when you open action in the dash
 
 For non-authenticated webhook, you don't have to pass `x-access-key` header.
 
-You can access the body from the request in runtime through WebhookEvent. In this example, `webhookEvent.payload.dataKey` will have value "dataValue"
+You can access the body from the request in runtime through WebhookEvent. In this example, `webhookEvent.payload.dataKey` will have value "dataValue".
 
 {% hint style="warning" %}
 The payload must be valid JSON and the webhook endpoint will respond with 200 and `{}` if action was triggered successfully.
 {% endhint %}
+
+If you want to configure the webhook trigger through the UI, you can do it by going to the Edit Action -> Trigger section.
+
+![Set up the webhook trigger configuration through the UI](<../.gitbook/assets/image (85).png>)
 
 ## Periodic
 
@@ -288,6 +300,12 @@ trigger:
     cron: "5 */1 * * *"
 ```
 
+If you want to configure a periodic trigger through the UI, you can do it by going to the Edit Action -> Trigger section.
+
+![Set up a periodic trigger configuration through the UI](<../.gitbook/assets/image (78).png>)
+
+![Supported values for interval scheduling](<../.gitbook/assets/image (76).png>)
+
 ## Alert
 
 An alert trigger means your action will be used as a [**destination for the alert**](../alerts/creating-an-alert/).
@@ -299,3 +317,11 @@ trigger:
 ```
 
 A single action can be used as a destination for multiple alerts.
+
+![Set up an alert trigger configuration through the UI](<../.gitbook/assets/image (93).png>)
+
+![List of the trigger configurations](<../.gitbook/assets/image (96).png>)
+
+![Expandable configuration for the trigger](<../.gitbook/assets/image (77).png>)
+
+![Edit your trigger through the modal](<../.gitbook/assets/image (95).png>)
