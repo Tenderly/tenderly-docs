@@ -45,3 +45,28 @@ This feature is available to all users, even if they are not logged in. That mea
 
 Read more about it [**here**](mempool-and-simulating-pending-transactions.md).
 {% endhint %}
+
+## Advanced Trace Filtering
+
+When you look at the Execution Trace segment of the Transaction Overview for any transaction, you will see this button next to the Execution Search which opens the Advanced Trace Search:
+
+![](<../../.gitbook/assets/Screenshot 2022-03-15 at 14.36.13.png>)
+
+You will be able to search for a trace by following categories:
+
+* All (all listed categories will be searched)
+* OpCode
+* From
+* To
+* Function
+* File
+* Contract
+* State Variable
+
+![](<../../.gitbook/assets/Screenshot 2022-03-15 at 14.38.05.png>)
+
+![](<../../.gitbook/assets/Screenshot 2022-03-16 at 14.19.29.png>)
+
+When you click on any of the search results, you will be taken to the corresponding line of code in the Execution Trace segment:
+
+![](<../../.gitbook/assets/Screenshot 2022-03-16 at 14.20.16.png>)

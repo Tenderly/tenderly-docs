@@ -21,6 +21,7 @@
   * [Wallet Public Page](monitoring/wallets/wallet-public-page.md)
   * [Simulations with a Wallet](monitoring/wallets/simulations-with-a-wallet.md)
   * [Wallet Analytics](monitoring/wallets/wallet-analytics.md)
+  * [Wallet Tags](monitoring/wallets/wallet-tags.md)
 * [Integrations](monitoring/integrations.md)
 
 ## 🧩 Web3 Actions
