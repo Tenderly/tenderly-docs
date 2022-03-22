@@ -2,7 +2,7 @@
 
 You can now view and filter the analytics view according to your project wallets:
 
-![](<../../.gitbook/assets/image (90) (1).png>)
+![](<../../.gitbook/assets/image (90) (1) (1).png>)
 
 A well as create a **Graph** with your project wallets (selecting one or more for overlay):
 

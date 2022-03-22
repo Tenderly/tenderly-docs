@@ -20,7 +20,7 @@ You can reference the supported network in your trigger configuration with the f
 
 ![](<../.gitbook/assets/image (88) (1).png>) BSC Testnet `=> 97`
 
-![](<../.gitbook/assets/image (86).png>) POA `=> 99`
+![](<../.gitbook/assets/image (86) (1).png>) POA `=> 99`
 
 ![](<../.gitbook/assets/image (84) (1) (1).png>) xDai `=> 100`
 

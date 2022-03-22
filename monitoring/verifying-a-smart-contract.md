@@ -108,7 +108,7 @@ Finally you need to fill-out the compiler info, which needs to match the paramet
 
 You can now see all of the contracts that you have verified:
 
-![](<../.gitbook/assets/image (90).png>)
+![](<../.gitbook/assets/image (90) (1).png>)
 
 And we can now see the verified contract(s) in the project contract list:
 

@@ -77,6 +77,18 @@ Deployed action can be stopped through the dashboard. Action will stay deployed,
 
 If you just want to validate configuration or build implementation without deploying it, run `tenderly actions build`.
 
+### Create and Edit Action from the UI
+
+If you prefer a more visual experience while setting up your actions, we created a Web3 Action UI Builder. Go to the **Actions** tab in the sidebar and click on **Add Action** button in the upper right corner.
+
+![Web3 Actions Welcome Screen](<../.gitbook/assets/image (90).png>)
+
+You will enter to **Web3 Action Cration** page where you can configure action type, set up code and trigger and name it as you want to be recognizable.
+
+![Web3 Action UI Builder](<../.gitbook/assets/image (86).png>)
+
+The first step is setting up the **trigger type**.
+
 ### Manual Trigger
 
 While action must specify trigger type, it doesn't have to configure a trigger. Without a configured trigger, the action will never run automatically. But you can still run your action manually! This can be useful for testing. Navigate to the specific action and click the **Manual Trigger** button.

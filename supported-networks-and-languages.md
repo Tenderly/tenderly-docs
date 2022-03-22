@@ -20,7 +20,7 @@
 
 ![](<.gitbook/assets/image (88) (1).png>) BSC Testnet
 
-![](<.gitbook/assets/image (86).png>) POA
+![](<.gitbook/assets/image (86) (1).png>) POA
 
 ![](<.gitbook/assets/image (84) (1) (1).png>) xDai
 
