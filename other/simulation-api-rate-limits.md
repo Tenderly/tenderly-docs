@@ -4,7 +4,7 @@
 
 API access starts with the Pro plan, with the usage rate limits for the Pro Plan Simulation API being the following:
 
-* 100 requests/minute.
+* 100 simulations/minute.
 * Monthly Simulation API limit is capped at 12.400 simulations (or forks)/month.
 * Daily Simulation API limit is capped at 2.000 simulations (or forks)/day.
 
