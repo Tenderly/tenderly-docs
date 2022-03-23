@@ -46,7 +46,7 @@ This feature is available to all users, even if they are not logged in. That mea
 Read more about it [**here**](mempool-and-simulating-pending-transactions.md).
 {% endhint %}
 
-## Advanced Trace Filtering
+## Advanced Trace Search
 
 When you look at the Execution Trace segment of the Transaction Overview for any transaction, you will see this button next to the Execution Search which opens the Advanced Trace Search:
 
