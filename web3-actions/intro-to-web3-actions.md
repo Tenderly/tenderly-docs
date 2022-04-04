@@ -87,7 +87,7 @@ You will enter to **Web3 Action Cration** page where you can configure action ty
 
 ![Web3 Action UI Builder](<../.gitbook/assets/image (86).png>)
 
-The first step is setting up the **trigger type**.
+The first step is setting up the **trigger type** where you can determine what type of event your action is listening to. After that, you'll be prompted to add a source code of your Web3 Action (you can see the event schema, secret and storage source code at our [GitHub repository](https://github.com/Tenderly/tenderly-actions/blob/main/packages/actions/src/actions.ts)). The next step is to set up a trigger on which event or by which schedule your function will be executed. The last step is setting up the name and a description of the Web3 Action.
 
 ### Manual Trigger
 
