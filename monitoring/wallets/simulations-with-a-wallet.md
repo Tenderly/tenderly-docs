@@ -11,4 +11,4 @@ When you start up a new [**Simulation**](../../simulations-and-forks/how-to-simu
 
 By changing the network the list of the wallets in the **From** field will change accordingly, if it exists on the chosen network:
 
-![](<../../.gitbook/assets/image (88).png>)
+![](<../../.gitbook/assets/image (88) (1).png>)

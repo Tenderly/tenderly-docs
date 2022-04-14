@@ -31,6 +31,7 @@
 * [Configuration](web3-actions/configuration.md)
 * [Triggers](web3-actions/triggers.md)
 * [Networks](web3-actions/networks.md)
+* [Notifications](web3-actions/notifications.md)
 
 ## 🔔 Alerts
 
@@ -62,6 +63,7 @@
   * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
   * [Fork Parents](simulations-and-forks/how-to-create-a-fork/fork-parents.md)
+* [Simulation API](simulations-and-forks/simulation-api.md)
 
 ## 🐞 Debugger
 
