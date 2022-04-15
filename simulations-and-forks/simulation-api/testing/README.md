@@ -8,8 +8,8 @@ Here you'll find examples showing how to utilize Tenderly to achieve testing aga
 
 The following how-to list might give you more ideas about everything that is possible to test with Tenderly:
 
-{% content-ref url="how-to-deploy-smart-contract-once-per-test-execution.md" %}
-[how-to-deploy-smart-contract-once-per-test-execution.md](how-to-deploy-smart-contract-once-per-test-execution.md)
+{% content-ref url="how-to-deploy-smart-contract-once-per-test.md" %}
+[how-to-deploy-smart-contract-once-per-test.md](how-to-deploy-smart-contract-once-per-test.md)
 {% endcontent-ref %}
 
 ...in order to test the contract.

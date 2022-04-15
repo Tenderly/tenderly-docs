@@ -40,9 +40,11 @@ TENDERLY_PROJECT=... # project slug
 TENDERLY_USER=... # your username
 ```
 
-You can find more details here
+You can find more details here:
 
-<mark style="background-color:yellow;">Configuration of API access</mark>
+{% content-ref url="configuration-of-api-access.md" %}
+[configuration-of-api-access.md](configuration-of-api-access.md)
+{% endcontent-ref %}
 
 ### 1 Create a one-off simulation
 

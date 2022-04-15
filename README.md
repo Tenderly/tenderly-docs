@@ -42,7 +42,11 @@ Get a granular gas usage breakdown to help you optimize your Smart Contracts and
 
 ****[**Simulations**](simulations-and-forks/how-to-simulate-a-transaction/)****
 
-Know how your transactions will behave before you execute them, estimate the gas usage and test potential bug fixes.
+Know how your transactions will behave before you execute them, estimate the gas usage and test potential bug fixes. **You can also find extensive Simulation API documentation here:**
+
+{% content-ref url="simulations-and-forks/simulation-api/" %}
+[simulation-api](simulations-and-forks/simulation-api/)
+{% endcontent-ref %}
 
 ****[**Forks**](simulations-and-forks/how-to-create-a-fork/)****
 

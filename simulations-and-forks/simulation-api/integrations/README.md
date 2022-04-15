@@ -2,8 +2,8 @@
 
 In this section, you'll find some examples and ideas how you can incorporate capabilities Tenderly offers in your system, for various stages of development workflow and needs of your product:
 
-{% content-ref url="instant-staging-qa-environment.md" %}
-[instant-staging-qa-environment.md](instant-staging-qa-environment.md)
+{% content-ref url="instant-staging-qa-environment-for-dapps.md" %}
+[instant-staging-qa-environment-for-dapps.md](instant-staging-qa-environment-for-dapps.md)
 {% endcontent-ref %}
 
 {% content-ref url="ci-cd-pipeline-for-smart-contracts.md" %}
