@@ -190,68 +190,10 @@ const TENDERLY_FORK_ACCESS_URL = `https://api.tenderly.co/api/v1/account/${TENDE
 await axios.delete(TENDERLY_FORK_ACCESS_URL), {}, opts)
 ```
 
-#### Next steps?
+{% hint style="success" %}
+In the following articles you will find specific code examples in some places. If you want to browse our code repo immediately you can find it in [**this GitHub repo**](https://github.com/Tenderly/integration-samples).
+{% endhint %}
 
-How to leverage Simulation API to help you level up your blockchain development and product offering.
-
-#### Development
-
-Instant Staging/QA environment
-
-CI/CD pipeline for smart contracts
-
-Local tests on top of Mainnet data in the Cloud
-
-#### Product
-
-DApp playground mode
-
-Dry-run user transactions
-
-***
-
-#### Code examples
-
-Here is the example implementation of the above use case
-
-GITHUB [REPO](https://github.com/Tenderly/integration-samples)
-
-***
-
-### How-to guides...
-
-#### Fork **Customization**
-
-Various things you can do to simulate fairly custom conditions and parameters in your Simulation environment and customize simulation execution modes and speed.
-
-How to revert transactions (aka Timemachine)?
-
-How to point the fork to a specific simulation
-
-How to advance time on your Fork.
-
-How to advance time on Fork
-
-How to advance/mine blocks.
-
-How to advance/mine the block
-
-How to specify custom chain\_id (used for transaction signing).
-
-How to specify/change network `chain_id`
-
-How to enable easy debugging of failed transaction simulations?
-
-Easily debug failed transactions
-
-How to simulate sending a transaction from an arbitrary address
-
-How to impersonate any address as a simulation sender
-
-#### **Testing**
-
-Run local tests on top of Mainnet data in the Cloud
-
-***
-
-In order to achieve much better flexibility for your solution here are API specifications and developer documentation.
+{% hint style="info" %}
+You can check out the [plans and pricing for the Simulation API here](../../other/simulation-api-rate-limits.md). You can also check out all [Public API endpoints here](https://docs-api.tenderly.co) - this documentation space is under continuous development, so if you need some API endpoints that aren't available or other API needs that aren't listed publicly, please ping us via [**Intercom on the Tenderly Dashboard**](https://dashboard.tenderly.co) **** and we'll do our best to meet your needs 🖖
+{% endhint %}

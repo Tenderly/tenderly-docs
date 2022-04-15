@@ -63,7 +63,6 @@
   * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
   * [Fork Parents](simulations-and-forks/how-to-create-a-fork/fork-parents.md)
-* [Simulation API Placeholder](simulations-and-forks/simulation-api-placeholder.md)
 * [Simulation API](simulations-and-forks/simulation-api/README.md)
   * [Configuration of API access](simulations-and-forks/simulation-api/configuration-of-api-access.md)
   * [Integrations](simulations-and-forks/simulation-api/integrations/README.md)
