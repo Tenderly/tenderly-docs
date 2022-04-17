@@ -161,7 +161,7 @@ await provider.send('tenderly_addBalance', params)
 
 ### 4 Execute transaction in Tenderly Fork
 
-Now that we have enough Ethers to cover all gas costs for our transactions. Let’s start to chain transaction simulations, we are going to execute `approve()` and `transferFrom()` functions on top of the DAI contract. But before we do, we are going to `transfer()` some tokens to our default Signer address.
+Now that we have enough Ethers to cover all gas costs for our transactions. Let’s start to chain transaction simulations, we are going to execute `approve()` and `transferFrom()` functions on top of the DAI contract.
 
 We can use the provider we have created in 2.1 with ethers.js.
 
@@ -176,6 +176,8 @@ const daiContract = new ethers.Contract(DAI_ADDRESS , DAI_ABI , signer);
 // we can use ether encoding because dai contract has 18 decimals
 const tokenAmount = utils.parseEther('1').toString(10);
 
+// Keep in mind that every account is automatically unlocked when performing simulations.
+// This enables you to impersonate any address and send transactions. 
 const unsignedTx = await contract.populateTransaction.approve(await signer.GetAddress(), tokenAmount)
 const transactionParameters = [{
     to: contract.address,
