@@ -1,4 +1,4 @@
-# Dry-run user transactions
+# Dry-run User Transactions
 
 ## Overview
 
@@ -24,19 +24,19 @@ const unsignedTx = await dai.populateTransaction.transfer(ZERO_ADDRESS, YOUR_ADD
 
 ### Simulate transactions before sending
 
-Now that we have extracted an unsigned raw transaction, let's simulate it before sending it onchain (to Ethereum Mainnet):
+Now that we have extracted an unsigned raw transaction, let's simulate it before sending it on-chain (to Ethereum Mainnet):
 
 ```tsx
 ...
 
 const body = {
-		"network_id": "1",
-	  "from": senderAddr,
-	  "to": contract.address,
-	  "input": unsignedTx.data,
-	  "gas": 21204,
-	  "gas_price": "0",
-	  "value": 0,
+    "network_id": "1",
+    "from": senderAddr,
+    "to": contract.address,
+    "input": unsignedTx.data,
+    "gas": 21204,
+    "gas_price": "0",
+    "value": 0,
     "save_if_fails": true
 }
 
@@ -66,29 +66,29 @@ export class TenderlySimulationSigner {
   constructor(
     provider: ethers.Provider,
   ) {
-	  this._provider = provider;
+    this._provider = provider;
   }
 
   public async sendTransaction(
     transaction: Deferrable<TransactionRequest>
   ): Promise<TransactionResponse> {
-		await this._simulateTx(transaction)
+    await this._simulateTx(transaction)
 		
-		return this._signer.sendTransaction(transaction);
-	}
+    return this._signer.sendTransaction(transaction);
+  }
 
-	public async getAddress(): Promise<string> {
+  public async getAddress(): Promise<string> {
     return this._signer.getAddress();
   }
 
-	public async signTransaction(
+  public async signTransaction(
     transaction: Deferrable<TransactionRequest>
   ): Promise<string> {
     return this._signer.signTransaction(transaction);
   }
 
-	_simulateTx(transaction: Deferrable<TransactionRequest>): Promise<void> {
-		const unsignedTx = await contract.populateTransaction[funcName](...args)
+  _simulateTx(transaction: Deferrable<TransactionRequest>): Promise<void> {
+    const unsignedTx = await contract.populateTransaction[funcName](...args)
 
     const apiURL = `https://api.tenderly.co/api/v1/account/me/project/project/simulate`
     const body = {
@@ -109,12 +109,12 @@ export class TenderlySimulationSigner {
       }
     }
     const resp = await axios.post(apiURL, body, headers);
-		if (resp.data.simulation.status == false) {
+    if (resp.data.simulation.status == false) {
         throw new Error("Transaction is going to fail")
     }
 
-		return;
-	}
+    return;
+  }
 }
 ```
 

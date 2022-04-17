@@ -1,4 +1,4 @@
-# Instant Staging/QA environment
+# Instant Staging/QA Environment for dApps
 
 ## Overview
 
@@ -44,12 +44,12 @@ This enables you to impersonate any address and send transactions, even as smart
 ```tsx
 const unsignedTx = await contract.populateTransaction[funcName](...args)
 const transactionParameters = [{
-		to: contract.address,
-		from: sender,
-		data: unsignedTx.data,
-		gas: ethers.utils.hexValue(300000),
-		gasPrice: ethers.utils.hexValue(1),
-		value: ethers.utils.hexValue(0)
+    to: contract.address,
+    from: sender,
+    data: unsignedTx.data,
+    gas: ethers.utils.hexValue(300000),
+    gasPrice: ethers.utils.hexValue(1),
+    value: ethers.utils.hexValue(0)
 }];
 
 const txHash = await provider.send('eth_sendTransaction', transactionParameters)
@@ -82,7 +82,7 @@ The access key is needed in order to interact with Tenderly API. If you don’t 
 
 Rather than via UI, we are going to create our Tenderly Fork environment via API.
 
-Let’s do it for Ethereum **Mainnet** on **14386016** block number.
+Let’s do it for Ethereum **Mainnet** on the **14386016** block number.
 
 ```tsx
 const { TENDERLY_USER, TENDERLY_PROJECT, TENDERLY_ACCESS_KEY } = process.env;
@@ -95,8 +95,8 @@ const opts = {
 }
 
 const body = {
-  "network_id": "1",
-	"block_number": "14386016",
+    "network_id": "1",
+    "block_number": "14386016",
 }
 
 const resp = await axios.post(TENDERLY_FORK_API, body, opts);
