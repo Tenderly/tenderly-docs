@@ -126,7 +126,9 @@ const resp = await axios.post(TENDERLY_FORK_API, body, opts);
 
 After creating a Tenderly Fork, you can interact with its JSON-RPC API, returned through `simulation_fork.rpc_url`. After, you can spawn ethers.js with any other network you are using or plan to use.
 
-💡 Tenderly will create 10 test addresses with 100 ETH. By default, ethers.js will do transaction signing with the 0th address as the default signer.
+{% hint style="success" %}
+**Tenderly will create 10 test addresses with 100 ETH each**. By default, ethers.js will do transaction signing with the 0th address as the default signer.
+{% endhint %}
 
 **API Typescript**
 
