@@ -1,6 +1,6 @@
-# First usage of Tenderly APIs in tests
+# First Usage of Tenderly APIs in Tests
 
-### Create a fresh fork from code
+### Create a fresh Fork from code
 
 Let’s fork the **Ethereum** **Mainnet** on block number **14386016**. In order to do this, we’ll create a Fork we’ll test with in the cloud.
 

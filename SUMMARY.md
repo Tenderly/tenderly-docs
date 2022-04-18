@@ -84,6 +84,7 @@
     * [How to Deploy Smart Contract Once per Test](simulations-and-forks/simulation-api/testing/how-to-deploy-smart-contract-once-per-test.md)
     * [Deploy Smart Contracts Once per Test-suite Execution](simulations-and-forks/simulation-api/testing/deploy-smart-contracts-once-per-test-suite-execution.md)
     * [Reset Transactions After Completing the Test](simulations-and-forks/simulation-api/testing/reset-transactions-after-completing-the-test.md)
+  * [Simulation API Rate Limits](simulations-and-forks/simulation-api/simulation-api-rate-limits.md)
 
 ## 🐞 Debugger
 
@@ -102,7 +103,6 @@
 * [🕹 Tenderly API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/ES8WtN6Gx8HH3zi8low4/)
 * [⌨ Tenderly CLI](https://github.com/Tenderly/tenderly-cli)
 * [👷 Hardhat Plugin](https://github.com/Tenderly/hardhat-tenderly)
-* [💾 Simulation API Rate Limits](other/simulation-api-rate-limits.md)
 * [🤓 Privacy Policy](https://tenderly.co/privacy-policy)
 
 ***

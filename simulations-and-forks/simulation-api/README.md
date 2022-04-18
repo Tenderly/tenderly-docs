@@ -211,5 +211,5 @@ In the following articles you will find specific code examples in some places. I
 {% endhint %}
 
 {% hint style="info" %}
-You can check out the [plans and pricing for the Simulation API here](../../other/simulation-api-rate-limits.md). You can also check out all [Public API endpoints here](https://docs-api.tenderly.co) - this documentation space is under continuous development, so if you need some API endpoints that aren't available or other API needs that aren't listed publicly, please ping us via [**Intercom on the Tenderly Dashboard**](https://dashboard.tenderly.co) **** and we'll do our best to meet your needs 🖖
+You can check out the [plans and pricing for the Simulation API here](simulation-api-rate-limits.md). You can also check out all [Public API endpoints here](https://docs-api.tenderly.co) - this documentation space is under continuous development, so if you need some API endpoints that aren't available or other API needs that aren't listed publicly, please ping us via [**Intercom on the Tenderly Dashboard**](https://dashboard.tenderly.co) **** and we'll do our best to meet your needs 🖖
 {% endhint %}

@@ -1,4 +1,4 @@
-# 💾 Simulation API Rate Limits
+# Simulation API Rate Limits
 
 You can check out pre-defined Tenderly pricing plans on our[ pricing page](https://tenderly.co/pricing/).
 
