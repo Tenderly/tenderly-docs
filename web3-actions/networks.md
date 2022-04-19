@@ -24,7 +24,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../.gitbook/assets/image (84) (1) (1).png" alt="" data-size="line"> xDai `=> 100`
 
-<img src="../.gitbook/assets/image (69).png" alt="" data-size="line"> Polygon `=> 137`
+<img src="../.gitbook/assets/image (69) (1).png" alt="" data-size="line"> Polygon `=> 137`
 
 <img src="../.gitbook/assets/image (70) (1).png" alt="" data-size="line"> Polygon Mumbai `=> 80001`
 
@@ -34,7 +34,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../.gitbook/assets/image (81) (1).png" alt="" data-size="line"> Avalanche C-Chain `=> 43114`
 
-<img src="../.gitbook/assets/image (79) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji `=> 43113`
+<img src="../.gitbook/assets/image (79) (1) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji `=> 43113`
 
 <img src="../.gitbook/assets/image (77) (1).png" alt="" data-size="line"> Fantom `=> 250`
 

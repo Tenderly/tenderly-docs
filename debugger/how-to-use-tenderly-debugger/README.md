@@ -60,7 +60,7 @@ You can search for the exact term in the code either by double clicking a word a
 
 While we debug our transaction, the **Stack Trace** will show all of the functions that are being executed in each step:
 
-![](<../../.gitbook/assets/image (69) (1) (1).png>)
+![](<../../.gitbook/assets/image (69) (1) (1) (1).png>)
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.35.12.png>)
 

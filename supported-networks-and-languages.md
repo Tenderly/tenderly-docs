@@ -24,7 +24,7 @@
 
 <img src=".gitbook/assets/image (84) (1) (1).png" alt="" data-size="line"> xDai
 
-<img src=".gitbook/assets/image (69).png" alt="" data-size="line"> Polygon
+<img src=".gitbook/assets/image (69) (1).png" alt="" data-size="line"> Polygon
 
 <img src=".gitbook/assets/image (70) (1).png" alt="" data-size="line"> Polygon Mumbai
 
@@ -34,7 +34,7 @@
 
 <img src=".gitbook/assets/image (81) (1).png" alt="" data-size="line"> Avalanche C-Chain
 
-<img src=".gitbook/assets/image (79) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji
+<img src=".gitbook/assets/image (79) (1) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji
 
 <img src=".gitbook/assets/image (77) (1).png" alt="" data-size="line"> Fantom
 
@@ -43,6 +43,10 @@
 <img src=".gitbook/assets/image (82).png" alt="" data-size="line"> Arbitrum\*
 
 <img src=".gitbook/assets/image (83).png" alt="" data-size="line"> Arbitrum Testnet\*
+
+<img src=".gitbook/assets/image (69).png" alt="" data-size="line"> Kintsugi
+
+<img src=".gitbook/assets/image (79).png" alt="" data-size="line"> Kiln
 {% endtab %}
 
 {% tab title="Languages" %}
