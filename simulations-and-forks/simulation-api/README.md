@@ -104,7 +104,7 @@ Here we are going to fork Ethereum **Mainnet** on the **14386016** blocks:
 
 ```tsx
 const TENDERLY_PROJECT = "project";
-const TENDERLY_FORK_API = `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/simulate`
+const TENDERLY_FORK_API = `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/fork`
 
 // set up your access-key, if you don't have one or you want to generate new one follow next link
 // https://dashboard.tenderly.co/account/authorization
