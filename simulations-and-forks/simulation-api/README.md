@@ -98,7 +98,7 @@ Transactions are executed by default in `full` mode. To speed up simulations eve
 
 Next, after we have executed a one-off simulation let’s execute them together. We are going to execute them under the “forked” environment. You can imagine it as if time has stopped on a specific block and only we can execute simulated transactions that would apply to the desired chain.
 
-Here we are going to fork Ethereum **Mainnet** on the **14386016** blocks:
+Here we are going to fork the Ethereum **Mainnet** on block **14386016**:
 
 **API Typescript**
 
