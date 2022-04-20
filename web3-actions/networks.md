@@ -2,7 +2,7 @@
 
 You can reference the supported network in your trigger configuration with the following numbers:
 
-<img src="../.gitbook/assets/image (80) (1) (1).png" alt="" data-size="line"> Mainnet `=> 1`
+<img src="../.gitbook/assets/image (80) (1) (1) (1).png" alt="" data-size="line"> Mainnet `=> 1`
 
 <img src="../.gitbook/assets/image (85) (1) (1).png" alt="" data-size="line"> Kovan `=> 42`
 
@@ -34,7 +34,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../.gitbook/assets/image (81) (1).png" alt="" data-size="line"> Avalanche C-Chain `=> 43114`
 
-<img src="../.gitbook/assets/image (79) (1) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji `=> 43113`
+<img src="../.gitbook/assets/image (79) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji `=> 43113`
 
 <img src="../.gitbook/assets/image (77) (1).png" alt="" data-size="line"> Fantom `=> 250`
 

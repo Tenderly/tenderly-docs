@@ -2,7 +2,7 @@
 
 {% tabs %}
 {% tab title="Networks" %}
-<img src=".gitbook/assets/image (80) (1) (1).png" alt="" data-size="line"> Mainnet
+<img src=".gitbook/assets/image (80) (1) (1) (1).png" alt="" data-size="line"> Mainnet
 
 <img src=".gitbook/assets/image (85) (1) (1).png" alt="" data-size="line"> Kovan
 
@@ -34,7 +34,7 @@
 
 <img src=".gitbook/assets/image (81) (1).png" alt="" data-size="line"> Avalanche C-Chain
 
-<img src=".gitbook/assets/image (79) (1) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji
+<img src=".gitbook/assets/image (79) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji
 
 <img src=".gitbook/assets/image (77) (1).png" alt="" data-size="line"> Fantom
 

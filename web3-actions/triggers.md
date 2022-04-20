@@ -39,7 +39,7 @@ trigger:
 
 If you want to configure a block trigger through the UI, you can do it by going to the Edit Action -> Trigger section.
 
-![Set up a block trigger configuration through the UI](<../.gitbook/assets/image (80).png>)
+![Set up a block trigger configuration through the UI](<../.gitbook/assets/image (80) (1).png>)
 
 ## Transaction
 

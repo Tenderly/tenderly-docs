@@ -90,6 +90,7 @@
 
 * [How to use Tenderly Debugger](debugger/how-to-use-tenderly-debugger/README.md)
   * [Transaction Overview](debugger/how-to-use-tenderly-debugger/transaction-overview.md)
+  * [Trace Expression Evaluation (Trace Eval)](debugger/how-to-use-tenderly-debugger/trace-expression-evaluation-trace-eval.md)
   * [Investigating a Failed Transaction](debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md)
   * [Investigating a Hack (Cover Protocol)](debugger/how-to-use-tenderly-debugger/investigating-a-hack-cover-protocol.md)
 * [Exporting a Local Transaction](debugger/exporting-a-local-transaction.md)

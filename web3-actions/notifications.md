@@ -12,7 +12,7 @@ Since Web3 Actions can be used as a part of 'critical workflows' (aside from all
 
 We already have a couple of email destinations set up which we can turn on or off so we don't have to delete certain email delivery channels in periods when we don't want to use them.&#x20;
 
-In order to add a new email delivery channel, just click on the Add Destination Email button in the bottom right, type in the email you want to use and that's it.&#x20;
+In order to add a new email delivery channel, just click on the `Add Destination Email` button in the bottom right, type in the email you want to use and that's it.&#x20;
 
 You will need to verify your email though for obvious reasons, and turn the switch for that email to "on" after the verification. You can also choose multiple emails as delivery channels for a single Action. If you are adding the email you are already using as your account email, or if you added that email through some other flow to Tenderly (e.g. through Alerts), your email will be recognized and you won't have to verify it again.
 
