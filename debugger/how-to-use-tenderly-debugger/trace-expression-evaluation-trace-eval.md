@@ -1,5 +1,9 @@
 # Trace Expression Evaluation (Trace Eval)
 
+{% hint style="info" %}
+This feature will be live in the first half of May 2022.
+{% endhint %}
+
 You can now evaluate expressions in the execution trace! Go to any transaction in the "Transactions" in the left-hand navigation, then go to the "Debugger" tab, and click on the "Evaluate" button:
 
 ![](<../../.gitbook/assets/Screenshot 2022-04-14 at 12.33.34.png>)
