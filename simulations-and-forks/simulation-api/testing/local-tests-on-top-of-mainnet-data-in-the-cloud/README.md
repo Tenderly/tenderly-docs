@@ -1,8 +1,8 @@
-# Local tests on top of Mainnet data in the Cloud
+# Local Tests on top of Mainnet Data in the Cloud
 
 ## Overview
 
-With Tenderly you can create a staging or a QA environment - inn the same way your dApp talks to the forked chain environment, you can set up your automated tests to run in the cloud, and in your automated QA process you can leverage various capabilities Tenderly offers.
+With Tenderly you can create a staging or a QA environment - in the same way your dApp talks to the forked chain environment, you can set up your automated tests to run in the cloud, and in your automated QA process you can leverage various capabilities Tenderly offers.
 
 Here are some cases where you may find it useful:
 
