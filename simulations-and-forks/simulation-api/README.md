@@ -77,10 +77,10 @@ const body = {
   "gas": 21204,
   "gas_price": "0",
   "value": 0,
-	// simulation config (tenderly specific)
-	"save_if_fails": true,
+  // simulation config (tenderly specific)
+  "save_if_fails": true,
   "save": false,
-	"simulation_type": "quick"
+  "simulation_type": "quick"
 }
 
 const resp = await axios.post(SIMULATE_URL, body, opts);
@@ -116,7 +116,7 @@ const opts = {
 
 const body = {
   "network_id": "1",
-	"block_number": 14386016,
+  "block_number": 14386016,
 }
 
 const resp = await axios.post(TENDERLY_FORK_API, body, opts);
