@@ -1,4 +1,4 @@
-# Configuration of API access
+# Configuration of API Access
 
 Besides using the Tenderly platform via Dashboard, you can also interact with all of our services via Tenderly API. You’ll want to use the API when you need to do things such as programmatically creating a Fork, retrieving all Forks you have created in your project, running Simulation batches and so on, or perhaps simulate the execution of an arbitrary transaction.
 
@@ -40,7 +40,7 @@ With Tenderly API you can either do operations that are related to your particul
 
 You can extract it from the dashboard URL and place these in a safe place:
 
-`https://dashboard.tenderly.co/TENDERLY_USER/TENDERLY_PROJECT/`
+`https://dashboard.tenderly.co/account/TENDERLY_USER/project/TENDERLY_PROJECT/`
 
 And the example of usage:
 
@@ -55,7 +55,7 @@ console.log(resp.data)
 
 ### Example of the `.env` file
 
-By this time your `env` file holds these 3 items:
+By this time your .`env` file (at the root of your npm project) holds these 3 items:
 
 ```bash
 TENDERLY_PROJECT=...
