@@ -324,7 +324,7 @@ For the last step - **Destinations**, you will see available Web3 Actions that c
 
 ![Select Alert destination](<../.gitbook/assets/image (74).png>)
 
-### Set up through UI
+If you want to configure an alert trigger through the UI, you can do it by going to the Single Action View and scrolling down to the Trigger Configuration section.
 
 ![Set up an alert trigger configuration through the UI](<../.gitbook/assets/image (93).png>)
 
