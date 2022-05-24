@@ -290,7 +290,7 @@ trigger:
 
 Supported values for interval scheduling are: `5m`, `10m`, `15m`, `30m`, `1h`, `3h`, `6h`, `12h`, `1d`.
 
-You can also use CRON scheduling. If you haven't worked with CRON, see [https://crontab.guru](https://crontab.guru).
+You can also use CRON scheduling. If you haven't worked with CRON, see [https://crontab.guru](https://crontab.guru/).
 
 ```yaml
 trigger:
@@ -312,8 +312,8 @@ An alert trigger means your action will be used as a [**destination for the aler
 
 ```yaml
 trigger:
-  type: alert
-  alert: {}
+  type: transaction
+  transaction: {}
 ```
 
 A single action can be used as a destination for multiple alerts.
