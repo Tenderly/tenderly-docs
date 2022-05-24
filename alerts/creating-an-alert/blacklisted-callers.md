@@ -10,7 +10,7 @@ Triggers whenever an address from this list calls one of your contracts.
 
 This one is one of the favourite security-oriented alerts: **we can get a notification whenever someone who isn’t whitelisted calls our contract**.
 
-For this example, I’ve set up a simple Gnosis Multisig Wallet which you can [find here](https://dashboard.tenderly.co/contract/kovan/0xbcf55f198e2a5ff4c632610183b1a5290c193e4a).
+For this example, I’ve set up a simple Gnosis Multisig Wallet which you can [find here](https://dashboard.tenderly.co/contract/kovan/0xbcf55f198e2a5ff4c632610183b1a5290c193e4a?utm\_source=medium\&utm\_campaign=alerting\_release\&utm\_medium=post\&utm\_content=public\_contract\_listing).
 
 Now, whenever someone other then the owners of the Multisig Wallet calls this Smart Contract I’ll get an e-mail instantly so that I can react accordingly.
 

@@ -10,7 +10,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../.gitbook/assets/image (75) (1) (1).png" alt="" data-size="line"> Rinkeby `=> 4`
 
-<img src="../.gitbook/assets/image (74) (1) (1).png" alt="" data-size="line"> Gorli`=> 5`
+<img src="../.gitbook/assets/image (74) (1) (1) (1).png" alt="" data-size="line"> Gorli`=> 5`
 
 <img src="../.gitbook/assets/image (83) (1) (1) (1).png" alt="" data-size="line"> RSK `=> 30`
 
@@ -28,7 +28,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../.gitbook/assets/image (70) (1).png" alt="" data-size="line"> Polygon Mumbai `=> 80001`
 
-<img src="../.gitbook/assets/image (87) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum `=> 10`
+<img src="../.gitbook/assets/image (87) (1) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum `=> 10`
 
 <img src="../.gitbook/assets/image (72).png" alt="" data-size="line"> Optimistic Kovan `=> 69`
 

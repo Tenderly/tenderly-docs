@@ -75,7 +75,7 @@ To do the final configuration step, you’ll need to tell Hardhat which Tenderly
 }
 ```
 
-You can find the username and project by opening up [https://dashboard.tenderly.co](https://dashboard.tenderly.co), and copying from the URL [_https://dashboard.tenderly.co/{**USERNAME**}/{**PROJECT**_](https://dashboard.tenderly.co/%7BUSERNAME%7D/%7BPROJECT)_}._ Alternatively, you can run `tenderly whoami` to get the needed information.
+You can find the username and project by opening up [https://dashboard.tenderly.co](https://dashboard.tenderly.co/), and copying from the URL [_https://dashboard.tenderly.co/{**USERNAME**}/{**PROJECT**_](https://dashboard.tenderly.co/%7BUSERNAME%7D/%7BPROJECT)_}._ Alternatively, you can run `tenderly whoami` to get the needed information.
 
 The Tenderly plugin is now good to go!
 
@@ -534,7 +534,7 @@ For everyone’s convenience, we have simplified the process explained above so 
 
 #### Installing on macOS <a href="#installing-on-macos" id="installing-on-macos"></a>
 
-Via [Homebrew](https://brew.sh):
+Via [Homebrew](https://brew.sh/):
 
 ```
 $ brew tap tenderly/tenderly

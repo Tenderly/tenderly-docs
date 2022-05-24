@@ -316,7 +316,15 @@ trigger:
   transaction: {}
 ```
 
-A single action can be used as a destination for multiple alerts.
+A single action can be used as a destination for multiple alerts. In order to connect your alert to the Web3 Action, you can go to the **Alerting Page** > **Single Alert View** and click on the **Edit** button.
+
+![Single alert view](<../.gitbook/assets/image (87).png>)
+
+For the last step - **Destinations**, you will see available Web3 Actions that can be linked to the selected alert.
+
+![Select Alert destination](<../.gitbook/assets/image (74).png>)
+
+### Set up through UI
 
 ![Set up an alert trigger configuration through the UI](<../.gitbook/assets/image (93).png>)
 

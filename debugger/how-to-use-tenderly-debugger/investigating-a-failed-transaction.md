@@ -1,6 +1,6 @@
 # Investigating a Failed Transaction
 
-In this example we will showcase how to investigate a failed transaction on the example of [**Furucombo**](https://furucombo.app) - a platform for easy optimization of DeFi investment strategies.&#x20;
+In this example we will showcase how to investigate a failed transaction on the example of [**Furucombo**](https://furucombo.app/) - a platform for easy optimization of DeFi investment strategies.&#x20;
 
 By visualizing complex DeFi protocols as cubes and allowing the user to define the inputs and outputs, Furucombo is able to bundle all of the user transactions i.e. cubes into one and send it out.&#x20;
 

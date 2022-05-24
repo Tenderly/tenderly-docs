@@ -73,7 +73,7 @@ First things first, we need to get your Smart Contracts into Tenderly to use all
 
 There are a couple of ways we can achieve this: we can use the Tenderly CLI to push contracts to a project, or we can verify our Smart Contracts on Etherscan and then paste in the address into Tenderly. Let's see how we'd do this via the CLI.
 
-If you don't have the Tenderly CLI already installed, [it's effortless to set up](https://github.com/Tenderly/tenderly-cli#installation). Once you've done that, run **tenderly login**.
+If you don't have the Tenderly CLI already installed, [it's effortless to set up](https://github.com/Tenderly/tenderly-cli?utm\_source=blog\&utm\_medium=post\&utm\_campaign=10\_ways\&utm\_content=cli\_setup#installation). Once you've done that, run **tenderly login**.
 
 The next step is to go into your project directory and run **tenderly init**. As we're using the Tennis Match example from a previous article, we're going to pick _Create new project_ and write _Tennis Match_.
 
@@ -103,7 +103,7 @@ Successfully pushed Smart Contracts for project tennis-match. You can view your 
 All Smart Contracts successfully pushed.
 ```
 
-Now when you open your [Tenderly dashboard](https://dashboard.tenderly.co), you'll see your newly created project, and your Smart Contracts added!
+Now when you open your [Tenderly dashboard](https://dashboard.tenderly.co/?utm\_source=blog\&utm\_medium=post\&utm\_campaign=10\_ways\&utm\_content=your\_tenderly\_dashboard), you'll see your newly created project, and your Smart Contracts added!
 
 {% content-ref url="public-contracts.md" %}
 [public-contracts.md](public-contracts.md)

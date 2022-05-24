@@ -10,7 +10,7 @@
 
 <img src=".gitbook/assets/image (75) (1) (1).png" alt="" data-size="line"> Rinkeby
 
-<img src=".gitbook/assets/image (74) (1) (1).png" alt="" data-size="line"> Gorli
+<img src=".gitbook/assets/image (74) (1) (1) (1).png" alt="" data-size="line"> Gorli
 
 <img src=".gitbook/assets/image (83) (1) (1) (1).png" alt="" data-size="line"> RSK
 
@@ -28,7 +28,7 @@
 
 <img src=".gitbook/assets/image (70) (1).png" alt="" data-size="line"> Polygon Mumbai
 
-<img src=".gitbook/assets/image (87) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum
+<img src=".gitbook/assets/image (87) (1) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum
 
 <img src=".gitbook/assets/image (72).png" alt="" data-size="line"> Optimistic Kovan
 

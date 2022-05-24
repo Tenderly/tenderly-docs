@@ -12,7 +12,7 @@ Click on the **Contracts** tab in the left navigation bar, and then on `Add Cont
 
 ### File(s) Upload
 
-![](<../.gitbook/assets/image (74).png>)
+![](<../.gitbook/assets/image (74) (1).png>)
 
 You can paste the contract source directly - alternatively you can upload a single contract file, or a folder from which Tenderly will recognize all the contracts.
 
@@ -62,7 +62,7 @@ If you uploaded a folder and have multiple contracts, you can choose which one(s
 
 After you add your contract, you can add other from your folder by clicking on the `Add more` button:
 
-![](<../.gitbook/assets/image (87).png>)
+![](<../.gitbook/assets/image (87) (1).png>)
 
 Finally you need to fill-out the compiler info, which needs to match the parameters you chose when you deployed the contract:
 

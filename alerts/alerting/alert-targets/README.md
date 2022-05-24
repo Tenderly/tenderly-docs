@@ -1,6 +1,6 @@
 # Alert Targets
 
-As the alert target we will be using the [KyberNetworkProxy](https://dashboard.tenderly.co/contract/main/0x818e6fecd516ecc3849daf6845e3ec868087b755) as an example. Next up, we need to pick the event and the parameter we want to use for this alert:
+As the alert target we will be using the [KyberNetworkProxy](https://dashboard.tenderly.co/contract/main/0x818e6fecd516ecc3849daf6845e3ec868087b755?utm\_source=blog\&utm\_medium=post\&utm\_campaign=10\_ways\&utm\_content=kyber\_network\_contract) as an example. Next up, we need to pick the event and the parameter we want to use for this alert:
 
 ![](<../../../.gitbook/assets/image (46).png>)
 

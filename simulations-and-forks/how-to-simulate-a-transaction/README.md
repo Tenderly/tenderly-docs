@@ -9,7 +9,7 @@ With the Simulate tool, you can **provide the data for a transaction and see wha
 Not only that, but **you can even pick a specific block height, transaction index** and get the output of the transaction as if it happened at that specific point in time.
 
 {% hint style="success" %}
-Tenderly now automatically simulates the (expected) outcome of pending transactions when you paste the tx hash into the search bar, both in your [**Dashboard**](https://dashboard.tenderly.co) and in our [**Public Explorer**](https://dashboard.tenderly.co/explorer).
+Tenderly now automatically simulates the (expected) outcome of pending transactions when you paste the tx hash into the search bar, both in your [**Dashboard**](https://dashboard.tenderly.co/) and in our [**Public Explorer**](https://dashboard.tenderly.co/explorer).
 
 This feature is available to all users, even if they are not logged in. That means that **you can now simulate live pending transactions** in this way even [**from our Explorer page**](https://dashboard.tenderly.co/explorer) without having an account - but you really should make one (it's free) so you can use the full power of our **Simulations** and **** [**Forks**](../how-to-create-a-fork/) 🚀
 
