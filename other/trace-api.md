@@ -1,4 +1,6 @@
-# Trace API
+# 🐛 Trace API
+
+
 
 {% hint style="info" %}
 Want to use everything our [Execution Trace](../monitoring/contracts/execution-overview.md) is capable of, but consume it via API? Well, we're working on it.&#x20;
