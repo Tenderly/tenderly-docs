@@ -36,15 +36,19 @@
     * [Deploy Smart Contracts Once per Test-suite Execution](simulations-and-forks/simulation-api/testing/deploy-smart-contracts-once-per-test-suite-execution.md)
     * [Reset Transactions After Completing the Test](simulations-and-forks/simulation-api/testing/reset-transactions-after-completing-the-test.md)
   * [Simulation API Rate Limits](simulations-and-forks/simulation-api/simulation-api-rate-limits.md)
+* [Tenderly Sandbox](simulations-and-forks/tenderly-sandbox.md)
 
 ## 🧩 Web3 Actions
 
-* [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
-* [Functions](web3-actions/functions.md)
-* [Configuration](web3-actions/configuration.md)
-* [Triggers](web3-actions/triggers.md)
-* [Networks](web3-actions/networks.md)
-* [Notifications](web3-actions/notifications.md)
+* [Intro to Web3 Actions](web3-actions/intro-to-web3-actions/README.md)
+  * [Functions](web3-actions/intro-to-web3-actions/functions.md)
+  * [Configuration](web3-actions/intro-to-web3-actions/configuration.md)
+  * [Triggers](web3-actions/intro-to-web3-actions/triggers.md)
+  * [Networks](web3-actions/intro-to-web3-actions/networks.md)
+  * [Notifications](web3-actions/intro-to-web3-actions/notifications.md)
+* [How to Handle On-Chain Events](web3-actions/how-to-handle-on-chain-events.md)
+* [How to Build a Custom Oracle](web3-actions/how-to-build-a-custom-oracle.md)
+* [How to Send a Discord Message About a New Uniswap Pool](web3-actions/how-to-send-a-discord-message-about-a-new-uniswap-pool.md)
 
 ## 🦅 Monitoring
 
@@ -90,10 +94,11 @@
 
 * [How to use Tenderly Debugger](debugger/how-to-use-tenderly-debugger/README.md)
   * [Transaction Overview](debugger/how-to-use-tenderly-debugger/transaction-overview.md)
-  * [Trace Expression Evaluation (Trace Eval)](debugger/how-to-use-tenderly-debugger/trace-expression-evaluation-trace-eval.md)
+  * [Evaluate Expressions with Advanced Debugger](debugger/how-to-use-tenderly-debugger/evaluate-expressions-with-advanced-debugger.md)
   * [Investigating a Failed Transaction](debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md)
   * [Investigating a Hack (Cover Protocol)](debugger/how-to-use-tenderly-debugger/investigating-a-hack-cover-protocol.md)
 * [Exporting a Local Transaction](debugger/exporting-a-local-transaction.md)
+* [Tenderly Debugger Extension](debugger/tenderly-debugger-extension.md)
 
 ## 📊 Analytics
 

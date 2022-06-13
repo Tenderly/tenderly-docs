@@ -2,7 +2,7 @@
 
 **Tenderly Web3 Actions** will run your code in response to on-chain (or even off-chain) events, usually on your smart contracts.&#x20;
 
-You can use Web3 Actions to create custom scenarios in order to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](../alerts/creating-an-alert/) section, automating testing or live production execution in the [**Simulator**](../simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](../simulations-and-forks/how-to-create-a-fork/), or anything else that comes to (your) mind.
+You can use Web3 Actions to create custom scenarios in order to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](../../alerts/creating-an-alert/) section, automating testing or live production execution in the [**Simulator**](../../simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](../../simulations-and-forks/how-to-create-a-fork/), or anything else that comes to (your) mind.
 
 The code Web3 Actions run is called a _**function**_. The function must be written in TypeScript (or JavaScript) and run in Node 14 runtime. Specification of events that your action listens to is called a _**trigger**_. There are 5 types of triggers:
 
@@ -35,7 +35,7 @@ When you initialize actions project, you must select a Tenderly project which wi
 If your actions are very different or have different dependencies, it is recommended to separate them. You can still use the same Tenderly project to deploy them.
 {% endhint %}
 
-If your actions have dependencies, `node_modules` directory located in the same directory with your actions source files will be packaged and deployed with your actions. `npm install` must be run from a directory where actions sources are. Note that this might be a different directory than one where you run `tenderly actions` commands.&#x20;
+If your Web3 Actions have dependencies, `node_modules` directory located in the same directory with your actions source files will be packaged and deployed with your actions. `npm install` must be run from a directory where actions sources are. Note that this might be a different directory than one where you run `tenderly actions` commands.&#x20;
 
 {% hint style="warning" %}
 Zipped dependencies must not exceed 45MB. Reach out to us if your requirements exceed this limit.
@@ -47,7 +47,7 @@ If you want to create your first Web3 Action and go through a step-by-step guide
 
 **Quick Guide** provides a quick overview of the steps you need to reproduce in order to deploy your first Web3 Action.
 
-![Quick Guide](<../.gitbook/assets/Screenshot 2021-11-25 at 17.02.59.png>)
+![Quick Guide](<../../.gitbook/assets/Screenshot 2021-11-25 at 17.02.59.png>)
 
 **Step-by-Step Guide** provides an in-depth explanation for each step you need to reproduce in order to deploy your first Web3 Action.
 
@@ -57,15 +57,15 @@ You need to import an example contract into your project in order to start the t
 If you are not using the tutorial, you don't have to do this in order to use Web3 Actions.
 {% endhint %}
 
-![Step-by-Step Guide](<../.gitbook/assets/Screenshot 2021-11-25 at 17.09.58.png>)
+![Step-by-Step Guide](<../../.gitbook/assets/Screenshot 2021-11-25 at 17.09.58.png>)
 
-![Create a Function Step](<../.gitbook/assets/Screenshot 2021-11-25 at 17.08.56.png>)
+![Create a Function Step](<../../.gitbook/assets/Screenshot 2021-11-25 at 17.08.56.png>)
 
-![Use Secrets Step](<../.gitbook/assets/Screenshot 2021-11-25 at 17.11.27.png>)
+![Use Secrets Step](<../../.gitbook/assets/Screenshot 2021-11-25 at 17.11.27.png>)
 
-![Configure a Trigger Step](<../.gitbook/assets/Screenshot 2021-11-25 at 17.11.31.png>)
+![Configure a Trigger Step](<../../.gitbook/assets/Screenshot 2021-11-25 at 17.11.31.png>)
 
-![Deploy Action Step](<../.gitbook/assets/Screenshot 2021-11-25 at 17.11.35.png>)
+![Deploy Action Step](<../../.gitbook/assets/Screenshot 2021-11-25 at 17.11.35.png>)
 
 ### Deploying Actions
 
@@ -81,11 +81,11 @@ If you just want to validate configuration or build implementation without deplo
 
 If you prefer a more visual experience while setting up your actions, we created a Web3 Action UI Builder. Go to the **Actions** tab in the sidebar and click on **Add Action** button in the upper right corner.
 
-![Web3 Actions Welcome Screen](<../.gitbook/assets/image (90).png>)
+![Web3 Actions Welcome Screen](<../../.gitbook/assets/image (90) (1).png>)
 
 You will enter to **Web3 Action Cration** page where you can configure action type, set up code and trigger and name it as you want to be recognizable.
 
-![Web3 Action UI Builder](<../.gitbook/assets/image (86) (1).png>)
+![Web3 Action UI Builder](<../../.gitbook/assets/image (86) (1) (1).png>)
 
 The first step is setting up the **trigger type** where you can determine what type of event your action is listening to. After that, you'll be prompted to add a source code of your Web3 Action (you can see the event schema, secret and storage source code at our [GitHub repository](https://github.com/Tenderly/tenderly-actions/blob/main/packages/actions/src/actions.ts)). The next step is to set up a trigger on which event or by which schedule your function will be executed. The last step is setting up the name and a description of the Web3 Action.
 
@@ -110,3 +110,31 @@ You can use a manual trigger even if the action is stopped.
 {% endhint %}
 
 [Read more about how to write a function and what runtime features are available here.](functions.md)
+
+## Web3 Actions Tutorials
+
+If you’re already familiar with Web3 Actions, check out these tutorials to get more hands-on experience:&#x20;
+
+**Get guidance on writing Web3 Actions for handling on-chain events:**
+
+{% content-ref url="../how-to-handle-on-chain-events.md" %}
+[how-to-handle-on-chain-events.md](../how-to-handle-on-chain-events.md)
+{% endcontent-ref %}
+
+This comprehensive step-by-step tutorial shows you how to set up a serverless backend for a well-known example – Tic Tac Toe, a game with multiple state changes. The steps cover deploying the game’s smart contract to Tenderly, configuring Web3 Action files, writing functions that respond to different game events, setting up relevant Action triggers, and other important functionalities. This extensive tutorial gives you everything you need to write your own Web3 Actions for on-chain events.&#x20;
+
+**Learn how to use Web3 Actions to set up your Oracle:**
+
+{% content-ref url="../how-to-build-a-custom-oracle.md" %}
+[how-to-build-a-custom-oracle.md](../how-to-build-a-custom-oracle.md)
+{% endcontent-ref %}
+
+If you want to feed real-world data to your smart contract, you can use Web3 Actions to gather information from a Web2 API. The tutorial guides you through deploying relevant smart contracts, writing your Action, specifying when it should be executed, getting and storing API keys as Secrets, and running your Action.&#x20;
+
+**Find out how to send a Discord message about (new) Uniswap pools using Web3 Actions:**
+
+{% content-ref url="../how-to-send-a-discord-message-about-a-new-uniswap-pool.md" %}
+[how-to-send-a-discord-message-about-a-new-uniswap-pool.md](../how-to-send-a-discord-message-about-a-new-uniswap-pool.md)
+{% endcontent-ref %}
+
+Follow a few steps to add a Uniswap contract to Tenderly, write the code, gather token data, configure your Action, save the Discord webhook to Secrets in your Tenderly Dashboard, and then run your Action.

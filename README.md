@@ -14,7 +14,7 @@ Know how your transactions will behave before you execute them, estimate the gas
 [simulation-api](simulations-and-forks/simulation-api/)
 {% endcontent-ref %}
 
-****[**Web3 Actions**](web3-actions/intro-to-web3-actions.md)&#x20;
+****[**Web3 Actions**](web3-actions/intro-to-web3-actions/)&#x20;
 
 Run your code in response to on-chain (or even off-chain) events, usually on your smart contracts.&#x20;
 

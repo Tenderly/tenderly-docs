@@ -39,7 +39,7 @@ trigger:
 
 If you want to configure a block trigger through the UI, you can do it by going to the Edit Action -> Trigger section.
 
-![Set up a block trigger configuration through the UI](<../.gitbook/assets/image (80) (1).png>)
+![Set up a block trigger configuration through the UI](<../../.gitbook/assets/image (80) (1) (1).png>)
 
 ## Transaction
 
@@ -272,7 +272,7 @@ The payload must be valid JSON and the webhook endpoint will respond with 200 an
 
 If you want to configure the webhook trigger through the UI, you can do it by going to the Edit Action -> Trigger section.
 
-![Set up the webhook trigger configuration through the UI](<../.gitbook/assets/image (85).png>)
+![Set up the webhook trigger configuration through the UI](<../../.gitbook/assets/image (85) (1).png>)
 
 ## Periodic
 
@@ -302,13 +302,13 @@ trigger:
 
 If you want to configure a periodic trigger through the UI, you can do it by going to the Edit Action -> Trigger section.
 
-![Set up a periodic trigger configuration through the UI](<../.gitbook/assets/image (78).png>)
+![Set up a periodic trigger configuration through the UI](<../../.gitbook/assets/image (78) (1).png>)
 
-![Supported values for interval scheduling](<../.gitbook/assets/image (76).png>)
+![Supported values for interval scheduling](<../../.gitbook/assets/image (76) (1).png>)
 
 ## Alert
 
-An alert trigger means your action will be used as a [**destination for the alert**](../alerts/creating-an-alert/).
+An alert trigger means your action will be used as a [**destination for the alert**](../../alerts/creating-an-alert/).
 
 ```yaml
 trigger:
@@ -318,18 +318,18 @@ trigger:
 
 A single action can be used as a destination for multiple alerts. In order to connect your alert to the Web3 Action, you can go to the **Alerting Page** > **Single Alert View** and click on the **Edit** button.
 
-![Single alert view](<../.gitbook/assets/image (87).png>)
+![Single alert view](<../../.gitbook/assets/image (87) (1).png>)
 
 For the last step - **Destinations**, you will see available Web3 Actions that can be linked to the selected alert.
 
-![Select Alert destination](<../.gitbook/assets/image (74).png>)
+![Select Alert destination](<../../.gitbook/assets/image (74) (1).png>)
 
 If you want to configure an alert trigger through the UI, you can do it by going to the Single Action View and scrolling down to the Trigger Configuration section.
 
-![Set up an alert trigger configuration through the UI](<../.gitbook/assets/image (93).png>)
+![Set up an alert trigger configuration through the UI](<../../.gitbook/assets/image (93) (1).png>)
 
-![List of the trigger configurations](<../.gitbook/assets/image (96).png>)
+![List of the trigger configurations](<../../.gitbook/assets/image (96) (1).png>)
 
-![Expandable configuration for the trigger](<../.gitbook/assets/image (77).png>)
+![Expandable configuration for the trigger](<../../.gitbook/assets/image (77) (1).png>)
 
-![Edit your trigger through the modal](<../.gitbook/assets/image (95).png>)
+![Edit your trigger through the modal](<../../.gitbook/assets/image (95) (1).png>)

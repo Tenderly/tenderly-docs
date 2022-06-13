@@ -1,4 +1,8 @@
-# Trace Expression Evaluation (Trace Eval)
+---
+description: Trace Eval
+---
+
+# Evaluate Expressions with Advanced Debugger
 
 You can now evaluate expressions in the execution trace! Go to any transaction in the "Transactions" in the left-hand navigation, then go to the "Debugger" tab, and click on the "Evaluate" button:
 
