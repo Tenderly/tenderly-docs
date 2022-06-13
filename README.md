@@ -1,8 +1,20 @@
 # 📣 General Info
 
+{% hint style="success" %}
+We recently had a rather big release, which includes:
+
+* **Web3 Actions**
+* **War Room Aid Kit**
+* **Tenderly Sandbox**
+* **Debugger Chrome Extension**
+
+\
+You can read more about it right here :point\_down:
+{% endhint %}
+
+{% embed url="https://blog.tenderly.co/new-features-web3-actions-war-rooms-sandbox-debugger-extension/" %}
+
 [**Tenderly**](https://tenderly.co/) is a comprehensive **Ethereum Developer Platform** for real-time monitoring, alerting, debugging, and simulating Smart Contracts.
-
-
 
 ### **Some of the notable features that Tenderly supports:**
 

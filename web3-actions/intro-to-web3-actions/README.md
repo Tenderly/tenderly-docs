@@ -113,7 +113,11 @@ You can use a manual trigger even if the action is stopped.
 
 ## Web3 Actions Tutorials
 
-If you’re already familiar with Web3 Actions, check out these tutorials to get more hands-on experience:&#x20;
+If you’re already familiar with Web3 Actions, check out these tutorials to get a more hands-on experience:
+
+**Web3 Actions - A Serverless Backend for Development Efficiency:**
+
+{% embed url="https://blog.tenderly.co/how-use-web3-actions-serverless-backend/" %}
 
 **Get guidance on writing Web3 Actions for handling on-chain events:**
 
