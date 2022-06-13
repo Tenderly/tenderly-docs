@@ -94,9 +94,9 @@
 
 * [How to use Tenderly Debugger](debugger/how-to-use-tenderly-debugger/README.md)
   * [Transaction Overview](debugger/how-to-use-tenderly-debugger/transaction-overview.md)
-  * [Evaluate Expressions with Advanced Debugger](debugger/how-to-use-tenderly-debugger/evaluate-expressions-with-advanced-debugger.md)
   * [Investigating a Failed Transaction](debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md)
   * [Investigating a Hack (Cover Protocol)](debugger/how-to-use-tenderly-debugger/investigating-a-hack-cover-protocol.md)
+* [Evaluate Expressions with Advanced Debugger](debugger/evaluate-expressions-with-advanced-debugger.md)
 * [Exporting a Local Transaction](debugger/exporting-a-local-transaction.md)
 * [War Room Aid Kit](debugger/war-room-aid-kit.md)
 * [Tenderly Debugger Extension](debugger/tenderly-debugger-extension.md)
