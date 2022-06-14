@@ -3,10 +3,10 @@
 {% hint style="success" %}
 We recently had a rather big release, which includes:
 
-* **Web3 Actions**
-* **War Room Aid Kit**
-* **Tenderly Sandbox**
-* **Debugger Chrome Extension**
+* ****[**Web3 Actions**](web3-actions/intro-to-web3-actions/)****
+* ****[**War Room Aid Kit**](debugger/war-room-aid-kit.md)****
+* ****[**Tenderly Sandbox**](simulations-and-forks/tenderly-sandbox.md)****
+* ****[**Debugger Chrome Extension**](debugger/tenderly-debugger-extension.md)****
 
 \
 You can read more about it right here :point\_down:
