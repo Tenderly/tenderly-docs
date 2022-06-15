@@ -211,7 +211,7 @@ At the end of your execution, we should delete the Fork. This would remove any u
 ```tsx
 const TENDERLY_FORK_ACCESS_URL = `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/fork/${forkId}`
 
-await axios.delete(TENDERLY_FORK_ACCESS_URL), {}, opts)
+await axios.delete(TENDERLY_FORK_ACCESS_URL, opts)
 ```
 
 {% hint style="success" %}
