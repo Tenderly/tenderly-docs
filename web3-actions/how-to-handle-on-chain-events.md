@@ -43,7 +43,7 @@ For this tutorial, you’ll need access to the **Tenderly Dashboard**. If you do
 If you’re coding along, you can skip this step and use the contract we [**deployed and verified in Tenderly**](https://dashboard.tenderly.co/contract/ropsten/0x1eb7dbd296eb3fc08b2b6217d87e6bf3cb6e42df).
 {% endhint %}
 
-We will use a pre-written smart contract. Check out the source code of the **** [**smart contract on GitHub**](https://github.com/Tenderly/examples-web3-actions/tic-tac-toe/actions/TicTacToe.sol). This smart contract is designed to emit events whenever a change to the state of the game occurs.
+We will use a pre-written smart contract. Check out the source code of the[ **smart contract on GitHub**](https://github.com/Tenderly/examples-web3-actions/blob/main/tic-tac-toe/TicTacToe.sol). This smart contract is designed to emit events whenever a change to the state of the game occurs.
 
 Our simple Tic-Tac-Toe game can have four possible states:
 
