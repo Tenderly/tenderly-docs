@@ -5,7 +5,7 @@ We recently had a rather big release, which includes:
 
 * ****[**Web3 Actions**](web3-actions/intro-to-web3-actions/)****
 * ****[**War Room Aid Kit**](debugger/war-room-aid-kit.md)****
-* ****[**Tenderly Sandbox**](simulations-and-forks/tenderly-sandbox.md)****
+* ****[**Tenderly Sandbox**](tenderly-sandbox.md)****
 * ****[**Debugger Chrome Extension**](debugger/tenderly-debugger-extension.md)****
 
 \

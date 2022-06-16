@@ -21,7 +21,7 @@ Here’s a quick breakdown of the project’s flow.
 
 ![](<../.gitbook/assets/image (99).png>)
 
-We will use a pre-made smart contract for this project. Feel free to explore the code and play around with it in the **** [**Tenderly Sandbox**](https://sandbox.tenderly.co/nenad/whining-iron-numerous) and check out the [**Sandbox Docs**](../simulations-and-forks/tenderly-sandbox.md).
+We will use a pre-made smart contract for this project. Feel free to explore the code and play around with it in the **** [**Tenderly Sandbox**](https://sandbox.tenderly.co/nenad/whining-iron-numerous) and check out the [**Sandbox Docs**](../tenderly-sandbox.md).
 
 Note that the <mark style="color:orange;">`SimpleConsumer`</mark> contract accepts the <mark style="color:orange;">`coinPrice`</mark> coming in only from the <mark style="color:orange;">`CoinOracle`</mark> it was assigned when it got deployed. Additionally, <mark style="color:orange;">`CoinOracle`</mark> accepts updates only if it is signed by the same Wallet that deployed it (<mark style="color:orange;">`owner`</mark>).
 

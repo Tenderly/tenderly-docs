@@ -5,6 +5,7 @@
 * [⚗ Projects](projects.md)
 * [🫂 Teams & Collaboration](teams-and-collaboration/README.md)
 * [🔍 Explorer](explorer.md)
+* [🪣 Tenderly Sandbox](tenderly-sandbox.md)
 
 ## 🔮 Simulations & Forks
 
@@ -36,7 +37,6 @@
     * [Deploy Smart Contracts Once per Test-suite Execution](simulations-and-forks/simulation-api/testing/deploy-smart-contracts-once-per-test-suite-execution.md)
     * [Reset Transactions After Completing the Test](simulations-and-forks/simulation-api/testing/reset-transactions-after-completing-the-test.md)
   * [Simulation API Rate Limits](simulations-and-forks/simulation-api/simulation-api-rate-limits.md)
-* [Tenderly Sandbox](simulations-and-forks/tenderly-sandbox.md)
 
 ## 🧩 Web3 Actions
 
