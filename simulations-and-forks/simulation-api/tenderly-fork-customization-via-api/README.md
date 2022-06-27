@@ -1,4 +1,4 @@
-# Tenderly Fork Customization via API
+# Fork Customization
 
 {% hint style="success" %}
 Here you'll find guides showing how to customize transaction simulations and (forked) networks in various aspects.
@@ -38,10 +38,4 @@ Here you'll find guides showing how to customize transaction simulations and (fo
 
 {% content-ref url="how-to-impersonate-any-address-as-a-simulation-sender.md" %}
 [how-to-impersonate-any-address-as-a-simulation-sender.md](how-to-impersonate-any-address-as-a-simulation-sender.md)
-{% endcontent-ref %}
-
-**How to manage Account Balances in Tenderly Forks**
-
-{% content-ref url="how-to-manage-account-balances-in-tenderly-forks.md" %}
-[how-to-manage-account-balances-in-tenderly-forks.md](how-to-manage-account-balances-in-tenderly-forks.md)
 {% endcontent-ref %}
