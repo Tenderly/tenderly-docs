@@ -29,6 +29,7 @@
     * [How to Impersonate any Address as a Simulation Sender](simulations-and-forks/simulation-api/tenderly-fork-customization-via-api/how-to-impersonate-any-address-as-a-simulation-sender.md)
     * [How to Point the Fork to a Specific Simulation](simulations-and-forks/simulation-api/tenderly-fork-customization-via-api/how-to-point-the-fork-to-a-specific-simulation.md)
     * [How to Specify/Change Network chain\_id](simulations-and-forks/simulation-api/tenderly-fork-customization-via-api/how-to-specify-change-network-chain\_id.md)
+    * [How to manage Account Balances in Tenderly Forks](simulations-and-forks/simulation-api/tenderly-fork-customization-via-api/how-to-manage-account-balances-in-tenderly-forks.md)
   * [Testing](simulations-and-forks/simulation-api/testing/README.md)
     * [Local Tests on top of Mainnet Data in the Cloud](simulations-and-forks/simulation-api/testing/local-tests-on-top-of-mainnet-data-in-the-cloud/README.md)
       * [First Usage of Tenderly APIs in Tests](simulations-and-forks/simulation-api/testing/local-tests-on-top-of-mainnet-data-in-the-cloud/first-usage-of-tenderly-apis-in-tests.md)
