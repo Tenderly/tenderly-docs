@@ -6,7 +6,10 @@ One reason can be to prevent the Fork environment from producing a signature val
 
 ```tsx
 ...
+
+const { TENDERLY_USER, TENDERLY_PROJECT, TENDERLY_ACCESS_KEY } = process.env;
 const TENDERLY_FORK_API = `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/fork`
+
 const body = {
   "network_id": "1", // network you wish to fork
   "block_number": 14386016,

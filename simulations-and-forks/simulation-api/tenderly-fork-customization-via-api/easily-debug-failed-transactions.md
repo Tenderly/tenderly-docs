@@ -10,6 +10,7 @@ Additionally, the response you receive will contain simulation ID (`simulation.i
 
 ```tsx
 ...
+const { TENDERLY_USER, TENDERLY_PROJECT, TENDERLY_ACCESS_KEY } = process.env;
 
 const body = {
   "network_id": "1",

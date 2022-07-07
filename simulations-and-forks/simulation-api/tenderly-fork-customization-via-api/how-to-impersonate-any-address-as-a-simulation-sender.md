@@ -1,4 +1,4 @@
-# How to impersonate any address as a simulation sender
+# How to Impersonate any Address as a Simulation Sender
 
 In some scenarios, you may want to simulate the transaction execution as if it was sent from an arbitrary address, even though in the real world you couldn’t. When a transaction is simulated via API, Tenderly doesn’t deal with signatures, so you can set any `from` value - you can even simulate sending transactions from another contract.
 
@@ -7,8 +7,9 @@ The way to achieve this is not as complicated, just send a transaction with any 
 ```tsx
 ...
 dotenv.config();
+const { TENDERLY_USER, TENDERLY_PROJECT, TENDERLY_ACCESS_KEY } = process.env;
 
-const SIMULATE_API = `https://api.tenderly.co/api/v1/account/${process.env.TENDERLY_USER}/project/${process.env.TENDERLY_PROJECT}/simulate`
+const SIMULATE_API = `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/simulate`
 
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f";
 
