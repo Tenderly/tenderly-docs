@@ -1,4 +1,4 @@
-# How to point the fork to a specific simulation
+# How to Point the Fork to a Specific Simulation
 
 ### Updating the fork - Timemachine
 
@@ -10,7 +10,7 @@ In this example, we’ll move where the head points, so we’re literally “rem
 
 ```tsx
 const req = {
-	fork_head: respTxApprove.simulation.ID
+  fork_head: respTxApprove.simulation.ID
 }
 
 const fork = await axios.put(tenderlyAPI, "fork", req)

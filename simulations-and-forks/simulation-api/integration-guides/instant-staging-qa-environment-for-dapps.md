@@ -96,7 +96,7 @@ const opts = {
 
 const body = {
     "network_id": "1",
-    "block_number": "14386016",
+    "block_number": 14386016,
 }
 
 const resp = await axios.post(TENDERLY_FORK_API, body, opts);
