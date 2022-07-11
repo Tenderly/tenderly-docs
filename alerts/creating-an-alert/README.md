@@ -3,7 +3,7 @@
 {% embed url="https://vimeo.com/637795807" %}
 
 {% hint style="warning" %}
-First of all, before creating an alert, we need to configure a destination. If you haven't done that yet, [check out how to configure Alert destinations.](../alerting/alert-targets/configuring-alert-destinations.md)
+Before creating an alert, you need to configure a destination. If you haven't done that yet, [check out how to configure Alert destinations.](../alerting/alert-targets/configuring-alert-destinations.md)
 {% endhint %}
 
 ### Get an alert when a transaction fails
@@ -28,7 +28,7 @@ It's as simple as clicking the `Trigger Test Alert` button in the bottom left co
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-15 at 13.51.52.png>)
 
-Choose the network you want to test your alert on (depending on whether your contract/wallet is multi-network or not). Next, paste the transaction hash for which you want to run the alert test (you can see all the transactions for any account):
+Choose the network on which you want to test your alert (depending on whether your contract/wallet is multi-network or not). Next, paste the transaction hash for which you want to run the alert test (you can see all the transactions for any account):
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-15 at 13.52.55.png>)
 
