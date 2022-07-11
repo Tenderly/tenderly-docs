@@ -77,7 +77,7 @@
     * [Configuring Alert Destinations](alerts/alerting/alert-targets/configuring-alert-destinations.md)
     * [Custom Webhook](alerts/alerting/alert-targets/custom-webhook.md)
 * [Creating an Alert](alerts/creating-an-alert/README.md)
-  * [Successful transaction](alerts/creating-an-alert/successful-transaction.md)
+  * [Successful Transaction](alerts/creating-an-alert/successful-transaction.md)
   * [Failed Transaction](alerts/creating-an-alert/failed-transaction.md)
   * [Function Call](alerts/creating-an-alert/function-call.md)
   * [Event Emit](alerts/creating-an-alert/event-emit.md)

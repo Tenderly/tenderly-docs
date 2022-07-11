@@ -1,20 +1,20 @@
-# Successful transaction
+# Successful Transaction
 
-![](<../../.gitbook/assets/Successful transaction.gif>)
+![](<../../.gitbook/assets/Choosing a successful transaction as an Alert.png>)
 
 #### Introduction
 
-Trigger your alert whenever a successful transaction is created. You can set up different targets like when a transaction calls some contract, or more general like when the transaction is created on some network.
+Trigger your alert whenever a successful transaction is created. You can set up different targets such as when a transaction calls a specific contract or runs on a network of interest.
 
 #### Example
 
-Let’s say we have deployed some contracts and want to monitor every successful transaction that calls our contract.
+Let’s say you've deployed a contract and want to monitor every successful transaction that calls it.
 
-*   First of all, we need to add that contract to Project. You can see here how to [**Add a new contract**](../../monitoring/smart-contracts/) into your Project.
+*   First, you need to [add the contract to Projects in a few simple steps](https://docs.tenderly.co/monitoring/smart-contracts).
 
 
-* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Successful Transaction —> Contract —> Select Contract —>** Find Contract you want to monitor and Choose it **—> Next —>** Choose Alert Destination **—> Save.**\
+* Next, click **Alerting** in the left side bar **—>** **New Alert** **—>** **Successful Transaction —> Contract —> Select Contract  —>**Find and choose the Smart Contract you want to monitor **—> Next —>** Choose Alert Destination **—> Save.**\
   ****
-* That is it, Alert was created. Now we get notified instantly for each successful transaction.\
+* That's it, you created an Alert that will notify you instantly for each successful transaction.\
 
-* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+* When creating an Alert, you can easily change its name or add a description, alert level, and more alert destinations. To do this, simply [learn how to edit your Alerts](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert).&#x20;
