@@ -20,7 +20,7 @@ For more information, learn [how to set up Alerts for Smart Contracts in real ti
 
 ### Test the created alerts
 
-You can run an alert test for any new or existing alerts to see how a specific alert will behave.
+You can run a test for any new or existing alert to see how it will behave.
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-15 at 13.49.32.png>)
 
@@ -28,7 +28,7 @@ It's as simple as clicking the `Trigger Test Alert` button in the bottom left co
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-15 at 13.51.52.png>)
 
-You'll need to choose the network you want to test your alert on (depending on whether your contract/wallet is multi-network or not). Next, paste the transaction hash for which you want to run the alert test (you can see all the transactions for any account):
+Choose the network you want to test your alert on (depending on whether your contract/wallet is multi-network or not). Next, paste the transaction hash for which you want to run the alert test (you can see all the transactions for any account):
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-15 at 13.52.55.png>)
 
@@ -40,10 +40,10 @@ If the alert test is successful, you'll get a notification in the bottom right c
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-15 at 14.17.24.png>)
 
-You can also click any of your alerts to easily **Duplicate** it. Simply click the button in the bottom right corner, right next to the **Edit** button:
+You can also click any alert to easily **Duplicate** it. Simply click the button in the bottom right corner, right next to **Edit**:
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-15 at 14.18.09.png>)
 
-If you don't want your alert to trigger for whatever reason, you can **Disable** it instead of deleting it; Just click the button in the bottom left corner of the same screen:
+If you don't want your alert to trigger for whatever reason, you can **Disable** it instead of deleting it. Just click the button in the bottom left corner of the same screen:
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-15 at 14.21.21.png>)
