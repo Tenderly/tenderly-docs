@@ -16,7 +16,7 @@ Go to **Alerting** -> **Destinations** and click **Email** to add a new email fo
 
 ![](<../../../.gitbook/assets/Configuring Alert Destinations - Email.png>)
 
-You'll get a verification request to your email. Copy or click the link to confirm verification and you'll receive alerting notification via email as well.
+You'll get a verification request to your email. Copy or click the link to confim the verification and you'll receive alerting notification via email as well.
 
 ## Slack
 
