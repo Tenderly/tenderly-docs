@@ -1,35 +1,34 @@
 # Function Call
 
-![](<../../.gitbook/assets/Function call.gif>)
+![](<../../.gitbook/assets/Creating an Alert - Function Call 1.png>)
 
 #### Introduction
 
-Triggers whenever a specific function is called in one of your contracts. Receive an alert not only when a function is first called in a transaction, but each time it is called during the execution of a transaction.
+This type of alert triggers whenever a specific function is called in one of your Smart Contracts. By setting up this alert, you can receive a notification not only when a function is first called in a transaction, but each time it's called during the execution of a transaction.
 
 #### Example 1
 
-Let’s get notified every time a new CryptoKitty is born.
+Let’s set up an Alert to notify us every time a new CryptoKitty is born by following these steps:&#x20;
 
-* First of all, we need to add the CryptoKitties contract to Project. _CryptoKitties Smart Contract address is 0x06012c8cf97bead5deae237070f9587f8e7a266d_. You can see here how to [**Add a new contract**](../../monitoring/smart-contracts/) into your Project.\
+* Add the CryptoKitties contract to Projects. _The_ _CryptoKitties Smart Contract address is 0x06012c8cf97bead5deae237070f9587f8e7a266d_. [Follow a few steps to **Add a new contract** to your Projects](https://docs.tenderly.co/monitoring/smart-contracts). \
 
-* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Function Call —> Contract —> Select Contract —>**Find **KittyCore** Smart Contract and Choose it **—>** Choose **giveBirth** function **—> Next —>** Choose Alert Destination **—> Save.**\
+* Click **Alerting** in the side navigation menu **—>** **New Alert** **—>** **Function Call —> Contract —> Select Contract —>**Find and Choose the **KittyCore** Smart Contract **—>** Choose the **giveBirth** function **—> Next —>**Choose Alert Destination **—> Save.**\
   ****
-* That’s it! You’ll get a notification whenever a cute little CryptoKitty comes into this world. Or not this world, but to the Ethereum blockchain at least.\
+* All done! You’ll receive a notification whenever a CryptoKitty comes into the Ethereum world.\
 
-* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+* ****[**Edit your new Alert**](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert) by filling in a description, adding an alert level, setting more destinations, or changing its name.&#x20;
 
 #### Example 2
 
-Another great example is that sometimes we want to get alerted when a specific function was called in a transaction. And no, we're not talking about just the first function that was called in a transaction - we're talking about getting notified if that specific function was called at any time during the execution of a transaction.
+Another great example is setting up an Alert that will trigger when a specific function is invoked in a transaction. This doesn't apply only to the first time a function is called in a transaction, but to each time that particular function is invoked during transaction execution.&#x20;
 
-Let’s get notified every time a new CryptoKitty is born:
+![](<../../.gitbook/assets/Creating an Alert - Function Call 2.png>)
 
-* I’m going to add the CryptoKitties Smart Contract to my project by importing it from Etherscan by going to my project, then click on Add Contract and paste in the following address: **0x06012c8cf97bead5deae237070f9587f8e7a266d**\
-  ****
-* Go to the alerts tab and select the **Function Call** rule
-* Pick the **KittyCore** Smart Contract as the Alert target
-* Select the **giveBirth** function
+For instance, let’s get notified every time a new CryptoKitty is born:
 
-![](<../../.gitbook/assets/image (67).png>)
+* Add the CryptoKitties Smart Contract to your project by importing it from Etherscan. To do this,  go to your project, click Add Contract, and paste the following address: **0x06012c8cf97bead5deae237070f9587f8e7a266d**
+* Go to the Alerts tab and select the **Function Call** rule.
+* Pick the **KittyCore** Smart Contract as the Alert target.
+* Select the **giveBirth** function.
 
-That’s it! You’ll get an e-mail whenever a cute little CryptoKitty comes into this world. Or not this world, but to the Ethereum blockchain at least.
+Once done, you’ll get an email whenever a CryptoKitty is born.
