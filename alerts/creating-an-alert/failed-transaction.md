@@ -1,37 +1,35 @@
 # Failed Transaction
 
-![](../../.gitbook/assets/1-cgb4lf9qcz\_h-ssu2-cqha-22222.gif)
-
-
+![](<../../.gitbook/assets/Creating an Alert for a failed transaction.gif>)
 
 #### Introduction
 
-Trigger your alert whenever a transaction that calls my Smart Contracts failed. You can set up different targets like when a transaction calls some contract, or more general like when the transaction is created on some network.
+Trigger your Alert whenever a transaction that calls your Smart Contracts fails. You can set up different targets, such as when a transaction calls a contract or, a more general one, when a transaction is created on a particular network.
 
 #### Example 1
 
-Let’s say we have deployed some contracts and want to monitor every failed transaction that calls our contract.
+Let’s say we deployed a Smart Contracts and want to monitor every failed transaction that calls it. To do this, we need to implement the following:&#x20;
 
-*   First of all, we need to add that contract to Project. You can see here how to [**Add a new contract**](../../monitoring/smart-contracts/) into your Project.
+*   First of all, we need to add the contract to Projects. [**Adding a new contract** to a Project ](https://docs.tenderly.co/monitoring/smart-contracts)requires just a few steps.&#x20;
 
 
-* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Failed Transaction —> Contract —> Select Contract —>** Find Contract you want to monitor and Choose it **—> Next —>** Choose Alert Destination **—> Save.**\
+* Click **Alerting** in the navigation **—>** **New Alert** **—>** **Failed Transaction —> Contract —> Select Contract —>** Find and select the Contract you want to monitor **—> Next —>** Choose Alert Destination **—> Save.**\
   ****
-* That is it, Alert was created. Now if a transaction ever fails, I get notified instantly.\
+* That's it! We've set up a new Alert that will instantly notify us if a transaction calling our contract fails.\
 
-* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+* We can also [edit the Alert](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert) to change its name and add a description, alert level, and more destinations.
 
 #### Example 2
 
-For this example, we created an alert that will notify us whenever a transaction fails on the DAI Smart Contract. After setting up the alert we need to choose a destination:
+In this example, we created an Alert that will notify us whenever a transaction fails on the DAI Smart Contract. After setting up the Alert, we need to choose a destination:
 
 ![](<../../.gitbook/assets/image (66).png>)
 
-Here we’ll select our shiny new Sentry and PagerDuty destinations.
+Here, we’ll select Sentry and PagerDuty as destinations.
 
-Now, whenever a Dai transaction fails, a man will come and tap you on the shoulder to inform you about it. Not really, but instead of that, you will have to settle for a detailed alert from Sentry and PagerDuty.
+After setting this up, whenever a DAI transaction fails, you'll receive a detailed Alert via Sentry and PagerDuty.
 
-As you can see, the whole error stack-trace can be found on your Sentry dashboard:
+As you can see, the whole error stack trace can be found in your Sentry dashboard:
 
 ![](<../../.gitbook/assets/image (48).png>)
 
