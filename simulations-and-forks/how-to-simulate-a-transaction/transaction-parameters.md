@@ -39,7 +39,7 @@ Otherwise, choose a public contract from your project (or add any public contrac
 
 ![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.32.11.png>)
 
-### State Override
+### State Overrides
 
 If you want to **change any of the states on the fly**, you can **use the State Override** for any of the contracts you want.&#x20;
 
@@ -54,3 +54,13 @@ You can also add as many State Overrides for any number of contracts you want, j
 ![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.38.52.png>)
 
 If you want to save your simulation starting point with modified State Overrides and other parameters, you can use Forks and our [**Fork Parents feature**](../how-to-create-a-fork/fork-parents.md).
+
+You can explore some use cases for state overrides in this blog article:
+
+{% embed url="https://blog.tenderly.co/the-magical-land-of-smart-contract-storage/" %}
+
+### Block Header Overrides
+
+When executing Simulations, the number you choose in the "Block Header Overrides" section will make your code think that your current block is the one you chose instead of the block defined above (pending or historical blocks) from which the state is taken from.
+
+![](<../../.gitbook/assets/Screenshot 2022-07-12 at 10.17.24.png>)
