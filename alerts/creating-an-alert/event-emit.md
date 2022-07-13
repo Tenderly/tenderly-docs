@@ -1,19 +1,21 @@
 # Event Emit
 
-![](../../.gitbook/assets/Event-Emit.gif)
+![](<../../.gitbook/assets/Creating an Alert - Event Emmited.png>)
 
 #### Introduction
 
-Triggers whenever a specific event is emitted in one of your contracts.
+This alert type triggers whenever a specific event is emitted in one of your contracts.
 
 #### Example
 
 Let’s get notified every time when a spender is granted rights to withdraw tokens from an owner.
 
-* First of all, we need to add some ERC20 Smart Contract to Project. You can see here how to [**Add a new contract**](../../monitoring/smart-contracts/) into your Project.\
+![](<../../.gitbook/assets/Creating an Alert - Event Emitted Network.png>)
 
-* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Event Emit —> Contract —> Select Contract —>** Find ERC20 Smart Contract and Choose it **—>** Choose **Approval** event **—> Next —>** Choose Alert Destination **—> Save.**\
+* Add an ERC20 Smart Contract to Project. You can see here how to [**Add a new contract**](../../monitoring/smart-contracts/) to your Project.\
+
+* Go to **Alerting** in the side navigation **—>** **New Alert** **—>** **Event Emit —> Contract —> Select Contract —>** Find the ERC20 Smart Contract **—>**Choose the contract **—>** Choose the **Approval** event **—> Next —>** Choose an Alert Destination **—> Save.**\
   ****
-* That’s it! You’ll get a notification whenever the allowance of a spender for an owner is set by a call to [approve](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-).\
+* Once done, you'll get a notification whenever a call to [approve](https://docs.openzeppelin.com/contracts/2.x/api/token/erc20#IERC20-approve-address-uint256-) sets the spender allowance for an owner.\
 
-* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+* After creating an Alert, you can further customize it by changing its name, writing a description, setting a level, and adding more destinations. You can do this by [editing the Alert in a few steps](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert). &#x20;
