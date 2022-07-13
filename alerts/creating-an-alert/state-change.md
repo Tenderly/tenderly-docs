@@ -1,20 +1,16 @@
 # State Change
 
-![](<../../.gitbook/assets/State Change.gif>)
+![](<../../.gitbook/assets/Creating an Alert - State Change 1.png>)
 
 #### Introduction
 
-Triggers whenever a state variable in one of your contracts changes.
+Use this alert type to receive notifications whenever a state variable in one of your contracts changes.
 
 #### Example
 
-Let’s get notified when MultiSigWallet number of required confirmations go below 5.
+Here are a few steps to help you create an alert that will notify you when the number of required confirmations for a MultiSigWallet goes below 5.
 
-*   First of all, we need to add a MultiSigWallet Smart Contract to Project. You can see here how to [**Add a new contract** ](../../monitoring/smart-contracts/)into your Project.
-
-
-* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **State Change —> Contract —> Select Contract —>**Find MultiSigWallet Smart Contract and Choose it **—>** Select variable **`required`** **—>** Click on **Criteria** **—>** Select `**<**` **—>** Enter comparison value **5 —> Next —>** Choose Alert Destination **—> Save.**\
-  ****
-* That’s it! You’ll get a notification whenever the number of required confirmations go below 5.\
-
-* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+* Choose one of the [ways to add a new contract to Projects](https://docs.tenderly.co/monitoring/smart-contracts) first and import your MultiSigWallet Smart Contract.
+* Set up a new alert by going to the **Alerting** tab in the left side bar **—>** **New Alert** **—>** **State Change —> Contract —> Select Contract —>**Choose the MultiSigWallet Smart Contract **—>** Select the **`required`** variable **—>** Click **Criteria** **—>** Select `**<**` **—>** Enter **5** as the comparison value **—> Next —>** Choose an Alert Destination **—> Save.**
+* Your alert will send you a notification whenever the number of required confirmations goes below 5.
+* You can [edit your existing alert in a few ways](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert). Customize it by changing the name, writing a description, choosing multiple destinations, or setting up an alert level.&#x20;
