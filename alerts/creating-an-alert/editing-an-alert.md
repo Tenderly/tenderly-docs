@@ -1,10 +1,9 @@
 # Editing an Alert
 
-When the Alert was created you can edit that alert setting. Every alert was created with an empty description and default Alert Level. But you can edit that.
+When creating an Alert, it will automatically have a default Alert Level and an empty description. You can update these details by editing the existing Alert.
 
-If you want to edit some alert first you need to find that alert and click on it. Then you will see more details about that alert:
+To make further adjustments, go to the Alerting tab and choose the Alert you want to edit. Click the preferred Alert for more details:&#x20;
 
 ![](../../.gitbook/assets/screenshot-2021-09-13-at-12.51.50.png)
 
-Then click on the Edit button, this will open the Edit Alert screen where you can change Alert Level, Name, Description, add or remove Alert Destinations...
-
+Next, click the Edit button, which will open the Edit Alert screen. Here, you can change the Alert Level, Name, and Description and add or remove Alert Destinations.
