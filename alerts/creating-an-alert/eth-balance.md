@@ -14,6 +14,8 @@ This alert is triggered only when a transaction reduces the balance of the addre
 
 Here's how you can create this type of alert and start receiving notifications when the contract balance falls below a certain threshold.
 
+![](<../../.gitbook/assets/Creating an Alert - ETH Balance 2.png>)
+
 * The first step entails [adding a Smart Contract to your Project](https://docs.tenderly.co/monitoring/smart-contracts).
 * Once you add the contract, go to **Alerting** in the side navigation **—>** **New Alert** **—>** **ETH Balance —> Contract —> Select Contract —>**Find & Choose the needed Smart Contract **—>** Enter a threshold in Wei **—> Next —>**Choose an Alert Destination **—> Save.**
 * After implementing the previous steps, you’ll get a notification whenever the contract balance falls below the specified threshold.
