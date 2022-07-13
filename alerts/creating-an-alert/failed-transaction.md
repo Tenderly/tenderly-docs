@@ -10,13 +10,9 @@ Trigger your Alert whenever a transaction that calls your Smart Contracts fails.
 
 Let’s say we deployed a Smart Contracts and want to monitor every failed transaction that calls it. To do this, we need to implement the following:&#x20;
 
-*   First of all, we need to add the contract to Projects. [**Adding a new contract** to a Project ](https://docs.tenderly.co/monitoring/smart-contracts)requires just a few steps.&#x20;
-
-
-* Click **Alerting** in the navigation **—>** **New Alert** **—>** **Failed Transaction —> Contract —> Select Contract —>** Find and select the Contract you want to monitor **—> Next —>** Choose Alert Destination **—> Save.**\
-  ****
-* That's it! We've set up a new Alert that will instantly notify us if a transaction calling our contract fails.\
-
+* First of all, we need to add the contract to Projects. [**Adding a new contract** to a Project ](https://docs.tenderly.co/monitoring/smart-contracts)requires just a few steps.&#x20;
+* Click **Alerting** in the navigation **—>** **New Alert** **—>** **Failed Transaction —> Contract —> Select Contract —>** Find and select the Contract you want to monitor **—> Next —>** Choose Alert Destination **—> Save.**
+* That's it! We've set up a new Alert that will instantly notify us if a transaction calling our contract fails.
 * We can also [edit the Alert](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert) to change its name and add a description, alert level, and more destinations.
 
 #### Example 2
