@@ -1,20 +1,18 @@
 # Whitelisted Callers
 
-![](../../.gitbook/assets/Whitelisted-Callers.gif)
+![](<../../.gitbook/assets/Creating an Alert - Whitelisted Callers 1.png>)
 
 #### Introduction
 
-Triggers whenever an address that is not whitelisted calls one of your contracts.
+This alert type notifies you whenever an address that's not whitelisted calls one of your contracts.
+
+![](<../../.gitbook/assets/Creating an Alert - Whitelisted Callers 2.png>)
 
 #### Example
 
-Let’s get notified every time when someone who isn't on the whitelist calls our smart contract.
+Follow this example to set up an Alert that will notify you every time someone who isn't on the whitelist calls your Smart Contract.
 
-*   First of all, we need to add Smart Contract to Project. You can see here how to [**Add a new contract** ](../../monitoring/smart-contracts/)into your Project.
-
-
-* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Whitelisted Callers —> Contract —> Select Contract —>** Find Smart Contract and Choose it **—>** Paste address and click on **Add** button **—> Next —>** Choose Alert Destination **—> Save.**\
-  ****
-* That’s it! You’ll get a notification whenever someone who has not whitelisted calls one of your contracts.\
-
-* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+* First, follow a few [steps to add a Smart Contract to your Project](https://docs.tenderly.co/monitoring/smart-contracts).&#x20;
+* Then, click **Alerting** in the side navigation **—>** **New Alert** **—>** **Whitelisted Callers —> Contract —> Select Contract —>** Find & Choose the  Smart Contract **—>** Paste the address & click the **Add** button **—> Next —>** Choose an Alert Destination **—> Save.**
+* After you set this up, you'll receive notifications whenever someone who isn't whitelisted calls one of your contracts.
+* If you'd like to further adjust your Alert, you can change its name, add a description, choose multiple destinations, and pick an alert level. This is available in [the Edit Alert section](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert).&#x20;
