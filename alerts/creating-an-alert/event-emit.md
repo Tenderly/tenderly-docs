@@ -8,7 +8,7 @@ This alert type triggers whenever a specific event is emitted in one of your con
 
 #### Example
 
-Let’s get notified every time when a spender is granted rights to withdraw tokens from an owner.
+Let’s get notified every time a spender is granted rights to withdraw tokens from an owner.
 
 ![](<../../.gitbook/assets/Creating an Alert - Event Emitted Network.png>)
 
