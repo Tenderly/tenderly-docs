@@ -1,20 +1,16 @@
 # Event Parameter
 
-![](../../.gitbook/assets/Event-Parameter.gif)
+![](<../../.gitbook/assets/Creating an Alert - Event Parameter.png>)
 
 #### Introduction
 
-Triggers whenever a specific event argument in an event matches the set of conditions.
+This alert type triggers whenever a specific event argument in an event matches a set of conditions.
 
 #### Example
 
-Let’s get notified every time when a spender is granted rights to withdraw tokens from our address.
+You can receive a notification every time a spender is granted rights to withdraw tokens from your address by following these steps:&#x20;
 
-*   First of all, we need to add some ERC20 Smart Contract to Project. You can see here how to [**Add a new contract** ](../../monitoring/smart-contracts/)into your Project.
-
-
-* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Event Parameter —> Contract —> Select Contract —>**Find ERC20 Smart Contract and Choose it **—>** Choose **Approval** event **—>** Select **owner** argument **—>** Select comparator **equal to —>** Paste your address  **—> Next —>** Choose Alert Destination **—> Save.**\
-  ****
-* That’s it! You will be notified whenever an approval call is set for additional spending for our address.\
-
-* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+* First you need to add an ERC20 Smart Contract to Projects. There are several ways to [Add a new contract to a Project](https://docs.tenderly.co/monitoring/smart-contracts).
+* Go to **Alerting** in the left side bar **—>** **New Alert** **—>** **Event Parameter —> Contract —> Select Contract —>**Find the ERC20 Smart Contract **—>**Choose it **—>** Choose the **Approval** event **—>** Select the **owner** argument **—>** Select the **equal to** comparator **—>**Paste your address  **—> Next —>** Choose an Alert Destination **—> Save.**
+* You'll be notified whenever an approval call is set for additional spending for your address.
+* After creating an Alert, you can add a description, alert level, more alert destinations, or a new name. You're able to do this by [editing your existing Alert](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert).
