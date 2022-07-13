@@ -40,8 +40,8 @@ If any of the files for verifying your contracts is missing you will be prompted
 
 You will be prompted to choose which contract to upload if the file contains multiple contracts, as well as to define the following:
 
-* Which [network](../../supported-networks-and-languages.md) is the contract deployed to.
-* What is the contract's address.
+* Which [network](../../supported-networks-and-languages.md) the contract is deployed to.
+* What the contract address is.
 * (Optionally) add the library name and address for specific contracts that require them.
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.10.19.png>)
