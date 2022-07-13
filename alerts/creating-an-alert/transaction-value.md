@@ -1,20 +1,16 @@
 # Transaction Value
 
-![](../../.gitbook/assets/Transaction-Value.gif)
+![](<../../.gitbook/assets/Creating an Alert - Transaction Value.png>)
 
 #### Introduction
 
-Triggers whenever a transaction value matches set conditions.
+This alert type triggers whenever a transaction value matches certain conditions.
 
 #### Example
 
-Let’s get notified for every transaction above 100 Ether who called the selected contract.
+Let’s get notified for every transaction above 100 ETH that calls the selected contract.
 
-*   First of all, we need to add Smart Contract to Project. You can see here how to [**Add a new contract** ](../../monitoring/smart-contracts/)into your Project.
-
-
-* Click on **Alerting** in the navigation **—>** **New Alert** **—>** **Transaction Value —> Contract —> Select Contract —>** Find Smart Contract and Choose it **—>** Select comparator **`>`** **—>** Enter **100000000000000000000** Wei **—> Next —>** Choose Alert Destination **—> Save.**\
-  ****
-* That’s it! You’ll get a notification whenever the transaction with more than 100 Ether is called a selected contract.\
-
-* When Alert was created if we want to add a description, alert level, more alert destinations, or change the name, we can do that. You can see how in [Edit Alert](editing-an-alert.md).
+* [Start by **adding a Smart Contract**](https://docs.tenderly.co/monitoring/smart-contracts) **** to a Project by choosing one of the available options.
+* Click **Alerting** in the navigation **—>** **New Alert** **—>** **Transaction Value —> Contract —> Select Contract —>** Find the added Smart Contract **—>**Choose the contract **—>** Select the **`>`** comparator **—>** Enter **100000000000000000000** Wei **—> Next —>**Choose an Alert Destination **—> Save.**
+* Once everything is set up, you'll receive notifications whenever a transaction with more than 100 Ether calls the specified contract.
+* Rename your new alert, add a description, choose multiple destinations, or set an alert level by [going to the Edit Alert settings](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert).&#x20;
