@@ -45,3 +45,9 @@ Here you'll find guides showing how to customize transaction simulations and (fo
 {% content-ref url="how-to-manage-account-balances-in-tenderly-forks.md" %}
 [how-to-manage-account-balances-in-tenderly-forks.md](how-to-manage-account-balances-in-tenderly-forks.md)
 {% endcontent-ref %}
+
+**How to Change Storage Values on a Fork**
+
+{% content-ref url="how-to-change-storage-values-on-a-fork.md" %}
+[how-to-change-storage-values-on-a-fork.md](how-to-change-storage-values-on-a-fork.md)
+{% endcontent-ref %}
