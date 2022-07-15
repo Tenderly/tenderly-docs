@@ -14,7 +14,7 @@ const SIMULATE_API = `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/pr
 const DAI_ADDRESS = "0x6b175474e89094c44da98b954eedeac495271d0f";
 
 // tx data obtained using other means
-const TX_DATA = const unsignedTx = await contract.populateTransaction[funcName](...args);
+const TX_DATA = await contract.populateTransaction[funcName](...args);
 
 const transaction = {
     network_id: '1',
