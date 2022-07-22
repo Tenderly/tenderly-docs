@@ -51,3 +51,9 @@ You can support many different workflows with Sandboxes, and some of those are:
 **BAYC Land Sale** - **** showcases how careful and detailed contract optimization can significantly reduce gas usage. The example outlines optimization steps that could have reduced the gas fee for minting the BAYC NFTs by even 30-40%. With a detailed overview, you can inspect each line of the code, make adjustments, and then run the optimized version:
 
 {% embed url="https://sandbox.tenderly.co/examples/bayc-land-contract-optimizations" %}
+
+### Dynamic Imports
+
+Dynamic Imports in solidity files are now available, which means you can instantly import any contract and run it on the spot without all of the code copying, which is especially useful for contracts with hundreds or thousands lines of code.
+
+![](<.gitbook/assets/Screenshot 2022-07-22 at 13.52.54.png>)

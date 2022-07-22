@@ -48,6 +48,7 @@
   * [Triggers](web3-actions/intro-to-web3-actions/triggers.md)
   * [Networks](web3-actions/intro-to-web3-actions/networks.md)
   * [Notifications](web3-actions/intro-to-web3-actions/notifications.md)
+  * [Error Reporting](web3-actions/intro-to-web3-actions/error-reporting.md)
 * [How to Handle On-Chain Events](web3-actions/how-to-handle-on-chain-events.md)
 * [How to Build a Custom Oracle](web3-actions/how-to-build-a-custom-oracle.md)
 * [How to Send a Discord Message About a New Uniswap Pool](web3-actions/how-to-send-a-discord-message-about-a-new-uniswap-pool.md)
