@@ -28,9 +28,9 @@ Additionally, if your contract is to be used as a proxy but is not defined by th
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.28.13.png>)
 
-If you are importing a proxy contract which doesn't conform to one of the two industry standards which Tenderly automatically detects (EIP-1967 i EIP-1167), you can now easily convert that proxy contract to be recognized by the Tenderly platform.
+If you are importing a proxy contract that doesn't conform to one of the two industry standards which Tenderly automatically detects (EIP-1967 and EIP-1167), you can now easily convert that proxy contract to be recognized by the Tenderly platform.
 
-If you are using a different standard that the two mentioned above, you can provide a view function defined on your contract that returns the implementation address. You can also manually set the storage [slot](https://docs.soliditylang.org/en/v0.8.11/internals/layout\_in\_storage.html#layout-of-state-variables-in-storage) containing the implementation address to convert this contract into a Proxy.
+If you are using a different standard than the two mentioned above, you can provide a view function defined on your contract that returns the implementation address. You can also manually set the storage [slot](https://docs.soliditylang.org/en/v0.8.11/internals/layout\_in\_storage.html#layout-of-state-variables-in-storage) containing the implementation address to convert this contract into a Proxy.
 
 ![](<../../.gitbook/assets/Screenshot 2022-04-14 at 13.42.06.png>)
 
