@@ -13,6 +13,6 @@ You can set up this type of Alert to receive notifications whenever an ERC20 tra
 Follow these steps to get notified every time someone sends you tokens:
 
 * First, you should add the ERC20 Smart Contract to your Project. There are several [options for **adding a new contract**](https://drive.google.com/drive/folders/1d2NwK48fkt9Q1OxQPM57U\_jBFz-MhKtJ) to your Project.
-* Next, click **Alerting** in the side navigation **—>** **New Alert** **—>** **ERC20 Token Transfer —> Contract —> Select Contract —>** Find & Choose the Smart Contract **—>** Set the direction value to **"to" —>** Paste your address **—> Next —>** Choose an Alert Destination **—> Save.**
+* Next, click **Alerting** in the side navigation **—>** **New Alert** **—>** **ERC20 Token Transfer —> Address —> Select Address —>** Find & Choose the preferred Smart Contract **—>** Set the direction value to **"to" —>** Paste your address **—> Next —>** Choose an Alert Destination **—> Save.**
 * Receive notifications whenever someone sends you a selected ERC20 token.
 * Further [adjust your Alert](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert) by changing its name, adding multiple destinations, setting up an alert level, and writing a description.
