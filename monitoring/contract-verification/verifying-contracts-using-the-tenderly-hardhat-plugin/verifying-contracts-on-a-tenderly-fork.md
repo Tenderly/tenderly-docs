@@ -174,7 +174,7 @@ The `verificationRequest` consists of the following parts:
 
 * The **config** refers to the [Solidity compiler configuration](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification#the-solidity-compiler-config).
 * The **root** is set to an empty string (`root: ""`) so the contract is verified for the entire Fork. To make a contract valid starting with a particular Simulated transaction in the Fork, set it to the Simulation ID (UUID assigned by Tenderly).
-* The **contracts** entail a list of **contracts and libraries** you’re verifying. For more details, see the [reference for _contracts_ verification property](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification#the-solidity-compiler-config).
+* The **contracts** entail a list of **contracts and libraries** you’re verifying. For more details, see the [reference for _contracts_ verification property](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification#the-list-of-contracts).
 
 The `contracts` property is a list of all the contracts you’re verifying and the libraries they’re using. The main difference is that the key of each entry in the `networks` property has to be the Fork ID, like on the line 8 in the listing below:
 
