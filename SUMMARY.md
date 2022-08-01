@@ -52,6 +52,7 @@
 * [How to Handle On-Chain Events](web3-actions/how-to-handle-on-chain-events.md)
 * [How to Build a Custom Oracle](web3-actions/how-to-build-a-custom-oracle.md)
 * [How to Send a Discord Message About a New Uniswap Pool](web3-actions/how-to-send-a-discord-message-about-a-new-uniswap-pool.md)
+* [Rate Limits](web3-actions/rate-limits.md)
 
 ## 🦅 Monitoring
 
