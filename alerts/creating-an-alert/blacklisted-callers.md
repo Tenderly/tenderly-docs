@@ -10,7 +10,7 @@ The Blacklisted Caller alert triggers whenever an address from this list calls o
 
 For this example, you need to use a [simple Gnosis Multisig Wallet](https://dashboard.tenderly.co/contract/kovan/0xbcf55f198e2a5ff4c632610183b1a5290c193e4a?utm\_source=medium\&utm\_campaign=alerting\_release\&utm\_medium=post\&utm\_content=public\_contract\_listing).
 
-Here are a few guidlines to set up an alert that will notify you whenever someone other than the owners of the Multisig Wallet calls the Smart Contract. Once you receive an email, you can react accordingly.
+Here are a few guidelines to set up an alert that will notify you whenever someone other than the owners of the Multisig Wallet calls the Smart Contract. Once you receive an email, you can react accordingly.
 
 * First, add the contract to a Project either via the Tenderly push command or using the Verified Contract feature.
 * Go to the Alerting tab, select the **Whitelisted Callers** rule, and then select the **MultiSigWalletWithDailyLimit** Smart Contract.

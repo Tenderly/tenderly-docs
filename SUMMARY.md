@@ -15,6 +15,7 @@
   * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
   * [Fork Parents](simulations-and-forks/how-to-create-a-fork/fork-parents.md)
+  * [How to Get a Fork JSON-RPC URL & ID](simulations-and-forks/how-to-create-a-fork/how-to-get-a-fork-json-rpc-url-and-id.md)
 * [Simulation API](simulations-and-forks/simulation-api/README.md)
   * [Configuration of API Access](simulations-and-forks/simulation-api/configuration-of-api-access.md)
   * [Integration Guides](simulations-and-forks/simulation-api/integration-guides/README.md)
@@ -116,6 +117,9 @@
 * [👷 Hardhat Plugin](https://github.com/Tenderly/hardhat-tenderly)
 * [🐛 Trace API](other/trace-api.md)
 * [🤓 Privacy Policy](https://tenderly.co/privacy-policy)
+* [🔑 Platform Access](other/platform-access/README.md)
+  * [How to Find the Project Slug, Username, and Organization Name](other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md)
+  * [How to Generate API Access Tokens](other/platform-access/how-to-generate-api-access-tokens.md)
 
 ***
 
