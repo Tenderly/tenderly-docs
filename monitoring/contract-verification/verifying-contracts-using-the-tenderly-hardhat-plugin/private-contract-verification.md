@@ -48,7 +48,7 @@ This configuration ensures all deployments run in the private mode until you cha
 
 In the case of [the example project on Git](https://github.com/Tenderly/hardhat-tenderly/tree/master/examples/contract-verification), some of the configuration is externalized using System Environment Variables.
 
-Here’s one example how the configuration references Environment Variables:
+Here’s one example of how the configuration references Environment Variables:
 
 ```tsx
 // File: hardhat.config.ts
