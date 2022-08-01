@@ -6,6 +6,11 @@ Forks also enable you to chain multiple Tenderly Simulations, so one impacts the
 
 &#x20;As an environment for running Simulations, Forks allow you to control every aspect of that  environment using [customization APIs](../simulation-api/tenderly-fork-customization-via-api/), from simulated balances in wallets to the passage of time.
 
+There are several ways to work with forks:
+
+* Create forks and perform simulations using the Dashboard (covered in this guide)
+* Explore the [programmatic approach to creating forks](https://docs.tenderly.co/simulations-and-forks/simulation-api#2-create-a-fork-environment), using them with Ethers to [perform simulations](https://docs.tenderly.co/simulations-and-forks/simulation-api#2.1-using-fork-with-ethers.js), and different ways to [integrate forks in your project](https://docs.tenderly.co/simulations-and-forks/simulation-api#2-create-a-fork-environment)
+
 ## Working with Forks using the Dashboard
 
 Let's start up a new Fork:
