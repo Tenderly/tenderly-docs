@@ -1,8 +1,12 @@
 # How to Create a Fork
 
-{% hint style="success" %}
-Forks allow you to chain [**Simulations**](../how-to-simulate-a-transaction/) and test out complex scenarios with live on-chain data.
-{% endhint %}
+A **Fork** is an isolated environment that reflects the most recent data and state of the Mainnet or any other of the 20+ networks Tenderly supports. It allows you to "duplicate" the preferred network and use it for the purposes of your project, without submitting changes to the actual network. Forks expose a JSON-RPC URL, so they behave as any node would.
+
+Forks also enable you to chain multiple Tenderly Simulations, so one impacts the subsequent ones. This way, you can test complex transaction scenarios while using live on-chain data. You can even examine how certain transactions would have transpired at a specific point in the past by choosing a historical block number. &#x20;
+
+&#x20;As an environment for running Simulations, Forks allow you to control every aspect of that  environment using [customization APIs](../simulation-api/tenderly-fork-customization-via-api/), from simulated balances in wallets to the passage of time.
+
+## Working with Forks using the Dashboard
 
 Let's start up a new Fork:
 
