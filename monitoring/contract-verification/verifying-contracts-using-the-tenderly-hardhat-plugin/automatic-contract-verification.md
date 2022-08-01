@@ -57,4 +57,4 @@ Essentially, automatic verification is a **no-code solution.**  This isn't the c
 
 ## When is automatic verification applicable?
 
-Automatic verification works only when deploying new contracts. If you’re working with a previously deployed Smart Contract, you require a greater level of configuration control and flexibility, so you should explore [manual contract verification methods](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification).
+Automatic verification works only when deploying new contracts. If you’re working with a previously deployed Smart Contract, you require a greater level of configuration control and flexibility, so you should explore [manual contract verification methods.](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification)
