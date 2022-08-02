@@ -1,5 +1,7 @@
 # 📣 General Info
 
+[**Tenderly**](https://tenderly.co/) is a comprehensive **Ethereum Developer Platform** for real-time monitoring, alerting, debugging, and simulating Smart Contracts.
+
 {% hint style="success" %}
 We recently had a rather big release, which includes:
 
@@ -14,9 +16,13 @@ You can read more about it right here :point\_down:
 
 {% embed url="https://blog.tenderly.co/new-features-web3-actions-war-rooms-sandbox-debugger-extension/" %}
 
-[**Tenderly**](https://tenderly.co/) is a comprehensive **Ethereum Developer Platform** for real-time monitoring, alerting, debugging, and simulating Smart Contracts.
+****[**Contract Verification**](https://docs.tenderly.co/monitoring/contract-verification)****
 
-### **Some of the notable features that Tenderly supports:**
+Smart Contract verification is the process of making source code verifiable and available to the public for complete transparency and enhanced security. It’s an essential step in ensuring that Debugger, Simulator, and other Tenderly features work seamlessly with your Smart Contracts.
+
+{% content-ref url="monitoring/contract-verification/" %}
+[contract-verification](monitoring/contract-verification/)
+{% endcontent-ref %}
 
 ****[**Simulations**](simulations-and-forks/how-to-simulate-a-transaction/)****
 
