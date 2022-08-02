@@ -26,13 +26,13 @@ Code verification requires three arguments:&#x20;
 
 Tenderly offers different ways to verify Smart Contracts, with each one bringing different levels of configuration flexibility and control.
 
-The first way is verify Smart Contracts using Tenderly Dashboard.
+The first way entails verifying Smart Contracts using the Tenderly Dashboard.
 
 {% content-ref url="verifying-a-smart-contract.md" %}
 [verifying-a-smart-contract.md](verifying-a-smart-contract.md)
 {% endcontent-ref %}
 
-The second approach code-oriented:  verifying Smart Contracts using Hardhat plugin. This approach offers Automatic (no-code) verification, as well as manual verification through code.
+The second approach is code-oriented and entails verifying Smart Contracts using the Hardhat plugin. This approach offers automatic (no-code) verification, as well as manual verification through code.
 
 {% content-ref url="verifying-contracts-using-the-tenderly-hardhat-plugin/" %}
 [verifying-contracts-using-the-tenderly-hardhat-plugin](verifying-contracts-using-the-tenderly-hardhat-plugin/)
