@@ -4,9 +4,9 @@ By default, the Tenderly Hardhat plugin performs public verification of Smart Co
 
 ## How to verify Smart Contracts privately
 
-To enable private verification, set the `privateVerification` flag and [specify your exact username and the project slug](https://docs.tenderly.co/other/platform-access/how-to-find-the-project-slug-username-and-organization-name) on Tenderly.
+To enable private verification, the `tenderly` segment of Hardhat's configuration has to be extended by setting the `privateVerification` flag and [specifying your exact username and the project slug](https://docs.tenderly.co/other/platform-access/how-to-find-the-project-slug-username-and-organization-name) on Tenderly.
 
-Next, add the following `tenderly` configuration property to your `hardhat.config.ts` and paste appropriate values instead of placeholders. There’s no need to change anything in your verification code.
+Add the following `tenderly` configuration property to your `hardhat.config.ts` and paste appropriate values instead of placeholders. There’s no need to change anything in your verification code.
 
 ```diff
 // File: hardhat.config.ts
@@ -14,7 +14,7 @@ Next, add the following `tenderly` configuration property to your `hardhat.confi
 const config: HardhatUserConfig = {
   solidity: "0.8.9",
   networks: {
-    --snip—-
+//    --snip—-
   },
 + tenderly: {
 +   project: "my-project-slug",

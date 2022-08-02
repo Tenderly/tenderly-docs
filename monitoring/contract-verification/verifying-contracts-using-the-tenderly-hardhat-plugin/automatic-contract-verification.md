@@ -43,9 +43,13 @@ After executing the command, you’ll receive the following output:
 
 To check whether the operation execution was successful, you should [access your Tenderly Dashboard](https://dashboard.tenderly.co/) by clicking the link printed in the console output.
 
-In the Tenderly Dashboard, you should see something similar to the following. You’ll have an overview of the Greeter.sol with its source code. Next to it, you can see `console.sol` - a Solidity Library by Hardhat that was included automatically.
+In the Tenderly Dashboard, you should see something similar to the following.&#x20;
 
 ![Verified contract in Tenderly Dashboard](<../../../.gitbook/assets/automatic dashboard contract>)
+
+When you click Add to Project, you’ll have an overview of the Greeter.sol with its source code. Next to it, you can see `console.sol` - a Solidity Library by Hardhat that was included automatically.
+
+![Source code of the verified Contract added to a project](../../../.gitbook/assets/image.png)
 
 ## How automatic contract verification works
 
@@ -57,4 +61,4 @@ Essentially, automatic verification is a **no-code solution.**  This isn't the c
 
 ## When is automatic verification applicable?
 
-Automatic verification works only when deploying new contracts. If you’re working with a previously deployed Smart Contract, you require a greater level of configuration control and flexibility, so you should explore [manual contract verification methods.](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification)
+Automatic verification works only when deploying new contracts. If you’re working with a previously deployed Smart Contract, or you require a greater level of configuration control and flexibility, so you should explore [manual contract verification methods.](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification)

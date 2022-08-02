@@ -24,11 +24,15 @@ Code verification requires three arguments:&#x20;
 
 ## Methods of verification
 
-Tenderly offers different ways to verify Smart Contracts, with each one bringing different levels of configuration flexibility and control:
+Tenderly offers different ways to verify Smart Contracts, with each one bringing different levels of configuration flexibility and control.
+
+The first way is verify Smart Contracts using Tenderly Dashboard.
 
 {% content-ref url="verifying-a-smart-contract.md" %}
 [verifying-a-smart-contract.md](verifying-a-smart-contract.md)
 {% endcontent-ref %}
+
+The second approach code-oriented:  verifying Smart Contracts using Hardhat plugin. This approach offers Automatic (no-code) verification, as well as manual verification through code.
 
 {% content-ref url="verifying-contracts-using-the-tenderly-hardhat-plugin/" %}
 [verifying-contracts-using-the-tenderly-hardhat-plugin](verifying-contracts-using-the-tenderly-hardhat-plugin/)
@@ -38,9 +42,11 @@ Tenderly offers different ways to verify Smart Contracts, with each one bringing
 
 Depending on whether your contract is deployed on a network or a Tenderly Fork, there are three modes of contract verification:
 
-* **Public**: Every Tenderly user will be able to see the verified source code and use Tenderly tooling with that contract.
+* **Public**: Every Tenderly user will be able to see the verified source code and use Tenderly tooling with that contract.&#x20;
 * **Private**: The contract is verified and thus valid within a single project in Tenderly, available to you and anybody with access to the project.
 * **On a Tenderly Fork**: The contract is verified and thus valid within the Fork you deployed it to.
+
+When doing verification with Hardhat, contracts are verified as public by default. To verify a contract privately, you have to configure this explicitly,
 
 {% content-ref url="verifying-contracts-using-the-tenderly-hardhat-plugin/private-contract-verification.md" %}
 [private-contract-verification.md](verifying-contracts-using-the-tenderly-hardhat-plugin/private-contract-verification.md)
