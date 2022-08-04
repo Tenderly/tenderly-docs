@@ -22,7 +22,7 @@ const config: HardhatUserConfig = {
   networks: {
     --snip--
 +  tenderly: {
-+     chainId: 5582,
++     chainId: 3,
 +     url: "https://rpc.tenderly.co/fork/2aeae177-a3e8-492f-9861-1c9aa8856235",
 +   },
     --snip--
@@ -34,10 +34,10 @@ export default config;
 
 Here’s an overview of the configuration parameters used in the example above:
 
-| Property | Description                                                                                                                                                                                                                                                        |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| chainId  | The [chain ID](https://consensys.net/docs/goquorum/en/latest/concepts/network-and-chain-id/) you associate to the Fork. Use an arbitrary number, different from usual network IDs. This is to ensure that you are not vulnerable to the transaction replay attack. |
-| url      | The JSON-RPC URL of your Fork. You can get it from the Fork page in the Dashboard. It follows the structure `https://rpc.tenderly.co/fork/{forkId}`, where forkId is a unique UUID identifier of the Tenderly Fork.                                                |
+| Property | Description                                                                                                                                                                                                           |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| chainId  | The [chain ID](https://consensys.net/docs/goquorum/en/latest/concepts/network-and-chain-id/) you associate to the Fork.                                                                                               |
+| url      | The JSON-RPC URL of your Fork. You can get it from the Fork page in the Dashboard. It follows the structure `https://rpc.tenderly.co/fork/{forkId}`, where `forkId` is a unique UUID identifier of the Tenderly Fork. |
 
 ## Automatic & simple manual verification on a Tenderly Fork
 

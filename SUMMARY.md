@@ -14,6 +14,7 @@
   * [Pending vs Historical Block](simulations-and-forks/how-to-simulate-a-transaction/pending-vs-historical-block.md)
   * [Editing Contract Source](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md)
 * [How to Create a Fork](simulations-and-forks/how-to-create-a-fork/README.md)
+  * [Sending Transactions to Forks](simulations-and-forks/how-to-create-a-fork/sending-transactions-to-forks.md)
   * [Fork Parents](simulations-and-forks/how-to-create-a-fork/fork-parents.md)
   * [How to Get a Fork JSON-RPC URL & ID](simulations-and-forks/how-to-create-a-fork/how-to-get-a-fork-json-rpc-url-and-id.md)
 * [Simulation API](simulations-and-forks/simulation-api/README.md)
