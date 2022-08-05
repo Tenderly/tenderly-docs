@@ -18,7 +18,7 @@ You can read more about it right here :point\_down:
 
 ****[**Contract Verification**](https://docs.tenderly.co/monitoring/contract-verification)****
 
-Smart Contract verification is the process of making source code verifiable and available to the public for complete transparency and enhanced security. It’s an essential step in ensuring that Debugger, Simulator, and other Tenderly features work seamlessly with your Smart Contracts.
+Contract verification is an essential step in enabling Debugger, Simulator, Web3 Actions, and other Tenderly features and ensuring they work seamlessly with your Smart Contracts. Tenderly offers several methods of verification, bringing different levels of control, visibility, and flexibility.&#x20;
 
 {% content-ref url="monitoring/contract-verification/" %}
 [contract-verification](monitoring/contract-verification/)
@@ -26,7 +26,7 @@ Smart Contract verification is the process of making source code verifiable and 
 
 ****[**Simulations**](simulations-and-forks/how-to-simulate-a-transaction/)****
 
-Know how your transactions will behave before you execute them, estimate the gas usage and test potential bug fixes. **You will find extensive Simulation API documentation with use cases, code examples and our GitHub repo on the following link:**
+Know how your transactions will behave before you execute them, estimate the gas usage and test potential bug fixes. **You will find extensive Simulation API documentation with use cases, code examples, and our GitHub repo on the following link:**
 
 {% content-ref url="simulations-and-forks/simulation-api/" %}
 [simulation-api](simulations-and-forks/simulation-api/)
@@ -56,7 +56,7 @@ See the state of your contract at any point in a transaction and explore state c
 
 ****[**Smart Contract Analytics**](analytics/general-analytics.md)****
 
-Visualize and analyze the behaviour of your Smart Contract to spot patterns and gain a deeper insight into transaction data.
+Visualize and analyze the behavior of your Smart Contract to spot patterns and gain a deeper insight into transaction data.
 
 ****[**Real-time Alerting**](broken-reference)****
 
@@ -68,7 +68,7 @@ Get a granular gas usage breakdown to help you optimize your Smart Contracts and
 
 ****[**Forks**](simulations-and-forks/how-to-create-a-fork/)****
 
-Take your simulations a step further by creating a temporary fork of any supported network and execute multiple transactions in a row to test their behaviour.
+Take your simulations a step further by creating a temporary fork of any supported network and execute multiple transactions in a row to test their behavior.
 
 ****[**Integrations**](monitoring/integrations.md)****
 
