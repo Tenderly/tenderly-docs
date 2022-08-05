@@ -26,7 +26,7 @@ Contract verification is an essential step in enabling Debugger, Simulator, Web3
 
 ****[**Simulations**](simulations-and-forks/how-to-simulate-a-transaction/)****
 
-Know how your transactions will behave before you execute them, estimate the gas usage and test potential bug fixes. **You will find extensive Simulation API documentation with use cases, code examples, and our GitHub repo on the following link:**
+Know how your transactions will behave before you execute them, estimate the gas usage, and test potential bug fixes. **You will find extensive Simulation API documentation with use cases, code examples, and our GitHub repo on the following link:**
 
 {% content-ref url="simulations-and-forks/simulation-api/" %}
 [simulation-api](simulations-and-forks/simulation-api/)
