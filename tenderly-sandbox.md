@@ -57,3 +57,7 @@ You can support many different workflows with Sandboxes, and some of those are:
 Dynamic Imports in solidity files are now available, which means you can instantly import any contract and run it on the spot without all of the code copying, which is especially useful for contracts with hundreds or thousands lines of code.
 
 ![](<.gitbook/assets/Screenshot 2022-07-22 at 13.52.54.png>)
+
+{% hint style="warning" %}
+Due to certain browser compatibility and security limitations, Dynamic Imports currently do not work on Firefox, since your code is executed in the browser in the context of web workers. You can get more info on [this link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#browser\_compatibility).
+{% endhint %}
