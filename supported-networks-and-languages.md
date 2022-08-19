@@ -56,6 +56,8 @@
 {% endtab %}
 {% endtabs %}
 
+### Footnotes&#x20;
+
 {% hint style="warning" %}
 \*We decided to split up the **Arbitrum integration** into phases in order to give you (our users) access to Arbitrum on Tenderly as soon as possible, while we finish up the full integration and make all Tenderly features available for Arbitrum.\
 \
