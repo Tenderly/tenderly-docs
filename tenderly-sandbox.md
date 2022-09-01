@@ -178,7 +178,7 @@ contract MyToken is ERC20 {
 
 ### Sharing and embedding your Sandbox
 
-You can share a link to your sandbox or get an embed code.
+Follow the instructions below to get a sharable link and embed code for your Sandbox.&#x20;
 
 #### Sharing a Sandbox
 
