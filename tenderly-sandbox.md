@@ -1,7 +1,8 @@
 ---
 description: >-
-  Learn how the Tenderly Sandbox works and how to use it as a prototyping
-  environment for Solidity smart contracts.
+  Tenderly Sandbox is a fast prototyping environment where you can write,
+  execute, and debug smart contracts in the browser using Solidity and
+  JavaScript.
 ---
 
 # 🪣 Tenderly Sandbox
@@ -66,17 +67,13 @@ If you don’t create a copy, any changes you make to someone else’s Sandbox w
 
 #### Managing your Sandboxes
 
-To manage your Sandboxes, **click on the dropdown menu** next to the logo in the top nav bar. Here you’ll see a list of all the Sandboxes you either created or copied.
+To view a list of all the Sandboxes you created or copied, **click on the dropdown menu** next to the logo in the top nav bar. By default, all Sandboxes are publicaly visible.&#x20;
 
-**Click on the three dots icon** next to the Sandbox name to perform any of the following actions:
+Manage your Sandboxes by **clicking the three dots icon** next to the Sandbox name to perform any of the following actions:
 
 * **Rename** — give your Sandbox a different name. The original URL slug of the Sandbox will remain unchanged.
 * **Duplicate** — create a copy of the Sandbox.
-* **Delete** — remove the Sandbox from your account.
-
-{% hint style="danger" %}
-&#x20;Deleted Sandboxes cannot be recovered.
-{% endhint %}
+* **Delete** — remove the Sandbox from your account. Deleted Sandboxes cannot be recovered.
 
 ### Customizing your Sandbox environment
 
@@ -93,7 +90,9 @@ These configuration options are located above the transactions overview window o
 
 ### Using JavaScript to interact with smart contracts
 
-The deploy and interact with your smart contracts with JavaScript, you can use [Ethers.js](https://docs.ethers.io) and [Web3.js](https://web3js.readthedocs.io/) libraries. Both libraries are included in the Sandbox by default and can be instantiated as `ethers` and `web3`, respectively. Check out examples below to see how to access your preferred library in Sandbox.
+The deploy and interact with your smart contracts with JavaScript, you can use [Ethers.js](https://docs.ethers.io) and [Web3.js](https://web3js.readthedocs.io/) libraries. Both libraries are included in the Sandbox by default and can be instantiated as `ethers` and `web3`, respectively.&#x20;
+
+The examples below show you how to access your preferred library from the Sandbox.
 
 [**Ethers.js Sandbox example**](https://sandbox.tenderly.co/examples/counter-ethers)****
 
@@ -198,14 +197,6 @@ When you make subsequent edits to your Sandbox code, the changes will be immedia
 
 ### Practical Sandbox examples
 
-**HelloWorld** — beginner-friendly Sandbox showing you how to create a smart contract and execute a simple function.
-
-{% embed url="https://sandbox.tenderly.co/examples/hello-world" %}
-
-**AAVE Flashloan** — advanced Sandbox that gives any potential user an insight into integrating with Aave and using this functionality. Learn how to execute a smart contract to take out a loan and pay it back by the time the transaction ends.
-
-{% embed url="https://sandbox.tenderly.co/examples/aave-flashloan" %}
-
-**BAYC Land Sale** — advanced Sandbox that demonstrates how careful smart contract optimizations can significantly reduce gas usage. The example outlines optimization steps that could have reduced the gas fee for minting BAYC NFTs by 30 to 40%. With a detailed overview, you can inspect each line of the code, make adjustments, and then run the optimized version.
-
-{% embed url="https://sandbox.tenderly.co/examples/bayc-land-contract-optimizations" %}
+* [**HelloWorld** ](https://sandbox.tenderly.co/examples/hello-world)— beginner-friendly Sandbox showing you how to create a smart contract and execute a simple function.
+* [**AAVE Flashloan**](https://sandbox.tenderly.co/examples/aave-flashloan) **** — advanced Sandbox that gives any potential user an insight into integrating with Aave and using this functionality. Learn how to execute a smart contract to take out a loan and pay it back by the time the transaction ends.
+* [**BAYC Land Sale**](https://sandbox.tenderly.co/examples/bayc-land-contract-optimizations) — advanced Sandbox that demonstrates how careful smart contract optimizations can significantly reduce gas usage. The example outlines optimization steps that could have reduced the gas fee for minting BAYC NFTs by 30 to 40%. With a detailed overview, you can inspect each line of the code, make adjustments, and then run the optimized version.

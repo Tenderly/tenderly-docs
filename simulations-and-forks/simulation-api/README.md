@@ -156,7 +156,7 @@ const signer = provider.getSigner()
 
 As one of the first actions on top of the Forked environment let’s add Ether to your wallet address that would be used to send transactions. There are a couple of options for how we can do this, we can just simulate transactions and transfer Ethers from one address to our own (every address is automatically unlocked) or we can just mint new Ether.
 
-Let’s see how we can mint new Ether to our test address. Here we’re using the custom Tenderly JSON-PRC endpoint `tenderly_addBalance`.
+Let’s see how we can mint new Ether to our test address. Here we’re using the custom Tenderly JSON-RPC endpoint `tenderly_addBalance`.
 
 **API Typescript**
 
