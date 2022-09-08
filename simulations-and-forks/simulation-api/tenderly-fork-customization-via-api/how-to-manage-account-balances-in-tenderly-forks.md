@@ -14,7 +14,8 @@ const WALLETS = [
 
 const result = await provider.send("tenderly_setBalance", [
   WALLETS,
-  ethers.utils.hexValue(100),
+  //amount in wei will be set for all wallets
+  ethers.utils.hexValue(ethers.utils.parseUnits("10", "ether").toHexString()),
 ]);
 
 ```
@@ -31,7 +32,8 @@ const WALLETS = [
 
 const result = await provider.send("tenderly_addBalance", [
   WALLETS,
-  ethers.utils.hexValue(100),
+  //amount in wei will be added for all wallets
+  ethers.utils.hexValue(ethers.utils.parseUnits("10", "ether").toHexString()),
 ]);
 
 ```
