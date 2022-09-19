@@ -20,8 +20,8 @@ You can read more about it right here :point\_down:
 
 Contract verification is an essential step in enabling Debugger, Simulator, Web3 Actions, and other Tenderly features and ensuring they work seamlessly with your Smart Contracts. Tenderly offers several methods of verification, bringing different levels of control, visibility, and flexibility.&#x20;
 
-{% content-ref url="monitoring/contract-verification/" %}
-[contract-verification](monitoring/contract-verification/)
+{% content-ref url="monitoring/smart-contract-verification/" %}
+[smart-contract-verification](monitoring/smart-contract-verification/)
 {% endcontent-ref %}
 
 ****[**Simulations**](simulations-and-forks/how-to-simulate-a-transaction/)****

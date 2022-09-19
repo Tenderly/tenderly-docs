@@ -9,7 +9,7 @@ In order to manually analyze the hack, we need to [**import the smart contract**
 ![](https://lh3.googleusercontent.com/BVJobjB-JHrSGyTHuC7v3cPLBbaUnNJH3pda8uJrHU2qCSV6ms-84BC614vdozpemjg5FO8J4cu-B9RjTTLfYWRQyBneYVBbLy5fv5\_OQA1N-svrza9ZF6Q6xsUA5o37YyYPnaP4)
 
 {% hint style="warning" %}
-Note - you can only search for contracts which have been publicly verified on Tenderly or Etherscan. [**Read more about how to verify a contract on Tenderly right here.**](../../monitoring/contract-verification/verifying-a-smart-contract.md)****
+Note - you can only search for contracts which have been publicly verified on Tenderly or Etherscan. [**Read more about how to verify a contract on Tenderly right here.**](../../monitoring/smart-contract-verification/verifying-a-smart-contract.md)****
 {% endhint %}
 
 If the contract is not publicly verified, you can do it yourself in order to be able to use it with Tenderly. If the project is open-source (like Cover), you can go to the project's [GitHub repo](https://github.com/CoverProtocol/cover-token-mining), find the contract you want to use (and it's source code) and verify it yourself.
@@ -22,7 +22,7 @@ Now that we have the contract we want to import to Tenderly, go to your Dashboar
 
 ![](<../../.gitbook/assets/Screenshot 2021-12-01 at 10.28.37.png>)
 
-You can either upload and verify the contract's code through your Dashboard, or via the CLI [\[more info here\]](../../monitoring/contract-verification/verifying-a-smart-contract.md):
+You can either upload and verify the contract's code through your Dashboard, or via the CLI [\[more info here\]](../../monitoring/smart-contract-verification/verifying-a-smart-contract.md):
 
 ![](<../../.gitbook/assets/Screenshot 2021-12-01 at 10.30.25.png>)
 

@@ -1,109 +1,66 @@
+---
+description: >-
+  Learn how to collect all the contracts you care about so you can monitor,
+  debug, and simulate transactions.
+---
+
 # Smart Contracts
 
-## Adding a Contract to your Project via Tenderly Dashboard
+As a form of an opt-in Smart Contract registry, Tenderly allows you to find any verified public contract and add it to your project. After adding a contract, you can start debugging transactions, doing simulations, or handling more advanced monitoring on the contracts that are important for your project.
+
+To find and add a contract of interest, search for it by name or address. If you can't find the contract you need, it probably means it's not verified. You can still add it to your project to monitor it and verify it later on.&#x20;
+
+There are two options for adding contracts to your project from the Dashboard:
+
+* **Adding a previously verified contract**. No verification is required. Add a contract by entering its address and choosing the network to which it's deployed. Once added, the contract will show up in the refreshed list of contracts.
+* **Adding an unverified contract** to observe in which transactions it's involved. However, these transactions won't be decoded to a human-readable format. Other meaningful information such as state changes, gas usage, and events will also remain in raw form.
 
 {% hint style="info" %}
-After deploying a contract to a Tenderly Fork using a JSON-RPC, REST API or a Simulation you can **** [**verify your contract**](../contract-verification/verifying-a-smart-contract.md) **** so Tenderly can decode everything into a human readable format.
+It's possible to use some Tenderly features with unverified contracts, with limited functionality. For example, you can use the Simulator with raw data. To completely enable all Tenderly features, it's required to [verify the contracts](../smart-contract-verification/).
 {% endhint %}
 
-There are several ways you can add a contract to your project from the Dashboard.
+## Adding a verified contract
 
-### Import public contract
+To add a verified contract to your project, navigate to the **Contracts** tab in the left sidebar. Once you open the dedicated contract section, click the **Add Contract** button in the top right corner.
 
-&#x20;You can import any public (verified) contract by pasting the address...
+![Adding a contract](<../../.gitbook/assets/image1 (1)>)
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.02.53.png>)
+This will open the Add Contract modal where you need to follow a few steps:
 
-... or by uploading a JSON...
+<mark style="color:purple;">**1.**</mark> Enter the address of the contract you wish to add to Tenderly.
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.03.54.png>)
+<mark style="color:purple;">**2.**</mark> Choose the network to which the contract has been deployed and that Tenderly supports.
 
-... or by pasting the contract source from a file/uploading a source file...
+<mark style="color:purple;">**3.**</mark> Skip the **This contract is unverified** box since you're adding a verified contract.
 
-![](<../../.gitbook/assets/Screenshot 2021-10-21 at 12.51.18.png>)
+![Adding a contract: enter the address and select the network](<../../.gitbook/assets/image4 (1)>)
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.05.42.png>)
+<mark style="color:purple;">**4.**</mark> Hit the **Add Contract** button and the contract will be added to your project.
 
-... or by uploading the source file itself.
+<mark style="color:purple;">**5.**</mark> Find and click the added contract from the updated list to open the additional information about it.
 
-### Uploading the source directory
+![Added contract in the dashboard](../../.gitbook/assets/image7)
 
-By using the directory **** option, you can batch upload more than one contract at a time:
+## Adding an unverified contract
 
-![](<../../.gitbook/assets/Screenshot 2021-10-21 at 12.51.18.png>)
+Follow the same first steps as when adding verified contracts:
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.08.41.png>)
+<mark style="color:purple;">**1.**</mark> Navigate to the **Contracts** page and click the **Add contract** button.
 
-If any of the files for verifying your contracts is missing you will be prompted to add them in the list of contract on top:
+<mark style="color:purple;">**2.**</mark> Fill in the address and select one of the 20+ networks supported by Tenderly.
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.10.00.png>)
+<mark style="color:purple;">**3.**</mark> Tick the **This contract is unverified** box.
 
-You will be prompted to choose which contract to upload if the file contains multiple contracts, as well as to define the following:
+![Adding an unverified contract](../../.gitbook/assets/image10)
 
-* Which [network](../../supported-networks-and-languages.md) the contract is deployed to.
-* What the contract address is.
-* (Optionally) add the library name and address for specific contracts that require them.
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.10.19.png>)
 
-When your contract is added you can continue to add contracts from this screen via the **+ Add more** button:
+### How to determine if a contract is verified?
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.12.18.png>)
+If you're uncertain if a contract is verified when adding it, do the following:
 
-The last thing to do is to fill out the compiler info with the following parameters:
-
-* Compiler Version (automatically refreshed list from Solidity GitHub).
-* Optimizations Used (true/false).
-* Optimization Count.
-* EVM Version (latest is always the default).
-
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.12.54.png>)
-
-{% hint style="warning" %}
-Note that choosing the correct Compiler Version for your contract is important to avoid compiler (bytecode mismatch) errors.
-{% endhint %}
-
-### CLI Upload
-
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.14.47.png>)
-
-## Adding a contract to your project via Tenderly CLI
-
-First things first, we need to get your Smart Contracts into Tenderly to use all of the timesaving features like the Visual Debugger, Gas Profiler, Alerts, and more.
-
-There are a couple of ways we can achieve this: we can use the Tenderly CLI to push contracts to a project, or we can verify our Smart Contracts on Etherscan and then paste in the address into Tenderly. Let's see how we'd do this via the CLI.
-
-If you don't have the Tenderly CLI already installed, [it's effortless to set up](https://github.com/Tenderly/tenderly-cli?utm\_source=blog\&utm\_medium=post\&utm\_campaign=10\_ways\&utm\_content=cli\_setup#installation). Once you've done that, run **tenderly login**.
-
-The next step is to go into your project directory and run **tenderly init**. As we're using the Tennis Match example from a previous article, we're going to pick _Create new project_ and write _Tennis Match_.
-
-```
-$ tenderly init
-✔ Create new project
-✔ Project: Tennis Match
-Project successfully initialized. You can change the project information by editing the tenderly.yaml file or by rerunning tenderly init with the --re-init flag.
-```
-
-That's it! Your project is all set up, and you can push it for the first time to Tenderly.
-
-In order for Tenderly to monitor your Smart Contracts in real-time, you need to push them to your dashboard. Pushing your Smart Contracts is as easy as running the **tenderly push** command. Let's try it now:
-
-```
-$ tenderly push
-Setting up your project...
-Analyzing Truffle configuration...
-
-Pushing Smart Contracts for project: tennis-match
-We have detected the following Smart Contracts:
-• Migrations
-• TennisMatch
-
-Successfully pushed Smart Contracts for project tennis-match. You can view your contracts at https://dashboard.tenderly.dev/Habic/tennis-match/contracts
-
-All Smart Contracts successfully pushed.
-```
-
-Now when you open your [Tenderly dashboard](https://dashboard.tenderly.co/?utm\_source=blog\&utm\_medium=post\&utm\_campaign=10\_ways\&utm\_content=your\_tenderly\_dashboard), you'll see your newly created project, and your Smart Contracts added!
+* **Check whether a contract is verified on Etherscan**. Search for the contract by pasting its address in the search bar or entering its name in the **Verified Contracts** submenu. If the contract is verified, it will have a green checkmark and the "Contract Source Code Verified" label.
+* **Search for the contract on Tenderly**. Type in the contract name or address in the Tenderly search bar. If the contract is unverified, it will be displayed only with an address, whereas a verified contract shows a name. Also, if you're uploading a new contract to Tenderly for the first time, it's likely to be unverified.
 
 {% content-ref url="public-contracts.md" %}
 [public-contracts.md](public-contracts.md)
