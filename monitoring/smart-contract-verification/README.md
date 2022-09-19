@@ -16,9 +16,9 @@ Tenderly offers several methods of verification, bringing different levels of co
 In the building phase, your Smart Contract can undergo **private verification**, so it’s visible only within your Tenderly project. When you’re ready to share your work, you can do a **public verification**, which makes the verified contract available to anybody who might interact or integrate with your Smart Contract.&#x20;
 
 {% hint style="info" %}
-Tenderly **automatically detects** whether a contract is **verified on Etherscan**. In this case, verification in Tenderly is not needed, you just need to add the contract to your project.
+Tenderly **automatically detects** whether a contract is **verified on Etherscan or Blockscout**. In this case, verification in Tenderly is not needed, you just need to add the contract to your project.
 
-However, after performing verification in Tenderly, you will have to independently verify it on Etherscan.
+However, after performing verification in Tenderly, you will have to independently verify it on Etherscan/Blocksout.
 {% endhint %}
 
 ## What is contract verification?
