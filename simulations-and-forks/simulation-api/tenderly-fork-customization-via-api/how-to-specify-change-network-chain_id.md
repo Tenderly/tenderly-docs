@@ -14,7 +14,7 @@ const body = {
   "network_id": "1", // network you wish to fork
   "block_number": 14386016,
   "chain_config": {
-    "chain_id": "3" // chain_id used in the forked enviroment
+    "chain_id": 3 // chain_id used in the forked enviroment
   }
 }
 
