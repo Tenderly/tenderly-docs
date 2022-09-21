@@ -1,6 +1,6 @@
 # Error Reporting
 
-Whenever you Action fails for whatever the reason, an **Incident** report will be created which you can access in the Actions section in the main navigation tree, through the sub-tab **Error Reporting**:
+Whenever your Action fails for whatever the reason, an **Incident** report will be created which you can access in the Actions section in the main navigation tree, through the sub-tab **Error Reporting**:
 
 ![](<../../.gitbook/assets/Screenshot 2022-07-22 at 14.39.32.png>)
 
