@@ -6,6 +6,10 @@ If you’re using Tenderly Forks, you may need to manage the balance value of a 
 
 The code snippet below sets the balance value to 100 ETH for one or more addresses using the `tenderly_setBalance` custom RPC endpoint. This endpoint receives two arguments: an array of wallets and the new amount you wish to set in Wei.
 
+{% hint style="info" %}
+When specifying BigNumberish fields to JSON-RPC endpoints in a form of a hexadecimal string, these **must not contain leading zeros**. Use [`ethers.utils.hexValue(aBigNumberish)`](https://docs.ethers.io/v5/api/utils/bytes/#utils-hexValue) to convert the given bigNumberish value into acceptable form with no leading zeros.
+{% endhint %}
+
 ```jsx
 const WALLETS = [
   "0x....",

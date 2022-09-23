@@ -173,6 +173,11 @@ await provider.send('tenderly_addBalance', params)
 
 Now that we have enough Ethers to cover all gas costs for our transactions. Let’s start to chain transaction simulations, we are going to execute `approve()` and `transferFrom()` functions on top of the DAI contract.
 
+{% hint style="info" %}
+When specifying BigNumberish fields for transaction payload in a form of a hexadecimal string, these **must not contain leading zeros**. \
+Use [`ethers.utils.hexValue(aBigNumberish)`](https://docs.ethers.io/v5/api/utils/bytes/#utils-hexValue) to convert the given bigNumberish value into acceptable form with no leading zeros.
+{% endhint %}
+
 We can use the provider we have created in 2.1 with ethers.js.
 
 **API Typescript**
@@ -183,8 +188,8 @@ const DAI_ABI = "{...}";
 
 const daiContract = new ethers.Contract(DAI_ADDRESS , DAI_ABI , signer);
 
-// we can use ether encoding because dai contract has 18 decimals
-const tokenAmount = utils.parseEther('1').toString(10);
+// converts 1 ether into wei, stripping the leading zeros
+const tokenAmount = ethers.utils.hexValue(utils.parseEther('1').toHexString(10));
 
 // Keep in mind that every account is automatically unlocked when performing simulations.
 // This enables you to impersonate any address and send transactions. 
