@@ -12,14 +12,14 @@ To find and add a contract of interest, search for it by name or address. If you
 
 There are two options for adding contracts to your project from the Dashboard:
 
-* **Adding a previously verified contract**. No verification is required. Add a contract by entering its address and choosing the network to which it's deployed. Once added, the contract will show up in the refreshed list of contracts.
+* **Adding a publicly verified contract**. No verification is required. Add a contract by entering its address and choosing the network to which it's deployed. Once added, the contract will show up in the refreshed list of contracts.
 * **Adding an unverified contract** to observe in which transactions it's involved. However, these transactions won't be decoded to a human-readable format. Other meaningful information such as state changes, gas usage, and events will also remain in raw form.
 
 {% hint style="info" %}
-It's possible to use some Tenderly features with unverified contracts, with limited functionality. For example, you can use the Simulator with raw data. To completely enable all Tenderly features, it's required to [verify the contracts](../smart-contract-verification/).
+It's possible to use some Tenderly features with unverified contracts, with limited functionality. For example, you can use the Simulator with raw data. To use the full power of various Tenderly features, it's required to [verify the contracts](../smart-contract-verification/).
 {% endhint %}
 
-## Adding a verified contract
+## Adding a publicly verified contract
 
 To add a verified contract to your project, navigate to the **Contracts** tab in the left sidebar. Once you open the dedicated contract section, click the **Add Contract** button in the top right corner.
 
@@ -59,7 +59,7 @@ Follow the same first steps as when adding verified contracts:
 
 If you're uncertain if a contract is verified when adding it, do the following:
 
-* **Check whether a contract is verified on Etherscan**. Search for the contract by pasting its address in the search bar or entering its name in the **Verified Contracts** submenu. If the contract is verified, it will have a green checkmark and the "Contract Source Code Verified" label.
+* **Check whether a contract is verified on Etherscan or BlockSbcout**. Search for the contract by pasting its address in the search bar or entering its name in the **Verified Contracts** submenu. If the contract is verified, it will have a green checkmark and the "Contract Source Code Verified" label.
 * **Search for the contract on Tenderly**. Type in the contract name or address in the Tenderly search bar. If the contract is unverified, it will be displayed only with an address, whereas a verified contract shows a name. Also, if you're uploading a new contract to Tenderly for the first time, it's likely to be unverified.
 
 {% content-ref url="public-contracts.md" %}
