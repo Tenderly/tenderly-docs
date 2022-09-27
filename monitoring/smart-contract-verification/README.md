@@ -11,7 +11,7 @@ Contract verification allows web3 tools to decode the information about transact
 
 In Tenderly, verification is an essential step in enabling Debugger, Simulator, Web3 Actions, and other Tenderly features and ensuring they work seamlessly with your Smart Contracts.&#x20;
 
-Tenderly offers several methods of verification, bringing different levels of control, visibility, and flexibility.&#x20;
+Tenderly offers several methods of verification, bringing different levels of control, visibility, and flexibility. You can verify your contracts using the Dashboard or go for a code-based approach using hardhat-tenderly library or the CLI.
 
 In the building phase, your Smart Contract can undergo **private verification**, so it’s visible only within your Tenderly project. When you’re ready to share your work, you can do a **public verification**, which makes the verified contract available to anybody who might interact or integrate with your Smart Contract.&#x20;
 
@@ -44,6 +44,31 @@ Verification requires the following arguments:&#x20;
 
 <figure><img src="../../.gitbook/assets/Smart Contract Verification Process" alt=""><figcaption><p>How Smart Contract verification works</p></figcaption></figure>
 
+
+
+## Pubic and Private modes of verification
+
+When verifying Smart Contracts, you have to choose between two modes: **private** and **public** verification:
+
+| Mode                         | Description                                                                   | Best when                                                                                                                                                      |
+| ---------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Public                       | The verified contract and its source code is available to all Tenderly users. | <p>Once you're comfortable with sharing your contract with users outside your project.<br><br>Enable callers of your contract to use the monitoring tools.</p> |
+| <p>Private<br>(Tenderly)</p> | Verified contract is visible only to the team/collaborators.                  | Suitable during contract development.                                                                                                                          |
+
+* **Private verification** shares your contract only with the team members in your project. This mode of verification is suitable during contract development.&#x20;
+* **Public**: access to your contract to all Tenderly users. This enables projects and developers who rely on your contract to understand fully how their transactions are executed. Choose the public mode once you're comfortable with sharing your contract with users outside your project.&#x20;
+* **On a Tenderly Fork**: The contract is verified and thus valid within the Fork you deployed it to.
+
+When doing verification with Hardhat, contracts are verified as public by default. To verify a contract privately, you have to configure this explicitly.
+
+{% content-ref url="verifying-contracts-using-the-tenderly-hardhat-plugin/private-contract-verification.md" %}
+[private-contract-verification.md](verifying-contracts-using-the-tenderly-hardhat-plugin/private-contract-verification.md)
+{% endcontent-ref %}
+
+{% content-ref url="verifying-contracts-using-the-tenderly-hardhat-plugin/verifying-contracts-on-a-tenderly-fork.md" %}
+[verifying-contracts-on-a-tenderly-fork.md](verifying-contracts-using-the-tenderly-hardhat-plugin/verifying-contracts-on-a-tenderly-fork.md)
+{% endcontent-ref %}
+
 ## Methods of verification
 
 Tenderly offers different ways to verify Smart Contracts, with each one bringing different levels of configuration flexibility and control.
@@ -66,25 +91,3 @@ The third approach is relying on Tenderly CLI, independent of the way you deploy
 [verifying-contracts-using-cli.md](verifying-contracts-using-cli.md)
 {% endcontent-ref %}
 
-## Modes of verification
-
-When verifying Smart Contracts, you have to choose between two modes: **private** and **public** verification:
-
-| Mode                         | Description                                                                   | Best when                                                                                                                                                      |
-| ---------------------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Public                       | The verified contract and its source code is available to all Tenderly users. | <p>Once you're comfortable with sharing your contract with users outside your project.<br><br>Enable callers of your contract to use the monitoring tools.</p> |
-| <p>Private<br>(Tenderly)</p> | Verified contract is visible only to the team/collaborators.                  | Suitable during contract development.                                                                                                                          |
-
-* **Private verification** shares your contract only with the team members in your project. This mode of verification is suitable during contract development.&#x20;
-* **Public**: access to your contract to all Tenderly users. This enables projects and developers who rely on your contract to understand fully how their transactions are executed. Choose the public mode once you're comfortable with sharing your contract with users outside your project.&#x20;
-* **On a Tenderly Fork**: The contract is verified and thus valid within the Fork you deployed it to.
-
-When doing verification with Hardhat, contracts are verified as public by default. To verify a contract privately, you have to configure this explicitly.
-
-{% content-ref url="verifying-contracts-using-the-tenderly-hardhat-plugin/private-contract-verification.md" %}
-[private-contract-verification.md](verifying-contracts-using-the-tenderly-hardhat-plugin/private-contract-verification.md)
-{% endcontent-ref %}
-
-{% content-ref url="verifying-contracts-using-the-tenderly-hardhat-plugin/verifying-contracts-on-a-tenderly-fork.md" %}
-[verifying-contracts-on-a-tenderly-fork.md](verifying-contracts-using-the-tenderly-hardhat-plugin/verifying-contracts-on-a-tenderly-fork.md)
-{% endcontent-ref %}
