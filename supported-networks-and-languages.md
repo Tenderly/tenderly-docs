@@ -20,9 +20,9 @@
 
 <img src=".gitbook/assets/image (88) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet
 
-<img src=".gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA
-
 <img src=".gitbook/assets/image.png" alt="" data-size="line"> Gnosis Chain
+
+<img src=".gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA
 
 <img src=".gitbook/assets/image (69) (1) (1).png" alt="" data-size="line"> Polygon
 
