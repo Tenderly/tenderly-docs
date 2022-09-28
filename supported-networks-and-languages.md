@@ -58,24 +58,8 @@
 
 ### Footnotes&#x20;
 
-{% hint style="warning" %}
-\*We decided to split up the **Arbitrum integration** into phases in order to give you (our users) access to Arbitrum on Tenderly as soon as possible, while we finish up the full integration and make all Tenderly features available for Arbitrum.\
+{% hint style="success" %}
+Arbitrum (Nitro) is now fully supported across all Tenderly features. \
 \
-**Phase 1**, which is now **completed and available for use**, includes the standard EVM implementation without Arbitrum precompiles and custom gas table, which enables the following (for transactions that don’t touch any of the custom precompiles):&#x20;
-
-* [Transaction Debugging ](debugger/how-to-use-tenderly-debugger/)
-* [Simulator ](simulations-and-forks/how-to-simulate-a-transaction/)
-* [Forks ](simulations-and-forks/how-to-create-a-fork/)
-
-
-
-In **Phase 2** we will implement the Arbitrum precompiles which will expand the available feature set:&#x20;
-
-* Transactions listing for single contracts and projects&#x20;
-* Alerting&#x20;
-* Analytics&#x20;
-
-
-
-In **Phase 3** we will mimic the Arbitrum gas usage, which is going to ensure transaction re-execution and enable the Gas Profiler.
+The only exception is the Gas Profiler which is fully supported for Nitro blocks, but will not be available for pre-Nitro blocks. If this breaks your flow or in general presents an issue, please contact our support on Intercom so we can help with alternative solutions.
 {% endhint %}
