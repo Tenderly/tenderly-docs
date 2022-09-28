@@ -49,7 +49,7 @@ In the Tenderly Dashboard, you should see something similar to the following.&#x
 
 When you click Add to Project, you’ll have an overview of the Greeter.sol with its source code. Next to it, you can see `console.sol` - a Solidity Library by Hardhat that was included automatically.
 
-![Source code of the verified Contract added to a project](../../../.gitbook/assets/image.png)
+![Source code of the verified Contract added to a project](<../../../.gitbook/assets/image (5).png>)
 
 ## How automatic contract verification works
 
