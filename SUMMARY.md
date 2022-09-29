@@ -132,4 +132,3 @@
 ***
 
 * [リックロール](https://youtu.be/mW61VTLhNjQ?t=47)
-* [Tenderly Sandbox](tenderly-sandbox-1.md)
