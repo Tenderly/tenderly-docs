@@ -148,7 +148,7 @@ To deploy your own simple Oracle in a Tenderly Web3 Action, explore this tutoria
 
 To see how a Web3 Action can use Forks to simulate a transaction submitted to a multisig wallet and send Discord messages with simulation outcomes, try this one:
 
-[https://github.com/Tenderly/examples-web3-actions/tree/example/multisig](https://github.com/Tenderly/examples-web3-actions/tree/example/multisig)
+{% embed url="https://github.com/Tenderly/examples-web3-actions/tree/main/multisig-wallet" %}
 
 ### Resources
 
