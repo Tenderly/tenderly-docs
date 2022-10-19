@@ -1,6 +1,12 @@
+---
+description: >-
+  Learn how to use Web3 Actions to build a custom oracle for gathering data from
+  real-world systems.
+---
+
 # How to Build a Custom Oracle
 
-In this tutorial, we’ll show you how to **build a custom Web3 oracle using Tenderly’s Web3 Actions**. An oracle gathers data from real-world systems and sends it to the blockchain. It acts as an entry point for streaming data from Web2 applications toward smart contracts.
+In this tutorial, we’ll show you how to **build a custom Web3 oracle using Tenderly Web3 Actions**. An oracle gathers data from real-world systems and sends it to the blockchain. It acts as an entry point for streaming data from Web2 applications toward smart contracts.
 
 Using oracles, we can access data from sources outside the blockchain (e.g., exchanges, traffic and weather data, gas rates, oil prices, etc) from within our smart contracts.
 
@@ -19,15 +25,15 @@ Here’s a quick breakdown of the project’s flow.
 * Once the price request has been observed, the Web3 Action is called to fetch the value.
 * The price value is pushed back to the Oracle Contract.
 
-![](<../.gitbook/assets/image (99).png>)
+<figure><img src="../../.gitbook/assets/image (99).png" alt="The interactions between different components"><figcaption><p>The interactions between different components</p></figcaption></figure>
 
-We will use a pre-made smart contract for this project. Feel free to explore the code and play around with it in the **** [**Tenderly Sandbox**](https://sandbox.tenderly.co/nenad/whining-iron-numerous) and check out the [**Sandbox Docs**](../tenderly-sandbox.md).
+We will use a pre-made smart contract for this project. Feel free to explore the code and play around with it in the **** [**Tenderly Sandbox**](https://sandbox.tenderly.co/nenad/whining-iron-numerous) and check out the [**Sandbox Docs**](../../tenderly-sandbox.md).
 
 Note that the <mark style="color:orange;">`SimpleConsumer`</mark> contract accepts the <mark style="color:orange;">`coinPrice`</mark> coming in only from the <mark style="color:orange;">`CoinOracle`</mark> it was assigned when it got deployed. Additionally, <mark style="color:orange;">`CoinOracle`</mark> accepts updates only if it is signed by the same Wallet that deployed it (<mark style="color:orange;">`owner`</mark>).
 
 ## The Plan
 
-Here’s a list of steps we we’ll need to take to build our oracle:
+Here’s a list of steps we’ll need to take to build our oracle:
 
 * Deploy the <mark style="color:orange;">`CoinOracle`</mark> and <mark style="color:orange;">`SimpleCoinConsumer`</mark> smart contracts.
 * Get the API key and other information needed to use one of the Ethereum providers. We’ll store this data in the Web3 Actions Secrets (_needed for interaction 5_).
@@ -219,7 +225,7 @@ Keep all your sensitive data tucked away safely in the Web3 Actions Secrets (e.g
 
 **Secrets.** Head over to your Tenderly Dashboard to place the private key you copied in Web3 Actions Secrets. From the sidebar, go to “Actions”, click “Secrets”, and then “Add New”. Name the secret <mark style="color:orange;">`oracle.providerApiKey`</mark> and paste the API token as well as any other sensitive information you need.
 
-![](<../.gitbook/assets/image (82).png>)
+<figure><img src="../../.gitbook/assets/image (82).png" alt="Saving your private key to Web3 Action Secrets"><figcaption><p>Saving your private key to Web3 Action Secrets</p></figcaption></figure>
 
 **Store Oracle Wallet Private Key.** To send transactions to the chain, our Web3 Action needs to have a private key to sign transactions and fund them. The <mark style="color:orange;">`OracleContract`</mark> is designed to only accept updates that are signed by the address that deployed them.
 

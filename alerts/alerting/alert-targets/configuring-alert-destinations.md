@@ -104,4 +104,4 @@ trigger:
 
 A single action can be used as a destination for multiple alerts.
 
-For more information, [read more about this and Web3 Actions in general](../../../web3-actions/intro-to-web3-actions/triggers.md).
+For more information, [read more about this and Web3 Actions in general](broken-reference).

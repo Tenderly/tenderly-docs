@@ -1,9 +1,15 @@
+---
+description: >-
+  Follow a step-by-step guide to create a Web3 Action that will send you a
+  Discord message whenever a new Uniswap V3 pool is created.
+---
+
 # How to Send a Discord Message About a New Uniswap Pool
 
 This tutorial shows you **how to use a Web3 Action to send a message to a Discord channel when a new pool is created on Uniswap V3**. You can use this Web3 Action to notify your community when something happens on the chain.
 
 {% hint style="info" %}
-The entire code is available in **** [**this Github repo**](https://github.com/Tenderly/examples-web3-actions/). Note, it’s in a separate branch at the moment.
+The entire code is available in **** [**this Github repo**](https://github.com/Tenderly/examples-web3-actions/). Note that it’s in a separate branch at the moment.
 {% endhint %}
 
 ## Project Overview

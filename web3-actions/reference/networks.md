@@ -1,6 +1,12 @@
+---
+description: >-
+  Get an overview of network IDs you can use to configure your Web3 Action
+  triggers.
+---
+
 # Networks
 
-You can reference the supported network in your trigger configuration with the following numbers:
+You can reference the supported network in your trigger configuration with the following network IDs:
 
 <img src="../../.gitbook/assets/image (80) (1) (1) (1) (1).png" alt="" data-size="line"> Mainnet `=> 1`
 

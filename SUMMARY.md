@@ -44,17 +44,24 @@
 
 ## 🧩 Web3 Actions
 
-* [Intro to Web3 Actions](web3-actions/intro-to-web3-actions/README.md)
-  * [Functions](web3-actions/intro-to-web3-actions/functions.md)
-  * [Configuration](web3-actions/intro-to-web3-actions/configuration.md)
-  * [Triggers](web3-actions/intro-to-web3-actions/triggers.md)
-  * [Networks](web3-actions/intro-to-web3-actions/networks.md)
-  * [Notifications](web3-actions/intro-to-web3-actions/notifications.md)
-  * [Error Reporting](web3-actions/intro-to-web3-actions/error-reporting.md)
-* [How to Handle On-Chain Events](web3-actions/how-to-handle-on-chain-events.md)
-* [How to Build a Custom Oracle](web3-actions/how-to-build-a-custom-oracle.md)
-* [How to Send a Discord Message About a New Uniswap Pool](web3-actions/how-to-send-a-discord-message-about-a-new-uniswap-pool.md)
-* [Rate Limits](web3-actions/rate-limits.md)
+* [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
+* [Tutorials and Quickstarts](web3-actions/tutorials-and-quickstarts/README.md)
+  * [Deploy Web3 Actions via Dashboard](web3-actions/tutorials-and-quickstarts/deploy-web3-actions-via-dashboard.md)
+  * [Deploy Web3 Action via CLI](web3-actions/tutorials-and-quickstarts/deploy-web3-action-via-cli.md)
+  * [How to Handle On-Chain Events](web3-actions/tutorials-and-quickstarts/how-to-handle-on-chain-events.md)
+  * [How to Build a Custom Oracle](web3-actions/tutorials-and-quickstarts/how-to-build-a-custom-oracle.md)
+  * [How to Send a Discord Message About a New Uniswap Pool](web3-actions/tutorials-and-quickstarts/how-to-send-a-discord-message-about-a-new-uniswap-pool.md)
+* [Reference](web3-actions/reference/README.md)
+  * [Action Functions, Events, and Triggers](web3-actions/reference/action-functions-events-and-triggers.md)
+  * [Context, Storage, and Secrets](web3-actions/reference/context-storage-and-secrets.md)
+  * [Project Structure](web3-actions/reference/project-structure.md)
+  * [CLI Cheatsheet](web3-actions/reference/cli-cheatsheet.md)
+  * [Local Development and Testing](web3-actions/reference/local-development-and-testing.md)
+  * [Notifications](web3-actions/reference/notifications.md)
+  * [Stopping, Upgrading, and Manually Running Web3 Actions](web3-actions/reference/stopping-upgrading-and-manually-running-web3-actions.md)
+  * [Networks](web3-actions/reference/networks.md)
+  * [Error Reporting](web3-actions/reference/error-reporting.md)
+* [Usage Rate Limits](web3-actions/usage-rate-limits.md)
 
 ## 🦅 Monitoring
 

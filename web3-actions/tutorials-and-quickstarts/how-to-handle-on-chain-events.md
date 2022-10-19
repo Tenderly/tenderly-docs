@@ -1,13 +1,20 @@
+---
+description: >-
+  Learn how to use Web3 Actions as a serverless backend to respond to relevant
+  events. Follow a Tic-Tac-Toe example to set up a Web3 Action that will monitor
+  game changes.
+---
+
 # How to Handle On-Chain Events
 
-This tutorial will teach you how to **create a serverless backend for your smart contract using Tenderly’s Web3 Actions**. Web3 Actions allow you to run custom code in response to on-chain or off-chain events that are initiated by your smart contract.
+This tutorial will teach you how to **create a serverless backend for your smart contract using Tenderly Web3 Actions**. Web3 Actions allow you to run custom code in response to on-chain or off-chain events that are initiated by your smart contract.
 
 To illustrate how Web3 Actions work, we will build a simple Tic-Tac-Toe game and deploy it to a test network. The smart contract will be responsible for maintaining the game state while Web3 Actions will be used to monitor changes to the game.
 
 **Whenever a specific event gets fired from the smart contract, Tenderly will execute your custom code in the form of a NodeJS project**. The results of the game and the game board will be printed to the console each time a player makes a move or when the game is over.
 
 {% hint style="success" %}
-Check out this [Github repo](https://github.com/Tenderly/examples-web3-actions/) to find the source code for this project. Feel free to clone the repo and play around with it, or code along :)
+Check out this [Github repo](https://github.com/Tenderly/examples-web3-actions/) to find the source code for this project. Feel free to clone the repo and play around with it, or code along.
 {% endhint %}
 
 ## Understanding Web3 Actions
@@ -19,7 +26,7 @@ Tenderly helps you streamline this process with Web3 Actions. You can write your
 **Web3 Actions also allow you to perform any action you normally would with NodeJS**. This tutorial will show you how to use the Tenderly CLI to deploy your Web3 Actions and ensure they run when specific conditions are met.
 
 {% hint style="info" %}
-Learn more about Web3 Actions and explore how you can use them in your projects with [**Basics of Web3 Actions**](intro-to-web3-actions/).
+Learn more about Web3 Actions and explore how you can use them in your projects with [**Basics of Web3 Actions**](broken-reference).
 {% endhint %}
 
 ### Project Overview
@@ -37,7 +44,7 @@ Here’s a step-by-step overview of how we will go about doing this:
 For this tutorial, you’ll need access to the **Tenderly Dashboard**. If you don’t have an account, [**sign up here for free**](https://dashboard.tenderly.co/register?utm\_source=homepage) (no cc required as well).
 {% endhint %}
 
-## 0: Deploy the Smart Contract
+## 0: Deploy the smart contract
 
 {% hint style="info" %}
 If you’re coding along, you can skip this step and use the contract we [**deployed and verified in Tenderly**](https://dashboard.tenderly.co/contract/ropsten/0x1eb7dbd296eb3fc08b2b6217d87e6bf3cb6e42df).
@@ -56,15 +63,15 @@ Our simple Tic-Tac-Toe game can have four possible states:
 
 **Create Two Accounts** - deploy the smart contract to any [network that is supported by Tenderly](https://docs.tenderly.co/supported-networks-and-languages). The most convenient way to do this is with [Remix](https://remix.ethereum.org/) and the [Metamask](https://metamask.io/) wallet plugin. You need two accounts that have a positive Ether balance. These accounts will represent the two players. For the purpose of this tutorial we will use Ropsten. If you plan to follow along with this tutorial, you can use the [Ropsten faucet](https://faucet.egorfine.com/) to add Ether to the accounts.
 
-**Compile the Contract - u**se the Remix IDE to compile the smart contract. Create a new contract file and add the code found **** [**here**](https://github.com/Tenderly/examples-web3-actions/blob/tic-tac-toe/tic-tac-toe/TicTacToe.sol).
+**Compile the contract -** use the Remix IDE to compile the smart contract. Create a new contract file and add the code found **** [**here**](https://github.com/Tenderly/examples-web3-actions/blob/tic-tac-toe/tic-tac-toe/TicTacToe.sol).
 
-![](<../.gitbook/assets/image (69).png>)
+<figure><img src="../../.gitbook/assets/image (69).png" alt="Compiling the contract in the Remix IDE"><figcaption><p>Compiling the contract in the Remix IDE</p></figcaption></figure>
 
-**Deploy to a Test Network** - in your Metamask browser plugin, make sure Ropsten is selected as your preferred network. Next, go to the **“Deploy And Run Transactions”** section in Remix and select **`Injected Web3`**. Click **“Deploy”** once you’ve made sure that the account references the account in Metamask.
+**Deploy to a test network** - in your Metamask browser plugin, make sure Ropsten is selected as your preferred network. Next, go to the **“Deploy And Run Transactions”** section in Remix and select **`Injected Web3`**. Click **“Deploy”** once you’ve made sure that the account references the account in Metamask.
 
-![](<../.gitbook/assets/image (76).png>)
+<figure><img src="../../.gitbook/assets/image (76).png" alt="Deploying the contract to a testnet"><figcaption><p>Deploying the contract to a testnet</p></figcaption></figure>
 
-![](<../.gitbook/assets/image (92).png>)
+<figure><img src="../../.gitbook/assets/image (92).png" alt="Copying the contract address"><figcaption><p>Copying the contract address</p></figcaption></figure>
 
 To get more information on the deployed contract, check out the **“Deployed Contracts”** section. Click the copy icon to copy the full contract address (<mark style="color:orange;">`0x1EB...`</mark>) and store it somewhere because we’ll need it for the steps that follow.
 
@@ -238,9 +245,9 @@ If you wish, you can upload the contract through your browser. Once uploaded, se
 
 Click Add Contract and fill out the compiler options as shown in the picture below:
 
-![](<../.gitbook/assets/image (74).png>)
+<figure><img src="../../.gitbook/assets/image (74).png" alt="Verifying and adding the contract to Tenderly "><figcaption><p>Verifying and adding the contract to Tenderly </p></figcaption></figure>
 
-![](<../.gitbook/assets/image (87).png>)
+<figure><img src="../../.gitbook/assets/image (87).png" alt="Adding the contract compiler information "><figcaption><p>Adding the contract compiler information </p></figcaption></figure>
 
 ### 2.4. Deploy the Web3 Action to Tenderly
 
@@ -252,11 +259,11 @@ tenderly actions deploy
 
 The output should look like this:
 
-![](<../.gitbook/assets/image (79).png>)
+![](<../../.gitbook/assets/image (79).png>)
 
 To see details about the deployment of your Web3 Action, check the Tenderly Dashboard. If the deployment was successful, you should see something like this:
 
-![](<../.gitbook/assets/image (80).png>)
+<figure><img src="../../.gitbook/assets/image (80).png" alt="Opening the Web3 Action deployment information "><figcaption><p>Opening the Web3 Action deployment information </p></figcaption></figure>
 
 ### 2.5. Try Joining a New Game 🎉
 
@@ -266,17 +273,17 @@ Open up the TicTacToe contract and hit <mark style="color:orange;">`newGame`</ma
 
 Once the transaction is submitted to the chain, Remix should produce an output similar to this:
 
-![](<../.gitbook/assets/image (96).png>)
+<figure><img src="../../.gitbook/assets/image (96).png" alt="Creating a new game in Remix"><figcaption><p>Creating a new game in Remix</p></figcaption></figure>
 
-Next, head back to your Tenderly Dashboard and open the Transactions section to see see your transaction. In the Actions section, you’ll notice that the **“Latest Execution”** column has changed.
+Next, head back to your Tenderly Dashboard and open the Transactions section to see your transaction. In the Actions section, you’ll notice that the **“Latest Execution”** column has changed.
 
 To view the execution history, open your Web3 Action and click the Execution History tab:
 
-![](<../.gitbook/assets/image (81).png>)
+<figure><img src="../../.gitbook/assets/image (81).png" alt="Opening the Execution history tab for your Web3 Action "><figcaption><p>Opening the Execution history tab for your Web3 Action </p></figcaption></figure>
 
 The execution history will provide you with the following data:
 
-![](<../.gitbook/assets/image (89).png>)
+<figure><img src="../../.gitbook/assets/image (89).png" alt="The execution history data"><figcaption><p>The execution history data</p></figcaption></figure>
 
 In the upper pane, you'll find information about the payload coming from the chain. The lower pane contains details about the logged game number. In our case, this is <mark style="color:orange;">`0xb`</mark>, which means it’s the 11th game started for this contract.
 
@@ -286,7 +293,7 @@ Click the **“Go To Storage”** button to see the contents of the Storage. Eac
 
 When you open the game we just created with the **ID 11**, you’ll see zeros across all the fields, meaning no players have played the game yet.
 
-![](<../.gitbook/assets/image (90).png>)
+<figure><img src="../../.gitbook/assets/image (90).png" alt="Opening the Storage of your Web3 Action "><figcaption><p>Opening the Storage of your Web3 Action </p></figcaption></figure>
 
 ## 3: Add a Web3 Action to Handle New Players Joining a Game
 
@@ -363,23 +370,23 @@ tenderly action deploy
 
 Join a new game by going over to Remix and adding the game number from the logs in the <mark style="color:orange;">`newGame`</mark> input field. To submit the transaction, click the <mark style="color:orange;">`joinGame`</mark> button:
 
-![](<../.gitbook/assets/image (85).png>)
+<figure><img src="../../.gitbook/assets/image (85).png" alt="Joining a new game in Remix "><figcaption><p>Joining a new game in Remix </p></figcaption></figure>
 
 Once the transaction has been mined, the logs of the execution will display <mark style="color:orange;">`playerNumber: 1`</mark>.
 
-![](<../.gitbook/assets/image (93).png>)
+<figure><img src="../../.gitbook/assets/image (93).png" alt="The execution log"><figcaption><p>The execution log</p></figcaption></figure>
 
 To play the game, switch to your other account in Metamask and click <mark style="color:orange;">`joinGame`</mark> again. Upon the completion of the transaction, you’ll see a similar log output in the Execution History.
 
 ### 3.4. Check the Storage of Your Web 3 Actions
 
-![](<../.gitbook/assets/image (94).png>)
+<figure><img src="../../.gitbook/assets/image (94).png" alt="Opening the execution of your Web3 Action"><figcaption><p>Opening the execution of your Web3 Action</p></figcaption></figure>
 
 Open any of these executions and click the **“Go To Storage”** button.
 
 The game our players have joined has the ID of 11, and this is the state before any move has been made. The Tic-Tac-Toe board contains only zeros and the map from an Ethereum address to the player’s turn is present.
 
-![](<../.gitbook/assets/image (91).png>)
+<figure><img src="../../.gitbook/assets/image (91).png" alt="Opening the Storage key value "><figcaption><p>Opening the Storage key value </p></figcaption></figure>
 
 ### 3.5. Add an Action to Handle When Player Makes a Move
 
@@ -474,11 +481,11 @@ playerMadeMove:
 
 To make a move, use Metamask to switch to the first player who joined the game. Next, enter the game number you received, as well as the row and column on the board (0, 1).
 
-![](<../.gitbook/assets/image (88).png>)
+<figure><img src="../../.gitbook/assets/image (88).png" alt="Making a move in Remix "><figcaption><p>Making a move in Remix </p></figcaption></figure>
 
 When the action gets executed, the output should look like this:
 
-![](<../.gitbook/assets/image (95).png>)
+<figure><img src="../../.gitbook/assets/image (95).png" alt="The Web3 Action execution output"><figcaption><p>The Web3 Action execution output</p></figcaption></figure>
 
 ## Step 4. Add a Web3 Action to Handle When the Game is Over
 
@@ -542,4 +549,4 @@ gameOver:
 
 Keep playing until one player wins the game or the board is entirely filled out. At the end of the game, the Execution History should look like this:
 
-![](<../.gitbook/assets/image (78).png>)
+<figure><img src="../../.gitbook/assets/image (78).png" alt="The execution history at the end of the game"><figcaption><p>The execution history at the end of the game</p></figcaption></figure>
