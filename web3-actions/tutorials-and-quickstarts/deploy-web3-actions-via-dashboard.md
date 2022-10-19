@@ -42,19 +42,19 @@ For example, run your custom code (outlined in the next step) every time a block
 
 #### **Step 2: Add your custom code**
 
-Under the Functions section, paste or write your custom JavaScript or TypeScript code directly. This is the custom logic that will be executed once a block is mined. Learn more about [Web3 Actions functions](../reference/action-functions-events-and-triggers.md#action-functions).
+Under the Functions section, paste or write your custom JavaScript or TypeScript code directly. This is the custom logic that will be executed once a block is mined. Learn more about [Web3 Actions functions](../references/action-functions-events-and-triggers.md#action-functions).
 
 For example, log the message “Action triggered” to the console \*\*once a block is mined.
 
 <figure><img src="../../.gitbook/assets/Screenshot_2022-08-04_at_09.06.10.png" alt="Adding your custom Web3 Action code"><figcaption><p>Adding your custom Web3 Action code</p></figcaption></figure>
 
 {% hint style="info" %}
-Tenderly provides [several JavaScript libraries](../reference/action-functions-events-and-triggers.md#available-libraries-for-dashboard-based-actions) for the functions created using the Dashboard.&#x20;
+Tenderly provides [several JavaScript libraries](../references/action-functions-events-and-triggers.md#available-libraries-for-dashboard-based-actions) for the functions created using the Dashboard.&#x20;
 {% endhint %}
 
 #### **Step 3:** Specify trigger settings
 
-Specify the trigger-specific configurations. Each trigger type has different settings. Learn more about [Web3 Actions Events](../reference/action-functions-events-and-triggers.md#external-events-and-trigger-types) and how to configure them.
+Specify the trigger-specific configurations. Each trigger type has different settings. Learn more about [Web3 Actions Events](../references/action-functions-events-and-triggers.md#external-events-and-trigger-types) and how to configure them.
 
 For the Block trigger type, you need to define two additional parameters: the network (Rinkeby) and the block period (10). This means that our code will get executed every 10th block mined on the Rinkeby network.
 
@@ -72,7 +72,7 @@ Optionally, you can select where you’d like Tenderly to send you notifications
 
 #### Step 5: Deploy your Web3 Action
 
-When finished, click the **Create** button to build and deploy your Web3 Action. Once deployed, you’ll be forwarded to the Overview page, where you can [stop, upgrade, and delete your Web3 Action](../reference/stopping-upgrading-and-manually-running-web3-actions.md).
+When finished, click the **Create** button to build and deploy your Web3 Action. Once deployed, you’ll be forwarded to the Overview page, where you can [stop, upgrade, and delete your Web3 Action](../references/stopping-upgrading-and-manually-running-web3-actions.md).
 
 <figure><img src="../../.gitbook/assets/Screenshot_2022-08-04_at_09.24.49.png" alt="An overview of your Web3 Action"><figcaption><p>An overview of your Web3 Action</p></figcaption></figure>
 
@@ -92,6 +92,6 @@ Transaction-triggered Web3 Actions can be built only using the CLI approach.
 
 ### Resources
 
-* Learn more about [Web3 Actions Functions, Events, and Triggers](../reference/action-functions-events-and-triggers.md).
-* Learn more about [Context, Storage, and Secrets](../reference/context-storage-and-secrets.md) available to action functions.
-* Learn more about [Project Structure and **tenderly.yaml** configuration](../reference/project-structure.md).
+* Learn more about [Web3 Actions Functions, Events, and Triggers](../references/action-functions-events-and-triggers.md).
+* Learn more about [Context, Storage, and Secrets](../references/context-storage-and-secrets.md) available to action functions.
+* Learn more about [Project Structure and **tenderly.yaml** configuration](../references/project-structure.md).

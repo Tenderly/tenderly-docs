@@ -8,7 +8,7 @@ In this guide, you’ll learn how to deploy Web3 Actions via the Tenderly CLI th
 
 ### Prerequisites
 
-You need to have npm and the Tenderly CLI installed and properly configured on your local machine. Check out the [Web3 Actions CLI Cheatsheet](../reference/cli-cheatsheet.md) for installation instructions.
+You need to have npm and the Tenderly CLI installed and properly configured on your local machine. Check out the [Web3 Actions CLI Cheatsheet](../references/cli-cheatsheet.md) for installation instructions.
 
 ### Initializing a Web3 Actions Project
 
@@ -135,6 +135,6 @@ Keep in mind:
 
 ### Resources
 
-* Learn more about [Web3 Actions Functions, Events, and Triggers](../reference/action-functions-events-and-triggers.md).
-* Learn more about [Context, Storage, and Secrets](../reference/context-storage-and-secrets.md).
-* Learn more about [Project Structure and **tenderly.yaml** configuration](../reference/project-structure.md).
+* Learn more about [Web3 Actions Functions, Events, and Triggers](../references/action-functions-events-and-triggers.md).
+* Learn more about [Context, Storage, and Secrets](../references/context-storage-and-secrets.md).
+* Learn more about [Project Structure and **tenderly.yaml** configuration](../references/project-structure.md).

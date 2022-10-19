@@ -34,7 +34,7 @@ Web3 Actions are rate-limited. The current usage rate limit for the execution of
 
 Follow these guides to quickly get started with building Web3 Actions via the browser or command line tools.
 
-Setting up Web3 Actions requires you to write JavaScript code for your functions. Building your Web3 Actions using Tenderly CLI includes defining triggers in a [yaml configuration file](reference/project-structure.md#the-tenderly.yaml-file-structure). The defined trigger and yaml configuration become an integral part of your project’s codebase.
+Setting up Web3 Actions requires you to write JavaScript code for your functions. Building your Web3 Actions using Tenderly CLI includes defining triggers in a [yaml configuration file](references/project-structure.md#the-tenderly.yaml-file-structure). The defined trigger and yaml configuration become an integral part of your project’s codebase.
 
 * [Deploy Web3 Actions via Tenderly Dashboard](broken-reference): Learn how to set up and deploy Web3 Actions directly in your browser.
 * [Deploy Web3 Actions via Tenderly CLI:](tutorials-and-quickstarts/deploy-web3-actions-via-dashboard.md) Learn how to install the Tenderly CLI, define triggers using the YAML configuration, and set up and deploy Web3 Actions through the command line.
@@ -43,8 +43,8 @@ Setting up Web3 Actions requires you to write JavaScript code for your functions
 To set up Web3 Actions triggered by transaction-related events, you must use the CLI-based approach.
 {% endhint %}
 
-{% content-ref url="reference/cli-cheatsheet.md" %}
-[cli-cheatsheet.md](reference/cli-cheatsheet.md)
+{% content-ref url="references/cli-cheatsheet.md" %}
+[cli-cheatsheet.md](references/cli-cheatsheet.md)
 {% endcontent-ref %}
 
 ### Understanding Web3 Actions
@@ -72,7 +72,7 @@ Let’s get familiar with the three core elements of Web3 Actions: **functions**
 
 When building a Web3 Action, you have to link the trigger specification to the function you wish to run. Tenderly executes your custom code (function) when it detects the event specified in the trigger.&#x20;
 
-Learn how to configure [Web3 Action Functions, Events, and Triggers](reference/action-functions-events-and-triggers.md).
+Learn how to configure [Web3 Action Functions, Events, and Triggers](references/action-functions-events-and-triggers.md).
 
 #### Web3 Actions Utilities
 
@@ -80,19 +80,19 @@ Learn how to configure [Web3 Action Functions, Events, and Triggers](reference/a
 
 **Secrets:** A place to store sensitive data such as API keys that are called from inside your code. This information is stored in the Tenderly Dashboard and can only be read from your code.
 
-**Storage:** Project-wide key-value storage you can use to persist data between consecutive runs. You can read and write to Storage through the Tenderly Dashboard. Learn how to [manage Secrets and use Web3 Actions Storage](reference/context-storage-and-secrets.md).
+**Storage:** Project-wide key-value storage you can use to persist data between consecutive runs. You can read and write to Storage through the Tenderly Dashboard. Learn how to [manage Secrets and use Web3 Actions Storage](references/context-storage-and-secrets.md).
 
 <figure><img src="../.gitbook/assets/Tenderly_W3A_Illustration.png" alt="Web3 Action Storage and Secrets"><figcaption><p>Web3 Action Storage and Secrets</p></figcaption></figure>
 
 #### Local development and testing support
 
-To quickly iterate when writing your Web3 Action functions, explore how the `@tenderly/actions-test` npm package provides [support for testing and local development of action function code](reference/local-development-and-testing.md).
+To quickly iterate when writing your Web3 Action functions, explore how the `@tenderly/actions-test` npm package provides [support for testing and local development of action function code](references/local-development-and-testing.md).
 
 ### Use cases for Web3 Actions and different events
 
 Below is a brief overview of each event type and example use cases.
 
-🧾 **Transaction event:** Listens for a transaction event that matches a given set of criteria — successful or failed transaction, value transfers, a particular amount of gas a transaction used, event emitted, and much more. Learn about [Transaction events](reference/action-functions-events-and-triggers.md#transaction-event).
+🧾 **Transaction event:** Listens for a transaction event that matches a given set of criteria — successful or failed transaction, value transfers, a particular amount of gas a transaction used, event emitted, and much more. Learn about [Transaction events](references/action-functions-events-and-triggers.md#transaction-event).
 
 Example use cases:
 
@@ -101,7 +101,7 @@ Example use cases:
 * Send data-rich notifications about wanted or unwanted transactions through your communication channels, such as Discord.
 * Send a transaction to the chain from a Web3 Action itself.
 
-🔢 **Block event:** Listens for an event when a block is mined on a selected network. Learn about [Block events](reference/action-functions-events-and-triggers.md#block-event).
+🔢 **Block event:** Listens for an event when a block is mined on a selected network. Learn about [Block events](references/action-functions-events-and-triggers.md#block-event).
 
 Example use cases:
 
@@ -109,7 +109,7 @@ Example use cases:
 * Monitor smart contract changes once every few blocks get mined and run automation when a condition is met.
 * Monitor gas prices and automate your operations.
 
-🪝 **Webhook event:** Listens for an event **when** an HTTP request is posted to the Webhook URL (the action exposes a WebHook). Learn about [Webhook events](reference/action-functions-events-and-triggers.md#webhook-event).
+🪝 **Webhook event:** Listens for an event **when** an HTTP request is posted to the Webhook URL (the action exposes a WebHook). Learn about [Webhook events](references/action-functions-events-and-triggers.md#webhook-event).
 
 Example use cases:
 
@@ -117,7 +117,7 @@ Example use cases:
 * Retrieve the data your other Web3 Actions collected about transactions or specific smart contract changes.
 * Your CI can call the webhook to clean up or prepare other Tenderly resources such as the [Forks you use for testing](https://docs.tenderly.co/simulations-and-forks/simulation-api/testing).
 
-🕖 **Periodic event:** Listens for an event representing a passage of a time interval or CRON expression you specify. Learn about [Periodic events](reference/action-functions-events-and-triggers.md#periodic-event).
+🕖 **Periodic event:** Listens for an event representing a passage of a time interval or CRON expression you specify. Learn about [Periodic events](references/action-functions-events-and-triggers.md#periodic-event).
 
 Example use cases:
 
@@ -156,36 +156,36 @@ Here you can find all the relevant information about the main building blocks an
 
 Find details about the Web3 Actions project structure and general layout of the **tenderly.yaml** configuration file:
 
-{% content-ref url="reference/project-structure.md" %}
-[project-structure.md](reference/project-structure.md)
+{% content-ref url="references/project-structure.md" %}
+[project-structure.md](references/project-structure.md)
 {% endcontent-ref %}
 
 Find detailed information about the core components of Web3 Actions and writing trigger configuration in **tenderly.yaml**:
 
-{% content-ref url="reference/action-functions-events-and-triggers.md" %}
-[action-functions-events-and-triggers.md](reference/action-functions-events-and-triggers.md)
+{% content-ref url="references/action-functions-events-and-triggers.md" %}
+[action-functions-events-and-triggers.md](references/action-functions-events-and-triggers.md)
 {% endcontent-ref %}
 
 Learn about using Storage and Secrets:
 
-{% content-ref url="reference/context-storage-and-secrets.md" %}
-[context-storage-and-secrets.md](reference/context-storage-and-secrets.md)
+{% content-ref url="references/context-storage-and-secrets.md" %}
+[context-storage-and-secrets.md](references/context-storage-and-secrets.md)
 {% endcontent-ref %}
 
 Learn about tools for local development and testing of Web3 Actions:
 
-{% content-ref url="reference/local-development-and-testing.md" %}
-[local-development-and-testing.md](reference/local-development-and-testing.md)
+{% content-ref url="references/local-development-and-testing.md" %}
+[local-development-and-testing.md](references/local-development-and-testing.md)
 {% endcontent-ref %}
 
 Learn about utilities for inspecting and handling failed executions of Web3 Actions in the Tenderly Dashboard:
 
-{% content-ref url="reference/error-reporting.md" %}
-[error-reporting.md](reference/error-reporting.md)
+{% content-ref url="references/error-reporting.md" %}
+[error-reporting.md](references/error-reporting.md)
 {% endcontent-ref %}
 
 Learn how to operate Web3 Actions: stopping, upgrading, and running Web3 Actions manually:
 
-{% content-ref url="reference/stopping-upgrading-and-manually-running-web3-actions.md" %}
-[stopping-upgrading-and-manually-running-web3-actions.md](reference/stopping-upgrading-and-manually-running-web3-actions.md)
+{% content-ref url="references/stopping-upgrading-and-manually-running-web3-actions.md" %}
+[stopping-upgrading-and-manually-running-web3-actions.md](references/stopping-upgrading-and-manually-running-web3-actions.md)
 {% endcontent-ref %}
