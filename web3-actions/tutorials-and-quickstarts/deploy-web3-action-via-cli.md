@@ -113,7 +113,7 @@ The **tenderly.yaml** file contains specifications of triggers for each action i
 * The `function` property is referencing the `blockHelloWorldFn` function from the **example.ts** file.
 * This action will be triggered on each 10th block mined on network 1, as per the `trigger` property.
 
-Learn more about External Events and Trigger types.
+Learn more about [External Events and Trigger types](../references/action-functions-events-and-triggers.md#external-events-and-trigger-types).
 
 #### Building and deploying actions
 
@@ -123,6 +123,11 @@ Go back to terminal and run the following command to deploy all Web3 Actions you
 tenderly actions deploy
 ```
 
+{% hint style="info" %}
+**Zero downtime upgrade of Web3 Actions**\
+To **upgrade** a Web3 Action, just edit the source code and/or **tenderly.yaml** and run `tenderly actions deploy.`
+{% endhint %}
+
 ### Before you go
 
 Keep in mind:
@@ -130,7 +135,6 @@ Keep in mind:
 * You must run the `deploy` command from the folder containing **tenderly.yaml** file.
 * If you initialize actions for multiple Tenderly projects in the same directory, upon running `deploy` you will be asked to select a project. Only actions belonging to the selected project will be deployed.
 * All actions belonging to one project are deployed simultaneously.
-* To update a previously deployed Web3 Action, just run `tenderly actions deploy` after editing the source code and/or the **tenderly.yaml** file. The update is done with zero down-time.
 * Any file referenced from the JavaScript/TypeScript must be in the _actions root_. Do not reference files outside of this folder.
 
 ### Resources

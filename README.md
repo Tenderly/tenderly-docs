@@ -5,7 +5,7 @@
 {% hint style="success" %}
 We recently had a rather big release, which includes:
 
-* ****[**Web3 Actions**](broken-reference)****
+* ****[**Web3 Actions**](web3-actions/intro-to-web3-actions.md)****
 * ****[**War Room Aid Kit**](debugger/war-room-aid-kit.md)****
 * ****[**Tenderly Sandbox**](tenderly-sandbox.md)****
 * ****[**Debugger Chrome Extension**](debugger/tenderly-debugger-extension.md)****
@@ -32,7 +32,7 @@ Know how your transactions will behave before you execute them, estimate the gas
 [simulation-api](simulations-and-forks/simulation-api/)
 {% endcontent-ref %}
 
-****[**Web3 Actions**](broken-reference)&#x20;
+****[**Web3 Actions**](web3-actions/intro-to-web3-actions.md)&#x20;
 
 Run your code in response to on-chain (or even off-chain) events, usually on your smart contracts.&#x20;
 
