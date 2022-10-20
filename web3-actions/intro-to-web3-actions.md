@@ -13,7 +13,7 @@ Web3 Actions are programmable hooks for smart contract and chain events. They ca
 
 A Web3 Action comes with key-value storage for data you need to persist and secrets management for sensitive information such as API keys. You can think of Web3 Actions as infrastructure building a Web3 version of IFTTT/Zapier automation, allowing you to glue together your smart contracts, on-chain events, dapp frontends, APIs, and other services.&#x20;
 
-Based on the trigger rules you define, external on-chain or off-chain events will trigger your Web3 Action and your JavaScript/TypeScript code will handle the event instantly. This is where you activate monitoring, through building automation that addresses the needs of your users and your project.
+Based on the trigger rules you define, external on-chain or off-chain events will trigger your Web3 Action and your JavaScript/TypeScript code will handle the event instantly.&#x20;
 
 With Web3 Actions, you can build systems that let you be timely informed about non-trivial events. This way, you can improve your dapp in terms of UX and interactivity and enhance your project through the depth of information you can collect or share through notifications.&#x20;
 
