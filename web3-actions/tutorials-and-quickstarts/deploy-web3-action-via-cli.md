@@ -26,11 +26,11 @@ tenderly actions init --language javascript
 
 When prompted, select an existing Tenderly project from your account or create a new one.
 
-<figure><img src="../../.gitbook/assets/Screenshot_2022-08-04_at_10.50.42.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot_2022-08-04_at_10.50.42.png" alt="Creating a new Tenderly project"><figcaption><p>Creating a new Tenderly project</p></figcaption></figure>
 
 Next, input the name of the root directory where your code will be stored. If you want to leave the default actions, press Enter, or input a custom directory name.
 
-<figure><img src="../../.gitbook/assets/Screenshot_2022-08-04_at_10.51.55.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot_2022-08-04_at_10.51.55.png" alt="Adding a directory name"><figcaption><p>Adding a directory name</p></figcaption></figure>
 
 The folder structure of your project should look like this:
 
@@ -70,7 +70,7 @@ export const blockHelloWorldFn: ActionFn = async (
 };
 ```
 
-This defines and exports an action function. In the next step we'll configure it to run after 10 blocks are mined.
+This defines and exports an action function. In the next step, we'll configure it to run after 10 blocks are mined.
 
 **Notes:**
 
@@ -117,7 +117,7 @@ Learn more about External Events and Trigger types.
 
 #### Building and deploying actions
 
-Go back to terminal and run the following command, that will deploy all Web3 Actions you defined. After successful deployment, you will be able see the actions in the Tenderly UI.
+Go back to terminal and run the following command to deploy all Web3 Actions you defined. After successful deployment, you will be able to see the actions in the Tenderly UI.
 
 ```bash
 tenderly actions deploy
