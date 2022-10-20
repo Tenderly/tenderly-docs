@@ -259,7 +259,7 @@ tenderly actions deploy
 
 The output should look like this:
 
-![](<../../.gitbook/assets/image (79).png>)
+<figure><img src="../../.gitbook/assets/image (79).png" alt="The Web3 Action execution output"><figcaption><p>The Web3 Action execution output</p></figcaption></figure>
 
 To see details about the deployment of your Web3 Action, check the Tenderly Dashboard. If the deployment was successful, you should see something like this:
 
