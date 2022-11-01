@@ -5,40 +5,9 @@ description: >-
 
 {% hint style='info'%}
 This page shows a brief overview of a test
-{% hint %}
-
-{% tabs %}
-
-{% tab title="bash" %}
-
-```bash
-
-ls -la
-
-```
-
-{% endtab %}
-
-{% tab title="console" %}
-
-```javascript
-console.log("RIGHT)
-```
-
-{% endtab %}
-
-{% tab title="Response" %}
-
-```json
-{
-    "foo": bar
-}
-```
-
-{% endtab %}
-
-{% endtabs %}
+{% endhint %}
 
 ## test1Foo
 
-Backlinks to [that.](./test2.md#something-something)
+Backlinks to [that.](/test/test2.md#something-something)
+Backlinks to [that.](test2.md#something-something)

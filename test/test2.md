@@ -3,3 +3,4 @@
 ## something something
 
 Links to [this.](./test1.md#test1foo)
+Links to [this.](test1.md#test1foo)

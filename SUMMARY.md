@@ -80,6 +80,7 @@
     * [Private Contract Verification](monitoring/smart-contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/private-contract-verification.md)
     * [Verifying Contracts on a Tenderly Fork](monitoring/smart-contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/verifying-contracts-on-a-tenderly-fork.md)
     * [.](test/test1.md)
+    * [.](test/test2.md)
   * [Verifying Contracts using CLI](monitoring/smart-contract-verification/verifying-contracts-using-cli.md)
 * [Wallets](monitoring/wallets/README.md)
   * [Converting Contracts into Wallets](monitoring/wallets/converting-contracts-into-wallets.md)
