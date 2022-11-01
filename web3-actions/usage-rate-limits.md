@@ -9,3 +9,5 @@ description: Get a short overview of Web3 Action execution rate limits.
 If you have a need for an increased usage rate or custom limits, **please contact us via email (**[**support@tenderly.co**](mailto:support@tenderly.co)**).**
 
 You can check out the pre-defined Tenderly pricing plans on our[ pricing page](https://tenderly.co/pricing/).
+
+.
