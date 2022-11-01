@@ -41,4 +41,4 @@ console.log("RIGHT)
 
 ## test1Foo
 
-Backlinks to [that.](test2.md#something-something)
+Backlinks to [that.](./test2.md#something-something)
