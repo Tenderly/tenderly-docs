@@ -39,7 +39,7 @@ Here are some dapp development practices that can benefit from Tenderly tools:
 
 * **Developer-facing practices** make the development and refinement of smart contracts more accessible and efficient. To boost your development, make sure to:
   * Debug smart contract efficiently with decoded transactions using [Debugger](../debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md) .
-  * Understand gas consumption by analyzing smart contracts using [Gas Profiler](debugger/how-to-use-tenderly-debugger/).
+  * Understand gas consumption by analyzing smart contracts using [Gas Profiler](../monitoring/contracts/execution-overview.md#gas-profiler).
   * Troubleshoot transaction bugs efficiently by using [Transaction Simulator](../simulations-and-forks/how-to-simulate-a-transaction/).
   * Verify bug fix correctness and gas usage improvements using Transaction Simulator with [source code editing](../simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md).
   * Share smart contracts and blockchain interactions with other developers and communities using [Sandbox](../tenderly-sandbox.md).
