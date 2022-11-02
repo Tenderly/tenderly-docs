@@ -1,20 +1,16 @@
 ---
-description: >-
-  A brief overview of supported Ethereum JSON RPC calls.
+description: A brief overview of supported Ethereum JSON RPC calls
 ---
 
-{% hint style='info'%}
-This page shows a brief overview of supported Ethereum JSON RPC calls. 
-Find a [detailed list of supported calls](./03-detailed-json-rpc.md).
-{% hint %}
+# Brief JSON RPC reference
 
-## `eth_getBlockByHash`
+This page shows a brief overview of supported Ethereum JSON RPC calls. Find a [detailed list of supported calls](03-detailed-json-rpc.md).
+
+### `eth_getBlockByHash`
 
 Returns information about a block by hash.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getBlockByHash)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getBlockByHash)
 
 **RESULT**: Block information
 
@@ -35,7 +31,6 @@ Returns information about a block by hash.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -49,7 +44,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     false
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -115,22 +109,13 @@ async function runGetBlockByHash() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getBlockByNumber`
+### `eth_getBlockByNumber`
 
 Returns information about a block by number.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getBlockByNumber)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getBlockByNumber)
 
 **RESULT**: Block information
 
@@ -151,7 +136,6 @@ Returns information about a block by number.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -165,7 +149,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     false
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -407,22 +390,13 @@ async function runGetBlockByNumber() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getBlockTransactionCountByHash`
+### `eth_getBlockTransactionCountByHash`
 
 Returns the number of transactions in a block from a block matching the given block hash.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getBlockTransactionCountByHash)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getBlockTransactionCountByHash)
 
 **RESULT**: Transaction count
 
@@ -442,7 +416,6 @@ Returns the number of transactions in a block from a block matching the given bl
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -455,7 +428,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "0x5a10754ae6c673ebabb1a78166232c6b88633d50fafe1499392dd6e4c61c344e"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -488,22 +460,13 @@ async function runGetBlockTransactionCountByHash() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getBlockTransactionCountByNumber`
+### `eth_getBlockTransactionCountByNumber`
 
 Returns the number of transactions in a block matching the given block number.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getBlockTransactionCountByNumber)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getBlockTransactionCountByNumber)
 
 **RESULT**: Transaction count
 
@@ -523,7 +486,6 @@ Returns the number of transactions in a block matching the given block number.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -536,7 +498,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "latest"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -569,22 +530,13 @@ async function runGetBlockTransactionCountByNumber() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getUncleCountByBlockHash`
+### `eth_getUncleCountByBlockHash`
 
 Returns the number of uncles in a block from a block matching the given block hash.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getUncleCountByBlockHash)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getUncleCountByBlockHash)
 
 **RESULT**: Uncle count
 
@@ -604,7 +556,6 @@ Returns the number of uncles in a block from a block matching the given block ha
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -617,7 +568,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "0x5a10754ae6c673ebabb1a78166232c6b88633d50fafe1499392dd6e4c61c344e"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -650,22 +600,13 @@ async function runGetUncleCountByBlockHash() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getUncleCountByBlockNumber`
+### `eth_getUncleCountByBlockNumber`
 
 Returns the number of transactions in a block matching the given block number.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getUncleCountByBlockNumber)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getUncleCountByBlockNumber)
 
 **RESULT**: Uncle count
 
@@ -685,7 +626,6 @@ Returns the number of transactions in a block matching the given block number.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -698,7 +638,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "latest"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -731,22 +670,13 @@ async function runGetUncleCountByBlockNumber() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_chainId`
+### `eth_chainId`
 
 Returns the chain ID of the current network.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_chainId)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_chainId)
 
 **RESULT**: Chain ID
 
@@ -764,7 +694,6 @@ Returns the chain ID of the current network.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -775,7 +704,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_chainId",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -808,22 +736,13 @@ async function runChainId() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_syncing`
+### `eth_syncing`
 
 Returns an object with data about the sync status or false.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_syncing)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_syncing)
 
 **RESULT**: Syncing status
 
@@ -841,7 +760,6 @@ Returns an object with data about the sync status or false.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -852,7 +770,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_syncing",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -885,22 +802,13 @@ async function runSyncing() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_accounts`
+### `eth_accounts`
 
 Returns a list of addresses owned by client.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_accounts)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_accounts)
 
 **RESULT**: Accounts
 
@@ -918,7 +826,6 @@ Returns a list of addresses owned by client.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -929,7 +836,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_accounts",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -962,22 +868,13 @@ async function runAccounts() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_blockNumber`
+### `eth_blockNumber`
 
 Returns the number of most recent block.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_blockNumber)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_blockNumber)
 
 **RESULT**: Block number
 
@@ -995,7 +892,6 @@ Returns the number of most recent block.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1006,7 +902,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_blockNumber",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -1039,22 +934,13 @@ async function runBlockNumber() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_call`
+### `eth_call`
 
 Executes a new message call immediately without creating a transaction on the block chain.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_call)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_call)
 
 **RESULT**: Return data
 
@@ -1082,7 +968,6 @@ Executes a new message call immediately without creating a transaction on the bl
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1103,7 +988,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "latest"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -1139,22 +1023,13 @@ async function runCall() {
 N/A
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_estimateGas`
+### `eth_estimateGas`
 
 Generates and returns an estimate of how much gas is necessary to allow the transaction to complete.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_estimateGas)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_estimateGas)
 
 **RESULT**: Gas used
 
@@ -1182,7 +1057,6 @@ Generates and returns an estimate of how much gas is necessary to allow the tran
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1203,7 +1077,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "latest"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -1239,22 +1112,13 @@ async function runEstimateGas() {
 N/A
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_gasPrice`
+### `eth_gasPrice`
 
 Returns the current price per gas in wei.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_gasPrice)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_gasPrice)
 
 **RESULT**: Gas price
 
@@ -1272,7 +1136,6 @@ Returns the current price per gas in wei.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1283,7 +1146,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_gasPrice",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -1316,22 +1178,13 @@ async function runGasPrice() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_maxPriorityFeePerGas`
+### `eth_maxPriorityFeePerGas`
 
 Returns the current maxPriorityFeePerGas per gas in wei.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_maxPriorityFeePerGas)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_maxPriorityFeePerGas)
 
 **RESULT**: Max priority fee per gas
 
@@ -1349,7 +1202,6 @@ Returns the current maxPriorityFeePerGas per gas in wei.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1360,7 +1212,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_maxPriorityFeePerGas",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -1393,25 +1244,16 @@ async function runMaxPriorityFeePerGas() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_feeHistory`
+### `eth_feeHistory`
 
 Transaction fee history
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_feeHistory)
 
+[Detailed version](03-detailed-json-rpc.md#eth\_feeHistory)
 
+**RESULT**: feeHistoryResult Fee history for the returned block range. This can be a subsection of the requested range if not all blocks are available.
 
-**RESULT**: feeHistoryResult
-Fee history for the returned block range. This can be a subsection of the requested range if not all blocks are available.
 {% tabs %}
 {% tab title="Raw" %}
 ```json
@@ -1430,7 +1272,6 @@ Fee history for the returned block range. This can be a subsection of the reques
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1445,7 +1286,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     []
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -1489,22 +1329,13 @@ async function runFeeHistory() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_newFilter`
+### `eth_newFilter`
 
 Creates a filter object, based on filter options, to notify when the state changes (logs).
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_newFilter)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_newFilter)
 
 **RESULT**: Filter Identifier
 
@@ -1524,7 +1355,6 @@ Creates a filter object, based on filter options, to notify when the state chang
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1537,7 +1367,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     null
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -1570,22 +1399,13 @@ async function runNewFilter() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_newBlockFilter`
+### `eth_newBlockFilter`
 
 Creates a filter in the node, to notify when a new block arrives.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_newBlockFilter)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_newBlockFilter)
 
 **RESULT**: Filter Identifier
 
@@ -1603,7 +1423,6 @@ Creates a filter in the node, to notify when a new block arrives.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1614,7 +1433,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_newBlockFilter",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -1647,22 +1465,13 @@ async function runNewBlockFilter() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_uninstallFilter`
+### `eth_uninstallFilter`
 
 Uninstalls a filter with given id.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_uninstallFilter)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_uninstallFilter)
 
 **RESULT**: Success
 
@@ -1682,7 +1491,6 @@ Uninstalls a filter with given id.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1695,7 +1503,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     null
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -1724,22 +1531,13 @@ async function runUninstallFilter() {
 N/A
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getFilterChanges`
+### `eth_getFilterChanges`
 
 Polling method for a filter, which returns an array of logs which occurred since last poll.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getFilterChanges)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getFilterChanges)
 
 **RESULT**: Log objects
 
@@ -1759,7 +1557,6 @@ Polling method for a filter, which returns an array of logs which occurred since
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1772,7 +1569,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     null
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -1801,22 +1597,13 @@ async function runGetFilterChanges() {
 N/A
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getFilterLogs`
+### `eth_getFilterLogs`
 
 Returns an array of all logs matching filter with given id.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getFilterLogs)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getFilterLogs)
 
 **RESULT**: Log objects
 
@@ -1836,7 +1623,6 @@ Returns an array of all logs matching filter with given id.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1849,7 +1635,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     null
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -1878,22 +1663,13 @@ async function runGetFilterLogs() {
 N/A
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getLogs`
+### `eth_getLogs`
 
 Returns an array of all logs matching filter with given id.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getLogs)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getLogs)
 
 **RESULT**: Log objects
 
@@ -1913,7 +1689,6 @@ Returns an array of all logs matching filter with given id.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -1926,7 +1701,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     null
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -8260,22 +8034,13 @@ async function runGetLogs() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_mining`
+### `eth_mining`
 
 Returns whether the client is actively mining new blocks.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_mining)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_mining)
 
 **RESULT**: Mining status
 
@@ -8293,7 +8058,6 @@ Returns whether the client is actively mining new blocks.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8304,7 +8068,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_mining",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -8337,22 +8100,13 @@ async function runMining() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_hashrate`
+### `eth_hashrate`
 
 Returns the number of hashes per second that the node is mining with.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_hashrate)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_hashrate)
 
 **RESULT**: Mining status
 
@@ -8370,7 +8124,6 @@ Returns the number of hashes per second that the node is mining with.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8381,7 +8134,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "method": "eth_hashrate",
   "params": []
 }'
-
 ```
 {% endtab %}
 
@@ -8414,22 +8166,13 @@ async function runHashrate() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getBalance`
+### `eth_getBalance`
 
 Returns the balance of the account of given address.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getBalance)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getBalance)
 
 **RESULT**: Balance
 
@@ -8450,7 +8193,6 @@ Returns the balance of the account of given address.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8464,7 +8206,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "latest"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -8497,22 +8238,13 @@ async function runGetBalance() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getStorageAt`
+### `eth_getStorageAt`
 
 Returns the value from a storage position at a given address.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getStorageAt)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getStorageAt)
 
 **RESULT**: Value
 
@@ -8534,7 +8266,6 @@ Returns the value from a storage position at a given address.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8549,7 +8280,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "latest"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -8582,22 +8312,13 @@ async function runGetStorageAt() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getTransactionCount`
+### `eth_getTransactionCount`
 
 Returns the number of transactions sent from an address.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionCount)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionCount)
 
 **RESULT**: Transaction count
 
@@ -8618,7 +8339,6 @@ Returns the number of transactions sent from an address.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8632,7 +8352,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "latest"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -8665,22 +8384,13 @@ async function runGetTransactionCount() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getCode`
+### `eth_getCode`
 
 Returns code at a given address.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getCode)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getCode)
 
 **RESULT**: Bytecode
 
@@ -8701,7 +8411,6 @@ Returns code at a given address.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8715,7 +8424,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "latest"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -8748,22 +8456,13 @@ async function runGetCode() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_sendRawTransaction`
+### `eth_sendRawTransaction`
 
 Submits a raw transaction.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_sendRawTransaction)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_sendRawTransaction)
 
 **RESULT**: Transaction hash
 
@@ -8790,7 +8489,6 @@ Submits a raw transaction.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8810,7 +8508,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     }
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -8846,22 +8543,13 @@ async function runSendRawTransaction() {
 N/A
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getTransactionByHash`
+### `eth_getTransactionByHash`
 
 Returns the information about a transaction requested by transaction hash.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionByHash)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionByHash)
 
 **RESULT**: Transaction information
 
@@ -8881,7 +8569,6 @@ Returns the information about a transaction requested by transaction hash.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8894,7 +8581,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "0xd9724b68ad04ac3919678e3158f5d474d3c129cfb4cb7fafcde9b4c756fce188"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -8947,22 +8633,13 @@ async function runGetTransactionByHash() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getTransactionByBlockHashAndIndex`
+### `eth_getTransactionByBlockHashAndIndex`
 
 Returns information about a transaction by block hash and transaction index position.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionByBlockHashAndIndex)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionByBlockHashAndIndex)
 
 **RESULT**: Transaction information
 
@@ -8983,7 +8660,6 @@ Returns information about a transaction by block hash and transaction index posi
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -8997,7 +8673,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "0x1"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -9050,22 +8725,13 @@ async function runGetTransactionByBlockHashAndIndex() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getTransactionByBlockNumberAndIndex`
+### `eth_getTransactionByBlockNumberAndIndex`
 
 Returns information about a transaction by block number and transaction index position.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionByBlockNumberAndIndex)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionByBlockNumberAndIndex)
 
 **RESULT**: Transaction information
 
@@ -9086,7 +8752,6 @@ Returns information about a transaction by block number and transaction index po
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -9100,7 +8765,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "0x1"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -9153,22 +8817,13 @@ async function runGetTransactionByBlockNumberAndIndex() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
 
-
-
-
-
-
-
-## `eth_getTransactionReceipt`
+### `eth_getTransactionReceipt`
 
 Returns the receipt of a transaction by transaction hash.
-      
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionReceipt)
 
-
+[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionReceipt)
 
 **RESULT**: Receipt Information
 
@@ -9188,7 +8843,6 @@ Returns the receipt of a transaction by transaction hash.
 
 {% tab title="cURL" %}
 ```bash
-
 curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
@@ -9201,7 +8855,6 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
     "0xd9724b68ad04ac3919678e3158f5d474d3c129cfb4cb7fafcde9b4c756fce188"
   ]
 }'
-
 ```
 {% endtab %}
 
@@ -9265,11 +8918,4 @@ async function runGetTransactionReceipt() {
 }
 ```
 {% endtab %}
-
 {% endtabs %}
-
-
-
-
-
-
