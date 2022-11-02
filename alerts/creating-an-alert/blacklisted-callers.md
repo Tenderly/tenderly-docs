@@ -18,7 +18,7 @@ Here are a few guidelines to set up an alert that will notify you whenever someo
 
 Tenderly has a smart email delivery algorithm. You'll get notified instantly when something of interest happens. Afterward, you'll receive aggregated notifications when suitable, so the spam will be on a bare minimum if any. This way, you’ll receive the latest alerts from Tenderly without missing any other important emails.&#x20;
 
-![](<../../.gitbook/assets/Creating an Alert - Blacklisted Callers 2.png>)
+![](<../../.gitbook/assets/Creating an Alert - Whitelisted Callers 2.png>)
 
 #### Example 2
 

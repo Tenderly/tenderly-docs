@@ -6,7 +6,7 @@
 
 This alert type notifies you whenever an address that's not whitelisted calls one of your contracts.
 
-![](<../../.gitbook/assets/Creating an Alert - Whitelisted Callers 2.png>)
+![](<../../.gitbook/assets/Creating an Alert - Blacklisted Callers 2.png>)
 
 #### Example
 

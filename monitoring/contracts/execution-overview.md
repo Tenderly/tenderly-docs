@@ -12,17 +12,17 @@ In the first tab - **Transaction Overview** - you can see and navigate though al
 
 From the Overview Tab tab you can instantly jump into Contract Sources or the Debugger in order to see what happened:
 
-![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.13.51 (1).png>)
+![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.13.51.png>)
 
 If you are looking into a failed transaction, you can now **jump straight to all fail points by clicking the red warning icon and then clicking on the line that failed**:
 
-![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.46.08.png>)
+![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.46.08 (1).png>)
 
 ![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.47.46.png>)
 
 You can also search the Execution Trace, as well as easily navigate it with your keyboard arrows:
 
-![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.18.53.png>)
+![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.18.19.png>)
 
 ![](<../../.gitbook/assets/ezgif.com-gif-maker (6).gif>)
 

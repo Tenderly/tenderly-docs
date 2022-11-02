@@ -23,7 +23,7 @@ You will be prompted to copy your private key. For security reasons, the private
 
 * Once you’ve copied the private key, click **Okay, close.**
 
-![Generating a personal access token](../../.gitbook/assets/API\_prersonal\_account.gif)
+![Generating a personal access token](../../.gitbook/assets/API\_prersonal\_account)
 
 ## Generate an API access token for an organization
 
@@ -47,7 +47,7 @@ You will be prompted to copy your private key. For security reasons, the private
 
 * Once you’ve copied the private key, click **Okay, close.**
 
-![Generating an organization access token](../../.gitbook/assets/Organization\_API.gif)
+![Generating an organization access token](../../.gitbook/assets/Organization\_API)
 
 ## Remove an API access token
 

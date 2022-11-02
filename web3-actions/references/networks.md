@@ -24,7 +24,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/image (82) (1) (1) (1).png" alt="" data-size="line"> BSC `=> 56`
 
-<img src="../../.gitbook/assets/image (88) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet `=> 97`
+<img src="../../.gitbook/assets/image (76) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet `=> 97`
 
 <img src="../../.gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA `=> 99`
 
@@ -46,6 +46,6 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/image (78) (1) (1).png" alt="" data-size="line"> Fantom Testnet `=> 4002`
 
-<img src="../../.gitbook/assets/image (82) (1).png" alt="" data-size="line"> Arbitrum `=> 42161` (read more about currently available features for Arbitrum [**here**](../../supported-networks-and-languages.md))
+<img src="../../.gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum `=> 42161` (read more about currently available features for Arbitrum [**here**](../../supported-networks-and-languages.md))
 
-<img src="../../.gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet `=> 421611` (read more about currently available features for Arbitrum [**here**](../../supported-networks-and-languages.md))
+<img src="../../.gitbook/assets/image (83).png" alt="" data-size="line"> Arbitrum Testnet `=> 421611` (read more about currently available features for Arbitrum [**here**](../../supported-networks-and-languages.md))

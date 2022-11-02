@@ -54,9 +54,9 @@ You can immediately jump into the debugger and get to the line of code that caus
 
 You can also change your contract source-code by clicking on Re-Simulate and then on Edit Contract Source ([**read more about this here**](editing-contract-source.md)):
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.00.53.png>)
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.58.46 (1).png>)
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.00.07.png>)
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.59.16.png>)
 
 The transaction failed again in a different place which was expected since we deleted a part of the code:
 

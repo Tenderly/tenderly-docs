@@ -18,7 +18,7 @@
 
 <img src=".gitbook/assets/image (82) (1) (1) (1).png" alt="" data-size="line"> BSC
 
-<img src=".gitbook/assets/image (88) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet
+<img src=".gitbook/assets/image (76) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet
 
 <img src=".gitbook/assets/image.png" alt="" data-size="line"> Gnosis Chain
 
@@ -40,9 +40,9 @@
 
 <img src=".gitbook/assets/image (78) (1) (1).png" alt="" data-size="line"> Fantom Testnet
 
-<img src=".gitbook/assets/image (82) (1).png" alt="" data-size="line"> Arbitrum\*
+<img src=".gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum\*
 
-<img src=".gitbook/assets/image (83).png" alt="" data-size="line"> Arbitrum Testnet\*
+<img src=".gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet\*
 
 <img src=".gitbook/assets/image (69) (1).png" alt="" data-size="line"> Kintsugi
 

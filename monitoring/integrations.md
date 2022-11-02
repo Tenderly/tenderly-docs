@@ -691,7 +691,7 @@ We also have the deployment plugin which we will use to deploy this contract to 
 
 Next, we can install the Tenderly plugin found here:
 
-![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.33.36.png>)
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.33.25.png>)
 
 In order to connect with Tenderly you will need an **access token** which you can get by going to your Tenderly dashboard and in the top right clicking on Settings, and then going to the Authorizations tab where you will generate a new access token for Remix:
 
@@ -703,7 +703,7 @@ In order to connect with Tenderly you will need an **access token** which you ca
 
 Now you just need to paste the access token into Remix:
 
-![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.40.39.png>)
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.40.23.png>)
 
 You will now be able to choose whether to add the contract to an existing project by choosing from a list or create a new one. Now, in order to verify and add the contract into your project, you will need to click on the **verify** tab in Remix, choose the network and contract, as well as copy the address of the deployed contract. In this case we will privately verify a contract on Tenderly:
 
@@ -715,7 +715,7 @@ You are also able to import contracts into Remix from your Tenderly project:
 
 ![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.49.41.png>)
 
-![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.50.24.png>)
+![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.50.11.png>)
 
 ![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.50.58.png>)
 

@@ -23,7 +23,7 @@ It's possible to use some Tenderly features with unverified contracts, with limi
 
 To add a verified contract to your project, navigate to the **Contracts** tab in the left sidebar. Once you open the dedicated contract section, click the **Add Contract** button in the top right corner.
 
-![Adding a contract](<../../.gitbook/assets/image1 (1)>)
+![Adding a contract](../../.gitbook/assets/image1)
 
 This will open the Add Contract modal where you need to follow a few steps:
 
@@ -33,13 +33,13 @@ This will open the Add Contract modal where you need to follow a few steps:
 
 <mark style="color:purple;">**3.**</mark> Skip the **This contract is unverified** box since you're adding a verified contract.
 
-![Adding a contract: enter the address and select the network](<../../.gitbook/assets/image4 (1)>)
+![Adding a contract: enter the address and select the network](../../.gitbook/assets/image4)
 
 <mark style="color:purple;">**4.**</mark> Hit the **Add Contract** button and the contract will be added to your project.
 
 <mark style="color:purple;">**5.**</mark> Find and click the added contract from the updated list to open the additional information about it.
 
-![Added contract in the dashboard](../../.gitbook/assets/image7)
+![Added contract in the dashboard](<../../.gitbook/assets/image7 (1)>)
 
 ## Adding an unverified contract
 
@@ -51,7 +51,7 @@ Follow the same first steps as when adding verified contracts:
 
 <mark style="color:purple;">**3.**</mark> Tick the **This contract is unverified** box.
 
-![Adding an unverified contract](../../.gitbook/assets/image10)
+![Adding an unverified contract](<../../.gitbook/assets/image10 (1)>)
 
 
 

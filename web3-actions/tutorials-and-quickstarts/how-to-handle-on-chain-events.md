@@ -69,7 +69,7 @@ Our simple Tic-Tac-Toe game can have four possible states:
 
 **Deploy to a test network** - in your Metamask browser plugin, make sure Ropsten is selected as your preferred network. Next, go to the **“Deploy And Run Transactions”** section in Remix and select **`Injected Web3`**. Click **“Deploy”** once you’ve made sure that the account references the account in Metamask.
 
-<figure><img src="../../.gitbook/assets/image (76).png" alt="Deploying the contract to a testnet"><figcaption><p>Deploying the contract to a testnet</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (73).png" alt="Deploying the contract to a testnet"><figcaption><p>Deploying the contract to a testnet</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (92).png" alt="Copying the contract address"><figcaption><p>Copying the contract address</p></figcaption></figure>
 

@@ -10,11 +10,11 @@ When you select a trace, you can clearly prioritize it (and elaborate on it in t
 
 Lastly, clicking on the three dots next to _Set priority_ opens up a dropdown where you can [view the contract source](../../simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md).
 
-![](<../../.gitbook/assets/Screenshot 2022-01-17 at 15.16.53.png>)
+![](<../../.gitbook/assets/Screenshot 2022-01-17 at 15.16.29.png>)
 
 When you collapse traces, only the parent trace will show the number of comments it has, and a new button (_Go to..._) will appear marking if child-traces have comments as well. Clicking on _Go to..._ will open a dropdown menu of all child-traces with comments so you easily jump to the commented trace. This also works in the same way for navigating to the child-traces with set priorities.
 
-![](<../../.gitbook/assets/Screenshot 2022-01-17 at 15.19.18.png>)
+![](<../../.gitbook/assets/Screenshot 2022-01-17 at 15.18.47.png>)
 
 All the comment and priority features persist through both Transaction Overview and Debugger views in your dashboard.
 

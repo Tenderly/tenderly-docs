@@ -26,7 +26,7 @@ tenderly actions init --language javascript
 
 When prompted, select an existing Tenderly project from your account or create a new one.
 
-<figure><img src="../../.gitbook/assets/Screenshot_2022-08-04_at_10.50.42.png" alt="Creating a new Tenderly project"><figcaption><p>Creating a new Tenderly project</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot_2022-08-04_at_10.50.42 (1).png" alt="Creating a new Tenderly project"><figcaption><p>Creating a new Tenderly project</p></figcaption></figure>
 
 Next, input the name of the root directory where your code will be stored. If you want to leave the default actions, press Enter, or input a custom directory name.
 

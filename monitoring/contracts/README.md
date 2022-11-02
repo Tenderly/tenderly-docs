@@ -50,7 +50,7 @@ Read more about it [**here**](mempool-and-simulating-pending-transactions.md).
 
 When you look at the Execution Trace segment of the Transaction Overview for any transaction, you will see this button next to the Execution Search which opens the Advanced Trace Search:
 
-![](<../../.gitbook/assets/Screenshot 2022-03-15 at 14.36.13.png>)
+![](<../../.gitbook/assets/Screenshot 2022-03-15 at 14.36.13 (1).png>)
 
 You will be able to search for a trace by following categories:
 

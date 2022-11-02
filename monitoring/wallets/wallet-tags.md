@@ -16,4 +16,4 @@ Now, when you filter any transaction(s) in the [Transactions Tab](../contracts/)
 
 You can define as many tags for one wallet as you want, as well as use the same tag on multiple wallets for whatever reason you may need it.
 
-![](<../../.gitbook/assets/Screenshot 2022-03-15 at 11.55.24.png>)
+![](<../../.gitbook/assets/Screenshot 2022-03-15 at 11.54.47.png>)

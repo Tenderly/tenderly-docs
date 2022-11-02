@@ -4,11 +4,11 @@ The Visual Debugger is one of the tools people love the most. Instead of wasting
 
 **The level of detail present here doesn't exist anywhere else and reduces development time by orders of magnitude**.
 
-![](<../../.gitbook/assets/Screenshot 2021-12-22 at 10.55.44.png>)
+![](<../../.gitbook/assets/Screenshot 2021-12-22 at 10.55.18.png>)
 
 Go to the **Transactions** tab in the left navigation bar and click on a transaction from the list, or paste the transaction hash you want into the top **Explorer** bar:
 
-![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.15.20.png>)
+![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.14.57.png>)
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.15.58.png>)
 

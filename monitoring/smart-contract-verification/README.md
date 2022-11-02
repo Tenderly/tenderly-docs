@@ -42,7 +42,7 @@ Verification requires the following arguments:&#x20;
 
 &#x20;If any of these pieces of information is wrong, the process of verification fails.
 
-<figure><img src="../../.gitbook/assets/Smart Contract Verification Process" alt=""><figcaption><p>How Smart Contract verification works</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Smart Contract Verification Process (1)" alt=""><figcaption><p>How Smart Contract verification works</p></figcaption></figure>
 
 
 

@@ -15,11 +15,11 @@ There are several ways to work with forks:
 
 Let's start up a new Fork:
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.22.17.png>)
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.22.04.png>)
 
 Choose the network you want to fork and name it:
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.23.24.png>)
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.23.08.png>)
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.24.00.png>)
 
