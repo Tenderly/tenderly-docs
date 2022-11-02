@@ -7,7 +7,7 @@ Web3 Gateway usage is measured with respect to requests your dapp makes to the W
 
 To calculate the usage over a period of time, you need to multiply the number of requests by the usage footprint of the request category. For example, if your dapp makes 1000 read requests and 100 write requests, the usage is:
 
-    1000 * 1 TU + 100 * 20 TU = 2000 TU
+    1000 * 1 TU + 100 * 20 TU = 3000 TU
 
 | Category    | Description                                                                 | Usage footprint |
 | :---------- | :-------------------------------------------------------------------------- | :-------------- |
