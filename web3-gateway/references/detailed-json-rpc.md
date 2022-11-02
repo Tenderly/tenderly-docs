@@ -5,14 +5,14 @@ description: >-
 
 {% hint style='info'%}
 This page shows detailed overview of supported Ethereum JSON RPC calls.
-Find a [brief list of supported calls](references/detailed-json-rpc.md).
+Find a [brief list of supported calls](detailed-json-rpc.md).
 {% hint %}
 
 ## `eth_getBlockByHash`
 
 Returns information about a block by hash.
 
-[Brief version](references/detailed-json-rpc.md#eth_getBlockByHash)
+[Brief version](detailed-json-rpc.md#eth_getBlockByHash)
 
 **PARAMS**
 
@@ -215,7 +215,7 @@ Block object `OBJECT`
 
 Returns information about a block by number.
 
-[Brief version](references/detailed-json-rpc.md#eth_getBlockByNumber)
+[Brief version](detailed-json-rpc.md#eth_getBlockByNumber)
 
 **PARAMS**
 
@@ -592,7 +592,7 @@ Block object `OBJECT`
 
 Returns the number of transactions in a block from a block matching the given block hash.
 
-[Brief version](references/detailed-json-rpc.md#eth_getBlockTransactionCountByHash)
+[Brief version](detailed-json-rpc.md#eth_getBlockTransactionCountByHash)
 
 **PARAMS**
 
@@ -683,7 +683,7 @@ async function runGetBlockTransactionCountByHash() {
 
 Returns the number of transactions in a block matching the given block number.
 
-[Brief version](references/detailed-json-rpc.md#eth_getBlockTransactionCountByNumber)
+[Brief version](detailed-json-rpc.md#eth_getBlockTransactionCountByNumber)
 
 **PARAMS**
 
@@ -774,7 +774,7 @@ async function runGetBlockTransactionCountByNumber() {
 
 Returns the number of uncles in a block from a block matching the given block hash.
 
-[Brief version](references/detailed-json-rpc.md#eth_getUncleCountByBlockHash)
+[Brief version](detailed-json-rpc.md#eth_getUncleCountByBlockHash)
 
 **PARAMS**
 
@@ -865,7 +865,7 @@ async function runGetUncleCountByBlockHash() {
 
 Returns the number of transactions in a block matching the given block number.
 
-[Brief version](references/detailed-json-rpc.md#eth_getUncleCountByBlockNumber)
+[Brief version](detailed-json-rpc.md#eth_getUncleCountByBlockNumber)
 
 **PARAMS**
 
@@ -956,7 +956,7 @@ async function runGetUncleCountByBlockNumber() {
 
 Returns the chain ID of the current network.
 
-[Brief version](references/detailed-json-rpc.md#eth_chainId)
+[Brief version](detailed-json-rpc.md#eth_chainId)
 
 **PARAMS**
 
@@ -1041,7 +1041,7 @@ async function runChainId() {
 
 Returns an object with data about the sync status or false.
 
-[Brief version](references/detailed-json-rpc.md#eth_syncing)
+[Brief version](detailed-json-rpc.md#eth_syncing)
 
 **PARAMS**
 
@@ -1134,7 +1134,7 @@ async function runSyncing() {
 
 Returns a list of addresses owned by client.
 
-[Brief version](references/detailed-json-rpc.md#eth_accounts)
+[Brief version](detailed-json-rpc.md#eth_accounts)
 
 **PARAMS**
 
@@ -1219,7 +1219,7 @@ async function runAccounts() {
 
 Returns the number of most recent block.
 
-[Brief version](references/detailed-json-rpc.md#eth_blockNumber)
+[Brief version](detailed-json-rpc.md#eth_blockNumber)
 
 **PARAMS**
 
@@ -1304,7 +1304,7 @@ async function runBlockNumber() {
 
 Executes a new message call immediately without creating a transaction on the block chain.
 
-[Brief version](references/detailed-json-rpc.md#eth_call)
+[Brief version](detailed-json-rpc.md#eth_call)
 
 **PARAMS**
 
@@ -1436,7 +1436,7 @@ N/A
 
 Generates and returns an estimate of how much gas is necessary to allow the transaction to complete.
 
-[Brief version](references/detailed-json-rpc.md#eth_estimateGas)
+[Brief version](detailed-json-rpc.md#eth_estimateGas)
 
 **PARAMS**
 
@@ -1568,7 +1568,7 @@ N/A
 
 Returns the current price per gas in wei.
 
-[Brief version](references/detailed-json-rpc.md#eth_gasPrice)
+[Brief version](detailed-json-rpc.md#eth_gasPrice)
 
 **PARAMS**
 
@@ -1653,7 +1653,7 @@ async function runGasPrice() {
 
 Returns the current maxPriorityFeePerGas per gas in wei.
 
-[Brief version](references/detailed-json-rpc.md#eth_maxPriorityFeePerGas)
+[Brief version](detailed-json-rpc.md#eth_maxPriorityFeePerGas)
 
 **PARAMS**
 
@@ -1738,7 +1738,7 @@ async function runMaxPriorityFeePerGas() {
 
 Transaction fee history
 
-[Brief version](references/detailed-json-rpc.md#eth_feeHistory)
+[Brief version](detailed-json-rpc.md#eth_feeHistory)
 
 **PARAMS**
 
@@ -1843,7 +1843,7 @@ Fee history for the returned block range. This can be a subsection of the reques
 
 Creates a filter object, based on filter options, to notify when the state changes (logs).
 
-[Brief version](references/detailed-json-rpc.md#eth_newFilter)
+[Brief version](detailed-json-rpc.md#eth_newFilter)
 
 **PARAMS**
 
@@ -1945,7 +1945,7 @@ async function runNewFilter() {
 
 Creates a filter in the node, to notify when a new block arrives.
 
-[Brief version](references/detailed-json-rpc.md#eth_newBlockFilter)
+[Brief version](detailed-json-rpc.md#eth_newBlockFilter)
 
 **PARAMS**
 
@@ -2030,7 +2030,7 @@ async function runNewBlockFilter() {
 
 Uninstalls a filter with given id.
 
-[Brief version](references/detailed-json-rpc.md#eth_uninstallFilter)
+[Brief version](detailed-json-rpc.md#eth_uninstallFilter)
 
 **PARAMS**
 
@@ -2113,7 +2113,7 @@ N/A
 
 Polling method for a filter, which returns an array of logs which occurred since last poll.
 
-[Brief version](references/detailed-json-rpc.md#eth_getFilterChanges)
+[Brief version](detailed-json-rpc.md#eth_getFilterChanges)
 
 **PARAMS**
 
@@ -2211,7 +2211,7 @@ N/A
 
 Returns an array of all logs matching filter with given id.
 
-[Brief version](references/detailed-json-rpc.md#eth_getFilterLogs)
+[Brief version](detailed-json-rpc.md#eth_getFilterLogs)
 
 **PARAMS**
 
@@ -2309,7 +2309,7 @@ N/A
 
 Returns an array of all logs matching filter with given id.
 
-[Brief version](references/detailed-json-rpc.md#eth_getLogs)
+[Brief version](detailed-json-rpc.md#eth_getLogs)
 
 **PARAMS**
 
@@ -2681,7 +2681,7 @@ async function runGetLogs() {
 
 Returns whether the client is actively mining new blocks.
 
-[Brief version](references/detailed-json-rpc.md#eth_mining)
+[Brief version](detailed-json-rpc.md#eth_mining)
 
 **PARAMS**
 
@@ -2766,7 +2766,7 @@ async function runMining() {
 
 Returns the number of hashes per second that the node is mining with.
 
-[Brief version](references/detailed-json-rpc.md#eth_hashrate)
+[Brief version](detailed-json-rpc.md#eth_hashrate)
 
 **PARAMS**
 
@@ -2851,7 +2851,7 @@ async function runHashrate() {
 
 Returns the balance of the account of given address.
 
-[Brief version](references/detailed-json-rpc.md#eth_getBalance)
+[Brief version](detailed-json-rpc.md#eth_getBalance)
 
 **PARAMS**
 
@@ -2948,7 +2948,7 @@ async function runGetBalance() {
 
 Returns the value from a storage position at a given address.
 
-[Brief version](references/detailed-json-rpc.md#eth_getStorageAt)
+[Brief version](detailed-json-rpc.md#eth_getStorageAt)
 
 **PARAMS**
 
@@ -3053,7 +3053,7 @@ async function runGetStorageAt() {
 
 Returns the number of transactions sent from an address.
 
-[Brief version](references/detailed-json-rpc.md#eth_getTransactionCount)
+[Brief version](detailed-json-rpc.md#eth_getTransactionCount)
 
 **PARAMS**
 
@@ -3150,7 +3150,7 @@ async function runGetTransactionCount() {
 
 Returns code at a given address.
 
-[Brief version](references/detailed-json-rpc.md#eth_getCode)
+[Brief version](detailed-json-rpc.md#eth_getCode)
 
 **PARAMS**
 
@@ -3247,7 +3247,7 @@ async function runGetCode() {
 
 Submits a raw transaction.
 
-[Brief version](references/detailed-json-rpc.md#eth_sendRawTransaction)
+[Brief version](detailed-json-rpc.md#eth_sendRawTransaction)
 
 **PARAMS**
 
@@ -3353,7 +3353,7 @@ N/A
 
 Returns the information about a transaction requested by transaction hash.
 
-[Brief version](references/detailed-json-rpc.md#eth_getTransactionByHash)
+[Brief version](detailed-json-rpc.md#eth_getTransactionByHash)
 
 **PARAMS**
 
@@ -3470,7 +3470,7 @@ Transaction information `OBJECT`
 
 Returns information about a transaction by block hash and transaction index position.
 
-[Brief version](references/detailed-json-rpc.md#eth_getTransactionByBlockHashAndIndex)
+[Brief version](detailed-json-rpc.md#eth_getTransactionByBlockHashAndIndex)
 
 **PARAMS**
 
@@ -3592,7 +3592,7 @@ Transaction information `OBJECT`
 
 Returns information about a transaction by block number and transaction index position.
 
-[Brief version](references/detailed-json-rpc.md#eth_getTransactionByBlockNumberAndIndex)
+[Brief version](detailed-json-rpc.md#eth_getTransactionByBlockNumberAndIndex)
 
 **PARAMS**
 
@@ -3715,7 +3715,7 @@ Transaction information `OBJECT`
 
 Returns the receipt of a transaction by transaction hash.
 
-[Brief version](references/detailed-json-rpc.md#eth_getTransactionReceipt)
+[Brief version](detailed-json-rpc.md#eth_getTransactionReceipt)
 
 **PARAMS**
 
