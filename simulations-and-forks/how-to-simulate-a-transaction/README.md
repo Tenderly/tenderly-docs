@@ -56,7 +56,7 @@ You can also change your contract source-code by clicking on Re-Simulate and the
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.58.46 (1).png>)
 
-![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.59.16 (1).png>)
+![](<../../.gitbook/assets/Screenshot 2021-10-15 at 09.59.16 (1) (1).png>)
 
 The transaction failed again in a different place which was expected since we deleted a part of the code:
 

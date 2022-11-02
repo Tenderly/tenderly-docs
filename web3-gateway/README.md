@@ -40,22 +40,22 @@ Here are some dapp development practices that can benefit from Tenderly tools:
 * **Developer-facing practices** make the development and refinement of smart contracts more accessible and efficient. To boost your development, make sure to:
   * Debug smart contract efficiently with decoded transactions using [Debugger](../debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md) .
   * Understand gas consumption by analyzing smart contracts using [Gas Profiler](debugger/how-to-use-tenderly-debugger/).
-  * Troubleshoot transaction bugs efficiently by using Transaction Simulator.
-  * Verify bug fix correctness and gas usage improvements using Transaction Simulator with source code editing.
-  * Share smart contracts and blockchain interactions with other developers and communities using Sandbox.
+  * Troubleshoot transaction bugs efficiently by using [Transaction Simulator](../simulations-and-forks/how-to-simulate-a-transaction/).
+  * Verify bug fix correctness and gas usage improvements using Transaction Simulator with [source code editing](../simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md).
+  * Share smart contracts and blockchain interactions with other developers and communities using [Sandbox](../tenderly-sandbox.md).
 * **Quality-facing practices** support the reliability of your code and the final product. To improve these practices, you can:
-  * Complete integration testing using Forks hooked into your CI/CD process.
-  * Stage your dapp using Forks.
+  * Complete integration testing using [Tenderly Forks](../simulations-and-forks/how-to-create-a-fork/) hooked into your CI/CD process.
+  * [Stage your dapp](../simulations-and-forks/simulation-api/integration-guides/instant-staging-qa-environment-for-dapps.md) using Forks.
 * **UX-facing practices** help you create a better user experience in your dapps.
-  * Dry-run transactions for the user even before the dapp sends them to the chain by using Simulation API or Forks.
-  * Deliver data-rich notifications and improve interactivity by building automation with Web3 Actions.
+  * Dry-run transactions for the user even before the dapp sends them to the chain by using [Simulation API](../simulations-and-forks/simulation-api/) or Forks.
+  * Deliver data-rich notifications and improve interactivity by building automation with [Web3 Actions](broken-reference).
 * **Product-facing practices** enable you to improve dapp reliability and quality and inform the decision-making process.
-  * Stage your dapp for exploration and manual testing with Forks.
-  * Provide awareness of critical changes through granular Alerts.
+  * Stage your dapp for exploration and manual [testing with Forks](../simulations-and-forks/simulation-api/testing/).
+  * Provide awareness of critical changes through granular [Alerts](broken-reference).
   * Build core project automation with Web3 Actions.
-  * Create advanced monitoring to track trends of on-chain asset values and usage with Web3 Actions.
+  * [Create advanced monitoring to track trends](../web3-actions/tutorials-and-quickstarts/how-to-handle-on-chain-events.md) of on-chain asset values and usage with Web3 Actions.
   * Detect issues in production by building comprehensive monitoring with Web3 Actions and Alerting.
-  * Observe transactions as they happen with the Transaction overview.
+  * Observe transactions as they happen with the [Transaction overview](../monitoring/contracts/).
 
 ## Usage quota and rate-limiting
 
