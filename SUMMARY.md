@@ -7,6 +7,16 @@
 * [🔍 Explorer](explorer.md)
 * [🪣 Tenderly Sandbox](tenderly-sandbox.md)
 
+
+## 👨🏻‍🚀 Web3 Gateway
+
+* [Intro to Web3 Gateway](web3-gateway/README.md)
+* [Quickstart: Querying blockchain data](web3-gateway/quickstart-query-blockchain.md)
+* [References](web3-gateway/references/README.md)
+  * [Brief JSON RPC reference](web3-gateway/references/brief-json-rpc.md)
+  * [Detailed JSON RPC reference](web3-gateway/references/detailed-json-rpc.md)
+* [Pricing and usage limits](web3-gateway/pricing.md)
+
 ## 🔮 Simulations & Forks
 
 * [How to Simulate a Transaction](simulations-and-forks/how-to-simulate-a-transaction/README.md)

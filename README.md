@@ -4,7 +4,7 @@
 
 {% hint style="success" %}
 We recently had a rather big release, which includes:
-
+* ****[**Web3 Gateway**](web3-gateway/README.md)****
 * ****[**Web3 Actions**](web3-actions/intro-to-web3-actions.md)****
 * ****[**War Room Aid Kit**](debugger/war-room-aid-kit.md)****
 * ****[**Tenderly Sandbox**](tenderly-sandbox.md)****
@@ -46,11 +46,11 @@ Use all of Tenderly platform features with any wallet address!
 
 Sort and group transactions by any parameter you want and make it easier to explore and analyze robust data.
 
-****[**Visual Debugger**](debugger/how-to-use-tenderly-debugger/)****
+****[**Visual Debugger**](debugger/how-to-use-tenderly-debugger/README.md)****
 
 Inspect the transaction execution with a couple of clicks and instantly find the line your transaction reverted on.
 
-****[**State Inspector**](debugger/how-to-use-tenderly-debugger/)****
+****[**State Inspector**](debugger/how-to-use-tenderly-debugger/README.md#decoded-state-changes)****
 
 See the state of your contract at any point in a transaction and explore state changes in a granular view.
 
@@ -58,15 +58,15 @@ See the state of your contract at any point in a transaction and explore state c
 
 Visualize and analyze the behavior of your Smart Contract to spot patterns and gain a deeper insight into transaction data.
 
-****[**Real-time Alerting**](broken-reference)****
+****[**Real-time Alerting**](alerts/alerting/alert-targets/README.md)****
 
 Any time an event triggers your custom set of rules you will receive a notification on your favorite channels like Slack, Email, PagerDuty, etc.
 
-****[**Gas Profiler**](debugger/how-to-use-tenderly-debugger/)****
+****[**Gas Profiler**](debugger/how-to-use-tenderly-debugger/README.md)****
 
 Get a granular gas usage breakdown to help you optimize your Smart Contracts and lower the gas cost of your transactions.
 
-****[**Forks**](simulations-and-forks/how-to-create-a-fork/)****
+****[**Forks**](simulations-and-forks/how-to-create-a-fork/README.md)****
 
 Take your simulations a step further by creating a temporary fork of any supported network and execute multiple transactions in a row to test their behavior.
 
