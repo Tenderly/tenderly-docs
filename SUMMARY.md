@@ -7,8 +7,7 @@
 * [🔍 Explorer](explorer.md)
 * [🪣 Tenderly Sandbox](tenderly-sandbox.md)
 
-
-## 👨🏻‍🚀 Web3 Gateway
+## 🚀 Web3 Gateway
 
 * [Intro to Web3 Gateway](web3-gateway/README.md)
 * [Quickstart: Querying blockchain data](web3-gateway/quickstart-query-blockchain.md)
