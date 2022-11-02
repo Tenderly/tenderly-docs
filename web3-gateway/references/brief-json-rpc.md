@@ -5,14 +5,14 @@ description: >-
 
 {% hint style='info'%}
 This page shows a brief overview of supported Ethereum JSON RPC calls.
-Find a [detaild list of supported calls](03-detailed-json-rpc.md).
+Find a [detaild list of supported calls](detailed-json-rpc.md).
 {% hint %}
 
 ## `eth_getBlockByHash`
 
 Returns information about a block by hash.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getBlockByHash)
+[Detailed version](./detailed-json-rpc.md#eth_getBlockByHash)
 
 **RESULT**: Block information
 
@@ -98,7 +98,7 @@ N/A
 
 Returns information about a block by number.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getBlockByNumber)
+[Detailed version](./detailed-json-rpc.md#eth_getBlockByNumber)
 
 **RESULT**: Block information
 
@@ -178,7 +178,7 @@ N/A
 
 Returns the number of transactions in a block from a block matching the given block hash.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getBlockTransactionCountByHash)
+[Detailed version](./detailed-json-rpc.md#eth_getBlockTransactionCountByHash)
 
 **RESULT**: Transaction count
 
@@ -261,7 +261,7 @@ N/A
 
 Returns the number of transactions in a block matching the given block number.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getBlockTransactionCountByNumber)
+[Detailed version](./detailed-json-rpc.md#eth_getBlockTransactionCountByNumber)
 
 **RESULT**: Transaction count
 
@@ -340,7 +340,7 @@ N/A
 
 Returns the number of uncles in a block from a block matching the given block hash.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getUncleCountByBlockHash)
+[Detailed version](./detailed-json-rpc.md#eth_getUncleCountByBlockHash)
 
 **RESULT**: Uncle count
 
@@ -423,7 +423,7 @@ N/A
 
 Returns the number of transactions in a block matching the given block number.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getUncleCountByBlockNumber)
+[Detailed version](./detailed-json-rpc.md#eth_getUncleCountByBlockNumber)
 
 **RESULT**: Uncle count
 
@@ -502,7 +502,7 @@ N/A
 
 Returns the chain ID of the current network.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_chainId)
+[Detailed version](./detailed-json-rpc.md#eth_chainId)
 
 **RESULT**: Chain ID
 
@@ -579,7 +579,7 @@ N/A
 
 Returns an object with data about the sync status or false.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_syncing)
+[Detailed version](./detailed-json-rpc.md#eth_syncing)
 
 **RESULT**: Syncing status
 
@@ -656,7 +656,7 @@ N/A
 
 Returns a list of addresses owned by client.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_accounts)
+[Detailed version](./detailed-json-rpc.md#eth_accounts)
 
 **RESULT**: Accounts
 
@@ -733,7 +733,7 @@ N/A
 
 Returns the number of most recent block.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_blockNumber)
+[Detailed version](./detailed-json-rpc.md#eth_blockNumber)
 
 **RESULT**: Block number
 
@@ -810,7 +810,7 @@ N/A
 
 Executes a new message call immediately without creating a transaction on the block chain.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_call)
+[Detailed version](./detailed-json-rpc.md#eth_call)
 
 **RESULT**: Return data
 
@@ -917,7 +917,7 @@ N/A
 
 Generates and returns an estimate of how much gas is necessary to allow the transaction to complete.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_estimateGas)
+[Detailed version](./detailed-json-rpc.md#eth_estimateGas)
 
 **RESULT**: Gas used
 
@@ -1024,7 +1024,7 @@ N/A
 
 Returns the current price per gas in wei.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_gasPrice)
+[Detailed version](./detailed-json-rpc.md#eth_gasPrice)
 
 **RESULT**: Gas price
 
@@ -1101,7 +1101,7 @@ N/A
 
 Returns the current maxPriorityFeePerGas per gas in wei.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_maxPriorityFeePerGas)
+[Detailed version](./detailed-json-rpc.md#eth_maxPriorityFeePerGas)
 
 **RESULT**: Max priority fee per gas
 
@@ -1178,7 +1178,7 @@ N/A
 
 Transaction fee history
 
-[Detailed version](./03-detailed-json-rpc.md#eth_feeHistory)
+[Detailed version](./detailed-json-rpc.md#eth_feeHistory)
 
 **RESULT**: feeHistoryResult
 Fee history for the returned block range. This can be a subsection of the requested range if not all blocks are available.
@@ -1259,7 +1259,7 @@ N/A
 
 Creates a filter object, based on filter options, to notify when the state changes (logs).
 
-[Detailed version](./03-detailed-json-rpc.md#eth_newFilter)
+[Detailed version](./detailed-json-rpc.md#eth_newFilter)
 
 **RESULT**: Filter Identifier
 
@@ -1338,7 +1338,7 @@ N/A
 
 Creates a filter in the node, to notify when a new block arrives.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_newBlockFilter)
+[Detailed version](./detailed-json-rpc.md#eth_newBlockFilter)
 
 **RESULT**: Filter Identifier
 
@@ -1415,7 +1415,7 @@ N/A
 
 Uninstalls a filter with given id.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_uninstallFilter)
+[Detailed version](./detailed-json-rpc.md#eth_uninstallFilter)
 
 **RESULT**: Success
 
@@ -1494,7 +1494,7 @@ N/A
 
 Polling method for a filter, which returns an array of logs which occurred since last poll.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getFilterChanges)
+[Detailed version](./detailed-json-rpc.md#eth_getFilterChanges)
 
 **RESULT**: Log objects
 
@@ -1573,7 +1573,7 @@ N/A
 
 Returns an array of all logs matching filter with given id.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getFilterLogs)
+[Detailed version](./detailed-json-rpc.md#eth_getFilterLogs)
 
 **RESULT**: Log objects
 
@@ -1652,7 +1652,7 @@ N/A
 
 Returns an array of all logs matching filter with given id.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getLogs)
+[Detailed version](./detailed-json-rpc.md#eth_getLogs)
 
 **RESULT**: Log objects
 
@@ -1731,7 +1731,7 @@ N/A
 
 Returns whether the client is actively mining new blocks.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_mining)
+[Detailed version](./detailed-json-rpc.md#eth_mining)
 
 **RESULT**: Mining status
 
@@ -1808,7 +1808,7 @@ N/A
 
 Returns the number of hashes per second that the node is mining with.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_hashrate)
+[Detailed version](./detailed-json-rpc.md#eth_hashrate)
 
 **RESULT**: Mining status
 
@@ -1885,7 +1885,7 @@ N/A
 
 Returns the balance of the account of given address.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getBalance)
+[Detailed version](./detailed-json-rpc.md#eth_getBalance)
 
 **RESULT**: Balance
 
@@ -1968,7 +1968,7 @@ N/A
 
 Returns the value from a storage position at a given address.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getStorageAt)
+[Detailed version](./detailed-json-rpc.md#eth_getStorageAt)
 
 **RESULT**: Value
 
@@ -2057,7 +2057,7 @@ N/A
 
 Returns the number of transactions sent from an address.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionCount)
+[Detailed version](./detailed-json-rpc.md#eth_getTransactionCount)
 
 **RESULT**: Transaction count
 
@@ -2140,7 +2140,7 @@ N/A
 
 Returns code at a given address.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getCode)
+[Detailed version](./detailed-json-rpc.md#eth_getCode)
 
 **RESULT**: Bytecode
 
@@ -2223,7 +2223,7 @@ N/A
 
 Submits a raw transaction.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_sendRawTransaction)
+[Detailed version](./detailed-json-rpc.md#eth_sendRawTransaction)
 
 **RESULT**: Transaction hash
 
@@ -2325,7 +2325,7 @@ N/A
 
 Returns the information about a transaction requested by transaction hash.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionByHash)
+[Detailed version](./detailed-json-rpc.md#eth_getTransactionByHash)
 
 **RESULT**: Transaction information
 
@@ -2408,7 +2408,7 @@ N/A
 
 Returns information about a transaction by block hash and transaction index position.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionByBlockHashAndIndex)
+[Detailed version](./detailed-json-rpc.md#eth_getTransactionByBlockHashAndIndex)
 
 **RESULT**: Transaction information
 
@@ -2494,7 +2494,7 @@ N/A
 
 Returns information about a transaction by block number and transaction index position.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionByBlockNumberAndIndex)
+[Detailed version](./detailed-json-rpc.md#eth_getTransactionByBlockNumberAndIndex)
 
 **RESULT**: Transaction information
 
@@ -2577,7 +2577,7 @@ N/A
 
 Returns the receipt of a transaction by transaction hash.
 
-[Detailed version](./03-detailed-json-rpc.md#eth_getTransactionReceipt)
+[Detailed version](./detailed-json-rpc.md#eth_getTransactionReceipt)
 
 **RESULT**: Receipt Information
 
