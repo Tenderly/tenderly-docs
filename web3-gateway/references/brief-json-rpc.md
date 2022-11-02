@@ -4,13 +4,13 @@ description: A brief overview of supported Ethereum JSON RPC calls
 
 # Brief JSON RPC reference
 
-This page shows a brief overview of supported Ethereum JSON RPC calls. Find a [detailed list of supported calls](03-detailed-json-rpc.md).
+This page shows a brief overview of supported Ethereum JSON RPC calls. Find a [detailed list of supported calls](references/brief-json-rpc.md).
 
 ### `eth_getBlockByHash`
 
 Returns information about a block by hash.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getBlockByHash)
+[Detailed version](references/brief-json-rpc.md#eth\_getBlockByHash)
 
 **RESULT**: Block information
 
@@ -115,7 +115,7 @@ async function runGetBlockByHash() {
 
 Returns information about a block by number.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getBlockByNumber)
+[Detailed version](references/brief-json-rpc.md#eth\_getBlockByNumber)
 
 **RESULT**: Block information
 
@@ -396,7 +396,7 @@ async function runGetBlockByNumber() {
 
 Returns the number of transactions in a block from a block matching the given block hash.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getBlockTransactionCountByHash)
+[Detailed version](references/brief-json-rpc.md#eth\_getBlockTransactionCountByHash)
 
 **RESULT**: Transaction count
 
@@ -466,7 +466,7 @@ async function runGetBlockTransactionCountByHash() {
 
 Returns the number of transactions in a block matching the given block number.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getBlockTransactionCountByNumber)
+[Detailed version](references/brief-json-rpc.md#eth\_getBlockTransactionCountByNumber)
 
 **RESULT**: Transaction count
 
@@ -536,7 +536,7 @@ async function runGetBlockTransactionCountByNumber() {
 
 Returns the number of uncles in a block from a block matching the given block hash.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getUncleCountByBlockHash)
+[Detailed version](references/brief-json-rpc.md#eth\_getUncleCountByBlockHash)
 
 **RESULT**: Uncle count
 
@@ -606,7 +606,7 @@ async function runGetUncleCountByBlockHash() {
 
 Returns the number of transactions in a block matching the given block number.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getUncleCountByBlockNumber)
+[Detailed version](references/brief-json-rpc.md#eth\_getUncleCountByBlockNumber)
 
 **RESULT**: Uncle count
 
@@ -676,7 +676,7 @@ async function runGetUncleCountByBlockNumber() {
 
 Returns the chain ID of the current network.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_chainId)
+[Detailed version](references/brief-json-rpc.md#eth\_chainId)
 
 **RESULT**: Chain ID
 
@@ -742,7 +742,7 @@ async function runChainId() {
 
 Returns an object with data about the sync status or false.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_syncing)
+[Detailed version](references/brief-json-rpc.md#eth\_syncing)
 
 **RESULT**: Syncing status
 
@@ -808,7 +808,7 @@ async function runSyncing() {
 
 Returns a list of addresses owned by client.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_accounts)
+[Detailed version](references/brief-json-rpc.md#eth\_accounts)
 
 **RESULT**: Accounts
 
@@ -874,7 +874,7 @@ async function runAccounts() {
 
 Returns the number of most recent block.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_blockNumber)
+[Detailed version](references/brief-json-rpc.md#eth\_blockNumber)
 
 **RESULT**: Block number
 
@@ -940,7 +940,7 @@ async function runBlockNumber() {
 
 Executes a new message call immediately without creating a transaction on the block chain.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_call)
+[Detailed version](references/brief-json-rpc.md#eth\_call)
 
 **RESULT**: Return data
 
@@ -1029,7 +1029,7 @@ N/A
 
 Generates and returns an estimate of how much gas is necessary to allow the transaction to complete.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_estimateGas)
+[Detailed version](references/brief-json-rpc.md#eth\_estimateGas)
 
 **RESULT**: Gas used
 
@@ -1118,7 +1118,7 @@ N/A
 
 Returns the current price per gas in wei.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_gasPrice)
+[Detailed version](references/brief-json-rpc.md#eth\_gasPrice)
 
 **RESULT**: Gas price
 
@@ -1184,7 +1184,7 @@ async function runGasPrice() {
 
 Returns the current maxPriorityFeePerGas per gas in wei.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_maxPriorityFeePerGas)
+[Detailed version](references/brief-json-rpc.md#eth\_maxPriorityFeePerGas)
 
 **RESULT**: Max priority fee per gas
 
@@ -1250,7 +1250,7 @@ async function runMaxPriorityFeePerGas() {
 
 Transaction fee history
 
-[Detailed version](03-detailed-json-rpc.md#eth\_feeHistory)
+[Detailed version](references/brief-json-rpc.md#eth\_feeHistory)
 
 **RESULT**: feeHistoryResult Fee history for the returned block range. This can be a subsection of the requested range if not all blocks are available.
 
@@ -1335,7 +1335,7 @@ async function runFeeHistory() {
 
 Creates a filter object, based on filter options, to notify when the state changes (logs).
 
-[Detailed version](03-detailed-json-rpc.md#eth\_newFilter)
+[Detailed version](references/brief-json-rpc.md#eth\_newFilter)
 
 **RESULT**: Filter Identifier
 
@@ -1405,7 +1405,7 @@ async function runNewFilter() {
 
 Creates a filter in the node, to notify when a new block arrives.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_newBlockFilter)
+[Detailed version](references/brief-json-rpc.md#eth\_newBlockFilter)
 
 **RESULT**: Filter Identifier
 
@@ -1471,7 +1471,7 @@ async function runNewBlockFilter() {
 
 Uninstalls a filter with given id.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_uninstallFilter)
+[Detailed version](references/brief-json-rpc.md#eth\_uninstallFilter)
 
 **RESULT**: Success
 
@@ -1537,7 +1537,7 @@ N/A
 
 Polling method for a filter, which returns an array of logs which occurred since last poll.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getFilterChanges)
+[Detailed version](references/brief-json-rpc.md#eth\_getFilterChanges)
 
 **RESULT**: Log objects
 
@@ -1603,7 +1603,7 @@ N/A
 
 Returns an array of all logs matching filter with given id.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getFilterLogs)
+[Detailed version](references/brief-json-rpc.md#eth\_getFilterLogs)
 
 **RESULT**: Log objects
 
@@ -1669,7 +1669,7 @@ N/A
 
 Returns an array of all logs matching filter with given id.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getLogs)
+[Detailed version](references/brief-json-rpc.md#eth\_getLogs)
 
 **RESULT**: Log objects
 
@@ -8040,7 +8040,7 @@ async function runGetLogs() {
 
 Returns whether the client is actively mining new blocks.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_mining)
+[Detailed version](references/brief-json-rpc.md#eth\_mining)
 
 **RESULT**: Mining status
 
@@ -8106,7 +8106,7 @@ async function runMining() {
 
 Returns the number of hashes per second that the node is mining with.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_hashrate)
+[Detailed version](references/brief-json-rpc.md#eth\_hashrate)
 
 **RESULT**: Mining status
 
@@ -8172,7 +8172,7 @@ async function runHashrate() {
 
 Returns the balance of the account of given address.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getBalance)
+[Detailed version](references/brief-json-rpc.md#eth\_getBalance)
 
 **RESULT**: Balance
 
@@ -8244,7 +8244,7 @@ async function runGetBalance() {
 
 Returns the value from a storage position at a given address.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getStorageAt)
+[Detailed version](references/brief-json-rpc.md#eth\_getStorageAt)
 
 **RESULT**: Value
 
@@ -8318,7 +8318,7 @@ async function runGetStorageAt() {
 
 Returns the number of transactions sent from an address.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionCount)
+[Detailed version](references/brief-json-rpc.md#eth\_getTransactionCount)
 
 **RESULT**: Transaction count
 
@@ -8390,7 +8390,7 @@ async function runGetTransactionCount() {
 
 Returns code at a given address.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getCode)
+[Detailed version](references/brief-json-rpc.md#eth\_getCode)
 
 **RESULT**: Bytecode
 
@@ -8462,7 +8462,7 @@ async function runGetCode() {
 
 Submits a raw transaction.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_sendRawTransaction)
+[Detailed version](references/brief-json-rpc.md#eth\_sendRawTransaction)
 
 **RESULT**: Transaction hash
 
@@ -8549,7 +8549,7 @@ N/A
 
 Returns the information about a transaction requested by transaction hash.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionByHash)
+[Detailed version](references/brief-json-rpc.md#eth\_getTransactionByHash)
 
 **RESULT**: Transaction information
 
@@ -8639,7 +8639,7 @@ async function runGetTransactionByHash() {
 
 Returns information about a transaction by block hash and transaction index position.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionByBlockHashAndIndex)
+[Detailed version](references/brief-json-rpc.md#eth\_getTransactionByBlockHashAndIndex)
 
 **RESULT**: Transaction information
 
@@ -8731,7 +8731,7 @@ async function runGetTransactionByBlockHashAndIndex() {
 
 Returns information about a transaction by block number and transaction index position.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionByBlockNumberAndIndex)
+[Detailed version](references/brief-json-rpc.md#eth\_getTransactionByBlockNumberAndIndex)
 
 **RESULT**: Transaction information
 
@@ -8823,7 +8823,7 @@ async function runGetTransactionByBlockNumberAndIndex() {
 
 Returns the receipt of a transaction by transaction hash.
 
-[Detailed version](03-detailed-json-rpc.md#eth\_getTransactionReceipt)
+[Detailed version](references/brief-json-rpc.md#eth\_getTransactionReceipt)
 
 **RESULT**: Receipt Information
 
