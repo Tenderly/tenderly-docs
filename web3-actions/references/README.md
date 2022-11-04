@@ -2,7 +2,7 @@
 description: Find everything you need to create, operate, and troubleshoot Web3 Actions.
 ---
 
-# Reference
+# References
 
 Follow a step-by-step guide and a cheat sheet of CLI commands for initializing, building, and deploying Web3 Actions:&#x20;
 
@@ -42,8 +42,8 @@ Follow a step-by-step guide to set up email notifications about failed Web3 Acti
 
 Discover how to monitor incidents in Web3 Action execution, apply appropriate solutions, and track issue resolution progress:
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="error-reporting.md" %}
+[error-reporting.md](error-reporting.md)
 {% endcontent-ref %}
 
 Find out how to stop, upgrade, or manually run a Web3 Action using the Tenderly Dashboard:
