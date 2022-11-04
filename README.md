@@ -4,27 +4,28 @@
 
 {% hint style="success" %}
 We recently had a rather big release, which includes:
-* ****[**Web3 Gateway**](web3-gateway/README.md)****
-* ****[**Web3 Actions**](web3-actions/intro-to-web3-actions.md)****
-* ****[**War Room Aid Kit**](debugger/war-room-aid-kit.md)****
-* ****[**Tenderly Sandbox**](tenderly-sandbox.md)****
-* ****[**Debugger Chrome Extension**](debugger/tenderly-debugger-extension.md)****
+
+- [**Web3 Gateway**](web3-gateway/README.md)
+- [**Web3 Actions**](web3-actions/intro-to-web3-actions.md)
+- [**War Room Aid Kit**](debugger/war-room-aid-kit.md)
+- [**Tenderly Sandbox**](tenderly-sandbox.md)
+- [**Debugger Chrome Extension**](debugger/tenderly-debugger-extension.md)
 
 \
-You can read more about it right here :point\_down:
+You can read more about it right here :point_down:
 {% endhint %}
 
 {% embed url="https://blog.tenderly.co/new-features-web3-actions-war-rooms-sandbox-debugger-extension/" %}
 
-****[**Contract Verification**](https://docs.tenderly.co/monitoring/contract-verification)****
+[**Contract Verification**](https://docs.tenderly.co/monitoring/contract-verification)
 
-Contract verification is an essential step in enabling Debugger, Simulator, Web3 Actions, and other Tenderly features and ensuring they work seamlessly with your Smart Contracts. Tenderly offers several methods of verification, bringing different levels of control, visibility, and flexibility.&#x20;
+Contract verification is an essential step in enabling Debugger, Simulator, Web3 Actions, and other Tenderly features and ensuring they work seamlessly with your Smart Contracts. Tenderly offers several methods of verification, bringing different levels of control, visibility, and flexibility.
 
 {% content-ref url="monitoring/smart-contract-verification/" %}
 [smart-contract-verification](monitoring/smart-contract-verification/)
 {% endcontent-ref %}
 
-****[**Simulations**](simulations-and-forks/how-to-simulate-a-transaction/)****
+[**Simulations**](simulations-and-forks/how-to-simulate-a-transaction/)
 
 Know how your transactions will behave before you execute them, estimate the gas usage, and test potential bug fixes. **You will find extensive Simulation API documentation with use cases, code examples, and our GitHub repo on the following link:**
 
@@ -32,44 +33,44 @@ Know how your transactions will behave before you execute them, estimate the gas
 [simulation-api](simulations-and-forks/simulation-api/)
 {% endcontent-ref %}
 
-****[**Web3 Actions**](web3-actions/intro-to-web3-actions.md)&#x20;
+[**Web3 Actions**](web3-actions/intro-to-web3-actions.md)
 
-Run your code in response to on-chain (or even off-chain) events, usually on your smart contracts.&#x20;
+Run your code in response to on-chain (or even off-chain) events, usually on your smart contracts.
 
 You can use Web3 Actions to create custom scenarios in order to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](alerts/creating-an-alert/) section, automating testing or live production execution in the [**Simulator**](simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](simulations-and-forks/how-to-create-a-fork/), or anything else that comes to (your) mind.
 
-****[**Wallet Monitoring**](monitoring/wallets/)
+[**Wallet Monitoring**](monitoring/wallets/)
 
 Use all of Tenderly platform features with any wallet address!
 
-****[**Transaction filtering**](debugger/how-to-use-tenderly-debugger/transaction-overview.md)****
+[**Transaction filtering**](debugger/how-to-use-tenderly-debugger/transaction-overview.md)
 
 Sort and group transactions by any parameter you want and make it easier to explore and analyze robust data.
 
-****[**Visual Debugger**](debugger/how-to-use-tenderly-debugger/README.md)****
+[**Visual Debugger**](debugger/how-to-use-tenderly-debugger/README.md)
 
 Inspect the transaction execution with a couple of clicks and instantly find the line your transaction reverted on.
 
-****[**State Inspector**](debugger/how-to-use-tenderly-debugger/README.md#decoded-state-changes)****
+[**State Inspector**](debugger/how-to-use-tenderly-debugger/README.md#decoded-state-changes)
 
 See the state of your contract at any point in a transaction and explore state changes in a granular view.
 
-****[**Smart Contract Analytics**](analytics/general-analytics.md)****
+[**Smart Contract Analytics**](analytics/general-analytics.md)
 
 Visualize and analyze the behavior of your Smart Contract to spot patterns and gain a deeper insight into transaction data.
 
-****[**Real-time Alerting**](alerts/alerting/alert-targets/README.md)****
+[**Real-time Alerting**](alerts/alerting/alert-targets/README.md)
 
 Any time an event triggers your custom set of rules you will receive a notification on your favorite channels like Slack, Email, PagerDuty, etc.
 
-****[**Gas Profiler**](debugger/how-to-use-tenderly-debugger/README.md)****
+[**Gas Profiler**](debugger/how-to-use-tenderly-debugger/README.md)
 
 Get a granular gas usage breakdown to help you optimize your Smart Contracts and lower the gas cost of your transactions.
 
-****[**Forks**](simulations-and-forks/how-to-create-a-fork/README.md)****
+[**Forks**](simulations-and-forks/how-to-create-a-fork/README.md)
 
 Take your simulations a step further by creating a temporary fork of any supported network and execute multiple transactions in a row to test their behavior.
 
-****[**Integrations**](monitoring/integrations.md)****
+[**Integrations**](monitoring/integrations.md)
 
 Use our powerful API to access real-time blockchain data necessary for your business. Integrate Tenderly with your product to deliver more value faster.
