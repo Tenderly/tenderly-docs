@@ -37,7 +37,7 @@ Follow these guides to quickly get started with building Web3 Actions via the br
 Setting up Web3 Actions requires you to write JavaScript code for your functions. Building your Web3 Actions using Tenderly CLI includes defining triggers in a [yaml configuration file](references/project-structure.md#the-tenderly.yaml-file-structure). The defined trigger and yaml configuration become an integral part of your project’s codebase.
 
 * [Deploy Web3 Actions via Tenderly Dashboard](broken-reference): Learn how to set up and deploy Web3 Actions directly in your browser.
-* [Deploy Web3 Actions via Tenderly CLI:](tutorials-and-quickstarts/deploy-web3-actions-via-dashboard.md) Learn how to install the Tenderly CLI, define triggers using the YAML configuration, and set up and deploy Web3 Actions through the command line.
+* [Deploy Web3 Actions via Tenderly CLI](tutorials-and-quickstarts/deploy-web3-action-via-cli.md): Learn how to install the Tenderly CLI, define triggers using the YAML configuration, and set up and deploy Web3 Actions through the command line.
 
 {% hint style="info" %}
 To set up Web3 Actions triggered by transaction-related events, you must use the CLI-based approach.
