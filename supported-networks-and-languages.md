@@ -1,3 +1,7 @@
+---
+description: A list of all Ethereum-compatible networks supported in Tenderly
+---
+
 # 🗺 Supported Networks & Languages
 
 {% tabs %}
@@ -5,10 +9,6 @@
 <img src=".gitbook/assets/image (80) (1) (1) (1) (1).png" alt="" data-size="line"> Mainnet
 
 <img src=".gitbook/assets/image (85) (1) (1) (1).png" alt="" data-size="line"> Kovan
-
-<img src=".gitbook/assets/image (73) (1).png" alt="" data-size="line"> Ropsten
-
-<img src=".gitbook/assets/image (75) (1) (1).png" alt="" data-size="line"> Rinkeby
 
 <img src=".gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Gorli
 
@@ -20,7 +20,7 @@
 
 <img src=".gitbook/assets/image (76) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet
 
-<img src=".gitbook/assets/image.png" alt="" data-size="line"> Gnosis Chain
+<img src=".gitbook/assets/image (3).png" alt="" data-size="line"> Gnosis Chain
 
 <img src=".gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA
 
@@ -40,13 +40,19 @@
 
 <img src=".gitbook/assets/image (78) (1) (1).png" alt="" data-size="line"> Fantom Testnet
 
-<img src=".gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum\*
+<img src=".gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum
 
-<img src=".gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet\*
+<img src=".gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet
 
 <img src=".gitbook/assets/image (69) (1).png" alt="" data-size="line"> Kintsugi
 
 <img src=".gitbook/assets/image (79) (1).png" alt="" data-size="line"> Kiln
+
+<img src=".gitbook/assets/image.png" alt="" data-size="line"> Sepolia
+
+<img src=".gitbook/assets/mainbrand-1.svg" alt="" data-size="line"> Moonbeam[\*](supported-networks-and-languages.md#footnotes)
+
+<img src=".gitbook/assets/mainbrand-1 (1).svg" alt="" data-size="line"> Moonriver[\*](supported-networks-and-languages.md#footnotes)
 {% endtab %}
 
 {% tab title="Languages" %}
@@ -58,8 +64,20 @@
 
 ### Footnotes&#x20;
 
-{% hint style="success" %}
-Arbitrum (Nitro) is now fully supported across all Tenderly features. \
-\
-The only exception is the Gas Profiler which is fully supported for Nitro blocks, but will not be available for pre-Nitro blocks. If this breaks your flow or in general presents an issue, please contact our support on Intercom so we can help with alternative solutions.
+{% hint style="info" %}
+Moonbeam and Moonriver networks integration is currently in **Phase 1**, with limited Tenderly tooling support.
+
+**Phase 1:** partial integration. These are disabled or partially supported tools and services:
+
+* Tenderly skips transactions with (a) differences in execution path, (b) and transactions with precompiled contracts. \
+  _Skipped transactions will not be accessible through the Tenderly platform._
+* Gas profiler is disabled due slight imprecisions in gas calculations.
+* Web3 Actions and Alerts are completely disabled due to skipping transactions.
+* The remaining Tenderly features will operate as expected.
+
+**Phase 2**: complete integration with all Tenderly tools supported
+
+* Supporting transactions involving precompiled contracts.
+* Enabling Gas profiler with full accuracy
+* Enabling Alerts and Web3 Actions.
 {% endhint %}
