@@ -23,44 +23,44 @@ To calculate the usage over a period of time, you need to multiply the number of
 
 <details>
 
-<summary>Read Methdos</summary>
+<summary>Read Methods</summary>
 
-- `eth_accounts`
-- `eth_blockNumber`
-- `eth_chainId`
-- `eth_coinbase`
-- `eth_feeHistory`
-- `eth_gasPrice`
-- `eth_getBalance`
-- `eth_getBlockByHash`
-- `eth_getBlockByNumber`
-- `eth_getBlockReceipts`
-- `eth_getBlockTransactionCountByHash`
-- `eth_getBlockTransactionCountByNumber`
-- `eth_getCode`
-- `eth_getStorageAt`
-- `eth_getTransactionByBlockHashAndIndex`
-- `eth_getTransactionByBlockNumberAndIndex`
-- `eth_getTransactionByHash`
-- `eth_getTransactionCount`
-- `eth_getTransactionReceipt`
-- `eth_getUncleByBlockHashAndIndex`
-- `eth_getUncleByBlockNumberAndIndex`
-- `eth_getUncleCountByBlockHash`
-- `eth_getUncleCountByBlockNumber`
-- `eth_hashrate`
-- `eth_maxPriorityFeePerGas`
-- `eth_mining`
-- `eth_newBlockFilter`
-- `eth_newFilter`
-- `eth_protocolVersion`
-- `eth_syncing`
-- `eth_uninstallFilter`
-- `net_listening`
-- `net_peerCount`
-- `net_version`
-- `web3_clientVersion`
-- `web3_sha3`
+* `eth_accounts`
+* `eth_blockNumber`
+* `eth_chainId`
+* `eth_coinbase`
+* `eth_feeHistory`
+* `eth_gasPrice`
+* `eth_getBalance`
+* `eth_getBlockByHash`
+* `eth_getBlockByNumber`
+* `eth_getBlockReceipts`
+* `eth_getBlockTransactionCountByHash`
+* `eth_getBlockTransactionCountByNumber`
+* `eth_getCode`
+* `eth_getStorageAt`
+* `eth_getTransactionByBlockHashAndIndex`
+* `eth_getTransactionByBlockNumberAndIndex`
+* `eth_getTransactionByHash`
+* `eth_getTransactionCount`
+* `eth_getTransactionReceipt`
+* `eth_getUncleByBlockHashAndIndex`
+* `eth_getUncleByBlockNumberAndIndex`
+* `eth_getUncleCountByBlockHash`
+* `eth_getUncleCountByBlockNumber`
+* `eth_hashrate`
+* `eth_maxPriorityFeePerGas`
+* `eth_mining`
+* `eth_newBlockFilter`
+* `eth_newFilter`
+* `eth_protocolVersion`
+* `eth_syncing`
+* `eth_uninstallFilter`
+* `net_listening`
+* `net_peerCount`
+* `net_version`
+* `web3_clientVersion`
+* `web3_sha3`
 
 </details>
 
@@ -68,11 +68,11 @@ To calculate the usage over a period of time, you need to multiply the number of
 
 <summary>Compute Methods</summary>
 
-- `eth_call`
-- `eth_estimateGas`
-- `eth_getFilterChanges`
-- `eth_getFilterLogs`
-- `eth_getLogs`
+* `eth_call`
+* `eth_estimateGas`
+* `eth_getFilterChanges`
+* `eth_getFilterLogs`
+* `eth_getLogs`
 
 </details>
 
@@ -80,7 +80,7 @@ To calculate the usage over a period of time, you need to multiply the number of
 
 <summary>Write Methods</summary>
 
-- `eth_sendRawTransaction`
+* `eth_sendRawTransaction`
 
 </details>
 

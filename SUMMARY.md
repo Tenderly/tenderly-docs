@@ -6,6 +6,7 @@
 * [🫂 Teams & Collaboration](teams-and-collaboration/README.md)
 * [🔍 Explorer](explorer.md)
 * [🪣 Tenderly Sandbox](tenderly-sandbox.md)
+* [🌊 Ethereum Development Worfkflow](ethereum-development-worfkflow.md)
 
 ## 🚀 Web3 Gateway
 
