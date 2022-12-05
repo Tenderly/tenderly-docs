@@ -11,7 +11,7 @@ The Tenderly development platform is a tightly integrated set of tools and servi
 
 With Tenderly, you have the tools you need to build, debug, test, and optimize your smart contracts during development. You can address some early aspects of development, including user experience, dapp interactivity and reliability, and business logic automation. Additionally, Tenderly tools complement other tools and frameworks for building and deploying smart contracts, helping you get the best possible outcome.&#x20;
 
-Tenderly Web3 Gateway, a production-ready node solution, enables R\&D, as well as deploying and operating your smart contracts as they go live. This node also provides uninterrupted multi-region access to Ethereum networks, especially for read-heavy workloads.
+Tenderly Web3 Gateway, a production-ready node solution, enables research and development (R\&D), as well as deploying and operating your smart contracts as they go live. This node also provides uninterrupted multi-region access to Ethereum networks, especially for read-heavy workloads.
 
 Here are some dapp development practices that can benefit from Tenderly tools:
 
@@ -36,9 +36,9 @@ This group of practices foster the reliability of your code and the final produc
 
 ### **UX-facing practices**
 
-This type of practices help you create a better user experience in your dapps.
+To create a better user experience in your dapps, you can introduce practices that allow you to:
 
-* Dry-run transactions for the user even before the dapp sends them to the chain by using [Simulation API](simulations-and-forks/simulation-api/) or Forks.
+* Dry-run transactions for the user even before your dapp sends them to the chain by using [Simulation API](simulations-and-forks/simulation-api/) or Forks.
 * Deliver data-rich notifications and improve interactivity by building automation with [Web3 Actions](web3-gateway/broken-reference/).
 * Run your dapp in [demo/playground mode](simulations-and-forks/simulation-api/integration-guides/dapp-playground-mode.md) so your users can try it out in an isolated environment.
 
