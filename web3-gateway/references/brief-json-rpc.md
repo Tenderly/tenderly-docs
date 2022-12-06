@@ -2190,92 +2190,9 @@ async function runGetCode() {
 {% endtab %}
 {% endtabs %}
 
-### `eth_sendTransaction`
+### ~~`eth_sendTransaction`~~
 
-Signs and submits a transaction.
-
-[Detailed version](detailed-json-rpc.md#eth\_sendTransaction)
-
-**RESULT**: Transaction hash
-
-{% tabs %}
-{% tab title="Raw" %}
-```json
-{
-  "id": 0,
-  "jsonrpc": "2.0",
-  "method": "eth_sendTransaction",
-  "params": [
-    {
-      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      "value": "0x0",
-      "data": "0x2e7700f0"
-    }
-  ]
-}
-```
-{% endtab %}
-
-{% tab title="cURL" %}
-```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
--X POST \
--H "Content-Type: application/json" \
--d \
-'{
-  "id": 0,
-  "jsonrpc": "2.0",
-  "method": "eth_sendTransaction",
-  "params": [
-    {
-      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      "value": "0x0",
-      "data": "0x2e7700f0"
-    }
-  ]
-}'
-```
-{% endtab %}
-
-{% tab title="ethers" %}
-```javascript
-// Installation Instructions: https://docs.ethers.io/v5/getting-started/#installing
-const { ethers } = require("ethers");
-
-async function runSendTransaction() {
-  // Initialize an ethers instance
-  const provider = new ethers.providers.JsonRpcProvider(
-    "https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY"
-  );
-
-  // Execute method
-  const result = await provider.send("eth_sendTransaction", [
-    {
-      from: "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      to: "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      value: "0x0",
-      data: "0x2e7700f0",
-    },
-  ]);
-
-  // Print the output to console
-  console.log(result);
-}
-
-(async () => {
-  runSendTransaction();
-})();
-```
-{% endtab %}
-
-{% tab title="Response" %}
-```json
-N/A
-```
-{% endtab %}
-{% endtabs %}
+Tenderly doesn't store private keys, so this method is not supported
 
 ### `eth_sendRawTransaction`
 
