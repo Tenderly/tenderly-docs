@@ -178,7 +178,6 @@ async function runSimulateTransaction() {
   * **to** `STRING`: hex encoded address
   * **gas** `STRING`: hex encoded unsigned 64 byte integer representing event gas
   * **gasUsed** `STRING`: hex encoded unsigned 64 byte integer representing event gasUsed
-  * **address** `STRING`: The address of the created contract (only for `CREATE`/`CREATE2`)
   * **value** `STRING`: hex encoded unsigned 64 byte integer representing event value in wei
   * **error** `STRING`: low-level error from virtual machine
   * **errorMessage** `STRING`: extracted error message in case of revert
