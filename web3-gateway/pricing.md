@@ -1,13 +1,13 @@
 ---
 description: >-
   The Web3 Gateway usage and rate-limiting is expressed in Tenderly Units (TU),
-  while read, write and compute requests contribute with different weights to
-  the total.
+  while read, write, compute and advanced compute requests contribute with
+  different weights to the total.
 ---
 
 # Pricing and usage limits
 
-Web3 Gateway usage is measured with respect to requests your dapp makes to the Web3 Gateway JSON RPC. The requests are divided into three categories, each having different usage footprint, measured in **Tenderly Units** (**TU**): **Read (1 TU)**, **Write (20 TU)**, **Compute (4 TU)** and **Advance** **Compute (40 TU)**,
+Web3 Gateway usage is measured with respect to requests your dapp makes to the Web3 Gateway JSON RPC. The requests are divided into three categories, each having different usage footprint, measured in **Tenderly Units** (**TU**): **Read (1 TU)**, **Write (20 TU)**, **Compute (4 TU)** and **Advanced** **Compute (40 TU)**,
 
 To calculate the usage over a period of time, you need to multiply the number of requests by the usage footprint of the request category. For example, if your dapp makes 1000 read requests and 100 write requests, the usage is:
 

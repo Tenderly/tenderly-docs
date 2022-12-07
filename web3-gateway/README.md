@@ -27,7 +27,6 @@ Here are useful guides to help you get started with Tenderly Web3 Gateway:
 * [Quickstart by querying blockchain data through Web3 Gateway](quickstart-query-blockchain.md), using a visual request builder in the Tenderly Dashboard or copying the request as runnable code.
 * Browse [brief reference of supported JSON RPC endpoints](references/brief-json-rpc.md), with examples and method invocation scripts.
 * Browse [detailed reference of standard JSON RPC endpoints](references/detailed-json-rpc.md) supported by Web3 Gateway, drilling into the structure of request and response objects.
-* Browse custom [Tenderly JSON RPC endpoints](references/simulate-json-rpc.md). The custom calls extend the standard Ethereum node functionality, and are found in the `tenderly_` namespace.
 
 ## Usage quota and rate-limiting
 
