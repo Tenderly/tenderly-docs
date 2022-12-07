@@ -100,7 +100,7 @@ Depending on your plan, you'll have the monthly quota and usage rate limiting sh
 {% hint style="info" %}
 All RPC endpoints are included Free, Dev, Pro and Early Adopters plans.&#x20;
 
-For Free, Dev and Pro plans higher rate limits are likely to be observed.
+For Free, Dev and Pro plans higher rate limits are likely to be observed than the ones listed below.
 {% endhint %}
 
 | Parameter\plan | Free/Dev/Pro         | Early Adopters |
