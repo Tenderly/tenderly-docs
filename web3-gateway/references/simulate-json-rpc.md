@@ -93,7 +93,7 @@ const { ethers } = require("ethers");
 async function runSimulateTransaction() {
   // Initialize an ethers instance
   const provider = new ethers.providers.JsonRpcProvider(
-    "https://canary.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY"
+    "https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY"
   );
 
   // Execute method
