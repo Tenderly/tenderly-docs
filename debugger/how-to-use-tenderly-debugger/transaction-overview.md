@@ -49,5 +49,5 @@ Thanks to the previous/next button you’ll be able to navigate each steps of th
 So using Tenderly to debug the transaction we were able to see where and how the transaction failed in few minutes.
 
 {% hint style="info" %}
-Thanks to [jdourlens](https://ethereumdev.io/author/peter/) from [EthereumDev](https://ethereumdev.io/debugging-your-ethereum-transactions-with-tenderly/) for this breakdown :)
+Thanks to jdourlens from EthereumDev for this breakdown :)
 {% endhint %}
