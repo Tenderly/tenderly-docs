@@ -1,8 +1,8 @@
 # Investigating a Hack (Cover Protocol)
 
-This example will showcase briefly how Tenderly can be used to analyse and even prevent hacks such as what happened with the [Cover Protocol](https://twitter.com/CoverProtocol).
+This example will showcase briefly how the all-in-one Tenderly platform can be used to analyze and even prevent hacks such as what happened with the [Cover Protocol](https://twitter.com/CoverProtocol).
 
-The Cover Protocol got hacked because of the inability of code to update the cache in a storage. This could've potentially be prevented by using an **** [**alerting feature on important functions**](../../alerts/alerting/alert-targets/) like deposit/withdrawal and state changes to prevent an attack.&#x20;
+The Cover Protocol got hacked because of the inability of code to update the cache in storage. This could have potentially been prevented by using an **** [**alerting feature on important functions**](../../alerts/alerting/alert-targets/) like deposit/withdrawal and state changes to prevent an attack.&#x20;
 
 In order to manually analyze the hack, we need to [**import the smart contract**](../../monitoring/smart-contracts/) `Blacksmith` in which the vulnerability was found. If you know the exact name of the affected protocol or vulnerable contract you can also search for it directly.
 
@@ -12,7 +12,7 @@ In order to manually analyze the hack, we need to [**import the smart contract**
 Note - you can only search for contracts which have been publicly verified on Tenderly or Etherscan. [**Read more about how to verify a contract on Tenderly right here.**](../../monitoring/smart-contract-verification/verifying-a-smart-contract.md)****
 {% endhint %}
 
-If the contract is not publicly verified, you can do it yourself in order to be able to use it with Tenderly. If the project is open-source (like Cover), you can go to the project's [GitHub repo](https://github.com/CoverProtocol/cover-token-mining), find the contract you want to use (and it's source code) and verify it yourself.
+If the contract is not publicly verified, you can do it yourself in order to be able to use it with Tenderly. If the project is open-source (like Cover), you can go to the project's [GitHub repo](https://github.com/CoverProtocol/cover-token-mining), find the contract you want to use (and its source code) and verify it yourself.
 
 ![](https://lh4.googleusercontent.com/vWVW6dAj1J6d83juyoXZ3cR9DTMmVgXu9PYHUUL4\_Mv5LRAJ8wnXSckv72tEv-C96zOeutweZaLAx4OEaVBon1PkZOGMBmPwKLlTBJuPEAaPkZSDjwwtip3Kzx1d8B-UzYA7wRkE)
 
@@ -34,7 +34,7 @@ Now, after importing and verifying the contract let us analyze the hack itself. 
 
 Now, let's open this error in [**Tenderly Debugger**](./). On line 118 we see `Pool memory pool = pools[_lpToken];` in the deposit function where data is cached, and later updated on line 125 where we see `_claimCoverRewards(pool, miner);`&#x20;
 
-Contract used the cache data because the data itself stayed in memory; that’s why later the contract calculated the function using that data. Cache was not updated which resulted in this hack:
+The contract used the cache data because the data itself stayed in memory; that’s why later the contract calculated the function using that data. Cache was not updated which resulted in this hack:
 
 `miner.rewardWriteoff = miner.amount.mul(pool.accRewardsPerToken).div(CAL_MULTIPLIER);`&#x20;
 
@@ -89,9 +89,9 @@ emit Deposit(msg.sender, _lpToken, _amount);
 
 * A new pool was approved for liquidity mining, merely hours before the hack. This pool is perfectly normal but since it was new, the blacksmith contract didn’t have any LP token of this pool.
 * The attacker deposited some tokens of this pool into the Blacksmith contract.
-* The Blacksmith contract keeps track of rewards on a per token basis. If a lot of tokens are locked, the per token reward will be small. If very few tokens are locked, the per token reward will be large. The relevant variable is called `accRewardsPerToken` and is calculated as `totalPoolRewards / totalTokenBalance`.
+* The Blacksmith contract keeps track of rewards on a per-token basis. If a lot of tokens are locked, the per-token reward will be small. If very few tokens are locked, the per-token reward will be large. The relevant variable is called `accRewardsPerToken` and is calculated as `totalPoolRewards / totalTokenBalance`.
 * The attacker then withdrew almost all of the LP tokens from the Blacksmith contract, reducing the `totalTokenBalance` amount to almost zero.
-* The attacker then deposited some tokens of this pool again into the Blacksmith contract. This is where the bug showed its true colours. Since the `totalTokenBalance` was reduced a lot in the previous transaction, the newly calculated `accRewardsPerToken` shot up. The contract uses `rewardWriteoff` to keep the effect of `accRewardsPerToken` in check. However, due to the bug, the old (small) value of `accRewardsPerToken` was used when calculating the `rewardWriteoff` value. Due to this, the large value of `accRewardsPerToken` remained unchecked.
+* The attacker then deposited some tokens of this pool again into the Blacksmith contract. This is where the bug showed its true colors. Since the `totalTokenBalance` was reduced a lot in the previous transaction, the newly calculated `accRewardsPerToken` shot up. The contract uses `rewardWriteoff` to keep the effect of `accRewardsPerToken` in check. However, due to the bug, the old (small) value of `accRewardsPerToken` was used when calculating the `rewardWriteoff` value. Due to this, the large value of `accRewardsPerToken` remained unchecked.
 * The attacker then withdrew their rewards. Since there was a large, unchecked value in `accRewardsPerToken`, the total reward paid out of the system got inflated and the **contract ended up minting 40,796,131,214,802,500,000 COVER tokens**.
 
 {% hint style="info" %}
