@@ -34,7 +34,7 @@ The following examples show how to use the package to invoke the Web3 Action and
 
 Check out the multisig wallet example and the way it uses **@tenderly/actions-test** to run the action function locally.
 
-[**Multisig wallet and running action function locally**](https://github.com/Tenderly/demos/tree/demo/encode-eth-safari/multisig-wallet#2-run-it-locally)
+****[**Multisig wallet and running action function locally**](https://github.com/Tenderly/examples-web3-actions/tree/main/multisig-wallet#2-run-it-locally)****
 
 ### Example: running an Action function within a script
 
