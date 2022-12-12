@@ -1,17 +1,17 @@
 ---
 description: >-
-  Learn about Verification: how it works, difference between private and public
-  verification and how to do it in Tenderly. Use the UI or code-based
-  approaches, from zero-code to full-code solutions.
+  Find out how contract verification works, choose between private and public
+  verification, and learn how to do it in Tenderly. Use the UI or code-based
+  approaches, from zero- to full-code solutions.
 ---
 
 # Smart Contract Verification
 
-Contract verification allows web3 tools to decode the information about transactions and show it in a humanly-readable form. It's the cornerstone for building more sophisticated tools and and services around those smart contracts.&#x20;
+Contract verification allows Web3 tools to decode the information about transactions and show it in a humanly-readable form. It's the cornerstone for building more sophisticated tools and services around those smart contracts.&#x20;
 
 In Tenderly, verification is an essential step in enabling Debugger, Simulator, Web3 Actions, and other Tenderly features and ensuring they work seamlessly with your Smart Contracts.&#x20;
 
-Tenderly offers several methods of verification, bringing different levels of control, visibility, and flexibility. You can verify your contracts using the Dashboard or go for a code-based approach using hardhat-tenderly library or the CLI.
+Tenderly offers several methods of verification, bringing different levels of control, visibility, and flexibility. You can verify your contracts using the Dashboard or go for a code-based approach using the hardhat-tenderly library or the CLI.
 
 In the building phase, your Smart Contract can undergo **private verification**, so it’s visible only within your Tenderly project. When you’re ready to share your work, you can do a **public verification**, which makes the verified contract available to anybody who might interact or integrate with your Smart Contract.&#x20;
 
