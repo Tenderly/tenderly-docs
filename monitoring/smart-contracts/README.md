@@ -6,7 +6,7 @@ description: >-
 
 # Smart Contracts
 
-As a form of an opt-in Smart Contract registry, Tenderly allows you to find any verified public contract and add it to your project. After adding a contract, you can start debugging transactions, doing simulations, or handling more advanced monitoring on the contracts that are important for your project.
+As a form of an opt-in Smart Contract registry, the all-in-one Tenderly development platform allows you to find any verified public contract and add it to your project. After adding a contract, you can start debugging transactions, doing simulations, or handling more advanced monitoring on the contracts that are important for your project.
 
 To find and add a contract of interest, search for it by name or address. If you can't find the contract you need, it probably means it's not verified. You can still add it to your project to monitor it and verify it later on.&#x20;
 
