@@ -51,7 +51,7 @@ You can use Web3 Actions to create custom scenarios to further deepen your debug
 
 Use all Tenderly features with any wallet address!
 
-**Transaction filtering**
+****[**Transaction Filtering**](monitoring/contracts/#transaction-filtering)****
 
 Sort and group transactions by any parameter you want and make it easier to explore and analyze robust data.
 
