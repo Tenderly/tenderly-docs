@@ -1,6 +1,6 @@
 # 📣 General Info
 
-[**Tenderly**](https://tenderly.co/) is an all-in-one **Web3 development platform** that accelerates smart contract development by combining debugging tools with observability and infrastructure building blocks. The Tenderly platform provides a fully integrated experience that enables developers to build, test, monitor, and operate smart contracts in one place.&#x20;
+[**Tenderly**](https://tenderly.co/) is an all-in-one **Web3 development platform** that accelerates smart contract development by combining debugging tools with observability and blockchain node infrastructure. The Tenderly platform provides a fully integrated experience that enables developers to build, test, monitor, and operate smart contracts in one place.&#x20;
 
 {% hint style="success" %}
 We recently had a rather big release, which includes:
