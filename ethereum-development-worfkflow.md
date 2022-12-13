@@ -7,7 +7,7 @@ description: >-
 
 # 🌊 Ethereum Development Worfkflow
 
-The Tenderly development platform is a tightly integrated set of tools and services, supporting various engineering practices throughout the dapp development lifecycle. When you go into production, it enables you to monitor smart contract usage, detect and troubleshoot issues, and build a better dapp user experience.
+The all-in-one Tenderly development platform is a tightly integrated set of tools and services, supporting various engineering practices throughout the dapp development lifecycle. When you go into production, it enables you to monitor smart contract usage, detect and troubleshoot issues, and build a better dapp user experience.
 
 With Tenderly, you have the tools you need to build, debug, test, and optimize your smart contracts during development. You can address some early aspects of development, including user experience, dapp interactivity and reliability, and business logic automation. Additionally, Tenderly tools complement other tools and frameworks for building and deploying smart contracts, helping you get the best possible outcome.&#x20;
 
