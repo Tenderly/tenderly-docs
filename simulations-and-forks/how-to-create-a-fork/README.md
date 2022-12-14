@@ -1,15 +1,22 @@
+---
+description: >-
+  Learn all about Tenderly Forks, an isolated development and testing
+  environment. Find out how to create a Fork from the Dashboard and simulate
+  complex tx scenarios without deploying to a testnet.
+---
+
 # How to Create a Fork
 
-A **Fork** is an isolated environment that reflects the most recent data and state of the Mainnet or any other of the 20+ networks Tenderly supports. It allows you to "duplicate" the preferred network and use it for the purposes of your project, without submitting changes to the actual network. Forks expose a JSON-RPC URL, so they behave as any node would.
+A **Tenderly Fork** is an isolated environment that reflects the most recent data and state of the Mainnet or any other of the 20+ networks Tenderly supports. It allows you to "duplicate" the selected network and use it for the purposes of your project, without submitting changes to the actual network. Forks expose a JSON-RPC URL, so they behave as any node would.
 
-Forks also enable you to chain multiple Tenderly Simulations, so one impacts the subsequent ones. This way, you can test complex transaction scenarios while using live on-chain data. You can even examine how certain transactions would have transpired at a specific point in the past by choosing a historical block number. &#x20;
+Forks also enable you to chain multiple Tenderly simulations, so one impacts the subsequent ones. This way, you can test complex transaction scenarios while using live on-chain data. You can even examine how certain transactions would have transpired at a specific point in the past by choosing a historical block number. &#x20;
 
-&#x20;As an environment for running Simulations, Forks allow you to control every aspect of that  environment using [customization APIs](../simulation-api/tenderly-fork-customization-via-api/), from simulated balances in wallets to the passage of time.
+As an environment for running simulations, Forks allow you to control every aspect of that environment using [customization APIs](../simulation-api/tenderly-fork-customization-via-api/), from simulated balances in wallets to the passage of time.
 
-There are several ways to work with forks:
+There are several ways to work with Tenderly Forks:
 
-* Create forks and perform simulations using the Dashboard (covered in this guide)
-* Explore the [programmatic approach to creating forks](https://docs.tenderly.co/simulations-and-forks/simulation-api#2-create-a-fork-environment), using them with Ethers to [perform simulations](sending-transactions-to-forks.md), and different ways to [integrate forks in your project](https://docs.tenderly.co/simulations-and-forks/simulation-api#2-create-a-fork-environment).
+* Create a Fork and perform simulations using the Dashboard (covered in this guide)
+* Explore the [programmatic approach to creating Forks](https://docs.tenderly.co/simulations-and-forks/simulation-api#2-create-a-fork-environment), using them with Ethers to [perform simulations](sending-transactions-to-forks.md), and different ways to [integrate forks in your project](https://docs.tenderly.co/simulations-and-forks/simulation-api#2-create-a-fork-environment).
 
 ## Working with Forks using the Dashboard
 
@@ -27,7 +34,7 @@ You can choose the block from which you want to fork the chosen network, either 
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.25.01.png>)
 
-Regardless of the chosen block, we can now create a Simulation on our newly created Fork:
+Regardless of the chosen block, we can now create a simulation on our newly created Fork:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-15 at 10.27.32.png>)
 
@@ -39,9 +46,7 @@ You can use either public or [**custom contracts**](../how-to-simulate-a-transac
 
 All that is left to do is fill out the fork simulation parameters, click **Simulate Transaction** and that's it - you can now run as many simulations as you want on your fork!
 
-
-
-#### A few important notes to be aware of when using the Forks feature:
+#### A few important notes to be aware of when using Tenderly Forks:
 
 {% hint style="warning" %}
 When you are creating a **Fork** from the **block number N**, the **Simulations** you run on that Fork **will run in block number N and not N + 1**.&#x20;
