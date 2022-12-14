@@ -1,10 +1,10 @@
 # Configuration of API Access
 
-Besides using the Tenderly platform via Dashboard, you can also interact with all of our services via Tenderly API. You’ll want to use the API when you need to do things such as programmatically creating a Fork, retrieving all Forks you have created in your project, running Simulation batches and so on, or perhaps simulate the execution of an arbitrary transaction.
+Besides using the all-in-one Tenderly development platform via the Dashboard, you can also interact with all of our services via Tenderly API. Use the API when you need to do things such as programmatically creating a Fork, retrieving all Forks you have created in your project, running simulation batches, and so on, or perhaps simulate the execution of an arbitrary transaction.
 
 ## Get an API key
 
-To get your Access Token, go to the [**Settings > Authorization**](https://dashboard.tenderly.co/account/authorization) and click on **Create Access Token**. If you want to create an organization token you can do so from your [organization’s settings page](https://dashboard.tenderly.co/organizations).
+To get your Access Token, go to [**Settings > Authorization**](https://dashboard.tenderly.co/account/authorization) and click on **Create Access Token**. If you want to create an organization token you can do so from your [organization’s settings page](https://dashboard.tenderly.co/organizations).
 
 The token you get will be used in API authentication.
 
@@ -42,7 +42,7 @@ You can extract it from the dashboard URL and place these in a safe place:
 
 `https://dashboard.tenderly.co/account/TENDERLY_USER/project/TENDERLY_PROJECT/`
 
-And the example of usage:
+Here's an example of usage:
 
 ```tsx
 const { TENDERLY_USER, TENDERLY_PROJECT } = process.env
