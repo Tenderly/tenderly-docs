@@ -38,6 +38,8 @@ export const anAxiosOnTenderly = () =>
 
 With Tenderly API you can either do operations that are related to your particular project or a specific Fork. In this case, you’ll also need to specify your project’s slug and the user: `TENDERLY_USER` and `TENDERLY_PROJECT`.&#x20;
 
+Note: For projects that are owned by an Organization the `TENDERLY_USER` will be the Organization name. The `TENDERLY_PROJECT` value DOES NOT include the organizational slug.
+
 You can extract it from the dashboard URL and place these in a safe place:
 
 `https://dashboard.tenderly.co/account/TENDERLY_USER/project/TENDERLY_PROJECT/`
