@@ -44,10 +44,6 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 <img src=".gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet
 
-<img src=".gitbook/assets/image (69) (1).png" alt="" data-size="line"> Kintsugi
-
-<img src=".gitbook/assets/image (79) (1).png" alt="" data-size="line"> Kiln
-
 <img src=".gitbook/assets/image.png" alt="" data-size="line"> Sepolia
 
 <img src=".gitbook/assets/mainbrand-1.svg" alt="" data-size="line"> Moonbeam[\*](supported-networks-and-languages.md#footnotes)
