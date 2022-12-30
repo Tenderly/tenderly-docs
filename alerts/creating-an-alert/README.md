@@ -3,7 +3,7 @@
 {% embed url="https://vimeo.com/637795807" %}
 
 {% hint style="warning" %}
-Before creating an alert, you need to configure a destination. If you haven't done that yet, [check out how to configure Alert destinations.](../alerting/alert-targets/configuring-alert-destinations.md)
+Before creating an alert, you need to configure a destination. If you haven't done that yet, [check out how to configure Alert destinations.](../configuring-alert-destinations.md)
 {% endhint %}
 
 ### Get an alert when a transaction fails
@@ -14,7 +14,7 @@ To get alerted whenever any of your Smart Contracts fail, make sure to follow th
 
 Once you set this up, you'll get an instant notification if a transaction fails. This way, you can act immediately instead of waiting for your dApp users to tell you that something isn’t working. Take a look at the following Alert example:
 
-![](<../../.gitbook/assets/image (28).png>)
+![](<../../.gitbook/assets/image (28) (1).png>)
 
 For more information, learn [how to set up Alerts for Smart Contracts in real time](https://blog.tenderly.co/how-to-set-up-real-time-alerting-for-smart-contracts-with-tenderly/).
 

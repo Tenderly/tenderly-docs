@@ -101,11 +101,8 @@
 
 ## 🔔 Alerts
 
-* [Webhook Notifications](alerts/alerting/README.md)
-  * [Rule Types](alerts/alerting/rule-types.md)
-  * [Alert Targets](alerts/alerting/alert-targets/README.md)
-    * [Configuring Alert Destinations](alerts/alerting/alert-targets/configuring-alert-destinations.md)
-    * [Custom Webhook](alerts/alerting/alert-targets/custom-webhook.md)
+* [Intro to Alerts](alerts/intro-to-alerts.md)
+* [How to use webhooks for alerting](alerts/how-to-use-webhooks-for-alerting.md)
 * [Creating an Alert](alerts/creating-an-alert/README.md)
   * [Successful Transaction](alerts/creating-an-alert/successful-transaction.md)
   * [Failed Transaction](alerts/creating-an-alert/failed-transaction.md)
@@ -113,13 +110,16 @@
   * [Event Emit](alerts/creating-an-alert/event-emit.md)
   * [Event Parameter](alerts/creating-an-alert/event-parameter.md)
   * [ERC20 Token Transfer](alerts/creating-an-alert/erc20-token-transfer.md)
-  * [Whitelisted Callers](alerts/creating-an-alert/whitelisted-callers.md)
-  * [Blacklisted Callers](alerts/creating-an-alert/blacklisted-callers.md)
+  * [Allowlisted Callers](alerts/creating-an-alert/whitelisted-callers.md)
+  * [Blocklisted Callers](alerts/creating-an-alert/blacklisted-callers.md)
   * [ETH Balance](alerts/creating-an-alert/eth-balance.md)
   * [Transaction Value](alerts/creating-an-alert/transaction-value.md)
   * [State Change](alerts/creating-an-alert/state-change.md)
   * [View Function](alerts/creating-an-alert/view-function.md)
   * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
+* [Alert Destinations](alerts/configuring-alert-destinations.md)
+* [Alert Targets](alerts/alert-targets.md)
+* [Rule Types](alerts/rule-types.md)
 
 ## 🐞 Debugger
 

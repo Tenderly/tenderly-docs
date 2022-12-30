@@ -1,10 +1,10 @@
-# Blacklisted Callers
+# Blocklisted Callers
 
 ![](<../../.gitbook/assets/Creating an Alert - Blacklisted Callers 1.png>)
 
 #### Introduction
 
-The Blacklisted Caller alert triggers whenever an address from this list calls one of your contracts. This type of alert is one of the favourite security-oriented alerts because it sends you a **notification whenever someone who isn’t whitelisted calls your contract**.
+The Blocklisted Caller alert triggers whenever an address from this list calls one of your contracts. This type of alert is one of the favourite security-oriented alerts because it sends you a **notification whenever someone who isn’t whitelisted calls your contract**.
 
 #### Example 1
 
@@ -22,9 +22,9 @@ Tenderly has a smart email delivery algorithm. You'll get notified instantly whe
 
 #### Example 2
 
-Here's another example that will help you create an alert that will trigger every time a blacklisted address calls contracts from your Project.
+Here's another example that will help you create an alert that will trigger every time a blocklisted address calls contracts from your Project.
 
 * [Add a new Smart Contract to Projects](https://docs.tenderly.co/monitoring/smart-contracts) through one of the available options.
-* Click the **Alerting** tab in the left side bar **—>** **New Alert** **—>** **Blacklisted Callers —> Project —>** Paste the address you want to blacklist & click the **Add** button **—> Next —>** Choose an Alert Destination **—> Save.**
-* Start receiving notifications whenever blacklisted addresses call the Smart Contract from your project.
+* Click the **Alerting** tab in the left side bar **—>** **New Alert** **—>** **Blocklisted Callers —> Project —>** Paste the address you want to blocklist & click the **Add** button **—> Next —>** Choose an Alert Destination **—> Save.**
+* Start receiving notifications whenever blocklisted addresses call the Smart Contract from your project.
 * You have the [option to edit the Alert](https://docs.tenderly.co/alerts/creating-an-alert/editing-an-alert) after setting it up. Feel free to rename it or add a description, alert level, and multiple destinations.

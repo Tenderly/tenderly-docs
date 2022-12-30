@@ -67,7 +67,7 @@ See the state of your contract at any point in a transaction and explore state c
 
 Visualize and analyze the behavior of your smart contract to spot patterns and gain a deeper insight into transaction data.
 
-[**Real-time Alerting**](alerts/alerting/alert-targets/)
+[**Real-time Alerting**](alerts/alert-targets.md)
 
 Any time an event triggers your custom set of rules you will receive a notification on your favorite channels like Slack, Email, PagerDuty, etc.
 

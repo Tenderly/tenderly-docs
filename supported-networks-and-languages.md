@@ -20,7 +20,7 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 <img src=".gitbook/assets/image (76) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet
 
-<img src=".gitbook/assets/image (3).png" alt="" data-size="line"> Gnosis Chain
+<img src=".gitbook/assets/image (3) (2).png" alt="" data-size="line"> Gnosis Chain
 
 <img src=".gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA
 
@@ -44,7 +44,7 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 <img src=".gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet
 
-<img src=".gitbook/assets/image.png" alt="" data-size="line"> Sepolia
+<img src=".gitbook/assets/image (102).png" alt="" data-size="line"> Sepolia
 
 <img src=".gitbook/assets/mainbrand-1.svg" alt="" data-size="line"> Moonbeam[\*](supported-networks-and-languages.md#footnotes)
 

@@ -199,12 +199,12 @@ Returns information about a block by number.
 
 **PARAMS**
 
-1. **Block**
+1\. **Block**
 
 * `STRING` Block number
 * `ENUM` of Block tag `earliest|finalized|safe|latest|pending`
 
-1. **Hydrated transactions** `BOOLEAN` hydrated
+2\. **Hydrated transactions** `BOOLEAN` hydrated
 
 {% tabs %}
 {% tab title="Raw" %}
@@ -1029,10 +1029,21 @@ Executes a new message call immediately without creating a transaction on the bl
   * **storageKeys** (_optional_) `ARRAY` of `STRING` 32 byte hex value
 * **chainId** (_optional_) `STRING` chainId: Chain ID that this transaction is valid on.
 
-1. **Block** (_optional_)
+**2. Block** (_optional_)
 
 * `STRING` Block number
 * `ENUM` of Block tag `earliest|finalized|safe|latest|pending`
+
+**3. Overrides** (_optional_) `MAP`: mapping from an account (address) to override specification
+
+* **key** `STRING`: the account this override applies to
+* **value** `OBJECT`: the override specification
+  * **nonce** (_optional_) `STRING`: hex encoded 8 byte nonce override for the account
+  * **code** (_optional_) `STRING`: data of the code override for the account
+  * **balance** (_optional_) `STRING`: hex encoded 32 byte balance override for the account in wei
+  * **stateDiff** (_optional_) `MAP`: mapping of storage key to storage value override
+    * **key** `STRING`: the storage key
+    * **value** `STRING`: the value override for the given storrage key
 
 {% tabs %}
 {% tab title="Raw" %}

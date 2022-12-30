@@ -30,7 +30,7 @@ You’ll be prompted to confirm your decision. Click the **Stop Action** button 
 
 While you’re still on the page of the stopped Web3 Action, click on the **Start Action** button from the top right page menu.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="Restarting a stopped Web3 Action"><figcaption><p>Restarting a stopped Web3 Action</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt="Restarting a stopped Web3 Action"><figcaption><p>Restarting a stopped Web3 Action</p></figcaption></figure>
 
 You’ll be prompted to confirm your decision. Click the **Start Action** button to confirm.
 

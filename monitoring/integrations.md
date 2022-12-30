@@ -626,7 +626,7 @@ contract('Calculator', function (accounts) {
 
 We can run the truffle test --network tenderly command to see if we’ve set up everything properly:
 
-![](<../.gitbook/assets/image (31).png>)
+![](<../.gitbook/assets/image (31) (1).png>)
 
 You can see that we get a stack trace that gives us enough information to fix the issue.
 

@@ -27,10 +27,10 @@ After setting this up, whenever a DAI transaction fails, you'll receive a detail
 
 As you can see, the whole error stack trace can be found in your Sentry dashboard:
 
-![](<../../.gitbook/assets/image (48).png>)
+![](<../../.gitbook/assets/image (48) (1).png>)
 
 PagerDuty gives you a more straightforward insight into the issue:
 
 ![](<../../.gitbook/assets/image (58).png>)
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../.gitbook/assets/image (8) (1).png>)

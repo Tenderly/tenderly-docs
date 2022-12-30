@@ -26,7 +26,7 @@ Fortunately, the debugging tool enable us to go deeper to understand how the tra
 
 The first part involves Dy/Dx protocol that can be used as a flash loan platform. We can see that the flash loan has something to do with TetherToken (USDT). Then the second part involves a call to the swap function of 1inch DEX aggregator:
 
-![](<../../.gitbook/assets/image (12).png>)
+![](<../../.gitbook/assets/image (12) (1).png>)
 
 If you overlay a function you’ll have the option to move to the debugger view of the selected state, we have this for the swap function:
 
@@ -44,7 +44,7 @@ If we go in the debugger view of this call we’ll be able to get details:
 
 Thanks to the previous/next button you’ll be able to navigate each steps of the transaction and see that the return amount (one step before) was - 18.953135705079702716:
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (14) (1).png>)
 
 So using Tenderly to debug the transaction we were able to see where and how the transaction failed in few minutes.
 
