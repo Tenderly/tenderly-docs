@@ -74,6 +74,28 @@
   * [Error Reporting](web3-actions/references/error-reporting.md)
 * [Usage Rate Limits](web3-actions/usage-rate-limits.md)
 
+## 🔔 Alerts
+
+* [Intro to Alerts](alerts/intro-to-alerts.md)
+* [How to Use Webhooks For Alerting](alerts/how-to-use-webhooks-for-alerting.md)
+* [Creating an Alert](alerts/creating-an-alert/README.md)
+  * [Successful Transaction](alerts/creating-an-alert/successful-transaction.md)
+  * [Failed Transaction](alerts/creating-an-alert/failed-transaction.md)
+  * [Function Call](alerts/creating-an-alert/function-call.md)
+  * [Event Emit](alerts/creating-an-alert/event-emit.md)
+  * [Event Parameter](alerts/creating-an-alert/event-parameter.md)
+  * [ERC20 Token Transfer](alerts/creating-an-alert/erc20-token-transfer.md)
+  * [Allowlisted Callers](alerts/creating-an-alert/whitelisted-callers.md)
+  * [Blocklisted Callers](alerts/creating-an-alert/blacklisted-callers.md)
+  * [ETH Balance](alerts/creating-an-alert/eth-balance.md)
+  * [Transaction Value](alerts/creating-an-alert/transaction-value.md)
+  * [State Change](alerts/creating-an-alert/state-change.md)
+  * [View Function](alerts/creating-an-alert/view-function.md)
+  * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
+* [Alert Destinations](alerts/configuring-alert-destinations.md)
+* [Alert Targets](alerts/alert-targets.md)
+* [Rule Types](alerts/rule-types.md)
+
 ## 🦅 Monitoring
 
 * [Transaction Overview](monitoring/contracts/README.md)
@@ -98,28 +120,6 @@
   * [Wallet Analytics](monitoring/wallets/wallet-analytics.md)
   * [Wallet Tags](monitoring/wallets/wallet-tags.md)
 * [Integrations](monitoring/integrations.md)
-
-## 🔔 Alerts
-
-* [Intro to Alerts](alerts/intro-to-alerts.md)
-* [How to use webhooks for alerting](alerts/how-to-use-webhooks-for-alerting.md)
-* [Creating an Alert](alerts/creating-an-alert/README.md)
-  * [Successful Transaction](alerts/creating-an-alert/successful-transaction.md)
-  * [Failed Transaction](alerts/creating-an-alert/failed-transaction.md)
-  * [Function Call](alerts/creating-an-alert/function-call.md)
-  * [Event Emit](alerts/creating-an-alert/event-emit.md)
-  * [Event Parameter](alerts/creating-an-alert/event-parameter.md)
-  * [ERC20 Token Transfer](alerts/creating-an-alert/erc20-token-transfer.md)
-  * [Allowlisted Callers](alerts/creating-an-alert/whitelisted-callers.md)
-  * [Blocklisted Callers](alerts/creating-an-alert/blacklisted-callers.md)
-  * [ETH Balance](alerts/creating-an-alert/eth-balance.md)
-  * [Transaction Value](alerts/creating-an-alert/transaction-value.md)
-  * [State Change](alerts/creating-an-alert/state-change.md)
-  * [View Function](alerts/creating-an-alert/view-function.md)
-  * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
-* [Alert Destinations](alerts/configuring-alert-destinations.md)
-* [Alert Targets](alerts/alert-targets.md)
-* [Rule Types](alerts/rule-types.md)
 
 ## 🐞 Debugger
 
