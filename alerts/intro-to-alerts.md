@@ -2,12 +2,10 @@
 description: >-
   Alerts allow you to listen for on-chain events and receive notifications when
   they occur in a place most convenient for you and your team, like email,
-  Slack, or PageDuty.
+  Slack, or PagerDuty.
 ---
 
 # Intro to Alerts
-
-
 
 {% hint style="success" %}
 **🎉 Webhooks released!**
@@ -48,7 +46,7 @@ Below is a list of all the Alert Types and a brief example of a common use case.
 | [Event Emitted](https://docs.tenderly.co/alerts/creating-an-alert/successful-transaction)          | Triggers when a specific event is emitted from a contract. For example, this trigger can be used to monitor every time a spender is approved to transfer tokens on behalf of the owner.                                                  |
 | [Event Parameter](https://docs.tenderly.co/alerts/creating-an-alert/event-parameter)               | Alerts you when an event parameter has a particular value. You can use this Alert trigger to monitor when a particular address is approved to transfer tokens on behalf of the owner.                                                    |
 | [ERC20 Token Transfer](https://docs.tenderly.co/alerts/creating-an-alert/erc20-token-transfer)     | Triggers when an ERC20 transfer event is emitted from a contract, allowing you to track when you or someone moves tokens. This can be useful for monitoring suspicious wallets during or after an exploit.                               |
-| [Allowlisted callers](creating-an-alert/whitelisted-callers.md)                                    | Notifies you when an address that is not on this list calls your smart contract. This Alert can be used for monitoring if an address outside the “allowed” list attempts to call a function that’s reserved only for specific addresses. |
+| [Allowlisted Callers](creating-an-alert/whitelisted-callers.md)                                    | Notifies you when an address that is not on this list calls your smart contract. This Alert can be used for monitoring if an address outside the “allowed” list attempts to call a function that’s reserved only for specific addresses. |
 | [Blocklisted Callers](creating-an-alert/blacklisted-callers.md)                                    | Notifies you whenever an address from this list calls your contracts.                                                                                                                                                                    |
 | [ETH Balance](creating-an-alert/eth-balance.md)                                                    | Triggers when the ETH balance of an address falls below a threshold. If you are a member of a DAO that is governed by a smart contract, you can set up this alert to notify you when the DAO's balance falls below a certain threshold.  |
 | [Transaction Value](creating-an-alert/transaction-value.md)                                        | Notifies you when a transaction value matches set conditions. This alert is useful in situations when a transaction with more than a certain amount of ETH calls a contract.                                                             |
