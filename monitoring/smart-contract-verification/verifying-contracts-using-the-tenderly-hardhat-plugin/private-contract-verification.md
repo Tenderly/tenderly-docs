@@ -12,13 +12,13 @@ Add the following `tenderly` configuration property to your `hardhat.config.ts` 
 // File: hardhat.config.ts
 // –-snip–-
 const config: HardhatUserConfig = {
-  solidity: "0.8.9",
+  solidity: "0.8.17",
   networks: {
 //    --snip—-
   },
 + tenderly: {
-+   project: "my-project-slug",
-+   username: "my-username",
++   project: "project",
++   username: "username",
 +   privateVerification: true,
 + },
 };
@@ -28,13 +28,11 @@ export default config;
 
 The `tenderly` section of the Hardhat user configuration consists of:
 
-| Paramater           | Description                                                                                                                                                                                                                 |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| username            | Your username                                                                                                                                                                                                               |
-| project             | Your project slug                                                                                                                                                                                                           |
-| privateVerification | Boolean. Default value: `false`.                                                                                                                                                                                            |
-| deploymentsDir      | The path to a directory where the Tenderly Hardhat plugin stores the intermediary information about deployments. Optional. Default value: \`deployments.                                                                    |
-| forkNetwork         | When running with `--network tenderly` and `networks.tenderly` is not specified in the hardhat user config, the plugin creates a Fork in Tenderly based on the given network ID and connects Ethers to that Fork. Optional. |
+| Paramater           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| username            | <p>Username can be your own and the username of the organization. Which one, it depends on who is the owner of the project you are trying to verify your contracts on. If the project belongs to the organization you are part of, It should be filled with <code>organization username</code> , otherwise your own username.<br><br>The quickest and most secure way to make sure to which party the project belongs to is to look at the <code>url</code> of the particular project. You will see something like: <br><code>https://dashboard.tenderly.co/Tenderly/project/contracts</code><br>So you can take the username and project from there. In this case the username is <code>Tenderly</code> and the project is <code>project</code>.</p> |
+| project             | Your project slug                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| privateVerification | Boolean. Default value: `false`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 To try it out, run any of the deployment scripts:
 

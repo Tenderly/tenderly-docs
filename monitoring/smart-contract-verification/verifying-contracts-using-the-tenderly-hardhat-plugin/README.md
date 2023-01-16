@@ -11,7 +11,7 @@ When it comes to the Tenderly Hardhat plugin, there are 3 ways to verify your Sm
 
 * **Automatic**: The verification happens seamlessly just after the contract is deployed. You don’t have to take any additional steps.
 * **Simple manual**: You need to call the verification explicitly (`tenderly.verify()`), which requires you to pass a minimal configuration object: the name and the address.
-* **Advanced manual**: You must call the verification explicitly (`tenderly.verifyAPI()`). This requires you to pass a very detailed configuration object: all the contracts involved, their source, the addresses they’re deployed at, all the libraries used, and Solidity compiler configuration.
+* **Advanced manual**: You must call the verification explicitly (`tenderly.verifyMultiCompilerAPI()`). This requires you to pass a very detailed configuration object: all the contracts involved, their source, the addresses they’re deployed at, all the libraries used, and Solidity compiler configuration.
 
 Before starting the process of verification using one of these methods, you need to set up your development environment.
 

@@ -39,7 +39,7 @@ After deploying the contract, you can verify it using the Tenderly Hardhat plugi
 
 To successfully verify the contract using the `.verify()` method, you need to pass a configuration object. The object consists of 2 fields:
 
-* the exact **name** of the Smart Contract as it is in the source file
+* the exact **name** of the Smart Contract as it is in the source file, or a fully qualified contract name like "contracts/A/Token.sol:Token".
 * the **address** of your deployed Smart Contract&#x20;
 
 If you want to verify multiple contracts, you need to repeat verification for each one.
@@ -95,7 +95,8 @@ Take a look at the code example below that demonstrates the advanced manual veri
 With more power over configuring the verification process, you need to do provide the following key information for each contract you’re verifying (the `contracts` list):
 
 * **For contracts**: Specify the **source code** of the Greeter Smart Contract and the **address** it’s deployed to on a **specific network** (or several networks).
-* **For libraries**: Specify a list of all the libraries referenced by the contract as additional contracts, with the same information you’d provide to specify a contract.
+* **For libraries**: Specify a list of all the libraries referenced by the contract as additional contracts, with the same information you’d provide to specify a contract. If already deployed, you can paste the address to `compiler.settings.libraries` parameter like you would paste in solidity compiler input.
+*
 
 ```tsx
 // File: scripts/greeter/manual-advanced.ts
@@ -103,7 +104,7 @@ import { readFileSync } from "fs";
 import { ethers, tenderly } from "hardhat";
 
 export async function main() {
-  // deploy stuff but later pretend it's been deployed ages ago on Ropsten.
+  // deploy stuff but later pretend it's been deployed ages ago on Sepolia.
   const Greeter = await ethers.getContractFactory("Greeter");
   const greeter = await Greeter.deploy("Hello, Manual Hardhat!");
 
@@ -111,44 +112,45 @@ export async function main() {
   const greeterAddress = greeter.address;
   console.log("Manual Simple: {Greeter} deployed to", greeterAddress);
 
-  // pretend it's been deployed ages ago on Ropsten in a different deployment.
-  // Hence we know NETWORK_ID=3 and the address of the contract (greeterAddress)
-  const NETWORK_ID = 3;
-
-  await tenderly.verifyAPI({
-    config: {
-      compiler_version: "0.8.9",
-      evm_version: "default",
-      optimizations_count: 200,
-      optimizations_used: false,
-    },
+  // pretend it's been deployed ages ago on Sepolia in a different deployment.
+  // Hence we know NETWORK_ID=11155111 and the address of the contract (greeterAddress)
+  const NETWORK_ID = 11155111;
+  
+  await tenderly.verifyMultiCompilerAPI({
     contracts: [
       {
-        contractName: "Greeter",
-        source: readFileSync("contracts/Greeter.sol", "utf-8").toString(),
-        sourcePath: "contracts/whatever/Greeter.sol",
+        contractToVerify: "Greeter",
+        sources: {
+          "contracts/Greeter.sol": {
+            name: "Greeter",
+            code: readFileSync("contracts/Greeter.sol", "utf-8").toString(),
+          },   
+          "hardhat/console.sol": {
+            name: "console",
+            code: readFileSync(
+              "node_modules/hardhat/console.sol",
+              "utf-8"
+            ).toString(),
+          }  
+        },
+        // solidity format compiler with a little modification at libraries param
+        // see the warning below
+        compiler: { 
+          version: "0.8.17",
+          settings: {
+            optimizer: {
+              enabled: true,
+              runs: 200, 
+            }
+          }
+        },
         networks: {
-          // The key is the network ID (1 for Mainnet, 3 for Ropsten and so on)
           [NETWORK_ID]: {
-            address: greeterAddress,
-            links: {},
-          },
-        },
+            "address": greeterAddress
+          }
+        }
       },
-      {
-        contractName: "console",
-        source: readFileSync(
-          "node_modules/hardhat/console.sol",
-          "utf-8"
-        ).toString(),
-        sourcePath: "hardhat/console.sol",
-        networks: {}, 
-        compiler: {
-          name: "solc",
-          version: "0.8.9",
-        },
-      },
-    ],
+    ]
   });
 }
 
@@ -158,29 +160,36 @@ main().catch((error) => {
 });
 ```
 
-As seen in the example above, the two core aspects of using the `verifyApi` are:
+As seen in the example above, the two core aspects of using the `verifyMultiCompilerApi` are:
 
 * The compiler configuration that was used to compile deployed contracts.
 * The list of contracts undergoing verification.
 
 Let’s explore these in detail.
 
-### The Solidity compiler _config_
+### The Solidity compiler param
 
-The `config` property defines the necessary information about the compiler and optimizations applied during the compilation of a Smart Contract (Lines 19-24).
+`compiler` field is the same type as the official [solidity compiler](https://docs.soliditylang.org/en/v0.8.17/using-the-compiler.html#input-description).
 
 {% hint style="info" %}
 Verification can fail if the compiler config you specified differs significantly from the one actually used to compile the Smart Contract deployed on-chain.
 {% endhint %}
 
-Here’s an overview of relevant configuration parameters:
+{% hint style="danger" %}
+In order to satisfy our own API, we had to modify the `compiler` object a little bit.\
+If you wish to specify libraries for the contracts, add an extra `addresses` param.
 
-| Paramater           | Type    | Description                                                                                                                                                                                                                                     |
-| ------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| compiler\_version   | string  | Specify the exact version of the compiler used to compile a Smart Contract                                                                                                                                                                      |
-| evm\_version        | string  | Specify the EVM version from a closed set of options. Here are the options you can choose from: homestead, tangerineWhistle, spuriousDragon, byzantium, constantinople, petersburg, istanbul, berlin, london. The default option is **default** |
-| optimization\_count | int     | The number of optimization steps. Ignored if optimizations\_used is false.                                                                                                                                                                      |
-| optimization\_used  | boolean | Whether or not optimization was used while compiling the contract                                                                                                                                                                               |
+```typescript
+compiler.settings.libraries = {
+    "path/to/lib.sol": {
+        addresses: {
+            "LibName1": "0x..."
+            "LibName2": "0x..."
+        }
+    }
+}
+```
+{% endhint %}
 
 ### The list of _contracts_
 
@@ -188,15 +197,18 @@ The `contracts` property of the configuration is used to specify all the contrac
 
 Here’s a breakdown of the `contracts` property of the advanced verification configuration:
 
-| Paramater           | Type   | Description                                                                                                                                                                                                                                                                                                    |
-| ------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| contractName        | string | The name of the contract, as it will appear in the Tenderly dashboard. It doesn’t have to correspond to the actual name of the Smart Contract.                                                                                                                                                                 |
-| source              | string | The source code of your Smart Contract(s).                                                                                                                                                                                                                                                                     |
-| sourcePath          | string | <p><strong>For Smart Contracts</strong>, this is a relative path to the Smart Contract, relative to the <code>contracts</code> directory.<br><strong>For libraries</strong>, this is a relative path and it should match the one in the <code>import</code> statement within the Contract that’s using it.</p> |
-| networks            | Object | The set of networks where the contract is deployed. For Libraries that aren’t deployed, pass an empty object `{}`.                                                                                                                                                                                             |
-| networks.key        | int    | The ID of a network where contract is deployed (e.g., Mainnet is 1, Rinkeby is 4)                                                                                                                                                                                                                              |
-| networks.key.addres | string | The address of a contract deployed on a specific network                                                                                                                                                                                                                                                       |
-| networks.key.links  | Object | A link is a way to specify libraries used by the contract. It’s also referred to as linkReference or linkRef.                                                                                                                                                                                                  |
+| Paramater                   | Type   | Description                                                                                                                                                                                                                                                                                                    |
+| --------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contractToVerify            | string | The name of the contract to verify. This can be a short name like `Greeter` or a fully qualified contract name like `contracts/A/Greeter.sol:Greeter`                                                                                                                                                          |
+| sources                     | string | A map of all sources that are needed in order to compile the contract. The key of the map is a source path to the contract.                                                                                                                                                                                    |
+| sources.key                 | string | <p><strong>For Smart Contracts</strong>, this is a relative path to the Smart Contract, relative to the <code>contracts</code> directory.<br><strong>For libraries</strong>, this is a relative path and it should match the one in the <code>import</code> statement within the Contract that’s using it.</p> |
+| sources.key.name            | string | Name of the contract. This must short name format.                                                                                                                                                                                                                                                             |
+| networks                    | Object | The set of networks where the contract is deployed. For Libraries that aren’t deployed, pass an empty object `{}`.                                                                                                                                                                                             |
+| networks.key                | int    | The ID of a network where contract is deployed (e.g., Mainnet is 1, Rinkeby is 4)                                                                                                                                                                                                                              |
+| networks.key.address        | string | The address of a contract deployed on a specific network.                                                                                                                                                                                                                                                      |
+| compiler.settings.libraries | Object | Object in which you specify the library dependencies that are needed in order to compile the contract.                                                                                                                                                                                                         |
+
+
 
 Take a look at [the Solidity library overview](https://docs.soliditylang.org/en/v0.8.15/contracts.html?highlight=libraries#libraries) for more information.&#x20;
 
@@ -206,7 +218,7 @@ Alongside the Greeter contract, you also need to send an entry corresponding to 
 
 Here are a few guidelines for specifying libraries:
 
-* **Library source**: Retrieve the contents of `node_modules/hardhat/console.sol` and pass them as the `source` verification parameter.
+* **Library source**: Retrieve the contents of `node_modules/hardhat/console.sol` and pass them as the `code` verification parameter.
 * **Source path**: Pass `sourcePath`, the path to the library: `hardhat/console.sol`. It’s a relative path and it should match the path in the `import` statement in the Greeter contract.
 * **Networks**: Pass an empty object (`{}`) for `networks` because `console.sol` is deployed alongside the Greeter. This means that the contract isn’t deployed separately, so you only have to make it available for the Tenderly Verification process. In the case the library you’re using is deployed on the network, pass the actual address.
 

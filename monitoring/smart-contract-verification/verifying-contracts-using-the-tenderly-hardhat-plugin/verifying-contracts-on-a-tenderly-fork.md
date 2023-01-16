@@ -22,7 +22,6 @@ const config: HardhatUserConfig = {
   networks: {
     --snip--
 +  tenderly: {
-+     chainId: 3,
 +     url: "https://rpc.tenderly.co/fork/2aeae177-a3e8-492f-9861-1c9aa8856235",
 +   },
     --snip--
@@ -36,7 +35,6 @@ Here’s an overview of the configuration parameters used in the example above:
 
 | Property | Description                                                                                                                                                                                                           |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| chainId  | The [chain ID](https://consensys.net/docs/goquorum/en/latest/concepts/network-and-chain-id/) you associate to the Fork.                                                                                               |
 | url      | The JSON-RPC URL of your Fork. You can get it from the Fork page in the Dashboard. It follows the structure `https://rpc.tenderly.co/fork/{forkId}`, where `forkId` is a unique UUID identifier of the Tenderly Fork. |
 
 ## Automatic & simple manual verification on a Tenderly Fork
@@ -92,7 +90,7 @@ export async function main() {
   tenderly.verifyForkAPI(
     {
       config: {
-        compiler_version: "0.8.9",
+        compiler_version: "0.8.17",
         evm_version: "default",
         optimizations_count: 200,
         optimizations_used: false,
@@ -121,7 +119,7 @@ export async function main() {
           networks: {},
           compiler: {
             name: "solc",
-            version: "0.8.9",
+            version: "0.8.17",
           },
         },
       ],
@@ -161,12 +159,12 @@ npx hardhat run scripts/greeter/manual-advanced-fork.ts --network tenderly
 
 Here’s a summary of the arguments of `verifyForkAPI`:
 
-| Parameter           | Description                                                                                                                                                     |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| verificationRequest | A specification of the config, root, and contracts                                                                                                              |
-| username            | Your username                                                                                                                                                   |
-| projectSlug         | The slug of the project enclosing the Fork                                                                                                                      |
-| forkId              | The Fork ID: a unique UUID identifier of the Tenderly Fork. You can find it in the JSON-RPC URL shown in the Dashboard (https://rpc.tenderly.co/fork/{forkId}). |
+| Parameter           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| verificationRequest | A specification of the config, root, and contracts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| username            | <p>Username can be your own and the username of the organization. Which one, it depends on who is the owner of the project you are trying to verify your contracts on. If the project belongs to the organization you are part of, It should be filled with <code>organization username</code> , otherwise your own username.<br><br>The quickest and most secure way to make sure to which party the project belongs to is to look at the <code>url</code> of the particular project. You will see something like: <br><code>https://dashboard.tenderly.co/Tenderly/project/contracts</code><br>So you can take the username and project from there. In this case the username is <code>Tenderly</code> and the project is <code>project</code>.</p> |
+| projectSlug         | The slug of the project enclosing the Fork                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| forkId              | The Fork ID: a unique UUID identifier of the Tenderly Fork. You can find it in the JSON-RPC URL shown in the Dashboard (https://rpc.tenderly.co/fork/{forkId}).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 
 ### Configuring `verificationRequest`
 
@@ -174,7 +172,23 @@ The `verificationRequest` consists of the following parts:
 
 * The **config** refers to the [Solidity compiler configuration](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification#the-solidity-compiler-config).
 * The **root** is set to an empty string (`root: ""`) so the contract is verified for the entire Fork. To make a contract valid starting with a particular Simulated transaction in the Fork, set it to the Simulation ID (UUID assigned by Tenderly).
-* The **contracts** entail a list of **contracts and libraries** you’re verifying. For more details, see the [reference for _contracts_ verification property](https://docs.tenderly.co/monitoring/contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification#the-list-of-contracts).
+* The **contracts** entail a list of **contracts and libraries** you’re verifying. Below is an explanation of the parameter in more detail.
+
+### The list of _contracts_
+
+The `contracts` property of the configuration is used to specify all the contracts you’re verifying and all the Solidity libraries referenced by the contracts, in a single function call.
+
+Here’s a breakdown of the `contracts` property of the advanced verification configuration:
+
+| Paramater            | Type   | Description                                                                                                                                                                                                                                                                                                    |
+| -------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| contractName         | string | The name of the contract, as it will appear in the Tenderly dashboard. It doesn’t have to correspond to the actual name of the Smart Contract.                                                                                                                                                                 |
+| source               | string | The source code of your Smart Contract(s).                                                                                                                                                                                                                                                                     |
+| sourcePath           | string | <p><strong>For Smart Contracts</strong>, this is a relative path to the Smart Contract, relative to the <code>contracts</code> directory.<br><strong>For libraries</strong>, this is a relative path and it should match the one in the <code>import</code> statement within the Contract that’s using it.</p> |
+| networks             | Object | The set of networks where the contract is deployed. For Libraries that aren’t deployed, pass an empty object `{}`.                                                                                                                                                                                             |
+| networks.key         | int    | The ID of a network where contract is deployed (e.g., Mainnet is 1, Rinkeby is 4)                                                                                                                                                                                                                              |
+| networks.key.address | string | The address of a contract deployed on a specific network                                                                                                                                                                                                                                                       |
+| networks.key.links   | Object | A link is a way to specify libraries used by the contract. It’s also referred to as linkReference or linkRef.                                                                                                                                                                                                  |
 
 The `contracts` property is a list of all the contracts you’re verifying and the libraries they’re using. The main difference is that the key of each entry in the `networks` property has to be the Fork ID, like on the line 8 in the listing below:
 
