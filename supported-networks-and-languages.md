@@ -49,10 +49,12 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 <img src=".gitbook/assets/mainbrand-1.svg" alt="" data-size="line"> Moonbeam[\*](supported-networks-and-languages.md#footnotes)
 
 <img src=".gitbook/assets/mainbrand-1 (1).svg" alt="" data-size="line"> Moonriver[\*](supported-networks-and-languages.md#footnotes)
+
+<img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos[\*\*](supported-networks-and-languages.md#footnotes)
 {% endtab %}
 
 {% tab title="Languages" %}
-<img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Solidity
+<img src=".gitbook/assets/logo (1).svg" alt="" data-size="line"> Solidity
 
 <img src=".gitbook/assets/vyper-logo-square.png" alt="" data-size="line"> Vyper
 {% endtab %}
@@ -61,7 +63,11 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 ### Footnotes&#x20;
 
 {% hint style="info" %}
-Moonbeam and Moonriver network integration is currently in **Phase 1**, with limited Tenderly tooling support.
+\*\***Cronos** network integration is compete. All Tenderly features, apart from Web3 Gateway, support Cronos network and Cronos testnet.
+
+
+
+\***Moonbeam** and **Moonriver** network integration is currently in **Phase 1**, with limited Tenderly tooling support.
 
 **Phase 1:** partial integration. These are disabled or partially supported tools and services:
 
