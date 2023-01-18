@@ -63,7 +63,7 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 ### Footnotes&#x20;
 
 {% hint style="info" %}
-\*\***Cronos** network integration is compete. All Tenderly features, apart from Web3 Gateway, support Cronos network and Cronos testnet.
+\*\***Cronos** network integration is complete. All Tenderly features, apart from Web3 Gateway, support Cronos network and Cronos testnet.
 
 
 
