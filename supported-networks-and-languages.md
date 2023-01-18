@@ -6,11 +6,25 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 {% tabs %}
 {% tab title="Networks" %}
+**Networks supported in Tenderly and** [**accessible through Web3 Gateway**](http://blog.tenderly.co/how-to-deploy-smart-contracts-with-hardhat-and-tenderly/)****
+
+All Tenderly features are enabled including Web3 Gateway integration.
+
 <img src=".gitbook/assets/image (80) (1) (1) (1) (1).png" alt="" data-size="line"> Mainnet
 
-<img src=".gitbook/assets/image (85) (1) (1) (1).png" alt="" data-size="line"> Kovan
-
 <img src=".gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Gorli
+
+<img src=".gitbook/assets/image (102).png" alt="" data-size="line"> Sepolia
+
+
+
+**Networks supported in Tenderly, without Web3 Gateway access**
+
+All Tenderly features are enabled, with few [exceptions](supported-networks-and-languages.md#footnotes) due to integration process.
+
+Web3 Gateway integration is not present. We're working on incremental integration.
+
+<img src=".gitbook/assets/image (85) (1) (1) (1).png" alt="" data-size="line"> Kovan
 
 <img src=".gitbook/assets/image (83) (1) (1) (1).png" alt="" data-size="line"> RSK
 
@@ -44,13 +58,11 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 <img src=".gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet
 
-<img src=".gitbook/assets/image (102).png" alt="" data-size="line"> Sepolia
-
 <img src=".gitbook/assets/mainbrand-1.svg" alt="" data-size="line"> Moonbeam[\*](supported-networks-and-languages.md#footnotes)
 
 <img src=".gitbook/assets/mainbrand-1 (1).svg" alt="" data-size="line"> Moonriver[\*](supported-networks-and-languages.md#footnotes)
 
-<img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos[\*\*](supported-networks-and-languages.md#footnotes)
+<img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
 {% endtab %}
 
 {% tab title="Languages" %}
@@ -63,10 +75,6 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 ### Footnotes&#x20;
 
 {% hint style="info" %}
-\*\***Cronos** network integration is complete. All Tenderly features, apart from Web3 Gateway, support Cronos network and Cronos testnet.
-
-
-
 \***Moonbeam** and **Moonriver** network integration is currently in **Phase 1**, with limited Tenderly tooling support.
 
 **Phase 1:** partial integration. These are disabled or partially supported tools and services:
