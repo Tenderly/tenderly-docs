@@ -49,3 +49,7 @@ You can reference the supported network in your trigger configuration with the f
 <img src="../../.gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum `=> 42161` (read more about currently available features for Arbitrum [**here**](../../supported-networks-and-languages.md))
 
 <img src="../../.gitbook/assets/image (83) (2).png" alt="" data-size="line"> Arbitrum Testnet `=> 421611` (read more about currently available features for Arbitrum [**here**](../../supported-networks-and-languages.md))
+
+<img src="../../.gitbook/assets/cronos-icon.png" alt="" data-size="line"> Cronos `=> 25`
+
+<img src="../../.gitbook/assets/cronos-testnet-icon.png" alt="" data-size="line"> Cronos Testnet `=> 338`
