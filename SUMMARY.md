@@ -77,7 +77,9 @@
 ## 🔔 Alerts
 
 * [Intro to Alerts](alerts/intro-to-alerts.md)
-* [How to Use Webhooks For Alerting](alerts/how-to-use-webhooks-for-alerting.md)
+* [Tutorials and Quickstarts](alerts/tutorials-and-quickstarts/README.md)
+  * [Alerting Quickstart Guide](alerts/tutorials-and-quickstarts/alerting-quickstart-guide.md)
+  * [How to Use Webhooks for Alerting](alerts/tutorials-and-quickstarts/how-to-use-webhooks-for-alerting.md)
 * [Creating an Alert](alerts/creating-an-alert/README.md)
   * [Successful Transaction](alerts/creating-an-alert/successful-transaction.md)
   * [Failed Transaction](alerts/creating-an-alert/failed-transaction.md)
@@ -92,7 +94,9 @@
   * [State Change](alerts/creating-an-alert/state-change.md)
   * [View Function](alerts/creating-an-alert/view-function.md)
   * [Editing an Alert](alerts/creating-an-alert/editing-an-alert.md)
-* [Alert Destinations](alerts/configuring-alert-destinations.md)
+* [Alert Destinations](alerts/configuring-alert-destinations/README.md)
+  * [Project-Scoped](alerts/configuring-alert-destinations/configuring-alert-destinations.md)
+  * [Account-Scoped](alerts/configuring-alert-destinations/account-scoped.md)
 * [Alert Targets](alerts/alert-targets.md)
 * [Rule Types](alerts/rule-types.md)
 

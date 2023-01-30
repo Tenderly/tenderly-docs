@@ -3,7 +3,7 @@
 {% embed url="https://vimeo.com/637795807" %}
 
 {% hint style="warning" %}
-Before creating an alert, you need to configure a destination. If you haven't done that yet, [check out how to configure Alert destinations.](../configuring-alert-destinations.md)
+Before creating an alert, you need to configure a destination. If you haven't done that yet, [check out how to configure Alert destinations.](../configuring-alert-destinations/)
 {% endhint %}
 
 ### Get an alert when a transaction fails

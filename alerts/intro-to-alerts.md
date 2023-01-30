@@ -10,7 +10,7 @@ description: >-
 {% hint style="success" %}
 **🎉 Webhooks released!**
 
-You can now send Alert data to a webhook destination in real time and connect different external services and applications. Explore [**how webhooks work** ](configuring-alert-destinations.md#webhooks)and [**how to integrate webhooks into your project**](how-to-use-webhooks-for-alerting.md).
+You can now send Alert data to a webhook destination in real time and connect different external services and applications. Explore [**how webhooks work** ](configuring-alert-destinations/#webhooks)and [**how to integrate webhooks into your project**](tutorials-and-quickstarts/how-to-use-webhooks-for-alerting.md).
 {% endhint %}
 
 Tenderly Alerting listens for events on the blockchain and sends real-time notifications to your desired destination when the event occurs. This can be email, your favorite messaging app, an incident monitoring system, or webhooks and Web3 Actions.
