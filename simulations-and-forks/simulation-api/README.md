@@ -1,8 +1,17 @@
+---
+description: >-
+  Learn how to use Simulation API to understand transaction execution prior to
+  sending them to chain, provide more visibility into transaction's effects,
+  avoid undesirable outcomes and build confidence
+---
+
 # Simulation API
 
 ## Overview
 
-The simulator enables you to seamlessly fork the chain and simulate the execution of any transactions as if time has frozen. You can fork (aka stop) any network at any block. This can help you validate any hypothesis you have, ranging from understanding how smart contract logic is behaving in some specific environment setup to creating the whole “sandbox” environment of the network.
+Simulation API allows you to understand transaction's execution without sending it to blockchain, against any point in network's history, including the latest block. The API gives you access to a lightweight blockchain execution environment which delivers detailed information about state changes, emitted events (logs), gas usage, and all calls that the transaction made. Since simulations don't run on an actual network, it's a gas-free way to test "what-if" scenarios.
+
+You can use this information for smart contract development purposes, influence decision making in your dapp code, or provide it to end users and empower them to confidently use your dapp.
 
 Here are some examples of what you can achieve:
 
@@ -48,7 +57,7 @@ You can find more details here:
 
 ### 1 Create a one-off simulation
 
-We can start with a simulating a transaction: in other words execute it without recording any state changes. You can get the output of the transaction, if it failed or not, without actually sending it to the chain. You can simulate any transaction using any given contract deployed on networks available in Tenderly.
+We can start with simulating a transaction: we'll see the execution without recording any state changes. You can get the output of the transaction, if it failed or not, what it changed, contracts it called, and more, without actually sending it to the chain. You can simulate any transaction using any given contract deployed on networks available in Tenderly.
 
 Let's simulate Uniswap `swapTokensForExactTokens` function and access state changes, logs, and call trace to extract relevant data.&#x20;
 
@@ -56,7 +65,7 @@ Let's simulate Uniswap `swapTokensForExactTokens` function and access state chan
 
 Lines 11-41 represent the invocation of the API. The rest shows some information you can extract from this simulation.
 
-{% code overflow="wrap" lineNumbers="true" %}
+{% code lineNumbers="true" %}
 ````typescript
 import axios from 'axios';
 import * as dotenv from 'dotenv';
@@ -68,8 +77,7 @@ const simulateUniswap = async () => {
   // https://docs.tenderly.co/other/platform-access/how-to-generate-api-access-tokens
   const { TENDERLY_USER, TENDERLY_PROJECT, TENDERLY_ACCESS_KEY } = process.env;
 
-  const resp = await axios.post(
-    `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/simulate`,
+  const resp = await axios.post( `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/simulate`,
     // the transaction
     {
       // Simulation configuration
