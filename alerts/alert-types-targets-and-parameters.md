@@ -18,6 +18,8 @@ To create and enable an Alert, you need to specify and configure the following c
 * **Alert Parameters:** Additional settings specific to the selected Alert Type.
 * **Alert Destination:** The place where you want to receive notifications. One Alert can send notifications to multiple destinations. There are 8 destinations where you can send and receive notifications.
 
+The rest of this document focuses on different Alert Types.
+
 {% hint style="info" %}
 Read the [Alerting Quickstart guide](tutorials-and-quickstarts/alerting-quickstart-guide.md) to learn the steps for setting up an example Alert and enabling it.
 {% endhint %}
