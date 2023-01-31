@@ -32,7 +32,7 @@ If you click on the advanced configuration link, a modal will open with code sni
 
 <figure><img src="../../.gitbook/assets/image (100).png" alt=""><figcaption><p>Webhook Modal Advanced Configuration Modal</p></figcaption></figure>
 
-If you'd like to test if the provided URL is able to receive events from Tenderly, you can cllick on the **Sent test webhook** button and the predefined payload will be sent to your endpoint.
+If you'd like to test if the provided URL is able to receive events from Tenderly, you can click on the **Send test webhook** button and the a predefined test payload will be sent to your endpoint.
 
 <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption><p>Send Test Webhook</p></figcaption></figure>
 
