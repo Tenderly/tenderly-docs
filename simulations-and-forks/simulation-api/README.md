@@ -1,25 +1,25 @@
 ---
 description: >-
-  Learn how to use Simulation API to understand transaction execution prior to
-  sending them to chain, provide more visibility into transaction's effects,
-  avoid undesirable outcomes and build confidence
+  Learn how to use Simulation API to understand transaction execution before
+  deployment, provide more visibility into a transaction's effects, avoid
+  undesirable outcomes, and build confidence.
 ---
 
 # Simulation API
 
 ## Overview
 
-Simulation API allows you to understand transaction's execution without sending it to blockchain, against any point in network's history, including the latest block. The API gives you access to a lightweight blockchain execution environment which delivers detailed information about state changes, emitted events (logs), gas usage, and all calls that the transaction made. Since simulations don't run on an actual network, it's a gas-free way to test "what-if" scenarios.
+Simulation API allows you to understand a transaction's execution against any point in a network's history, including the latest block, but without sending it to the blockchain. The API gives you access to a lightweight blockchain execution environment that delivers detailed information about state changes, emitted events (logs), gas usage, and all calls that the transaction made. Since simulations don't run on an actual network, it's a gas-free way to test "what-if" scenarios.
 
-You can use this information for smart contract development purposes, influence decision making in your dapp code, or provide it to end users and empower them to confidently use your dapp.
+You can use this information for various smart contract development purposes or to influence decision making in your dapp code. You can even provide it to end users and empower them to confidently use your dapp.
 
-Here are some examples of what you can achieve:
+Here are some examples of what you can achieve with Simulation API:
 
-* Dry-run user transactions, saving them money on failed transactions and improving UX.
-* DApp playground mode - Let users try out your dApp without spending any gas with all production data readily available.
-* Staging and QA environments for a blockchain project.
-* CI/CD for your blockchain project.
-* Validating complex DAO governance proposals.
+* Dry-run user transactions to help them save money on failed txs and improve your dapp UX
+* Run your dapp in playground mode to let users try out your dapp without spending any gas and with all production data readily available
+* Stage QA environments for a blockchain project
+* Set up CI/CD for your blockchain project
+* Validate complex DAO governance proposals
 
 ## How to start using Tenderly Simulation API
 
@@ -57,9 +57,9 @@ You can find more details here:
 
 ### 1 Create a one-off simulation
 
-We can start with simulating a transaction: we'll see the execution without recording any state changes. You can get the output of the transaction, if it failed or not, what it changed, contracts it called, and more, without actually sending it to the chain. You can simulate any transaction using any given contract deployed on networks available in Tenderly.
+We can start by simulating a transaction. We'll see its execution without recording any state changes. You can get the output of the transaction, see whether it failed or not, what it changed, the contracts it called, and more. All of this information is available without actually sending the transaction to the chain. You can simulate any transaction using any given contract deployed on networks available in Tenderly.
 
-Let's simulate Uniswap `swapTokensForExactTokens` function and access state changes, logs, and call trace to extract relevant data.&#x20;
+Let's simulate the Uniswap `swapTokensForExactTokens` function and access state changes, logs, and call traces to extract relevant data.&#x20;
 
 **Example (typescript)**
 

@@ -45,7 +45,7 @@ Know how your transactions will behave before you execute them, estimate the gas
 
 Run your code in response to on-chain (or even off-chain) events, usually on your smart contracts.
 
-You can use Web3 Actions to create custom scenarios to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](broken-reference) section, automate testing or live production execution in [**Simulator**](simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](simulations-and-forks/how-to-create-a-fork/), or anything else that comes to (your) mind.
+You can use Web3 Actions to create custom scenarios to further deepen your debugging process, create alerting patterns that are not available out-of-the-box in the [**Alerting**](alerts/creating-an-alert/) section, automate testing or live production execution in [**Simulator**](simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](simulations-and-forks/how-to-create-a-fork/), or anything else that comes to (your) mind.
 
 [**Wallet Monitoring**](monitoring/wallets/)
 
@@ -67,7 +67,7 @@ See the state of your contract at any point in a transaction and explore state c
 
 Visualize and analyze the behavior of your smart contract to spot patterns and gain a deeper insight into transaction data.
 
-[**Real-time Alerting**](broken-reference)
+[**Real-time Alerting**](alerts/alert-targets.md)
 
 Any time an event triggers your custom set of rules you will receive a notification on your favorite channels like Slack, Email, PagerDuty, etc.
 
