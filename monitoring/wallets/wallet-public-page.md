@@ -6,7 +6,7 @@ By pasting the (wallet) address into the **Explorer** tab at the top and clickin
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.10.09.png>)
 
-Here you can perform quick actions of adding a wallet to the project or [**setting up alerts**](../../alerts/creating-an-alert/) for it:
+Here you can perform quick actions of adding a wallet to the project or [**setting up alerts**](broken-reference) for it:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.10.54.png>)
 

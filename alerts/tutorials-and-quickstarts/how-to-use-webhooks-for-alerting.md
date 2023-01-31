@@ -36,7 +36,7 @@ If you'd like to test if the provided URL is able to receive events from Tenderl
 
 <figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption><p>Send Test Webhook</p></figcaption></figure>
 
-If everything works well and you've received an event, you can click on the **Add Webhook** button and the **Active Destinations** list will be updated.
+If everything works well and you've received an event, you can click on the **Add Webhook** button and the [**Active Destinations**](../configuring-alert-destinations/) list will be updated.
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption><p>New Webhook is added to the active destinations list</p></figcaption></figure>
 
@@ -92,7 +92,7 @@ To see all webhook executions, you can click on the **Execution History** tab. T
 Finally, when you have finished setting up your webhook endpoint, you can add it as a destination to any of your alert rules.
 
 {% hint style="info" %}
-In order to see how to create an Alert Rule, you can follow [these instructions](https://docs.tenderly.co/alerts/creating-an-alert).
+In order to see how to create an Alert Rule, you can follow [these instructions.](../alert-types-targets-and-parameters.md)
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Adding a Webhook as a Destination to the Alert Rule</p></figcaption></figure>

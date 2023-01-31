@@ -18,7 +18,7 @@ To create a new Alert, **click the** **New Alert** **button**, which will open u
 
 To set up a Successful Transaction alert or any other alert, you need to configure four components:
 
-* **Alert Type:** The event you want the Alert to listen for and send you a notification when it happens. Tenderly supports [12 Alert Types](https://docs.tenderly.co/alerts/intro-to-alerts#alert-trigger-types-overview).
+* **Alert Type:** The event you want the Alert to listen for and send you a notification when it happens. Tenderly supports [12 Alert Types](../alert-types-targets-and-parameters.md).
 * **Alert Target:** Here, you tell Tenderly which addresses you want to monitor. The Target options are the same across all Alert Types.
 * **Alert Parameters:** Based on the Target, this is where you select the specific address(es) you want to monitor along with other settings specific to the Alert Type.
 * **Alert Destinations:** Location where you want to receive notifications when the event occurs.
@@ -30,7 +30,7 @@ From the list of available Alert Types, **select Successful Transaction** to mon
 <figure><img src="../../.gitbook/assets/alerting_3.png" alt=""><figcaption><p>Available Alert trigger types</p></figcaption></figure>
 
 {% hint style="info" %}
-Some Alert Types are self-explanatory, while others are more nuanced, so please refer to the [Alert Trigger Types documentation](https://docs.tenderly.co/alerts/intro-to-alerts#alert-trigger-types-overview) page for detailed explanations of each.
+Some Alert Types are self-explanatory, while others are more nuanced, so please refer to the [Alert Trigger Types documentation](../alert-types-targets-and-parameters.md) page for detailed explanations of each.
 {% endhint %}
 
 ## Step 3: Set the Alert Target to Address
@@ -72,23 +72,23 @@ When a Successful Transaction event occurs on our wallet, Tenderly will send us 
 
 <figure><img src="../../.gitbook/assets/alerting_8.png" alt=""><figcaption><p>Email notification from Tenderly</p></figcaption></figure>
 
-In addition to email, you can also receive notifications in your favorite messaging app:
+In addition to [email](../configuring-alert-destinations/account-scoped.md#email-destination), you can also receive notifications in your favorite messaging app:
 
 \*_Click on the link for each destination to learn how to set it up._
 
-* **Slack**
-* **Telegram**
-* **Discord**
+* ****[**Slack**](../configuring-alert-destinations/account-scoped.md#slack-destination)****
+* ****[**Telegram**](../configuring-alert-destinations/account-scoped.md#telegram-destination)****
+* ****[**Discord**](../configuring-alert-destinations/account-scoped.md#discord-destination)****
 
 Or you can send alert data to other Tenderly systems:
 
-* **Web3 Actions**
-* **Webhooks**
+* ****[**Web3 Actions**](../configuring-alert-destinations/configuring-alert-destinations.md#web3-actions)****
+* ****[**Webhooks**](../configuring-alert-destinations/configuring-alert-destinations.md#webhooks)****
 
 Or third-party incident and error monitoring platforms like:
 
-* **Sentry**
-* **PagerDuty**
+* ****[**Sentry**](../configuring-alert-destinations/account-scoped.md#sentry-destination)****
+* ****[**PagerDuty**](../configuring-alert-destinations/account-scoped.md#pagerduty-destination)****
 
 With the Alert Destination all set, **click Save** to create and enable the Alert.
 

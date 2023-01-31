@@ -2,7 +2,7 @@
 
 This example will showcase briefly how the all-in-one Tenderly platform can be used to analyze and even prevent hacks such as what happened with the [Cover Protocol](https://twitter.com/CoverProtocol).
 
-The Cover Protocol got hacked because of the inability of code to update the cache in storage. This could have potentially been prevented by using an **** [**alerting feature on important functions**](../../alerts/alert-targets.md) like deposit/withdrawal and state changes to prevent an attack.&#x20;
+The Cover Protocol got hacked because of the inability of code to update the cache in storage. This could have potentially been prevented by using an **** [**alerting feature on important functions**](broken-reference) like deposit/withdrawal and state changes to prevent an attack.&#x20;
 
 In order to manually analyze the hack, we need to [**import the smart contract**](../../monitoring/smart-contracts/) `Blacksmith` in which the vulnerability was found. If you know the exact name of the affected protocol or vulnerable contract you can also search for it directly.
 
