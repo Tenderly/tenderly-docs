@@ -66,38 +66,38 @@ Let's simulate the Uniswap `swapTokensForExactTokens` function and access state 
 Lines 11-41 represent the invocation of the API. The rest shows some information you can extract from this simulation.
 
 {% code lineNumbers="true" %}
-````typescript
+```typescript
 import axios from 'axios';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-const simulateUniswap = async () => {
+const approveDai = async () => {
   // assuming environment variables TENDERLY_USER, TENDERLY_PROJECT and TENDERLY_ACCESS_KEY are set
   // https://docs.tenderly.co/other/platform-access/how-to-find-the-project-slug-username-and-organization-name
   // https://docs.tenderly.co/other/platform-access/how-to-generate-api-access-tokens
   const { TENDERLY_USER, TENDERLY_PROJECT, TENDERLY_ACCESS_KEY } = process.env;
 
-  const resp = await axios.post( `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/simulate`,
+  console.time('Simulation');
+
+  const resp = await axios.post(
+    `https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/simulate`,
     // the transaction
     {
-      // Simulation configuration
+      /* Simulation Configuration */
       save: false, // if true simulation is saved and shows up in the dashboard
-      save_if_fails: true, // if true, reverting simulations show up in the dashboard
-      simulation_type: 'full', // full or quick
-      // block_header: null, // block header override
-      // network to simulate on
-      network_id: '1',
-      // simulate transaction at this (historical) block number
-      block_number: 16527769,
-      from: '0x1cf5cd427d0a968379bd6b5befce28d8e157ae38',
+      save_if_fails: false, // if true, reverting simulations show up in the dashboard
+      simulation_type: 'full', // full or quick (full is default)
+
+      network_id: '1', // network to simulate on
+
+      /* Standard EVM Transaction object */
+      from: '0xdc6bdc37b2714ee601734cf55a05625c9e512461',
+      to: '0x6b175474e89094c44da98b954eedeac495271d0f',
       input:
-        '0x8803dbee0000000000000000000000000000000000000000000000b34dcb21540828000000000000000000000000000000000000000000000000000000000000dea6e4cd00000000000000000000000000000000000000000000000000000000000000a00000000000000000000000001cf5cd427d0a968379bd6b5befce28d8e157ae380000000000000000000000000000000000000000000000000000000063d93b620000000000000000000000000000000000000000000000000000000000000002000000000000000000000000dac17f958d2ee523a2206206994597c13d831ec70000000000000000000000007659ce147d0e714454073a5dd7003544234b6aa0',
-      to: '0x7a250d5630b4cf539739df2c5dacb4c659f2488d',
-      gas: 138864,
-      gas_price: '32909736476',
-      value: '0',
-      access_list: [],
-      generate_access_list: true,
+        '0x095ea7b3000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1000000000000000000000000000000000000000000000000000000000000012b',
+      gas: 8000000,
+      gas_price: 0,
+      value: 0,
     },
     {
       headers: {
@@ -105,137 +105,156 @@ const simulateUniswap = async () => {
       },
     }
   );
+  console.timeEnd('Simulation');
 
-  // access the transaction object
   const transcation = resp.data.transaction;
 
-  // access the transaction call trace
-  const callTrace = transcation.transaction_info.call_trace;
-
-  // access transaction's logs
-  const logs = resp.data.transaction.transaction_info.logs;
-
   console.log(
-    `Simulated transaction info: \nhash: ${transcation.hash} \nblock number: ${transcation.block_number}`
+    `Simulated transaction info: 
+  hash: ${transcation.hash} 
+  block number: ${transcation.block_number}
+  gas used: ${transcation.gas_used}`,
+  '\n\n'
   );
 
-  // display balance changes
+  console.log('Events');
   console.log(
-    'Balance changes',
-    '\n\t' +
-      callTrace.balance_diff
-        .map(
-          (balance: any) =>
-            `${balance.address}: ${balance.original} -> ${balance.dirty} ${
-              balance.is_miner ? '(Miner)' : ''
-            }`
-        )
-        .join('\n\t')
+    JSON.stringify(resp.data.transaction.transaction_info.logs, null, 2),
+    '\n\n'
   );
 
-  // display output values
+  console.log('State changes');
   console.log(
-    'Output values' +
-      '\n\t' +
-      callTrace.decoded_output
-        .map(
-          (output: any) =>
-            `${output.soltype.name} ${output.soltype.type} = ${JSON.stringify(
-              output.value
-            )}`
-        )
-        .join('\n\t')
+    JSON.stringify(
+      resp.data.transaction.transaction_info.call_trace.state_diff,
+      null,
+      2
+    ),
+    '\n\n'
   );
-
-  // display events
+  console.log('Call Trace');
   console.log(
-    'Events' +
-      '\n\t' +
-      logs
-        .map(
-          (log: any) =>
-            `${log.name} (${log.inputs
-              .map(
-                (input: any) =>
-                  `${input.soltype.name} ${input.soltype.type} = ${input.value}`
-              )
-              .join(', ')})`
-        )
-        .join('\n\t')
-  );
-
-  const stateDiff = resp.data.transaction.transaction_info.state_diff;
-
-  // display state changes for all affected contracts
-  console.log(
-    'State changes' +
-      '\n\t' +
-      stateDiff
-        .map(
-          (diff: any) =>
-            `${diff.address}
-${diff.soltype.name}: ${diff.soltype.type}
-  ${JSON.stringify(diff.original)} -> ${JSON.stringify(diff.dirty)}
-  `
-        )
-        .join('\n\t')
+    JSON.stringify(resp.data.transaction.transaction_info.call_trace, null, 2)
   );
 };
 
-simulateUniswap();
-
+approveDai();
 ```
-````
 {% endcode %}
 
 The output shows something similar to this:
 
-````
-
-Simulated transaction info: 
-hash: 0x0b7e58d70c730b97c02867ec589192d774d48569b823f85c679599d019341ebe 
-block number: 16527769
-
-Balance changes 
-	0x1cf5cd427d0a968379BD6b5BefcE28d8e157AE38: 178649986537506409 -> 175016718720819533 
-	0xC0E1b256DE232262134c22f73b21F756072Bfb73: 4913764247259774380 -> 4913874657421732568 (Miner)
-Output values
-	amounts uint256[] = ["3731747754","3307572800000000262144"]
-Events
-	Transfer (from address = 0x1cf5cd427d0a968379bd6b5befce28d8e157ae38, to address = 0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a, value uint256 = 3731747754)
-	Transfer (from address = 0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a, to address = 0x1cf5cd427d0a968379bd6b5befce28d8e157ae38, value uint256 = 3307572800000000262144)
-	Sync (reserve0 uint112 = 253974535984473723669255, reserve1 uint112 = 289417250282)
-	Swap (sender address = 0x7a250d5630b4cf539739df2c5dacb4c659f2488d, amount0In uint256 = 0, amount1In uint256 = 3731747754, amount0Out uint256 = 3307572800000000262144, amount1Out uint256 = 0, to address = 0x1cf5cd427d0a968379bd6b5befce28d8e157ae38)
-State changes
-	0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a
-reserve1: uint112
-  "285685502528" -> "289417250282"
-  
-	0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a
-reserve0: uint112
-  "257282108784473723931399" -> "253974535984473723669255"
-  
-	0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a
-blockTimestampLast: uint32
-  "0" -> "0"
-  
-	0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a
-price0CumulativeLast: uint256
-  "756643269219333625014234830491" -> "756717575180654871536825733691"
-  
-	0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a
-price1CumulativeLast: uint256
-  "115330660026005862214326453602290190379962570339216427" -> "115390925201612227497765383158300036629651585476758491"
-  
-	0x7659ce147d0e714454073a5dd7003544234b6aa0
-_balances: mapping (address => uint256)
-  {"0x1cf5cd427d0a968379bd6b5befce28d8e157ae38":"13735118200000000589824","0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a":"257282108784473723931399"} -> {"0x1cf5cd427d0a968379bd6b5befce28d8e157ae38":"17042691000000000851968","0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a":"253974535984473723669255"}
-  
-	0xdac17f958d2ee523a2206206994597c13d831ec7
-balances: mapping (address => uint256)
-  {"0x1cf5cd427d0a968379bd6b5befce28d8e157ae38":"22963773121","0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a":"285685502528"} -> {"0x1cf5cd427d0a968379bd6b5befce28d8e157ae38":"19232025367","0x6f118ecebc31a5ffe49b87c47ea80f93a2af0a8a":"289417250282"}
 ```
-````
+Simulation: 261.775ms
+Simulated transaction info: 
+  hash: 0x1e44c2d964c9805b235475e55c31c27785aa2fc00129d2a4b21ed5eed6928929 
+  block number: 16548464
+  gas used: 46098 
+
+
+Events
+[
+  {
+    "name": "",
+    "anonymous": false,
+    "inputs": null,
+    "raw": {
+      "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "topics": [
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+        "0x000000000000000000000000dc6bdc37b2714ee601734cf55a05625c9e512461",
+        "0x000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1"
+      ],
+      "data": "0x000000000000000000000000000000000000000000000000000000000000012b"
+    }
+  }
+] 
+
+
+State changes
+[
+  {
+    "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+    "soltype": null,
+    "original": null,
+    "dirty": null,
+    "raw": [
+      {
+        "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "key": "0xe11925e259d23a0e30bc90c0742b3349668b7689af7f13b99127b4837cd9c78f",
+        "original": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "dirty": "0x000000000000000000000000000000000000000000000000000000000000012b"
+      }
+    ]
+  }
+] 
+
+
+Call Trace
+{
+  "hash": "0x1e44c2d964c9805b235475e55c31c27785aa2fc00129d2a4b21ed5eed6928929",
+  "contract_name": "",
+  "function_pc": 0,
+  "function_op": "CALL",
+  "absolute_position": 0,
+  "caller_pc": 0,
+  "caller_op": "CALL",
+  "call_type": "CALL",
+  "from": "0xdc6bdc37b2714ee601734cf55a05625c9e512461",
+  "from_balance": "0",
+  "to": "0x6b175474e89094c44da98b954eedeac495271d0f",
+  "to_balance": "0",
+  "value": "0",
+  "block_timestamp": "0001-01-01T00:00:00Z",
+  "gas": 7978416,
+  "gas_used": 24514,
+  "intrinsic_gas": 21584,
+  "input": "0x095ea7b3000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1000000000000000000000000000000000000000000000000000000000000012b",
+  "nonce_diff": [
+    {
+      "address": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
+      "original": "0",
+      "dirty": "1"
+    }
+  ],
+  "state_diff": [
+    {
+      "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "soltype": null,
+      "original": null,
+      "dirty": null,
+      "raw": [
+        {
+          "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+          "key": "0xe11925e259d23a0e30bc90c0742b3349668b7689af7f13b99127b4837cd9c78f",
+          "original": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "dirty": "0x000000000000000000000000000000000000000000000000000000000000012b"
+        }
+      ]
+    }
+  ],
+  "logs": [
+    {
+      "name": "",
+      "anonymous": false,
+      "inputs": null,
+      "raw": {
+        "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+        "topics": [
+          "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+          "0x000000000000000000000000dc6bdc37b2714ee601734cf55a05625c9e512461",
+          "0x000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1"
+        ],
+        "data": "0x000000000000000000000000000000000000000000000000000000000000012b"
+      }
+    }
+  ],
+  "output": "0x0000000000000000000000000000000000000000000000000000000000000001",
+  "decoded_output": null,
+  "network_id": "1",
+  "calls": null
+}
+```
 
 {% hint style="info" %}
 When transactions are simulated via API, by default they don’t get persisted. To help the debugging using the Dashboard, you can configure `save_if_fails` flag. If you need to persist the transaction in case of success too, you can set `save` flag to `true`. Both of these are `false` by default.
