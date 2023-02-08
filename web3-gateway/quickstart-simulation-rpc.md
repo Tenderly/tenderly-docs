@@ -6,7 +6,7 @@ description: >-
 
 # Quickstart: Simulation RPC
 
-Simulation RPC allows you to use your Tenderly Web3 Gateway node provider not only to read data and send transactions to the blockchain, but also to simulate transactions in one place. It's possible to use Simulation RPC for [networks supported in Web3 Gateway](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/supported-networks-and-languages). For other cases, use [Simulation API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/simulations-and-forks/simulation-api).
+Simulation RPC allows you to use your Tenderly Web3 Gateway node provider not only to read data and send transactions to the blockchain, but also to simulate transactions in one place. It's possible to use Simulation RPC for [networks supported in Web3 Gateway](../supported-networks-and-languages.md). For other cases, use [Simulation API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/simulations-and-forks/simulation-api).
 
 Simulation RPC allows you to:
 
@@ -137,7 +137,7 @@ curl https://mainnet.gateway.tenderly.co/$WEB3_GATEWAY_API_KEY \
 
 The following example shows a simulation of an arbitrary sender `0xe2e2...e2` calling the `mint` function of the [DAI Mainnet contract (`0x6b17...71d0f`)](https://dashboard.tenderly.co/contract/mainnet/0x6b175474e89094c44da98b954eedeac495271d0f).
 
-In order to mint, the sender of the transaction must be a ward, and this address surely isn't. To simulate minting, we'll need to do a state override: Prior to running the simulation, the value overrides for contract's storage slots will be applied to the current state of the contract.
+In order to mint, the sender of the transaction must be a ward, and this address surely isn't. To simulate minting, we'll need to do a state override: prior to running the simulation, the overrides for contract's storage slots will be applied to the current state of the contract.
 
 When using Simulation RPC, state overrides is the third argument of `tenderly_simulateTransaction` RPC call. To specify overrides, provide a map from contract address to overrides map. The overrides map takes [smart contract's storage location](https://docs.soliditylang.org/en/latest/internals/layout\_in\_storage.html#mappings-and-dynamic-arrays) as keys and the value override as value.
 
@@ -153,7 +153,7 @@ $$
 {keccak_{256} \lparen \underbrace{\tt{0xf2...f2}}_\text{\tt{sender}, 20B}\ .\ \underbrace{\tt{0x00..00}}_\text{\tt{wards} slot, 32B}\rparen}
 $$
 
-In our case, this evaluates to `0xedd7d04419e9c48ceb6055956cbb4e2091ae310313a4d1fa7cbcfe7561616e03` and the override map (the tird argument) looks as follows:
+In our case, this evaluates to `0xedd7d04419e9c48ceb6055956cbb4e2091ae310313a4d1fa7cbcfe7561616e03` and the override map (the third argument) looks as follows:
 
 ```json
 {
