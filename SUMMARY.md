@@ -12,6 +12,7 @@
 
 * [Intro to Web3 Gateway](web3-gateway/README.md)
 * [Quickstart: Querying blockchain data](web3-gateway/quickstart-query-blockchain.md)
+* [Quickstart: Simulation RPC](web3-gateway/quickstart-simulation-rpc.md)
 * [References](web3-gateway/references/README.md)
   * [Brief JSON RPC reference](web3-gateway/references/brief-json-rpc.md)
   * [Detailed JSON RPC reference](web3-gateway/references/detailed-json-rpc.md)

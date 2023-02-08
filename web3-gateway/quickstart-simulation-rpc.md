@@ -1,0 +1,282 @@
+---
+description: >-
+  Get started with Simulation RPC to simulate transactions with Web3 Gateway
+  node provider.
+---
+
+# Quickstart: Simulation RPC
+
+Simulation RPC allows you to use your Tenderly Web3 Gateway node provider not only to read data and send transactions to the blockchain, but also to simulate transactions in one place. It's possible to use Simulation RPC for [networks supported in Web3 Gateway](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/supported-networks-and-languages). For other cases, use [Simulation API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/simulations-and-forks/simulation-api).
+
+Simulation RPC allows you to:
+
+* simulate an arbitrary transcation,
+* select any historical (or latest) block you wish to simulate on and go back in time,
+* pass a pre-simulation **state overrides map**, so you can bring contracts participating in the simulation in a specific state, even if you wouldn't be able to on an actual network (e.g. Mainnet).
+
+You can find the details in [Simulate JSON RPC](references/simulate-json-rpc.md).
+
+## Example: Approving a DAI
+
+In this example, we'll do a quick simulation of `0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2` approving 299 to `0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1`. Check the Response for **Approve** event.
+
+{% tabs %}
+{% tab title="Simulation RPC" %}
+```bash
+curl https://mainnet.gateway.tenderly.co/$WEB3_GATEWAY_API_KEY \
+-X POST \
+-H "Content-Type: application/json" \
+-d \
+'{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "method": "tenderly_simulateTransaction",
+  "params": [
+    {
+      "from": "0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2",
+      "to": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "gas": "0x7a1200",
+      "gasPrice": "0x0",
+      "value": "0x0",
+      "data": "0x095ea7b3000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1000000000000000000000000000000000000000000000000000000000000012b"
+    },
+    "0xfc497b"
+  ]
+}'
+```
+{% endtab %}
+
+{% tab title="Simulation RPC Response" %}
+```json
+{
+   "id" : 0,
+   "jsonrpc" : "2.0",
+   "result" : {
+      "blockNumber" : "0xfc497b",
+      "cumulativeGasUsed" : "0x0",
+      "gasUsed" : "0xb412",
+      "logs" : [
+         {
+            "anonymous" : false,
+            "inputs" : [
+               {
+                  "name" : "src",
+                  "type" : "address",
+                  "value" : "0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2"
+               },
+               {
+                  "name" : "guy",
+                  "type" : "address",
+                  "value" : "0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1"
+               },
+               {
+                  "name" : "wad",
+                  "type" : "uint256",
+                  "value" : "299"
+               }
+            ],
+            "name" : "Approval",
+            "raw" : {
+               "address" : "0x6b175474e89094c44da98b954eedeac495271d0f",
+               "data" : "0x000000000000000000000000000000000000000000000000000000000000012b",
+               "topics" : [
+                  "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+                  "0x000000000000000000000000e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2",
+                  "0x000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1"
+               ]
+            }
+         }
+      ],
+      "logsBloom" : "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000028000000000000000002000000000000000000000010000000000000000004000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000010000000000000000000000000040000000000000000000000000000800000",
+      "status" : true,
+      "trace" : [
+         {
+            "decodedInput" : [
+               {
+                  "name" : "usr",
+                  "type" : "address",
+                  "value" : "0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1"
+               },
+               {
+                  "name" : "wad",
+                  "type" : "uint256",
+                  "value" : "299"
+               }
+            ],
+            "decodedOutput" : [
+               {
+                  "name" : "",
+                  "type" : "bool",
+                  "value" : true
+               }
+            ],
+            "from" : "0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2",
+            "gas" : "0x79bdb0",
+            "gasUsed" : "0x5fc2",
+            "input" : "0x095ea7b3000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1000000000000000000000000000000000000000000000000000000000000012b",
+            "method" : "approve",
+            "output" : "0x0000000000000000000000000000000000000000000000000000000000000001",
+            "subtraces" : 0,
+            "to" : "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "traceAddress" : [
+               0
+            ],
+            "type" : "CALL",
+            "value" : "0x0"
+         }
+      ],
+      "type" : "0x0"
+   }
+}
+
+```
+{% endtab %}
+{% endtabs %}
+
+## Example: Minting 2 DAI
+
+The following example shows a simulation of an arbitrary sender `0xe2e2...e2` calling the `mint` function of the [DAI Mainnet contract (`0x6b17...71d0f`)](https://dashboard.tenderly.co/contract/mainnet/0x6b175474e89094c44da98b954eedeac495271d0f).
+
+In order to mint, the sender of the transaction must be a ward, and this address surely isn't. To simulate minting, we'll need to do a state override: Prior to running the simulation, the value overrides for contract's storage slots will be applied to the current state of the contract.
+
+When using Simulation RPC, state overrides is the third argument of `tenderly_simulateTransaction` RPC call. To specify overrides, provide a map from contract address to overrides map. The overrides map takes [smart contract's storage location](https://docs.soliditylang.org/en/latest/internals/layout\_in\_storage.html#mappings-and-dynamic-arrays) as keys and the value override as value.
+
+For this example, we need to override the following:
+
+```
+wards['0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2'] = 1
+```
+
+The value override must be supplied to the following storage location:
+
+$$
+{keccak_{256} \lparen \underbrace{\tt{0xf2...f2}}_\text{\tt{sender}, 20B}\ .\ \underbrace{\tt{0x00..00}}_\text{\tt{wards} slot, 32B}\rparen}
+$$
+
+In our case, this evaluates to `0xedd7d04419e9c48ceb6055956cbb4e2091ae310313a4d1fa7cbcfe7561616e03` and the override map (the tird argument) looks as follows:
+
+```json
+{
+  "0x6b175474e89094c44da98b954eedeac495271d0f": {
+    "stateDiff": {
+      "0xedd7d04419e9c48ceb6055956cbb4e2091ae310313a4d1fa7cbcfe7561616e03": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    }
+  }
+}
+```
+
+Here's the cURL performing the request. Check out the Transfer event in the response!
+
+{% tabs %}
+{% tab title="Simulation RPC" %}
+```bash
+# simulate DAI minting by 0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2
+# 0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1 gets the minted DAI
+# Simulated on the latest block
+curl https://mainnet.gateway.tenderly.co/$WEB3_GATEWAY_API_KEY \
+-X POST \
+-H "Content-Type: application/json" \
+-d \
+'{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "method": "tenderly_simulateTransaction",
+  "params": [
+    {
+      "from": "0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2",
+      "to": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "gas": "0x7a1200",
+      "data": "0x40c10f19000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f10000000000000000000000000000000000000000000000001bc16d674ec80000"
+    },
+    "latest",
+    {
+      "0x6b175474e89094c44da98b954eedeac495271d0f": {
+        "stateDiff": {
+          "0xedd7d04419e9c48ceb6055956cbb4e2091ae310313a4d1fa7cbcfe7561616e03": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        }
+      }
+    }
+  ]
+}'
+```
+{% endtab %}
+
+{% tab title="Simulation RPC Response" %}
+```json
+{
+   "id" : 0,
+   "jsonrpc" : "2.0",
+   "result" : {
+      "blockNumber" : "0xfd0dc8",
+      "cumulativeGasUsed" : "0x0",
+      "gasUsed" : "0xd0e5",
+      "logs" : [
+         {
+            "anonymous" : false,
+            "inputs" : [
+               {
+                  "name" : "src",
+                  "type" : "address",
+                  "value" : "0x0000000000000000000000000000000000000000"
+               },
+               {
+                  "name" : "dst",
+                  "type" : "address",
+                  "value" : "0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1"
+               },
+               {
+                  "name" : "wad",
+                  "type" : "uint256",
+                  "value" : "2000000000000000000"
+               }
+            ],
+            "name" : "Transfer",
+            "raw" : {
+               "address" : "0x6b175474e89094c44da98b954eedeac495271d0f",
+               "data" : "0x0000000000000000000000000000000000000000000000001bc16d674ec80000",
+               "topics" : [
+                  "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+                  "0x0000000000000000000000000000000000000000000000000000000000000000",
+                  "0x000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1"
+               ]
+            }
+         }
+      ],
+      "logsBloom" : "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000010000000020000000004000000000800000000000000000000000010000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000002000000000000000000000020000000000000000000000000000000040000000000000000000000000000000000",
+      "status" : true,
+      "trace" : [
+         {
+            "decodedInput" : [
+               {
+                  "name" : "usr",
+                  "type" : "address",
+                  "value" : "0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1"
+               },
+               {
+                  "name" : "wad",
+                  "type" : "uint256",
+                  "value" : "2000000000000000000"
+               }
+            ],
+            "from" : "0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2",
+            "gas" : "0x79bd80",
+            "gasUsed" : "0x7c65",
+            "input" : "0x40c10f19000000000000000000000000f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f10000000000000000000000000000000000000000000000001bc16d674ec80000",
+            "method" : "mint",
+            "output" : "0x",
+            "subtraces" : 0,
+            "to" : "0x6b175474e89094c44da98b954eedeac495271d0f",
+            "traceAddress" : [
+               0
+            ],
+            "type" : "CALL",
+            "value" : "0x0"
+         }
+      ],
+      "type" : "0x0"
+   }
+}
+
+```
+{% endtab %}
+{% endtabs %}
