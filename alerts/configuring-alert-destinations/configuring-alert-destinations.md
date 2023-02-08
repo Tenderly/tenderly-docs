@@ -10,7 +10,7 @@ Project-scoped Destinations are only accessible within the project they were cre
 
 ### **Web3 Actions**
 
-This type of alert destination means your action will be used as a [**destination for the alert**](../creating-an-alert/).
+This type of alert destination means your action will be used as a [**destination for the alert**](broken-reference).
 
 ```yaml
 trigger:
