@@ -1,20 +1,20 @@
 ---
-description: Custom JSON RPC method available in Tenderly Web3 Gateway.
+description: Custom JSON RPC method available in Tenderly Web3 Gateway
 ---
 
-# Simulate JSON RPC
+# Simulate Bundle JSON RPC
 
 {% hint style="info" %}
 The custom RPC methods appear in the **`tenderly_`** namespace.
 {% endhint %}
 
-### `tenderly_simulateTransaction`
+### `tenderly_simulateBundle`
 
-Simulates transaction as it would execute on the given block.
+Simulates a bundle of transactions as it would execute on the given block and returns results for each transaction.
 
 **PARAMS**
 
-1. **Transaction** Transaction `OBJECT`
+1. **Transactions** Transactions `ARRAY`: list of transactions in a bundle
    * **from** (_optional_) `STRING`: hex encoded address
    * **to** `STRING`: hex encoded address
    * **gas** (_optional_) `NUMBER`
@@ -45,16 +45,21 @@ Simulates transaction as it would execute on the given block.
 {
   "id": 0,
   "jsonrpc": "2.0",
-  "method": "tenderly_simulateTransaction",
+  "method": "tenderly_simulateBundle",
   "params": [
-    {
-      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      "value": "0x0",
-      "data": "0x2e7700f0"
-    },
+    [
+      {
+        "from": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "data": "0x095ea7b300000000000000000000000020a5814b73ef3537c6e099a0d45c798f4bd6e1d60000000000000000000000000000000000000000000000000000000000000001"
+      },
+      {
+        "from": "0x20a5814b73ef3537c6e099a0d45c798f4bd6e1d6",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "data": "0x23b872dd000000000000000000000000d8da6bf26964af9d7eed9e03e53415d37aa9604500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"
+      }
+    ],
     "0xF4D880",
-    null
   ]
 }
 ```
@@ -69,16 +74,21 @@ Simulates transaction as it would execute on the given block.
 '{
   "id": 0,
   "jsonrpc": "2.0",
-  "method": "tenderly_simulateTransaction",
+  "method": "tenderly_simulateBundle",
   "params": [
-    {
-      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      "value": "0x0",
-      "data": "0x2e7700f0"
-    },
+    [
+      {
+        "from": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "data": "0x095ea7b300000000000000000000000020a5814b73ef3537c6e099a0d45c798f4bd6e1d60000000000000000000000000000000000000000000000000000000000000001"
+      },
+      {
+        "from": "0x20a5814b73ef3537c6e099a0d45c798f4bd6e1d6",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "data": "0x23b872dd000000000000000000000000d8da6bf26964af9d7eed9e03e53415d37aa9604500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"
+      }
+    ],
     "0xF4D880",
-    null
   ]
 }'
 
@@ -97,13 +107,19 @@ async function runSimulateTransaction() {
   );
 
   // Execute method
-  const result = await provider.send("tenderly_simulateTransaction", [
-    {
-      from: "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      to: "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      value: "0x0",
-      data: "0x2e7700f0",
-    },
+  const result = await provider.send("tenderly_simulateBundle", [
+    [
+      {
+        "from": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "data": "0x095ea7b300000000000000000000000020a5814b73ef3537c6e099a0d45c798f4bd6e1d60000000000000000000000000000000000000000000000000000000000000001"
+      },
+      {
+        "from": "0x20a5814b73ef3537c6e099a0d45c798f4bd6e1d6",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "data": "0x23b872dd000000000000000000000000d8da6bf26964af9d7eed9e03e53415d37aa9604500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"
+      }
+    ],
     "0xF4D880",
   ]);
 
@@ -153,7 +169,7 @@ async function runSimulateTransaction() {
 {% endtab %}
 {% endtabs %}
 
-**RESULT**: Simulation result `OBJECT`
+**RESULT**: Simulations result `ARRAY`: list of simulation results in a bundle
 
 * **status** `NUMBER:` either `1` (success) or `0` (failure)
 * **gasUsed** `NUMBER`: The amount of gas used by this specific transaction alone
@@ -194,4 +210,3 @@ async function runSimulateTransaction() {
     * **name** `STRING`: the name of this argument
   * **subtraces** `NUMBER`: number of child traces
   * **traceAddress** : trace position `ARRAY` of `NUMBER`
-

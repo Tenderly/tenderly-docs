@@ -15,12 +15,14 @@ To calculate the usage over a period of time, you need to multiply the number of
 1000 * 1 TU + 100 * 20 TU = 3000 TU
 ```
 
-| Category             | Description                                                                 | Usage footprint |
-| -------------------- | --------------------------------------------------------------------------- | --------------- |
-| **Read**             | Read-only requests, such as `eth_getBalance` or `eth_getTransactionByHash`. | **1 TU**        |
-| **Write**            | Write requests, such as `eth_sendTransaction` or `eth_sendRawTransaction`.  | **20 TU**       |
-| **Compute**          | Compute requests, such as `eth_call` or `eth_estimateGas`.                  | **4 TU**        |
-| **Advanced Compute** | Compute requests, such as `tenderly_simulateTransaction`.                   | **40 TU**       |
+| Category             | Description                                                                              | Usage footprint |
+| -------------------- | ---------------------------------------------------------------------------------------- | --------------- |
+| **Read**             | Read-only requests, such as `eth_getBalance` or `eth_getTransactionByHash`.              | **1 TU**        |
+| **Write**            | Write requests, such as `eth_sendTransaction` or `eth_sendRawTransaction`.               | **20 TU**       |
+| **Compute**          | Compute requests, such as `eth_call` or `eth_estimateGas`.                               | **4 TU**        |
+| **Advanced Compute** | Compute requests, such as `tenderly_simulateTransaction` or `tenderly_traceTransaction`. | **40 TU**       |
+
+
 
 <details>
 
@@ -90,6 +92,8 @@ To calculate the usage over a period of time, you need to multiply the number of
 <summary>Advanced Compute Methods</summary>
 
 * `tenderly_simulateTransaction`
+* `tenderly_traceTransaction`
+* `tenderly_simulateBundle` (multiplied by the number of transactions in a bundle)
 
 </details>
 

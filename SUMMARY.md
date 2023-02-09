@@ -17,6 +17,8 @@
   * [Brief JSON RPC reference](web3-gateway/references/brief-json-rpc.md)
   * [Detailed JSON RPC reference](web3-gateway/references/detailed-json-rpc.md)
   * [Simulate JSON RPC](web3-gateway/references/simulate-json-rpc.md)
+  * [Simulate Bundle JSON RPC](web3-gateway/references/simulate-bundle-json-rpc.md)
+  * [Trace JSON RPC](web3-gateway/references/trace-json-rpc.md)
 * [Pricing and usage limits](web3-gateway/pricing.md)
 
 ## 🔮 Simulations & Forks
