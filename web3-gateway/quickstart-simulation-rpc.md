@@ -10,7 +10,7 @@ Simulation RPC allows you to use your Tenderly Web3 Gateway node provider not on
 
 Simulation RPC allows you to:
 
-* simulate an arbitrary transcation,
+* simulate an arbitrary transaction,
 * select any historical (or latest) block you wish to simulate on and go back in time,
 * pass a pre-simulation **state overrides map**, so you can bring contracts participating in the simulation in a specific state, even if you wouldn't be able to on an actual network (e.g. Mainnet).
 
@@ -27,7 +27,7 @@ In this example, we'll do a quick simulation of `0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e
 {% tabs %}
 {% tab title="Simulation RPC" %}
 ```bash
-curl https://mainnet.gateway.tenderly.co/45Hb9LQPNEHkd2bHbQgIaG \
+curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -174,7 +174,7 @@ Here's the cURL performing the request. Check out the Transfer event in the resp
 # simulate DAI minting by 0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2
 # 0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1 gets the minted DAI
 # Simulated on the latest block
-curl https://mainnet.gateway.tenderly.co/45Hb9LQPNEHkd2bHbQgIaG \
+curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -294,7 +294,7 @@ Look for the Transfer, Approve and Transfer events in the response, meaning effe
 {% tabs %}
 {% tab title="Simulation Bundle RPC" %}
 ```bash
-curl https://mainnet.gateway.tenderly.co/45Hb9LQPNEHkd2bHbQgIaG \
+curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
