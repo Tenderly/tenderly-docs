@@ -6,7 +6,7 @@ description: >-
 
 # Account-Scoped
 
-Account-scoped Destinations are accessible across all your project within your Tenderly account.
+Account-scoped Destinations are accessible across all your projects within your Tenderly account.
 
 ### Email Destination
 
