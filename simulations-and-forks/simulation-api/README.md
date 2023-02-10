@@ -16,20 +16,23 @@ You can use this information for various smart contract development purposes or 
 Here are some examples of what you can achieve with Simulation API:
 
 * Dry-run user transactions to help them save money on failed txs and improve your dapp UX
-* Run your dapp in playground mode to let users try out your dapp without spending any gas and with all production data readily available
-* Stage QA environments for a blockchain project
-* Set up CI/CD for your blockchain project
+* [Run your dapp in playground mode](integration-guides/dapp-playground-mode.md) to let users try out your dapp without spending any gas and with all production data readily available
+* [Stage QA environments](integration-guides/instant-staging-qa-environment-for-dapps.md) for a blockchain project
+* [Set up CI/CD](integration-guides/ci-cd-pipeline-for-smart-contracts.md) for your blockchain project
 * Validate complex DAO governance proposals
 
 ## How to start using Tenderly Simulation API
 
 Follow the next steps in order to start using simulations:
 
-1. Create a one-off simulation
-2. Create Fork environment
-3. Add Ether to your test address
-4. Execute transaction in Tenderly Fork
-5. Delete the fork
+1. [Create a one-off simulation](./#1-create-a-one-off-simulation)
+2. [Consume the decoded simulation result](advanced-simulation-api.md)
+3. [Override smart contracts' state](simulation-api-with-state-overrides.md) when simulating
+4. [Perform a bundled simulation](bundled-simulations.md) - simulating multiple transactions at once
+5. [Create Fork environment](./#2-create-a-fork-environment)
+6. [Add Ether to your test address](./#3-add-ether-to-your-test-address)
+7. [Execute transaction in Tenderly Fork](./#4-execute-transaction-in-tenderly-fork)
+8. [Delete the fork](./#5-delete-the-fork)
 
 ### 0 Set up the API
 
@@ -57,13 +60,31 @@ You can find more details here:
 
 ### 1 Create a one-off simulation
 
-We can start by simulating a transaction. We'll see its execution without recording any state changes. You can get the output of the transaction, see whether it failed or not, what it changed, the contracts it called, and more. All of this information is available without actually sending the transaction to the chain. You can simulate any transaction using any given contract deployed on networks available in Tenderly.
+We can start by simulating a transaction. We'll see its execution without recording any state changes. You can get the output of the transaction, see whether it failed or not, what it changed, the contracts it called, and more. All of this information is available without actually sending the transaction to the chain, with no gas fees. You can simulate any transaction using any given contract deployed on networks available in Tenderly.
 
 Let's simulate the Uniswap `swapTokensForExactTokens` function and access state changes, logs, and call traces to extract relevant data.&#x20;
+
+{% hint style="info" %}
+#### Quick vs Full simulations
+
+Simulation API comes in two modes you can specify to the `simulation_type` parameter.
+
+* The default **full** mode gives you decoded simulation results, matched to the smart contracts code, for easier client-side interpretation
+* The **quick** mode provides you raw transaction results, in less time.
+
+
+
+#### Saving Simulations
+
+* To persist simulations so they're visible in Tenderly dashboard, use the boolean `save` parameter.
+* To persist only failing simulations, use `save_if_fails` boolean flag.&#x20;
+{% endhint %}
 
 **Example (typescript)**
 
 Lines 11-41 represent the invocation of the API. The rest shows some information you can extract from this simulation.
+
+Notice we're doing a `quick` simulation, and we've set `save` to `true`, so simulation will appear in Simulations page in the Dashboard.
 
 {% code lineNumbers="true" %}
 ```typescript
@@ -84,9 +105,9 @@ const approveDai = async () => {
     // the transaction
     {
       /* Simulation Configuration */
-      save: false, // if true simulation is saved and shows up in the dashboard
+      save: true, // if true simulation is saved and shows up in the dashboard
       save_if_fails: false, // if true, reverting simulations show up in the dashboard
-      simulation_type: 'full', // full or quick (full is default)
+      simulation_type: 'quick', // full or quick (full is default)
 
       network_id: '1', // network to simulate on
 
@@ -255,14 +276,6 @@ Call Trace
   "calls": null
 }
 ```
-
-{% hint style="info" %}
-When transactions are simulated via API, by default they don’t get persisted. To help the debugging using the Dashboard, you can configure `save_if_fails` flag. If you need to persist the transaction in case of success too, you can set `save` flag to `true`. Both of these are `false` by default.
-{% endhint %}
-
-{% hint style="info" %}
-Transactions are executed by default in `full` mode. To speed up simulations even further, you can set `simulation_type` to `quick`. Full simulations use the source code of the smart contract to generate call traces, whereas quick simulations use only the bytecode and thus take less time.
-{% endhint %}
 
 ### 2 Create a Fork environment
 
