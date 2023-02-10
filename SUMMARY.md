@@ -66,6 +66,7 @@
   * [How to Build a Custom Oracle](web3-actions/tutorials-and-quickstarts/how-to-build-a-custom-oracle.md)
   * [How to Send a Discord Message About a New Uniswap Pool](web3-actions/tutorials-and-quickstarts/how-to-send-a-discord-message-about-a-new-uniswap-pool.md)
 * [References](web3-actions/references/README.md)
+  * [Web3 Gateway Access](web3-actions/references/web3-gateway-access.md)
   * [Action Functions, Events, and Triggers](web3-actions/references/action-functions-events-and-triggers.md)
   * [Context, Storage, and Secrets](web3-actions/references/context-storage-and-secrets.md)
   * [Project Structure](web3-actions/references/project-structure.md)

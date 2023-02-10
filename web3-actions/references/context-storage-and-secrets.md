@@ -24,6 +24,28 @@ export const actionFun: ActionFn = async (context: Context, event: Event) => {
 Storage and Secrets are shared between all Actions within a project in Tenderly.
 {% endhint %}
 
+#### Gateways
+
+The Gateways utility (`context.gateways`) gives you access to Tenderly’s production node Web3 Gateway, allowing you to send transactions or read on-chain data with Web3 Actions.
+
+The `gateways` property gives you access to a method called `getGateway()`, which requires one argument - the network you want to access. To access the Mainnet, for example, the argument needs to be formatted like this `Network.MAINNET`.
+
+An example of a completed statement stored in a variable looks like this:
+
+```jsx
+const defaultGatewayURL = context.gateways.getGateway(Network.MAINNET)
+```
+
+Here’s a list of arguments for the `getGateway()` method for each supported network in Web3 Gateway:
+
+* `Network.MAINNET`
+* `Network.ROPSTEN`
+* `Network.RINKEBY`
+* `Network.GORLI`
+* `Network.SEPOLIA`
+
+For more details about how `context.gateways` works and sample code snippets to help you understand how to use it, read through the **Web3 Gateway in Web3 Actions** documentation page.
+
 ### Storage
 
 You can use the Storage utility to make your Web3 Actions stateful. Web3 Actions Storage is a key-value-based store. You can save data to Storage both from your custom code (functions) and the Tenderly Dashboard.
