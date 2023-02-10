@@ -16,7 +16,7 @@ In this code sample, we'll be using Simulation API to extract and show the follo
 
 We'll simulate the execution of an existing successful transaction sent to UniswapV2Router02 on the Ethereum Mainnet to retrieve additional information.&#x20;
 
-Here's the transaction calling `swapExactTokensForTokens()` and exchanging 3,118.71 XCAD to USDT.
+Here's the transaction calling `swapExactTokensForTokens()` and exchanging 3,118.71 DAI to USDT.
 
 ```json
 {
