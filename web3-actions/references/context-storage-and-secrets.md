@@ -26,7 +26,7 @@ Storage and Secrets are shared between all Actions within a project in Tenderly.
 
 #### Gateways
 
-The Gateways utility (`context.gateways`) gives you access to Tenderly’s production node Web3 Gateway, allowing you to send transactions or read on-chain data with Web3 Actions.
+The Gateways utility (`context.gateways`) gives you access to [Tenderly’s production node Web3 Gateway](broken-reference), allowing you to send transactions or read on-chain data with Web3 Actions.
 
 The `gateways` property gives you access to a method called `getGateway()`, which requires one argument - the network you want to access. To access the Mainnet, for example, the argument needs to be formatted like this `Network.MAINNET`.
 
@@ -44,7 +44,7 @@ Here’s a list of arguments for the `getGateway()` method for each supported ne
 * `Network.GORLI`
 * `Network.SEPOLIA`
 
-For more details about how `context.gateways` works and sample code snippets to help you understand how to use it, read through the **Web3 Gateway in Web3 Actions** documentation page.
+For more details about how `context.gateways` works and sample code snippets to help you understand how to use it, read through the [**Web3 Gateway access in Web3 Actions**](web3-gateway-access.md) documentation page.
 
 ### Storage
 
