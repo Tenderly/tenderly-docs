@@ -1,28 +1,28 @@
 ---
 description: >-
-  Get started with Simulation RPC to simulate transactions with Web3 Gateway
-  node provider.
+  Get started with Simulation RPC to simulate transactions with the Tenderly
+  Web3 Gateway node.
 ---
 
 # Quickstart: Simulation RPC
 
-Simulation RPC allows you to use your Tenderly Web3 Gateway node provider not only to read data and send transactions to the blockchain, but also to simulate transactions in one place. It's possible to use Simulation RPC for [networks supported in Web3 Gateway](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/supported-networks-and-languages). For other cases, use [Simulation API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/simulations-and-forks/simulation-api).
+Simulation RPC allows you to use your Tenderly Web3 Gateway node not only to read data and send transactions to the blockchain, but also to simulate transactions in one place. It's possible to use Simulation RPC for the [networks supported in Web3 Gateway](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/supported-networks-and-languages). For other cases, use [Simulation API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/simulations-and-forks/simulation-api).
 
 Simulation RPC allows you to:
 
-* simulate an arbitrary transaction,
-* select any historical (or latest) block you wish to simulate on and go back in time,
-* pass a pre-simulation **state overrides map**, so you can bring contracts participating in the simulation in a specific state, even if you wouldn't be able to on an actual network (e.g. Mainnet).
+* simulate an arbitrary transaction.
+* select any historical (or latest) block you wish to simulate on and go back in time.
+* pass a pre-simulation **state overrides map** so you can bring contracts participating in the simulation in a specific state, even if you wouldn't be able to on an actual network (e.g. Mainnet).
 
-Here's three examples:
+To get started, take a look at the following three examples:
 
-* [Simulate approving a DAI](quickstart-simulation-rpc.md#example-simulate-approving-a-dai), using `tenderly_simulateTransaction`;
-* [Simulate Minting 2 DAI](quickstart-simulation-rpc.md#example-simulate-minting-2-dai) involving state overrides;
-* [Simulating a bundle of transactions](quickstart-simulation-rpc.md#example-simulate-minting-2-dai) involving minting, approving and transfering DAI, using `tenderly_simulateBundle`.
+* [Simulate approving a DAI](quickstart-simulation-rpc.md#example-simulate-approving-a-dai), using `tenderly_simulateTransaction`
+* [Simulate minting 2 DAI](quickstart-simulation-rpc.md#example-simulate-minting-2-dai) involving state overrides
+* [Simulate a bundle of transactions](quickstart-simulation-rpc.md#example-simulate-minting-2-dai) involving minting, approving, and transferring DAI using `tenderly_simulateBundle`.
 
-## Example: Simulate Approving a DAI
+## Example: Simulate approving a DAI
 
-In this example, we'll do a quick simulation of `0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2` approving 299 to `0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1`. Check the Response for **Approve** event.
+In this example, we'll do a quick simulation of `0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2` approving 299 to `0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1`. Check the Response for the **Approve** event.
 
 {% tabs %}
 {% tab title="Simulation RPC" %}
@@ -134,13 +134,13 @@ curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 {% endtab %}
 {% endtabs %}
 
-## Example: Simulate Minting 2 DAI
+## Example: Simulate minting 2 DAI
 
 The following example shows a simulation of an arbitrary sender `0xe2e2...e2` calling the `mint` function of the [DAI Mainnet contract (`0x6b17...71d0f`)](https://dashboard.tenderly.co/contract/mainnet/0x6b175474e89094c44da98b954eedeac495271d0f).
 
-In order to mint, the sender of the transaction must be a ward, and this address surely isn't. To simulate minting, we'll need to do a state override: prior to running the simulation, the value overrides for contract's storage slots will be applied to the current state of the contract.
+In order to mint, the sender of the transaction must be a ward and this address surely isn't. To simulate minting, we'll need to do a state override. Prior to running the simulation, the value overrides for the contract's storage slots will be applied to the current state of the contract.
 
-When using Simulation RPC, state overrides is the third argument of `tenderly_simulateTransaction` RPC call. To specify overrides, provide a map from contract address to overrides map. The overrides map takes [smart contract's storage location](https://docs.soliditylang.org/en/latest/internals/layout\_in\_storage.html#mappings-and-dynamic-arrays) as keys and the value override as value.
+When using Simulation RPC, state overrides are the third argument of the `tenderly_simulateTransaction` RPC call. To specify overrides, provide a map from the contract address to the overrides map. The overrides map takes the [smart contract's storage location](https://docs.soliditylang.org/en/latest/internals/layout\_in\_storage.html#mappings-and-dynamic-arrays) as keys and the value override as value.
 
 For this example, we need to override the following:
 
@@ -154,7 +154,7 @@ $$
 {keccak_{256} \lparen \underbrace{\tt{0xf2...f2}}_\text{\tt{sender}, 20B}\ .\ \underbrace{\tt{0x00..00}}_\text{\tt{wards} slot, 32B}\rparen}
 $$
 
-In our case, this evaluates to `0xedd7d04419e9c48ceb6055956cbb4e2091ae310313a4d1fa7cbcfe7561616e03` and the override map (the tird argument) looks as follows:
+In our case, this evaluates to `0xedd7d04419e9c48ceb6055956cbb4e2091ae310313a4d1fa7cbcfe7561616e03` and the override map (the third argument) looks as follows:
 
 ```json
 {
@@ -166,7 +166,7 @@ In our case, this evaluates to `0xedd7d04419e9c48ceb6055956cbb4e2091ae310313a4d1
 }
 ```
 
-Here's the cURL performing the request. Check out the Transfer event in the response!
+Here's the cURL performing the request. Check out the Transfer event in the response.
 
 {% tabs %}
 {% tab title="Simulation RPC" %}
@@ -279,17 +279,17 @@ curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 {% endtab %}
 {% endtabs %}
 
-## Example: Simulate mint-approve-transfer sequence
+## Example: Simulate a mint-approve-transfer sequence
 
-The custom `tenderly_simulateBundle` endpoint allows you to simulate several transactions by passing it an array. The transactions are simulated as if they executed one after another in the same block.
+The custom `tenderly_simulateBundle` endpoint allows you to simulate several transactions by passing them as an array. The transactions are simulated as if they executed one after another in the same block.
 
 The following code performs a batch simulation of the following transactions:
 
-1. Mint 2 DAI for `e58b9ee93700a616b50509c8292977fa7a0f8ce1` (if you don't have any already). To achieve this, simulate call to **mint** function with a state override to `wards` mapping, so the address `0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2` becomes a ward for this simulation.
+1. Mint 2 DAI for `e58b9ee93700a616b50509c8292977fa7a0f8ce1` (if you don't have any already). To achieve this, simulate a call to the **mint** function with a state override to the `wards` mapping, so the address `0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2` becomes a ward for this simulation.
 2. Now that `e58b9ee93700a616b50509c8292977fa7a0f8ce1` has 2 DAI, we need a transaction that approves 1 DAI to `f7ddedc66b1d482e5c38e4730b3357d32411e5dd`.
 3. A transaction where `0xf7ddedc66b1d482e5c38e4730b3357d32411e5dd` calls `transferFrom` and sends to `e58b9ee93700a616b50509c8292977fa7a0f8ce1`
 
-Look for the Transfer, Approve and Transfer events in the response, meaning effects of prior transactions are visible to subsequent ones
+Look for the Transfer, Approve, and Transfer events in the response, meaning the effects of prior transactions are visible to subsequent ones.
 
 {% tabs %}
 {% tab title="Simulation Bundle RPC" %}
