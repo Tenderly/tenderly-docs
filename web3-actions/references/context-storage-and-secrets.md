@@ -43,7 +43,7 @@ Here’s a list of arguments for the `getGateway()` method for each supported ne
 * `Network.MAINNET`
 * `Network.ROPSTEN`
 * `Network.RINKEBY`
-* `Network.GORLI`
+* `Network.GOERLI`
 * `Network.SEPOLIA`
 
 For more details about how `context.gateways` works and sample code snippets to help you understand how to use it, read through the [**Web3 Gateway access in Web3 Actions**](web3-gateway-access.md) documentation page.
