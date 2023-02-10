@@ -1,13 +1,15 @@
 ---
 description: >-
-  Learn how to use Storage to store data from code or the Dashboard and make
-  Web3 Actions stateful. Find out how to save sensitive information, such as API
-  keys, to Secrets and use it during execution.
+  Learn how to get access to the blockchain through Web3 Gateway with a single
+  line of code, store and fetch data from Storage, and save sensitive
+  information in Secrets, such as API keys.
 ---
 
-# Context, Storage, and Secrets
+# Context: Gateway, Storage, Secrets
 
-In this guide, you’ll learn how to create, manage, and access private data such as API keys when creating Web3 Actions, how to persist data to Storage, and how to access that data from your application.
+This guide provides an overview of the `context` object and how to use it to get access to Gateway, Storage, and Secrets utilities within Web3 Actions.
+
+You’ll also learn how to access Tenderly’s production node [Web3 Gateway](https://docs.tenderly.co/web3-gateway/quickstart-query-blockchain) through `context`, how to manage and access private data such as API keys with Secrets, how to persist data to Storage, and how to access this data from your application.
 
 ### Context
 

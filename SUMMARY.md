@@ -68,7 +68,7 @@
 * [References](web3-actions/references/README.md)
   * [Web3 Gateway Access](web3-actions/references/web3-gateway-access.md)
   * [Action Functions, Events, and Triggers](web3-actions/references/action-functions-events-and-triggers.md)
-  * [Context, Storage, and Secrets](web3-actions/references/context-storage-and-secrets.md)
+  * [Context: Gateway, Storage, Secrets](web3-actions/references/context-storage-and-secrets.md)
   * [Project Structure](web3-actions/references/project-structure.md)
   * [CLI Cheatsheet](web3-actions/references/cli-cheatsheet.md)
   * [Local Development and Testing](web3-actions/references/local-development-and-testing.md)
