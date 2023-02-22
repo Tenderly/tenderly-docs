@@ -59,7 +59,7 @@ Let’s get familiar with the three core elements of Web3 Actions: **functions**
 
 <figure><img src="../.gitbook/assets/Tenderly_W3A_Illustration-03.png" alt="Understanding the components of Web3 Actions"><figcaption><p>The elements of Web3 Actions</p></figcaption></figure>
 
-**Functions:** The custom JavaScript or TypeScript code you want to execute when an external event you specified occurs. Functions can be written directly in the browser through the Tenderly Dashboard or using the CLI (within an npm project). In both cases, the function must be a named export from the defining file.
+**Functions:** The custom JavaScript or TypeScript code you want to execute when an external event you specified occurs. Functions can be written directly in the browser through the Tenderly Dashboard or using Tenderly CLI. In both cases, the function must be a named export from the defining file.
 
 **Events:** Instances of pre-defined external events that you can listen for by configuring a trigger. The function receives the event object as an argument, making the data about the event available to your function code. These are supported events:
 
