@@ -23,10 +23,10 @@ The `Network` argument is also an object which gives you access to all the suppo
 * `Network.MAINNET`
 * `Network.ROPSTEN`
 * `Network.RINKEBY`
-* `Network.GORLI`
+* `Network.GOERLI`
 * `Network.SEPOLIA`
 
-To demonstrate how all of this comes together, here’s an example Javascript variable which is configured to access the Mainnet:
+To demonstrate how all of this comes together, here’s an example Javascript variable that is configured to access the Mainnet:
 
 ```jsx
 const defaultGatewayURL = context.gateways.getGateway(Network.MAINNET);

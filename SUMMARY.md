@@ -66,6 +66,7 @@
   * [Deploy Web3 Actions via Dashboard](web3-actions/tutorials-and-quickstarts/deploy-web3-actions-via-dashboard.md)
   * [Deploy Web3 Action via CLI](web3-actions/tutorials-and-quickstarts/deploy-web3-action-via-cli.md)
   * [How to Handle On-Chain Events](web3-actions/tutorials-and-quickstarts/how-to-handle-on-chain-events.md)
+  * [How to Access Web3 Gateway from Web3 Actions](web3-actions/tutorials-and-quickstarts/how-to-access-web3-gateway-from-web3-actions.md)
   * [How to Build a Custom Oracle](web3-actions/tutorials-and-quickstarts/how-to-build-a-custom-oracle.md)
   * [How to Send a Discord Message About a New Uniswap Pool](web3-actions/tutorials-and-quickstarts/how-to-send-a-discord-message-about-a-new-uniswap-pool.md)
 * [References](web3-actions/references/README.md)
