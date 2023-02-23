@@ -1,7 +1,7 @@
 ---
 description: >-
-  Learn how to simulate multiple transactions in a single Bundled Simulation
-  Bundle API request.
+  Learn how to simulate multiple transactions in a single Simulation Bundle API
+  request.
 ---
 
 # Bundled Simulations
