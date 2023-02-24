@@ -1,7 +1,7 @@
 ---
 description: >-
-  Start using Tenderly Forks - lightweight simulated networks that you can use
-  development, testing, and other purposes.
+  Start using Tenderly Forks, lightweight simulated networks that you can use
+  for development, testing, and other purposes.
 ---
 
 # Forks
@@ -13,8 +13,8 @@ You can use Forks through:
 * The **Fork UI** for an IDE-like experience. Follow the [Using Forks UI guide](using-forks-ui.md) to get started.
 * The **Fork JSON RPC** that allows you to use Forks as a lightweight blockchain provider. This way, you can:
   * Interact with Forks via Ethers.js. Follow the [Using Forks with Ethers.js](using-forks-with-ethers.js.md) guide to learn more.
-  * Integrate the RPC into a Hardhat project, by using it as a network URL in hardhat.config. You can use that network to test your deployment scripts and/or run smart contract tests. Explore this [example hardhat project](https://github.com/Tenderly/tenderly-examples/tree/master/multisig-wallet) for details.
-  * Integrate the RPC in a dapp UI, by using the Fork URL as a provider. See this [example project](https://github.com/Tenderly/tenderly-examples/tree/master/multisig-ui-simulations).
+  * Integrate the RPC into a Hardhat project by using it as a network URL in hardhat.config. You can use that network to test your deployment scripts and/or run smart contract tests. Explore this [example hardhat project](https://github.com/Tenderly/tenderly-examples/tree/master/multisig-wallet) for details.
+  * Integrate the RPC in a dapp UI by using the Fork URL as a provider. See this [example project](https://github.com/Tenderly/tenderly-examples/tree/master/multisig-ui-simulations).
 
 Additionally, you can do various custom actions on a Fork:
 

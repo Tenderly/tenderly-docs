@@ -1,5 +1,5 @@
 ---
-description: Learn how to use Simulation API to extract transaction information.
+description: Learn how to use simulation API to extract transaction information.
 ---
 
 # Advanced Simulation API Usage
@@ -12,7 +12,7 @@ In this code sample, we use Simulation API to:
 * Show events emitted during the simulated transaction execution.
 * Display state changes.
 
-The example simulates the execution of an existing successful transaction sent to UniswapV2Router02 on the Ethereum Mainnet to retrieve additional information. Here's the transaction calling `swapExactTokensForTokens()` and exchanging 3,118.71 XCAD to USDT.
+The sample simulates the execution of an existing successful transaction sent to UniswapV2Router02 on the Ethereum Mainnet to retrieve additional information. Here's the transaction calling `swapExactTokensForTokens()`, exchanging 3,118.71 XCAD to USDT.
 
 ```json
 {
@@ -28,7 +28,7 @@ The example simulates the execution of an existing successful transaction sent t
 
 The following code customizes the simulation context by:
 
-* Simulating the transaction on the block 16533181.
+* Simulating the transaction on the block 16533181
 * Simulating this transaction at a particular index within that block (in this case 1).
 * Performing a [full simulation](simulation-api-quick-and-full-mode.md).
 
