@@ -41,8 +41,8 @@ When using the **full** mode, you can easily get high details of simulation info
 
 Aside from using Simulation RPC and Simulation API to simulate single transactions, you can use them to **simulate a sequence of interdependent transactions**. You can achieve this using **Simulation Bundle API**:
 
-{% content-ref url="bundled-simulations.md" %}
-[bundled-simulations.md](bundled-simulations.md)
+{% content-ref url="simulation-bundles.md" %}
+[simulation-bundles.md](simulation-bundles.md)
 {% endcontent-ref %}
 
 ### Simulation state overrides

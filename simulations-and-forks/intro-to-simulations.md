@@ -58,7 +58,7 @@ There are two ways to simulate the two chained transactions:
 * **Bundle simulations** by sending an array of transactions. These transactions will get simulated one after the other using [Simulation Bundle RPC](simulation-rpc.md#example-simulate-a-mint-approve-transfer-sequence) or [Simulation Bundle API](broken-reference). In both cases, the transactions are simulated as if they were consecutively sent to a network.
 * **Use a Fork** and send transactions consecutively through the Fork’s RPC interface.
 
-For more information, see this example on [using simulation bundles](simulation-api/bundled-simulations.md).
+For more information, see this example on [using simulation bundles](simulation-api/simulation-bundles.md).
 
 ### Using Transaction Simulator
 

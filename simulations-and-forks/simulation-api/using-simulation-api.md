@@ -432,7 +432,7 @@ Simulation: 180.699ms
 
 For additional information, explore:&#x20;
 
-* [Simulation bundles](bundled-simulations.md) that allow you to simulate several transactions in a bundle such as a sequence of one `approve` and one `transferFrom` transactions.
+* [Simulation bundles](simulation-bundles.md) that allow you to simulate several transactions in a bundle such as a sequence of one `approve` and one `transferFrom` transactions.
 * [Overriding contract state variables](simulation-api-with-state-overrides.md) showing how to run simulations while overriding contracts' storage slots.
 * Advanced usage of Simulation API showing how to simulate on a historical block and extract various portions of simulation results.
 * [Using Simulation RPC in dapp UI](../integration-guides/using-simulation-rpc-in-dapp-ui.md) to learn how to display a transaction preview in dapp UI before the user signs it.
