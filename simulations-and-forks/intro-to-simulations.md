@@ -119,10 +119,4 @@ Running simulations gives you a preview of important actions, governance proposa
 * **Improve governance practices** by simulating proposals on Forks and seeing how they work before applying them.
 * Integrate Simulation API or Simulation RPC to inform the strategies you programmed into your dapp.
 
-#### Research and hack analysis
-
-Play around with smart contracts.
-
-* Use Simulation UI or Simulation API to
-
 \
