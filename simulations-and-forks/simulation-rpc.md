@@ -279,7 +279,7 @@ curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 {% endtab %}
 {% endtabs %}
 
-## Simulate a bundle of transactions
+## Simulating a bundle of transactions
 
 The custom `tenderly_simulateBundle` endpoint allows you to simulate several transactions by passing them as an array. The transactions are simulated as if they executed one after another in the same block.
 
