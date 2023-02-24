@@ -1,14 +1,14 @@
 ---
 description: >-
-  Learn how to simulate multiple transactions in a single Simulation Bundle API
-  request.
+  Learn how to simulate multiple transactions in a single Bundled Simulation
+  Bundle API request.
 ---
 
 # Bundled Simulations
 
 Simulation bundling enables you to simulate several transactions consecutively. For example, to set particular conditions before simulating a desired transaction, you first need to execute several other transactions.&#x20;
 
-Both Simulation API and Simulation RPC support bundle simulations. The endpoints receive an array of transactions that get simulated as if they executed one after another within the same block.
+Both Simulation API and Simulation RPC support simulation bundles. The endpoints receive an array of transactions that get simulated as if they executed one after another within the same block.
 
 For example, to simulate transferFrom on a DAI contract, you first need to approve a spender. You may also need to simulate the minting of DAI before approving.&#x20;
 

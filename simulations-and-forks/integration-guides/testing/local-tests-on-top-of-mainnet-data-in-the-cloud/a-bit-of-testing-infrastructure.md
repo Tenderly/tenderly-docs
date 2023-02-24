@@ -1,9 +1,17 @@
-# A bit of testing infrastructure
+---
+description: >-
+  Get a code snippet to quickly set up a Fork for testing and delete it after
+  you're finished.
+---
 
-In order to reduce boilerplate in the rest of the examples, here we introduce a function `forkForTest` which encapsulates Tenderly API calls needed to create a Fork and delete it. It’s a bit more robust way to organize the test code that scales. Feel free to skip this code and go to usage examples.
+# A Bit of Testing Infrastructure
+
+To reduce boilerplate in the rest of the examples, here's a function `forkForTest` that encapsulates Tenderly API calls needed to create a Fork and delete it. It’s a bit more robust way to organize the test code that scales.&#x20;
+
+Feel free to skip this code and go to usage examples.
 
 {% hint style="info" %}
-Tenderly will create 10 test addresses with 100 ETH for testing. By default, ethers will do transaction signing with 0th address as the default signer.
+Tenderly creates 10 test addresses with 100 ETH for testing. By default, the ethers library does transaction signing with the 0th address as the default signer.
 {% endhint %}
 
 ```tsx

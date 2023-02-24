@@ -1,29 +1,36 @@
-# CI/CD pipeline for smart contracts
+---
+description: >-
+  Learn how to set up a CI/CD pipeline to automatically run smart contract tests
+  on top of production data. Also, find out how to create a staging FE
+  environment for PRs automatically.
+---
+
+# CI/CD Pipeline for Smart Contracts
 
 ## Overview
 
-You will see how to set up Github Actions with Tenderly Forks in order to achieve automated smart contract testing and staging deployment. We are going to showcase how to start from an empty project and end up with a valid CI/CD for your project. So, what are we going to do?&#x20;
+Learn how to set up Github Actions with Tenderly Forks to automate smart contract testing and staging deployment. Find out how to start from an empty project and end up with a valid CI/CD for your project.&#x20;
 
 **Automatically run smart contract tests on top of production network data:**
 
-1. Setup smart contract project infra.
-2. Create testing Github Actions YAML file.
-3. Inject Tenderly Fork in the test process.
+1. Set up smart contract project infra.
+2. Create a testing Github Action YAML file.
+3. Inject a Tenderly Fork into the testing process.
 
-**Automatically create staging FE environment for PRs:**
+**Automatically create a staging FE environment for PRs:**
 
-1. Create Github Action for FE web hosting.
-2. Inject Tenderly Fork in the build process.
+1. Create a Github Action for FE web hosting.
+2. Inject a Tenderly Fork into the building process.
 
 ## **Automatically run smart contract tests on top production network data**
 
-### Setup smart contract project infra
+### Set up smart contract project infra
 
-Let’s create a dummy solidity smart contract project and some dummy tests using Hardhat. We can utilize Hardhat’s quick start guide in order to achieve this:
+Let’s create a dummy Solidity smart contract project and run some dummy tests using Hardhat. We can use Hardhat’s quick start guide to achieve this:
 
 {% embed url="https://hardhat.org/getting-started#quick-start" %}
 
-Additionally, we are going to extend networks with Tenderly Fork specification, for the example below:
+Additionally, we're going to extend networks with Tenderly Fork specification for the example below:
 
 **Hardhat config:**
 
@@ -57,9 +64,9 @@ export default {
 ...
 ```
 
-### Create testing Github Action Workflow YAML file
+### Create a testing Github Action Workflow YAML file
 
-Let's see how we can set up our Github Action in order to run our tests:
+Let's see how we can set up our Github Action to run our tests:
 
 ```yaml
 name: Run tests in Tenderly Fork
@@ -94,9 +101,9 @@ jobs:
         run: yarn test
 ```
 
-### Inject Tenderly Fork into the test process
+### Inject a Tenderly Fork into the testing process
 
-And finally, let’s see how we can inject a Tenderly Fork into our CI pipeline.
+Finally, let’s see how we can inject a Tenderly Fork into our CI pipeline.
 
 ```yaml
       ...
@@ -106,15 +113,17 @@ And finally, let’s see how we can inject a Tenderly Fork into our CI pipeline.
           JSON_RPC_URL: ${{ secrets.TENDERLY_FORK_URL }}
 ```
 
-And we are done! 🎉
+And we're done! 🎉
 
-## **Automatically create staging FE environment for PRs**
+## **Automatically create a staging FE environment for PRs**
 
-### Create Github Action for web hosting
+To create a staging FE environment for PRs automatically, we first need to:
+
+### Create a Github Action for web hosting
 
 Let’s create an action that would store the build distribution of our React application on the Google Cloud Storage bucket so we can access it later.
 
-We will need `GCP_CREDENTIALS` which you can generate using the command below and you should store as part of GitHub secrets.
+We need `GCP_CREDENTIALS` which you can generate using the command below. Once generated, you should store it as part of GitHub secrets.
 
 ```json
 gcloud iam service-accounts keys create ~/key.json --iam-account <iam-name>@<project-id>.iam.gserviceaccount.com
@@ -158,9 +167,9 @@ jobs:
           gsutil -m rsync -R ./build gs://${{secrets.GCS_BUCKET}}/${{github.run_id}}
 ```
 
-### Inject Tenderly Fork into the build process
+### Inject a Tenderly Fork into the building process
 
-Now that we have our GitHub Action ready to roll, let’s edit it a bit in order to be aware of Tenderly Forks.
+Now that we have our GitHub Action ready to roll, let’s edit it a bit to ensure it's aware of Tenderly Forks.
 
 ```yaml
  ...
@@ -173,5 +182,5 @@ Now that we have our GitHub Action ready to roll, let’s edit it a bit in order
 ```
 
 {% hint style="success" %}
-Here are the links to the [source code](https://github.com/Tenderly/integration-samples/tree/main/ci-cd-pipeline-for-smart-contracts) and also [GitHub Actions YAML](https://github.com/Tenderly/integration-samples/tree/main/.github/workflows).
+Here are the links to the [source code](https://github.com/Tenderly/integration-samples/tree/main/ci-cd-pipeline-for-smart-contracts) and [GitHub Actions YAML](https://github.com/Tenderly/integration-samples/tree/main/.github/workflows).
 {% endhint %}

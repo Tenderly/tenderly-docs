@@ -53,7 +53,7 @@ You can also add as many State Overrides for any number of contracts you want, j
 
 ![](<../../.gitbook/assets/Screenshot 2022-02-25 at 10.38.52.png>)
 
-If you want to save your simulation starting point with modified State Overrides and other parameters, you can use Forks and our [**Fork Parents feature**](../how-to-create-a-fork/fork-parents.md).
+If you want to save your simulation starting point with modified State Overrides and other parameters, you can use Forks and our [**Fork Parents feature**](../forks/fork-parents.md).
 
 You can explore some use cases for state overrides in this blog article:
 

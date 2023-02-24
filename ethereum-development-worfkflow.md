@@ -30,17 +30,17 @@ These practices make the development and refinement of smart contracts more acce
 
 This group of practices foster the reliability of your code and the final product. To improve these practices, you can:
 
-* Test smart contract integration using[ Forks](simulations-and-forks/how-to-create-a-fork/).
-* Set up a [CI/CD pipeline](simulations-and-forks/simulation-api/integration-guides/ci-cd-pipeline-for-smart-contracts.md).
-* [Stage your dapp](simulations-and-forks/simulation-api/integration-guides/instant-staging-qa-environment-for-dapps.md) for manual/end-to-end testing.
+* Test smart contract integration using[ Forks](broken-reference).
+* Set up a [CI/CD pipeline](simulations-and-forks/integration-guides/ci-cd-pipeline-for-smart-contracts.md).
+* [Stage your dapp](simulations-and-forks/integration-guides/instant-staging-qa-environment-for-dapps.md) for manual/end-to-end testing.
 
 ### **UX-facing practices**
 
 To create a better user experience in your dapps, you can introduce practices that allow you to:
 
-* Dry-run transactions for the user even before your dapp sends them to the chain by using [Simulation API](simulations-and-forks/simulation-api/) or Forks.
+* Dry-run transactions for the user even before your dapp sends them to the chain by using [Simulation API](broken-reference) or Forks.
 * Deliver data-rich notifications and improve interactivity by building automation with [Web3 Actions](web3-gateway/broken-reference/).
-* Run your dapp in [demo/playground mode](simulations-and-forks/simulation-api/integration-guides/dapp-playground-mode.md) so your users can try it out in an isolated environment.
+* Run your dapp in [demo/playground mode](simulations-and-forks/integration-guides/dapp-playground-mode.md) so your users can try it out in an isolated environment.
 
 ### **Product-facing practices**
 

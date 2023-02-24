@@ -1,6 +1,10 @@
-# Integration Guides
+---
+description: Follow step-by-step guides on how to introduce simulations into your project.
+---
 
-In this section, you'll find some examples and ideas on how you can incorporate capabilities Tenderly offers in your system, for various stages of development workflow and the needs of your product:
+# Tutorials
+
+In this section, you'll find some examples and ideas on how you can incorporate Tenderly's simulations into your system. You can integrate simulations at various stages of your development workflow, meeting the specific needs of your product:
 
 {% content-ref url="instant-staging-qa-environment-for-dapps.md" %}
 [instant-staging-qa-environment-for-dapps.md](instant-staging-qa-environment-for-dapps.md)

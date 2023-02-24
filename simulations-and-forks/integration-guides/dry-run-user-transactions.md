@@ -1,20 +1,24 @@
-# Dry-run User Transactions
+---
+description: >-
+  Learn how to integrate Simulation API to dry-run users' transactions and help
+  them avoid financial losses, frustration, and anxiety when using your dapp.
+---
+
+# Dry-Run User Transactions
 
 ## Overview
 
-Getting failed transactions is a kind of necessary evil when it comes to using dApps. But what if it doesn’t need to be?&#x20;
+Learn how to use Simulation API in your dapp to allow users to preview transaction outcomes before sending them on-chain. This way, you can help them avoid financial losses due to failed or incorrect transactions and increase their confidence when using your dapp.&#x20;
 
-Here we are going to take a look at how to leverage Tenderly Simulations API to detect if a transaction would fail before you even send it on-chain.
-
-Here are the steps to be taken in order to achieve this:
+To integrate Tenderly Simulations API into your dapp to detect if a transaction would fail before you even send it on-chain, you need to:
 
 1. Populate raw transactions from ethers.js library.
 2. Simulate transactions before sending them.
-3. (optional) Wrap every blockchain interaction into a Tenderly Simulation.
+3. (optional) Wrap every blockchain interaction into a Tenderly simulation.
 
 ### Populate raw transactions from ethers.js
 
-The first step is to create a transaction object that is going to be sent to our simulation endpoint. We are going to generate it directly from the `ethers.js` library. In the example below we are going to see how we can achieve that for `transfer()` function on top of DAI contract:
+The first step is to create a transaction object that's going to be sent to our simulation endpoint. We're going to generate it directly from the `ethers.js` library. In the example below, we're going to see how we can achieve that for the `transfer()` function on top of a DAI contract:
 
 ```tsx
 const dai = new ethers.Contract(DAI_ADDRESS , DAI_ABI , tenderlyForkProvider);
@@ -24,7 +28,7 @@ const unsignedTx = await dai.populateTransaction.transfer(ZERO_ADDRESS, YOUR_ADD
 
 ### Simulate transactions before sending
 
-Now that we have extracted an unsigned raw transaction, let's simulate it before sending it on-chain (to Ethereum Mainnet):
+Now that we have extracted an unsigned raw transaction, let's simulate it before sending it on-chain (to the Ethereum Mainnet):
 
 ```tsx
 ...
@@ -53,11 +57,11 @@ if (resp.data.simulation.status === false) {
 }
 ```
 
-### (optional) Wrap every blockchain interaction into Tenderly Simulation
+### Wrap every blockchain interaction into a Tenderly simulation (optional)&#x20;
 
-In order to ensure that every blockchain interaction is simulated first, you can write a simple wrapper around the `ethers.js` signer object that would always simulate transactions.
+To ensure that every blockchain interaction is simulated first, write a simple wrapper around the `ethers.js` signer object that would always simulate transactions.
 
-Additionally, going forwards, you can introduce typed errors with which your logic can interact:
+Additionally, going forward, you can introduce typed errors with which your logic can interact:
 
 ```tsx
 export class TenderlySimulationSigner {
@@ -119,5 +123,5 @@ export class TenderlySimulationSigner {
 ```
 
 {% hint style="success" %}
-Here is the [link](https://github.com/Tenderly/integration-samples/tree/main/dry-run-transactions) to the GitHub repo where you can find an example of this implementation.
+Here's a [GitHub repo](https://github.com/Tenderly/integration-samples/tree/main/dry-run-transactions) where you can find an example of this implementation.
 {% endhint %}

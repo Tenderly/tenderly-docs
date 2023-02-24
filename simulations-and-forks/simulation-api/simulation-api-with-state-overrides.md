@@ -4,9 +4,9 @@ description: Learn how to use state overrides to modify smart contract states.
 
 # Simulation API With State Overrides
 
-State overrides allow you to modify smart contracts' states for the duration of a simulation. This allows you to specify a particular state for the contracts included in the transaction you're simulating. This way, you can execute a highly specific simulation scenario.
+State overrides allow you to modify smart contract states during a simulation. This allows you to specify a particular state for the contracts included in the transaction you're simulating. This way, you can execute a highly specific simulation scenario.
 
-To specify the override, assign `SimulationRequest.state_objects` to the map of overrides. The `SimulationRequest.state_objects.["0x6b17...1d0f"].storage` is the mapping from a [smart contract's storage locations](https://docs.soliditylang.org/en/latest/internals/layout\_in\_storage.html#mappings-and-dynamic-arrays) to a value override that will be applied to the blockchain history, prior to running the simulation.
+To specify the override, assign `SimulationRequest.state_objects` to the map of overrides. The `SimulationRequest.state_objects.["0x6b17...1d0f"].storage` is the mapping from a [smart contract's storage locations](https://docs.soliditylang.org/en/latest/internals/layout\_in\_storage.html#mappings-and-dynamic-arrays) to a value override that will be applied to the blockchain history prior to running the simulation.
 
 The following example shows how an arbitrary sender `0xe2e2...e2` calls the `mint` function of the [DAI Mainnet contract (`0x6b17...71d0f`)](https://dashboard.tenderly.co/contract/mainnet/0x6b175474e89094c44da98b954eedeac495271d0f). In order to mint, the sender of the transaction must be a ward. In other words, the following condition must hold:
 

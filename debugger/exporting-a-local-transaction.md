@@ -1,6 +1,6 @@
 # Exporting a Local Transaction
 
-**Many of our users are using Tenderly Forks for workflows that require Local Transactions.** Unlike Forks, Local Transactions might have small differences in execution between local nodes and the production network. If you are considering using Local Transactions, we strongly encourage you to check out our [Fork Customization](../simulations-and-forks/simulation-api/tenderly-fork-customization-via-api/) section and our [**Integration Guides**](../simulations-and-forks/simulation-api/integration-guides/) - **Forks also support JSON RPC so you can use them just like any other node!**&#x20;
+**Many of our users are using Tenderly Forks for workflows that require Local Transactions.** Unlike Forks, Local Transactions might have small differences in execution between local nodes and the production network. If you are considering using Local Transactions, we strongly encourage you to check out our [Fork Customization](../simulations-and-forks/reference/tenderly-fork-customization-via-api/) section and our [**Integration Guides**](../simulations-and-forks/integration-guides/) - **Forks also support JSON RPC so you can use them just like any other node!**&#x20;
 
 {% hint style="success" %}
 Please reach out via Intercom if you need any help or have some feature requests regarding switching your workflow to Forks.

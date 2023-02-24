@@ -1,3 +1,7 @@
+---
+description: Learn how to extract a Fork's ID and JSON RPC URL.
+---
+
 # How to Get a Fork JSON-RPC URL & ID
 
 You may need a Tenderly Fork ID and JSON-RPC URL at various stages of your development process, from setting up a staging environment to verifying contracts deployed on a Fork.
@@ -6,7 +10,7 @@ Learn how to find this information from the Tenderly Dashboard in just a few sim
 
 ## Access the Fork page
 
-Once in the Tenderly dashboard, go to the Fork section in the navigation bar on the left:
+Once in the Tenderly Dashboard, go to the Fork section in the navigation bar on the left:
 
 ![Access the fork page](<../../.gitbook/assets/image3 (2)>)
 
