@@ -45,4 +45,3 @@ Here are the needed steps:
 
 </div>
 
-### Where to go next
