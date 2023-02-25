@@ -12,7 +12,7 @@ Using Tenderly Web3 Gateway enables you to modify, consume, and analyze blockcha
 
 The same infrastructure powering the Tenderly development platform and handling demanding read-intensive workloads is available as a plug-and-play service. This infrastructure is powered by custom and innovative architecture: we have deconstructed the monolithic general-purpose node and created a layered Web3 Gateway, providing scalability, high read throughput, and data consistency and availability by design.
 
-The all-in-one Tenderly platform supports [engineering and UX practices](../ethereum-development-worfkflow.md) throughout the Ethereum dapp development process. It allows developers to accelerate smart contract development by combining debugging tools with observability and  infrastructure.
+The all-in-one Tenderly platform supports [engineering and UX practices](../ethereum-development-workflow.md) throughout the Ethereum dapp development process. It allows developers to accelerate smart contract development by combining debugging tools with observability and  infrastructure.
 
 ## Guides and References
 
