@@ -115,8 +115,8 @@ You can do this in the following way: &#x20;
 
 Running simulations gives you a preview of important actions, governance proposals, and protocol changes before committing them to the blockchain. Different simulation methods allow you to:
 
-* Run simulation bundles via Simulation API to validate a sequence of transactions, such as those made up of approvals and swaps for DeFi products.
+* Run simulation bundles via Simulation API to **validate a sequence of transactions**, such as those made up of approvals and swaps for DeFi products.
 * **Improve governance practices** by simulating proposals on Forks and seeing how they work before applying them.
-* Integrate Simulation API or Simulation RPC to inform the strategies you programmed into your dapp.
+* Integrate Simulation API or Simulation RPC to **inform the strategies** you programmed into your dapp.
 
 \
