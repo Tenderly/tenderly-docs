@@ -40,10 +40,6 @@ Using Simulation API and Forks allows you to persist simulation data on Tenderly
 When using Simulation RPC, simulations are not persisted.
 {% endhint %}
 
-
-
-To choose between these two modes, use the `simulation_type` parameter.
-
 ### Single simulations and simulation bundles
 
 In the simplest form, you can use Simulation RPC and Simulation API to simulate individual transactions in a “simulate-and-forget” manner. However, you might want to simulate a sequence of interdependent transactions. You can achieve this using simulation bundles.
