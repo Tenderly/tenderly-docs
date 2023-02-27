@@ -8,7 +8,7 @@ description: >-
 
 Simulation Bundles enable you to simulate several transactions consecutively. For example, to set particular conditions before simulating a desired transaction, you first need to execute several other transactions.&#x20;
 
-Both Simulation API and Simulation RPC support simulation bundles. The endpoints receive an array of transactions that get simulated as if they executed one after another within the same block.
+Both Simulation API and Simulation RPC support Simulation Bundles. The endpoints receive an array of transactions that get simulated as if they executed one after another within the same block.
 
 For example, to simulate transferFrom on a DAI contract, you first need to approve a spender. You may also need to simulate the minting of DAI before approving.&#x20;
 
@@ -16,7 +16,7 @@ Here's the scenario:
 
 1. Mint 2 DAI for the spender `e58b9ee93700a616b50509c8292977fa7a0f8ce1` (if you don't have any already). To achieve this, simulate a call to **mint** function with a state override to the `wards` mapping. This will allow the address `0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2` to become a ward for this simulation.
 2. Now that the owner `e58b9ee93700a616b50509c8292977fa7a0f8ce1` has 2 DAI, we need a transaction that approves the spending of 1 DAI to the spender `f7ddedc66b1d482e5c38e4730b3357d32411e5dd`.
-3. Finally, we simulate the third transaction where the spender `0xf7ddedc66b1d482e5c38e4730b3357d32411e5dd` calls `transferFrom` and sends 0.03 DAI to the recipient `e58b9ee93700a616b50509c8292977fa7a0f8ce1`.
+3. Finally, we need to simulate the third transaction where the spender `0xf7ddedc66b1d482e5c38e4730b3357d32411e5dd` calls `transferFrom` and sends 0.03 DAI to the recipient `e58b9ee93700a616b50509c8292977fa7a0f8ce1`.
 
 {% tabs %}
 {% tab title="API Request" %}
