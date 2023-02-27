@@ -60,7 +60,7 @@ const daiOnFork = async () => {
 
   const minterAddress = '0xdc6bdc37b2714ee601734cf55a05625c9e512461';
   const minterSigner = new ethers.Wallet(
-    '0x94fdba69978edd74588828d608ebb97f436bb52a05e64abef04aa9ec4c6f3e5c'
+    '0x94...5c'
   ).connect(forkProvider);
 
     await forkProvider.send('tenderly_setBalance', [
