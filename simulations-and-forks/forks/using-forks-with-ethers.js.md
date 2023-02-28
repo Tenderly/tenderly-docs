@@ -6,7 +6,7 @@ description: Learn how to use the Fork JSON-RPC as Ethers.js JSONRpcProvider.
 
 The following code sample will guide you through:
 
-* Creating a Fork using the Fork API.
+* Creating a Fork using the Fork API with custom chain config.
 * Connecting Ethers.js to the Fork.
 * Completing a Fork state override.
 * Sending several transactions.
@@ -180,6 +180,7 @@ async function mainnetFork() {
       network_id: '1',
       chain_config: {
         chain_id: 11,
+        shanghai_time: 1677557088,
       },
     },
     {
