@@ -6,7 +6,11 @@ description: >-
 
 # Forks
 
-Tenderly Forks are a lightweight blockchain replica where you can run transaction simulations. You can base your Fork on one of [Tenderly's supported networks](../../supported-networks-and-languages.md) and any of the blocks in a specific network's history. All transactions you simulate through Forks are recorded in an isolated timeline.&#x20;
+Tenderly Forks are a lightweight blockchain replica where you can run transaction simulations. You can base your Fork on one of [Tenderly's supported networks](../../supported-networks-and-languages.md) and any of the blocks in a specific network's history. All transactions you simulate through Forks are recorded in an isolated timeline, and available in Tenderly Debugger.
+
+{% hint style="info" %}
+Each time you create a Tenderly Fork, you get 10 accounts, each with a balance of 100 test tokens.
+{% endhint %}
 
 You can use Forks through:
 
@@ -16,6 +20,14 @@ You can use Forks through:
   * Integrate the RPC into a Hardhat project by using it as a network URL in hardhat.config. You can use that network to test your deployment scripts and/or run smart contract tests. Explore this [example hardhat project](https://github.com/Tenderly/tenderly-examples/tree/master/multisig-wallet) for details.
   * Integrate the RPC in a dapp UI by using the Fork URL as a provider. See this [example project](https://github.com/Tenderly/tenderly-examples/tree/master/multisig-ui-simulations).
 
+{% hint style="info" %}
+All transactions you send to fork will be visible in the Dashboard, and you can view them using the Debugger.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/forks-page-0.png" alt=""><figcaption><p>Transactions sent to a Tenderly Fork</p></figcaption></figure>
+
+### Customizing Tenderly Fork
+
 Additionally, you can do various custom actions on a Fork:
 
 * [Advance/mine a block](../reference/tenderly-fork-customization-via-api/how-to-advance-mine-the-block.md)  (`evm_increaseBlocks`)
@@ -23,11 +35,5 @@ Additionally, you can do various custom actions on a Fork:
 * [Move the head](../reference/tenderly-fork-customization-via-api/how-to-point-the-fork-to-a-specific-simulation.md) of the Fork (`evm_snapshot` and `evm_revert`)
 * [Manage account balances](../reference/tenderly-fork-customization-via-api/how-to-manage-account-balances-in-tenderly-forks.md) (`tenderly_setBalance` and `tenderly_addBalance`)
 * [Override smart contract storage ](../reference/tenderly-fork-customization-via-api/how-to-change-storage-values-on-a-fork.md)(`tenderly_setStorageAt`)&#x20;
-
-{% hint style="info" %}
-Each time you create a Tenderly Fork, you get 10 accounts, each with a balance of 100 test tokens.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/forks-page-0.png" alt=""><figcaption></figcaption></figure>
 
 ###
