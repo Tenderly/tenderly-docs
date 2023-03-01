@@ -43,7 +43,7 @@ Use the Tenderly node to:
 Additional resources:
 
 * **Blog:** [Introducing Web3 Gateway](https://blog.tenderly.co/introducing-web3-gateway-to-all-in-one-developer-platform/)
-* **Blog:** [Getting Started With Web3 Gateway](https://www.notion.so/General-Info-a30da903e3ca46149721818292e2bf63)
+* **Blog:** [Getting Started With Web3 Gateway](https://blog.tenderly.co/getting-started-with-tenderly-web3-gateway/)
 * **Blog:** [Announcing Simulations in Web3 Gateway](https://blog.tenderly.co/announcing-simulations-in-web3-gateway/)
 
 #### Simulation API
