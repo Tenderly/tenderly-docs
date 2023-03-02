@@ -20,7 +20,7 @@ All Tenderly features are enabled including Web3 Gateway integration.
 
 **Networks supported in Tenderly, without Web3 Gateway access**
 
-All Tenderly features are enabled, with few [exceptions](supported-networks-and-languages.md#footnotes) due to integration process.
+All Tenderly features are enabled, with few [exceptions](supported-networks-and-languages.md#footnotes) due to the integration process.
 
 Web3 Gateway integration is not present. We're working on incremental integration.
 
@@ -63,6 +63,8 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 <img src=".gitbook/assets/mainbrand-1 (1).svg" alt="" data-size="line"> Moonriver[\*](supported-networks-and-languages.md#footnotes)
 
 <img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
+
+<img src=".gitbook/assets/Boba Bug Neon.png" alt="" data-size="line"> Boba Network&#x20;
 {% endtab %}
 
 {% tab title="Languages" %}
