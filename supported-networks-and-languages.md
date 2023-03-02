@@ -64,7 +64,7 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
 
-<img src=".gitbook/assets/Boba Bug Neon.png" alt="" data-size="line"> Boba Network&#x20;
+<img src=".gitbook/assets/Boba-Bug-Black-Web.png" alt="" data-size="line">Boba Network
 {% endtab %}
 
 {% tab title="Languages" %}
