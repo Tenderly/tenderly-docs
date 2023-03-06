@@ -58,13 +58,13 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet
 
-<img src=".gitbook/assets/mainbrand-1.svg" alt="" data-size="line"> Moonbeam[\*](supported-networks-and-languages.md#footnotes)
+&#x20;<img src=".gitbook/assets/Moonbeam.svg" alt="" data-size="line">Moonbeam[\*](supported-networks-and-languages.md#footnotes)
 
-<img src=".gitbook/assets/mainbrand-1 (1).svg" alt="" data-size="line"> Moonriver[\*](supported-networks-and-languages.md#footnotes)
+&#x20;<img src=".gitbook/assets/Moonriver (1).svg" alt="" data-size="line">Moonriver[\*](supported-networks-and-languages.md#footnotes)
 
-<img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
+&#x20;<img src=".gitbook/assets/Cronos.svg" alt="" data-size="line">Cronos
 
-<img src=".gitbook/assets/Boba Bug Black.svg" alt="" data-size="line">Boba Network
+<img src=".gitbook/assets/Boba.svg" alt="" data-size="line">Boba Network
 {% endtab %}
 
 {% tab title="Languages" %}
