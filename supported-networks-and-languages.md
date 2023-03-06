@@ -10,11 +10,11 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 All Tenderly features are enabled including Web3 Gateway integration.
 
-<img src=".gitbook/assets/image (80) (1) (1) (1) (1).png" alt="" data-size="line"> Mainnet
+<img src=".gitbook/assets/Icon_Mainnet.svg" alt="" data-size="line">Mainnet
 
-<img src=".gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Gorli
+<img src=".gitbook/assets/Gorli.png" alt="" data-size="line">Gorli
 
-<img src=".gitbook/assets/image (102).png" alt="" data-size="line"> Sepolia
+<img src=".gitbook/assets/Sepolia.png" alt="" data-size="line">Sepolia
 
 
 
@@ -24,45 +24,43 @@ All Tenderly features are enabled, with few [exceptions](supported-networks-and-
 
 Web3 Gateway integration is not present. We're working on incremental integration.
 
-<img src=".gitbook/assets/image (85) (1) (1) (1).png" alt="" data-size="line"> Kovan
+<img src=".gitbook/assets/Icon_RSK.svg" alt="" data-size="line">RSK
 
-<img src=".gitbook/assets/image (83) (1) (1) (1).png" alt="" data-size="line"> RSK
+<img src=".gitbook/assets/Icon_RSK Testnet-.svg" alt="" data-size="line">RSK Testnet
 
-<img src=".gitbook/assets/image (71).png" alt="" data-size="line"> RSK Testnet
+<img src=".gitbook/assets/Icon_BSC.svg" alt="" data-size="line">BSC
 
-<img src=".gitbook/assets/image (82) (1) (1) (1).png" alt="" data-size="line"> BSC
+<img src=".gitbook/assets/Icon_BSC Testnet.svg" alt="" data-size="line">BSC Testnet
 
-<img src=".gitbook/assets/image (76) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet
+<img src=".gitbook/assets/Icon_gnosis.svg" alt="" data-size="line"> Gnosis Chain
 
-<img src=".gitbook/assets/image (3) (2).png" alt="" data-size="line"> Gnosis Chain
+<img src=".gitbook/assets/Icon_POA.svg" alt="" data-size="line">POA
 
-<img src=".gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA
+<img src=".gitbook/assets/Icon_Polygon.svg" alt="" data-size="line">Polygon
 
-<img src=".gitbook/assets/image (69) (1) (1).png" alt="" data-size="line"> Polygon
+<img src=".gitbook/assets/Icon_Polygon Mumbai-.svg" alt="" data-size="line">Polygon Mumbai
 
-<img src=".gitbook/assets/image (70) (1).png" alt="" data-size="line"> Polygon Mumbai
+<img src=".gitbook/assets/Icon_Optimistic Ethereum-.svg" alt="" data-size="line"> Optimistic Ethereum
 
-<img src=".gitbook/assets/image (87) (1) (1) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum
+<img src=".gitbook/assets/Icon_Optimistic Kovan-.svg" alt="" data-size="line"> Optimistic Kovan
 
-<img src=".gitbook/assets/image (72).png" alt="" data-size="line"> Optimistic Kovan
+<img src=".gitbook/assets/Icon_Avalanche C-Chain.svg" alt="" data-size="line">Avalanche C-Chain
 
-<img src=".gitbook/assets/image (81) (1) (1).png" alt="" data-size="line"> Avalanche C-Chain
+<img src=".gitbook/assets/Icon_Avalanche.svg" alt="" data-size="line">Avalanche C-Chain Fuji
 
-<img src=".gitbook/assets/image (79) (1) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji
+<img src=".gitbook/assets/Icon_fantom.svg" alt="" data-size="line">Fantom
 
-<img src=".gitbook/assets/image (77) (1) (1).png" alt="" data-size="line"> Fantom
+<img src=".gitbook/assets/Icon_fantom testnet.svg" alt="" data-size="line">Fantom Testnet
 
-<img src=".gitbook/assets/image (78) (1) (1).png" alt="" data-size="line"> Fantom Testnet
+<img src=".gitbook/assets/Icon_arbitrum.svg" alt="" data-size="line"> Arbitrum
 
-<img src=".gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum
+<img src=".gitbook/assets/Icon_arbitrum testnet.svg" alt="" data-size="line"> Arbitrum Testnet
 
-<img src=".gitbook/assets/image (84).png" alt="" data-size="line"> Arbitrum Testnet
+<img src=".gitbook/assets/Moonbeam.svg" alt="" data-size="line">Moonbeam[\*](supported-networks-and-languages.md#footnotes)
 
-&#x20;<img src=".gitbook/assets/Moonbeam.svg" alt="" data-size="line">Moonbeam[\*](supported-networks-and-languages.md#footnotes)
+<img src=".gitbook/assets/Moonriver (1).svg" alt="" data-size="line">Moonriver[\*](supported-networks-and-languages.md#footnotes)
 
-&#x20;<img src=".gitbook/assets/Moonriver (1).svg" alt="" data-size="line">Moonriver[\*](supported-networks-and-languages.md#footnotes)
-
-&#x20;<img src=".gitbook/assets/Cronos.svg" alt="" data-size="line">Cronos
+<img src=".gitbook/assets/Cronos.svg" alt="" data-size="line">Cronos
 
 <img src=".gitbook/assets/Boba.svg" alt="" data-size="line">Boba Network
 {% endtab %}
