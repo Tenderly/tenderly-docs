@@ -12,9 +12,9 @@ All Tenderly features are enabled including Web3 Gateway integration.
 
 <img src=".gitbook/assets/Icon_Mainnet.svg" alt="" data-size="line">Mainnet
 
-<img src=".gitbook/assets/Gorli.png" alt="" data-size="line">Gorli
+<img src=".gitbook/assets/Icon_gorli.svg" alt="" data-size="line">Gorli
 
-<img src=".gitbook/assets/Sepolia.png" alt="" data-size="line">Sepolia
+<img src=".gitbook/assets/Icon_sepolia.svg" alt="" data-size="line">Sepolia
 
 
 
