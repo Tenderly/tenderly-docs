@@ -32,7 +32,7 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/Icon_BSC Testnet.svg" alt="" data-size="line">BSC Testnet
 
-<img src=".gitbook/assets/Icon_gnosis.svg" alt="" data-size="line"> Gnosis Chain
+<img src=".gitbook/assets/Icon_gnosis.svg" alt="" data-size="line">Gnosis Chain
 
 <img src=".gitbook/assets/Icon_POA.svg" alt="" data-size="line">POA
 
@@ -40,9 +40,9 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/Icon_Polygon Mumbai-.svg" alt="" data-size="line">Polygon Mumbai
 
-<img src=".gitbook/assets/Icon_Optimistic Ethereum-.svg" alt="" data-size="line"> Optimistic Ethereum
+<img src=".gitbook/assets/Icon_Optimistic Ethereum-.svg" alt="" data-size="line">Optimistic Ethereum
 
-<img src=".gitbook/assets/Icon_Optimistic Kovan-.svg" alt="" data-size="line"> Optimistic Kovan
+<img src=".gitbook/assets/Icon_Optimistic Kovan-.svg" alt="" data-size="line">Optimistic Kovan
 
 <img src=".gitbook/assets/Icon_Avalanche C-Chain.svg" alt="" data-size="line">Avalanche C-Chain
 
@@ -52,9 +52,9 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/Icon_fantom testnet.svg" alt="" data-size="line">Fantom Testnet
 
-<img src=".gitbook/assets/Icon_arbitrum.svg" alt="" data-size="line"> Arbitrum
+<img src=".gitbook/assets/Icon_arbitrum.svg" alt="" data-size="line">Arbitrum
 
-<img src=".gitbook/assets/Icon_arbitrum testnet.svg" alt="" data-size="line"> Arbitrum Testnet
+<img src=".gitbook/assets/Icon_arbitrum testnet.svg" alt="" data-size="line">Arbitrum Testnet
 
 <img src=".gitbook/assets/Moonbeam.svg" alt="" data-size="line">Moonbeam[\*](supported-networks-and-languages.md#footnotes)
 
