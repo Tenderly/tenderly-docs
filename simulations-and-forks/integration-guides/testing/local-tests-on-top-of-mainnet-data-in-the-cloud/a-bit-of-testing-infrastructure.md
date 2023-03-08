@@ -6,7 +6,7 @@ description: >-
 
 # A Bit of Testing Infrastructure
 
-To reduce boilerplate in the rest of the examples, here's a function `forkForTest` that encapsulates Tenderly API calls needed to create a Fork and delete it. It’s a bit more robust way to organize the test code that scales.&#x20;
+To reduce boilerplate in the rest of the examples, the `forkForTest` function encapsulates Tenderly API calls needed to create a Fork and delete it. It’s a bit more robust way to organize the test code that scales.&#x20;
 
 Feel free to skip this code and go to usage examples.
 
