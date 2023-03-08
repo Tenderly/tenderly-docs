@@ -66,9 +66,9 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 {% endtab %}
 
 {% tab title="Languages" %}
-<img src=".gitbook/assets/logo (1).svg" alt="" data-size="line"> Solidity
+<img src=".gitbook/assets/Icon_solidity.svg" alt="" data-size="line">Solidity
 
-<img src=".gitbook/assets/vyper-logo-square.png" alt="" data-size="line"> Vyper
+<img src=".gitbook/assets/Icon_vyper.svg" alt="" data-size="line">Vyper
 {% endtab %}
 {% endtabs %}
 

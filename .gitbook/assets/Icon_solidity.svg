@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fafafa;
+      }
+
+      .cls-2 {
+        opacity: .8;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        opacity: .45;
+      }
+
+      .cls-4 {
+        opacity: .6;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="-.08" width="200" height="200"/>
+  <g id="Page-1">
+    <g id="solidity">
+      <g id="Group">
+        <path id="Shape" class="cls-3" d="m126.84,15.79l-27.08,48.12h-54.11l27.06-48.12h54.13"/>
+        <path id="Shape-2" data-name="Shape" class="cls-4" d="m99.77,63.92h54.13l-27.06-48.12h-54.13l27.06,48.12Z"/>
+        <path id="Shape-3" data-name="Shape" class="cls-2" d="m72.71,112.02l27.06-48.1-27.06-48.12-27.06,48.12,27.06,48.1Z"/>
+        <path id="Shape-4" data-name="Shape" class="cls-3" d="m72.97,184.2l27.08-48.12h54.13l-27.08,48.12h-54.13"/>
+        <path id="Shape-5" data-name="Shape" class="cls-4" d="m100.05,136.08h-54.13l27.06,48.12h54.13l-27.06-48.12Z"/>
+        <path id="Shape-6" data-name="Shape" class="cls-2" d="m127.11,87.98l-27.06,48.1,27.06,48.12,27.08-48.12-27.08-48.1Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
