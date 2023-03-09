@@ -1,14 +1,20 @@
-# Deploy smart contracts once per test-suite execution
+---
+description: >-
+  Learn how to deploy a smart contract for an entire test suite and streamline
+  running multiple tests.
+---
 
-You may want to deploy your smart contract once per test suite, and have all your test methods (`it`s) use that very instance. This is particularly important if you have large number of tests and smart contracts to deploy where the time complexity is $$O(N_TN_{SC})$$.
+# Deploy Smart Contracts Once per Test-Suite Execution
 
-To achieve this we’ll just do a Fork at the level of test-suite (`before`). Think of it as a Fork dedicated to deploy contracts for your test suite.
+You may want to deploy your smart contract once per test suite and have all your test methods (`it`s) use that very instance. This is particularly important if you have a large number of tests and smart contracts to deploy where the time complexity is $$O(N_TN_{SC})$$.
+
+To achieve this, we’ll just do a Fork at the level of a test suite (`before`). Think of it as a Fork dedicated to deploying contracts for your test suite.
 
 {% hint style="warning" %}
-Note that isolation of tests is not available in this setup. Any modification to the contract’s state made in execution of one test will be visible to other tests within the suite. One way to overcome this is to [reset test transactions after completion](reset-transactions-after-completing-the-test.md).
+Note that the isolation of tests is not available in this setup. Any modification to the contract’s state made during the execution of one test is visible to other tests within the suite. One way to overcome this is to [reset test transactions after completion](reset-transactions-after-completing-the-test.md).
 {% endhint %}
 
-The second test (`Should see initially specified message`) shows that whatever is left behind first test in terms of contract state will be visible to the second test (message in french, not the initial message):
+The second test (`Should see initially specified message`) shows that whatever is left behind the first test in terms of contract state is visible to the second test (message in french, not the initial message):
 
 ```tsx
 describe("Deploy before tests without isolation", function () {

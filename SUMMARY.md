@@ -53,7 +53,7 @@
       * [First Usage of Tenderly APIs in Tests](simulations-and-forks/integration-guides/testing/local-tests-on-top-of-mainnet-data-in-the-cloud/first-usage-of-tenderly-apis-in-tests.md)
       * [A Bit of Testing Infrastructure](simulations-and-forks/integration-guides/testing/local-tests-on-top-of-mainnet-data-in-the-cloud/a-bit-of-testing-infrastructure.md)
     * [How to Deploy a Smart Contract Once per Test](simulations-and-forks/integration-guides/testing/how-to-deploy-smart-contract-once-per-test.md)
-    * [Deploy Smart Contracts Once per Test-suite Execution](simulations-and-forks/integration-guides/testing/deploy-smart-contracts-once-per-test-suite-execution.md)
+    * [Deploy Smart Contracts Once per Test-Suite Execution](simulations-and-forks/integration-guides/testing/deploy-smart-contracts-once-per-test-suite-execution.md)
     * [Reset Transactions After Completing the Test](simulations-and-forks/integration-guides/testing/reset-transactions-after-completing-the-test.md)
 * [Reference](simulations-and-forks/reference/README.md)
   * [Tenderly Fork Customization API](simulations-and-forks/reference/tenderly-fork-customization-via-api/README.md)
