@@ -6,17 +6,17 @@ description: >-
 
 # How to Deploy a Smart Contract Once per Test
 
-Here we’ll extract the `fork-deploy` code to a separate function for reusability to `forkAndDeployGreeter`.
+Let's extract the `fork-deploy` code to a separate function for reusability to `forkAndDeployGreeter`.
 
-In this example, we create a Fork and deploy smart contracts to it in each individual test before issuing transactions. You can think of it as a Fork dedicated to one and only one test.
+In this example, we create a Fork and deploy smart contracts to it in each individual test before issuing transactions. You can think of it as a Fork dedicated to one test.
 
-This way, each test function gets a clean contract with an unmodified state – the one present after initialization. Here we have an isolation level of smart contracts under test. It’s pretty much how you’d want to test a class/service – having it cleanly initialized for each test you have.&#x20;
+This way, each test function gets a clean contract with an unmodified state – the one present after initialization. Here, we have an isolation level of smart contracts under test. It’s pretty much how you’d want to test a class/service – having it cleanly initialized for each test you have.&#x20;
 
 {% hint style="info" %}
 Note that deployment time may significantly increase depending on the number of smart contracts you have.
 {% endhint %}
 
-It’s advisable to remove the Fork after successfully completing the test by executing `fork.removeFork()` at the very end of each test (`it` or `afterEach`). The first approach keeps the Fork in case of test failure, which is handy for examination. The latter will remove the Fork even if your test fails.&#x20;
+It’s advisable to remove the Fork after successfully completing the test by executing `fork.removeFork()` at the very end of each test (`it` or `afterEach`). The first approach keeps the Fork in the case of test failure, which is handy for examination. The latter will remove the Fork even if your test fails.&#x20;
 
 These tests provide the highest level of isolation and transactions remain persisted. Individual tests have corresponding Forks visible in the Tenderly Dashboard.
 
