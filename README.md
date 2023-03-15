@@ -61,8 +61,8 @@ Integrate with Simulation API to:
 * Simulate DAO governance proposals to generate reports and preview their effects.&#x20;
 * Automate your development, testing, and troubleshooting processes to eliminate manual work for your team.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="simulations-and-forks/forks/" %}
+[forks](simulations-and-forks/forks/)
 {% endcontent-ref %}
 
 Additional resources:
