@@ -61,8 +61,8 @@ Integrate with Simulation API to:
 * Simulate DAO governance proposals to generate reports and preview their effects.&#x20;
 * Automate your development, testing, and troubleshooting processes to eliminate manual work for your team.
 
-{% content-ref url="simulations-and-forks/forks/" %}
-[forks](simulations-and-forks/forks/)
+{% content-ref url="simulations-and-forks/simulation-api/" %}
+[simulation-api](simulations-and-forks/simulation-api/)
 {% endcontent-ref %}
 
 Additional resources:
@@ -189,8 +189,8 @@ Use a Tenderly Fork to:
 * Run one or more tests simultaneously either from the Tenderly Dashboard or your local environment by using a Fork RPC URL.
 * Share your test results with team members and keep everyone aligned to facilitate collaboration and ensure consistency.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="simulations-and-forks/forks/" %}
+[forks](simulations-and-forks/forks/)
 {% endcontent-ref %}
 
 Additional resources:
