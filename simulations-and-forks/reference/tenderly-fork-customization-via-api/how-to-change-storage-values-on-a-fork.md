@@ -9,7 +9,7 @@ description: >-
 If you want to simulate a transaction in a very specific state of the involved contract(s), there are two ways to do it.&#x20;
 
 * You can execute several transactions to get them in the desired state.&#x20;
-* Alternatively, you can plant a specific value into one or more storage slots of your Smart Contract(s).&#x20;
+* Alternatively, you can plant a specific value into one or more storage slots of your smart contract(s).&#x20;
 
 If you decide to go with the second option, you need to use `tenderly_setStorageAt` JSON-RPC call.&#x20;
 
@@ -17,7 +17,7 @@ If you decide to go with the second option, you need to use `tenderly_setStorage
 This is a custom JSON-RPC call that is applicable only for Tenderly Forks.
 {% endhint %}
 
-Here’s an example. You can play around with this using [this Tenderly Sandbox](https://sandbox.tenderly.co/nenad/json-rpc).
+Here’s an example. You can play around with it using [this Tenderly Sandbox](https://sandbox.tenderly.co/nenad/json-rpc).
 
 ```tsx
 ...
