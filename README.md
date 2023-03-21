@@ -15,7 +15,7 @@ All Tenderly tools are fully integrated, eliminate development fragmentation, an
 
 * **Development**
 * **Observability**
-* **Infrastructure 3.0**.
+* **Infrastructure 3.0**
 
 <figure><img src="https://lh6.googleusercontent.com/X2vhUpcYZPOfsj3Wa_xoGxo1-0Sai8crzK6rY0smtwRj6owJAKRWQQMjsjKVclGftXie5SaHVFspjK3vt4snXaK2iyoD_1t9DAzXPSMuT8Lw_iP3ZfWvYsSB3_vmw22Pch5KxF2pwHdx0vM60RYANnUnKo6RcWEj0FeeJr4-yStWOjqWTzlmhFHHwtSjZA" alt=""><figcaption><p>The fully integrated Tenderly Web3 development platform </p></figcaption></figure>
 
