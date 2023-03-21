@@ -1,8 +1,12 @@
+---
+description: Learn how to send a transaction from any address by running a simulation.
+---
+
 # How to Impersonate any Address as a Simulation Sender
 
-In some scenarios, you may want to simulate the transaction execution as if it was sent from an arbitrary address, even though in the real world you couldn’t. When a transaction is simulated via API, Tenderly doesn’t deal with signatures, so you can set any `from` value - you can even simulate sending transactions from another contract.
+In some scenarios, you may want to simulate transaction execution as if it was sent from an arbitrary address. When a transaction is simulated via API, Tenderly doesn’t deal with signatures, so you can set any `from` value. You can even simulate sending transactions from another contract.
 
-The way to achieve this is not as complicated, just send a transaction with any from address:
+To achieve this, just send a transaction with any `from` address:
 
 ```tsx
 ...
