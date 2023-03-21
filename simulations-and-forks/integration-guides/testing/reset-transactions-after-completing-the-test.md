@@ -1,6 +1,12 @@
-# Reset transactions after completing the test
+---
+description: >-
+  Learn how to create a snapshot of a specific point prior to test execution.
+  Then, revert the test to that particular point using the snapshot ID.
+---
 
-To address the isolation issue, we can use a custom JSON RPC: `evm_snapshot` to create a snapshot to the point before the actual test execution (`beforeEach`). This call gives us an ID of the snapshot (stored in `snap`). You can think of it as a pointer to a particular point on the chain.
+# Reset Transactions After Completing the Test
+
+To address the isolation issue, we can use a custom JSON RPC `evm_snapshot` to create a snapshot to the point before the actual test execution (`beforeEach`). This call gives us an ID of the snapshot (stored in `snap`). You can think of it as a pointer to a particular point on the chain.
 
 After the test is complete (in `afterEach`), we invoke the `evm_revert` and pass it to the snapshot ID:
 
