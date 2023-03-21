@@ -1,8 +1,12 @@
+---
+description: Find out how to increase a block number by an arbitrary value.
+---
+
 # How to Advance/Mine the Block
 
-In general, every Simulation on top of the Tenderly Fork would increase the block number. Here we are going to show you how to increase it by an arbitrary value.
+In general, every simulation on top of a Tenderly Fork increases the block number. Here's a quick example showing you how to increase it by an arbitrary value.
 
-We are going to utilize a custom tenderly RPC call `evm_increaseBlocks:`
+We're going to use a custom Tenderly RPC call – `evm_increaseBlocks:`
 
 ```tsx
 ...
