@@ -31,7 +31,7 @@ Simulation API enables you to simulate transactions using a single REST endpoint
 [simulation-api-quick-and-full-mode.md](simulation-api-quick-and-full-mode.md)
 {% endcontent-ref %}
 
-When using the **full** mode, you can easily get high details of simulation info and use it in your dapp. See the following example:
+When using the full mode, you can easily get highly detailed simulation info and use it in your dapp. See the following example:
 
 {% content-ref url="advanced-simulation-api-usage.md" %}
 [advanced-simulation-api-usage.md](advanced-simulation-api-usage.md)

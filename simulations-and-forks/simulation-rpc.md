@@ -12,7 +12,7 @@ Simulation RPC allows you to:
 
 * Simulate an arbitrary transaction.
 * Select any historical (or latest) block you wish to simulate on and go back in time.
-* Pass a pre-simulation **state overrides map** so you can bring contracts participating in the simulation in a specific state, even if you wouldn't be able to on an actual network (e.g. Mainnet).
+* Pass a pre-simulation **state override map** so you can bring contracts participating in the simulation in a specific state, even if you wouldn't be able to on an actual network (e.g. Mainnet).
 
 To get started, take a look at the following three examples:
 
