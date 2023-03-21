@@ -1,12 +1,18 @@
+---
+description: >-
+  Learn how to persist simulation data on Tenderly and use it to examine failed
+  or successfully executed transaction simulations.
+---
+
 # Easily Debug Failed Transactions
 
-By default, transactions executed via API don’t persist in Tenderly and are not visible in the dashboard. When you execute Simulations you probably need to examine why they failed.
+By default, transactions executed via API don’t persist on Tenderly and aren't visible in the Dashboard. When executing simulations, you probably want to examine them in greater detail.
 
-When running a transaction Simulation you can provide the `save_if_fails` flag. In case of a failure, it will be persisted in the Tenderly Dashboard.
+When running a transaction simulation, you can provide the `save_if_fails` flag. So, if a failure takes place, the simulation data will be persisted in the Tenderly Dashboard.
 
-If you need to save the Simulation of a successfully executed transaction, you can set the `save` flag (`false` by default).
+If you need to save the simulation of a successfully executed transaction, you can set the `save` flag (`false` by default).
 
-Additionally, the response you receive will contain simulation ID (`simulation.id`), so you can generate a link directly to the Tenderly Debugger. This would help you speed up the time needed to understand and fix the bug or any other issue that is present in the smart contract.
+Additionally, the response you receive contains the simulation ID (`simulation.id`), so you can generate a link directly to Tenderly Debugger. This helps you speed up the time needed to understand and fix a bug or any other issue that is present in the smart contract.
 
 ```tsx
 ...
