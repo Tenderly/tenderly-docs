@@ -1,13 +1,17 @@
+---
+description: Learn how to increase account balances by desired amounts on Tenderly Forks.
+---
+
 # How to Manage Account Balances in Tenderly Forks
 
-If you’re using Tenderly Forks, you may need to manage the balance value of a specific account. Tenderly’s custom JSON RPC allows you to change the balances of accounts in Tenderly Forks. In other words, you can set a specific value or increase it by a desired amount.
+If you’re using Tenderly Forks, you may need to manage the balance value of a specific account. Tenderly’s custom JSON-RPC allows you to change the balances of accounts on Tenderly Forks. In other words, you can set a specific value or increase it by a desired amount.
 
-## Set a Specific Balance
+## Set a specific balance
 
 The code snippet below sets the balance value to 100 ETH for one or more addresses using the `tenderly_setBalance` custom RPC endpoint. This endpoint receives two arguments: an array of wallets and the new amount you wish to set in Wei.
 
 {% hint style="info" %}
-When specifying BigNumberish fields to JSON-RPC endpoints in a form of a hexadecimal string, these **must not contain leading zeros**. Use [`ethers.utils.hexValue(aBigNumberish)`](https://docs.ethers.io/v5/api/utils/bytes/#utils-hexValue) to convert the given bigNumberish value into acceptable form with no leading zeros.
+When specifying BigNumberish fields to JSON-RPC endpoints in a form of a hexadecimal string, these **must not contain leading zeros**. Use [`ethers.utils.hexValue(aBigNumberish)`](https://docs.ethers.io/v5/api/utils/bytes/#utils-hexValue) to convert the given bigNumberish value into an acceptable form with no leading zeros.
 {% endhint %}
 
 ```jsx
@@ -24,7 +28,7 @@ const result = await provider.send("tenderly_setBalance", [
 
 ```
 
-## Increase the Balance by a Specific Value
+## Increase the balance by a specific value
 
 To increase the balance of specified addresses by a desired amount, use the `tenderly_addBalance` custom RPC endpoint.&#x20;
 
@@ -42,7 +46,7 @@ const result = await provider.send("tenderly_addBalance", [
 
 ```
 
-## Get the Current Balance
+## Get the current balance
 
 To check the balance of an address, use the JSON-RPC endpoint `eth_getBalance`. This endpoint receives two arguments: the address and the block number (or `latest`).
 
