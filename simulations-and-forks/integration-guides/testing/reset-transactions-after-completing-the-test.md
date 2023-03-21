@@ -1,7 +1,7 @@
 ---
 description: >-
   Learn how to create a snapshot of a specific point prior to test execution.
-  Then, revert the test to that particular point using the snapshot ID.
+  Then, revert a transaction to that particular point using the snapshot ID.
 ---
 
 # Reset Transactions After Completing the Test
