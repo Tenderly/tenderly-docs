@@ -90,7 +90,7 @@ Whenever the [`createPair` function](https://docs.uniswap.org/contracts/v2/refer
 * A new [UniswapV2Pair](https://docs.uniswap.org/contracts/v2/reference/smart-contracts/pair) contract gets created for the token pair (if one doesn’t already exist)
 * A [`PairCreated`](https://docs.uniswap.org/contracts/v2/reference/smart-contracts/factory#paircreated) event gets emitted
 
-We can define the trigger to run a Web3 Action each time a transaction hitting a contract calls a function that emits a specific event.
+We can define the trigger to run a Web3 Action each time a transaction hits a contract that calls a function that emits a specific event.
 
 In our case, we’ll write the trigger that fires each time a `UniswapV2Factory` contract emits a `PairCreated` event. In other words, whenever a new `UniswapV2Pair` contract is deployed.
 

@@ -2,7 +2,7 @@
 
 ### Exploring Mempool and Filtering Pending Transactions
 
-When exploring the transaction list in the **Transactions** tab (on the left), you can filter the default view and see **Pending Transactions** from the **mempool** as well - either by clicking the checkbox at the top or by clicking on Filter Transactions button in the top right.
+When exploring the transaction list in the **Transactions** tab (on the left), you can filter the default view and see **Pending Transactions** from the **mempool** as well - either by clicking the checkbox at the top or by clicking on the Filter Transactions button in the top right.
 
 ![](<../../.gitbook/assets/Screenshot 2022-01-25 at 12.21.02.png>)
 

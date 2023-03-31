@@ -12,7 +12,7 @@ This Chrome (and Brave) extension allows you to open/view transactions from any 
 
 \- [Execution Trace](https://docs.tenderly.co/debugger/how-to-use-tenderly-debugger#execution-trace) (Call and Function Traces), with [commenting and prioritization of traces](https://docs.tenderly.co/monitoring/contracts/commenting-and-prioritizing-traces) for easier collaboration.
 
-\- Detailed [Gas Profiler](https://docs.tenderly.co/monitoring/contracts/execution-overview#gas-profiler) with granular breakdown of gas spending down to a single call.
+\- Detailed [Gas Profiler](https://docs.tenderly.co/monitoring/contracts/execution-overview#gas-profiler) with a granular breakdown of gas spending down to a single call.
 
 \- [Advanced Search](https://docs.tenderly.co/monitoring/contracts#advanced-trace-search) with filtering across types (Op Code, Function, Variable…).
 

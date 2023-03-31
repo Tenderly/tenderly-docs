@@ -12,7 +12,7 @@ Because the transactions are bundled in this way, it is even more important to b
 
 #### Transaction Intro
 
-The user wanted to repay the DAI debt on AAVE, but only had WMATIC at hand - check out the [Decombo breakdown here](https://furucombo.app/decombo?chainId=137\&txHash=0xbcd377e337ce8e9fc391888a8bb95883923e4385fa548fe230ef0b7c8c56e578) to see what actions does this transaction include.
+The user wanted to repay the DAI debt on AAVE, but only had WMATIC at hand - check out the [Decombo breakdown here](https://furucombo.app/decombo?chainId=137\&txHash=0xbcd377e337ce8e9fc391888a8bb95883923e4385fa548fe230ef0b7c8c56e578) to see what actions this transaction includes.
 
 ![](https://lh4.googleusercontent.com/ah\_vAF4pSa0M60hGLLgTpcFTauo7c0XDi6BSHHjgG0vdZIiFoLA05XtLf8lxOMbBy55c0Phl2A94R3lk2fVaESRENY-Hr1ercrEgnDvfBh3zoBj2e6-1VAh9Zb1rCd86mLkXhZ3W)
 
@@ -30,7 +30,7 @@ The [transaction failed](https://dashboard.tenderly.co/tx/polygon/0xbcd377e337ce
 
 #### Solution
 
-As a way to avoid these issues in the future, we could lower the amount between `swap` and `repay` steps to allow for price slippage (\~0.3%). Alternatively, by using the `previous output` feature when inputing the amount for the second cube we will ensure sending the exact and expected amount from the first cube.
+As a way to avoid these issues in the future, we could lower the amount between `swap` and `repay` steps to allow for price slippage (\~0.3%). Alternatively, by using the `previous output` feature when inputting the amount for the second cube we will ensure sending the exact and expected amount from the first cube.
 
 {% hint style="success" %}
 You can **comment and prioritize any trace you want**, either for yourself or to make collaboration in the project easier. You can [**read more about it here**](../../monitoring/contracts/commenting-and-prioritizing-traces.md).

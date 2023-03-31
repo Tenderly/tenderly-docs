@@ -1,6 +1,6 @@
 # How to use Tenderly Debugger
 
-The Visual Debugger is one of the tools people love the most. Instead of wasting countless hours debugging transactions, you can use the Visual Debugger so you can focus more on buidling and less on scratching your head.
+The Visual Debugger is one of the tools people love the most. Instead of wasting countless hours debugging transactions, you can use the Visual Debugger so you can focus more on building and less on scratching your head.
 
 **The level of detail present here doesn't exist anywhere else and reduces development time by orders of magnitude**.
 
@@ -26,7 +26,7 @@ On the top right you will see the code that was executed, below are the listed p
 
 Execution Trace has two modes you can use - Function Trace and Call Trace.
 
-By default it is set to **Function Trace**, which means it will show all external and internal calls that happened in this transaction.&#x20;
+By default, it is set to **Function Trace**, which means it will show all external and internal calls that happened in this transaction.&#x20;
 
 ![](<../../.gitbook/assets/Screenshot 2021-12-22 at 10.46.31.png>)
 
@@ -46,7 +46,7 @@ For example the function `multicall` has a single input labeled `data` which is 
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.29.15.png>)
 
-On the left you will see a list of all the function that were called in this transaction which are further broken down in the order of execution in the **Stack Trace**:
+On the left you will see a list of all the functions that were called in this transaction which is further broken down in the order of execution in the **Stack Trace**:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 14.30.15.png>)
 

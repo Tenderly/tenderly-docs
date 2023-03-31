@@ -1,8 +1,8 @@
 # Commenting & Prioritizing Traces
 
-Collaboration can be complex and time-consuming when you go through various contracts and Execution Traces ([**Function Trace and Call Trace**](execution-overview.md)). That is why you can comment on any trace, as well as set priorities.
+Collaboration can be complex and time-consuming when you go through various contracts and Execution Traces ([**Function Trace and Call Trace**](execution-overview.md#call-and-function-trace)). That is why you can comment on any trace, as well as set priorities.
 
-When you click on any trace, you will have the comment bar on the bottom of the trace window, which you can open and again collapse on a click, regardless if you are posting the first comment or not. The number of comments on each trace are clearly displayed so you can easily see where the discussions are happening.
+When you click on any trace, you will have the comment bar on the bottom of the trace window, which you can open and again collapse on a click, regardless if you are posting the first comment or not. The number of comments on each trace is clearly displayed so you can easily see where the discussions are happening.
 
 ![](<../../.gitbook/assets/Screenshot 2022-01-17 at 15.14.56.png>)
 

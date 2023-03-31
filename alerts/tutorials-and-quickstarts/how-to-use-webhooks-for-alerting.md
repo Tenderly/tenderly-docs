@@ -42,7 +42,7 @@ Clicking on the button to the right will open up the Webhook overview page. This
 
 <figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Webhook Page</p></figcaption></figure>
 
-You also perform other actions on your webhooks, such as enabling/disabling a webhook, or make changes to the existing configuration.&#x20;
+You also perform other actions on your webhooks, such as enabling/disabling a webhook, or making changes to the existing configuration.&#x20;
 
 **Enable/Disable Webhook:**  Toggle the status of a webhook between active and inactive.&#x20;
 
