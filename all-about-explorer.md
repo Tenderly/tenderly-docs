@@ -85,7 +85,7 @@ Let’s take a look at the MaticToken ERC-20 token on Ethereum:
 3. Underneath, In the Transactions panel let explore a single transaction. In this example we explore transaction ID: 0xf0e0c949b4483b36855f53822fc89a2a47782fc9135451e068ebd2dd6597efcd.
 ![img_8.png](img_8.png)
 
-🔍 Analysing a single transaction was explored in my article on "Take Your Smart Contract Development to the Next Level With Tenderly" 💻. In the section, I dive into the features on Tenderly such as Contracts 📝, Events 🎉, State Changes 🔧, Debugger 🐛, Gas Profiler 💸 and Re-simulating transaction 🔄 to help developers take their smart contract development to the next level.
+🔍 Analysing a single transaction was explored in previous section 💻. In the section, I dive into the features on Tenderly such as Contracts 📝, Events 🎉, State Changes 🔧, Debugger 🐛, Gas Profiler 💸 and Re-simulating transaction 🔄 to help developers take their smart contract development to the next level.
 
 
 
