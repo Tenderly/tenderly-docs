@@ -35,7 +35,7 @@ To create a Successful Transaction alert, complete the following steps:
 1. **Select Successful Transaction** from the list of Alert Types.
 2. From the Target section, **select Address** to monitor a single address.
 3. **Choose the address of the smart contract** from the dropdown.
-4. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+4. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 5. **Click Save** to get notified when a transaction goes through successfully.
 
 ## Failed Transaction
@@ -49,7 +49,7 @@ To create a Failed Transaction alert, complete the following steps:
 1. **Select Failed Transaction** from the list of Alert Types.
 2. From the Target section, **select Address** to monitor a single address.
 3. **Choose the address of the smart contract** from the dropdown.
-4. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+4. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 5. **Click Save** to get notified when a transaction fails.
 
 ## Function Call
@@ -64,7 +64,7 @@ To create a Function Call alert, complete the following steps:
 2. From the Target section, **select Address** to monitor a smart contract deployed on a specific address.
 3. **Choose the address of the smart contract** from the dropdown.
 4. **Select the function** you want to monitor. Tenderly will extract all available functions from the smart contract.
-5. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 6. **Click Save** to get notified when the function gets called from your smart contract.
 
 ## Event Emitted
@@ -79,7 +79,7 @@ To create an Event Emitted alert, complete the following steps:
 2. From the Target section, **select Address** to monitor a smart contract deployed on a specific address.
 3. **Choose the address of the smart contract** from the dropdown.
 4. **Select the event function** you want to monitor from the list of available events.
-5. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 6. **Click Save** to get notified when the event function emits an event.
 
 ## Event Parameter
@@ -97,7 +97,7 @@ To create an Event Parameter alert, complete the following steps:
 5. **Choose the argument** from the list of arguments that the selected event function requires. Some events can have multiple arguments. Tenderly will pull in all the required arguments automatically.
 6. **Select the comparator operator** (e.g., equal to, not equal to, etc.).
 7. **Enter the comparison value** (e.g., integer, address, etc.) you want to compare the argument value against.
-8. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+8. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 9. **Click Save** to get notified when the argument in the event function matches the conditions you defined.
 
 ## ERC20 Token Transfer
@@ -113,7 +113,7 @@ To create an ERC-20 Token Transfer alert, complete the following steps:
 3. **Choose the address of the smart contract** from the dropdown.
 4. **Set the directional value** — tokens **coming to** or **going from** the selected address.
 5. **Enter the address** that corresponds to the directional value.
-6. ****[**Set the Destination** ](configuring-alert-destinations/)by creating a new one or select one you previously created.
+6. [**Set the Destination** ](configuring-alert-destinations/)by creating a new one or select one you previously created.
 7. **Click Save** to get notified when an ERC-20 token transfer event occurs.
 
 ## Allowlisted Callers
@@ -128,7 +128,7 @@ To create an Allowlisted Callers alert, complete the following steps:
 2. From the Target section, **select Address** to monitor a smart contract deployed on a specific address.
 3. **Choose the address of the smart contract** from the dropdown.
 4. **Enter the address(es)** you are familiar with and want to exclude from monitoring.
-5. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 6. **Click Save** to get notified when someone outside the list of addresses you created calls your smart contract.
 
 ## Blocklisted Callers
@@ -143,7 +143,7 @@ To create a Blocklisted Callers alert, complete the following steps:
 2. From the Target section, **select Address** to monitor a smart contract or wallet deployed on a specific address.
 3. **Choose the address of the smart contract** from the dropdown.
 4. **Enter the address(es)** you want to keep an eye on and get notified when they take action on your smart contract or wallet.
-5. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 6. **Click Save** to get notified when someone on the list of addresses you created calls your smart contract.
 
 ## ETH Balance
@@ -158,7 +158,7 @@ To create an ETH Balance alert, complete the following steps:
 2. From the Target section, **select Address** to monitor a smart contract or wallet deployed on a specific address.
 3. **Choose the address of the smart contract or wallet** from the dropdown.
 4. **Set the balance threshold value in Wei.** Note that you will get notified only when the balance falls below the set threshold. You won’t receive further notifications if the balance remains below the threshold.
-5. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 6. **Click Save** to get notified when the ETH balance on your smart contract or wallet falls below the threshold you defined.
 
 ## Transaction Value
@@ -173,7 +173,7 @@ To create a Transaction Value alert, complete the following steps:
 2. From the Target section, **select Address** to monitor a smart contract or wallet deployed on a specific address.
 3. **Select the comparator operator** (e.g., equal to, greater than, etc.).
 4. **Enter the value in Wei** that you want to compare against.
-5. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 6. **Click Save** to get notified when the value of a transaction coming from the wallet or smart contract matches the value in Wei you specified.
 
 ## State Change
@@ -192,7 +192,7 @@ To create a State Change alert, complete the following steps:
    * **Percentage change:** Triggers when the property value increases or decreases by a percentage you set.
    * **Criteria:** Triggers when the new property value set by a transaction matches the comparison criteria.
    * **Value changed:** Triggers the alert whenever the property value changes.
-5. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 6. **Click Save** to get notified when the state variable in the smart contract changes.
 
 ## View Function
@@ -212,5 +212,5 @@ To create a View Function alert, complete the following steps:
    2. **Percentage change:** Define the percentage and get alerted when the changes by a certain percentage. You also need to define the comparator type and the value with which to make the comparison.
    3. **Criteria:** Define any type of criteria that you want using the different comparator operators and get notified when the criteria are met.
    4. **Value changed:** Get notified whenever the return value changes in any way.
-6. ****[**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+6. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 7. **Click Save** to get notified when the return value of a view function you selected changes compared to the previous block.

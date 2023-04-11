@@ -6,7 +6,7 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 {% tabs %}
 {% tab title="Networks" %}
-**Networks supported in Tenderly and** [**accessible through Web3 Gateway**](http://blog.tenderly.co/how-to-deploy-smart-contracts-with-hardhat-and-tenderly/)****
+**Networks supported in Tenderly and** [**accessible through Web3 Gateway**](http://blog.tenderly.co/how-to-deploy-smart-contracts-with-hardhat-and-tenderly/)
 
 All Tenderly features are enabled including Web3 Gateway integration.
 

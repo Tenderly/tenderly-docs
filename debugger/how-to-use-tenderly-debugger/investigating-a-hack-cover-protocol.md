@@ -2,14 +2,14 @@
 
 This example will showcase briefly how the all-in-one Tenderly platform can be used to analyze and even prevent hacks such as what happened with the [Cover Protocol](https://twitter.com/CoverProtocol).
 
-The Cover Protocol got hacked because of the inability of code to update the cache in storage. This could have potentially been prevented by using an **** [**setting up alerts on important functions**](broken-reference) like deposit/withdrawal and particular state changes to prevent an attack.&#x20;
+The Cover Protocol got hacked because of the inability of code to update the cache in storage. This could have potentially been prevented by using an [**setting up alerts on important functions**](broken-reference) like deposit/withdrawal and particular state changes to prevent an attack.&#x20;
 
 In order to manually analyze the hack, we need to [**import the smart contract**](../../monitoring/smart-contracts/) `Blacksmith` in which the vulnerability was found. If you know the exact name of the affected protocol or vulnerable contract you can also search for it directly.
 
 ![](https://lh3.googleusercontent.com/BVJobjB-JHrSGyTHuC7v3cPLBbaUnNJH3pda8uJrHU2qCSV6ms-84BC614vdozpemjg5FO8J4cu-B9RjTTLfYWRQyBneYVBbLy5fv5\_OQA1N-svrza9ZF6Q6xsUA5o37YyYPnaP4)
 
 {% hint style="warning" %}
-Note - you can only search for contracts which have been publicly verified on Tenderly or Etherscan. [**Read more about how to verify a contract on Tenderly right here.**](../../monitoring/smart-contract-verification/verifying-a-smart-contract.md)****
+Note - you can only search for contracts which have been publicly verified on Tenderly or Etherscan. [**Read more about how to verify a contract on Tenderly right here.**](../../monitoring/smart-contract-verification/verifying-a-smart-contract.md)
 {% endhint %}
 
 If the contract is not publicly verified, you can do it yourself in order to be able to use it with Tenderly. If the project is open-source (like Cover), you can go to the project's [GitHub repo](https://github.com/CoverProtocol/cover-token-mining), find the contract you want to use (and its source code) and verify it yourself.

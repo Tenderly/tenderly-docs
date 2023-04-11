@@ -6,7 +6,7 @@
 
 Execution Overview - think of it as the bird's-eye view of the transaction. At a glance, you can see the exact code paths of all of the Smart Contracts that participated in a given transaction. You can open the transactions from the images above by clicking [**here (successful)**](https://dashboard.tenderly.co/tx/mainnet/0x1ca07994d823e4198d7517d828d99e2064f3204501284d5348ca8c11e3be53d8) and [**here (failed)**](https://dashboard.tenderly.co/tx/mainnet/0xe0ca90fba27e63cd8550565fa8d57559f76b67f5e7d8b8dbb150752a48cb87d2).
 
-In the first tab - **Transaction Overview** - you can see and navigate through all of the elements of the transaction. Moreover, you can instantly (Re)Simulate the transaction by clicking the button in the top right, using different parameters, or even changing the source code to observe the outcome - **** [**read more about Simulations here**](../../simulations-and-forks/how-to-simulate-a-transaction/).
+In the first tab - **Transaction Overview** - you can see and navigate through all of the elements of the transaction. Moreover, you can instantly (Re)Simulate the transaction by clicking the button in the top right, using different parameters, or even changing the source code to observe the outcome - [**read more about Simulations here**](../../simulations-and-forks/how-to-simulate-a-transaction/).
 
 ![](<../../.gitbook/assets/Screenshot 2021-11-25 at 09.57.12.png>)
 
@@ -78,7 +78,7 @@ Debugging stack traces is an important part of any developer's workflow both loc
 
 ![](<../../.gitbook/assets/Screenshot 2021-11-25 at 10.41.38.png>)
 
-**The stack trace above shows the exact line of code where the transaction failed**. From there, you can click **Debug Error** and find the issue in no time. Check out[ **how to use Tenderly Debugger**](../../debugger/how-to-use-tenderly-debugger/) **** and [**investigate failed transactions**](../../debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md)!
+**The stack trace above shows the exact line of code where the transaction failed**. From there, you can click **Debug Error** and find the issue in no time. Check out[ **how to use Tenderly Debugger**](../../debugger/how-to-use-tenderly-debugger/) and [**investigate failed transactions**](../../debugger/how-to-use-tenderly-debugger/investigating-a-failed-transaction.md)!
 
 ### Gas Profiler
 

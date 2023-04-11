@@ -94,13 +94,13 @@ The deploy and interact with your smart contracts with JavaScript, you can use [
 
 The examples below show you how to access your preferred library from the Sandbox.
 
-[**Ethers.js Sandbox example**](https://sandbox.tenderly.co/examples/counter-ethers)****
+[**Ethers.js Sandbox example**](https://sandbox.tenderly.co/examples/counter-ethers)
 
 ```jsx
 const provider = new ethers.providers.JsonRpcProvider($rpcUrl);
 ```
 
-[**Web3.js Sandbox example**](https://sandbox.tenderly.co/examples/counter-web3)****
+[**Web3.js Sandbox example**](https://sandbox.tenderly.co/examples/counter-web3)
 
 ```jsx
 let web3 = new Web3($rpcUrl);
@@ -198,5 +198,5 @@ When you make subsequent edits to your Sandbox code, the changes will be immedia
 ### Practical Sandbox examples
 
 * [**HelloWorld** ](https://sandbox.tenderly.co/examples/hello-world)— beginner-friendly Sandbox showing you how to create a smart contract and execute a simple function.
-* [**AAVE Flashloan**](https://sandbox.tenderly.co/examples/aave-flashloan) **** — advanced Sandbox that gives any potential user an insight into integrating with Aave and using this functionality. Learn how to execute a smart contract to take out a loan and pay it back by the time the transaction ends.
+* [**AAVE Flashloan**](https://sandbox.tenderly.co/examples/aave-flashloan) — advanced Sandbox that gives any potential user an insight into integrating with Aave and using this functionality. Learn how to execute a smart contract to take out a loan and pay it back by the time the transaction ends.
 * [**BAYC Land Sale**](https://sandbox.tenderly.co/examples/bayc-land-contract-optimizations) — advanced Sandbox that demonstrates how careful smart contract optimizations can significantly reduce gas usage. The example outlines optimization steps that could have reduced the gas fee for minting BAYC NFTs by 30 to 40%. With a detailed overview, you can inspect each line of the code, make adjustments, and then run the optimized version.

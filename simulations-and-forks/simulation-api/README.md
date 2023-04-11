@@ -24,7 +24,7 @@ By integrating with Simulation API, you can:&#x20;
 
 Simulation API enables you to simulate transactions using a single REST endpoint. It supports two modes:
 
-* **Full simulation mode:** This mode **** gives you decoded simulation results, matched to smart contracts' code, for easier client-side interpretation. The decoded form contains information such as logs (emitted events), state changes, and function calls along the call trace.
+* **Full simulation mode:** This mode gives you decoded simulation results, matched to smart contracts' code, for easier client-side interpretation. The decoded form contains information such as logs (emitted events), state changes, and function calls along the call trace.
 * **Quick simulation mode:** This mode gives you raw transaction results, with a faster response.
 
 {% content-ref url="simulation-api-quick-and-full-mode.md" %}

@@ -20,6 +20,20 @@
   * [Trace JSON RPC](web3-gateway/references/trace-json-rpc.md)
 * [Pricing and usage limits](web3-gateway/pricing.md)
 
+## 🛠 DevNets
+
+* [Intro to DevNets](devnets/intro-to-devnets.md)
+* [Setting Up DevNets for Local Development](devnets/setting-up-devnets-for-local-development.md)
+* [Setting Up DevNets for Continuous Integration](devnets/setting-up-devnets-for-continuous-integration.md)
+* [References](devnets/references/README.md)
+  * [RPC URL Lifetime](devnets/references/rpc-url-lifetime.md)
+  * [Custom RPC Methods](devnets/references/custom-rpc-methods.md)
+  * [Contract Verification on DevNets](devnets/references/contract-verification-on-devnets.md)
+  * [Known Issues](devnets/references/known-issues.md)
+* [Open-Source Examples](devnets/open-source-examples/README.md)
+  * [Using DevNets With Safe](devnets/open-source-examples/using-devnets-with-safe.md)
+* [Pricing](devnets/pricing.md)
+
 ## 🔮 Simulations <a href="#simulations-and-forks" id="simulations-and-forks"></a>
 
 * [Intro to Simulations](simulations-and-forks/intro-to-simulations.md)
@@ -144,7 +158,7 @@
 
 ## Other
 
-* [🕹 Tenderly API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/ES8WtN6Gx8HH3zi8low4/)
+* [🕹 Tenderly API](http://localhost:5000/o/-LeLQOwIQG3HndcULLU2/s/ES8WtN6Gx8HH3zi8low4/)
 * [⌨ Tenderly CLI](https://github.com/Tenderly/tenderly-cli)
 * [👷 Hardhat Plugin](https://github.com/Tenderly/hardhat-tenderly)
 * [🐛 Trace API](other/trace-api.md)

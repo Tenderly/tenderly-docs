@@ -30,5 +30,5 @@ You can also type your smart contract source code from scratch for any address i
 All of this means that you can test any custom contract you want with live production data.
 
 {% hint style="info" %}
-Don't forget to click **Apply Changes** __ in the bottom left corner.&#x20;
+Don't forget to click **Apply Changes** in the bottom left corner.&#x20;
 {% endhint %}

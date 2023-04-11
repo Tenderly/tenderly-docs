@@ -10,7 +10,7 @@ Fork Parents are a feature that allows for greater control over the simulations 
 
 ### Run a simulation on a Fork&#x20;
 
-First, [run a simulation on your Fork](broken-reference) as you normally would. On the right under the [Transaction Parameters](../how-to-simulate-a-transaction/transaction-parameters.md) **** section, you have an option called `Parent` that allows you to set the Parent for your Fork.&#x20;
+First, [run a simulation on your Fork](broken-reference) as you normally would. On the right under the [Transaction Parameters](../how-to-simulate-a-transaction/transaction-parameters.md) section, you have an option called `Parent` that allows you to set the Parent for your Fork.&#x20;
 
 ![](<../../.gitbook/assets/Screenshot 2021-11-12 at 10.24.51.png>)
 

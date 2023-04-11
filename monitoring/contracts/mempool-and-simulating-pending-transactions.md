@@ -23,5 +23,5 @@ When you search for a transaction which is not yet mined and cannot be found in 
 This means that you can **see the expected outcome of your or any other transaction** even before it is approved on the Mainnet.
 
 {% hint style="success" %}
-This feature is available to all users, even if they are not logged in. That means that **you can simulate pending transactions** in this way even [**from our Explorer page**](https://dashboard.tenderly.co/explorer) without having an account - but you really should make one (it's free) so you can use the full power of our [**Simulations**](../../simulations-and-forks/how-to-simulate-a-transaction/) **** and **** [**Forks**](broken-reference) 🚀
+This feature is available to all users, even if they are not logged in. That means that **you can simulate pending transactions** in this way even [**from our Explorer page**](https://dashboard.tenderly.co/explorer) without having an account - but you really should make one (it's free) so you can use the full power of our [**Simulations**](../../simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](broken-reference) 🚀
 {% endhint %}

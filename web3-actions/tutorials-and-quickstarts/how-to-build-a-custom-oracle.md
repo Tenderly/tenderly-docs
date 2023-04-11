@@ -11,7 +11,7 @@ In this tutorial, we’ll show you how to **build a custom Web3 oracle using Ten
 Using oracles, we can access data from sources outside the blockchain (e.g., exchanges, traffic and weather data, gas rates, oil prices, etc) from within our smart contracts.
 
 {% hint style="info" %}
-The entire code is available in **** [**this Github repo**](https://github.com/Tenderly/examples-web3-actions/).&#x20;
+The entire code is available in [**this Github repo**](https://github.com/Tenderly/examples-web3-actions/).&#x20;
 {% endhint %}
 
 ## Project Overview
@@ -27,7 +27,7 @@ Here’s a quick breakdown of the project’s flow.
 
 <figure><img src="../../.gitbook/assets/image (99).png" alt="The interactions between different components"><figcaption><p>The interactions between different components</p></figcaption></figure>
 
-We will use a pre-made smart contract for this project. Feel free to explore the code and play around with it in the **** [**Tenderly Sandbox**](https://sandbox.tenderly.co/nenad/whining-iron-numerous) and check out the [**Sandbox Docs**](../../tenderly-sandbox.md).
+We will use a pre-made smart contract for this project. Feel free to explore the code and play around with it in the [**Tenderly Sandbox**](https://sandbox.tenderly.co/nenad/whining-iron-numerous) and check out the [**Sandbox Docs**](../../tenderly-sandbox.md).
 
 Note that the <mark style="color:orange;">`SimpleConsumer`</mark> contract accepts the <mark style="color:orange;">`coinPrice`</mark> coming in only from the <mark style="color:orange;">`CoinOracle`</mark> it was assigned when it got deployed. Additionally, <mark style="color:orange;">`CoinOracle`</mark> accepts updates only if it is signed by the same Wallet that deployed it (<mark style="color:orange;">`owner`</mark>).
 
@@ -165,7 +165,7 @@ However, before moving forward, we have to take care of some plumbing.
 
 **Necessary Web3 Plumbing aka Boilerplate.** To interact with our Oracle Contract, we need to do some plumbing. The contract has a restriction - updates can be sent only by the <mark style="color:orange;">`owner`</mark>. This means we need to send transactions from the address that deployed it. The plumbing is done in the <mark style="color:orange;">`oracleContract`</mark> function, and here’s the breakdown of steps.
 
-**Plumbing: Configure a Provider Object.** We can obtain the provider using <mark style="color:orange;">`ethers.getDefaultProvider`</mark> to work with network <mark style="color:orange;">`3`</mark> (Ropsten’s ID). We’re also passing a second argument – a configuration object which contains the API key. Consult **** [**ethers docs**](https://docs.ethers.io/v5/api/providers/#providers-getDefaultProvider) for more information on how to configure other providers and use alternatives like <mark style="color:orange;">`JsonRpcProvider`</mark>.
+**Plumbing: Configure a Provider Object.** We can obtain the provider using <mark style="color:orange;">`ethers.getDefaultProvider`</mark> to work with network <mark style="color:orange;">`3`</mark> (Ropsten’s ID). We’re also passing a second argument – a configuration object which contains the API key. Consult [**ethers docs**](https://docs.ethers.io/v5/api/providers/#providers-getDefaultProvider) for more information on how to configure other providers and use alternatives like <mark style="color:orange;">`JsonRpcProvider`</mark>.
 
 **Plumbing: Create a Wallet.** You need to create a <mark style="color:orange;">`Wallet`</mark> to ensure that each transaction originating from our oracle is signed and funded by the same address that deployed the contract. Since the Wallet’s private key is sensitive information, we’re reading it from _Secrets_:
 
@@ -215,7 +215,7 @@ project_slug: ""
 
 ### 5: Create Web3 Action Secrets
 
-For Web3 Actions to perform operations on the deployed <mark style="color:orange;">`OracleContract`</mark>, we need a way to access the contract. You can choose any provider service (Infura, QuickNode, Alchemy, Etherscan, etc). Check [**Ethers’ Default Provider docs**](https://docs.ethers.io/v5/api/providers/#providers-getDefaultProvider) **** to find out what’s needed to establish the access.
+For Web3 Actions to perform operations on the deployed <mark style="color:orange;">`OracleContract`</mark>, we need a way to access the contract. You can choose any provider service (Infura, QuickNode, Alchemy, Etherscan, etc). Check [**Ethers’ Default Provider docs**](https://docs.ethers.io/v5/api/providers/#providers-getDefaultProvider) to find out what’s needed to establish the access.
 
 Since we’re using Etherscan as the provider, we only need the API key. The key will be stored in Web3 Actions Secrets.
 
@@ -229,7 +229,7 @@ Keep all your sensitive data tucked away safely in the Web3 Actions Secrets (e.g
 
 **Store Oracle Wallet Private Key.** To send transactions to the chain, our Web3 Action needs to have a private key to sign transactions and fund them. The <mark style="color:orange;">`OracleContract`</mark> is designed to only accept updates that are signed by the address that deployed them.
 
-If you’re using Metamask, pick the account you used to deploy the smart contract and copy its private key **** [**following this Metamask guide**](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key).
+If you’re using Metamask, pick the account you used to deploy the smart contract and copy its private key [**following this Metamask guide**](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key).
 
 In the Tenderly Dashboard, create a new Secret called <mark style="color:orange;">`w3_oracle.oracle_address_private_key`</mark> and paste the private key.
 

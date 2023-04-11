@@ -1,6 +1,6 @@
 # Public Contracts
 
-If you click on the **Contracts** (or **Addresses**) **** tab in the left navigation bar, you will be able to do a deep dive into all of the information for that address:
+If you click on the **Contracts** (or **Addresses**) tab in the left navigation bar, you will be able to do a deep dive into all of the information for that address:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 15.24.49.png>)
 

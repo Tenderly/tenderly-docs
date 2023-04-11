@@ -10,7 +10,7 @@ In either a new or existing project, there's a new **Wallets** tab in the left n
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 13.29.43.png>)
 
-Initially, only wallets with an existing balance will be shown, but clicking the **Show All** button **** will display the list of all other wallets for the address with zero balance:
+Initially, only wallets with an existing balance will be shown, but clicking the **Show All** button will display the list of all other wallets for the address with zero balance:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 13.31.21.png>)
 
@@ -40,11 +40,11 @@ When you click on a wallet, you'll see key wallet info and use all of the Tender
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 13.40.11.png>)
 
-**View Transactions** takes you to the [**Transactions**](../contracts/) **** page with a pre-applied filter for your wallet:
+**View Transactions** takes you to the [**Transactions**](../contracts/) page with a pre-applied filter for your wallet:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 13.41.21.png>)
 
-****[**Simulate Transaction**](../../simulations-and-forks/how-to-simulate-a-transaction/) **** opens up the transaction simulation flow with the `From` field pre-filled with the wallet address in question.
+[**Simulate Transaction**](../../simulations-and-forks/how-to-simulate-a-transaction/) opens up the transaction simulation flow with the `From` field pre-filled with the wallet address in question.
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 13.41.50.png>)
 
@@ -55,5 +55,5 @@ When you click on a wallet, you'll see key wallet info and use all of the Tender
 You can also **Rename**, **Hide,** or **Remove** your wallet at any time.
 
 {% hint style="success" %}
-You can also convert your contracts into wallets (and back again) via a single click - **** [**learn more here**](converting-contracts-into-wallets.md)**.**
+You can also convert your contracts into wallets (and back again) via a single click - [**learn more here**](converting-contracts-into-wallets.md)**.**
 {% endhint %}

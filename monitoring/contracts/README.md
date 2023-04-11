@@ -41,7 +41,7 @@ Having filtering this precise and fast is important when you need to pinpoint th
 {% hint style="success" %}
 Tenderly now automatically simulates the (expected) outcome of pending transactions when you paste the tx hash into the search bar, both in your [**Dashboard**](https://dashboard.tenderly.co/) and in our [**Public Explorer**](https://dashboard.tenderly.co/explorer).
 
-This feature is available to all users, even if they are not logged in. That means that **you can now simulate live pending transactions** in this way even [**from our Explorer page**](https://dashboard.tenderly.co/explorer) without having an account - but you really should make one (it's free) so you can use the full power of our [**Simulations**](../../simulations-and-forks/how-to-simulate-a-transaction/) **** and **** [**Forks**](broken-reference) 🚀
+This feature is available to all users, even if they are not logged in. That means that **you can now simulate live pending transactions** in this way even [**from our Explorer page**](https://dashboard.tenderly.co/explorer) without having an account - but you really should make one (it's free) so you can use the full power of our [**Simulations**](../../simulations-and-forks/how-to-simulate-a-transaction/) and [**Forks**](broken-reference) 🚀
 
 Read more about it [**here**](mempool-and-simulating-pending-transactions.md).
 {% endhint %}

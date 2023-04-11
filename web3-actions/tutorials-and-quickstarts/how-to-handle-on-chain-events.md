@@ -63,7 +63,7 @@ Our simple Tic-Tac-Toe game can have four possible states:
 
 **Create Two Accounts** - deploy the smart contract to any [network that is supported by Tenderly](https://docs.tenderly.co/supported-networks-and-languages). The most convenient way to do this is with [Remix](https://remix.ethereum.org/) and the [Metamask](https://metamask.io/) wallet plugin. You need two accounts that have a positive Ether balance. These accounts will represent the two players. For the purpose of this tutorial we will use Ropsten. If you plan to follow along with this tutorial, you can use the [Ropsten faucet](https://faucet.egorfine.com/) to add Ether to the accounts.
 
-**Compile the contract -** use the Remix IDE to compile the smart contract. Create a new contract file and add the code found **** [**here**](https://github.com/Tenderly/examples-web3-actions/blob/tic-tac-toe/tic-tac-toe/TicTacToe.sol).
+**Compile the contract -** use the Remix IDE to compile the smart contract. Create a new contract file and add the code found [**here**](https://github.com/Tenderly/examples-web3-actions/blob/tic-tac-toe/tic-tac-toe/TicTacToe.sol).
 
 <figure><img src="../../.gitbook/assets/image (69).png" alt="Compiling the contract in the Remix IDE"><figcaption><p>Compiling the contract in the Remix IDE</p></figcaption></figure>
 
@@ -239,7 +239,7 @@ project_slug: ""
 
 ### 2.3. Verify Your Tic-Tac-Toe Smart Contract on Tenderly
 
-Before deploying the contract, you need to verify it in your Tenderly Dashboard. Follow this guide to learn **** [**How to Add a Contract to a Tenderly Project**](https://docs.tenderly.co/monitoring/smart-contracts#adding-a-contract-to-your-project-via-tenderly-cli).
+Before deploying the contract, you need to verify it in your Tenderly Dashboard. Follow this guide to learn [**How to Add a Contract to a Tenderly Project**](https://docs.tenderly.co/monitoring/smart-contracts#adding-a-contract-to-your-project-via-tenderly-cli).
 
 If you wish, you can upload the contract through your browser. Once uploaded, select the TicTacToe contract, the network you deployed it to, and the contract address.
 

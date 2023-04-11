@@ -8,9 +8,9 @@ description: >-
 
 The examples below show how to use Tenderly to achieve testing against actual Mainnet data with ease. Additionally, you can integrate other Tenderly capabilities into your testing process without needing a local node.
 
-[**Local tests on top of Mainnet data in the Cloud**](local-tests-on-top-of-mainnet-data-in-the-cloud/) **** give a high-level overview of running your local tests against Mainnet data.&#x20;
+[**Local tests on top of Mainnet data in the Cloud**](local-tests-on-top-of-mainnet-data-in-the-cloud/) give a high-level overview of running your local tests against Mainnet data.&#x20;
 
-Start by exploring the basic **** [**first usage of Tenderly API in tests**](local-tests-on-top-of-mainnet-data-in-the-cloud/first-usage-of-tenderly-apis-in-tests.md), **** where transactions performed by your tests are simulated on a Tenderly Fork behind the scenes.
+Start by exploring the basic [**first usage of Tenderly API in tests**](local-tests-on-top-of-mainnet-data-in-the-cloud/first-usage-of-tenderly-apis-in-tests.md), where transactions performed by your tests are simulated on a Tenderly Fork behind the scenes.
 
 ### Testing with Tenderly
 

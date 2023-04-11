@@ -16,7 +16,7 @@ When it comes to the Tenderly Hardhat plugin, there are 3 ways to verify your Sm
 Before starting the process of verification using one of these methods, you need to set up your development environment.
 
 {% hint style="info" %}
-You can find a **** [**demo project on Git**](https://github.com/Tenderly/hardhat-tenderly/tree/master/examples/contract-verification), **** showing different configuration options and possible ways to verify Smart Contracts.
+You can find a [**demo project on Git**](https://github.com/Tenderly/hardhat-tenderly/tree/master/examples/contract-verification), showing different configuration options and possible ways to verify Smart Contracts.
 {% endhint %}
 
 ## Setting up the environment
