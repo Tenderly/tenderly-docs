@@ -44,7 +44,7 @@ module.exports = {
   networks: {
     devnet: {
       url: "YOUR_DEVNET_JSON_RPC_URL",
-			chainId: 1,
+      chainId: 1,
     }
   }
 };
