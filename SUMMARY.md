@@ -152,6 +152,18 @@
 * [War Room Aid Kit](debugger/war-room-aid-kit.md)
 * [Tenderly Debugger Extension](debugger/tenderly-debugger-extension.md)
 
+## ⚙ Tenderly SDK
+
+* [Intro to Tenderly SDK](tenderly-sdk/intro-to-tenderly-sdk.md)
+* [Tutorials and Quickstarts](tenderly-sdk/tutorials-and-quickstarts/README.md)
+  * [How to Simulate Transactions with Tenderly SDK](tenderly-sdk/tutorials-and-quickstarts/how-to-simulate-transactions-with-tenderly-sdk.md)
+  * [How to Perform Simulation Bundles with Tenderly SDK](tenderly-sdk/tutorials-and-quickstarts/how-to-perform-simulation-bundles-with-tenderly-sdk.md)
+* [Simulating Transactions](tenderly-sdk/simulating-transactions.md)
+* [Managing Contracts](tenderly-sdk/managing-contracts.md)
+* [Managing Wallets](tenderly-sdk/managing-wallets.md)
+* [Practical Examples](tenderly-sdk/practical-examples.md)
+* [Basic Concepts & FAQs](tenderly-sdk/basic-concepts-and-faqs.md)
+
 ## 📊 Analytics
 
 * [Analytics Overview](analytics/general-analytics.md)
