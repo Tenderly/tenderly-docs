@@ -14,16 +14,15 @@ Bundled transactions are often used in DeFi protocols and other applications to 
 Transactions from a bundle are simulated on the same blocks.
 {% endhint %}
 
-We'll simulate the usage of Uniswap for swapping a particular amount of DAI for WETH.&#x20;
+We'll simulate the usage of Uniswap for swapping a particular amount of DAI for WETH, and show the execution status of simulated transactions, and calculate the total gas used.
 
 Here are the transactions needed to achieve this:
 
 1. **Simulate minting of 2 DAI** so the swapper has some assets to swap. Alternatively, if you have DAI, you can skip this and just do transaction 2.
 2. **Approve UniswapV3Router** to use DAI.
 3. **Do the swap**. Call `UniswapV2Router.exactInputSingle` to perform the swap.
-4. **Show the simulation outcomes,** the execution status of simulated transactions, and calculate the total gas used.
 
-For the 1st transaction to run successfully, the sender needs to be a ward of DAI stablecoin. Since most of us aren't, we'll show you how to use State Overrides to "become a ward" within the context of the Bundled Simulation.
+For the 1st transaction to run successfully, the sender needs to be a ward of DAI stablecoin. Since most of us aren't, we'll see how to use State Overrides to "become a ward" within the context of the Bundled Simulation.
 
 ### Prerequisites
 
@@ -223,13 +222,14 @@ npx ts-node src/swap.ts
 
 First, we're creating a new instance of the Tenderly SDK:
 
-<pre class="language-typescript"><code class="lang-typescript">const tenderly = new Tenderly({
-<strong>  accessKey: "access key",
-</strong>  accountName: "your account name",
+```typescript
+const tenderly = new Tenderly({
+  accessKey: "access key",
+  accountName: "your account name",
   projectName: "project-name-hyphenated",
   network: Network.MAINNET,
 });
-</code></pre>
+```
 
 To call the Simulations API and perform a bundled simulation, we're using `Tenderly.simulator.simulateBundle()` and passing an object with the following fields:
 
@@ -265,8 +265,6 @@ Below you'll find the functions which are responsible for producing the three tr
 
 {% tabs %}
 {% tab title="mint2DaiTx " %}
-
-
 ```typescript
 function mint2DaiTx(): TransactionParameters {
   return {
@@ -275,17 +273,24 @@ function mint2DaiTx(): TransactionParameters {
     gas: 0,
     gas_price: '0',
     value: 0,
-    //'0x40c10f19000000000000000000000000e58b9ee93700a616b50509c8292977fa7a0f8ce10000000000000000000000000000000000000000000000001bc16d674ec80000',
     input: daiEthersInterface()
            .encodeFunctionData('mint', [daiOwnerEOA, parseEther('2')]),
   };
+}
+
+function daiEthersInterface() {
+  const daiAbi = [
+    {constant:false,inputs:[{internalType:'address',name:'src',type:'address',},{internalType:'address',name:'dst',type:'address',},{internalType:'uint256',name:'wad',type:'uint256',},],name:'transferFrom',outputs:[{internalType:'bool',name:'',type:'bool',},],payable:false,stateMutability:'nonpayable',type:'function',},
+    {constant:false,inputs:[{internalType:'address',name:'usr',type:'address',},{internalType:'uint256',name:'wad',type:'uint256',},],name:'approve',outputs:[{internalType:'bool',name:'',type:'bool',},],payable:false,stateMutability:'nonpayable',type:'function',},
+    {constant:false,inputs:[{internalType:'address',name:'usr',type:'address',},{internalType:'uint256',name:'wad',type:'uint256',},],name:'mint',outputs:[],payable:false,stateMutability:'nonpayable',type:'function',}
+  ];
+
+  return new Interface(daiAbi);
 }
 ```
 {% endtab %}
 
 {% tab title="approveUniswapV3RouterTx" %}
-
-
 ```typescript
 
 function approveUniswapV2RouterTx(): TransactionParameters {
@@ -302,12 +307,20 @@ function approveUniswapV2RouterTx(): TransactionParameters {
            ]),
   };
 }
+
+function daiEthersInterface() {
+  const daiAbi = [
+    {constant:false,inputs:[{internalType:'address',name:'src',type:'address',},{internalType:'address',name:'dst',type:'address',},{internalType:'uint256',name:'wad',type:'uint256',},],name:'transferFrom',outputs:[{internalType:'bool',name:'',type:'bool',},],payable:false,stateMutability:'nonpayable',type:'function',},
+    {constant:false,inputs:[{internalType:'address',name:'usr',type:'address',},{internalType:'uint256',name:'wad',type:'uint256',},],name:'approve',outputs:[{internalType:'bool',name:'',type:'bool',},],payable:false,stateMutability:'nonpayable',type:'function',},
+    {constant:false,inputs:[{internalType:'address',name:'usr',type:'address',},{internalType:'uint256',name:'wad',type:'uint256',},],name:'mint',outputs:[],payable:false,stateMutability:'nonpayable',type:'function',}
+  ];
+
+  return new Interface(daiAbi);
+}
 ```
 {% endtab %}
 
 {% tab title="swapSomeDaiForWethTx" %}
-
-
 ```typescript
 function swapSomeDaiForWethTx(): TransactionParameters {
   return {
@@ -328,6 +341,16 @@ function swapSomeDaiForWethTx(): TransactionParameters {
               sqrtPriceLimitX96: '0',
             }]),
   };
+  
+function uniswapRouterV2EthersInterface() {
+  const swapRouterAbi = [
+    { inputs: [ { internalType: 'address', name: '_factory', type: 'address', }, { internalType: 'address', name: '_WETH9', type: 'address', }, ], stateMutability: 'nonpayable', type: 'constructor', },
+    ...
+    { inputs: [ { internalType: 'int256', name: 'amount0Delta', type: 'int256', }, { internalType: 'int256', name: 'amount1Delta', type: 'int256', }, { internalType: 'bytes', name: '_data', type: 'bytes', }, ], name: 'uniswapV3SwapCallback', outputs: [], stateMutability: 'nonpayable', type: 'function', }, { inputs: [ { internalType: 'uint256', name: 'amountMinimum', type: 'uint256', }, { internalType: 'address', name: 'recipient', type: 'address', }, ], name: 'unwrapWETH9', outputs: [], stateMutability: 'payable', type: 'function', }, { inputs: [ { internalType: 'uint256', name: 'amountMinimum', type: 'uint256', }, { internalType: 'address', name: 'recipient', type: 'address', }, { internalType: 'uint256', name: 'feeBips', type: 'uint256', }, { internalType: 'address', name: 'feeRecipient', type: 'address', }, ], name: 'unwrapWETH9WithFee', outputs: [], stateMutability: 'payable', type: 'function', }, { stateMutability: 'payable', type: 'receive', }
+  ];
+
+  return new Interface(swapRouterAbi);
+}
 ```
 {% endtab %}
 {% endtabs %}
@@ -336,25 +359,24 @@ function swapSomeDaiForWethTx(): TransactionParameters {
 
 We're calling the DAI stablecoin `mint` function. During the simulation, the DAI contract has to believe you (the sender) are one of the wards. Otherwise, it will reject to mint.&#x20;
 
-We need the following condition to hold:
+We need the following condition to hold for DAI contract's state for a successful minting initiated by `fakeWardAddressEOA`:
 
 ```typescript
 daiAddressMainnet.state.wards[fakeWardAddressEOA] == 0x0000...0001
 ```
 
-To circumvent this, besides transactions, we're passing `overrides`, where we're overriding the DAI `wards` storage variable, so `fakeDaiWardAddress` becomes a ward during the simulation.
+To enable this, we're passing `overrides` to the SDK, where we're overriding the DAI `wards` storage variable, so `fakeDaiWardAddress` becomes a ward during the simulation.
 
-```typescript
-overrides: {
-  [daiAddressMainnet]: {
+<pre class="language-typescript"><code class="lang-typescript"><strong>overrides: {
+</strong>  [daiAddressMainnet]: {
     state: {
         // make DAI think that fakeWardAddress is a ward for minting
         [`wards[${fakeWardAddressEOA}]`]:
         '0x0000000000000000000000000000000000000000000000000000000000000001',
     },
   },
-},
-```
+<strong>},
+</strong></code></pre>
 
 {% hint style="info" %}
 Note that the overrides apply to the **entire bundle** and are visible to all simulations within the bundle.
