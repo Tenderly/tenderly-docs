@@ -81,6 +81,18 @@
     * [Easily Debug Failed Transactions](simulations-and-forks/reference/tenderly-fork-customization-via-api/easily-debug-failed-transactions.md)
   * [Configuration of API Access](simulations-and-forks/reference/configuration-of-api-access.md)
 
+## ⚙ Tenderly SDK
+
+* [Intro to Tenderly SDK](tenderly-sdk/intro-to-tenderly-sdk.md)
+* [Tutorials and Quickstarts](tenderly-sdk/tutorials-and-quickstarts/README.md)
+  * [How to Simulate Transactions with Tenderly SDK](tenderly-sdk/tutorials-and-quickstarts/how-to-simulate-transactions-with-tenderly-sdk.md)
+  * [How to Perform Simulation Bundles with Tenderly SDK](tenderly-sdk/tutorials-and-quickstarts/how-to-perform-simulation-bundles-with-tenderly-sdk.md)
+* [Simulating Transactions](tenderly-sdk/simulating-transactions.md)
+* [Managing Contracts](tenderly-sdk/managing-contracts.md)
+* [Managing Wallets](tenderly-sdk/managing-wallets.md)
+* [Practical Examples](tenderly-sdk/practical-examples.md)
+* [Basic Concepts & FAQs](tenderly-sdk/basic-concepts-and-faqs.md)
+
 ## 🧩 Web3 Actions
 
 * [Intro to Web3 Actions](web3-actions/intro-to-web3-actions.md)
@@ -151,18 +163,6 @@
 * [Exporting a Local Transaction](debugger/exporting-a-local-transaction.md)
 * [War Room Aid Kit](debugger/war-room-aid-kit.md)
 * [Tenderly Debugger Extension](debugger/tenderly-debugger-extension.md)
-
-## ⚙ Tenderly SDK
-
-* [Intro to Tenderly SDK](tenderly-sdk/intro-to-tenderly-sdk.md)
-* [Tutorials and Quickstarts](tenderly-sdk/tutorials-and-quickstarts/README.md)
-  * [How to Simulate Transactions with Tenderly SDK](tenderly-sdk/tutorials-and-quickstarts/how-to-simulate-transactions-with-tenderly-sdk.md)
-  * [How to Perform Simulation Bundles with Tenderly SDK](tenderly-sdk/tutorials-and-quickstarts/how-to-perform-simulation-bundles-with-tenderly-sdk.md)
-* [Simulating Transactions](tenderly-sdk/simulating-transactions.md)
-* [Managing Contracts](tenderly-sdk/managing-contracts.md)
-* [Managing Wallets](tenderly-sdk/managing-wallets.md)
-* [Practical Examples](tenderly-sdk/practical-examples.md)
-* [Basic Concepts & FAQs](tenderly-sdk/basic-concepts-and-faqs.md)
 
 ## 📊 Analytics
 
