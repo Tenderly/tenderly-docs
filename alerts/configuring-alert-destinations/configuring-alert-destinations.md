@@ -142,7 +142,7 @@ To support debugging of webhook malfunctions, you can manually send `TEST` event
 
 **Step 1.** Click "**Test Webhook**" in the navigation bar of the webhooks page.
 
-<figure><img src="../../.gitbook/assets/image (24) (1).png" alt=""><figcaption><p>Webhook overview</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24) (2).png" alt=""><figcaption><p>Webhook overview</p></figcaption></figure>
 
 **Step 2.** Paste a hash of a transaction that matches your alert's trigger
 

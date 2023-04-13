@@ -40,7 +40,7 @@ If everything works as expected and you've received the event, click on the **Ad
 
 Clicking on the button to the right will open up the Webhook overview page. This is where you can find information about the webhook status, URL, creation date, signing secrets, etc.
 
-<figure><img src="../../.gitbook/assets/image (20) (2).png" alt=""><figcaption><p>Webhook Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption><p>Webhook Page</p></figcaption></figure>
 
 You also perform other actions on your webhooks, such as enabling/disabling a webhook, or make changes to the existing configuration.&#x20;
 
@@ -56,7 +56,7 @@ You also perform other actions on your webhooks, such as enabling/disabling a we
 
 **Edit Webhook**: Modify the configuration of an existing webhook, such as the URL or description.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Edit Webhook Modal</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption><p>Edit Webhook Modal</p></figcaption></figure>
 
 ### Webhook execution history
 
@@ -76,7 +76,7 @@ Webhook execution can have several statuses:
 
 You can also see prior webhook executions by applying different filters, such as **Filter by Status** and **Select a Date Range**.
 
-<figure><img src="../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>Webhook Execution History Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (13) (2).png" alt=""><figcaption><p>Webhook Execution History Page</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Select Webhook Status Dropdown</p></figcaption></figure>
 
@@ -98,7 +98,7 @@ When you create an Alert rule, you'll be redirected to the following page:
 
 If your Alert is enabled, you'll start receiving events to your webhook endpoint.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (14) (2).png" alt=""><figcaption><p>Webhook Execution History Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption><p>Webhook Execution History Page</p></figcaption></figure>
 
 In this example, we used [https://webhook.site](https://webhook.site/) to create a temporary webhook endpoint to test how Tenderly webhooks work. Below is an image of the payload successfully sent to the webhook.
 

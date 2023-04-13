@@ -44,7 +44,7 @@ If we go in the debugger view of this call we’ll be able to get details:
 
 Thanks to the previous/next button you’ll be able to navigate each steps of the transaction and see that the return amount (one step before) was - 18.953135705079702716:
 
-![](<../../.gitbook/assets/image (14) (1).png>)
+![](<../../.gitbook/assets/image (14) (1) (1).png>)
 
 So using Tenderly to debug the transaction we were able to see where and how the transaction failed in few minutes.
 
