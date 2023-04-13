@@ -47,6 +47,10 @@ To create a new Node Extension, open the [Tenderly Dashboard](https://dashboard.
 
 You can then define the custom JSON-RPC method name and write the JS/TS code that will be executed each time the method is called. After that, you can [manually test your node extension](node-extensions.md#testing-a-node-extension).&#x20;
 
+{% embed url="https://youtu.be/W9Q9vLwoPlo" %}
+How to Create a Custom Node Extension
+{% endembed %}
+
 Keep your code simple and easy to understand, and test thoroughly to ensure that your Node Extension is working correctly.&#x20;
 
 {% content-ref url="broken-reference" %}
@@ -76,6 +80,10 @@ To help you get started, you can use the Node Extension Library to enable a read
 {% hint style="info" %}
 We'll add new extensions over time, so be sure to check the library for updates regularly.
 {% endhint %}
+
+{% embed url="https://youtu.be/9inC9pUKr5c" %}
+How to Activate an Extension from the Node Extension Library
+{% endembed %}
 
 To activate a Library Node Extension, navigate to the **Node Extensions** tab in the Tenderly Dashboard and click the **Add From Library** button. When you open the modal, you'll see the list of all [publicly available Node Extensions](https://github.com/Tenderly/node-extensions-library). Each template has a GitHub link to the source code.
 
