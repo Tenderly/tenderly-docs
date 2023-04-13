@@ -38,7 +38,7 @@ Next, come up with your organization’s name and slug (naming things is always 
 
 Finally, activate the trial for your newly created organizations and you’re good to go!
 
-![](<../.gitbook/assets/image (65).png>)
+![](<../.gitbook/assets/image (65) (1).png>)
 
 Oh, and did we mention that inviting a team member is a breeze? Just click on **Members > Add Member**, enter the e-mail address of your colleague, pick the permissions, and voilà!
 

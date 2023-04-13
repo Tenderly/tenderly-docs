@@ -65,7 +65,7 @@ Our simple Tic-Tac-Toe game can have four possible states:
 
 **Compile the contract -** use the Remix IDE to compile the smart contract. Create a new contract file and add the code found [**here**](https://github.com/Tenderly/examples-web3-actions/blob/tic-tac-toe/tic-tac-toe/TicTacToe.sol).
 
-<figure><img src="../../.gitbook/assets/image (69).png" alt="Compiling the contract in the Remix IDE"><figcaption><p>Compiling the contract in the Remix IDE</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (69) (2).png" alt="Compiling the contract in the Remix IDE"><figcaption><p>Compiling the contract in the Remix IDE</p></figcaption></figure>
 
 **Deploy to a test network** - in your Metamask browser plugin, make sure Ropsten is selected as your preferred network. Next, go to the **“Deploy And Run Transactions”** section in Remix and select **`Injected Web3`**. Click **“Deploy”** once you’ve made sure that the account references the account in Metamask.
 

@@ -18,6 +18,7 @@
   * [Simulate JSON RPC](web3-gateway/references/simulate-json-rpc.md)
   * [Simulate Bundle JSON RPC](web3-gateway/references/simulate-bundle-json-rpc.md)
   * [Trace JSON RPC](web3-gateway/references/trace-json-rpc.md)
+* [Node Extensions](web3-gateway/node-extensions.md)
 * [Pricing and usage limits](web3-gateway/pricing.md)
 
 ## 🛠 DevNets
