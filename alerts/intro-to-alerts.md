@@ -19,10 +19,10 @@ With Tenderly Alerting, you can stay informed about desired or undesired events 
 
 Follow these quick links to skip ahead and get started with Tenderly Alerting:
 
-* ****[**Quickstart guide**](tutorials-and-quickstarts/alerting-quickstart-guide.md)****
-* ****[**How to set up webhooks for alerting**](tutorials-and-quickstarts/how-to-use-webhooks-for-alerting.md)****
-* **Alert triggers** and **targets**
-* ****[**Alert destinations**](configuring-alert-destinations/)****
+* [**Quickstart guide**](tutorials-and-quickstarts/alerting-quickstart-guide.md)
+* [**How to set up webhooks for alerting**](tutorials-and-quickstarts/how-to-use-webhooks-for-alerting.md)
+* [**Alert triggers and targets**](alert-types-targets-and-parameters.md)
+* [**Alert destinations**](configuring-alert-destinations/)
 
 {% embed url="https://www.youtube.com/watch?v=I9XeubHXnIA" %}
 
@@ -59,20 +59,20 @@ All these alert triggers can be configured to send real-time notifications to a 
 
 Receive notifications in your favorite messaging app:
 
-* ****[**Email**](configuring-alert-destinations/account-scoped.md#email-destination)****
-* ****[**Slack**](configuring-alert-destinations/account-scoped.md#slack-destination)****
-* ****[**Telegram**](configuring-alert-destinations/account-scoped.md#telegram-destination)****
-* ****[**Discord**](configuring-alert-destinations/account-scoped.md#discord-destination)****
+* [**Email**](configuring-alert-destinations/account-scoped.md#email-destination)
+* [**Slack**](configuring-alert-destinations/account-scoped.md#slack-destination)
+* [**Telegram**](configuring-alert-destinations/account-scoped.md#telegram-destination)
+* [**Discord**](configuring-alert-destinations/account-scoped.md#discord-destination)
 
 Send alert data to other Tenderly systems:
 
-* ****[**Web3 Actions**](configuring-alert-destinations/configuring-alert-destinations.md#web3-actions)****
-* ****[**Webhooks**](configuring-alert-destinations/configuring-alert-destinations.md#webhooks)****
+* [**Web3 Actions**](configuring-alert-destinations/configuring-alert-destinations.md#web3-actions)
+* [**Webhooks**](configuring-alert-destinations/configuring-alert-destinations.md#webhooks)
 
 Send alert data to third-party incident and error monitoring platforms like:
 
-* ****[**Sentry**](configuring-alert-destinations/account-scoped.md#sentry-destination)****
-* ****[**PagerDuty**](configuring-alert-destinations/account-scoped.md#pagerduty-destination)****
+* [**Sentry**](configuring-alert-destinations/account-scoped.md#sentry-destination)
+* [**PagerDuty**](configuring-alert-destinations/account-scoped.md#pagerduty-destination)
 
 Learn [how to set up each Alert Destination](configuring-alert-destinations/) here.
 
