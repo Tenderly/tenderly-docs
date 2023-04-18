@@ -63,33 +63,60 @@ try {
 
 ### **Verifying a contract**
 
-To verify a contract's source code, use the **`verify`** method of the **`contracts`** namespace:
+To verify a contract, you can use **`verify`** method of the **`contracts`** namespace.
+
+There are three examples that show the usage of `tenderly.contracts.verify` method:
+
+* First example shows the verification of a simple `Counter` contract with no dependencies.
+* Second example shows the verification of a `MyToken` contract that has multiple dependencies which are other contracts.
+* Third example shows the verification of a `LibraryToken` contract that has a library dependency.
+
+You can find these examples in the [examples folder](https://github.com/Tenderly/tenderly-sdk/tree/master/examples/contractVerification) of our `tenderly-sdk` repo along with the instructions on how to start them. Here will be shown only a `MyToken` contract with a few dependencies so you can see how to import them:
 
 ```javascript
-const verificationReq = {
-	config: {
-    mode: 'public', // 'private' is also possible
-	},
-  contractToVerify: 'Counter.sol:Counter',
+const myTokenAddress = `0x1a273A64C89CC45aBa798B1bC31B416A199Be3b3`.toLowerCase() as Web3Address;
+const ROOT_FOLDER = `examples/contractVerification/withDependencies/contracts`;
+
+const tenderly = new Tenderly({
+  accessKey: process.env.TENDERLY_ACCESS_KEY || ``,
+  accountName: process.env.TENDERLY_ACCOUNT_NAME || ``,
+  projectName: process.env.TENDERLY_PROJECT_NAME || ``,
+  network: Network.SEPOLIA,
+});
+
+const result = await tenderly.contracts.verify(myTokenAddress, {
+  config: {
+    mode: `public`,
+  },
+  contractToVerify: `${ROOT_FOLDER}/MyToken.sol:MyToken`,
   solc: {
-    version: 'v0.8.18',
+    version: `v0.8.19`,
     sources: {
-      'Counter.sol': {
-        content: counterContractSource,
+      [`${ROOT_FOLDER}/MyToken.sol`]: {
+        content: readFileSync(`${ROOT_FOLDER}/MyToken.sol`, `utf8`),
+      },
+      [`@openzeppelin/contracts/token/ERC20/ERC20.sol`]: {
+        content: readFileSync(`${ROOT_FOLDER}/ERC20.sol`, `utf8`),
+      },
+      [`@openzeppelin/contracts/token/ERC20/IERC20.sol`]: {
+        content: readFileSync(`${ROOT_FOLDER}/IERC20.sol`, `utf8`),
+      },
+      [`@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol`]: {
+        content: readFileSync(`${ROOT_FOLDER}/IERC20Metadata.sol`, `utf8`),
+      },
+      [`@openzeppelin/contracts/utils/Context.sol`]: {
+        content: readFileSync(`${ROOT_FOLDER}/Context.sol`, `utf8`),
       },
     },
     settings: {
-      libraries: {},
       optimizer: {
-        enabled: false,
+        enabled: true,
+        runs: 200,
       },
     },
   },
-}
-
-tenderly.contracts.verify(address, verificationRequest).then((verificationResult) => {
-  console.log("Verification result:", verificationResult);
-}).catch((error) => {
-  console.error("Error verifying contract:", error);
 });
+
+console.log(`Result:`, result);
+
 ```
