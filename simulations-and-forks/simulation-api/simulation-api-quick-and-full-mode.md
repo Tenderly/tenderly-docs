@@ -17,7 +17,7 @@ Use the `simulation_type` parameter to opt for quick, abi, or full simulation AP
 
 Abi simulations response will contain the following information:
 
-* The **call trace** containing the function name decoded input, and output variables
+* The **call trace** containing the function name, decoded input and output variables
 * Decoded **logs (events)** consisting of the Solidity **event** that produced them and the event arguments' **value**, enriched with **type** description for each.
 
 

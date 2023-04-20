@@ -27,8 +27,8 @@ Simulation API enables you to simulate transactions using a single REST endpoint
 * **Full simulation mode:** This mode gives you decoded simulation results, matched to smart contracts' code, for easier client-side interpretation. The decoded form contains information such as logs (emitted events), state changes, and function calls along the call trace.
 * **Quick simulation mode:** This mode gives you raw transaction results, with a faster response.
 
-{% content-ref url="quick-abi-and-full-mode.md" %}
-[quick-abi-and-full-mode.md](quick-abi-and-full-mode.md)
+{% content-ref url="simulation-api-quick-and-full-mode.md" %}
+[simulation-api-quick-and-full-mode.md](simulation-api-quick-and-full-mode.md)
 {% endcontent-ref %}
 
 When using the full mode, you can easily get highly detailed simulation info and use it in your dapp. See the following example:

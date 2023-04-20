@@ -48,7 +48,7 @@
 * [Simulation RPC](simulations-and-forks/simulation-rpc.md)
 * [Simulation API](simulations-and-forks/simulation-api/README.md)
   * [Using Simulation API](simulations-and-forks/simulation-api/using-simulation-api.md)
-  * [Quick, Abi and Full Mode](simulations-and-forks/simulation-api/quick-abi-and-full-mode.md)
+  * [Quick, Abi and Full Mode](simulations-and-forks/simulation-api/simulation-api-quick-and-full-mode.md)
   * [Simulation Bundles](simulations-and-forks/simulation-api/simulation-bundles.md)
   * [Simulation API With State Overrides](simulations-and-forks/simulation-api/simulation-api-with-state-overrides.md)
   * [Advanced Simulation API Usage](simulations-and-forks/simulation-api/advanced-simulation-api-usage.md)
