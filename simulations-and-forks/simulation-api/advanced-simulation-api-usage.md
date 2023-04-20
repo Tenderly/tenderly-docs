@@ -82,16 +82,16 @@ const simulateUniswap = async () => {
   );
 
   // access the transaction object
-  const transcation = resp.data.transaction;
+  const transaction = resp.data.transaction;
 
   // access the transaction call trace
-  const callTrace = transcation.transaction_info.call_trace;
+  const callTrace = transaction.transaction_info.call_trace;
 
   // access transaction's logs
   const logs = resp.data.transaction.transaction_info.logs;
 
   console.log(
-    `Simulated transaction info: hash: ${transcation.hash} block number: ${transcation.block_number}`
+    `Simulated transaction info: hash: ${transaction.hash} block number: ${transaction.block_number}`
   );
 
   // display balance changes
