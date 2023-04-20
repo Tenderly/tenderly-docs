@@ -1,22 +1,33 @@
 ---
 description: >-
-  Use Simulation API in full mode for complete decoding of transaction outputs
-  or go with quick mode for faster response times and raw transaction outputs.
+  Use Simulation API in full mode for complete decoding of transaction outputs,
+  abi for partial decoding of transaction info, or go with quick mode for faster
+  response times and raw transaction outputs.
 ---
 
-# Simulation API: Quick and Full Mode
+# Quick, Abi and Full Mode
 
-Use the `simulation_type` parameter to opt for full or quick simulation API mode.&#x20;
+Use the `simulation_type` parameter to opt for quick, abi, or full simulation API mode.&#x20;
 
 * **Select quick simulations** when you need minimal, raw values.
+* **Use abi simulations** when you need minimal information with decoded inputs, outputs, and logs.
 * **Go with full simulations** when you need raw and decoded information. Full simulations attach Solidity types to the raw simulation response so you don't have to decode the information on your own. For example, raw call data (transaction's data field) is decoded to the argument names defined in the contract's smart code.
+
+
+
+Abi simulations response will contain the following information:
+
+* The **call trace** containing the function name decoded input, and output variables
+* Decoded **logs (events)** consisting of the Solidity **event** that produced them and the event arguments' **value**, enriched with **type** description for each.
+
+
 
 Full simulations decode the following information:&#x20;
 
 * The **call trace** containing the function name, position in the source file, caller's address, and  balance
 * Decoded **function inputs and outputs**, with **soltype** for all arguments. This applies to all function calls, including the direct call to the smart contract from EOA, internal calls between smart contracts, and function calls within each smart contract.
 * Decoded **state diff** (changes to the state) enriched with **soltype** for the modified fields
-* Decoded **logs (events)** consisting of the Solidity **event** that produced them and the event arguments' **value**, enriched with **soltype** for each.
+* Decoded **logs (events)** consisting of the Solidity **event** that produced them and the event arguments' **value**, enriched with **type** for each.
 
 {% hint style="info" %}
 * Full simulations take more time, depending on the depth of the call trace.

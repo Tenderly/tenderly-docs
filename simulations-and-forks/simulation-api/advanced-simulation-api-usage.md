@@ -30,7 +30,7 @@ The following code customizes the simulation context by:
 
 * Simulating the transaction on the block 16533181.
 * Simulating this transaction at a particular index within that block (in this case 1).
-* Performing a [full simulation](simulation-api-quick-and-full-mode.md).
+* Performing a [full simulation](quick-abi-and-full-mode.md).
 
 {% tabs %}
 {% tab title="Request" %}
