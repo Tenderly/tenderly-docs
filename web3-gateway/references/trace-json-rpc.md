@@ -614,7 +614,7 @@ async function runSimulateTransaction() {
   * **gasUsed** `STRING`: hex encoded unsigned 64 byte integer representing event gasUsed
   * **value** `STRING`: hex encoded unsigned 64 byte integer representing event value in wei
   * **error** `STRING`: low-level error from virtual machine
-  * **errorMessage** `STRING`: extracted error message in case of revert
+  * **errorReason** `STRING`: extracted error reason in case of revert
   * **input** `STRING`: hex encoded string representation of raw input bytes for the trace point
   * **method** `STRING`: invoked contract method
   * **decodedInput** : decoded input for the invoked method - `ARRAY` of decoded in argument `OBJECT`
