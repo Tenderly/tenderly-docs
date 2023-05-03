@@ -163,6 +163,17 @@ export type Game = {
 At this point, we are ready to define the actual Web3 Action like so:
 
 ```typescript
+export const createNewGame = (): Game => {
+    return {
+        players: {},
+        board: [
+            [0, 0, 0],
+            [0, 0, 0],
+            [0, 0, 0],
+        ],
+    };
+};
+
 // ticTacToeActions.ts continued 
 export const newGameAction: ActionFn = async (
     context: Context,
