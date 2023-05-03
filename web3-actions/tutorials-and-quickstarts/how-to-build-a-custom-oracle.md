@@ -43,7 +43,7 @@ Here’s a list of steps we’ll need to take to build our oracle:
 
 ### 1: Deploy the Smart Contracts
 
-Both <mark style="color:orange;">`CoinOracle`</mark> and <mark style="color:orange;">`SimpleCoinConsumer`</mark> contracts are stored in the same file: <mark style="color:orange;">`CoinOracle.sol`</mark>. Check out the source code [**in our GitHub repo**](https://github.com/Tenderly/examples-web3-actions/simple-coin-oracle/CoinOracle.sol).
+Both <mark style="color:orange;">`CoinOracle`</mark> and <mark style="color:orange;">`SimpleCoinConsumer`</mark> contracts are stored in the same file: <mark style="color:orange;">`CoinOracle.sol`</mark>. Check out the source code [**in our GitHub repo**](https://github.com/Tenderly/examples-web3-actions/blob/main/simple-coin-oracle/CoinOracle.sol).
 
 The <mark style="color:orange;">`CoinOracle`</mark> contact must be deployed first, before the <mark style="color:orange;">`SimpleCoinConsumer`</mark> contract, preferably using a different Wallet. Make sure to pass the <mark style="color:orange;">`CoinOracle`</mark> address as the constructor parameter.
 
@@ -81,7 +81,7 @@ $ cd actions && npm install --save-dev axios ethers @types/node && cd ..
 
 ### 3: Create Your Web3 Action
 
-Before moving forward, copy the <mark style="color:orange;">`CoinOracleContract.json`</mark> file to the <mark style="color:orange;">`actions`</mark> directory. **You can find this JSON file in Remix or** [**this GitHub repo**](https://github.com/Tenderly/examples-web3-actions/simple-coin-oracle/actions/CoinOracleContract.json).
+Before moving forward, copy the <mark style="color:orange;">`CoinOracleContract.json`</mark> file to the <mark style="color:orange;">`actions`</mark> directory. **You can find this JSON file in Remix or** [**this GitHub repo**](https://github.com/Tenderly/examples-web3-actions/blob/main/simple-coin-oracle/actions/CoinOracleContract.json).
 
 {% hint style="danger" %}
 All files your Web3 Action code uses and references must be placed in the <mark style="color:orange;">`actions`</mark> directory (e.g. <mark style="color:orange;">`CoinOracleContract.json`</mark>).
