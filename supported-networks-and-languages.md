@@ -16,6 +16,8 @@ All Tenderly features are enabled including Web3 Gateway integration.
 
 <img src=".gitbook/assets/Icon_sepolia.svg" alt="" data-size="line">Sepolia
 
+&#x20;Boba Ethereum
+
 
 
 **Networks supported in Tenderly, without Web3 Gateway access**
@@ -42,7 +44,7 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/Icon_Optimistic Ethereum-.svg" alt="" data-size="line">Optimistic Ethereum
 
-<img src=".gitbook/assets/Icon_Optimistic Kovan-.svg" alt="" data-size="line">Optimistic Kovan
+<img src=".gitbook/assets/Icon_Optimistic Kovan-.svg" alt="" data-size="line">Optimistic Goerli Testnet
 
 <img src=".gitbook/assets/Icon_Avalanche C-Chain.svg" alt="" data-size="line">Avalanche C-Chain
 
@@ -52,9 +54,9 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/Icon_fantom testnet.svg" alt="" data-size="line">Fantom Testnet
 
-<img src=".gitbook/assets/Icon_arbitrum.svg" alt="" data-size="line">Arbitrum
+<img src=".gitbook/assets/Icon_arbitrum.svg" alt="" data-size="line">Arbitrum One
 
-<img src=".gitbook/assets/Icon_arbitrum testnet.svg" alt="" data-size="line">Arbitrum Testnet
+<img src=".gitbook/assets/Icon_arbitrum testnet.svg" alt="" data-size="line">Arbitrum Goerli Testnet
 
 <img src=".gitbook/assets/Moonbeam.svg" alt="" data-size="line">Moonbeam[\*](supported-networks-and-languages.md#footnotes)
 
