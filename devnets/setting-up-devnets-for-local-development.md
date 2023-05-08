@@ -52,7 +52,7 @@ module.exports = {
 
 Replace **`YOUR_DEVNET_JSON_RPC_URL`** with the DevNet RPC URL you obtained from Tenderly.
 
-One alternative is to utilize the `spawnRPC` CLI command, which enables the automated process of spinning up a DevNet and injecting it directly into your HardHat config file.
+One alternative is to utilize the `spawn-rpc` CLI command, which enables the automated process of spinning up a DevNet and injecting it directly into your HardHat config file.
 
 {% hint style="info" %}
 Each time the `spawn-rpc` command is called, a new RPC URL will be generated from a fresh state of the specified network.
@@ -88,7 +88,7 @@ forge init
 2. Use the `forge create` command to deploy your smart contracts.
 
 ```bash
-forge create --rpc-url=$(tenderly devnet spawnRPC --template <YOUR_TEMPALATE_SLUG> --project <YOUR_PROJECT_SLUG>) ./src/Counter.sol:Counter --unlocked --from 0x0000000000000000000000000000000000000000
+forge create --rpc-url=$(tenderly devnet spawn-rpc --template <YOUR_TEMPALATE_SLUG> --project <YOUR_PROJECT_SLUG>) ./src/Counter.sol:Counter --unlocked --from 0x0000000000000000000000000000000000000000
 ```
 
 ### Setting up DevNet for a Truffle **project**
