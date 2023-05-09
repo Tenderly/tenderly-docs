@@ -50,7 +50,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/image (83) (2).png" alt="" data-size="line"> Arbitrum Goerli Testnet `=> 421613`
 
-<img src="../../.gitbook/assets/Cronos.svg" alt="" data-size="line"><img src="../../.gitbook/assets/logo.svg" alt="" data-size="line"> Cronos `=> 25`
+<img src="../../.gitbook/assets/logo.svg" alt="" data-size="line"> Cronos `=> 25`
 
 <img src="../../.gitbook/assets/cronos-testnet-icon.png" alt="" data-size="line"> Cronos Testnet `=> 338`
 
