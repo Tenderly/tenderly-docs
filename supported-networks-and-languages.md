@@ -62,7 +62,7 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/Moonriver-MOVR.png" alt="" data-size="line">Moonriver[\*](supported-networks-and-languages.md#footnotes)
 
-<img src=".gitbook/assets/Cronos.svg" alt="" data-size="line"><img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
+<img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
 
 <img src=".gitbook/assets/Boba.svg" alt="" data-size="line"><img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"><img src=".gitbook/assets/Boba.svg" alt="" data-size="line">Boba Network
 {% endtab %}
