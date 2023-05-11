@@ -58,9 +58,9 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 
 <img src=".gitbook/assets/image (83) (2).png" alt="" data-size="line"> Arbitrum Goerli Testnet
 
-<img src=".gitbook/assets/moonbeam-logo.png" alt="" data-size="line"> Moonbeam[\*](supported-networks-and-languages.md#footnotes)
+<img src=".gitbook/assets/moonbeam-logo.png" alt="" data-size="line"> Moonbeam
 
-<img src=".gitbook/assets/Moonriver-MOVR.png" alt="" data-size="line">Moonriver[\*](supported-networks-and-languages.md#footnotes)
+<img src=".gitbook/assets/Moonriver-MOVR.png" alt="" data-size="line">Moonriver
 
 <img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
 
@@ -73,23 +73,3 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 <img src=".gitbook/assets/vyper_icon_131888.png" alt="" data-size="line"> Vyper
 {% endtab %}
 {% endtabs %}
-
-### Footnotes&#x20;
-
-{% hint style="info" %}
-\***Moonbeam** and **Moonriver** network integration is currently in **Phase 1**, with limited Tenderly tooling support.
-
-**Phase 1:** partial integration. These are disabled or partially supported tools and services:
-
-* Tenderly skips transactions with (a) differences in the execution path, (b) and transactions with precompiled contracts. \
-  _Skipped transactions will not be accessible through the Tenderly platform._
-* Gas Profiler is disabled due to slight imprecisions in gas calculations.
-* Web3 Actions and Alerts are completely disabled due to skipping transactions.
-* The remaining Tenderly features will operate as expected.
-
-**Phase 2**: complete integration with all Tenderly tools supported
-
-* Supporting transactions involving precompiled contracts.
-* Enabling Gas Profiler with full accuracy
-* Enabling Alerts and Web3 Actions.
-{% endhint %}
