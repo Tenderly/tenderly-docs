@@ -6,7 +6,7 @@ description: >-
 
 # Simulation RPC
 
-Simulation RPC allows you to use your Tenderly Web3 Gateway node not only to read data and send transactions to the blockchain, but also to simulate transactions in one place. It's possible to use Simulation RPC for the [networks supported in Web3 Gateway](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/supported-networks-and-languages). For other cases, use [Simulation API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/-LeLQaB11\_TIOtLg8tIW/\~/changes/372/simulations-and-forks/simulation-api).
+Simulation RPC allows you to use your Tenderly Web3 Gateway node not only to read data and send transactions to the blockchain, but also to simulate transactions in one place. It's possible to use Simulation RPC for the [networks supported in Web3 Gateway](../supported-networks-and-languages.md). For other cases, use [Simulation API](simulation-api/).
 
 Simulation RPC allows you to:
 
