@@ -18,7 +18,7 @@ To get started, take a look at the following three examples:
 
 * [Performing a single simulation](simulation-rpc.md#performing-a-single-simulation) using `tenderly_simulateTransaction`
 * [Performing a simulation using state overrides](simulation-rpc.md#simulating-with-state-overrides)
-* [Simulating a bundle of transactions](simulation-rpc.md#bundle-simulations) that involve minting, approving, and transferring DAI using `tenderly_simulateBundle`.
+* [Simulating a bundle of transactions](../web3-gateway/references/simulate-bundle-json-rpc.md) that involve minting, approving, and transferring DAI using `tenderly_simulateBundle`.
 
 ## Performing a single simulation
 
