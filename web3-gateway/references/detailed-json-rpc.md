@@ -1802,6 +1802,80 @@ async function runNewBlockFilter() {
 
 **RESULT**: Filter Identifier `STRING` hex encoded unsigned integer
 
+### `eth_newPendingTransactionFilter`
+
+Creates a filter in the node, to notify when a new pending transaction arrives.
+
+[Brief version](brief-json-rpc.md#eth\_newBlockFilter)
+
+**PARAMS**
+
+none
+
+{% tabs %}
+{% tab title="Raw" %}
+```json
+{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "method": "eth_newPendingTransactionFilter",
+  "params": []
+}
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+-X POST \
+-H "Content-Type: application/json" \
+-d \
+'{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "method": "eth_newPendingTransactionFilter",
+  "params": []
+}'
+```
+{% endtab %}
+
+{% tab title="ethers" %}
+```javascript
+// Installation Instructions: https://docs.ethers.io/v5/getting-started/#installing
+const { ethers } = require("ethers");
+
+async function runNewBlockFilter() {
+  // Initialize an ethers instance
+  const provider = new ethers.providers.JsonRpcProvider(
+    "https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY"
+  );
+
+  // Execute method
+  const result = await provider.send("eth_newPendingTransactionFilter", []);
+
+  // Print the output to console
+  console.log(result);
+}
+
+(async () => {
+  runNewBlockFilter();
+})();
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "result": "0x5c085c6a8828b03e4ef82a5aaa710bb5bbcf0ccc04735f6a508c2d5210cdc2f9"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+**RESULT**: Filter Identifier `STRING` hex encoded unsigned integer
+
 ### `eth_getFilterChanges`
 
 Polling method for a filter, which returns an array of logs which occurred since last poll.

@@ -1446,9 +1446,8 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
 {% endtab %}
 
 {% tab title="ethers" %}
-```javascript
-// Installation Instructions: https://docs.ethers.io/v5/getting-started/#installing
-const { ethers } = require("ethers");
+<pre class="language-javascript"><code class="lang-javascript"><strong>// Installation Instructions: https://docs.ethers.io/v5/getting-started/#installing
+</strong>const { ethers } = require("ethers");
 
 async function runNewBlockFilter() {
   // Initialize an ethers instance
@@ -1466,7 +1465,7 @@ async function runNewBlockFilter() {
 (async () => {
   runNewBlockFilter();
 })();
-```
+</code></pre>
 {% endtab %}
 
 {% tab title="Response" %}
@@ -1475,6 +1474,75 @@ async function runNewBlockFilter() {
   "id": 0,
   "jsonrpc": "2.0",
   "result": "0x2800ccaaab1e8fb71fe5bd394c3f378aaae0ecfa72c7c40c759eed7e40675c8e"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+### `eth_newPendingTransactionFilter`
+
+Creates a filter in the node, to notify when a new pending transaction arrives.
+
+[Detailed version](detailed-json-rpc.md#eth\_newBlockFilter)
+
+**RESULT**: Filter Identifier
+
+{% tabs %}
+{% tab title="Raw" %}
+```json
+{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "method": "eth_newPendingTransactionFilter",
+  "params": []
+}
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```
+curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+-X POST \
+-H "Content-Type: application/json" \
+-d \
+'{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "method": "eth_newPendingTransactionFilter",
+  "params": []
+}'
+```
+{% endtab %}
+
+{% tab title="ethers" %}
+<pre class="language-javascript"><code class="lang-javascript"><strong>// Installation Instructions: https://docs.ethers.io/v5/getting-started/#installing
+</strong>const { ethers } = require("ethers");
+
+async function runNewBlockFilter() {
+  // Initialize an ethers instance
+  const provider = new ethers.providers.JsonRpcProvider(
+    "https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY"
+  );
+
+  // Execute method
+  const result = await provider.send("eth_newPendingTransactionFilter", []);
+
+  // Print the output to console
+  console.log(result);
+}
+
+(async () => {
+  runNewBlockFilter();
+})();
+</code></pre>
+{% endtab %}
+
+{% tab title="Response" %}
+```
+{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "result": "0x5c085c6a8828b03e4ef82a5aaa710bb5bbcf0ccc04735f6a508c2d5210cdc2f9"
 }
 ```
 {% endtab %}
