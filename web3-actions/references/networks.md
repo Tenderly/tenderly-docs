@@ -12,9 +12,9 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/image (85) (1) (1) (1).png" alt="" data-size="line"> Kovan `=> 42`
 
-<img src="../../.gitbook/assets/image (73) (1).png" alt="" data-size="line"> Ropsten `=> 3`
+<img src="../../.gitbook/assets/image (73) (1).png" alt="" data-size="line"> Ropsten (deprecated) `=> 3`
 
-<img src="../../.gitbook/assets/image (75) (1) (1).png" alt="" data-size="line"> Rinkeby `=> 4`
+<img src="../../.gitbook/assets/image (75) (1) (1).png" alt="" data-size="line"> Rinkeby (deprecated) `=> 4`
 
 <img src="../../.gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Gorli`=> 5`
 

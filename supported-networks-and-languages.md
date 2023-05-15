@@ -8,7 +8,7 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 {% tab title="Networks" %}
 **Networks supported in Tenderly and** [**accessible through Web3 Gateway**](http://blog.tenderly.co/how-to-deploy-smart-contracts-with-hardhat-and-tenderly/)
 
-All Tenderly features are enabled including Web3 Gateway integration.
+In this section, we list all the networks that are fully supported by Tenderly, including access through our [Web3 Gateway](broken-reference).
 
 <img src=".gitbook/assets/image (80) (1) (1) (1) (1).png" alt="" data-size="line"> Mainnet
 
@@ -16,15 +16,19 @@ All Tenderly features are enabled including Web3 Gateway integration.
 
 <img src=".gitbook/assets/Sepolia (1).png" alt="" data-size="line"> Sepolia
 
+<img src=".gitbook/assets/image (69) (1) (1).png" alt="" data-size="line"> Polygon
+
+<img src=".gitbook/assets/image (70) (1).png" alt="" data-size="line"> Polygon Mumbai
+
 <img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"> Boba Ethereum
 
 
 
 **Networks supported in Tenderly, without Web3 Gateway access**
 
-All Tenderly features are enabled, with few [exceptions](supported-networks-and-languages.md#footnotes) due to the integration process.
-
-Web3 Gateway integration is not present. We're working on incremental integration.
+In this section, you'll find the networks that are supported by Tenderly but currently do not have Web3 Gateway integration. All Tenderly features are still enabled for these networks, but there may be a few exceptions due to the specifics of the integration process.\
+\
+While Web3 Gateway integration isn't currently available for these networks, rest assured we're actively working on incremental integration to bring this feature to all networks supported by Tenderly. In the meantime, you can still use Tenderly's suite of tools to monitor, debug, and simulate your smart contracts on these networks.
 
 <img src=".gitbook/assets/image (83) (1) (1) (1).png" alt="" data-size="line"> RSK
 
@@ -37,10 +41,6 @@ Web3 Gateway integration is not present. We're working on incremental integratio
 <img src=".gitbook/assets/gnosis-logo.png" alt="" data-size="line"> Gnosis Chain
 
 <img src=".gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA
-
-<img src=".gitbook/assets/image (69) (1) (1).png" alt="" data-size="line"> Polygon
-
-<img src=".gitbook/assets/image (70) (1).png" alt="" data-size="line"> Polygon Mumbai
 
 <img src=".gitbook/assets/image (87) (1) (1) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum
 
