@@ -30,7 +30,7 @@ Firstly, in your Tenderly dashboard, open the drop-down menu in the top right co
 
 You’ll be taken to the Organizations screen, where you should click on **Create Organization:**
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 Next, come up with your organization’s name and slug (naming things is always the hardest part!)**:**
 

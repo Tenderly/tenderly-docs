@@ -17,7 +17,7 @@ All Tenderly tools are fully integrated, eliminate development fragmentation, an
 * **Observability**
 * **Infrastructure 3.0**
 
-<figure><img src="https://lh6.googleusercontent.com/X2vhUpcYZPOfsj3Wa_xoGxo1-0Sai8crzK6rY0smtwRj6owJAKRWQQMjsjKVclGftXie5SaHVFspjK3vt4snXaK2iyoD_1t9DAzXPSMuT8Lw_iP3ZfWvYsSB3_vmw22Pch5KxF2pwHdx0vM60RYANnUnKo6RcWEj0FeeJr4-yStWOjqWTzlmhFHHwtSjZA" alt=""><figcaption><p>The fully integrated Tenderly Web3 development platform </p></figcaption></figure>
+<figure><img src=".gitbook/assets/Tenderly Platform Chart.png" alt=""><figcaption></figcaption></figure>
 
 Learn more about each category and how you can benefit from Tenderly tools.
 
@@ -34,6 +34,7 @@ Use the Tenderly node to:
 * Perform read-heavy workloads up to eight times faster.
 * Read, stream, and analyze blockchain data with 100% consistency.
 * [Run tx simulations before sending them on-chain](https://docs.tenderly.co/web3-gateway/references/simulate-json-rpc) using a single RPC URL.
+* Build your own custom node abstraction by writing your own RPC methods using [Node Extensions](web3-gateway/node-extensions.md)
 * Eliminate the node infrastructure overhead and focus on building your dapps.
 
 {% content-ref url="broken-reference" %}
@@ -45,6 +46,7 @@ Additional resources:
 * **Blog:** [Introducing Web3 Gateway](https://blog.tenderly.co/introducing-web3-gateway-to-all-in-one-developer-platform/)
 * **Blog:** [Getting Started With Web3 Gateway](https://blog.tenderly.co/getting-started-with-tenderly-web3-gateway/)
 * **Blog:** [Announcing Simulations in Web3 Gateway](https://blog.tenderly.co/announcing-simulations-in-web3-gateway/)
+* **Blog:** [How Tenderly Node Extensions Enable Complete RPC Customization](https://blog.tenderly.co/customizing-rpc-endpoints-with-node-extensions/)
 
 #### Simulation API
 
@@ -90,6 +92,21 @@ Additional resources:
 * **Blog:** [Web3 Actions: A Serverless Backend for Development Efficiency](https://blog.tenderly.co/how-use-web3-actions-serverless-backend/)
 * **Blog:** [The Merge Countdown: How Not to Miss The Merge With Web3 Actions](https://blog.tenderly.co/how-to-set-up-merge-notifications-with-web3-actions/)
 * **Video:** [Bringing Automation to Dapp Development With Web3 Actions](https://www.youtube.com/watch?v=03DbfvDzpA8)
+
+#### Tenderly SDK
+
+The Tenderly SDK is a TypeScript library built for efficient blockchain development, integrating with Tenderly's robust tools.
+
+Features:
+
+* **Transaction Simulation:** Test transaction outcomes before deploying to the blockchain.
+* **Transaction Bundle Simulation:** Simulate multiple transactions as a bundle for comprehensive testing.
+* **Contract & Wallet Management:** Add, update, and remove contracts in your Tenderly project.
+* **Smart Contract Verification:** Verify your smart contracts' integrity directly from your code.
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 ### **🏗️ Development**
 
@@ -177,6 +194,20 @@ Additional resources:
 
 * **Blog:** [Improving Dapp UX With Transaction Simulations](http://blog.tenderly.co/improving-dapp-ux-with-transaction-simulations/)
 * **Blog:** [The Magical Land of Smart Contract Storage](http://blog.tenderly.co/the-magical-land-of-smart-contract-storage/)
+
+#### Tenderly DevNets
+
+With DevNets, you can swiftly build, iterate, and debug your blockchain applications in an isolated environment with mainnet data. They empower you to conduct extensive testing of smart contracts, manipulate contract states in real-time, and access Ether effortlessly for transactions. Leveraging DevNets, you can streamline your development workflow, ensure the robustness of your application, and expedite the overall development process.\
+\
+With DevNets, you can:
+
+* Deploy, test, and debug your smart contracts using tools such as Debugger, Gas Profiler, Call Trace, and rest.
+* Access mainnet data, including contracts code, contract state alongside Ether and token balances.
+* Re-simulate transactions and analyze their execution.
+* Utilize custom RPCs to change state, obtain Ether etc.
+* Debug not only transactions but also `eth_call` and `eth_estimateGas`
+* Create a fully-featured blockchain environment in seconds.
+* Integrate DevNets in your day-to-day development and CI pipelines.
 
 #### Tenderly Forks
 

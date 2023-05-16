@@ -20,7 +20,7 @@ WebSockets provide several benefits over traditional HTTP requests, such as:
 
 ## How to connect to Tenderly WebSocket?
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Web3 Gateway Page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>Web3 Gateway Page</p></figcaption></figure>
 
 Once you open the Tenderly Dashboard, go to the [Tenderly Web3 Gateway page](https://dashboard.tenderly.co/?redirectTo=gateways) and click the **Copy WSS URL** button. To test Tenderly WebSockets, use the `wscat`  command-line tool.&#x20;
 
