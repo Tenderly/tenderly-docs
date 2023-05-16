@@ -15,11 +15,12 @@ Instead, you can create higher abstractions for interacting with the blockchain,
 
 A Node Extension consists of Javascript/Typescript code that processes a JSON-RPC request at your custom endpoint. When you activate an extension in a project, it becomes available as a new Web3 Gateway endpoint.
 
-You can create a fully custom Node Extension in three ways:
+You can create a fully custom Node Extension in 4 ways:
 
 * Build an extension from scratch, encapsulating your logic in Javascript/Typescript.
 * Re-purpose a Web3 Action into an extension.
-* Re-use an existing Node Extension coming from our open [Node Extensions Library](https://github.com/Tenderly/node-extensions-library). You can contribute to the Node Extensions Library. This way, you can make reusability easier and enable other projects to integrate your abstractions.&#x20;
+* Re-use an existing Node Extension coming from our open [Node Extensions Library](https://github.com/Tenderly/node-extensions-library). You can contribute to the Node Extensions Library. This way, you can make reusability easier and enable other projects to integrate your abstractions.
+* Use the Node Extensions Command Line Interface (CLI) to initialize and deploy your extensions. This tool is particularly useful for integrating Node Extensions into your development workflow and automating the deployment process​.
 
 {% hint style="info" %}
 Before you can start using Node Extensions, you need to [create an account](https://dashboard.tenderly.co/register?redirectTo=node-extensions) on the Tenderly platform and be familiar with the basics of [Tenderly Web3 Gateway](./), our Node-as-a-Service solution. You should also have working knowledge of JavaScript or TypeScript and [JSON-RPC methods](references/brief-json-rpc.md).
@@ -36,6 +37,7 @@ Let's explore the ways you can create a Node Extension:
 * **Creating a (private) custom Node Extension** from scratch by providing JS/TS code that encapsulates your custom operations
 * **Creating a Node Extension from the Node Extension Library** (from a [public GitHub repo](https://github.com/Tenderly/node-extensions-library)). This is a community-sourced library of extensions, making it easy to share extensions with others and enabling reusability and composability.
 * **Using an existing Web3 Action** as the basis for a new Node Extension.
+* Using the **Node Extensions Command Line Interface (CLI)** to easily initialize and deploy your extensions. This is a great way to manage your extensions programmatically, and fits seamlessly into automated workflows.
 
 {% hint style="info" %}
 If your node extensions use API keys, secrets, or other sensitive information, you can use [Web3 Action Secrets](https://docs.tenderly.co/web3-actions/references/context-storage-and-secrets#secrets) to securely store and access this information from code. To retrieve a secret, use `await context.secrets.get('API_KEY')` in your Node Extension.
@@ -106,6 +108,99 @@ After enabling Node Extensions, you'll be directed to the Node Extension page wh
 If you created a Node Extension using a library example, a GitHub icon with a link to its source code will be displayed. If it's a custom Node Extension, the Web3 Action with the corresponding status and source code will be linked.
 
 <figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption><p>Node Extensions Page</p></figcaption></figure>
+
+### Creating a Node Extension from CLI
+
+The [Tenderly CLI](https://github.com/Tenderly/tenderly-cli) now supports operations related to Node Extensions. This allows you to extend the functionalities of the Tenderly node and create custom JSON-RPC endpoints that encapsulate functionalities specific to your dapp or protocol from the command line.
+
+#### Initializing Node Extensions
+
+The `tenderly node-extensions init` command initializes the `node_extensions` section of your `tenderly.yaml` file. It takes the following arguments:
+
+* **name**: Specifies the extension name.
+* **description**: Specifies the extension description.
+* **methodName**: Specifies the extension method name. Note that all Node Extensions method names must start with the `extension_` prefix​​.
+
+```
+tenderly node-extensions init --name "extension-name" --description "extension description" --methodName "extension_test"
+```
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Choosing the Web3 Action while creating a Node Extension</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>Successfully initialized Node Extension</p></figcaption></figure>
+
+After running this command, you'll get something like this:
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Project structure</p></figcaption></figure>
+
+{% code title="tenderly.yaml" lineNumbers="true" %}
+```yaml
+account_id: ""
+actions:
+  ACCOUNT_NAME/PROJECT_SLUG:
+    runtime: v2
+    sources: actions
+    specs:
+      example:
+        description: Non-authenticated webhook example
+        function: example:nodeExtensionFn
+        trigger:
+          type: webhook
+          webhook:
+            authenticated: false
+node_extensions:
+  ACCOUNT_NAME/PROJECT_SLUG:
+    specs:
+      extension-name:
+        description: extension description
+        method: extension_test
+        action: example
+project_slug: ""
+```
+{% endcode %}
+
+{% code title="example.ts" lineNumbers="true" %}
+```typescript
+import {
+  ActionFn,
+  Context,
+  Event,
+  ExtensionEvent,
+} from '@tenderly/actions';
+
+export const nodeExtensionFn: ActionFn = async (context: Context, event: Event) => {
+  const extensionEvent = event as ExtensionEvent;
+  console.log({ extensionEvent });
+  return extensionEvent;
+};
+```
+{% endcode %}
+
+{% hint style="warning" %}
+Before you can use the `tenderly node-extensions init` command, you must first set up a [Web3 Action](../web3-actions/tutorials-and-quickstarts/deploy-web3-action-via-cli.md). To do this, you can use the `tenderly actions init` command from the CLI. This Web3 Action should be configured as a non-authenticated webhook event.
+{% endhint %}
+
+The command first validates the provided `methodName` and then prompts you to select one action from a list of those eligible for extensions, presented in the format `account/project:action`. The list only includes actions that aren't already used by other extensions in the `tenderly.yaml` file. If no actions are eligible for extensions, or if all eligible actions are already used by other extensions, the command will return an error. After an action is selected, the command checks if the chosen extension method name is already used by another extension in the same `account/project`. If it isn't, the extension is added to the `tenderly.yaml` file.
+
+#### Deploying Node Extensions
+
+```
+tenderly node-extensions deploy
+```
+
+The `tenderly node-extensions deploy` command deploys extensions specified in the `tenderly.yaml` file. It accepts the following arguments:
+
+* **account**: Specifies the account for which the extension is defined in the `tenderly.yaml` file.
+* **project**: Specifies the project for which the extension is defined in the `tenderly.yaml` file.
+* **extensionName**: Specifies the extension in the provided `account/project` that should be deployed.
+
+If no arguments are provided, the command will attempt to deploy all extensions defined in the `tenderly.yaml` file. If any of these extension deployments fail, the command will print out the failure reasons and continue with the deployment.
+
+{% hint style="warning" %}
+Ensure that the corresponding Web3 Action is deployed in your project before deploying a Node Extension using the CLI. The deployment of the Web3 Action is a prerequisite for the Node Extension. If you attempt to deploy a Node Extension without a previously deployed Web3 Action, the process will fail with an error message.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Successfully deployed Node Extension in the Tenderly Dashboard</p></figcaption></figure>
 
 ## Testing a Node Extension
 

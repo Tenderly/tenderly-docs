@@ -40,7 +40,7 @@ If we scroll down enough until the place where the transaction was reverted at t
 
 If we go in the debugger view of this call we’ll be able to get details:
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (11) (1).png>)
 
 Thanks to the previous/next button you’ll be able to navigate each steps of the transaction and see that the return amount (one step before) was - 18.953135705079702716:
 
