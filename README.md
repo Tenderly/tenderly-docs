@@ -27,14 +27,14 @@ Tenderly Infrastructure 3.0 brings together integral building blocks for smart c
 
 #### Tenderly Web3 Gateway
 
-Tenderly Web3 Gateway is a production node that offers reliable, fast, and consistent access to the blockchain. It supports the standard JSON RPC interface and custom-built endpoints thanks to its unique architecture.
+Tenderly Web3 Gateway is a production node that offers reliable, fast, and consistent access to the blockchain. It supports the standard JSON-RPC interface and custom-built endpoints thanks to its unique architecture.
 
 Use the Tenderly node to:
 
 * Perform read-heavy workloads up to eight times faster.
 * Read, stream, and analyze blockchain data with 100% consistency.
 * [Run tx simulations before sending them on-chain](https://docs.tenderly.co/web3-gateway/references/simulate-json-rpc) using a single RPC URL.
-* Build your own custom node abstraction by writing your own RPC methods using [Node Extensions](web3-gateway/node-extensions.md)
+* Build your own custom node abstraction by writing your own RPC methods using [Node Extensions](web3-gateway/node-extensions.md).
 * Eliminate the node infrastructure overhead and focus on building your dapps.
 
 {% content-ref url="broken-reference" %}
@@ -70,6 +70,7 @@ Integrate with Simulation API to:
 Additional resources:
 
 * **Blog:** [Improving Dapp UX With Transaction Simulations](http://blog.tenderly.co/improving-dapp-ux-with-transaction-simulations/)
+* **Blog**: [How to Secure Multisig Wallets With Transaction Simulations](https://blog.tenderly.co/how-to-secure-multisigs-with-transaction-simulations/)
 * **Video:** [How to Avoid Failed Transactions and Improve Dapp UX](https://www.youtube.com/watch?v=1eYw7N-dM-g)
 
 #### Tenderly Web3 Actions
@@ -99,10 +100,10 @@ The Tenderly SDK is a TypeScript library built for efficient blockchain developm
 
 Features:
 
-* **Transaction Simulation:** Test transaction outcomes before deploying to the blockchain.
-* **Transaction Bundle Simulation:** Simulate multiple transactions as a bundle for comprehensive testing.
-* **Contract & Wallet Management:** Add, update, and remove contracts in your Tenderly project.
-* **Smart Contract Verification:** Verify your smart contracts' integrity directly from your code.
+* **Transaction Simulator:** Test transaction outcomes before deploying them to the blockchain.
+* **Transaction Simulation Bundles:** Simulate multiple transactions as a bundle for comprehensive testing.
+* **Contract & wallet management:** Add, update, and remove contracts in your Tenderly project.
+* **Smart contract verification:** Verify your smart contracts' integrity directly from your code.
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
@@ -197,21 +198,26 @@ Additional resources:
 
 #### Tenderly DevNets
 
-With DevNets, you can swiftly build, iterate, and debug your blockchain applications in an isolated environment with mainnet data. They empower you to conduct extensive testing of smart contracts, manipulate contract states in real-time, and access Ether effortlessly for transactions. Leveraging DevNets, you can streamline your development workflow, ensure the robustness of your application, and expedite the overall development process.\
+With DevNets, you can swiftly build, iterate, and debug your blockchain applications in an isolated environment with Mainnet data. They empower you to conduct extensive testing of smart contracts, manipulate contract states in real time, and access Ether effortlessly for transactions. Using DevNets, you can streamline your development workflow, ensure the robustness of your application, and expedite the overall development process.\
 \
 With DevNets, you can:
 
-* Deploy, test, and debug your smart contracts using tools such as Debugger, Gas Profiler, Call Trace, and rest.
-* Access mainnet data, including contracts code, contract state alongside Ether and token balances.
+* Deploy, test, and debug your smart contracts using tools such as Debugger, Gas Profiler, Call Trace, and other Tenderly features.
+* Access Mainnet data, including contracts code, contract state alongside Ether, and token balances.
 * Re-simulate transactions and analyze their execution.
-* Utilize custom RPCs to change state, obtain Ether etc.
-* Debug not only transactions but also `eth_call` and `eth_estimateGas`
+* Utilize custom RPCs to change state, obtain Ether, etc.
+* Debug not only transactions but also `eth_call` and `eth_estimateGas`.
 * Create a fully-featured blockchain environment in seconds.
 * Integrate DevNets in your day-to-day development and CI pipelines.
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
+
+Additional resources:
+
+* **Blog**: [Tenderly DevNets: Develop and Test with Mainnet Data](https://blog.tenderly.co/tenderly-devnets-develop-and-test-with-mainnet-data/)
+* **Blog**: [How DevNets Accelerate Local Smart Contract Development](https://blog.tenderly.co/using-devnets-in-local-smart-contract-development/)
 
 #### Tenderly Forks
 
@@ -262,6 +268,8 @@ Set up an alert to:
 
 Additional resources:
 
+* **Blog:** [Tenderly Webhooks: Extra Flexibility for On-Chain Monitoring](https://blog.tenderly.co/tenderly-alert-webhooks/)
+* Blog: [How to Monitor Ethereum Wallets](https://blog.tenderly.co/how-to-monitor-ethereum-wallets/)
 * **Video:** [How to Set Up an Alert in Tenderly](https://www.youtube.com/watch?v=I9XeubHXnIA)
 
 #### Smart Contract Analytics
