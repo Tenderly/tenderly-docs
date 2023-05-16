@@ -209,6 +209,10 @@ With DevNets, you can:
 * Create a fully-featured blockchain environment in seconds.
 * Integrate DevNets in your day-to-day development and CI pipelines.
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
 #### Tenderly Forks
 
 Tenderly Forks allow you to create a temporary fork of a Tenderly-supported network and use it for development, testing, and simulating complex scenarios. You can deploy, test, and simulate smart contracts on a Fork without submitting changes on-chain. You can also fully customize your Fork environment by adjusting different parameters.
