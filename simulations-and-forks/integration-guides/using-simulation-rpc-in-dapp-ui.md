@@ -7,7 +7,16 @@ description: >-
 
 # Using Simulation RPC in Dapp UI
 
-You can introduce simulations into your dapp by integrating Simulation RPC or Simulation API. This way, you can:
+{% hint style="info" %}
+Simulation RPC is compatible with Mainnet, Boba and Polygon, while other networks will be integrated gradually.\
+Simulation API is compatible with [all Tenderly-supported networks](../../web3-actions/references/networks.md).
+{% endhint %}
+
+You can introduce simulations into your dapp by integrating Simulation RPC or Simulation API.&#x20;
+
+### Benefits of integrating Simulation API
+
+By integrating Simulation API/Simulation RPC
 
 1. Dry-run users' transactions before they sign and submit them on-chain.
 2. Provide better visibility into potential rollbacks and avoid losing money on gas fees.
@@ -18,8 +27,10 @@ Here are a few examples:&#x20;
 
 * If you're building a wallet-like app, you can show how a transaction moves ERC-20 tokens and enable users to see the shifting of their funds.
 * If you're building a DeFi product, you can use events to analyze whether a transaction meets the optimal conditions set by the user in the UI.
-* If you're preparing a governance proposal, consisting of several transactions, you can do a simulation bundle to see how the proposal is applied.\
-  You can even bundle the proposal transactions with several test transactions to verify that your proposal executes as intended and identify possible blind spots.
+* If you're preparing a governance proposal, consisting of several transactions, you can do a simulation bundle to see how the proposal is applied.
+* You can even bundle the proposal transactions with several test transactions to verify that your proposal executes as intended and identify possible blind spots.
+
+### Example: Adding Simulations to Uniswap UI
 
 In this example, we'll show how to integrate Simulation RPC into the Uniswap UI and show the exact token hops along the exchange path. This way, we'll give the user higher visibility into the effects of the transaction and allow them to make a well-informed decision on whether or not to proceed.
 
