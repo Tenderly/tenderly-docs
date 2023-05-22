@@ -25,7 +25,10 @@
 ## 🛠 DevNets
 
 * [Intro to DevNets](devnets/intro-to-devnets.md)
-* [Setting Up DevNets for Local Development](devnets/setting-up-devnets-for-local-development.md)
+* [Setting Up DevNets for Local Development](devnets/setting-up-devnets-for-local-development/README.md)
+  * [DevNets with Hardhat](devnets/setting-up-devnets-for-local-development/devnets-with-hardhat.md)
+  * [DevNets with Truffle](devnets/setting-up-devnets-for-local-development/devnets-with-truffle.md)
+  * [DevNets with Foundry](devnets/setting-up-devnets-for-local-development/devnets-with-foundry.md)
 * [Setting Up DevNets for Continuous Integration](devnets/setting-up-devnets-for-continuous-integration.md)
 * [Advanced](devnets/advanced/README.md)
   * [RPC URL Lifetime](devnets/advanced/rpc-url-lifetime.md)

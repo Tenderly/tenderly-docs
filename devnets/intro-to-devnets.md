@@ -61,5 +61,5 @@ curl <YOUR_DEVNET_RPC_URL> -X POST -H "Content-Type: application/json" -d '{"jso
 
 #### Next steps:
 
-* [How to use DevNets in local development](setting-up-devnets-for-local-development.md)
+* [How to use DevNets in local development](setting-up-devnets-for-local-development/)
 * [How to use DevNets as part of your Continuous Integration pipeline](setting-up-devnets-for-continuous-integration.md)
