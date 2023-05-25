@@ -107,7 +107,7 @@ All RPC endpoints are included in Free, Dev, Pro and Early Adopters plans.&#x20;
 For Free, Dev and Pro plans higher rate limits are likely to be observed compared to the ones listed below.
 {% endhint %}
 
-| Parameter\plan | Free/Dev/Pro         | Early Adopters |
+| Parameter/plan | Free/Dev/Pro         | Early Adopters |
 | -------------- | -------------------- | -------------- |
 | Monthly quota  | 25.000.000 TU        | 100.000.000 TU |
 | Rate Limit     | 20 TU/s              | 60 TU/s        |

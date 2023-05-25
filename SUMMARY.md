@@ -62,6 +62,7 @@
   * [Fork Parents](simulations-and-forks/forks/fork-parents.md)
   * [How to Get a Fork JSON-RPC URL & ID](simulations-and-forks/forks/how-to-get-a-fork-json-rpc-url-and-id.md)
   * [Sending Transactions to Forks](simulations-and-forks/forks/sending-transactions-to-forks.md)
+  * [Transactions on Forks Pricing](simulations-and-forks/forks/transactions-on-forks-pricing.md)
 * [Tutorials](simulations-and-forks/integration-guides/README.md)
   * [Using Simulation RPC in Dapp UI](simulations-and-forks/integration-guides/using-simulation-rpc-in-dapp-ui.md)
   * [Instant Staging/QA Environment for Dapps](simulations-and-forks/integration-guides/instant-staging-qa-environment-for-dapps.md)
