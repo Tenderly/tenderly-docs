@@ -12,7 +12,7 @@ Using Tenderly Web3 Gateway enables you to modify, consume, and analyze blockcha
 
 The same infrastructure powering the Tenderly development platform and handling demanding read-intensive workloads is available as a plug-and-play service. This infrastructure is powered by custom and innovative architecture: we have deconstructed the monolithic general-purpose node and created a layered Web3 Gateway, providing scalability, high read throughput, and data consistency and availability by design.
 
-The all-in-one Tenderly platform supports [engineering and UX practices](../ethereum-development-workflow.md) throughout the Ethereum dapp development process. It allows developers to accelerate smart contract development by combining debugging tools with observability and  infrastructure.
+The all-in-one Tenderly platform supports [engineering and UX practices](../ethereum-development-workflow.md) throughout the Ethereum dapp development process. It allows developers to accelerate smart contract development by combining debugging tools with observability and infrastructure.
 
 ## Guides and References
 
@@ -25,7 +25,7 @@ The RPC URL contains your private access key. You must securely manage the URL a
 Here are useful guides to help you get started with Tenderly Web3 Gateway:
 
 * [Quickstart by querying blockchain data through Web3 Gateway](quickstart-query-blockchain.md), using a visual request builder in the Tenderly Dashboard or copying the request as runnable code.
-* [Get started with using Simulation RPC](../simulations-and-forks/simulation-rpc.md) capabilities of Web3 Gateway, allowing you to dry-run transaction before sending them on chain.
+* [Get started with using Simulation RPC](../simulations-and-forks/simulation-rpc.md) capabilities of Web3 Gateway, allowing you to dry-run transactions before sending them on the chain.
 * Browse [brief reference of supported JSON RPC endpoints](references/brief-json-rpc.md), with examples and method invocation scripts.
 * Browse [detailed reference of standard JSON RPC endpoints](references/detailed-json-rpc.md) supported by Web3 Gateway, drilling into the structure of request and response objects.
 * Browse custom [Tenderly JSON RPC endpoints](references/simulate-json-rpc.md). The custom calls extend the standard Ethereum node functionality, and are found in the `tenderly_` namespace.

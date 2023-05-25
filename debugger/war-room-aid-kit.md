@@ -4,16 +4,16 @@ Diagnosing Web3 errors is complex and hard, that’s why development teams have 
 
 **Detect issues faster**
 
-If the number of contracts in the transaction is greater than 30 then **Call Trace** will be automatically triggered. You can switch it yourself if you’re only interested in seeing external calls that are usually crucial for the attack. Use **Expression Evaluation** to better understand the whole context of the transaction and simplify debugging process.
+If the number of contracts in the transaction is greater than 30 then **Call Trace** will be automatically triggered. You can switch it yourself if you’re only interested in seeing external calls that are usually crucial for the attack. Use **Expression Evaluation** to better understand the whole context of the transaction and simplify the debugging process.
 
 \
 **Collaborate and prioritize**
 
-With the new annotation system, you can leave comments on the exact line of code you think caused the issue. Annotations can be used to make team collaboration more efficient or to leave a note for yourself so you don’t forget it later. You can also set a priority for traces you want inspected first.
+With the new annotation system, you can leave comments on the exact line of code you think caused the issue. Annotations can be used to make team collaboration more efficient or to leave a note for yourself so you don’t forget it later. You can also set a priority for traces you want to be inspected first.
 
 ### Tenderly in War Rooms
 
-Get familiar with the features that can help you go understand and debug you code faster and collaborate with your team:
+Get familiar with the features that can help you go understand and debug your code faster and collaborate with your team:
 
 {% embed url="https://blog.tenderly.co/tenderly-war-rooms-the-aid-kit-you-need-in-time-sensitive-scenarios/" %}
 

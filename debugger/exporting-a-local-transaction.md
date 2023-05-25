@@ -7,7 +7,7 @@ Please reach out via Intercom if you need any help or have some feature requests
 {% endhint %}
 
 {% hint style="info" %}
-We will be showing the example on how to export a local transaction for the purposes of debugging on Tenderly via Tenderly CLI.
+We will be showing the example of how to export a local transaction for the purposes of debugging on Tenderly via Tenderly CLI.
 {% endhint %}
 
 Whether you already have an existing project or you are creating a new one, you will be able to export local transactions to your Tenderly dashboard in order to debug them properly.

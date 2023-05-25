@@ -18,9 +18,9 @@ As you can see, Tenderly directly display us the correct reason on why the trans
 require(returnAmount >= minReturn, “OneSplit: actual return amount is less than minReturn”);
 ```
 
-We know that when you call 1inch you need to provide the token you want to swap and the amount, the token you want to get and the minimum amount of return you want want to get and the distribution of DEXs that will be used by the swap. In this case we can conclude that the transaction failed because the amount of token returned by the swap is less than the amount of token the transaction specified.
+We know that when you call 1inch you need to provide the token you want to swap and the amount, the token you want to get and the minimum amount of return you want to get and the distribution of DEXs that will be used by the swap. In this case we can conclude that the transaction failed because the amount of token returned by the swap is less than the amount of token the transaction specified.
 
-Fortunately, the debugging tool enable us to go deeper to understand how the transaction went step by step before it failed. Let’s look at the first part of the transaction. It describes every calls to different smart contract that were made during the transaction:
+Fortunately, the debugging tool enable us to go deeper to understand how the transaction went step by step before it failed. Let’s look at the first part of the transaction. It describes every call to different smart contracts that were made during the transaction:
 
 ![](<../../.gitbook/assets/image (18).png>)
 
@@ -32,7 +32,7 @@ If you overlay a function you’ll have the option to move to the debugger view 
 
 ![](<../../.gitbook/assets/image (38).png>)
 
-You can see that once the transaction did the flash loan it first tried to swap the tokens using 1inch. The from token is USDT, the toToken is wrapped Ether: WETH. The smart contract asks to swap 4234.575953 USDT to at least 19 Ether. As you can see Tenderly enable us to decode every parameter of internal calls even if the transaction failed. If you’re interacting with known contract the tool will directly decode the parameters for you otherwise you can upload your own smart contracts to the platform.&#x20;
+You can see that once the transaction did the flash loan it first tried to swap the tokens using 1inch. The from token is USDT, the toToken is wrapped Ether: WETH. The smart contract asks to swap 4234.575953 USDT to at least 19 Ether. As you can see Tenderly enables us to decode every parameter of internal calls even if the transaction failed. If you’re interacting with a known contract the tool will directly decode the parameters for you otherwise you can upload your own smart contracts to the platform.&#x20;
 
 If we scroll down enough until the place where the transaction was reverted at the end of the swap call:
 
@@ -42,7 +42,7 @@ If we go in the debugger view of this call we’ll be able to get details:
 
 ![](<../../.gitbook/assets/image (11) (1).png>)
 
-Thanks to the previous/next button you’ll be able to navigate each steps of the transaction and see that the return amount (one step before) was - 18.953135705079702716:
+Thanks to the previous/next button you’ll be able to navigate each step of the transaction and see that the return amount (one step before) was - 18.953135705079702716:
 
 ![](<../../.gitbook/assets/image (14) (1) (1).png>)
 
