@@ -62,7 +62,7 @@ You also perform other actions on your webhooks, such as enabling/disabling a we
 
 From the webhook overview page, click on Execution History to see the transaction payload that has been sent to the provided webhook URL and the response from the webhook endpoint.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Manually Triggered Webhook After Clicking on Test Webhook Button</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Manually Triggered Webhook After Clicking on Test Webhook Button</p></figcaption></figure>
 
 Webhook execution can have several statuses:
 
@@ -90,7 +90,7 @@ With your webhook endpoint configured, you can add it as a Destination to any of
 [Follow this guide](alerting-quickstart-guide.md) to learn how to set up an Alert.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Adding a Webhook as a Destination to the Alert Rule</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Adding a Webhook as a Destination to the Alert Rule</p></figcaption></figure>
 
 When you create an Alert rule, you'll be redirected to the following page:
 

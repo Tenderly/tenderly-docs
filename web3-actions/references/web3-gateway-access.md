@@ -21,10 +21,11 @@ The `context` object contains a property called `gateways` which gives you acces
 The `Network` argument is also an object which gives you access to all the supported networks in Web3 Gateway:
 
 * `Network.MAINNET`
-* `Network.ROPSTEN`
-* `Network.RINKEBY`
 * `Network.GOERLI`
 * `Network.SEPOLIA`
+* `Network.POLYGON`
+* `Network.MUMBAI`
+* `Network.BOBA_ETHEREUM`
 
 To demonstrate how all of this comes together, here’s an example Javascript variable that is configured to access the Mainnet:
 

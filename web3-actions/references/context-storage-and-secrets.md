@@ -41,10 +41,11 @@ const defaultGatewayURL = context.gateways.getGateway(Network.MAINNET)
 Here’s a list of arguments for the `getGateway()` method for each supported network in Web3 Gateway:
 
 * `Network.MAINNET`
-* `Network.ROPSTEN`
-* `Network.RINKEBY`
 * `Network.GOERLI`
 * `Network.SEPOLIA`
+* `Network.POLYGON`
+* `Network.MUMBAI`
+* `Network.BOBA_ETHEREUM`
 
 For more details about how `context.gateways` works and sample code snippets to help you understand how to use it, read through the [**Web3 Gateway access in Web3 Actions**](web3-gateway-access.md) documentation page.
 
