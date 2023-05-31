@@ -125,7 +125,7 @@ The `tenderly node-extensions init` command initializes the `node_extensions` se
 tenderly node-extensions init --name "extension-name" --description "extension description" --methodName "extension_test"
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Choosing the Web3 Action while creating a Node Extension</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Choosing the Web3 Action while creating a Node Extension</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption><p>Successfully initialized Node Extension</p></figcaption></figure>
 
