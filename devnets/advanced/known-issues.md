@@ -10,10 +10,6 @@ description: >-
 If you encounter any issues not mentioned here, please contact our support team via the chat in the Dashboard or at [support@tenderly.co](mailto:support@tenderly.co). We appreciate your feedback, even for issues listed here.
 {% endhint %}
 
-**`AssertionError: Expected transaction to be reverted with...`**
-
-DevNets do not return full data as other development nodes (HardHat, Anvil, Ganache) do. We are working to support this case.
-
 ### **Waffle is currently not supported**
 
 We are working on supporting Waffle in the future. In the meantime, try using plain Ethers.
