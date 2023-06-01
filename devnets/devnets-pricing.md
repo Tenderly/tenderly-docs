@@ -18,19 +18,6 @@ During the initial DevNet release period, you don’t have to worry about rate l
 | Sequential runs   | 5 active parallel runs | 15 active parallel runs |
 | /                 | /                      | Teams & Personal runs   |
 
-### **Tenderly Units (TUs) Usage**
-
-[Reference this doc ](https://docs.tenderly.co/web3-gateway/pricing)to understand what is considered Read, Compute, and Write.
-
-| ETH Methods    | Reads | Computes | Writes |
-| -------------- | ----- | -------- | ------ |
-| Tenderly Units | 4 TU  | 16 TU    | 80 TU  |
-
-The total TU limits are as follows:
-
-* **Free plan:** 25M TUs
-* **Paid plans:** 100M TUs
-
 {% hint style="info" %}
 DevNets feature TU-based restrictions, allowing you to perform up to **300 tests (runs) per day**, even on the most complex files. In general, developers usually conduct a much smaller number of tests on a daily basis. When a project is in active development, we see spikes of up to 100 tests, so this enhanced limit will surely meet your requirements.
 {% endhint %}
