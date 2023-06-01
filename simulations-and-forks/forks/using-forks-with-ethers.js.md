@@ -39,8 +39,7 @@ const daiOnFork = async () => {
 
   const forkId = fork.data.simulation_fork.id;
   const rpcUrl = `https://rpc.tenderly.co/fork/${forkId}`;
-  // const rpcUrl =
-  //   'https://rpc.tenderly.co/fork/44abcc89-ed65-43bf-baa7-d3bc1e34feb7';
+  // const rpcUrl = 'https://rpc.tenderly.co/fork/###-###-###-###';
   console.log('Fork URL\n\t' + rpcUrl);
 
   const forkProvider = new ethers.providers.JsonRpcProvider(rpcUrl);
