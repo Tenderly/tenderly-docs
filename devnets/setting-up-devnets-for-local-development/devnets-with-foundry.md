@@ -22,3 +22,10 @@ forge init
 ```bash
 forge create --rpc-url=$(tenderly devnet spawn-rpc --template <YOUR_TEMPALATE_SLUG> --project <YOUR_PROJECT_SLUG>) ./src/Counter.sol:Counter --unlocked --from 0x0000000000000000000000000000000000000000
 ```
+
+\
+Read more on automating the Spawning of the DevNet RPC:
+
+{% content-ref url="../advanced/automated-devnet-spawning-bash-and-javascript.md" %}
+[automated-devnet-spawning-bash-and-javascript.md](../advanced/automated-devnet-spawning-bash-and-javascript.md)
+{% endcontent-ref %}
