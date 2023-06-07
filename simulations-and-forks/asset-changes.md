@@ -31,7 +31,7 @@ Once logged in and authenticated, you can call the following API URLs:
 https://api.tenderly.co/api/v1/account/${TENDERLY_USER}/project/${TENDERLY_PROJECT}/simulate
 ```
 
-**Transaction Trace API ()**
+**Transaction Trace API**
 
 ```
 https://api.tenderly.co/api/v1/public-contract/:networkId/trace/:txHash 
