@@ -11,7 +11,7 @@ description: >-
 
 The conversion from tokens to dollars is processed by Tenderly in real time using the most accurate market data. This eliminates the need for you to use additional tools or rely on third-party integrations to facilitate the conversion from tokens to dollars.&#x20;
 
-For wallets, DeFi projects, and DEXs, displaying the token's dollar value to users within simulations makes the transaction more human-readable. Displaying the dollar value alongside the token value can help users better understand the impact of their transactions before making a commitment.
+For wallets, DeFi projects, and DEXs, displaying the token's dollar value to users within simulations makes the transaction more human-readable. This can also help users better understand the impact of their transactions before making a commitment.
 
 The most commonly used token standards are supported: **ERC20** and **ERC721**.
 
