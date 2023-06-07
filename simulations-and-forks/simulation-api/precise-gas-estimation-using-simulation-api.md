@@ -8,7 +8,7 @@ description: >-
 
 Simulation API enables you to simulate transactions and retrieve precise gas estimation information. To enable gas estimation in your simulations, set `estimate_gas` flag to `true`.&#x20;
 
-
+If the status of the simulation is successful, the precise gas limit estimation will be available in the `transaction` structure under filed `gas`
 
 Example:
 
