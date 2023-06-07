@@ -6,9 +6,13 @@ description: >-
 
 # Precise Gas Estimation using Simulation API
 
-Simulation API enables you to simulate transactions and retrieve precise gas estimation information. To enable gas estimation in your simulations, set `estimate_gas` flag to `true`.&#x20;
+The Simulation API provides developers with the ability to simulate transactions and obtain accurate gas estimation details. By utilizing this API, you can replicate the execution of transactions without actually executing them on the blockchain network. This simulation process allows you to retrieve precise information about the gas estimation that needs to be passed in a transaction in order for execution to be successful.
 
-If the status of the simulation is successful, the precise gas limit estimation will be available in the `transaction` structure under filed `gas`
+To activate gas estimation during your simulations, you need to specify the "estimate\_gas" flag and set it to true. By enabling this flag, you inform the simulation process to calculate and provide an estimation of the gas limit required for the transaction. Gas limit refers to the maximum amount of computational work that a transaction can perform within the blockchain network.
+
+Once the simulation is conducted and the status of the process is reported as successful, you can access the detailed gas limit estimation within the transaction structure. Specifically, this information will be available in the `gas` field of the `transaction` structure. By examining this field, developers can obtain the precise gas limit estimation for the simulated transaction, enabling them to make informed decisions and optimizations regarding gas usage in their blockchain applications.
+
+
 
 Example:
 
