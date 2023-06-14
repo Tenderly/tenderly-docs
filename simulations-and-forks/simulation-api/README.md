@@ -14,7 +14,7 @@ You can then use Simulation API to introduce this information to your developmen
 
 By integrating with Simulation API, you can:&#x20;
 
-* [Dry-run user transactions in dapps](../integration-guides/using-simulation-rpc-in-dapp-ui.md) to save money on failed transactions and improve your dapp UX by increasing visibility into transaction execution.
+* [Dry-run user transactions](https://docs.tenderly.co/simulations-and-forks/integration-guides/dry-run-user-transactions) in dapps to save money on failed transactions and improve your dapp UX by increasing visibility into transaction execution.
 * [Run your dapp in playground mode](../integration-guides/dapp-playground-mode.md) to let users try out your dapp with all production data readily available and without spending any gas.&#x20;
 * [Stage QA environments for a blockchain project](../integration-guides/instant-staging-qa-environment-for-dapps.md).
 * [Set up CI/CD for your blockchain project](../integration-guides/ci-cd-pipeline-for-smart-contracts.md).
