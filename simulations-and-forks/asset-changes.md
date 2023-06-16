@@ -7,6 +7,10 @@ description: >-
 
 # Asset Changes
 
+{% embed url="https://github.com/Tenderly/tenderly-metamask-snap-simulate-asset-changes" %}
+Tenderly MetaMask Snap using the Tenderly Simulation API to showcase transaction asset changes
+{% endembed %}
+
 `asset_changes` is an object that is returned as part of the response from the Simulation API and Transaction Trace. This object contains information about the token, including the token's dollar value.&#x20;
 
 The conversion from tokens to dollars is processed by Tenderly in real time using the most accurate market data. This eliminates the need for you to use additional tools or rely on third-party integrations to facilitate the conversion from tokens to dollars.&#x20;
