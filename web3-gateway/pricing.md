@@ -110,7 +110,7 @@ Depending on your plan, you'll have the monthly quota and usage rate limiting sh
 | Parameter/plan | Free          | Starter       |
 | -------------- | ------------- | ------------- |
 | Monthly quota  | 25.000.000 TU | 35.000.000 TU |
-| Rate Limit     | 20 TU/s       | 30 TU/s       |
+| Rate Limit     | 10 TU/s       | 20 TU/s       |
 | Price          | -             | $50           |
 
 {% hint style="info" %}
