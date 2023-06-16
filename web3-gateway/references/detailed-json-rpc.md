@@ -1013,37 +1013,40 @@ Executes a new message call immediately without creating a transaction on the bl
 **PARAMS**
 
 1. **Transaction** Transaction object generic to all types `OBJECT`
-
-* **type** (_optional_) `STRING` type
-* **nonce** (_optional_) `STRING` nonce
-* **to** (_optional_) `STRING` to address
-* **from** (_optional_) `STRING` from address
-* **gas** (_optional_) `STRING` gas limit
-* **value** (_optional_) `STRING` value
-* **input** (_optional_) `STRING` input data
-* **gasPrice** (_optional_) `STRING` gas price: The gas price willing to be paid by the sender in wei
-* **maxPriorityFeePerGas** (_optional_) `STRING` max priority fee per gas: Maximum fee per gas the sender is willing to pay to miners in wei
-* **maxFeePerGas** (_optional_) `STRING` max fee per gas: The maximum total fee per gas the sender is willing to pay (includes the network / base fee and miner / priority fee) in wei
-* **accessList** (_optional_) accessList: EIP-2930 access list `ARRAY` of Access list entry `OBJECT`
-  * **address** (_optional_) `STRING` hex encoded address
-  * **storageKeys** (_optional_) `ARRAY` of `STRING` 32 byte hex value
-* **chainId** (_optional_) `STRING` chainId: Chain ID that this transaction is valid on.
-
-**2. Block** (_optional_)
-
-* `STRING` Block number
-* `ENUM` of Block tag `earliest|finalized|safe|latest|pending`
-
-**3. Overrides** (_optional_) `MAP`: mapping from an account (address) to override specification
-
-* **key** `STRING`: the account this override applies to
-* **value** `OBJECT`: the override specification
-  * **nonce** (_optional_) `STRING`: hex encoded 8 byte nonce override for the account
-  * **code** (_optional_) `STRING`: data of the code override for the account
-  * **balance** (_optional_) `STRING`: hex encoded 32 byte balance override for the account in wei
-  * **stateDiff** (_optional_) `MAP`: mapping of storage key to storage value override
-    * **key** `STRING`: the storage key
-    * **value** `STRING`: the value override for the given storrage key
+   * **type** (_optional_) `STRING` type
+   * **nonce** (_optional_) `STRING` nonce
+   * **to** (_optional_) `STRING` to address
+   * **from** (_optional_) `STRING` from address
+   * **gas** (_optional_) `STRING` gas limit
+   * **value** (_optional_) `STRING` value
+   * **input** (_optional_) `STRING` input data
+   * **gasPrice** (_optional_) `STRING` gas price: The gas price willing to be paid by the sender in wei
+   * **maxPriorityFeePerGas** (_optional_) `STRING` max priority fee per gas: Maximum fee per gas the sender is willing to pay to miners in wei
+   * **maxFeePerGas** (_optional_) `STRING` max fee per gas: The maximum total fee per gas the sender is willing to pay (includes the network / base fee and miner / priority fee) in wei
+   * **accessList** (_optional_) accessList: EIP-2930 access list `ARRAY` of Access list entry `OBJECT`
+   * **address** (_optional_) `STRING` hex encoded address
+   * **storageKeys** (_optional_) `ARRAY` of `STRING` 32 byte hex value
+   * **chainId** (_optional_) `STRING` chainId: Chain ID that this transaction is valid on.
+2. &#x20;**Block** (_optional_)
+   * `STRING` Block number
+   * `ENUM` of Block tag `earliest|finalized|safe|latest|pending`
+3. &#x20;**State Overrides** (_optional_) `MAP`: mapping from an account (address) to override specification
+   * **key** `STRING`: the account this override applies to
+   * **value** `OBJECT`: the override specification
+     * **nonce** (_optional_) `STRING`: hex encoded 8 byte nonce override for the account
+     * **code** (_optional_) `STRING`: data of the code override for the account
+     * **balance** (_optional_) `STRING`: hex encoded 32 byte balance override for the account in wei
+     * **stateDiff** (_optional_) `MAP`: mapping of storage key to storage value override
+       * **key** `STRING`: the storage key
+       * **value** `STRING`: the value override for the given storage key
+4. **Block Overrides** (optional) `OBJECT`: The set of header fields to override in a block.&#x20;
+   * **number** _(optional)_ `STRING`: hex, overrides the block number
+   * **difficulty** _(optional)_ `STRING`: hex, overrides the block difficulty
+   * **time** (_optional_) `STRING`: hex, overrides block timestamp
+   * **gasLimit** _(optional)_ `STRING`: hex, overrides block timestamp
+   * **coinbase** _(optional)_ `STRING`: hex, overrides block miner
+   * **random** _(optional)_ `STRING`: hex, overrides the blocks extra data which feeds into the RANDOM opcode
+   * **baseFee** _(optional)_ `STRING`: hex, overrides block base fee
 
 {% tabs %}
 {% tab title="Raw" %}
@@ -1142,26 +1145,40 @@ Generates and returns an estimate of how much gas is necessary to allow the tran
 **PARAMS**
 
 1. **Transaction** Transaction object generic to all types `OBJECT`
-
-* **type** (_optional_) `STRING` type
-* **nonce** (_optional_) `STRING` nonce
-* **to** (_optional_) `STRING` to address
-* **from** (_optional_) `STRING` from address
-* **gas** (_optional_) `STRING` gas limit
-* **value** (_optional_) `STRING` value
-* **input** (_optional_) `STRING` input data
-* **gasPrice** (_optional_) `STRING` gas price: The gas price willing to be paid by the sender in wei
-* **maxPriorityFeePerGas** (_optional_) `STRING` max priority fee per gas: Maximum fee per gas the sender is willing to pay to miners in wei
-* **maxFeePerGas** (_optional_) `STRING` max fee per gas: The maximum total fee per gas the sender is willing to pay (includes the network / base fee and miner / priority fee) in wei
-* **accessList** (_optional_) accessList: EIP-2930 access list `ARRAY` of Access list entry `OBJECT`
-  * **address** (_optional_) `STRING` hex encoded address
-  * **storageKeys** (_optional_) `ARRAY` of `STRING` 32 byte hex value
-* **chainId** (_optional_) `STRING` chainId: Chain ID that this transaction is valid on.
-
-1. **Block** (_optional_)
-
-* `STRING` Block number
-* `ENUM` of Block tag `earliest|finalized|safe|latest|pending`
+   * **type** (_optional_) `STRING` type
+   * **nonce** (_optional_) `STRING` nonce
+   * **to** (_optional_) `STRING` to address
+   * **from** (_optional_) `STRING` from address
+   * **gas** (_optional_) `STRING` gas limit
+   * **value** (_optional_) `STRING` value
+   * **input** (_optional_) `STRING` input data
+   * **gasPrice** (_optional_) `STRING` gas price: The gas price willing to be paid by the sender in wei
+   * **maxPriorityFeePerGas** (_optional_) `STRING` max priority fee per gas: Maximum fee per gas the sender is willing to pay to miners in wei
+   * **maxFeePerGas** (_optional_) `STRING` max fee per gas: The maximum total fee per gas the sender is willing to pay (includes the network / base fee and miner / priority fee) in wei
+   * **accessList** (_optional_) accessList: EIP-2930 access list `ARRAY` of Access list entry `OBJECT`
+   * **address** (_optional_) `STRING` hex encoded address
+   * **storageKeys** (_optional_) `ARRAY` of `STRING` 32 byte hex value
+   * **chainId** (_optional_) `STRING` chainId: Chain ID that this transaction is valid on.
+2. &#x20;**Block** (_optional_)
+   * `STRING` Block number
+   * `ENUM` of Block tag `earliest|finalized|safe|latest|pending`
+3. &#x20;**State Overrides** (_optional_) `MAP`: mapping from an account (address) to override specification
+   * **key** `STRING`: the account this override applies to
+   * **value** `OBJECT`: the override specification
+     * **nonce** (_optional_) `STRING`: hex encoded 8 byte nonce override for the account
+     * **code** (_optional_) `STRING`: data of the code override for the account
+     * **balance** (_optional_) `STRING`: hex encoded 32 byte balance override for the account in wei
+     * **stateDiff** (_optional_) `MAP`: mapping of storage key to storage value override
+       * **key** `STRING`: the storage key
+       * **value** `STRING`: the value override for the given storage key
+4. **Block Overrides** (optional) `OBJECT`: The set of header fields to override in a block.&#x20;
+   * **number** _(optional)_ `STRING`: hex, overrides the block number
+   * **difficulty** _(optional)_ `STRING`: hex, overrides the block difficulty
+   * **time** (_optional_) `STRING`: hex, overrides block timestamp
+   * **gasLimit** _(optional)_ `STRING`: hex, overrides block timestamp
+   * **coinbase** _(optional)_ `STRING`: hex, overrides block miner
+   * **random** _(optional)_ `STRING`: hex, overrides the blocks extra data which feeds into the RANDOM opcode
+   * **baseFee** _(optional)_ `STRING`: hex, overrides block base fee
 
 {% tabs %}
 {% tab title="Raw" %}

@@ -29,7 +29,7 @@ Simulates transaction as it would execute on the given block.
 2. **Simulation Block Number** (_optional_) The block number against which transaction should be simulated. Either:
    * `STRING` Block number
    * `ENUM` of Block tag `earliest|finalized|safe|latest|pending`
-3. **Overrides** (_optional_) `MAP`: mapping from an account (address) to override specification
+3. **State Overrides** (_optional_) `MAP`: mapping from an account (address) to override specification
    * **key** `STRING`: the account this override applies to
    * **value** `OBJECT`: the override specification
      * **nonce** (_optional_) `STRING`: hex encoded 8 byte nonce override for the account
@@ -38,6 +38,14 @@ Simulates transaction as it would execute on the given block.
      * **stateDiff** (_optional_) `MAP`: mapping of storage key to storage value override
        * **key** `STRING`: the storage key
        * **value** `STRING`: the value override for the given storage key
+4. **Block Overrides** (optional) `OBJECT`: The set of header fields to override in a block.&#x20;
+   * **number** _(optional)_ `STRING`: hex, overrides the block number
+   * **difficulty** _(optional)_ `STRING`: hex, overrides the block difficulty
+   * **time** (_optional_) `STRING`: hex, overrides block timestamp
+   * **gasLimit** _(optional)_ `STRING`: hex, overrides block timestamp
+   * **coinbase** _(optional)_ `STRING`: hex, overrides block miner
+   * **random** _(optional)_ `STRING`: hex, overrides the blocks extra data which feeds into the RANDOM opcode
+   * **baseFee** _(optional)_ `STRING`: hex, overrides block base fee
 
 {% tabs %}
 {% tab title="Raw" %}
