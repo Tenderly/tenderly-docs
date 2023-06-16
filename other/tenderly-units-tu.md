@@ -1,27 +1,26 @@
 ---
 description: >-
-  The Web3 Gateway usage and rate-limiting is expressed in Tenderly Units (TU).
-  Read, write, compute and advanced compute requests contribute with different
-  weights to the total.
+  Tenderly Units - the measure of computational resources consumption on the
+  Tenderly full-stack node.
 ---
 
-# Pricing and usage limits
+# ⛽ Tenderly Units (TU)
 
-Web3 Gateway usage is measured with respect to requests your dapp makes to the Web3 Gateway JSON RPC. The requests are divided into three categories, each having different usage footprint, measured in **Tenderly Units** (**TU**):&#x20;
+Tenderly units represent a measure of the total computational resources your applications are consuming on Tenderly.&#x20;
 
-**Read (1 TU)**
+Tenderly units are similar to how you would be charged by platforms like Google Cloud Platform (GCP) or Amazon Web Services (AWS) for the computing resources used. Operations performed on the Tenderly platform are assigned a certain quantity of Tenderly Units (TU), and are executed within the rate limit permitted by your billing plan.
 
-**Write (20 TU)**
+### **Pricing Plans**
 
-**Compute (4 TU)**
+| Parameter/plan | Free                 | Starter       | Custom |
+| -------------- | -------------------- | ------------- | ------ |
+| Monthly quota  | 25.000.000 TU        | 35.000.000 TU | Custom |
+| Rate Limit     | 10 TU/s              | 20 TU/s       | Custom |
+| Price          | included in the plan | $50           | Custom |
 
-**Advanced** **Compute (400 TU)**
+## **Tenderly Units (TU) cost**
 
-To calculate the usage over a period of time, you need to multiply the number of requests by the usage footprint of the request category. For example, if your dapp makes 1000 read requests and 100 write requests, the usage is:
-
-```
-1000 * 1 TU + 100 * 20 TU = 3000 TU
-```
+#### **Web3Gateway**
 
 | Category             | Description                                                                             | Usage footprint |
 | -------------------- | --------------------------------------------------------------------------------------- | --------------- |
@@ -103,18 +102,19 @@ To calculate the usage over a period of time, you need to multiply the number of
 
 </details>
 
-### Usage rate limiting and monthly quota
+#### **Web3Actions**
 
-Depending on your plan, you'll have the monthly quota and usage rate limiting shown in the following table.
+| Description           | Usage footprint |
+| --------------------- | --------------- |
+| Scanned Transaction   | **40 TU**       |
+| Action Execution (ms) | **1 TU**        |
+| Action Invocation     | **50 TU**       |
+| Active Action         | **2 TU/sec**    |
 
-| Parameter/plan | Free          | Starter       |
-| -------------- | ------------- | ------------- |
-| Monthly quota  | 25.000.000 TU | 35.000.000 TU |
-| Rate Limit     | 20 TU/s       | 30 TU/s       |
-| Price          | -             | $50           |
+#### **Alerting & Monitoring**
 
-{% hint style="info" %}
-All RPC endpoints are included in Free, Dev, Pro and Early Adopters plans.&#x20;
-
-For Free and Starter plans higher rate limits are likely to be observed compared to the ones listed below.
-{% endhint %}
+| Description         | Usage footprint |
+| ------------------- | --------------- |
+| Scanned Transaction | **40 TU**       |
+| Action Dispatched   | **50 TU**       |
+| Active Alert Rule   | **2 TU/sec**    |

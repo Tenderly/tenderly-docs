@@ -10,4 +10,3 @@ If you have a need for an increased usage rate or custom limits, **please contac
 
 You can check out the pre-defined Tenderly pricing plans on our[ pricing page](https://tenderly.co/pricing/).
 
-.
