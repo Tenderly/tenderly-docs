@@ -39,6 +39,39 @@ Jumps forward in time and generates a block with that timestamp.
 }
 ```
 
+### `evm_setNextBlockTimestamp`
+
+This method works like `evm_increaseTime` but instead of increasing time for specific amount of seconds, it sets the timestamp in the future.
+
+**Parameters**
+
+* `QUANTITY` - integer or hex-encoded number that represents epoch timestamp (in seconds)
+
+**Returns**
+
+* `QUANTITY` - integer (epoch timestamp) that is set for the next block
+
+**Example request**
+
+```jsx
+{
+	"jsonrpc": "2.0",
+	"method": "evm_setNextBlockTimestamp",
+	"params": [ "1750074671" ],    # 2025-07-16 11:51:11
+	"id": "1234"
+}
+```
+
+**Example response**
+
+```javascript
+{
+    "jsonrpc": "2.0",
+    "result": 1750074671,
+    "id": "1234"
+}
+```
+
 ### `evm_increaseBlocks`
 
 Skips a number of blocks and generates a new block with the new block number.
