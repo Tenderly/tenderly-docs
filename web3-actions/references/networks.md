@@ -8,7 +8,7 @@ description: >-
 
 You can reference the supported network in your trigger configuration with the following network IDs:
 
-<img src="../../.gitbook/assets/image (80) (1) (1) (1) (1).png" alt="" data-size="line"> Mainnet `=> 1`
+<img src="../../.gitbook/assets/mainnet-square.png" alt="" data-size="line"> Mainnet `=> 1`
 
 <img src="../../.gitbook/assets/image (85) (1) (1) (1).png" alt="" data-size="line"> Kovan `=> 42`
 
