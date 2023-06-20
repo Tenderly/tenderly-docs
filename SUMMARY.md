@@ -38,6 +38,7 @@
   * [Known Issues](devnets/advanced/known-issues.md)
 * [Open-Source Examples](devnets/open-source-examples/README.md)
   * [Using DevNets With Safe](devnets/open-source-examples/using-devnets-with-safe.md)
+  * [Using DevNets with Aave](devnets/open-source-examples/using-devnets-with-aave.md)
 * [DevNets Pricing](devnets/devnets-pricing.md)
 
 ## 🔮 Simulations <a href="#simulations-and-forks" id="simulations-and-forks"></a>

@@ -18,10 +18,6 @@ We are working on supporting Waffle in the future. In the meantime, try using pl
 
 If your tests rely on this library, they will most likely fail because it expects the underlying network to be HardHat. We are working to expose this functionality for DevNets as well.
 
-### **Typed errors and reverts are currently not supported**
-
-Development nodes currently handle typed errors, while DevNets do not. This can cause some tests to fail if they rely on newer versions of Solidity.
-
 ### **Timeouts**
 
 Due to the hosted nature of DevNets and the framework of the underlying RPC calls (e.g., sending a transaction in Ethers actually involves 13 RPC calls), more complex test suites can experience timeouts.
