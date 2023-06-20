@@ -10,7 +10,7 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 In this section, we list all the networks that are fully supported by Tenderly, including access through our [Web3 Gateway](broken-reference).
 
-<img src=".gitbook/assets/image (80) (1) (1) (1) (1).png" alt="" data-size="line"> Mainnet
+<img src=".gitbook/assets/mainnet-square.png" alt="" data-size="line"> Mainnet
 
 <img src=".gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Goerli
 
