@@ -2744,3 +2744,116 @@ async function runGetTransactionReceipt() {
 ```
 {% endtab %}
 {% endtabs %}
+
+
+
+### `eth_subscribe`
+
+Subscribes user to a Ethereum event notification stream.
+
+[Detailed version](detailed-json-rpc.md#eth\_subscribe)
+
+**RESULT**: Subscription ID
+
+{% tabs %}
+{% tab title="Raw" %}
+```json
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "method": "eth_subscribe",
+  "params": [
+    "logs",
+    {
+      "address": "0x8320fe7702b96808f7bbc0d4a888ed1468216cfd",
+      "topics": ["0xd78a0cb8bb633d06981248b816e7bd33c2a35a6089241d099fa519e361cab902"]
+    }
+  ]
+}
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+  "jsonrpc":"2.0",
+  "id":1,
+  "result":"0x4a8a4c0517381924f9838102c5a4dcb7"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+
+
+### `eth_unsubscribe`
+
+Unsubscribes user from a previously subscribed Ethereum event notification stream.
+
+[Detailed version](detailed-json-rpc.md)
+
+{% tabs %}
+{% tab title="Raw" %}
+```json
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "method": "eth_unsubscribe",
+  "params": ["0x9cef478923ff08bf67fde6c64013158d"]
+}
+```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+-X POST \
+-H "Content-Type: application/json" \
+-d \
+'{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "method": "eth_unsubscribe",
+  "params": ["0x9cef478923ff08bf67fde6c64013158d"]
+}'
+```
+{% endtab %}
+
+{% tab title="ethers" %}
+```javascript
+// Installation Instructions: https://docs.ethers.io/v5/getting-started/#installing
+const { ethers } = require("ethers");
+
+async function runGetTransactionReceipt() {
+  // Initialize an ethers instance
+  const provider = new ethers.providers.JsonRpcProvider(
+    "https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY"
+  );
+
+  // Execute method
+  const result = await provider.send("eth_unsubscribe", [
+    "0x9cef478923ff08bf67fde6c64013158d",
+  ]);
+
+  // Print the output to console
+  console.log(result);
+}
+
+(async () => {
+  runGetTransactionReceipt();
+})();
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+{
+  "jsonrpc":"2.0",
+  "id":1,
+  "result":true
+}
+```
+{% endtab %}
+{% endtabs %}
+
+**RESULT**: `Boolean` Flag that represents if unsubscribe call is successful
