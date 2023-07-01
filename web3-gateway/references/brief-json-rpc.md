@@ -2773,6 +2773,16 @@ Subscribes user to a Ethereum event notification stream.
 ```
 {% endtab %}
 
+{% tab title="wscat" %}
+```bash
+# Initialize websocket stream
+wscat -c wss://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY
+
+# Send JSON request
+{"jsonrpc":"2.0","id": 2, "method": "eth_subscribe", "params": ["newHeads"]}
+```
+{% endtab %}
+
 {% tab title="Response" %}
 ```json
 {
@@ -2804,44 +2814,13 @@ Unsubscribes user from a previously subscribed Ethereum event notification strea
 ```
 {% endtab %}
 
-{% tab title="cURL" %}
+{% tab title="wscat" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
--X POST \
--H "Content-Type: application/json" \
--d \
-'{
-  "id": 1,
-  "jsonrpc": "2.0",
-  "method": "eth_unsubscribe",
-  "params": ["0x9cef478923ff08bf67fde6c64013158d"]
-}'
-```
-{% endtab %}
+# Initialize websocket stream
+wscat -c wss://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY
 
-{% tab title="ethers" %}
-```javascript
-// Installation Instructions: https://docs.ethers.io/v5/getting-started/#installing
-const { ethers } = require("ethers");
-
-async function runGetTransactionReceipt() {
-  // Initialize an ethers instance
-  const provider = new ethers.providers.JsonRpcProvider(
-    "https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY"
-  );
-
-  // Execute method
-  const result = await provider.send("eth_unsubscribe", [
-    "0x9cef478923ff08bf67fde6c64013158d",
-  ]);
-
-  // Print the output to console
-  console.log(result);
-}
-
-(async () => {
-  runGetTransactionReceipt();
-})();
+# Send JSON request
+{"jsonrpc":"2.0","id": 2, "method": "eth_unsubscribe", "params": ["0x6eef2630d9395b4f5f110d3de7c285cc"]}
 ```
 {% endtab %}
 
