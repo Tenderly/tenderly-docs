@@ -2820,7 +2820,7 @@ Unsubscribes user from a previously subscribed Ethereum event notification strea
 wscat -c wss://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY
 
 # Send JSON request
-{"jsonrpc":"2.0","id": 2, "method": "eth_unsubscribe", "params": ["0x6eef2630d9395b4f5f110d3de7c285cc"]}
+{"jsonrpc":"2.0","id": 2, "method": "eth_unsubscribe", "params": ["0x9cef478923ff08bf67fde6c64013158d"]}
 ```
 {% endtab %}
 
