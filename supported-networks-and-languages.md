@@ -22,6 +22,10 @@ In this section, we list all the networks that are fully supported by Tenderly, 
 
 <img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"> Boba Ethereum
 
+<img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"> Boba BNB
+
+<img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"> Boba BNB Testnet
+
 
 
 **Networks supported in Tenderly, without Web3 Gateway access**
