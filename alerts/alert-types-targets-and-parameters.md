@@ -146,20 +146,21 @@ To create a Blocklisted Callers alert, complete the following steps:
 5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
 6. **Click Save** to get notified when someone on the list of addresses you created calls your smart contract.
 
-## ETH Balance
+## Balance Change
 
-<figure><img src="../.gitbook/assets/eth_balance_params.png" alt=""><figcaption><p>Parameters for the ETH Balance Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Parameters for the Balance Change Alert</p></figcaption></figure>
 
-The ETH Balance alert notifies when the ETH balance of a specific address falls below a certain amount after a transaction is executed. This alert can be useful to know when you need to top up your wallet (like bots or keepers).
+The ETH Balance alert notifies when the network's native currency balance of a specific address falls below a certain amount after a transaction is executed. This alert can be useful to know when you need to top up your wallet (like bots or keepers).
 
-To create an ETH Balance alert, complete the following steps:
+To create a Balance Change alert, complete the following steps:
 
-1. **Select ETH Balance** from the list of Alert Types.
+1. **Select Balance Change** from the list of Alert Types.
 2. From the Target section, **select Address** to monitor a smart contract or wallet deployed on a specific address.
 3. **Choose the address of the smart contract or wallet** from the dropdown.
-4. **Set the balance threshold value in Wei.** Note that you will get notified only when the balance falls below the set threshold. You won’t receive further notifications if the balance remains below the threshold.
-5. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
-6. **Click Save** to get notified when the ETH balance on your smart contract or wallet falls below the threshold you defined.
+4. **Select the comparator operator** (e.g., equal to, not equal to, etc.).
+5. **Set the balance threshold value in Wei.** This alert is triggered only when a transaction sets the balance of an address to a value that satisfies set conditions. It is not triggered when the balance is in the state of satisfied conditions.
+6. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
+7. **Click Save** to get notified when the network's native currency balance on your smart contract or wallet falls below the threshold you defined.
 
 ## Transaction Value
 

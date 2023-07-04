@@ -195,7 +195,7 @@ bestActionEver:
 
 Web3 Actions in Tenderly can be executed in two modes: **Sequential** and **Parallel**.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Web3 Action Execution Type step in the Web3 Action UI Builder</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Web3 Action Execution Type step in the Web3 Action UI Builder</p></figcaption></figure>
 
 #### Sequential Execution
 
