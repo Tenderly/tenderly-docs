@@ -160,7 +160,7 @@ To create a Balance Change alert, complete the following steps:
 4. **Select the comparator operator** (e.g., equal to, not equal to, etc.).
 5. **Set the balance threshold value in Wei.** This alert is triggered only when a transaction sets the balance of an address to a value that satisfies set conditions. It is not triggered when the balance is in the state of satisfied conditions.
 6. [**Set the Destination**](configuring-alert-destinations/) by creating a new one or select one you previously created.
-7. **Click Save** to get notified when the network's native currency balance on your smart contract or wallet falls below the threshold you defined.
+7. **Click Save** to get notified when the network's native currency balance on your smart contract or wallet matches the threshold conditions you defined.
 
 ## Transaction Value
 
