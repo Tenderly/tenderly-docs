@@ -150,7 +150,7 @@ To create a Blocklisted Callers alert, complete the following steps:
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Parameters for the Balance Change Alert</p></figcaption></figure>
 
-The ETH Balance alert notifies when the network's native currency balance of a specific address falls below a certain amount after a transaction is executed. This alert can be useful to know when you need to top up your wallet (like bots or keepers).
+The Balance Change alert notifies when the network's native currency balance of a specific address matches conditions after a transaction is executed. This alert can be useful to know when you need to top up your wallet (like bots or keepers).
 
 To create a Balance Change alert, complete the following steps:
 
