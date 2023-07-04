@@ -200,7 +200,7 @@ If no arguments are provided, the command will attempt to deploy all extensions 
 Ensure that the corresponding Web3 Action is deployed in your project before deploying a Node Extension using the CLI. The deployment of the Web3 Action is a prerequisite for the Node Extension. If you attempt to deploy a Node Extension without a previously deployed Web3 Action, the process will fail with an error message.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Successfully deployed Node Extension in the Tenderly Dashboard</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (3).png" alt=""><figcaption><p>Successfully deployed Node Extension in the Tenderly Dashboard</p></figcaption></figure>
 
 ## Testing a Node Extension
 
