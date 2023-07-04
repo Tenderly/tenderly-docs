@@ -26,7 +26,7 @@ Read the [Alerting Quickstart guide](tutorials-and-quickstarts/alerting-quicksta
 
 ## Successful Transaction
 
-<figure><img src="../.gitbook/assets/successful_tx_params.png" alt=""><figcaption><p>Parameters for the Successful Transaction Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/01.png" alt=""><figcaption><p>Parameters for the Successful Transaction Alert</p></figcaption></figure>
 
 The Successful Transaction alert sends a notification when a new transaction is created and added to the blockchain. This alert is commonly used for monitoring transactions that call a specific smart contract or transactions sent or received by a specific wallet.
 
@@ -40,7 +40,7 @@ To create a Successful Transaction alert, complete the following steps:
 
 ## Failed Transaction
 
-<figure><img src="../.gitbook/assets/failed_tx_params.png" alt=""><figcaption><p>Parameters for the Failed Transaction Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/02.png" alt=""><figcaption><p>Parameters for the Failed Transaction Alert</p></figcaption></figure>
 
 The Failed Transaction alert sends a notification when a transaction fails to get added to the blockchain. This alert is commonly used for early detection of usage issues for wallets, smart contracts, and dapps.
 
@@ -54,7 +54,7 @@ To create a Failed Transaction alert, complete the following steps:
 
 ## Function Call
 
-<figure><img src="../.gitbook/assets/function_call_params.png" alt=""><figcaption><p>Parameters for the Function Call Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (3).png" alt=""><figcaption><p>Parameters for the Function Call Alert</p></figcaption></figure>
 
 The Function Call alert sends a notification when a specific function is called from a selected smart contract. Notifications will be sent when the function is first called in a transaction, and each time it's called during the execution via internal calls.
 
@@ -69,7 +69,7 @@ To create a Function Call alert, complete the following steps:
 
 ## Event Emitted
 
-<figure><img src="../.gitbook/assets/event_emitted_params.png" alt=""><figcaption><p>Parameters for the Event Emitted Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (6).png" alt=""><figcaption><p>Parameters for the Event Emitted Alert</p></figcaption></figure>
 
 The Event Emitted alert sends a notification when a specific event is emitted from the selected smart contract. For example, you can use this alert to monitor an ERC-20 token and get notified when a third-party address is approved to spend the balance.
 
@@ -84,7 +84,7 @@ To create an Event Emitted alert, complete the following steps:
 
 ## Event Parameter
 
-<figure><img src="../.gitbook/assets/event_params_params.png" alt=""><figcaption><p>Parameters for the Event Parameter Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption><p>Parameters for the Event Parameter Alert</p></figcaption></figure>
 
 The Event Parameter alert sends a notification when an event argument matches the set conditions. For example, you can use this alert to monitor an ERC-20 token and get notified when a third-party address is approved to spend a balance higher than the threshold value.
 
@@ -102,7 +102,7 @@ To create an Event Parameter alert, complete the following steps:
 
 ## ERC20 Token Transfer
 
-<figure><img src="../.gitbook/assets/erc_token_params.png" alt=""><figcaption><p>Parameters for the ERC20 Token Transfer Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (4).png" alt=""><figcaption><p>Parameters for the ERC20 Token Transfer Alert</p></figcaption></figure>
 
 The ERC20 Token Transfer will send you a notification when an ERC-20 transfer event is emitted from a smart contract. This alert is useful when you want to keep track of token transfers from one address to another.
 
@@ -118,13 +118,13 @@ To create an ERC-20 Token Transfer alert, complete the following steps:
 
 ## Allowlisted Callers
 
-<figure><img src="../.gitbook/assets/allowed_params.png" alt=""><figcaption><p>Parameters for the Allowlisted Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (1).png" alt=""><figcaption><p>Parameters for the Allowlisted Alert</p></figcaption></figure>
 
 The Allowlisted Callers alert allows you to add familiar addresses and receive notifications only when addresses that are not on the list call a smart contract.
 
 To create an Allowlisted Callers alert, complete the following steps:
 
-1. **Select Allowlisted Callers f**rom the list of Alert Types.
+1. **Select Allowlisted Callers** from the list of Alert Types.
 2. From the Target section, **select Address** to monitor a smart contract deployed on a specific address.
 3. **Choose the address of the smart contract** from the dropdown.
 4. **Enter the address(es)** you are familiar with and want to exclude from monitoring.
@@ -133,7 +133,7 @@ To create an Allowlisted Callers alert, complete the following steps:
 
 ## Blocklisted Callers
 
-<figure><img src="../.gitbook/assets/blacklisted_params.png" alt=""><figcaption><p>Parameters for the Blocklisted Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (2).png" alt=""><figcaption><p>Parameters for the Blocklisted Alert</p></figcaption></figure>
 
 The Blocklisted Caller alert allows you to add unwanted addresses and only receive a notification when those addresses send a transaction to the selected Target. This alert can be used to monitor when unauthorized addresses try to call your multisig wallet or contract.
 
@@ -164,7 +164,7 @@ To create a Balance Change alert, complete the following steps:
 
 ## Transaction Value
 
-<figure><img src="../.gitbook/assets/tx_value_params.png" alt=""><figcaption><p>Parameters for the Transaction Value Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (5).png" alt=""><figcaption><p>Parameters for the Transaction Value Alert</p></figcaption></figure>
 
 The Transaction Value alert notifies you when the value of a transaction involving a wallet or smart contract matches some value in Wei.
 
