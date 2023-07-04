@@ -54,7 +54,7 @@ To create a Failed Transaction alert, complete the following steps:
 
 ## Function Call
 
-<figure><img src="../.gitbook/assets/1 (3).png" alt=""><figcaption><p>Parameters for the Function Call Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (7).png" alt=""><figcaption><p>Parameters for the Function Call Alert</p></figcaption></figure>
 
 The Function Call alert sends a notification when a specific function is called from a selected smart contract. Notifications will be sent when the function is first called in a transaction, and each time it's called during the execution via internal calls.
 
@@ -84,7 +84,7 @@ To create an Event Emitted alert, complete the following steps:
 
 ## Event Parameter
 
-<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption><p>Parameters for the Event Parameter Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (1).png" alt=""><figcaption><p>Parameters for the Event Parameter Alert</p></figcaption></figure>
 
 The Event Parameter alert sends a notification when an event argument matches the set conditions. For example, you can use this alert to monitor an ERC-20 token and get notified when a third-party address is approved to spend a balance higher than the threshold value.
 
@@ -102,7 +102,7 @@ To create an Event Parameter alert, complete the following steps:
 
 ## ERC20 Token Transfer
 
-<figure><img src="../.gitbook/assets/1 (4).png" alt=""><figcaption><p>Parameters for the ERC20 Token Transfer Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (8).png" alt=""><figcaption><p>Parameters for the ERC20 Token Transfer Alert</p></figcaption></figure>
 
 The ERC20 Token Transfer will send you a notification when an ERC-20 transfer event is emitted from a smart contract. This alert is useful when you want to keep track of token transfers from one address to another.
 
@@ -118,7 +118,7 @@ To create an ERC-20 Token Transfer alert, complete the following steps:
 
 ## Allowlisted Callers
 
-<figure><img src="../.gitbook/assets/1 (1).png" alt=""><figcaption><p>Parameters for the Allowlisted Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (5).png" alt=""><figcaption><p>Parameters for the Allowlisted Alert</p></figcaption></figure>
 
 The Allowlisted Callers alert allows you to add familiar addresses and receive notifications only when addresses that are not on the list call a smart contract.
 
@@ -133,7 +133,7 @@ To create an Allowlisted Callers alert, complete the following steps:
 
 ## Blocklisted Callers
 
-<figure><img src="../.gitbook/assets/1 (2).png" alt=""><figcaption><p>Parameters for the Blocklisted Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (3).png" alt=""><figcaption><p>Parameters for the Blocklisted Alert</p></figcaption></figure>
 
 The Blocklisted Caller alert allows you to add unwanted addresses and only receive a notification when those addresses send a transaction to the selected Target. This alert can be used to monitor when unauthorized addresses try to call your multisig wallet or contract.
 
@@ -164,7 +164,7 @@ To create a Balance Change alert, complete the following steps:
 
 ## Transaction Value
 
-<figure><img src="../.gitbook/assets/1 (5).png" alt=""><figcaption><p>Parameters for the Transaction Value Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (2).png" alt=""><figcaption><p>Parameters for the Transaction Value Alert</p></figcaption></figure>
 
 The Transaction Value alert notifies you when the value of a transaction involving a wallet or smart contract matches some value in Wei.
 
@@ -179,7 +179,7 @@ To create a Transaction Value alert, complete the following steps:
 
 ## State Change
 
-<figure><img src="../.gitbook/assets/state_change_3_params.png" alt=""><figcaption><p>Parameters for the State Change Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1.png" alt=""><figcaption><p>Parameters for the State Change Alert</p></figcaption></figure>
 
 The State Change alert notifies you when a numeric (int/uint) state variable in a smart contract is changed. With this alert, you can get notifications when the number of required confirmations in a multisig increases or decreases. Similarly, you can observe any other configuration-like state variable of a smart contract.
 
@@ -198,7 +198,7 @@ To create a State Change alert, complete the following steps:
 
 ## View Function
 
-<figure><img src="../.gitbook/assets/view_function_params.png" alt=""><figcaption><p>Parameters for the View Function Alert</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/1 (4).png" alt=""><figcaption><p>Parameters for the View Function Alert</p></figcaption></figure>
 
 The View Function alert notifies you when the return value of a selected `view` function in a smart contract is changed by a transaction. For example, you can track when the balance of a particular address of an ERC-20 token changes by using the `balanceOf('0x...')` view function.
 
