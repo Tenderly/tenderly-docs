@@ -42,7 +42,7 @@ Simulates transaction as it would execute on the given block.
    * **number** _(optional)_ `STRING`: hex, overrides the block number
    * **difficulty** _(optional)_ `STRING`: hex, overrides the block difficulty
    * **time** (_optional_) `STRING`: hex, overrides block timestamp
-   * **gasLimit** _(optional)_ `STRING`: hex, overrides block timestamp
+   * **gasLimit** _(optional)_ `STRING`: hex, overrides gas limit
    * **coinbase** _(optional)_ `STRING`: hex, overrides block miner
    * **random** _(optional)_ `STRING`: hex, overrides the blocks extra data which feeds into the RANDOM opcode
    * **baseFee** _(optional)_ `STRING`: hex, overrides block base fee
