@@ -20,22 +20,22 @@ Jumps forward in time and generates a block with that timestamp.
 
 **Example request**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "evm_increaseTime",
-    "params": ["0x15180"],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "evm_increaseTime",
+  "params": ["0x15180"],
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "result": "0x51e0a03f19e0c154b16363086aa6bbf22ad4582b0515b0a3a00519015f06246f",
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": "0x51e0a03f19e0c154b16363086aa6bbf22ad4582b0515b0a3a00519015f06246f",
+  "id": "1234"
 }
 ```
 
@@ -53,22 +53,22 @@ This method works like `evm_increaseTime` but instead of increasing time for spe
 
 **Example request**
 
-```jsx
+```json
 {
-	"jsonrpc": "2.0",
-	"method": "evm_setNextBlockTimestamp",
-	"params": [ "1750074671" ],    # 2025-07-16 11:51:11
-	"id": "1234"
+  "jsonrpc": "2.0",
+  "method": "evm_setNextBlockTimestamp",
+  "params": ["1750074671"], # 2025-07-16 11:51:11
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```javascript
+```json
 {
-    "jsonrpc": "2.0",
-    "result": 1750074671,
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": 1750074671,
+  "id": "1234"
 }
 ```
 
@@ -86,22 +86,22 @@ Skips a number of blocks and generates a new block with the new block number.
 
 **Example request**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "evm_increaseBlocks",
-    "params": ["0x20"],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "evm_increaseBlocks",
+  "params": ["0x20"],
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "result": "0x51e0a03f19e0c154b16363086aa6bbf22ad4582b0515b0a3a00519015f06246f",
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": "0x51e0a03f19e0c154b16363086aa6bbf22ad4582b0515b0a3a00519015f06246f",
+  "id": "1234"
 }
 ```
 
@@ -120,46 +120,46 @@ Returns the access tuples that would be touched by the transaction.
 
 **Example request**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "eth_getAccessList",
-    "params": [
-        {
-            "from": "0x7ed8dff35e6fef1a6c1f95423cd8a64e22687aac",
-            "to": "0x6b175474e89094c44da98b954eedeac495271d0f",
-            "gas": "0x76c00",
-            "gasPrice": "0x0",
-            "value": "0x0",
-            "data": "0xa9059cbb0000000000000000000000005eddecc908575e1adcf857d8be380b9b7e5f658300000000000000000000000000000000000000000000000228813d891ab86000"
-        },
-        "latest"
-    ],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "eth_getAccessList",
+  "params": [
+    {
+      "from": "0x7ed8dff35e6fef1a6c1f95423cd8a64e22687aac",
+      "to": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "gas": "0x76c00",
+      "gasPrice": "0x0",
+      "value": "0x0",
+      "data": "0xa9059cbb0000000000000000000000005eddecc908575e1adcf857d8be380b9b7e5f658300000000000000000000000000000000000000000000000228813d891ab86000"
+    },
+    "latest"
+  ],
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "address": "0x7ed8dff35e6fef1a6c1f95423cd8a64e22687aac"
-        },
-        {
-            "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
-            "storage_keys": [
-                "0x5051a693fd89be4fee1466db5a0684c1868dc09405da86e3d13004a803e302ec"
-            ]
-        },
-        {
-            "address": "0xc8f595e2084db484f8a80109101d58625223b7c9"
-        }
-    ],
-    "id": 1234
-}
+  "jsonrpc": "2.0",
+  "result": [
+    {
+      "address": "0x7ed8dff35e6fef1a6c1f95423cd8a64e22687aac"
+    },
+    {
+      "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+      "storage_keys": [
+        "0x5051a693fd89be4fee1466db5a0684c1868dc09405da86e3d13004a803e302ec"
+      ]
+    },
+    {
+      "address": "0xc8f595e2084db484f8a80109101d58625223b7c9"
+    }
+  ],
+  "id": 1234
+}onon
 ```
 
 ### `evm_getLatest`
@@ -174,22 +174,22 @@ Fetches the latest transaction ID on a network fork.
 
 **Example request**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "evm_getLatest",
-    "params": [],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "evm_getLatest",
+  "params": [],
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "result": "4a05d7ed-f66c-471a-899d-d6d843b8e790",
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": "4a05d7ed-f66c-471a-899d-d6d843b8e790",
+  "id": "1234"
 }
 ```
 
@@ -208,39 +208,41 @@ Modifies the balance of an account or accounts.
 
 **Example request**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "tenderly_setBalance",
-    "params": [
-			["0x0d2026b3EE6eC71FC6746ADb6311F6d3Ba1C000B"],
-		  "0xDE0B6B3A7640000",
-		],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "tenderly_setBalance",
+  "params": [
+    [
+      "0x0d2026b3EE6eC71FC6746ADb6311F6d3Ba1C000B"
+    ],
+    "0xDE0B6B3A7640000"
+  ],
+  "id": "1234"
 }
 ```
 
 OR
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "tenderly_setBalance",
-    "params": [
-			"0x0d2026b3EE6eC71FC6746ADb6311F6d3Ba1C000B",
-		  "0xDE0B6B3A7640000",
-		],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "tenderly_setBalance",
+  "params": [
+    "0x0d2026b3EE6eC71FC6746ADb6311F6d3Ba1C000B",
+    "0xDE0B6B3A7640000"
+  ],
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "result": "0xc5b2c658f5fa236c598a6e7fbf7f21413dc42e2a41dd982eb772b30707cba2eb",
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": "0xc5b2c658f5fa236c598a6e7fbf7f21413dc42e2a41dd982eb772b30707cba2eb",
+  "id": "1234"
 }
 ```
 
@@ -259,39 +261,41 @@ Adds the balance to the provided account or accounts.
 
 **Example request**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "tenderly_addBalance",
-    "params": [
-			["0x0d2026b3EE6eC71FC6746ADb6311F6d3Ba1C000B"],
-		  "0xDE0B6B3A7640000",
-		],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "tenderly_addBalance",
+  "params": [
+    [
+      "0x0d2026b3EE6eC71FC6746ADb6311F6d3Ba1C000B"
+    ],
+    "0xDE0B6B3A7640000"
+  ],
+  "id": "1234"
 }
 ```
 
 OR
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "tenderly_addBalance",
-    "params": [
-			"0x0d2026b3EE6eC71FC6746ADb6311F6d3Ba1C000B",
-		  "0xDE0B6B3A7640000",
-		],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "tenderly_addBalance",
+  "params": [
+    "0x0d2026b3EE6eC71FC6746ADb6311F6d3Ba1C000B",
+    "0xDE0B6B3A7640000"
+  ],
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "result": "0xc5b2c658f5fa236c598a6e7fbf7f21413dc42e2a41dd982eb772b30707cba2eb",
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": "0xc5b2c658f5fa236c598a6e7fbf7f21413dc42e2a41dd982eb772b30707cba2eb",
+  "id": "1234"
 }
 ```
 
@@ -311,26 +315,26 @@ Sets the storage of the provided address at the provided slot.
 
 **Example request**
 
-```solidity
+```json
 {
-	"jsonrpc":"2.0",
-	"method":"tenderly_setStorageAt",
-	"params":[
-		"0x3Df2f692132f55b97cc9DA04A1fFFEA82F5d710b", //address
-		"0x8111de210bcfef10861a4ab6df0f4838296bd61d5a8f02dca283ed3b72a47bba", //slot
-		"0x0000000000000000000000000000000000000000000000000000000000000000", //value
-	],
-	"id":"1"
+  "jsonrpc": "2.0",
+  "method": "tenderly_setStorageAt",
+  "params": [
+    "0x3Df2f692132f55b97cc9DA04A1fFFEA82F5d710b", // address
+    "0x8111de210bcfef10861a4ab6df0f4838296bd61d5a8f02dca283ed3b72a47bba", // slot
+    "0x0000000000000000000000000000000000000000000000000000000000000000" // value
+  ],
+  "id": "1"
 }
 ```
 
 **Example response**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "result": "0xc5b2c658f5fa236c598a6e7fbf7f21413dc42e2a41dd982eb772b30707cba2eb",
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": "0xc5b2c658f5fa236c598a6e7fbf7f21413dc42e2a41dd982eb772b30707cba2eb",
+  "id": "1234"
 }
 ```
 
@@ -346,22 +350,22 @@ Returns a snapshot ID that allows you to revert a fork to a previous point (same
 
 **Example request**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "evm_snapshot",
-    "params": [],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "evm_snapshot",
+  "params": [],
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "result": "4a05d7ed-f66c-471a-899d-d6d843b8e790",
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": "4a05d7ed-f66c-471a-899d-d6d843b8e790",
+  "id": "1234"
 }
 ```
 
@@ -379,21 +383,21 @@ Reverts the state of the fork to a previous snapshot.
 
 **Example request**
 
-```jsx
+```json
 {
-    "jsonrpc": "2.0",
-    "method": "evm_revert",
-    "params": ["0x1"],
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "method": "evm_revert",
+  "params": ["0x1"],
+  "id": "1234"
 }
 ```
 
 **Example response**
 
-```javascript
+```json
 {
-    "jsonrpc": "2.0",
-    "result": true,
-    "id": "1234"
+  "jsonrpc": "2.0",
+  "result": true,
+  "id": "1234"
 }
 ```
