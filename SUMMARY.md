@@ -66,6 +66,7 @@
   * [Sending Transactions to Forks](simulations-and-forks/forks/sending-transactions-to-forks.md)
 * [Asset Changes](simulations-and-forks/asset-changes.md)
 * [Tutorials](simulations-and-forks/integration-guides/README.md)
+  * [How to Add a Dapp Playground Mode to Uniswap's Interface](simulations-and-forks/integration-guides/how-to-add-a-dapp-playground-mode-to-uniswaps-interface.md)
   * [Using Simulation RPC in Dapp UI](simulations-and-forks/integration-guides/using-simulation-rpc-in-dapp-ui.md)
   * [Instant Staging/QA Environment for Dapps](simulations-and-forks/integration-guides/instant-staging-qa-environment-for-dapps.md)
   * [CI/CD Pipeline for Smart Contracts](simulations-and-forks/integration-guides/ci-cd-pipeline-for-smart-contracts.md)
