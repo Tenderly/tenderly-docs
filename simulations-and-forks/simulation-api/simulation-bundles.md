@@ -10,6 +10,10 @@ Simulation Bundles enable you to simulate several transactions consecutively. Fo
 
 Both Simulation API and Simulation RPC support Simulation Bundles. The endpoints receive an array of transactions that get simulated as if they executed one after another within the same block.
 
+{% hint style="info" %}
+In the event that a simulation fails for any reason, any subsequent simulations will not be executed.
+{% endhint %}
+
 For example, to simulate transferFrom on a DAI contract, you first need to approve a spender. You may also need to simulate the minting of DAI before approving.&#x20;
 
 Here's the scenario:
