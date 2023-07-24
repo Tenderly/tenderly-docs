@@ -15,7 +15,7 @@ List of custom RPC Methods:
 * [evm\_getLatest](custom-rpc-methods.md#evm\_getlatest)
 * [tenderly\_setBalance](custom-rpc-methods.md#tenderly\_setbalance)
 * [tenderly\_addBalance](custom-rpc-methods.md#tenderly\_addbalance)
-* tenderly\_setErc20Balance
+* [tenderly\_setErc20Balance](custom-rpc-methods.md#tenderly\_seterc20balance)
 * [tenderly\_setStorageAt](custom-rpc-methods.md#tenderly\_setstorageat)
 * [evm\_snapshot](custom-rpc-methods.md#evm\_snapshot)
 * [evm\_revert](custom-rpc-methods.md#evm\_revert)
