@@ -15,6 +15,7 @@ List of custom RPC Methods:
 * [evm\_getLatest](custom-rpc-methods.md#evm\_getlatest)
 * [tenderly\_setBalance](custom-rpc-methods.md#tenderly\_setbalance)
 * [tenderly\_addBalance](custom-rpc-methods.md#tenderly\_addbalance)
+* tenderly\_setErc20Balance
 * [tenderly\_setStorageAt](custom-rpc-methods.md#tenderly\_setstorageat)
 * [evm\_snapshot](custom-rpc-methods.md#evm\_snapshot)
 * [evm\_revert](custom-rpc-methods.md#evm\_revert)
@@ -311,6 +312,45 @@ OR
   "jsonrpc": "2.0",
   "result": "0xc5b2c658f5fa236c598a6e7fbf7f21413dc42e2a41dd982eb772b30707cba2eb",
   "id": "1234"
+}
+```
+
+### `tenderly_setErc20Balance`
+
+Sets the token balance for the wallet on the provided erc20 contract.
+
+**Parameters**
+
+* `TOKEN_ADDRESS` - address of the ERC20 contract
+* `WALLET_ADDRESS` - address of the wallet that would get the balance
+* `VALUE` - 32-byte hash representing the **wei** value of the tokens
+
+**Returns**
+
+`DATA` - 32-byte hash of the newly created transaction (storage override is committed via transaction)
+
+**Example request**
+
+```json
+{
+    "jsonrpc":"2.0",
+    "method":"tenderly_setErc20Balance",
+    "params":[
+        "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "0x40BdB4497614bAe1A67061EE20AAdE3c2067AC9e",
+        "0x1"
+    ],
+    "id":3640
+}
+```
+
+**Example response**
+
+```json
+{
+    "id": 3640,
+    "jsonrpc": "2.0",
+    "result": "0x8a84686634729c57532b9ffa4e632e241b2de5c880c771c5c214d5e7ec465b1c"
 }
 ```
 
