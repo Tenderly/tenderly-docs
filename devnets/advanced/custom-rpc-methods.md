@@ -6,6 +6,21 @@ description: Explore the list of available custom RPC methods available within D
 
 DevNets allow you to easily manipulate the state of the networks to fit your project’s specific needs. Below is a list of custom RPC methods that you can use within DevNets to manipulate the state of the networks, along with usage examples.
 
+List of custom RPC Methods:
+
+* [evm\_increaseTime](custom-rpc-methods.md#evm\_increasetime)
+* [evm\_setNextBlockTimestamp](custom-rpc-methods.md#evm\_setnextblocktimestamp)
+* [evm\_increaseBlocks](custom-rpc-methods.md#evm\_increaseblocks)
+* [eth\_createAccessList](custom-rpc-methods.md#eth\_createaccesslist)
+* [evm\_getLatest](custom-rpc-methods.md#evm\_getlatest)
+* [tenderly\_setBalance](custom-rpc-methods.md#tenderly\_setbalance)
+* [tenderly\_addBalance](custom-rpc-methods.md#tenderly\_addbalance)
+* [tenderly\_setStorageAt](custom-rpc-methods.md#tenderly\_setstorageat)
+* [evm\_snapshot](custom-rpc-methods.md#evm\_snapshot)
+* [evm\_revert](custom-rpc-methods.md#evm\_revert)
+
+***
+
 ### **`evm_increaseTime`**
 
 Jumps forward in time and generates a block with that timestamp.

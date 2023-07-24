@@ -181,7 +181,7 @@
 
 ## Other
 
-* [🕹 Tenderly API](http://localhost:5000/o/-LeLQOwIQG3HndcULLU2/s/ES8WtN6Gx8HH3zi8low4/)
+* [🕹 Tenderly API](http://127.0.0.1:5000/o/-LeLQOwIQG3HndcULLU2/s/ES8WtN6Gx8HH3zi8low4/)
 * [⌨ Tenderly CLI](https://github.com/Tenderly/tenderly-cli)
 * [👷 Hardhat Plugin](https://github.com/Tenderly/hardhat-tenderly)
 * [🐛 Trace API](other/trace-api.md)
