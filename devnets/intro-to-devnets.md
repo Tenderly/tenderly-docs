@@ -45,6 +45,12 @@ When prompted:
 2. **Set the block number** from network history (default: latest).
 3. Give your DevNet a **unique name**.
 
+DevNet templates can also be defined in YAML. Use the YAML editor to create highly customized DevNet templates, including options to override on-chain data with custom values.&#x20;
+
+{% content-ref url="yaml-template.md" %}
+[yaml-template.md](yaml-template.md)
+{% endcontent-ref %}
+
 Click **Save** to create a template.
 
 <figure><img src="../.gitbook/assets/devnets config.png" alt=""><figcaption></figcaption></figure>
