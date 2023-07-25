@@ -28,7 +28,7 @@ The following optional fields can be used to override on-chain data with custom 
 
 #### Template
 
-The mandatory template field must contain the following key-value pairs:
+The mandatory `template` field must contain the following key-value pairs:
 
 ```yaml
 template:
@@ -71,8 +71,6 @@ Add the `erc20` field to change the balances of addresses for specific ERC-20 co
           amount: 100
 ```
 
-### **Validating the YAML template**
-
 #### **Contracts**
 
 Add the `contracts` field to override the on-chain data of a specific contract with custom values. You can modify the balance on the contracts as well as storage variables.
@@ -113,6 +111,8 @@ Add the `storage` field to override storage variables for contracts and wallets.
         - 0x1459...3988c: # value
         - 0x2459...3988c: #value
 ```
+
+### **Validating the YAML template**
 
 Ensure the syntax is correct by using the built-in YAML validation tool on the Tenderly Dashboard. After successful validation, click on **Create** to save your template. The newly created template will now be listed under the available templates on the DevNets page.
 
