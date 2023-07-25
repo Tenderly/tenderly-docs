@@ -22,7 +22,9 @@ The following optional fields can be used to override on-chain data with custom 
 2. [Navigate to the **DevNets**](https://dashboard.tenderly.co/register?redirectTo=devnets) section and click **Create Template**.
 3. Use the YAML editor to define your DevNet template.
 
-<figure><img src="../.gitbook/assets/yaml template.png" alt=""><figcaption><p>Create DevNet YAML template</p></figcaption></figure>
+
+
+<figure><img src="../.gitbook/assets/yaml template devnets.png" alt=""><figcaption><p>Create DevNet templates in YAML</p></figcaption></figure>
 
 ### Mandatory fields
 
