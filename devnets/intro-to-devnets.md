@@ -53,7 +53,7 @@ DevNet templates can also be defined in YAML. Use the YAML editor to create high
 
 Click **Save** to create a template.
 
-<figure><img src="../.gitbook/assets/devnets config.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/yaml template.png" alt=""><figcaption></figcaption></figure>
 
 Next, click **Spawn DevNet**, and **copy the RPC URL**.
 
