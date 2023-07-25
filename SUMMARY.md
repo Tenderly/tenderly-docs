@@ -30,6 +30,7 @@
   * [DevNets with Truffle](devnets/setting-up-devnets-for-local-development/devnets-with-truffle.md)
   * [DevNets with Foundry](devnets/setting-up-devnets-for-local-development/devnets-with-foundry.md)
 * [Setting Up DevNets for Continuous Integration](devnets/setting-up-devnets-for-continuous-integration.md)
+* [YAML Template](devnets/yaml-template.md)
 * [Advanced](devnets/advanced/README.md)
   * [RPC URL Lifetime](devnets/advanced/rpc-url-lifetime.md)
   * [Automated DevNet Spawning: Bash & JavaScript](devnets/advanced/automated-devnet-spawning-bash-and-javascript.md)
