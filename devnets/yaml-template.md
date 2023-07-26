@@ -6,9 +6,7 @@ description: Use the built-in YAML editor to define a DevNet template using YAML
 
 DevNet templates can be defined using YAML. These YAML templates are reusable, enabling you to quickly spawn highly customized DevNet environments.
 
-{% hint style="info" %}
-DevNet templates cannot be modified once they have been saved.
-{% endhint %}
+<figure><img src="../.gitbook/assets/advanced_config_intro_video.gif" alt=""><figcaption></figcaption></figure>
 
 YAML DevNet templates have one mandatory and multiple optional fields.
 
@@ -21,8 +19,6 @@ The following optional fields can be used to override on-chain data with custom 
 1. Log into your Tenderly account.
 2. [Navigate to the **DevNets**](https://dashboard.tenderly.co/register?redirectTo=devnets) section and click **Create Template**.
 3. Use the YAML editor to define your DevNet template.
-
-
 
 <figure><img src="../.gitbook/assets/yaml template devnets.png" alt=""><figcaption><p>Create DevNet templates in YAML</p></figcaption></figure>
 
@@ -117,5 +113,9 @@ Add the `storage` field to override storage variables for contracts and wallets.
 ### **Validating the YAML template**
 
 Ensure the syntax is correct by using the built-in YAML validation tool on the Tenderly Dashboard. After successful validation, click on **Create** to save your template. The newly created template will now be listed under the available templates on the DevNets page.
+
+{% hint style="info" %}
+DevNet templates cannot be modified once they have been saved.
+{% endhint %}
 
 You can use this template to spawn a DevNet environment that reflects the configurations you’ve defined in the YAML file.
