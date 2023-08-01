@@ -44,8 +44,6 @@ While Web3 Gateway integration isn't currently available for these networks, res
 
 <img src=".gitbook/assets/gnosis-logo.png" alt="" data-size="line"> Gnosis Chain
 
-<img src=".gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA
-
 <img src=".gitbook/assets/image (87) (1) (1) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum
 
 <img src=".gitbook/assets/image (72).png" alt="" data-size="line"> Optimistic Goerli Testnet
