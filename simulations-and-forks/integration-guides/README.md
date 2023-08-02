@@ -6,6 +6,14 @@ description: Follow step-by-step guides on how to introduce simulations into you
 
 In this section, you'll find some examples and ideas on how you can incorporate Tenderly's simulations into your system. You can integrate simulations at various stages of your development workflow, meeting the specific needs of your product:
 
+{% content-ref url="how-to-add-transaction-preview-to-a-metamask-snap-using-tenderly-simulation-api.md" %}
+[how-to-add-transaction-preview-to-a-metamask-snap-using-tenderly-simulation-api.md](how-to-add-transaction-preview-to-a-metamask-snap-using-tenderly-simulation-api.md)
+{% endcontent-ref %}
+
+{% content-ref url="how-to-add-a-dapp-playground-mode-to-uniswaps-interface.md" %}
+[how-to-add-a-dapp-playground-mode-to-uniswaps-interface.md](how-to-add-a-dapp-playground-mode-to-uniswaps-interface.md)
+{% endcontent-ref %}
+
 {% content-ref url="instant-staging-qa-environment-for-dapps.md" %}
 [instant-staging-qa-environment-for-dapps.md](instant-staging-qa-environment-for-dapps.md)
 {% endcontent-ref %}

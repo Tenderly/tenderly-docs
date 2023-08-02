@@ -72,7 +72,7 @@ Webhook execution can have several statuses:
 * **Retry**: Webhook execution failed but will be retried no more than 5 times until it changes the status to Sucess or Failed.
 * **Skipped**: Webhook was not executed because it was disabled.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Webhook Execution Page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Webhook Execution Page</p></figcaption></figure>
 
 You can also see prior webhook executions by applying different filters, such as **Filter by Status** and **Select a Date Range**.
 
@@ -102,4 +102,4 @@ If your Alert is enabled, you'll start receiving events to your webhook endpoint
 
 In this example, we used [https://webhook.site](https://webhook.site/) to create a temporary webhook endpoint to test how Tenderly webhooks work. Below is an image of the payload successfully sent to the webhook.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Successful Webhook Executions</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Successful Webhook Executions</p></figcaption></figure>

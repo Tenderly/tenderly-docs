@@ -22,6 +22,6 @@ Web3 Actions in Tenderly can have various statuses throughout their lifecycle. H
 If you need to increase the limits for your action execution, or if your action timed out, please contact Tenderly support at [support@tenderly.co](mailto:support@tenderly.co). Our team is ready to assist you with your specific needs to ensure your actions run smoothly.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (2) (3).png" alt=""><figcaption><p>Web3 Action Execution History</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption><p>Web3 Action Execution History</p></figcaption></figure>
 
 These statuses provide a detailed view of your Web3 Action's lifecycle, helping you to manage and troubleshoot your actions effectively.

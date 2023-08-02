@@ -59,7 +59,7 @@ Keep your code simple and easy to understand, and test thoroughly to ensure that
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Create New Extension Modal</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (3).png" alt=""><figcaption><p>Create New Extension Modal</p></figcaption></figure>
 
 ### Creating a Node Extension from a Web3 Action
 
@@ -131,7 +131,7 @@ tenderly node-extensions init --name "extension-name" --description "extension d
 
 After running this command, you'll get something like this:
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Project structure</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>Project structure</p></figcaption></figure>
 
 {% code title="tenderly.yaml" lineNumbers="true" %}
 ```yaml
