@@ -115,17 +115,17 @@ async function runSimulateTransaction() {
           {
             "value": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
             "type": "address",
-            "name": "from"
+            "name": "src"
           },
           {
             "value": "0xa0c9bf9aa601ddfb1cdf3be3ef77e010e4184076",
             "type": "address",
-            "name": "to"
+            "name": "dst"
           },
           {
             "value": "25000000000000000",
             "type": "uint256",
-            "name": "value"
+            "name": "wad"
           }
         ],
         "raw": {
@@ -580,6 +580,122 @@ async function runSimulateTransaction() {
           6
         ]
       }
+    ],
+    "assetChanges": [
+      {
+        "assetInfo": {
+          "standard": "ERC20",
+          "type": "Fungible",
+          "contractAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "weth",
+          "name": "WETH",
+          "logo": "https://assets.coingecko.com/coins/images/2518/large/weth.png?1628852295",
+          "decimals": 18,
+          "dollarValue": "1834.6199951171875"
+        },
+        "type": "Mint",
+        "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+        "rawAmount": "0x58d15e17628000",
+        "amount": "0.025",
+        "dollarValue": "45.8654998779296875"
+      },
+      {
+        "assetInfo": {
+          "standard": "ERC20",
+          "type": "Fungible",
+          "contractAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "weth",
+          "name": "WETH",
+          "logo": "https://assets.coingecko.com/coins/images/2518/large/weth.png?1628852295",
+          "decimals": 18,
+          "dollarValue": "1834.6199951171875"
+        },
+        "type": "Transfer",
+        "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+        "to": "0xa0c9bf9aa601ddfb1cdf3be3ef77e010e4184076",
+        "rawAmount": "0x58d15e17628000",
+        "amount": "0.025",
+        "dollarValue": "45.8654998779296875"
+      },
+      {
+        "assetInfo": {
+          "standard": "ERC20",
+          "contractAddress": "0xd81781e686d0ad128b4c7e7b3c072b89f509ea2a"
+        },
+        "type": "Transfer",
+        "from": "0xa0c9bf9aa601ddfb1cdf3be3ef77e010e4184076",
+        "to": "0x17b11ed010e715bf4336a88489fe4f0ef6a09dc7",
+        "rawAmount": "0x4451132d60748"
+      },
+      {
+        "assetInfo": {
+          "standard": "NativeCurrency",
+          "type": "Native",
+          "symbol": "eth",
+          "name": "Ethereum",
+          "logo": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+          "decimals": 18,
+          "dollarValue": "1828.77001953125"
+        },
+        "type": "Transfer",
+        "from": "0x17b11ed010e715bf4336a88489fe4f0ef6a09dc7",
+        "to": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+        "rawAmount": "0x58d15e17628000",
+        "amount": "0.025",
+        "dollarValue": "45.71925048828125"
+      },
+      {
+        "assetInfo": {
+          "standard": "NativeCurrency",
+          "type": "Native",
+          "symbol": "eth",
+          "name": "Ethereum",
+          "logo": "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+          "decimals": 18,
+          "dollarValue": "1828.77001953125"
+        },
+        "type": "Transfer",
+        "from": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "rawAmount": "0x58d15e17628000",
+        "amount": "0.025",
+        "dollarValue": "45.71925048828125"
+      }
+    ],
+    "balanceChanges": [
+      {
+        "address": "0x17b11ed010e715bf4336a88489fe4f0ef6a09dc7",
+        "dollarValue": "-45.71925048828125",
+        "transfers": [
+          2,
+          3
+        ]
+      },
+      {
+        "address": "0x7a250d5630b4cf539739df2c5dacb4c659f2488d",
+        "dollarValue": "0",
+        "transfers": [
+          0,
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "address": "0xa0c9bf9aa601ddfb1cdf3be3ef77e010e4184076",
+        "dollarValue": "45.8654998779296875",
+        "transfers": [
+          1,
+          2
+        ]
+      },
+      {
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "dollarValue": "45.71925048828125",
+        "transfers": [
+          4
+        ]
+      }
     ]
   }
 }
@@ -628,3 +744,23 @@ async function runSimulateTransaction() {
     * **name** `STRING`: the name of this argument
   * **subtraces** `NUMBER`: number of child traces
   * **traceAddress** : trace position `ARRAY` of `NUMBER`
+* **`assetChanges`** `ARRAY`:&#x20;
+  * **`type`** `STRING` type of asset change, can be transfer, mint, burn
+  * **`from`** `STRING`: address of the sender (empty for mint transfers)
+  * **`to`** `STRING`: address of the receiver (empty for burn transfers)
+  * **`amount`** `STRING`: the amount of the token that was transferred
+  * **`rawAmount`** `STRING`: raw amount transfer for the token
+  * **`dollarValue`**`STRING`: dollar value of the transferred token
+  * **`assetInfo`**`OBJECT`: asset information
+    * **`standard`** `STRING`: supported token standards: ERC20, ERC721, NativeCurrency
+    * **`type`** `STRING`: the token type: Native, Fungible, Non-Fungible
+    * **`contractAddress`**`STRING` : address of the contract
+    * **`symbol`** `STRING`: token symbol
+    * **`name`** `STRING`: token name
+    * **`logo`** `STRING`: URL for the token icon
+    * **`decimals`** `NUMBER`: number of decimals in the token
+    * **`dollarValue`**`STRING`: dollar value of a single token
+* **`balanceChanges`** `ARRAY`: an array of balance changes - cumulated asset changes
+  * **`address`** `STRING` address
+  * **`dollarValue`** `STRING`: dollar value of cumulated asset changes
+  * **`transfers`** `ARRAY`: array of asset changes indexes

@@ -56,13 +56,11 @@ Simulates transaction as it would execute on the given block.
   "method": "tenderly_simulateTransaction",
   "params": [
     {
-      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      "value": "0x0",
-      "data": "0x2e7700f0"
+      "from": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "data": "0xa9059cbb00000000000000000000000020a5814b73ef3537c6e099a0d45c798f4bd6e1d60000000000000000000000000000000000000000000000000000000000000001"
     },
-    "0xF4D880",
-    null
+    "0xF4D880"
   ]
 }
 ```
@@ -70,7 +68,7 @@ Simulates transaction as it would execute on the given block.
 
 {% tab title="cURL" %}
 <pre class="language-bash"><code class="lang-bash">
-<strong>curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+<strong>curl https://mainnet.gateway.tenderly.co \
 </strong>-X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -80,13 +78,11 @@ Simulates transaction as it would execute on the given block.
   "method": "tenderly_simulateTransaction",
   "params": [
     {
-      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      "value": "0x0",
-      "data": "0x2e7700f0"
+      "from": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+      "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      "data": "0xa9059cbb00000000000000000000000020a5814b73ef3537c6e099a0d45c798f4bd6e1d60000000000000000000000000000000000000000000000000000000000000001"
     },
-    "0xF4D880",
-    null
+    "0xF4D880"
   ]
 }'
 
@@ -107,10 +103,9 @@ async function runSimulateTransaction() {
   // Execute method
   const result = await provider.send("tenderly_simulateTransaction", [
     {
-      from: "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      to: "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      value: "0x0",
-      data: "0x2e7700f0",
+      from: "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+      to: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+      data: "0xa9059cbb00000000000000000000000020a5814b73ef3537c6e099a0d45c798f4bd6e1d60000000000000000000000000000000000000000000000000000000000000001",
     },
     "0xF4D880",
   ]);
@@ -132,27 +127,113 @@ async function runSimulateTransaction() {
   "jsonrpc": "2.0",
   "result": {
     "status": true,
-    "gasUsed": "0x523c",
+    "gasUsed": "0xc94e",
     "cumulativeGasUsed": "0x0",
-    "blockNumber": "0xf4d881",
+    "blockNumber": "0x1103aae",
     "type": "0x0",
-    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
-    "logs": null,
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000002000000080000000000000000000000000000000000000000000008000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000000010000000000000004000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000020000000000000000000000000000000000200000800000000000000000000000000000000000000000000000000000",
+    "logs": [
+      {
+        "name": "Transfer",
+        "anonymous": false,
+        "inputs": [
+          {
+            "value": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+            "type": "address",
+            "name": "src"
+          },
+          {
+            "value": "0x20a5814b73ef3537c6e099a0d45c798f4bd6e1d6",
+            "type": "address",
+            "name": "dst"
+          },
+          {
+            "value": "1",
+            "type": "uint256",
+            "name": "wad"
+          }
+        ],
+        "raw": {
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000d8da6bf26964af9d7eed9e03e53415d37aa96045",
+            "0x00000000000000000000000020a5814b73ef3537c6e099a0d45c798f4bd6e1d6"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        }
+      }
+    ],
     "trace": [
       {
         "type": "CALL",
-        "from": "0xdc6bdc37b2714ee601734cf55a05625c9e512461",
-        "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-        "gas": "0x5f58ec4",
-        "gasUsed": "0x0",
+        "from": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+        "to": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+        "gas": "0xbeb6dbc",
+        "gasUsed": "0x750a",
         "value": "0x0",
-        "input": "0x2e7700f0",
-        "decodedInput": null,
-        "method": null,
-        "output": "0x",
-        "decodedOutput": null,
+        "input": "0xa9059cbb00000000000000000000000020a5814b73ef3537c6e099a0d45c798f4bd6e1d60000000000000000000000000000000000000000000000000000000000000001",
+        "decodedInput": [
+          {
+            "value": "0x20a5814b73ef3537c6e099a0d45c798f4bd6e1d6",
+            "type": "address",
+            "name": "dst"
+          },
+          {
+            "value": "1",
+            "type": "uint256",
+            "name": "wad"
+          }
+        ],
+        "method": "transfer",
+        "output": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "decodedOutput": [
+          {
+            "value": true,
+            "type": "bool",
+            "name": ""
+          }
+        ],
         "subtraces": 0,
-        "traceAddress": [0]
+        "traceAddress": [
+          0
+        ]
+      }
+    ],
+    "assetChanges": [
+      {
+        "assetInfo": {
+          "standard": "ERC20",
+          "type": "Fungible",
+          "contractAddress": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "symbol": "weth",
+          "name": "WETH",
+          "logo": "https://assets.coingecko.com/coins/images/2518/large/weth.png?1628852295",
+          "decimals": 18,
+          "dollarValue": "1834.6199951171875"
+        },
+        "type": "Transfer",
+        "from": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+        "to": "0x20a5814b73ef3537c6e099a0d45c798f4bd6e1d6",
+        "rawAmount": "0x1",
+        "amount": "0.000000000000000001",
+        "dollarValue": "0.0000000000000018346199951171875"
+      }
+    ],
+    "balanceChanges": [
+      {
+        "address": "0x20a5814b73ef3537c6e099a0d45c798f4bd6e1d6",
+        "dollarValue": "0.0000000000000018346199951171875",
+        "transfers": [
+          0
+        ]
+      },
+      {
+        "address": "0xd8da6bf26964af9d7eed9e03e53415d37aa96045",
+        "dollarValue": "-0.0000000000000018346199951171875",
+        "transfers": [
+          0
+        ]
       }
     ]
   }
@@ -202,4 +283,24 @@ async function runSimulateTransaction() {
     * **name** `STRING`: the name of this argument
   * **subtraces** `NUMBER`: number of child traces
   * **traceAddress** : trace position `ARRAY` of `NUMBER`
+* **`assetChanges`** `ARRAY`:&#x20;
+  * **`type`** `STRING` type of asset change, can be transfer, mint, burn
+  * **`from`** `STRING`: address of the sender (empty for mint transfers)
+  * **`to`** `STRING`: address of the receiver (empty for burn transfers)
+  * **`amount`** `STRING`: the amount of the token that was transferred
+  * **`rawAmount`** `STRING`: raw amount transfer for the token
+  * **`dollarValue`**`STRING`: dollar value of the transferred token
+  * **`assetInfo`**`OBJECT`: asset information
+    * **`standard`** `STRING`: supported token standards: ERC20, ERC721, NativeCurrency
+    * **`type`** `STRING`: the token type: Native, Fungible, Non-Fungible
+    * **`contractAddress`**`STRING` : address of the contract
+    * **`symbol`** `STRING`: token symbol
+    * **`name`** `STRING`: token name
+    * **`logo`** `STRING`: URL for the token icon
+    * **`decimals`** `NUMBER`: number of decimals in the token
+    * **`dollarValue`**`STRING`: dollar value of a single token
+* **`balanceChanges`** `ARRAY`: an array of balance changes - cumulated asset changes
+  * **`address`** `STRING` address
+  * **`dollarValue`** `STRING`: dollar value of cumulated asset changes
+  * **`transfers`** `ARRAY`: array of asset changes indexes
 

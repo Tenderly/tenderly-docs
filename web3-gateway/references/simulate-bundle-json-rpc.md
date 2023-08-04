@@ -351,3 +351,23 @@ async function runSimulateTransaction() {
     * **name** `STRING`: the name of this argument
   * **subtraces** `NUMBER`: number of child traces
   * **traceAddress** : trace position `ARRAY` of `NUMBER`
+* **`assetChanges`** `ARRAY`:&#x20;
+  * **`type`** `STRING` type of asset change, can be transfer, mint, burn
+  * **`from`** `STRING`: address of the sender (empty for mint transfers)
+  * **`to`** `STRING`: address of the receiver (empty for burn transfers)
+  * **`amount`** `STRING`: the amount of the token that was transferred
+  * **`rawAmount`** `STRING`: raw amount transfer for the token
+  * **`dollarValue`**`STRING`: dollar value of the transferred token
+  * **`assetInfo`**`OBJECT`: asset information
+    * **`standard`** `STRING`: supported token standards: ERC20, ERC721, NativeCurrency
+    * **`type`** `STRING`: the token type: Native, Fungible, Non-Fungible
+    * **`contractAddress`**`STRING` : address of the contract
+    * **`symbol`** `STRING`: token symbol
+    * **`name`** `STRING`: token name
+    * **`logo`** `STRING`: URL for the token icon
+    * **`decimals`** `NUMBER`: number of decimals in the token
+    * **`dollarValue`**`STRING`: dollar value of a single token
+* **`balanceChanges`** `ARRAY`: an array of balance changes - cumulated asset changes
+  * **`address`** `STRING` address
+  * **`dollarValue`** `STRING`: dollar value of cumulated asset changes
+  * **`transfers`** `ARRAY`: array of asset changes indexes
