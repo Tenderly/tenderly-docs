@@ -12,7 +12,7 @@ In this section, we list all the networks that are fully supported by Tenderly, 
 
 <img src=".gitbook/assets/mainnet-square.png" alt="" data-size="line"> Mainnet
 
-<img src=".gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Goerli
+<img src=".gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Görli
 
 <img src=".gitbook/assets/Sepolia (1).png" alt="" data-size="line"> Sepolia
 
@@ -25,6 +25,14 @@ In this section, we list all the networks that are fully supported by Tenderly, 
 <img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"> Boba BNB
 
 <img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"> Boba BNB Testnet
+
+<img src=".gitbook/assets/image (87) (1) (1) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum
+
+<img src=".gitbook/assets/image (72).png" alt="" data-size="line"> Optimistic Görli Testnet
+
+<img src=".gitbook/assets/base mainnet.png" alt="" data-size="line"> Base Mainnet
+
+<img src=".gitbook/assets/base testnet.png" alt="" data-size="line"> Base Görli Testnet
 
 
 
@@ -44,10 +52,6 @@ While Web3 Gateway integration isn't currently available for these networks, res
 
 <img src=".gitbook/assets/gnosis-logo.png" alt="" data-size="line"> Gnosis Chain
 
-<img src=".gitbook/assets/image (87) (1) (1) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum
-
-<img src=".gitbook/assets/image (72).png" alt="" data-size="line"> Optimistic Goerli Testnet
-
 <img src=".gitbook/assets/image (81) (1) (1).png" alt="" data-size="line"> Avalanche C-Chain
 
 <img src=".gitbook/assets/image (79) (1) (1).png" alt="" data-size="line"> Avalanche C-Chain Fuji
@@ -58,7 +62,7 @@ While Web3 Gateway integration isn't currently available for these networks, res
 
 <img src=".gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum One
 
-<img src=".gitbook/assets/image (83) (2).png" alt="" data-size="line"> Arbitrum Goerli Testnet
+<img src=".gitbook/assets/image (83) (2).png" alt="" data-size="line"> Arbitrum Görli Testnet
 
 <img src=".gitbook/assets/moonbeam-logo.png" alt="" data-size="line"> Moonbeam
 
