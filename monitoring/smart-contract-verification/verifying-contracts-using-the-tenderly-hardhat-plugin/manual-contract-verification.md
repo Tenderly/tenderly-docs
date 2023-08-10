@@ -26,7 +26,7 @@ tdly.setup({ automaticVerifications: false });
 
 The simple way to manually verify a contract is to call the `hre.tenderly.verify()` function and provide a reference to the contract you want to verify.
 
-First, deploy the Greeter Smart Contract using Ethers.js following the example below:
+First, deploy the Greeter Smart Contract using Ethers.js. Before the verification code, you have to await for deployment to be confirmed via `await greeter.deployed()`.
 
 ```jsx
 const Greeter = await ethers.getContractFactory("Greeter");
@@ -96,7 +96,6 @@ With more power over configuring the verification process, you need to do provid
 
 * **For contracts**: Specify the **source code** of the Greeter Smart Contract and the **address** it’s deployed to on a **specific network** (or several networks).
 * **For libraries**: Specify a list of all the libraries referenced by the contract as additional contracts, with the same information you’d provide to specify a contract. If already deployed, you can paste the address to `compiler.settings.libraries` parameter like you would paste in solidity compiler input.
-*
 
 ```tsx
 // File: scripts/greeter/manual-advanced.ts
@@ -108,7 +107,8 @@ export async function main() {
   const Greeter = await ethers.getContractFactory("Greeter");
   const greeter = await Greeter.deploy("Hello, Manual Hardhat!");
 
-  await greeter.deployed();
+  await greeter.deployed(); // await for the contract to be fully deployed
+  
   const greeterAddress = greeter.address;
   console.log("Manual Simple: {Greeter} deployed to", greeterAddress);
 

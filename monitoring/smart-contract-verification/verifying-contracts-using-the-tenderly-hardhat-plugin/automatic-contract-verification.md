@@ -10,7 +10,7 @@ tdly.setup({ automaticVerifications: true });
 // tdly.setup();
 ```
 
-The code example below deploys the `Greeter` contract and verifies it in Tenderly. The contract verification process is seamless, requiring no additional steps apart from deploying the contract.
+The code example below deploys the `Greeter` contract and verifies it in Tenderly. The only step is to wait for the the confirmation of contract's deployment by calling `await greeter.deployed()` , so the plugin gets a chance to verify the contract after it's confirmed.
 
 ```tsx
 // File: scripts/greeter/automatic.ts

@@ -94,8 +94,29 @@ If you prefer manual verification, disable automatic verification with the `auto
 tdly.setup({ automaticVerifications: false });
 ```
 
+4. Extend the hardhat config with Tenderly configuration object:
+
+```
+const config: HardhatUserConfig = {
+  solidity: {...},
+  networks: {...},
+  tenderly: {
+    project: 'my-project-slug',
+    username: 'my-username'
+  }
+```
+
+Replace the `my-project-slug` and `my-username` with appropriate values you can [find in the dashboard](../../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md).
+
 #### **Verifying a smart contract**
 
-**Automatic verification:** By default, the plugin automatically verifies contracts after deployment. You don't need to take any additional steps.
+**Automatic verification:** By default, the plugin automatically verifies contracts after deployment. It's necessary to await for the contract to be deployed for the plugin to verify the contract:
 
-**Simple manual verification:** To call the verification explicitly, use **`tenderly.verify()`**. You need to pass a minimal configuration object that includes the contract name and address.
+```
+const Ctrct = await ethers.getContractFactory("Ctrct");
+const ctrct = await ctrct.deploy();
+
+await ctrct.deployed(); // hardhat-tenderly plugin verifies the contract automatically
+```
+
+**Simple manual verification:** To call the verification explicitly, use **`tenderly.verify()`**. You need to pass a minimal configuration object that includes the contract name and address. Learn how to [manually verify your contracts](../../monitoring/smart-contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/manual-contract-verification.md#manual-verification-methods).

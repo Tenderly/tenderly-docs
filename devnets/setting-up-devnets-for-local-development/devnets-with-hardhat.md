@@ -25,7 +25,7 @@ module.exports = {
 };
 ```
 
-Replace **`YOUR_DEVNET_JSON_RPC_URL`** with the DevNet RPC URL, you obtained from Tenderly by Spawning a DevNet via [UI](https://dashboard.tenderly.co/register?redirectTo=devnets).
+Replace **`YOUR_DEVNET_JSON_RPC_URL`** with the DevNet RPC URL, you obtained from Tenderly by [Spawning a DevNet via UI](https://dashboard.tenderly.co/nenad/tst/devnets).
 
 ### Automatic creation of RPC URL
 

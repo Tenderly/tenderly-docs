@@ -13,6 +13,19 @@ When it comes to the Tenderly Hardhat plugin, there are 3 ways to verify your Sm
 * **Simple manual**: You need to call the verification explicitly (`tenderly.verify()`), which requires you to pass a minimal configuration object: the name and the address.
 * **Advanced manual**: You must call the verification explicitly (`tenderly.verifyMultiCompilerAPI()`). This requires you to pass a very detailed configuration object: all the contracts involved, their source, the addresses they’re deployed at, all the libraries used, and Solidity compiler configuration.
 
+{% hint style="success" %}
+Whether using automatic or manual approach, verification can happen only after the contract deployment is confirmed. Calling the blocking `deployed` method on the contract:
+
+```
+const Ctrct = await ethers.getContractFactory("Ctrct");
+const ctrct = await ctrct.deploy();
+
+await ctrct.deployed(); // hardhat-tenderly plugin verifies the contract
+// if automatic, the contract is deployed
+// if manual, paste the verification code here
+```
+{% endhint %}
+
 Before starting the process of verification using one of these methods, you need to set up your development environment.
 
 {% hint style="info" %}
@@ -27,7 +40,12 @@ To use a specific Tenderly contract verification method, you need a Hardhat proj
 * Alternatively, take a look at the [complete example project on Git](https://github.com/Tenderly/hardhat-tenderly/tree/master/examples/contract-verification).
 * Next, authenticate with Tenderly. You can authenticate in two ways:
   * Recommended option: Login using [Tenderly CLI](https://github.com/Tenderly/tenderly-cli#login)
-  * Generate an API key in the Dashboard and place it in `~/.tenderly/config.yaml` under `access_key.`
+
+```
+tenderly login
+```
+
+* Generate an API key in the Dashboard and place it in `~/.tenderly/config.yaml` under `access_key.`
 
 ## Installing the Tenderly Hardhat plugin
 
@@ -63,6 +81,23 @@ For now, remember it’s important to call `tenderly.setup()` so the plugin init
 ```tsx
 tdly.setup({ automaticVerifications: false });
 ```
+
+Next, you need to extend hardhat configuration with information about the project and your access data:
+
+```
+//File:  hardhat.config.ts
+//...
+
+const config: HardhatUserConfig = {
+  solidity: {...},
+  networks: {...},
+  tenderly: {
+    project: 'my-project-slug',
+    username: 'my-username'
+  }
+```
+
+Replace the `my-project-slug` and `my-username` with appropriate values you can [find in the dashboard](../../../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md).
 
 ## Using an example contract
 
