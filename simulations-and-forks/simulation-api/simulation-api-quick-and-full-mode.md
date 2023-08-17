@@ -88,7 +88,7 @@ approveDai();
 {% endtab %}
 
 {% tab title="Quick Result" %}
-```
+```json
 Simulation: 179.03ms
 {
   "hash": "0x1e44c2d964c9805b235475e55c31c27785aa2fc00129d2a4b21ed5eed6928929",
@@ -313,7 +313,7 @@ approveDai();
 {% endtab %}
 
 {% tab title="Full result" %}
-```
+```json
 Simulation: 180.699ms
 {
   "hash": "0x1e44c2d964c9805b235475e55c31c27785aa2fc00129d2a4b21ed5eed6928929",

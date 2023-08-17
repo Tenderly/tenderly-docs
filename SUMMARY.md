@@ -82,6 +82,7 @@
     * [Deploy Smart Contracts Once per Test-Suite Execution](simulations-and-forks/integration-guides/testing/deploy-smart-contracts-once-per-test-suite-execution.md)
     * [Reset Transactions After Completing the Test](simulations-and-forks/integration-guides/testing/reset-transactions-after-completing-the-test.md)
 * [Reference](simulations-and-forks/reference/README.md)
+  * [Tenderly Simulation API](simulations-and-forks/reference/tenderly-simulation-api.md)
   * [Tenderly Fork Customization API](simulations-and-forks/reference/tenderly-fork-customization-via-api/README.md)
     * [How to Advance/Mine the Block](simulations-and-forks/reference/tenderly-fork-customization-via-api/how-to-advance-mine-the-block.md)
     * [How to Advance Time on Fork](simulations-and-forks/reference/tenderly-fork-customization-via-api/how-to-advance-time-on-fork.md)
