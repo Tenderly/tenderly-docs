@@ -31,7 +31,7 @@ tenderly.setup({ automaticVerifications: false });
 
 Additionally, to get the address where the implementation is deployed, we'll need to use `@openzeppelin/upgrades-core` package.
 
-Verification of the proxy implementation is usually quite straight forward: you'd verify it as you would verify any other contract:
+Verification of the proxy implementation is usually quite straightforward: you'd verify it as you would verify any other contract:
 
 ```ts
 await tenderly.verify({
