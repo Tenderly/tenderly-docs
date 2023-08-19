@@ -319,7 +319,7 @@ module.exports = {
 };
 ```
 
-Finally all we need to is modify the deployment script in order to add the verify step and an example transaction:
+Finally all we need to do is modify the deployment script in order to add the verify step and an example transaction:
 
 ```
 const hre = require("hardhat");
@@ -605,7 +605,7 @@ Error: 0x0 Error: INVALID OPCODE, execution stopped
 ...
 ```
 
-![This the the error we get when we don’t proxy our requests through the Tenderly CLI](<../.gitbook/assets/image (45).png>)
+![This the error we get when we don’t proxy our requests through the Tenderly CLI](<../.gitbook/assets/image (45).png>)
 
 ![And this is the human readable stack trace we get when we do proxy our requests thru the Tenderly CLI](<../.gitbook/assets/image (23).png>)
 
@@ -719,7 +719,7 @@ You are also able to import contracts into Remix from your Tenderly project:
 
 ![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.50.58.png>)
 
-You can also add new contracts to your project and see them in Remix at any point. Let's say we want to add this Dai contract into our project in Tenderly. We will copy it's address, go back to the project we want to add it to and go through the flow:
+You can also add new contracts to your project and see them in Remix at any point. Let's say we want to add this Dai contract into our project in Tenderly. We will copy its address, go back to the project we want to add it to and go through the flow:
 
 ![](<../.gitbook/assets/Screenshot 2021-11-18 at 09.52.54.png>)
 
