@@ -12,7 +12,7 @@ You can import any contract through the standard flow:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.23.09.png>)
 
-Tenderly will automatically detect a proxy contract and give you the option to add it's latest implementation as well:
+Tenderly will automatically detect a proxy contract and give you the option to add its latest implementation as well:
 
 ![](<../../.gitbook/assets/Screenshot 2021-10-14 at 16.24.23.png>)
 
