@@ -1,26 +1,28 @@
 ---
-description: Verify proxy contracts in Tenderly using hardhat-tenderly plugin.
+description: >-
+  Learn how to verify proxy contracts on Tenderly using the Tenderly Hardhat
+  plugin.
 ---
 
 # Verifying Proxy Contracts on Tenderly
 
-When working with proxies, to get full support for transactions debugging, monitoring, and alerting, it's necessary to verify:
+To get full support for transactions debugging, monitoring, and alerting with proxy contracts, you need to verify the following:
 
-* the proxy itself,
-* &#x20;the implementation behind the proxy,
-* any dependencies the implementation has,
-* new implementation instances deployed with upgrades.
+* Proxy contract
+* Implementation behind the proxy
+* Any dependencies the implementation has
+* New implementation instances deployed with upgrades
 
 <figure><img src="../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
-Verification process may differ based on the type of proxy you're using and the approach to the implementation.
+The verification process varies depending on the proxy contract type and approach to the implementation.
 
 ### Overview
 
-In this guide, we'll be using an [example hardhat project](https://github.com/Tenderly/tenderly-examples), relying on `@tenderly/tenderly-hardhat` plugin to show verification of OpenZepplin's [UUPSUpgradeable](https://docs.openzeppelin.com/contracts/4.x/api/proxy#UUPSUpgradeable), [TransparentUpgradeableProxy](https://docs.openzeppelin.com/contracts/4.x/api/proxy#TransparentUpgradeableProxy), and [BeaconProxy](https://docs.openzeppelin.com/contracts/4.x/api/proxy#BeaconProxy) alternatives.
+In this guide, we'll use [an example Hardhat project](https://github.com/Tenderly/tenderly-examples) and the `@tenderly/tenderly-hardhat` plugin to demonstrate the verification of OpenZeppelin's [UUPSUpgradeable](https://docs.openzeppelin.com/contracts/4.x/api/proxy#UUPSUpgradeable), [TransparentUpgradeableProxy](https://docs.openzeppelin.com/contracts/4.x/api/proxy#TransparentUpgradeableProxy), and [BeaconProxy](https://docs.openzeppelin.com/contracts/4.x/api/proxy#BeaconProxy) alternatives.
 
 {% hint style="warning" %}
-It's necessary to use the [manual contract verification method](manual-contract-verification.md) when working with proxies.
+Proxy contracts need to be [verified manually](manual-contract-verification.md). Turn off automatic verification like so:
 
 ```typescript
 import * as tenderly from "@tenderly/hardhat-tenderly";
@@ -29,9 +31,9 @@ tenderly.setup({ automaticVerifications: false });
 ```
 {% endhint %}
 
-Additionally, to get the address where the implementation is deployed, we'll need to use `@openzeppelin/upgrades-core` package.
+To obtain the address of the deployed implementation, use the `@openzeppelin/upgrades-core` package.
 
-Verification of the proxy implementation is usually quite straight forward: you'd verify it as you would verify any other contract:
+Verifying the proxy implementation is usually straightforward; verify it just like any other contract:
 
 ```ts
 await tenderly.verify({
@@ -42,12 +44,12 @@ await tenderly.verify({
 });
 ```
 
-Verification of the proxy instance itself has two prerequisite steps to it:
+To verify the proxy instance, you need to complete these two preliminary steps:
 
-* [Load the exact smart contract of the proxy](verifying-proxy-contracts-on-tenderly.md#loading-proxy-contracts) so it gets compiled, depending on the type of proxy you're using. To make this happen, we'll need to put the proxy contracts through the compiler by creating a dummy proxy file.
-* [Adapt the `hardhat.config.ts`](verifying-proxy-contracts-on-tenderly.md#configuring-solidity-compiler-overrides) to have the exact settings Openzepplin contracts were compiled with.
+* [Load the exact smart contract of the proxy](verifying-proxy-contracts-on-tenderly.md#loading-proxy-contracts) so it gets compiled, depending on the type of proxy you're using. To make this happen, you'll need to put the proxy contracts through the compiler by creating a dummy proxy file.
+* [Modify `hardhat.config.ts`](verifying-proxy-contracts-on-tenderly.md#configuring-solidity-compiler-overrides) to match the settings used to compile OpenZeppelin contracts.
 
-Having completed this, you can verify the proxy like any other contract:
+Once these steps are completed, you can proceed to verify the proxy just as you would with any other contract:
 
 ```ts
 await tenderly.verify({
@@ -56,9 +58,9 @@ await tenderly.verify({
 });
 ```
 
-### Running The Sample
+### Running the sample
 
-**Step 1:** Run the following commands to clone the repo and install dependencies:
+**Step 1:** Clone the repo and install dependencies:
 
 ```sh
 git clone git@github.com:Tenderly/tenderly-examples.git
@@ -66,24 +68,24 @@ cd contract-verification
 npm i
 ```
 
-**Step 2:** Set up [Tenderly CLI](https://github.com/Tenderly/tenderly-cli), using the following command:
+**Step 2:** Set up the [Tenderly CLI](https://github.com/Tenderly/tenderly-cli):
 
 ```sh
 brew tap tenderly/tenderly && brew install tenderly
 tenderly login
 ```
 
-**Step 3:** Modify your `hardhat.config.ts` file and update the `tenderly.username` and `tenderly.project` with your [username and project slug](../../../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md).
+**Step 3:** Modify your `hardhat.config.ts` file and update the `tenderly.username` and `tenderly.project` with your Tenderly [username and project slug](../../../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md).
 
-**Step 4:** The fastest way to deploy and verify contracts is to use [Tenderly DevNets](broken-reference). Go to Tenderly dashboard, and create a new DevNet template.&#x20;
+**Step 4:** The fastest way to deploy and verify contracts is to use [Tenderly DevNets](broken-reference). Log into the [Tenderly Dashboard](https://dashboard.tenderly.co/register?redirectTo=devnets) and create a new DevNet template.&#x20;
 
-<figure><img src="../../../.gitbook/assets/DevNetScreen.png" alt=""><figcaption><p>Project and DevNet Slug</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/DevNetScreen.png" alt=""><figcaption><p>Project and DevNet slug</p></figcaption></figure>
 
-**Step 5:** Spawn a DevNet from the template and use the RPC url:
+**Step 5:** Spawn a DevNet from the template you created and use the generated RPC URL. You can spawn a DevNet and obtain the RPC in three ways:
 
-* **Option 1**: Click Spawn DevNet in the dashboard, and copying the RPC link to `networks.tenderly.url` in `hardhat.config.ts`.
-* **Option 2**: Run the devnet spawning command you copied from the dashboard and paste the link to `networks.tenderly.url` in `hardhat.config.ts`.
-* **Option 3**: Run the `spawn-devnet-to-hardhat` script from the example project, which will spin up a fresh DevNet and update your hardhat project use it automatically. Replace `PROJECT_SLUG` and `DEVNET_TEMPLATE_SLUG` with appropriate values (see the screenshot)
+* **Option 1**: Click "Spawn DevNet" from the Dashboard and add the RPC link to `networks.tenderly.url` in the `hardhat.config.ts` file.
+* **Option 2**: Run the DevNet spawning command you copied from the Dashboard and paste the RPC link to `networks.tenderly.url` in `hardhat.config.ts` file.
+* **Option 3**: Run the `spawn-devnet-to-hardhat` script from the example project, which will spin up a fresh DevNet and update your Hardhat project automatically. Replace `PROJECT_SLUG` and `DEVNET_TEMPLATE_SLUG` with appropriate values. (see the screenshot)
 
 ```bash
 npm run spawn-devnet-to-hardhat <PROJECT_SLUG> <DEVNET_TEMPLATE_SLUG>
@@ -95,9 +97,9 @@ npm run spawn-devnet-to-hardhat <PROJECT_SLUG> <DEVNET_TEMPLATE_SLUG>
 rm -rf .openzeppelin &&  npx hardhat test --network tenderly      
 ```
 
-### Loading Proxy Contracts
+### Loading proxy contracts
 
-In order to verify the proxy contract, create a `DummyProxy.sol`, and import  OpenZepplin's proxy contracts you're using. This way, these contracts are loaded and have passed through compiler, enabling us to reference the exact contract source of the proxy when doing verification.
+To verify the proxy contract, create a `DummyProxy.sol` file and import the OpenZepplin proxy contracts you're working with. In doing so, these contracts are loaded and have passed through the compiler, enabling you to reference the exact contract source of the proxy during verification.
 
 {% code fullWidth="false" %}
 ```sol
@@ -116,16 +118,18 @@ abstract contract TransparentUpgradeableProxyAccess is TransparentUpgradeablePro
 ```
 {% endcode %}
 
-### Configuring Solidity Compiler Overrides
+### Configuring Solidity compiler overrides
 
-After compiling Openzepplin's proxy contracts, it's also necessary to indicate the exact:
+After compiling Openzepplin's proxy contracts, you also need to specify the following:
 
-* version of solidity compiler that was used for the contracts
-* optimization settings used by Openzepplin's upgrades plugin when performing proxy deployment/upgrades.
+* Version of the Solidity compiler that was used to compile the contracts
+* Optimization settings used by Openzepplin's upgrades plugin when performing proxy deployment/upgrades
 
-The hardhat-tenderly plugin takes the source code of smart contracts and compiler settings as inputs for the verification process. If any of these two pieces of information are off, verification will fail.
+{% hint style="info" %}
+The `hardhat-tenderly` plugin uses both the source code of smart contracts and compiler settings for verification. If either of these settings is incorrect, the verification will fail.
+{% endhint %}
 
-Add the following `overrides` map to `config.solidity` section of your hardhat config object.
+Add the following `overrides` map to the `config.solidity` section of your Hardhat config object:
 
 ```ts
 const config: HardhatUserConfig = {
@@ -185,20 +189,20 @@ const config: HardhatUserConfig = {
 };
 ```
 
-### Example: Proxied Vault
+### Example: Proxied vault
 
-Here are code samples showing verification of proxied Vault contract. The Vault has a reference to an ERC-20 token (`TToken`). We'll show how to verify the implementation and the proxy itself, using OpenZepplin's UUPS, Transparent, and Beacon approaches to proxying.
+Below are code samples showing the verification of a proxied Vault contract. The Vault references an ERC-20 token (TToken). We'll demonstrate how to verify both the implementation and the proxy using OpenZeppelin's UUPS, Transparent, and Beacon proxying methods.
 
 ### Verifying a UUPS proxy
 
-To verify the UUPS proxy and the underlying information, call hardhat-tenderly plugin twice:
+To verify the UUPS proxy and the underlying information, call the `hardhat-tenderly` plugin twice:
 
-1. To verify the implementation, provide:
-   * the `name` of your proxied contract (in our case `Vault`)
-   * the address where the contract is deployed, using the `getImplementationAddress` method from `@openzeppelin/upgrades-core`.
-2. To verify the proxy, provide:
+1. To verify the implementation, you need to provide the following:
+   * `name` of your proxied contract (in our case `Vault`)
+   * Address where the contract was deployed using the `getImplementationAddress` method from `@openzeppelin/upgrades-core`.
+2. To verify the proxy, provide the following:
    * `ERC1967Proxy` as the proxy contract `name`
-   * the address of the proxy `proxy.address`
+   * Address of the proxy `proxy.address`
 
 ```ts
 await tenderly.verify(
@@ -213,15 +217,15 @@ await tenderly.verify(
 );
 ```
 
-#### Complete Code Sample
+#### Complete code sample
 
-Here's a complete hardhat test which:
+Here's a complete Hardhat test that does the following:
 
-* deploys the `TToken` (needed for the vault);
-* deploys `Vault` as a proxy, initialized with the `TToken` contract;
-* verifies the proxy (`ERC1967Proxy`) instance deployed at `proxy.address`;
-* verifies the implementation instance `Vault`, deployed at `getImplementationAddress(ethers.provider, proxy.address)`
-* upgrades the proxy to `VaultV2`
+* Deploys the `TToken` (needed for the vault)
+* Deploys `Vault` as a proxy, initialized with the `TToken` contract
+* Verifies the proxy (`ERC1967Proxy`) instance deployed at `proxy.address`
+* Verifies the implementation instance `Vault`, deployed at `getImplementationAddress(ethers.provider, proxy.address)`
+* Upgrades the proxy to `VaultV2`
 
 ```ts
 import { getImplementationAddress } from "@openzeppelin/upgrades-core";
@@ -293,9 +297,9 @@ describe("Vault", () => {
 });
 ```
 
-### Verifying a transparent proxy
+### Verifying a Transparent proxy
 
-To verify the UUPS proxy and the underlying information, call hardhat-tenderly whilst passing two contracts: `Vault` for the implementation, and `TransparentUpgradeableProxy` for the proxy itself:
+To verify the UUPS proxy and the underlying information, call `hardhat-tenderly` while passing two contracts: `Vault` for the implementation, and `TransparentUpgradeableProxy` for the proxy itself:
 
 ```ts
 await tenderly.verify(
@@ -310,14 +314,14 @@ await tenderly.verify(
 );
 ```
 
-1. To verify the implementation, provide:
-   * the `name` of your proxied contract (in our case `Vault`)
-   * the address where the contract is deployed, using the `getImplementationAddress` method from `@openzeppelin/upgrades-core`.
-2. To verify the proxy, provide:
+1. To verify the implementation, provide the following:
+   * `name` of your proxied contract (in our case `Vault`)
+   * Address where the contract was deployed, using the `getImplementationAddress` method from `@openzeppelin/upgrades-core`.
+2. To verify the proxy, provide the following:
    * `TransparentUpgradeableProxy` as the proxy contract `name`
-   * the address of the proxy `proxy.address`
+   * Address of the proxy `proxy.address`
 
-#### Complete Code Sample
+#### Complete code sample
 
 ```ts
 import { getImplementationAddress } from "@openzeppelin/upgrades-core";
@@ -392,7 +396,7 @@ describe("Vault", () => {
 
 ### Verifying a Beacon proxy
 
-To verify the Beacon proxy and the underlying information, we have to verify 2 contracts: the `Vault` (implementation) and OpenZepplin's `UpgradableBeacon`:
+To verify the Beacon proxy and the underlying information, you have to verify two contracts: the `Vault` (implementation) and OpenZepplin's `UpgradableBeacon`:
 
 ```ts
  await tenderly.verify(
@@ -410,7 +414,7 @@ To verify the Beacon proxy and the underlying information, we have to verify 2 c
 );
 ```
 
-#### Complete Code Sample
+#### Complete code sample
 
 ```ts
 import { getImplementationAddressFromBeacon } from "@openzeppelin/upgrades-core";
