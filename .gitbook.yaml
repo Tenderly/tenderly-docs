@@ -5,4 +5,4 @@ structure:
   summary: SUMMARY.md
 
 redirects:
-  verify-proxy-contract: monitoring/smart-contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/verifying-proxy-contracts-on-tenderly
+  verify-proxy-contract: monitoring/smart-contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/verifying-proxy-contracts-on-tenderly.md
