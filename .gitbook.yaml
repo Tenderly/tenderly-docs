@@ -3,3 +3,6 @@ root: ./
 structure:
   readme: README.md
   summary: SUMMARY.md
+
+redirects:
+  verify-proxy-contract: monitoring/smart-contract-verification/verifying-contracts-using-the-tenderly-hardhat-plugin/verifying-proxy-contracts-on-tenderly
