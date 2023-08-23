@@ -8,6 +8,8 @@ description: >-
 
 The [@tenderly/hardhat-tenderly](https://www.npmjs.com/package/@tenderly/hardhat-tenderly) plugin enables you to verify contracts in Tenderly, enabling full transaction tracing and other features. The plugin verifies the contracts whether they're deployed on a public network (both mainnets and testnets) a [Tenderly fork](../../../simulations-and-forks/forks/) or a [Tenderly DevNet](broken-reference).
 
+{% embed url="https://www.youtube.com/watch?v=CVRSMYGXOrQ" %}
+
 When working with proxy contracts, you need to verify the following:
 
 * The proxy contract (e.g. OpenZepplin's proxies)
