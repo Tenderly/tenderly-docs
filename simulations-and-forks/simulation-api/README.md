@@ -37,6 +37,12 @@ When using the full mode, you can easily get highly detailed simulation info and
 [advanced-simulation-api-usage.md](advanced-simulation-api-usage.md)
 {% endcontent-ref %}
 
+You can find simulation endpoints here:
+
+{% content-ref url="../reference/tenderly-simulation-api.md" %}
+[tenderly-simulation-api.md](../reference/tenderly-simulation-api.md)
+{% endcontent-ref %}
+
 ### Simulation Bundles
 
 Aside from using Simulation RPC and Simulation API to simulate single transactions, you can use them to **simulate a sequence of interdependent transactions**. You can achieve this using **Simulation Bundle API**:

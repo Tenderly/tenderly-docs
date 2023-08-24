@@ -66,6 +66,7 @@
   * [How to Get a Fork JSON-RPC URL & ID](simulations-and-forks/forks/how-to-get-a-fork-json-rpc-url-and-id.md)
   * [Sending Transactions to Forks](simulations-and-forks/forks/sending-transactions-to-forks.md)
 * [Asset Changes](simulations-and-forks/asset-changes.md)
+* [Transaction Preview](simulations-and-forks/transaction-preview.md)
 * [Tutorials](simulations-and-forks/integration-guides/README.md)
   * [How to Add Transaction Preview to a MetaMask Snap Using Tenderly Simulation API](simulations-and-forks/integration-guides/how-to-add-transaction-preview-to-a-metamask-snap-using-tenderly-simulation-api.md)
   * [How to Add a Dapp Playground Mode to Uniswap's Interface](simulations-and-forks/integration-guides/how-to-add-a-dapp-playground-mode-to-uniswaps-interface.md)
