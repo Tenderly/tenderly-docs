@@ -26,6 +26,14 @@ The `Network` argument is also an object which gives you access to all the suppo
 * `Network.POLYGON`
 * `Network.MUMBAI`
 * `Network.BOBA_ETHEREUM`
+* `Network.BOBA_BINANCE`
+* `Network.BOBA_BINANCE_RIALTO`
+* `Network.OPTIMISTIC`
+* `Network.OPTIMISTIC_GOERLI`
+* `Network.BASE`
+* `Network.BASE_GOERLI`
+
+You can see the network list in **@tenderly/actions** npm package [here](https://github.com/Tenderly/tenderly-actions/blob/main/packages/actions/src/actions.ts).
 
 To demonstrate how all of this comes together, here’s an example Javascript variable that is configured to access the Mainnet:
 
