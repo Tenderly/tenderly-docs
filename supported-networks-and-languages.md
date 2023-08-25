@@ -58,8 +58,6 @@ While Web3 Gateway integration isn't currently available for these networks, res
 <img src=".gitbook/assets/Moonriver-MOVR.png" alt="" data-size="line">Moonriver
 
 <img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
-
-<img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"> Boba Network
 {% endtab %}
 
 {% tab title="Languages" %}
