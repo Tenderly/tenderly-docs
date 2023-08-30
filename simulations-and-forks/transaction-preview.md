@@ -96,6 +96,12 @@ Find an open-source GitHub repository here:
 See an open-source implementation of the Tenderly Rabby Transaction Preview
 {% endembed %}
 
+Here you can find a step-by-step tutorial for building your own Rabby Wallet Chrome extension with tranasction preview feature powered by Tenderly Simulation API:
+
+{% content-ref url="integration-guides/how-to-add-transaction-preview-to-a-rabby-wallet-using-tenderly-simulation-api.md" %}
+[how-to-add-transaction-preview-to-a-rabby-wallet-using-tenderly-simulation-api.md](integration-guides/how-to-add-transaction-preview-to-a-rabby-wallet-using-tenderly-simulation-api.md)
+{% endcontent-ref %}
+
 #### Examples
 
 <figure><img src="../.gitbook/assets/image (108).png" alt=""><figcaption><p>Transaction Preview in Rabby Wallet on Uniswap ERC20 Swap Example</p></figcaption></figure>

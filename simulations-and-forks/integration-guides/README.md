@@ -10,6 +10,10 @@ In this section, you'll find some examples and ideas on how you can incorporate 
 [how-to-add-transaction-preview-to-a-metamask-snap-using-tenderly-simulation-api.md](how-to-add-transaction-preview-to-a-metamask-snap-using-tenderly-simulation-api.md)
 {% endcontent-ref %}
 
+{% content-ref url="how-to-add-transaction-preview-to-a-rabby-wallet-using-tenderly-simulation-api.md" %}
+[how-to-add-transaction-preview-to-a-rabby-wallet-using-tenderly-simulation-api.md](how-to-add-transaction-preview-to-a-rabby-wallet-using-tenderly-simulation-api.md)
+{% endcontent-ref %}
+
 {% content-ref url="how-to-add-a-dapp-playground-mode-to-uniswaps-interface.md" %}
 [how-to-add-a-dapp-playground-mode-to-uniswaps-interface.md](how-to-add-a-dapp-playground-mode-to-uniswaps-interface.md)
 {% endcontent-ref %}
