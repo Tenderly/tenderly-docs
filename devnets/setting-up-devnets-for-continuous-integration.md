@@ -62,7 +62,6 @@ jobs:
 ```
 
 4. Add the DevNet JSON-RPC URL as a secret in your GitHub repository by going to the repository's "Settings" > "Secrets" > "New repository secret." Name the secret **`DEVNET_JSON_RPC_URL`** and set its value to the JSON-RPC URL you obtained from Tenderly.
-5. I you need to specify
 
 For further reference, check out [this example on GitHub](https://github.com/Tenderly/devnet-examples/tree/main/CI-project).
 
