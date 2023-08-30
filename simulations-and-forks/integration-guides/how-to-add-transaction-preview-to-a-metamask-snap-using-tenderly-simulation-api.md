@@ -9,7 +9,7 @@ description: >-
 
 This tutorial demonstrates how to add a "transaction preview" option to a wallet using [Tenderly Simulation API](https://docs.tenderly.co/simulations-and-forks/simulation-api). We’ll show you how to add this option to the MetaMask wallet.
 
-The "transaction preview" feature allows users to see the exact outcome of their transactions before submitting them to the production network. Wallets equipped with this feature make it easier for users to understand the financial implications of their transactions before making a commitment.
+The "[transaction preview](../transaction-preview.md)" feature allows users to see the exact outcome of their transactions before submitting them to the production network. Wallets equipped with this feature make it easier for users to understand the financial implications of their transactions before making a commitment.
 
 Simulations are executed on a fork of the latest state of the blockchain in a safe, risk-free environment. This helps wallet users prevent sending malicious or error-prone transactions.
 
