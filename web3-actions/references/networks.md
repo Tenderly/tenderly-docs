@@ -59,3 +59,5 @@ You can reference the supported network in your trigger configuration with the f
 <img src="../../.gitbook/assets/base mainnet.png" alt="" data-size="line"> Base Mainnet `=> 8453`
 
 <img src="../../.gitbook/assets/base testnet.png" alt="" data-size="line"> Base Görli Testnet  `=> 84531`
+
+<img src="../../.gitbook/assets/zora.png" alt="" data-size="line"> Zora `=> 7777777`

@@ -58,6 +58,8 @@ While Web3 Gateway integration isn't currently available for these networks, res
 <img src=".gitbook/assets/Moonriver-MOVR.png" alt="" data-size="line">Moonriver
 
 <img src=".gitbook/assets/logo.svg" alt="" data-size="line"> Cronos
+
+<img src=".gitbook/assets/zora.png" alt="" data-size="line"> Zora
 {% endtab %}
 
 {% tab title="Languages" %}
