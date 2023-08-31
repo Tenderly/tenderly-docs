@@ -6,6 +6,8 @@ description: Learn how to integrate DevNets into your Continuous Integration (CI
 
 Continuous Integration (CI) automates the process of building, testing, and deploying smart contracts when you make a code change. Setting up CI for your smart contract project ensures that your code is always tested and verified before deployment.
 
+{% embed url="https://www.youtube.com/watch?v=2m0nn17I57g" %}
+
 ### Why integrate DevNet into your CI
 
 1. **Isolated testing environment**: DevNet allows you to test your smart contracts in an isolated environment, reducing the risk of interference from other test environments or team members working on the same project. This ensures that your tests are accurate, consistent, and reliable, making it an essential tool for developing robust and high-quality smart contracts.
@@ -13,7 +15,7 @@ Continuous Integration (CI) automates the process of building, testing, and depl
 3. **Debugger integration**: Easily integrate Tenderly Debugger into your workflow to efficiently identify, diagnose, and fix issues in your code. Debugger allows you to quickly address problems and ensure that your smart contracts are robust and secure.
 4. **Reduced setup time**: Eliminate the need to manually set up and maintain a separate development network for smart contract testing. This saves time and resources, allowing you to focus on writing and testing your smart contracts rather than managing infrastructure.
 5. **Ensures latest chain state**: Access to the most recent chain state for the chosen network or state from a specific point in time. This enables accurate testing and validation of your project's progress, resulting in a more reliable development workflow.
-6. **Cost and resource efficiency**: Running CI tests on a DevNet is generally more cost-effective than using a public testnet or Mainnet. This eliminate the need to to mention host your own Mainnet fork where you might need to acquire test tokens or pay for gas. DevNet enable a more efficient use of computational resources, making it an excellent choice for development and testing.
+6. **Cost and resource efficiency**: Running CI tests on a DevNet is generally more cost-effective than using a public testnet or Mainnet. This eliminates the need to mention host your own Mainnet fork, where you might need to acquire test tokens or pay for gas. DevNet enable a more efficient use of computational resources, making it an excellent choice for development and testing.
 
 ### GitHub Actions
 
