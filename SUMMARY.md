@@ -194,7 +194,7 @@
 * [🤓 Privacy Policy](https://tenderly.co/privacy-policy)
 * [🔑 Platform Access](other/platform-access/README.md)
   * [How to Find the Project Slug, Username, and Organization Name](other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md)
-  * [How to Generate API Access Tokens](other/platform-access/how-to-generate-api-access-tokens.md)
+  * [How to Generate API Access Key](other/platform-access/how-to-generate-api-access-tokens.md)
 
 ***
 

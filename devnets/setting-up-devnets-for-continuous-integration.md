@@ -23,7 +23,7 @@ GitHub Actions is a CI/CD platform provided by GitHub that allows you to automat
 
 1. Create a **`.github/workflows`** directory in your project repository if it doesn't already exist.
 2. Create a new YAML file for your GitHub Actions workflow, such as **`smart-contract-ci.yml`**, in the **`.github/workflows`** directory.
-3. Populate the YAML file with the following content:
+3. Populate the YAML file with the following content, and replace `???` with [project slug](../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md), [username](../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md), and DevNet template slug.
 
 ```
 name: Smart Contract CI
@@ -61,9 +61,12 @@ jobs:
         working-directory: ./CI-project
         env:
           TENDERLY_ACCESS_KEY: ${{ secrets.TENDERLY_ACCESS_KEY }}
+          TENDERLY_PROJECT_SLUG: '???' # your project slug
+          TENDERLY_DEVNET_TEMPLATE: '???' # your devnet template slug
+          TENDERLY_ACCOUNT_ID: '???' # your username or organization name
 ```
 
-4. Add the DevNet JSON-RPC URL as a secret in your GitHub repository by going to the repository's "Settings" > "Secrets" > "New repository secret." Name the secret **`DEVNET_JSON_RPC_URL`** and set its value to the JSON-RPC URL you obtained from Tenderly.
+4. Add the `TENDERLY_ACCESS_KEY` as a secret in your GitHub repository by going to the repository's "Settings" > "Secrets" > "New repository secret." Name the secret **`TENDERLY_ACCESS_KEY`** and set its value to the [access token](../other/platform-access/how-to-generate-api-access-tokens.md) you obtained in Tenderly.
 
 For further reference, check out [this example on GitHub](https://github.com/Tenderly/devnet-examples/tree/main/CI-project).
 
