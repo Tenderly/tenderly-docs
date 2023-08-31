@@ -6,6 +6,8 @@ description: Learn how to use DevNets as part of your local development workflow
 
 In this guide, you'll learn how to set up DevNets for local development in a HardHat, Foundry, and Truffle project.&#x20;
 
+{% embed url="https://www.youtube.com/watch?v=wIdodbXV6GA" %}
+
 ### Why use DevNets in your local development workflows?
 
 1. **Faster development and testing**: Quickly test and debug smart contracts without the latency of public testnets or Mainnet and accelerate your development and debugging.
