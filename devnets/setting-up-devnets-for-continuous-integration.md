@@ -6,6 +6,8 @@ description: Learn how to integrate DevNets into your Continuous Integration (CI
 
 Continuous Integration (CI) automates the process of building, testing, and deploying smart contracts when you make a code change. Setting up CI for your smart contract project ensures that your code is always tested and verified before deployment.
 
+You can see an example setup on GitHub in [devnet-examples](https://github.com/Tenderly/devnet-examples) repository.
+
 {% embed url="https://www.youtube.com/watch?v=2m0nn17I57g" %}
 
 ### Why integrate DevNet into your CI
@@ -25,8 +27,7 @@ GitHub Actions is a CI/CD platform provided by GitHub that allows you to automat
 2. Create a new YAML file for your GitHub Actions workflow, such as **`smart-contract-ci.yml`**, in the **`.github/workflows`** directory.
 3. Populate the YAML file with the following content, and replace `???` with [project slug](../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md), [username](../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md), and DevNet template slug.
 
-```
-name: Smart Contract CI
+<pre><code>name: Smart Contract CI
 
 on:
   push:
@@ -53,8 +54,8 @@ jobs:
         run: yarn install
         working-directory: ./CI-project
 
-      - name: Install Tenderly CLI
-        run: curl <https://raw.githubusercontent.com/Tenderly/tenderly-cli/master/scripts/install-linux.sh> | sudo sh
+<strong>      - name: Install Tenderly CLI
+</strong>        run: curl https://raw.githubusercontent.com/Tenderly/tenderly-cli/master/scripts/install-linux.sh | sudo sh
 
       - name: Run tests
         run: yarn run test:devnet
@@ -64,9 +65,11 @@ jobs:
           TENDERLY_PROJECT_SLUG: '???' # your project slug
           TENDERLY_DEVNET_TEMPLATE: '???' # your devnet template slug
           TENDERLY_ACCOUNT_ID: '???' # your username or organization name
-```
+</code></pre>
 
 4. Add the `TENDERLY_ACCESS_KEY` as a secret in your GitHub repository by going to the repository's "Settings" > "Secrets" > "New repository secret." Name the secret **`TENDERLY_ACCESS_KEY`** and set its value to the [access token](../other/platform-access/how-to-generate-api-access-tokens.md) you obtained in Tenderly.
+
+The test command is `test:devnet`, which [spawns a new devnet automatically](https://github.com/Tenderly/devnet-examples/blob/main/spawn-devnet-auto/js/spawn-devnet.js) and runs hardhat tests against it.
 
 For further reference, check out [this example on GitHub](https://github.com/Tenderly/devnet-examples/tree/main/CI-project).
 
