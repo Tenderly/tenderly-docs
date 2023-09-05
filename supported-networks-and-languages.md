@@ -51,6 +51,8 @@ While Web3 Gateway integration isn't currently available for these networks, res
 
 <img src=".gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum One
 
+<img src=".gitbook/assets/image.png" alt="" data-size="line"> Arbitrum Nova
+
 <img src=".gitbook/assets/image (83) (2).png" alt="" data-size="line"> Arbitrum Görli Testnet
 
 <img src=".gitbook/assets/moonbeam-logo.png" alt="" data-size="line"> Moonbeam

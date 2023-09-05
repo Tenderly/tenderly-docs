@@ -131,7 +131,7 @@ If you need help with API authentication, please follow this guide:
 [how-to-generate-api-access-tokens.md](../../other/platform-access/how-to-generate-api-access-tokens.md)
 {% endcontent-ref %}
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Generate Access Token from Authorization page</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Generate Access Token from Authorization page</p></figcaption></figure>
 
 ## Step 3: Writing the logic for the Snap
 
@@ -270,7 +270,7 @@ When you install our MetaMask example, we show you how to run different types of
 * **Failed transaction simulation** with a predefined payload
 * **Custom transaction simulation** with any payload
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Tenderly Snap UI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Tenderly Snap UI</p></figcaption></figure>
 
 For the purpose of this tutorial, we’ll show you how to run simulations with a predefined payload and how to add your custom payload and execute the simulation.
 
