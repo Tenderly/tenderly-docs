@@ -48,6 +48,8 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum `=> 42161`
 
+<img src="../../.gitbook/assets/image (118).png" alt="" data-size="line"> Arbitrum Nova `=> 42170`
+
 <img src="../../.gitbook/assets/image (83) (2).png" alt="" data-size="line"> Arbitrum Goerli Testnet `=> 421613`
 
 <img src="../../.gitbook/assets/logo.svg" alt="" data-size="line"> Cronos `=> 25`
@@ -58,6 +60,6 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/base mainnet.png" alt="" data-size="line"> Base Mainnet `=> 8453`
 
-<img src="../../.gitbook/assets/base testnet.png" alt="" data-size="line"> Base Görli Testnet  `=> 84531`
+<img src="../../.gitbook/assets/base testnet.png" alt="" data-size="line"> Base Görli Testnet `=> 84531`
 
 <img src="../../.gitbook/assets/zora.png" alt="" data-size="line"> Zora `=> 7777777`
