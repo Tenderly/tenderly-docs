@@ -7,6 +7,7 @@
 * [🔍 Explorer](explorer.md)
 * [🪣 Tenderly Sandbox](tenderly-sandbox.md)
 * [🌊 Ethereum Development Workflow](ethereum-development-workflow.md)
+* [🦊 Tenderly Tx Preview Snap](how-to-install-tenderly-tx-preview-snap.md)
 
 ## 🚀 Web3 Gateway
 
