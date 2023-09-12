@@ -318,7 +318,7 @@ failedTransactionToMyContract:
             address: 0xad881d3d06c7f168715b84b54f9d3e1ff27b80d6
         - network: 3
           # Transaction must have failed
-          status: success
+          status: fail
           # Transaction must have been sent to this address
           to: 0x2364259ACD20Bd2A8dEfDc628f4099302449fd62
 ```

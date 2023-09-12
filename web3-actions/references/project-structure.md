@@ -25,7 +25,7 @@ src
 |--- |--- package.json
 |--- |--- tsconfig.json
 |--- |--- node_modules
-|         |--- @tenderly-actions
+|         |--- @tenderly/actions
 |         |--- typescript
 |--- tenderly.yaml
 ```
