@@ -11,6 +11,7 @@ List of custom RPC Methods:
 * [evm\_increaseTime](custom-rpc-methods.md#evm\_increasetime)
 * [evm\_setNextBlockTimestamp](custom-rpc-methods.md#evm\_setnextblocktimestamp)
 * [evm\_increaseBlocks](custom-rpc-methods.md#evm\_increaseblocks)
+* [eth\_sendTransaction](custom-rpc-methods.md#eth\_sendtransaction)
 * [eth\_createAccessList](custom-rpc-methods.md#eth\_createaccesslist)
 * [evm\_getLatest](custom-rpc-methods.md#evm\_getlatest)
 * [tenderly\_setBalance](custom-rpc-methods.md#tenderly\_setbalance)
