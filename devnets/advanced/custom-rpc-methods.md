@@ -121,6 +121,38 @@ Skips a number of blocks and generates a new block with the new block number.
 }
 ```
 
+### `eth_sendTransaction`
+
+Submits an unsigned transaction.
+
+**Parameters**
+
+1. **Transaction** - The transaction object
+   * `from`: `DATA`, 20 Bytes - The address the transaction is sent from.
+   * `to`: `DATA`, 20 Bytes - (optional, omitted when creating new contract) The address the transaction is directed to.
+   * `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. It will return unused gas.
+   * `gasPrice`: `QUANTITY` - (optional) Integer of the gasPrice used for each paid gas.
+   * `value`: `QUANTITY` - (optional) Integer of the value sent with this transaction.
+   * `data`: `DATA` - (optional) The compiled code of a contract OR the hash of the invoked method signature and encoded parameters.
+
+```json
+{
+  "id": 0,
+  "jsonrpc": "2.0",
+  "method": "eth_sendRawTransaction",
+  "params": [
+    {
+      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
+      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
+      "value": "0x0",
+      "data": "0x2e7700f0"
+    }
+  ]
+}
+```
+
+**RESULT**: Transaction hash `STRING` 32 byte hex value
+
 ### `eth_createAccessList`
 
 Returns the access tuples that would be touched by the transaction.
