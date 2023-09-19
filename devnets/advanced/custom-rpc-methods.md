@@ -140,7 +140,7 @@ Submits an unsigned transaction.
 {
   "id": 0,
   "jsonrpc": "2.0",
-  "method": "eth_sendRawTransaction",
+  "method": "eth_sendTransaction",
   "params": [
     {
       "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
