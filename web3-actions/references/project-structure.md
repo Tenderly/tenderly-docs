@@ -175,7 +175,7 @@ our-org/our-cool-project:
 
 The next step is to choose and define a trigger for the Web3 Action. A trigger is an event that Tenderly listens to and executes the Web3 Action once a criterion is met.
 
-For an in-depth reference of triggers, explore [available Web3 Action Trigger Types](broken-reference).
+For an in-depth reference of triggers, explore [available Web3 Action Trigger Types](action-functions-events-and-triggers.md).
 
 When defining a **trigger** for a Web3 Action, the first thing to specify is its type. In the example below, we’re defining the _block_ trigger type. This means that the `bestActionEver` Web3 Action will run once every 10 blocks get mined on Rinkeby.
 
