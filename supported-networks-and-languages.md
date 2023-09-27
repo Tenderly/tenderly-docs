@@ -17,9 +17,9 @@ In this section, we list all the networks that are fully supported by Tenderly, 
 | <img src=".gitbook/assets/Sepolia (1).png" alt="" data-size="line"> Sepolia                            | `https://sepolia.gateway.tenderly.co`          | `wss://sepolia.gateway.tenderly.co`          |
 | <img src=".gitbook/assets/image (69) (1) (1).png" alt="" data-size="line"> Polygon                     | `https://polygon.gateway.tenderly.co`          | `wss://polygon.gateway.tenderly.co`          |
 | <img src=".gitbook/assets/image (70) (1).png" alt="" data-size="line"> Polygon Mumbai                  | `https://polygon-mumbai.gateway.tenderly.co`   | `wss://polygon-mumbai.gateway.tenderly.co`   |
-| <img src=".gitbook/assets/boba_logo.png" alt="" data-size="line"> Boba Ethereum                        | `https://boba-ethereum.gateway.tenderly.co`    | `wss://boba-ethereum.gateway.tenderly.co`    |
-| <img src=".gitbook/assets/boba_logo (1).png" alt="" data-size="line"> Boba BNB                         | `https://boba-bnb.gateway.tenderly.co`         | `wss://boba-bnb.gateway.tenderly.co`         |
-| <img src=".gitbook/assets/boba_logo (2).png" alt="" data-size="line"> Boba BNB Testnet                 | `https://boba-bnb-testnet.gateway.tenderly.co` | `wss://boba-bnb-testnet.gateway.tenderly.co` |
+| <img src=".gitbook/assets/Boba Logo__Black Circle.png" alt="" data-size="line"> Boba Ethereum          | `https://boba-ethereum.gateway.tenderly.co`    | `wss://boba-ethereum.gateway.tenderly.co`    |
+| <img src=".gitbook/assets/Boba Logo__Black Circle (1).png" alt="" data-size="line"> Boba BNB           | `https://boba-bnb.gateway.tenderly.co`         | `wss://boba-bnb.gateway.tenderly.co`         |
+| <img src=".gitbook/assets/Boba Logo__Black Circle (2).png" alt="" data-size="line"> Boba BNB Testnet   | `https://boba-bnb-testnet.gateway.tenderly.co` | `wss://boba-bnb-testnet.gateway.tenderly.co` |
 | <img src=".gitbook/assets/image (87) (1) (1) (1) (1).png" alt="" data-size="line"> Optimistic Ethereum | `https://optimism.gateway.tenderly.co`         | `wss://optimism.gateway.tenderly.co`         |
 | <img src=".gitbook/assets/image (72).png" alt="" data-size="line"> Optimistic Görli Testnet            | `https://optimism-goerli.gateway.tenderly.co`  | `wss://optimism-goerli.gateway.tenderly.co`  |
 | <img src=".gitbook/assets/base mainnet.png" alt="" data-size="line"> Base Mainnet                      | `https://base.gateway.tenderly.co`             | `wss://base.gateway.tenderly.co`             |
