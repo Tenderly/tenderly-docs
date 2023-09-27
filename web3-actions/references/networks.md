@@ -56,7 +56,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/cronos-testnet-icon.png" alt="" data-size="line"> Cronos Testnet `=> 338`
 
-<img src="https://storage.googleapis.com/tenderly-public-assets/networks/boba-square.png" alt="" data-size="line"> Boba Network `=> 288`
+<img src="../../.gitbook/assets/Boba Logo__Black Circle (3).png" alt="" data-size="line"> Boba Network `=> 288`
 
 <img src="../../.gitbook/assets/base mainnet.png" alt="" data-size="line"> Base Mainnet `=> 8453`
 
