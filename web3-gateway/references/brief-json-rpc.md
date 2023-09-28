@@ -2278,12 +2278,7 @@ Submits a raw transaction.
   "jsonrpc": "2.0",
   "method": "eth_sendRawTransaction",
   "params": [
-    {
-      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      "value": "0x0",
-      "data": "0x2e7700f0"
-    }
+    "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"
   ]
 }
 ```
@@ -2300,12 +2295,7 @@ curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
   "jsonrpc": "2.0",
   "method": "eth_sendRawTransaction",
   "params": [
-    {
-      "from": "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      "to": "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      "value": "0x0",
-      "data": "0x2e7700f0"
-    }
+    "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"
   ]
 }'
 ```
@@ -2324,12 +2314,7 @@ async function runSendRawTransaction() {
 
   // Execute method
   const result = await provider.send("eth_sendRawTransaction", [
-    {
-      from: "0xDC6bDc37B2714eE601734cf55A05625C9e512461",
-      to: "0xff39a3e734fe363e631441f6d24c7539240c2628",
-      value: "0x0",
-      data: "0x2e7700f0",
-    },
+    "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"
   ]);
 
   // Print the output to console
