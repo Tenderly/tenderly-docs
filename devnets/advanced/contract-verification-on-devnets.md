@@ -10,6 +10,8 @@ Contract verification is the process of ensuring that the deployed smart contrac
 
 Tenderly uses the contract source code to enhance the execution data, enabling the full potential of our Debugger and other powerful tools. We recommend that you verify your smart contracts to take full advantage of Tenderly's features.
 
+{% embed url="https://www.youtube.com/watch?v=Gzpv1MYJk9k" %}
+
 This quick guide explains how to verify smart contracts on DevNets from the Tenderly Dashboard and via the Tenderly HardHat plugin.
 
 **Requirements**
