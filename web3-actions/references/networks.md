@@ -16,9 +16,9 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/image (75) (1) (1).png" alt="" data-size="line"> Rinkeby (deprecated) `=> 4`
 
-<img src="../../.gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Gorli`=> 5`
+<img src="../../.gitbook/assets/image (74) (1) (1) (1) (1).png" alt="" data-size="line"> Gorli `=> 5`
 
-&#x20;<img src="../../.gitbook/assets/holesky.png" alt="" data-size="line"> Holesky `=> 17000`
+<img src="../../.gitbook/assets/holesky.png" alt="" data-size="line"> Holesky `=> 17000`
 
 <img src="../../.gitbook/assets/image (83) (1) (1) (1).png" alt="" data-size="line"> RSK `=> 30`
 
