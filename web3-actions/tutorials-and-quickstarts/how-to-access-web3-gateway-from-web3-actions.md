@@ -1,14 +1,14 @@
 ---
 description: >-
-  Learn how to use Web3 Actions and Web3 Gateway to find contracts with the same
-  bytecode that were deployed by another contract.
+  Learn how to use Web3 Actions and Tenderly Node to find contracts with the
+  same bytecode that were deployed by another contract.
 ---
 
-# How to Access Web3 Gateway from Web3 Actions
+# How to Access Tenderly Node from Web3 Actions
 
 In this tutorial, we’ll create a Web3 Action that runs each time `UniswapV2Factory` deploys a new `UniswapV2Pair` contract. The Web3 Action will compare the bytecode of the newly deployed contract with the bytecode of another `UniswapV2Pair` contract. In this case, we’ll use the USDC Pair contract.
 
-To obtain the bytecodes, we’ll use [Tenderly Web3 Gateway](https://docs.tenderly.co/web3-gateway/web3-gateway) as our node provider. If the bytecodes match, the Web3 Action will store the pair’s address and contract’s bytecode in the Storage of the Web3 Action.
+To obtain the bytecodes, we’ll use [Tenderly Node](https://docs.tenderly.co/web3-gateway/web3-gateway) as our node provider. If the bytecodes match, the Web3 Action will store the pair’s address and contract’s bytecode in the Storage of the Web3 Action.
 
 If you want to skip the tutorial, here’s the complete solution:
 
@@ -124,13 +124,13 @@ project_slug: ""
 
 When our Web3 Action runs, it receives two inputs:
 
-* A [`context`](https://docs.tenderly.co/web3-actions/references/context-storage-and-secrets)object that provides access to Tenderly Web3 Gateway and Storage
-* A [`transactionEvent`](https://docs.tenderly.co/web3-actions/references/action-functions-events-and-triggers#transaction-event) payload containing data relevant to the transaction which triggered the Web3 Action
+* A [`context`](https://docs.tenderly.co/web3-actions/references/context-storage-and-secrets)object that provides access to Tenderly Node and Storage
+* A [`transactionEvent`](https://docs.tenderly.co/web3-actions/references/action-functions-events-and-triggers#transaction-event) payload containing data relevant to the transaction that triggered the Web3 Action
 
 We’ll use the `context` object to access `gateways`, which will be our node provider for Ethers and Storage for storing matched bytecode.
 
 {% hint style="info" %}
-Learn [how to use Tenderly Web3 Gateway in Web3 Actions](https://docs.tenderly.co/web3-actions/references/web3-gateway-access) to access any of the supported networks, including Mainnet, without the hassle of managing URLs or secret keys.
+Learn [how to use Tenderly Node in Web3 Actions](https://docs.tenderly.co/web3-actions/references/web3-gateway-access) to access any of the supported networks, including Mainnet, without the hassle of managing URLs or secret keys.
 {% endhint %}
 
 As for the `transactionEvent` payload, we’ll use its `logs` property to find the event log corresponding to the `PairCreated` topic.
@@ -175,7 +175,7 @@ We’ll be using the `USDC UniswapV2Pair` contract’s bytecode to determine if 
 
 To get the bytecodes of those contracts, we need to use the Ethers `getCode` function.
 
-To complete these steps, we first need to set up a node provider — Tenderly Web3 Gateway: `gateways`.
+To complete these steps, we first need to set up a node provider — Tenderly Node: `gateways`.
 
 By accessing the `gateways` property of the `context` object, we can easily obtain the JSON-RPC URL for our desired network (`MAINNET`, in our case) by invoking the `getGateway()` function and using it as the provider for Ethers.
 

@@ -1,24 +1,24 @@
 ---
 description: >-
   Learn how to set up a Web3 Action with access to the Mainnet through Tenderly
-  Web3 Gateway.
+  Node.
 ---
 
-# Web3 Gateway Access
+# Tenderly Node Access
 
-You can access [Tenderly’s production node Web3 Gateway](../../web3-gateway/) directly from your Web3 Action functions. This allows you to send transactions on the Mainnet or testnets and read on-chain data automatically through Web3 Actions.
+You can access [Tenderly Node](../../web3-gateway/) directly from your Web3 Action functions. This allows you to send transactions on the Mainnet or testnets and read on-chain data automatically through Web3 Actions.
 
 Setting up Web3 Actions to access the blockchain requires minimal setup — a single Javascript variable. No need to worry about copying/pasting RPC URLs, managing secret keys, etc. Tenderly takes care of all this for you in the background.
 
 In this guide, you’ll learn how to configure your Web3 Action function code to use Tendely’s production node to access the Mainnet.
 
-## Web3 Gateway in Context
+## Tenderly Node in Context
 
 In Web3 Actions, access to Tenderly’s node is enabled through the `context` object. Learn more about [Web3 Actions Context](https://docs.tenderly.co/web3-actions/references/context-storage-and-secrets) here.
 
 The `context` object contains a property called `gateways` which gives you access to the `getGateway()` method. This method requires one argument `Network`, which is used to specify the network you want to access.
 
-The `Network` argument is also an object which gives you access to all the supported networks in Web3 Gateway:
+The `Network` argument is also an object which gives you access to all the supported networks in Tenderly Node:
 
 * `Network.MAINNET`
 * `Network.GOERLI`
@@ -58,7 +58,7 @@ const { Network } = require("@tenderly/actions")
 // Do not change the default 'actionFn' name.
 const actionFn = async (context, blockEvent) => {
 
-	// Setting a variable that will store the Web3 Gateway RPC URL and secret key
+	// Setting a variable that will store the Tenderly Node RPC URL and secret key
 	const defaultGatewayURL = context.gateways.getGateway(Network.MAINNET);
 
 	// Using the Ethere.js provider class to call the RPC URL

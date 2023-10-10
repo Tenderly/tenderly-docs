@@ -31,7 +31,7 @@ Replays transaction on the blockchain and provides information about the executi
 {% tab title="cURL" %}
 ```bash
 
-curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://mainnet.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \

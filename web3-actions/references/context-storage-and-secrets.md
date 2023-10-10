@@ -1,6 +1,6 @@
 ---
 description: >-
-  Learn how to get access to the blockchain through Web3 Gateway with a single
+  Learn how to get access to the blockchain through Tenderly Node with a single
   line of code, store and fetch data from Storage, and save sensitive
   information in Secrets, such as API keys.
 ---
@@ -9,7 +9,7 @@ description: >-
 
 This guide provides an overview of the `context` object and how to use it to get access to Gateway, Storage, and Secrets utilities within Web3 Actions.
 
-You’ll also learn how to access Tenderly’s production node [Web3 Gateway](https://docs.tenderly.co/web3-gateway/quickstart-query-blockchain) through `context`, how to manage and access private data such as API keys with Secrets, how to persist data to Storage, and how to access this data from your application.
+You’ll also learn how to access [Tenderly Node](https://docs.tenderly.co/web3-gateway/quickstart-query-blockchain) through `context`, how to manage and access private data such as API keys with Secrets, how to persist data to Storage, and how to access this data from your application.
 
 ### Context
 
@@ -28,7 +28,7 @@ Storage and Secrets are shared between all Actions within a project in Tenderly.
 
 #### Gateways
 
-The Gateways utility (`context.gateways`) gives you access to [Tenderly’s production node Web3 Gateway](broken-reference), allowing you to send transactions or read on-chain data with Web3 Actions.
+The Gateways utility (`context.gateways`) gives you access to [Tenderly Node](broken-reference), allowing you to send transactions or read on-chain data with Web3 Actions.
 
 The `gateways` property gives you access to a method called `getGateway()`, which requires one argument - the network you want to access. To access the Mainnet, for example, the argument needs to be formatted like this `Network.MAINNET`.
 
@@ -38,7 +38,7 @@ An example of a completed statement stored in a variable looks like this:
 const defaultGatewayURL = context.gateways.getGateway(Network.MAINNET)
 ```
 
-Here’s a list of arguments for the `getGateway()` method for each supported network in Web3 Gateway:
+Here’s a list of arguments for the `getGateway()` method for each supported network in Tenderly Node:
 
 * `Network.MAINNET`
 * `Network.GOERLI`
@@ -47,7 +47,7 @@ Here’s a list of arguments for the `getGateway()` method for each supported ne
 * `Network.MUMBAI`
 * `Network.BOBA_ETHEREUM`
 
-For more details about how `context.gateways` works and sample code snippets to help you understand how to use it, read through the [**Web3 Gateway access in Web3 Actions**](web3-gateway-access.md) documentation page.
+For more details about how `context.gateways` works and sample code snippets to help you understand how to use it, read through the [**Tenderly Node access on the Web3 Actions**](web3-gateway-access.md) documentation page.
 
 ### Storage
 

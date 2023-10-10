@@ -36,7 +36,7 @@ Returns information about a block by hash.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -220,7 +220,7 @@ Returns information about a block by number.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -406,7 +406,7 @@ Returns the number of transactions in a block from a block matching the given bl
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -487,7 +487,7 @@ Returns the number of transactions in a block matching the given block number.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -567,7 +567,7 @@ Returns the number of uncles in a block from a block matching the given block ha
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -648,7 +648,7 @@ Returns the number of transactions in a block matching the given block number.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -726,7 +726,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -800,7 +800,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -880,7 +880,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -954,7 +954,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1070,7 +1070,7 @@ Executes a new message call immediately without creating a transaction on the bl
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1202,7 +1202,7 @@ Generates and returns an estimate of how much gas is necessary to allow the tran
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1320,7 +1320,7 @@ Generates an access list for a transaction.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1412,7 +1412,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1486,7 +1486,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1566,7 +1566,7 @@ Transaction fee history
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1675,7 +1675,7 @@ Creates a filter object, based on filter options, to notify when the state chang
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1769,7 +1769,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1843,7 +1843,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -1919,7 +1919,7 @@ Polling method for a filter, which returns an array of logs which occurred since
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2008,7 +2008,7 @@ Returns an array of all logs matching filter with given id.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2118,7 +2118,7 @@ Returns an array of all logs matching filter with given id.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2241,7 +2241,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2315,7 +2315,7 @@ none
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2393,7 +2393,7 @@ Returns the balance of the account of given address.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2482,7 +2482,7 @@ Returns the value from a storage position at a given address.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2568,7 +2568,7 @@ Returns the number of transactions sent from an address.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2652,7 +2652,7 @@ Returns code at a given address.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2738,7 +2738,7 @@ Submits a raw transaction.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2814,7 +2814,7 @@ Returns the information about a transaction requested by transaction hash.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -2922,7 +2922,7 @@ Returns information about a transaction by block hash and transaction index posi
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -3033,7 +3033,7 @@ Returns information about a transaction by block number and transaction index po
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -3139,7 +3139,7 @@ Returns the receipt of a transaction by transaction hash.
 
 {% tab title="cURL" %}
 ```bash
-curl https://goerli.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://goerli.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \

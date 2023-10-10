@@ -20,7 +20,7 @@ Tenderly units are similar to how you would be charged by platforms like Google 
 
 ## **Tenderly Units (TU) cost**
 
-#### **Web3Gateway**
+#### **Tenderly Node**
 
 | Category             | Description                                                                             | Usage footprint |
 | -------------------- | --------------------------------------------------------------------------------------- | --------------- |

@@ -75,7 +75,7 @@ Simulates a bundle of transactions as it would execute on the given block and re
 
 {% tab title="cURL" %}
 <pre class="language-bash"><code class="lang-bash">
-<strong>curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+<strong>curl https://mainnet.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 </strong>-X POST \
 -H "Content-Type: application/json" \
 -d \

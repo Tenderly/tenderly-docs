@@ -27,7 +27,7 @@ In this example, we'll do a quick simulation of `0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e
 {% tabs %}
 {% tab title="Simulation RPC" %}
 ```bash
-curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://mainnet.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -174,7 +174,7 @@ Here's the cURL performing the request. Check out the Transfer event in the resp
 # simulate DAI minting by 0xe2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2
 # 0xf1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1 gets the minted DAI
 # Simulated on the latest block
-curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://mainnet.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
@@ -294,7 +294,7 @@ Look for the Transfer, Approve, and Transfer events in the response, meaning the
 {% tabs %}
 {% tab title="Simulation Bundle RPC" %}
 ```bash
-curl https://mainnet.gateway.tenderly.co/$TENDERLY_WEB3_GATEWAY_KEY \
+curl https://mainnet.gateway.tenderly.co/$TENDERLY_NODE_KEY \
 -X POST \
 -H "Content-Type: application/json" \
 -d \
