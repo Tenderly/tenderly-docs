@@ -9,9 +9,9 @@
 * [🌊 Ethereum Development Workflow](ethereum-development-workflow.md)
 * [🦊 Tenderly TX Preview Snap](how-to-install-tenderly-tx-preview-snap.md)
 
-## 🚀 Web3 Gateway
+## 🚀 Tenderly Node <a href="#web3-gateway" id="web3-gateway"></a>
 
-* [Intro to Web3 Gateway](web3-gateway/README.md)
+* [Intro to Tenderly Node](web3-gateway/README.md)
 * [Quickstart: Querying blockchain data](web3-gateway/quickstart-query-blockchain.md)
 * [References](web3-gateway/references/README.md)
   * [Brief JSON RPC reference](web3-gateway/references/brief-json-rpc.md)
@@ -196,7 +196,3 @@
 * [🔑 Platform Access](other/platform-access/README.md)
   * [How to Find the Project Slug, Username, and Organization Name](other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md)
   * [How to Generate API Access Key](other/platform-access/how-to-generate-api-access-tokens.md)
-
-***
-
-* [リックロール](https://youtu.be/mW61VTLhNjQ?t=47)

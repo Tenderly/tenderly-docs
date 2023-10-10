@@ -13,7 +13,7 @@ Node Extensions provide a powerful way to create and deploy custom JSON-RPC endp
 
 Instead, you can create higher abstractions for interacting with the blockchain, capture your logic in one place, and make it easier to integrate it into UIs and backends. This way, you enable other dapps or protocols to achieve easier composability.
 
-A Node Extension consists of Javascript/Typescript code that processes a JSON-RPC request at your custom endpoint. When you activate an extension in a project, it becomes available as a new Web3 Gateway endpoint.
+A Node Extension consists of Javascript/Typescript code that processes a JSON-RPC request at your custom endpoint. When you activate an extension in a project, it becomes available as a new Tenderly Node endpoint.
 
 You can create a fully custom Node Extension in 4 ways:
 
@@ -23,7 +23,7 @@ You can create a fully custom Node Extension in 4 ways:
 * Use the Node Extensions Command Line Interface (CLI) to initialize and deploy your extensions. This tool is particularly useful for integrating Node Extensions into your development workflow and automating the deployment process​.
 
 {% hint style="info" %}
-Before you can start using Node Extensions, you need to [create an account](https://dashboard.tenderly.co/register?redirectTo=node-extensions) on the Tenderly platform and be familiar with the basics of [Tenderly Web3 Gateway](./), our Node-as-a-Service solution. You should also have working knowledge of JavaScript or TypeScript and [JSON-RPC methods](references/brief-json-rpc.md).
+Before you can start using Node Extensions, you need to [create an account](https://dashboard.tenderly.co/register?redirectTo=node-extensions) on the Tenderly platform and be familiar with the basics of [Tenderly Node](./), our Node-as-a-Service solution. You should also have working knowledge of JavaScript or TypeScript and [JSON-RPC methods](references/brief-json-rpc.md).
 {% endhint %}
 
 {% hint style="info" %}
@@ -45,7 +45,7 @@ If your node extensions use API keys, secrets, or other sensitive information, y
 
 ### Creating a custom Node Extension from scratch
 
-To create a new Node Extension, open the [Tenderly Dashboard](https://dashboard.tenderly.co/register?redirectTo=node-extensions), click **Web3 Gateway** in the sidebar on the left, navigate to the **Node Extensions** tab, and click the **Create Custom Extension** button.&#x20;
+To create a new Node Extension, open the [Tenderly Dashboard](https://dashboard.tenderly.co/register?redirectTo=node-extensions), click **Node** in the sidebar on the left, navigate to the **Node Extensions** tab, and click the **Create Custom Extension** button.&#x20;
 
 You can then define the custom JSON-RPC method name and write the JS/TS code that will be executed each time the method is called. After that, you can [manually test your node extension](node-extensions.md#testing-a-node-extension).&#x20;
 

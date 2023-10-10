@@ -23,11 +23,11 @@ Learn more about each category and how you can benefit from Tenderly tools.
 
 ### **🚀 Infrastructure 3.0**
 
-Tenderly Infrastructure 3.0 brings together integral building blocks for smart contract integration and blockchain interaction. This category gives you fast and easy blockchain access with Tenderly Web3 Gateway. It also includes Tenderly Web3 Actions that give you more control over your contracts’ on-chain usage. Finally, Tenderly APIs are also part of the core infrastructure, enabling workflow automation and easy integration.
+Tenderly Infrastructure 3.0 brings together integral building blocks for smart contract integration and blockchain interaction. This category gives you fast and easy blockchain access with Tenderly Node. It also includes Tenderly Web3 Actions that give you more control over your contracts’ on-chain usage. Finally, Tenderly APIs are also part of the core infrastructure, enabling workflow automation and easy integration.
 
-#### Tenderly Web3 Gateway
+#### Tenderly Node
 
-Tenderly Web3 Gateway is a production node that offers reliable, fast, and consistent access to the blockchain. It supports the standard JSON-RPC interface and custom-built endpoints thanks to its unique architecture.
+Tenderly Node is a production node that offers reliable, fast, and consistent access to the blockchain. It supports the standard JSON-RPC interface and custom-built endpoints thanks to its unique architecture.
 
 Use the Tenderly node to:
 
@@ -43,9 +43,9 @@ Use the Tenderly node to:
 
 Additional resources:
 
-* **Blog:** [Introducing Web3 Gateway](https://blog.tenderly.co/introducing-web3-gateway-to-all-in-one-developer-platform/)
-* **Blog:** [Getting Started With Web3 Gateway](https://blog.tenderly.co/getting-started-with-tenderly-web3-gateway/)
-* **Blog:** [Announcing Simulations in Web3 Gateway](https://blog.tenderly.co/announcing-simulations-in-web3-gateway/)
+* **Blog:** [Introducing Tenderly Node](https://blog.tenderly.co/introducing-web3-gateway-to-all-in-one-developer-platform/)
+* **Blog:** [Getting Started With Tenderly Node](https://blog.tenderly.co/getting-started-with-tenderly-web3-gateway/)
+* **Blog:** [Announcing Simulations in Tenderly Node](https://blog.tenderly.co/announcing-simulations-in-web3-gateway/)
 * **Blog:** [How Tenderly Node Extensions Enable Complete RPC Customization](https://blog.tenderly.co/customizing-rpc-endpoints-with-node-extensions/)
 
 #### Simulation API

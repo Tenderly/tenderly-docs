@@ -1,7 +1,7 @@
 ---
 description: >-
   Tenderly WebSockets offer fast access to Ethereum's JSON-RPC and provide
-  developers with a stable and persistent connection to Web3 Gateway.
+  developers with a stable and persistent connection to Tenderly Node.
 ---
 
 # WebSockets
@@ -14,15 +14,15 @@ WebSockets are a communication protocol that allows for real-time, bidirectional
 
 WebSockets provide several benefits over traditional HTTP requests, such as:
 
-* **Real-time data:** WebSockets allow for real-time data transfer, where updates can be sent to the client as soon as they become available, without requiring the client to make a new request.
+* **Real-time data:** WebSockets allow for real-time data transfer, where updates can be sent to the client as soon as they become available without requiring the client to make a new request.
 * **Lower latency:** Since WebSockets establish a persistent connection between the client and server, there is less overhead and latency than with traditional HTTP requests.
 * **Lower server load:** Because WebSockets allow for a steady connection, the server can send updates to multiple clients without having to send the same data to each client individually.
 
 ## How to connect to Tenderly WebSocket?
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>Web3 Gateway Page</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-Once you open the Tenderly Dashboard, go to the [Tenderly Web3 Gateway page](https://dashboard.tenderly.co/?redirectTo=gateways) and click the **Copy WSS URL** button. To test Tenderly WebSockets, use the `wscat`  command-line tool.&#x20;
+Once you open the Tenderly Dashboard, go to the [Tenderly Node page](https://dashboard.tenderly.co/?redirectTo=gateways) and click the **Copy WSS URL** button. To test Tenderly WebSockets, use the `wscat`  command-line tool.&#x20;
 
 Here's an example of connecting to a Tenderly WebSocket:
 

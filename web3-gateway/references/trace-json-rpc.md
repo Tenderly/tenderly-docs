@@ -1,5 +1,5 @@
 ---
-description: Custom JSON RPC method available in Tenderly Web3 Gateway
+description: Custom JSON RPC method available in Tenderly Node
 ---
 
 # Trace JSON RPC

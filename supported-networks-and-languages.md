@@ -6,9 +6,9 @@ description: A list of all Ethereum-compatible networks supported in Tenderly
 
 {% tabs %}
 {% tab title="Networks" %}
-**Networks supported in Tenderly and** [**accessible through Web3 Gateway**](web3-gateway/)
+**Networks supported in Tenderly and** [**accessible through Tenderly Node**](web3-gateway/)
 
-In this section, we list all the networks that are fully supported by Tenderly, including access through our [Web3 Gateway](broken-reference) with public endpoints.
+In this section, we list all the networks that are fully supported by Tenderly, including access through [Tenderly Node](broken-reference) with public endpoints.
 
 | Network                                                                                                | HTTPS URL                                      | WSS URL                                      |
 | ------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | -------------------------------------------- |
@@ -25,11 +25,11 @@ In this section, we list all the networks that are fully supported by Tenderly, 
 | <img src=".gitbook/assets/base mainnet.png" alt="" data-size="line"> Base Mainnet                      | `https://base.gateway.tenderly.co`             | `wss://base.gateway.tenderly.co`             |
 | <img src=".gitbook/assets/base testnet.png" alt="" data-size="line"> Base Görli Testnet                | `https://base-goerli.gateway.tenderly.co`      | `wss://base-goerli.gateway.tenderly.co`      |
 
-**Networks supported in Tenderly, without Web3 Gateway access**
+**Networks supported in Tenderly, without Tenderly Node access**
 
-In this section, you'll find the networks that are supported by Tenderly but currently do not have Web3 Gateway integration. All Tenderly features are still enabled for these networks, but there may be a few exceptions due to the specifics of the integration process.\
+In this section, you'll find the networks that are supported by Tenderly but currently do not have Tenderly Node integration. All Tenderly features are still enabled for these networks, but there may be a few exceptions due to the specifics of the integration process.\
 \
-While Web3 Gateway integration isn't currently available for these networks, rest assured we're actively working on incremental integration to bring this feature to all networks supported by Tenderly. In the meantime, you can still use Tenderly's suite of tools to monitor, debug, and simulate your smart contracts on these networks.
+While Tenderly Node integration isn't currently available for these networks, rest assured we're actively working on incremental integration to bring this feature to all networks supported by Tenderly. In the meantime, you can still use Tenderly's suite of tools to monitor, debug, and simulate your smart contracts on these networks.
 
 <img src=".gitbook/assets/image (83) (1) (1) (1).png" alt="" data-size="line"> RSK
 

@@ -1,18 +1,18 @@
 ---
 description: >-
-  Learn how to obtain Web3 Gateway JSON RPC access link and how to quickly query
-  the blockchain data from your browser.
+  Learn how to obtain a Tenderly Node JSON RPC access link and how to query the
+  blockchain data from your browser.
 ---
 
 # Quickstart: Querying blockchain data
 
-This how-to guide will guide you through using Web3 Gateway to query the Mainnet for the latest block number.
+This how-to guide will guide you through using Tenderly Node to query the Mainnet for the latest block number.
 
 ## Query Mainnet's latest block number
 
-On the left side-menu click **Web3 Gateway**. This will open the Web3 Gateway page, presenting the list of networks and Request builder.
+On the left-side menu, click **Node**. This will open the Tenderly Node page, presenting the list of networks and Request builder.
 
-![Web3 Gateway landing page with list of networks](../.gitbook/assets/gw-networks-01.png)
+![](../.gitbook/assets/gw-networks-01.png)
 
 Below the list of networks, you'll find the request builder.
 

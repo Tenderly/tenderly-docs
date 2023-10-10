@@ -5,13 +5,13 @@ description: >-
   production dapps.
 ---
 
-# 🌊 Ethereum Development Worfkflow
+# 🌊 Ethereum Development Workflow
 
 The all-in-one Tenderly development platform is a tightly integrated set of tools and services, supporting various engineering practices throughout the dapp development lifecycle. When you go into production, it enables you to monitor smart contract usage, detect and troubleshoot issues, and build a better dapp user experience.
 
 With Tenderly, you have the tools you need to build, debug, test, and optimize your smart contracts during development. You can address some early aspects of development, including user experience, dapp interactivity and reliability, and business logic automation. Additionally, Tenderly tools complement other tools and frameworks for building and deploying smart contracts, helping you get the best possible outcome.&#x20;
 
-Tenderly Web3 Gateway, a production-ready node solution, enables research and development (R\&D), as well as deploying and operating your smart contracts as they go live. This node also provides uninterrupted multi-region access to Ethereum networks, especially for read-heavy workloads.
+Tenderly Node, a production-ready node solution, enables research and development (R\&D), as well as deploying and operating your smart contracts as they go live. This node also provides uninterrupted multi-region access to Ethereum networks, especially for read-heavy workloads.
 
 Here are some dapp development practices that can benefit from Tenderly tools:
 
@@ -24,11 +24,11 @@ These practices make the development and refinement of smart contracts more acce
 * Troubleshoot transaction bugs efficiently by using [Transaction Simulator](simulations-and-forks/how-to-simulate-a-transaction/).
 * Verify bug fix correctness and gas usage improvements using Transaction Simulator with [source code editing](simulations-and-forks/how-to-simulate-a-transaction/editing-contract-source.md).
 * Share smart contracts and blockchain interactions with other developers and communities using [Sandbox](tenderly-sandbox.md).
-* Deploy your smart contracts, query blockchain data, and connect your production apps to Ethereum networks by using the [Tenderly Web3 Gateway](broken-reference) node as a service.
+* Deploy your smart contracts, query blockchain data, and connect your production apps to Ethereum networks by using the [Tenderly Node](broken-reference) - our node as a service.
 
 ### **Quality-facing practices**&#x20;
 
-This group of practices foster the reliability of your code and the final product. To improve these practices, you can:
+This group of practices fosters the reliability of your code and the final product. To improve these practices, you can:
 
 * Test smart contract integration using[ Forks](broken-reference).
 * Set up a [CI/CD pipeline](simulations-and-forks/integration-guides/ci-cd-pipeline-for-smart-contracts.md).

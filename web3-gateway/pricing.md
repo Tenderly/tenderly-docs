@@ -1,13 +1,13 @@
 ---
 description: >-
-  The Web3 Gateway usage and rate-limiting is expressed in Tenderly Units (TU).
-  Read, write, compute and advanced compute requests contribute with different
+  Tenderly Node usage and rate-limiting are expressed in Tenderly Units (TU).
+  Read, write, compute, and advanced compute requests contribute with different
   weights to the total.
 ---
 
 # Pricing and usage limits
 
-Web3 Gateway usage is measured with respect to requests your dapp makes to the Web3 Gateway JSON RPC. The requests are divided into three categories, each having different usage footprint, measured in **Tenderly Units** (**TU**):&#x20;
+Tenderly Node usage is measured with respect to requests your dapp makes to the Tenderly Node JSON RPC. The requests are divided into three categories, each having a different usage footprint, measured in **Tenderly Units** (**TU**):&#x20;
 
 **Read (1 TU)**
 
@@ -114,7 +114,7 @@ Depending on your plan, you'll have the monthly quota and usage rate limiting sh
 | Price          | -             | $50           |
 
 {% hint style="info" %}
-All RPC endpoints are included in Free, Dev, Pro and Early Adopters plans.&#x20;
+All RPC endpoints are included in Free, Dev, and Pro plans.&#x20;
 
-For Free and Starter plans higher rate limits are likely to be observed compared to the ones listed below.
+For Free and Starter plans, higher rate limits are likely to be observed compared to the ones listed below.
 {% endhint %}
