@@ -63,6 +63,8 @@ While Tenderly Node integration isn't currently available for these networks, re
 
 <img src=".gitbook/assets/zora.png" alt="" data-size="line"> Zora
 
+<img src=".gitbook/assets/zora-testnet-circle.png" alt="" data-size="line"> Zora Testnet
+
 <img src=".gitbook/assets/holesky.png" alt="" data-size="line"> Holesky
 {% endtab %}
 
