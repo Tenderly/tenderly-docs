@@ -28,7 +28,7 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/image (76) (1) (1) (1).png" alt="" data-size="line"> BSC Testnet `=> 97`
 
-<img src="../../.gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA `=> 99`
+<img src="../../.gitbook/assets/image (86) (1) (1) (1).png" alt="" data-size="line"> POA (deprecated) `=> 99`
 
 <img src="../../.gitbook/assets/image (84) (1) (1).png" alt="" data-size="line"> xDai `=> 100`
 
