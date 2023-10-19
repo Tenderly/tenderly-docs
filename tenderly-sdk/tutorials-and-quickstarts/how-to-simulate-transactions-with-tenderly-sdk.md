@@ -46,7 +46,7 @@ const tenderly = new Tenderly({
   accountName: "your-account-name",
   projectName: "your-project-name",
   accessKey: "your-access-key",
-  network: Network.Mainnet, // Replace with the appropriate network
+  network: Network.MAINNET, // Replace with the appropriate network
 });
 
 ```
