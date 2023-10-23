@@ -19,7 +19,7 @@ When working with proxy contracts, you need to verify the following:
 
 The verification process varies depending on the proxy contract type and approach to the implementation.
 
-<figure><img src="../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Verifying Proxy Contracts Doc Chart.png" alt=""><figcaption></figcaption></figure>
 
 {% embed url="https://github.com/Tenderly/tenderly-examples" %}
 
