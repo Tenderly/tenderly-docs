@@ -5,7 +5,7 @@ description: A brief overview of supported Ethereum JSON RPC calls.
 # Brief JSON RPC reference
 
 {% hint style="info" %}
-This page shows a brief overview of supported Ethereum JSON RPC calls. Find a [detaild list of supported calls](detailed-json-rpc.md).
+This page shows a brief overview of supported Ethereum JSON RPC calls. Find a [detailed list of supported calls](detailed-json-rpc.md).
 {% endhint %}
 
 ### `eth_getBlockByHash`

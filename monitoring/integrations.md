@@ -651,7 +651,7 @@ contract('Calculator', function (accounts) {
       error = e;
     }
 
-    assert.isDefined(error, "No exception thrown during divison");
+    assert.isDefined(error, "No exception thrown during division");
     assert.isTrue(error.message.search("revert") >= 0, "Expected transaction revert");
   });
 });

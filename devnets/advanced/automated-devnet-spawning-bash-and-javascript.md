@@ -59,7 +59,7 @@ You will find two directories with code for spawning DevNets: a bash (`spawn-dev
     ```bash
     TENDERLY_ACCESS_KEY=your_access_key
     TENDERLY_PROJECT_SLUG=your_project_slug
-    TENDERLY_DEVNET_TEMPLATE=your_devnet_tempalte
+    TENDERLY_DEVNET_TEMPLATE=your_devnet_template
     TENDERLY_ACCOUNT_ID=your_account_id
     ```
 3.  To run the script, use the following command in your terminal:
