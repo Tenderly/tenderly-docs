@@ -23,9 +23,11 @@ The `Network` argument is also an object which gives you access to all the suppo
 * `Network.MAINNET`
 * `Network.GOERLI`
 * `Network.SEPOLIA`
+* `Network.HOLESKY`
 * `Network.POLYGON`
 * `Network.MUMBAI`
 * `Network.BOBA_ETHEREUM`
+* `Network.BOBA_GOERLI`
 * `Network.BOBA_BINANCE`
 * `Network.BOBA_BINANCE_RIALTO`
 * `Network.OPTIMISTIC`
