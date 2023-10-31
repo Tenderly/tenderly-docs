@@ -7,6 +7,10 @@ Manual contract verification is applicable in the following situations:
 * Your Smart Contract is already deployed on a blockchain.
 * You want to have more control over verification configuration.
 
+{% hint style="info" %}
+The Tenderly Hardhat plugin **verifies contracts publicly by default**, unless you [configure it to use the private mode](private-contract-verification.md).&#x20;
+{% endhint %}
+
 ## Manual verification methods
 
 You can choose between two ways to manually verify a contract, including:

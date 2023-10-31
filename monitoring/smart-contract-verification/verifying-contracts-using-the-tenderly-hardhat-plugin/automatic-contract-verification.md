@@ -1,6 +1,12 @@
 # Automatic Contract Verification
 
-Automatic contract verification is a part of Tenderly’s Hardhat plugin. This method of verification happens seamlessly when you’re deploying a contract using Ethers.js. The only additional step is to enable the automatic verification in Tenderly in your `hardhat.config.ts` file.
+Automatic contract verification is a part of Tenderly’s Hardhat plugin. This method of verification happens seamlessly when you’re deploying a contract using Ethers.js.&#x20;
+
+{% hint style="info" %}
+The Tenderly Hardhat plugin **verifies contracts publicly by default**, unless you [configure it to use the private mode](private-contract-verification.md).&#x20;
+{% endhint %}
+
+To use it, you have to enable the automatic verification in Tenderly in your `hardhat.config.ts` file.
 
 ```tsx
 // File: hardhat.config.ts

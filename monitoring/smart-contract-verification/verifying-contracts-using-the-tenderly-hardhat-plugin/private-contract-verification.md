@@ -1,6 +1,6 @@
 # Private Contract Verification
 
-By default, the Tenderly Hardhat plugin performs public verification of Smart Contracts when using either automatic or manual approaches. When running private verification, the Smart Contract is verified within the project you specify.
+By default, the Tenderly Hardhat plugin performs public verification of Smart Contracts when using either automatic or manual approaches. When running private verification, the Smart Contract is verified within the project you specify, and visible only to collaborators and/or organization members.
 
 ## How to verify Smart Contracts privately
 

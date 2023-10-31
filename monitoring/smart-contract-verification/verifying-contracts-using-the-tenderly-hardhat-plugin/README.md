@@ -7,6 +7,10 @@ description: >-
 
 # Verifying Contracts Using the Tenderly Hardhat Plugin
 
+{% hint style="info" %}
+Tenderly hardhat plugin will **perform** **public contract verification by default**, unless you [configure to use the private mode](private-contract-verification.md).&#x20;
+{% endhint %}
+
 When it comes to the Tenderly Hardhat plugin, there are 3 ways to verify your Smart Contracts:
 
 * **Automatic**: The verification happens seamlessly just after the contract is deployed. You don’t have to take any additional steps.
@@ -39,13 +43,14 @@ To use a specific Tenderly contract verification method, you need a Hardhat proj
 * Start off with an [empty Hardhat project](https://hardhat.org/tutorial/creating-a-new-hardhat-project) and follow along with the guides.
 * Alternatively, take a look at the [complete example project on Git](https://github.com/Tenderly/hardhat-tenderly/tree/master/examples/contract-verification).
 * Next, authenticate with Tenderly. You can authenticate in two ways:
-  * Recommended option: Login using [Tenderly CLI](https://github.com/Tenderly/tenderly-cli#login)
+
+**Option 1 (recommended)**: Login using [Tenderly CLI](https://github.com/Tenderly/tenderly-cli#login)
 
 ```
 tenderly login
 ```
 
-* Generate an API key in the Dashboard and place it in `~/.tenderly/config.yaml` under `access_key.`
+**Option 2**: Generate an API key in the Dashboard and place it in `~/.tenderly/config.yaml` under `access_key.`
 
 ## Installing the Tenderly Hardhat plugin
 
@@ -93,8 +98,10 @@ const config: HardhatUserConfig = {
   networks: {...},
   tenderly: {
     project: 'my-project-slug',
-    username: 'my-username'
+    username: 'my-username',
+    privateVerification: true // false by default
   }
+}
 ```
 
 Replace the `my-project-slug` and `my-username` with appropriate values you can [find in the dashboard](../../../other/platform-access/how-to-find-the-project-slug-username-and-organization-name.md).
