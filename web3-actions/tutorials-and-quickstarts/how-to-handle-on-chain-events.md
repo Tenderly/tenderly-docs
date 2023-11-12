@@ -61,13 +61,13 @@ Our simple Tic-Tac-Toe game can have four possible states:
 
 ### Prerequisite
 
-**Create Two Accounts** - deploy the smart contract to any [network that is supported by Tenderly](https://docs.tenderly.co/supported-networks-and-languages). The most convenient way to do this is with [Remix](https://remix.ethereum.org/) and the [Metamask](https://metamask.io/) wallet plugin. You need two accounts that have a positive Ether balance. These accounts will represent the two players. For the purpose of this tutorial we will use Ropsten. If you plan to follow along with this tutorial, you can use the [Ropsten faucet](https://faucet.egorfine.com/) to add Ether to the accounts.
+**Create Two Accounts** - deploy the smart contract to any [network that is supported by Tenderly](https://docs.tenderly.co/supported-networks-and-languages). The most convenient way to do this is with [Remix](https://remix.ethereum.org/) and the [Metamask](https://metamask.io/) wallet plugin. You need two accounts that have a positive Ether balance. These accounts will represent the two players. For the purpose of this tutorial we will use Sepolia. If you plan to follow along with this tutorial, you can use the [Sepolia faucet](https://sepoliafaucet.com/) to add Ether to the accounts.
 
-**Compile the contract -** use the Remix IDE to compile the smart contract. Create a new contract file and add the code found [**here**](https://github.com/Tenderly/examples-web3-actions/blob/tic-tac-toe/tic-tac-toe/TicTacToe.sol).
+**Compile the contract -** use the Remix IDE to compile the smart contract. Create a new contract file and add the code found [**here**](https://github.com/Tenderly/examples-web3-actions/blob/main/tic-tac-toe/TicTacToe.sol).
 
 <figure><img src="../../.gitbook/assets/image (69).png" alt="Compiling the contract in the Remix IDE"><figcaption><p>Compiling the contract in the Remix IDE</p></figcaption></figure>
 
-**Deploy to a test network** - in your Metamask browser plugin, make sure Ropsten is selected as your preferred network. Next, go to the **“Deploy And Run Transactions”** section in Remix and select **`Injected Web3`**. Click **“Deploy”** once you’ve made sure that the account references the account in Metamask.
+**Deploy to a test network** - in your Metamask browser plugin, make sure Ropsten is selected as your preferred network. Next, go to the **“Deploy And Run Transactions”** section in Remix and select **`Injected Provider`**. Click **“Deploy”** once you’ve made sure that the account references the account in Metamask.
 
 <figure><img src="../../.gitbook/assets/image (73).png" alt="Deploying the contract to a testnet"><figcaption><p>Deploying the contract to a testnet</p></figcaption></figure>
 
