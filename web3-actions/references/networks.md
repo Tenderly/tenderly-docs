@@ -48,6 +48,10 @@ You can reference the supported network in your trigger configuration with the f
 
 <img src="../../.gitbook/assets/image (78) (1) (1).png" alt="" data-size="line"> Fantom Testnet `=> 4002`
 
+<img src="../../.gitbook/assets/fraxtal_logo.png" alt="" data-size="line"> Fraxtal `=> 252`
+
+<img src="../../.gitbook/assets/fraxtal_logo.png" alt="" data-size="line"> Fraxtal Holesky `=> 2522`
+
 <img src="../../.gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum `=> 42161`
 
 <img src="../../.gitbook/assets/image (118).png" alt="" data-size="line"> Arbitrum Nova `=> 42170`
