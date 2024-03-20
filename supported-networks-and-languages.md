@@ -2,7 +2,7 @@
 description: A list of all Ethereum-compatible networks supported in Tenderly
 ---
 
-# 🗺 Supported Networks & Languages
+# 🗺️ Supported Networks & Languages
 
 {% tabs %}
 {% tab title="Networks" %}
@@ -50,6 +50,10 @@ While Tenderly Node integration isn't currently available for these networks, re
 <img src=".gitbook/assets/image (77) (1) (1).png" alt="" data-size="line"> Fantom
 
 <img src=".gitbook/assets/image (78) (1) (1).png" alt="" data-size="line"> Fantom Testnet
+
+<img src=".gitbook/assets/fraxtal_logo.png" alt="" data-size="line"> Fraxtal
+
+<img src=".gitbook/assets/fraxtal_logo.png" alt="" data-size="line"> Fraxtal Holesky
 
 <img src=".gitbook/assets/image (93) (1) (1).png" alt="" data-size="line"> Arbitrum One
 

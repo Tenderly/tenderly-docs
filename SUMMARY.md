@@ -1,8 +1,8 @@
 # Table of contents
 
 * [📣 General Info](README.md)
-* [🗺 Supported Networks & Languages](supported-networks-and-languages.md)
-* [⚗ Projects](projects.md)
+* [🗺️ Supported Networks & Languages](supported-networks-and-languages.md)
+* [⚗️ Projects](projects.md)
 * [🫂 Teams & Collaboration](teams-and-collaboration/README.md)
 * [🔍 Explorer](explorer.md)
 * [🪣 Tenderly Sandbox](tenderly-sandbox.md)
@@ -23,7 +23,7 @@
 * [WebSockets](web3-gateway/websockets.md)
 * [Pricing and usage limits](web3-gateway/pricing.md)
 
-## 🛠 DevNets
+## 🛠️ DevNets
 
 * [Intro to DevNets](devnets/intro-to-devnets.md)
 * [Setting Up DevNets for Local Development](devnets/setting-up-devnets-for-local-development/README.md)
@@ -97,7 +97,7 @@
     * [Easily Debug Failed Transactions](simulations-and-forks/reference/tenderly-fork-customization-via-api/easily-debug-failed-transactions.md)
   * [Configuration of API Access](simulations-and-forks/reference/configuration-of-api-access.md)
 
-## ⚙ Tenderly SDK
+## ⚙️ Tenderly SDK
 
 * [Intro to Tenderly SDK](tenderly-sdk/intro-to-tenderly-sdk.md)
 * [Tutorials and Quickstarts](tenderly-sdk/tutorials-and-quickstarts/README.md)
@@ -187,8 +187,8 @@
 
 ## Other
 
-* [🕹 Tenderly API](http://127.0.0.1:5000/o/-LeLQOwIQG3HndcULLU2/s/ES8WtN6Gx8HH3zi8low4/)
-* [⌨ Tenderly CLI](https://github.com/Tenderly/tenderly-cli)
+* [🕹️ Tenderly API](https://app.gitbook.com/o/-LeLQOwIQG3HndcULLU2/s/ES8WtN6Gx8HH3zi8low4/)
+* [⌨️ Tenderly CLI](https://github.com/Tenderly/tenderly-cli)
 * [👷 Hardhat Plugin](https://github.com/Tenderly/hardhat-tenderly)
 * [🐛 Trace API](other/trace-api.md)
 * [⛽ Tenderly Units (TU)](other/tenderly-units-tu.md)
