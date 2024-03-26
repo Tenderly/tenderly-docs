@@ -50,14 +50,14 @@ Tenderly keeps track of all executions. Webhook execution can have several statu
 * **Success** - indicates that the webhook was successfully executed and the event was delivered to the specified URL
 * **Failed** - indicates that the webhook was unable to be executed due to an error, such as a connectivity issue, a problem with the URL, or something else (check the response content to see what caused the error or contact our support)
 * **Pending** - indicates that the webhook is in the process of being executed and has not yet been completed
-* **Retry** - indicates that the webhook execution failed but will be retried no more than 5 times until it changes the status to Sucess or Failed
+* **Retry** - indicates that the webhook execution failed but will be retried no more than 5 times until it changes the status to Success or Failed
 * **Skipped** - indicates that the webhook was not executed because it was disabled
 
 #### Webhook payload
 
 The webhook will receive the payload representing the alerting event. The payload consists of three fields:
 
-* **id**: `String` - ID unique accross all delivered alert events (UUID).
+* **id**: `String` - ID unique across all delivered alert events (UUID).
 * **event\_type**: `TEST` | `ALERT` - the type of webhook event type.
 * **transaction**: `Object` - an object representing an un-decoded transaction that triggered the alert and the webhook execution.&#x20;
 

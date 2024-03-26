@@ -69,7 +69,7 @@ Webhook execution can have several statuses:
 * **Success:** Webhook was successfully executed, and the event was delivered to the specified URL.
 * **Failed**: Webhook was unable to be executed due to an error, such as a connectivity issue, a problem with the URL, or something else. Check the response content to see what caused the error, or contact our support.
 * **Pending**: Webhook is in the process of being executed and has not yet been completed.
-* **Retry**: Webhook execution failed but will be retried no more than 5 times until it changes the status to Sucess or Failed.
+* **Retry**: Webhook execution failed but will be retried no more than 5 times until it changes the status to Success or Failed.
 * **Skipped**: Webhook was not executed because it was disabled.
 
 <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Webhook Execution Page</p></figcaption></figure>

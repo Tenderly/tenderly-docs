@@ -1,6 +1,6 @@
 # How to use Tenderly Debugger
 
-The Visual Debugger is one of the tools people love the most. Instead of wasting countless hours debugging transactions, you can use the Visual Debugger so you can focus more on buidling and less on scratching your head.
+The Visual Debugger is one of the tools people love the most. Instead of wasting countless hours debugging transactions, you can use the Visual Debugger so you can focus more on building and less on scratching your head.
 
 **The level of detail present here doesn't exist anywhere else and reduces development time by orders of magnitude**.
 

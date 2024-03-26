@@ -67,7 +67,7 @@ If you don’t create a copy, any changes you make to someone else’s Sandbox w
 
 #### Managing your Sandboxes
 
-To view a list of all the Sandboxes you created or copied, **click on the dropdown menu** next to the logo in the top nav bar. By default, all Sandboxes are publicaly visible.&#x20;
+To view a list of all the Sandboxes you created or copied, **click on the dropdown menu** next to the logo in the top nav bar. By default, all Sandboxes are publicly visible.&#x20;
 
 Manage your Sandboxes by **clicking the three dots icon** next to the Sandbox name to perform any of the following actions:
 
