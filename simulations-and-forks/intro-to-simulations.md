@@ -1,11 +1,9 @@
 ---
 description: >-
-  Learn more about Transaction Simulator and how you can use it for development,
-  testing, improving dapp UX, and more. Explore four Tenderly simulation
-  methods: UI, RPC, API, and Forks.
+Use Tenderly’s transaction simulator to test and execute different transaction scenarios and their consequences in a staging environment.
 ---
 
-# Intro to Simulations
+# Simulate transactions
 
 Transaction Simulator allows you to see a transaction’s execution without sending it to the blockchain. It gives you the results of running a transaction against any point in blockchain history, including the latest block.&#x20;
 
